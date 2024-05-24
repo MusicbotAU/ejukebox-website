@@ -56,7 +56,7 @@ Want to hear how **eJukebox** sounds? Check us out on [iHeart radio](https://www
 
 | eJukebox Smooth | eJukebox Hits |
 | -------- | ------- |
-|  ![https://www.iheart.com/live/ejukebox-smooth-9750](blobs/eJukebox%20Smooth_72dpi.png) | ![eJukebox Hits]([blobs/eJukebox%20Smooth_72dpi.png](blobs/eJukebox%20Hits_72dpi.png)) |
+|  ![https://www.iheart.com/live/ejukebox-smooth-9750](blobs/eJukebox%20Smooth_72dpi.png) | ![eJukebox Hits](blobs/eJukebox%20Hits_72dpi.png) |
 
 
 
