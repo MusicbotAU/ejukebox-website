@@ -49,7 +49,7 @@ Getting started with eJukebox is simple. You’ll receive a unique URL, such as 
 **Enhance Your Business Atmosphere with eJukebox**
 With eJukebox Smooth and eJukebox Hits, you get high-quality, professionally curated music tailored to your business needs. Elevate the ambiance of your space with consistently great sound, easy setup, and legal peace of mind. Contact us today to learn more and get started!
 
-**Contact us** today [info@ejukebox.com.au](mailto:info@ejukebox.com.au) to get your **eJukebox smooth** license for **$1 / day**. 
+**Be up and running today**, **Contact us** [info@ejukebox.com.au](mailto:info@ejukebox.com.au) to get your **eJukebox smooth** license & unique URL for **$1 / day**.
 
 ## Sneak preview
 Want to hear how **eJukebox** sounds? Check us out on [iHeart radio](https://www.iheart.com/):
