@@ -2,15 +2,15 @@
 
 The new **eJukebox** `Smooth` and **eJukebox** `Hits` packages have finally arrived!
 
-<p align="center">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="500" src="blobs/eJukebox_Smooth.png"></p>
+<!-- <p align="center">
+<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="500" src="blobs/eJukebox_Smooth.png"></p> -->
 
 <p align="center"><iframe width="500" height="290"
     src="https://www.youtube.com/embed/gjqB1u8GIxs?playlist=gjqB1u8GIxs&loop=1&Version=3&autoplay=1&mute=1&showinfo=1&rel=0">
 </iframe></p>
 
-<p align="center">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="500" src="blobs/eJukebox_Hits.png"></p>
+<!-- <p align="center">
+<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="500" src="blobs/eJukebox_Hits.png"></p> -->
 
 All the same great smooth music that you love today, no ads, no commercials and no senseless talk. Just back-to-back music.
 
