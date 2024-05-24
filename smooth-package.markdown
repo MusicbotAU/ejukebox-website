@@ -54,13 +54,11 @@ With eJukebox Smooth and eJukebox Hits, you get high-quality, professionally cur
 ## Sneak preview
 Want to hear how **eJukebox** sounds? Check us out on [iHeart radio](https://www.iheart.com/):
 
-<p align="center"><a href="https://www.iheart.com/live/ejukebox-smooth-9750/">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="200" src="blobs/eJukebox%20Smooth_72dpi.png">
-</a></p>
+| eJukebox Smooth | eJukebox Hits |
+| -------- | ------- |
+| <p align="center"><a href="https://www.iheart.com/live/ejukebox-smooth-9750/"><img style="vertical-align:middle;margin:5px 0px 0px 5px" width="200" src="blobs/eJukebox%20Smooth_72dpi.png"></a></p>  | <p align="center"><a href="https://www.iheart.com/live/ejukebox-hits-9243/"><img style="vertical-align:middle;margin:5px 0px 0px 5px" width="200" src="blobs/eJukebox%20Hits_72dpi.png"></a></p> |
+|  |  |
 
-<p align="center"><a href="https://www.iheart.com/live/ejukebox-hits-9243/">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="200" src="blobs/eJukebox%20Hits_72dpi.png">
-</a></p>
 
 Notice the quality of the sound? This is the exact same quality that **you** get!
 
