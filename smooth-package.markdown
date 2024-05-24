@@ -65,10 +65,10 @@ Want to hear how **eJukebox** sounds? Check us out on [iHeart radio](https://www
 
 Notice the quality of the sound? This is the exact same quality that **you** get!
 
-## Other details
+<!-- ## Other details
 
 - No contracts to sign, cancel anytime, first week is on us (try it **free** for a week)
 - **eJukebox Smooth** & **eJukebox Hits** runs from the Microsoft cloud and is backed with a 99.95% up-time service level guarantee.
 - An **eJukebox Smooth** & **eJukebox Hits** subscription is similar to a Netflix subscription, where each subscriber can listen from anywhere over the internet and has a maximum number of connections.
 - **eJukebox Smooth** & **eJukebox Hits** is a radically simplified version of **eJukebox**. It costs us less to run **eJukebox Smooth** & **eJukebox Hits**, and as a result, we are passing on the savings to you.
-- **eJukebox** or **eJukebox Smooth** & **eJukebox Hits** has no expletives in any of the music heard, so it's always safe for all ages.
+- **eJukebox** or **eJukebox Smooth** & **eJukebox Hits** has no expletives in any of the music heard, so it's always safe for all ages. -->
