@@ -52,7 +52,7 @@ With eJukebox Smooth and eJukebox Hits, you get high-quality, professionally cur
 **Be up and running today**, **Contact us** [info@ejukebox.com.au](mailto:info@ejukebox.com.au) to get your **eJukebox smooth** license & unique URL for **$1 / day**.
 
 ## Sneak preview
-Want to hear how **eJukebox** sounds? Check us out on [iHeart radio](https://www.iheart.com/):
+Want to hear how **eJukebox** sounds? Check us out on **iHeart radio**:
 
 | eJukebox Smooth | eJukebox Hits |
 | -------- | ------- |
