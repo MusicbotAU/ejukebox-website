@@ -3,15 +3,22 @@
 [//]: # (Guide to aligning images https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d)
 ## Whisperscape - $1/day
 
-![https://whisperscape.live](./blobs/Black%20logo%20-%20no%20background.png)
+
+
+<p align="center">
+<img style="vertical-align:middle;margin:5px 0px 5px 0px" width="400" src="blobs/Black%20logo%20-%20no%20background.png"></p>
 
 ### Discover Whisperscape: Your Perfect Business Music Solution
 
-Elevate your business ambiance with Whisperscape, the ultimate music service designed for pubs, cafes, and retail spaces. Whisperscape offers live-streamed, professionally curated playlists that create a welcoming and familiar atmosphere for your customers. Our music is free from swearing, fully licensed for commercial use, and sounds fantastic thanks to state-of-the-art audio processing.
+This package used to be part fo the eJukebox suite of products, now it's being marketed separately with a complete rebranding. 
 
-Experience the ease of setup with Whisperscape. Simply type your custom stream URL into any browser and enjoy seamless music instantly, without needing any client app. With tailored playlists for different times of the day, Whisperscape ensures that your business always has the right vibe.
+Elevate your business ambiance with **Whisperscape**, the ultimate music service designed for pubs, cafes, and retail spaces. **Whisperscape** offers live-streamed, professionally curated playlists that create a welcoming and familiar atmosphere for your customers. Our music is free from swearing, fully licensed for commercial use, and sounds fantastic thanks to state-of-the-art audio processing.
+
+Experience the ease of setup with **Whisperscape**. Simply type your custom stream URL into any browser and enjoy seamless music instantly, without needing any client app. With tailored playlists for different times of the day, **Whisperscape** ensures that your business always has the right vibe.
 
 Visit [Whisperscape](https://whisperscape.live) to learn more and transform your business with the perfect soundtrack.
+
+<br>
 
 ## eJukebox package - $115/month
 
