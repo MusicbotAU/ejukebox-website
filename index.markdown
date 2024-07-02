@@ -56,9 +56,7 @@ Contact us today [info@ejukebox.com.au](mailto:info@ejukebox.com.au) to get your
 ## Test drive **eJukebox** before you sign up, right now
 **eJukebox** is now an online radio station and has signed with iHeart Radio. We are streaming across the planet, commercial free music 24/7 showing exactly what **eJukebox** is all about. **eJukebox** is a music solution for pubs, clubs, bars, venues, cafes, retail outlets & functions, and now, we're your **online** music solution. You can take us for a spin and put us to our paces by giving us the pub test. 
 
-**eJukebox Hits** is now on iHeart radio.
-
-Hear for yourself the quality and the the selection of the music:
+**eJukebox** is now on iHeart radio appearing with the **Whisperscape** brand. .Hear for yourself the quality and the the selection of the music:
 
 <p align="center"><a href="./stream-us.html">
 <img style="vertical-align:middle;margin:10px 0px 10px 0px" width="200" src="blobs/iHeartRadio_logo.png">
