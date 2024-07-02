@@ -21,8 +21,8 @@ Visit [Whisperscape](https://whisperscape.live) to learn more and transform your
 
 ## eJukebox package - $115/month
 
-Exactly the same as **eJukebox Smooth** or **eJukebox Hits**, with the addition of:
-- Your own unique dedicted hardware to play the music (not a shared player) - plugs into your existing sound system
+Exactly the same as **Whisperscape**, with the addition of:
+- Your own unique dedicted hardware to play the music - plugs into your existing sound system
   - eJukebox is a real music solution for your business
 - Your choice of 12 playlists (including Hits and Smooth), which you can change at anytime using an app on your phone
 - Allow your customers to make song requests automatically using their own phones - like a jukebox in the palm of their hands
@@ -69,6 +69,6 @@ Hear for yourself the quality and the the selection of the music:
 - You're not breaking the law by playing music without a licence e.g. Spotify can't be played in public
 
 ## **eJukebox** trial
-Have **eJukebox**, **eJukebox Smooth** or **eJukebox Hits** in your business for a risk free 7 day trial. If you don't like it, you can cancel at any time. If you do like it, you can seamlessly continue with a monthly subscription.
+Have **eJukebox** or **Whisperscape** in your business for a risk free 7 day trial. If you don't like it, you can cancel at any time. If you do like it, you can seamlessly continue with a monthly subscription.
 
 [info@ejukebox.com.au](mailto:info@ejukebox.com.au)
