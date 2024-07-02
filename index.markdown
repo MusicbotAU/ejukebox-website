@@ -1,31 +1,17 @@
 [//]: # (margin:top right bottom left)
 [//]: # (https://raw.githubusercontent.com/joshbuchea/HEAD/master/README.md | example of markdown)
 [//]: # (Guide to aligning images https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d)
-## 'eJukebox Hits' or 'eJukebox Smooth' package - $1/day
+## Whisperscape - $1/day
 
-Attention all pubs, clubs, bars, venues, cafes, and retail outlets! Experience the ultimate convenience and ambiance-enhancing solution for your business at an astonishingly affordable rate. For as little as a dollar a day, you can seize the opportunity to obtain your very own unique stream URL (link), instantly accessible on smart speakers, computers, or Bluetooth-enabled phones.
+![https://whisperscape.live](./blobs/Black%20logo%20-%20no%20background.png)
 
-Our service is meticulously designed to cater to your needs, providing a seamless and hassle-free experience. Once set up, it operates on autopilot, requiring zero management on your part. The music effortlessly fills the background, creating an atmosphere that captivates your patrons without any additional effort.
+### Discover Whisperscape: Your Perfect Business Music Solution
 
-It's crucial to note that, as specified in their Terms and Conditions, [Spotify is only for personal, non-commercial use](https://support.spotify.com/us/article/spotify-public-commercial-use/). Therefore, it is explicitly prohibited to publicly broadcast or play **Spotify** in a business setting, including bars, restaurants, schools, stores, salons, dance studios, radio stations, and more. However, fear not! We present you with two exceptional music packages meticulously curated for high quality and updated weekly, fully licensed and legally compliant for your business.
+Elevate your business ambiance with Whisperscape, the ultimate music service designed for pubs, cafes, and retail spaces. Whisperscape offers live-streamed, professionally curated playlists that create a welcoming and familiar atmosphere for your customers. Our music is free from swearing, fully licensed for commercial use, and sounds fantastic thanks to state-of-the-art audio processing.
 
-Elevate your establishment's ambiance with legally licensed music that meets your discerning standards. Join us today and immerse your patrons in a sonic experience that will leave a lasting impression.
+Experience the ease of setup with Whisperscape. Simply type your custom stream URL into any browser and enjoy seamless music instantly, without needing any client app. With tailored playlists for different times of the day, Whisperscape ensures that your business always has the right vibe.
 
-
-| ![./smooth-package.html](blobs/eJukebox_Smooth.png)| ![./hits-package.html](blobs/eJukebox_Hits.png) |
-| ----------- | ----------- |
-| Listen to the live online demo <audio src="https://listen.ejukebox.net/two" type="audio/mpeg" controls></audio> | Listen to the live online demo <audio src="https://listen.ejukebox.net/one" type="audio/mpeg" controls></audio> |
-| Smooth easy listening music - retail, leisure, dining | The latest Top 40 hits - bars/clubs, fitness, retail etc |
-| Cloud powered, latest music updated in realtime | Cloud powered, latest music updated in realtime |
-| Back-to-back, commercial-free music | Back-to-back, commercial-free music |
-| Risk free, fully licenced for business (unlike Spotify) | Risk free, fully licenced for business (unlike Spotify) |
-| No explicit lyrics | No explicit lyrics |
-| Set and forget, playlists updated weekly and influenced from local radio stations | Set and forget, playlists updated weekly and influenced from local radio stations |
-| No limit of songs, ~5000 approx. | No limit of songs, ~5000 approx. |
-
-<br>
-
-Contact us today [info@ejukebox.com.au](mailto:info@ejukebox.com.au) to get your **eJukebox Smooth** or **eJukebox Hits** licence for **$1 / day**. [More details.](./smooth-package.markdown)
+Visit [Whisperscape](https://whisperscape.live) to learn more and transform your business with the perfect soundtrack.
 
 ## eJukebox package - $115/month
 
