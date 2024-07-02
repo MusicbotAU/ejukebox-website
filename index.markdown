@@ -1,12 +1,11 @@
 [//]: # (margin:top right bottom left)
 [//]: # (https://raw.githubusercontent.com/joshbuchea/HEAD/master/README.md | example of markdown)
 [//]: # (Guide to aligning images https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d)
-## Whisperscape - $1/day
 
-
+## eJukebox package - $1/day (Whisperscape)
 
 <p align="center">
-<img style="vertical-align:middle;margin:5px 0px 5px 0px" width="400" src="blobs/Black%20logo%20-%20no%20background.png"></p>
+<img style="vertical-align:middle;margin:5px 0px 5px 0px" width="300" src="blobs/Black%20logo%20-%20no%20background.png"></p>
 
 ### Discover Whisperscape: Your Perfect Business Music Solution
 
