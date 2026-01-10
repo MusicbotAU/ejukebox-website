@@ -52,7 +52,7 @@ title: Licensing
     <div class="stat-icon"><i class="fas fa-sliders-h"></i></div>
     <div class="stat-number"><i class="fas fa-magic"></i></div>
     <div class="stat-label"><strong>Customisation Included</strong></div>
-    <p class="stat-description">Get custom branding and tailored music channels at a fraction of the cost. From calm dental office playlists to high-energy retail hits—all without expensive custom radio fees.</p>
+    <p class="stat-description">Get custom branding and tailored music channels at a fraction of the cost. From calm dental office playlists to high-energy retail hits-all without expensive custom radio fees.</p>
   </div>
 </div>
 
@@ -79,7 +79,7 @@ title: Licensing
       <div class="reason-number">1</div>
       <div class="reason-content">
         <h4><i class="fas fa-heart"></i> Support Creators</h4>
-        <p>Shows your organisation respects and supports songwriters and recording artists—our cultural creators.</p>
+        <p>Shows your organisation respects and supports songwriters and recording artists-our cultural creators.</p>
       </div>
     </div>
     

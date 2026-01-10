@@ -10,7 +10,7 @@ title: Why Us
       Australian Made
     </div>
     <h1>About <span class="gradient-text">Musicbot</span></h1>
-    <p class="hero-subtitle">The proud creators of eJukebox — your ultimate music solution for pubs, cafes, and businesses across Australia</p>
+    <p class="hero-subtitle">The proud creators of eJukebox - your ultimate music solution for pubs, cafes, and businesses across Australia</p>
   </div>
 </div>
 

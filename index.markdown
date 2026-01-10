@@ -250,7 +250,7 @@ title: Home
     <blockquote>"Much better music than the other music solution"</blockquote>
     <div class="testimonial-author">
       <div class="author-avatar"><i class="fas fa-user"></i></div>
-      <span>— Diana F.</span>
+      <span>- Diana F.</span>
     </div>
   </div>
 </div>

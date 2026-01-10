@@ -85,7 +85,7 @@ title: $1/Day Streaming Package
       <div class="reason-number">2</div>
       <div class="reason-content">
         <h3><i class="fas fa-volume-up"></i> Superior Sound Quality</h3>
-        <p>Each song undergoes state-of-the-art broadcast-quality audio processing, ensuring every track sounds impeccable with consistent volume levels—unlike Spotify, where volumes can vary within and between songs.</p>
+        <p>Each song undergoes state-of-the-art broadcast-quality audio processing, ensuring every track sounds impeccable with consistent volume levels-unlike Spotify, where volumes can vary within and between songs.</p>
       </div>
     </div>
     

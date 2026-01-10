@@ -21,7 +21,7 @@ title: Automated Jukebox System
   <div class="showcase-content">
     <h2>New & Hip</h2>
     <p><strong>eJukebox</strong> is new and hip. While all other music solutions are static, eJukebox is the only totally automated shared music solution which is totally dynamic.</p>
-    <p><strong>eJukebox</strong> is exactly like a conventional jukebox, except much newer — conventional jukeboxes are old school. An old school jukebox is a static device that sits on a wall or in the corner of a room, whereas <strong>eJukebox</strong> is today's technology in a jukebox eliminating the need to be anti-social lining up or standing in front of a jukebox for ages browsing through songs.</p>
+    <p><strong>eJukebox</strong> is exactly like a conventional jukebox, except much newer - conventional jukeboxes are old school. An old school jukebox is a static device that sits on a wall or in the corner of a room, whereas <strong>eJukebox</strong> is today's technology in a jukebox eliminating the need to be anti-social lining up or standing in front of a jukebox for ages browsing through songs.</p>
     <p>There are many other leading features that make our jukeboxes better than a standard jukebox, the biggest difference is that our jukebox is totally controlled by a smartphone from practically anywhere the music is heard.</p>
   </div>
 </div>

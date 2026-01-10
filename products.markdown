@@ -57,7 +57,7 @@ title: Products
       <li><i class="fas fa-check"></i> Ideal for clinics, dentists, cafés, retail stores that want set-and-forget music.</li>
     </ul>
     <div class="pricing-cta-group">
-      <a href="./smooth-package.html" class="pricing-cta secondary">More Details</a>
+      <a href="./dollar-a-day.html" class="pricing-cta secondary">More Details</a>
       <a href="mailto:info@ejukebox.com.au" class="pricing-cta">Contact Us</a>
     </div>
   </div>
@@ -83,7 +83,7 @@ title: Products
       <li><i class="fas fa-check"></i> <strong>24/7 monitoring</strong> and remote support.</li>
     </ul>
     <div class="pricing-cta-group">
-      <a href="./people-love-ejukebox.html" class="pricing-cta secondary">More Details</a>
+      <a href="./full-package.html" class="pricing-cta secondary">More Details</a>
       <a href="mailto:info@ejukebox.com.au" class="pricing-cta">Contact Us</a>
     </div>
   </div>

@@ -22,7 +22,7 @@ title: Request Portal
       <i class="fas fa-cloud"></i>
       Cloud & IoT Powered
     </div>
-    <p>Thanks to the magic of the cloud & IoT (Internet of Things), customers connect to a fast, reliable & responsive cloud based website — the <strong>eJukebox request portal</strong>.</p>
+    <p>Thanks to the magic of the cloud & IoT (Internet of Things), customers connect to a fast, reliable & responsive cloud based website - the <strong>eJukebox request portal</strong>.</p>
     <p>The request portal has a backend secure connection with your <strong>eJukebox</strong> system. It's totally secure as there's no ports that you need to open inbound on your side, the connection between the backend <strong>eJukebox</strong> system and the <strong>eJukebox</strong> request portal is outbound <em>from the venue</em> to the cloud using HTTPS with IoT.</p>
   </div>
 </div>

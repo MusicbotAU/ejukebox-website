@@ -113,7 +113,7 @@ title: Benefits of Music
         Fitness Industry
       </div>
       <h3>Music Powers Performance</h3>
-      <p>The right music doesn't just help hospitality venues — it's essential for fitness environments too. Music tempo and energy directly impact workout intensity and customer satisfaction.</p>
+      <p>The right music doesn't just help hospitality venues - it's essential for fitness environments too. Music tempo and energy directly impact workout intensity and customer satisfaction.</p>
     </div>
   </div>
 </div>

@@ -92,5 +92,5 @@ title: Behind the Scenes
 
 <div class="install-image">
   <img src="blobs/actual_eJukebox_Install.jpg" alt="Actual eJukebox Installation">
-  <p class="image-caption">An actual eJukebox installation — compact, powerful, and reliable</p>
+  <p class="image-caption">An actual eJukebox installation - compact, powerful, and reliable</p>
 </div>
