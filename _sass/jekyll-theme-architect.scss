@@ -2673,24 +2673,50 @@ b {
 
 .australian-section {
   background: linear-gradient(135deg, rgba(0, 35, 149, 0.2) 0%, rgba(237, 28, 36, 0.2) 100%);
-  padding: 40px;
+  padding: 50px 40px;
   border-radius: 20px;
   margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.australian-section::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 70%);
+  border-radius: 50%;
 }
 
 .aus-content {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.aus-flag {
+  flex-shrink: 0;
 }
 
 .aus-flag img {
-  width: 120px;
-  border-radius: 8px;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.aus-text {
+  flex: 1;
 }
 
 .aus-text h2 {
   margin-bottom: 15px;
+  font-size: 1.8em;
 }
 
 .aus-text p {
