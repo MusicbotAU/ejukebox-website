@@ -1,27 +1,98 @@
-[//]: # (margin:top right bottom left)
+---
+layout: default
+title: Hits Package
+---
 
-The new **eJukebox** `Smooth` package has finally arrived!
+<div class="package-hero hits-theme">
+  <div class="hero-content">
+    <div class="package-badge">
+      <i class="fas fa-fire"></i>
+      HOT & TRENDING
+    </div>
+    <h1>eJukebox <span class="gradient-text">Hits</span></h1>
+    <p class="hero-subtitle">All the same great hit music that you love today, no ads, no commercials and no senseless talk. Just back-to-back <strong>hit</strong> music.</p>
+    <div class="price-highlight">
+      <span class="price">$1</span>
+      <span class="period">/ day</span>
+    </div>
+  </div>
+</div>
 
-<p align="center">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="500" src="blobs/eJukebox_Hits.png"></p>
+<div class="package-showcase">
+  <div class="showcase-image">
+    <img src="blobs/eJukebox_Hits.png" alt="eJukebox Hits Package">
+  </div>
+  <div class="showcase-content">
+    <h2>Your Music Solution Has Arrived</h2>
+    <p><strong>eJukebox</strong> is a music solution for pubs, clubs, cafes and retail outlets. Now, <strong>eJukebox</strong> can be at <strong>your</strong> retail outlet today for the low cost of <strong>$1 / day</strong>.</p>
+    <ul class="feature-list">
+      <li><i class="fas fa-check"></i> Latest chart hits & pop music</li>
+      <li><i class="fas fa-check"></i> No ads or commercials</li>
+      <li><i class="fas fa-check"></i> Professional broadcast quality</li>
+      <li><i class="fas fa-check"></i> Fully licensed for commercial use</li>
+    </ul>
+  </div>
+</div>
 
-All the same great smooth music that you love today, no ads, no commercials and no senseless talk. Just back-to-back **hit** music.
+<div class="warning-section">
+  <div class="warning-card">
+    <div class="warning-header">
+      <i class="fab fa-spotify"></i>
+      <h3>Important: Spotify is NOT Licensed for Public Use</h3>
+    </div>
+    <p>As a reminder, <strong>Spotify</strong> is not licensed for public performance, which means if you're currently using your <strong>personal</strong> Spotify subscription in a retail outlet, you are breaking licensing terms and putting your business at risk.</p>
+    <div class="warning-image">
+      <img src="blobs/spotify_license.png" alt="Spotify licensing terms">
+    </div>
+  </div>
+</div>
 
-**eJukebox** is a music solution for pubs, clubs, cafes and retail outlets. Now, **eJukebox** can be at **your** retail outlet today for the low cost of **$1 / day**.
+<div class="easy-setup">
+  <div class="setup-icon">
+    <i class="fas fa-plug"></i>
+  </div>
+  <h3>Easy Setup</h3>
+  <p>On most occasions, you won't require any additional hardware or software to use <strong>eJukebox Hits</strong>.</p>
+</div>
 
-<p align="center">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="500" src="blobs/spotify_license.png"></p>
+<div class="contact-cta">
+  <a href="mailto:info@ejukebox.com.au" class="cta-button">
+    <i class="fas fa-envelope"></i>
+    Contact Us: info@ejukebox.com.au
+  </a>
+  <p>Get your <strong>eJukebox Hits</strong> license for <strong>$1 / day</strong></p>
+</div>
 
-As a reminder, **Spotify** is not licenced for public performance, which means if you're currently using your **personal** Spotify subscription in a retail outlet, you are breaking licensing terms and putting your business at risk.
-
-On most occasions, you won't require any additional hardware or software to use **eJukebox hits**. 
-
-Contact us today [info@ejukebox.com.au](mailto:info@ejukebox.com.au) to get your **eJukebox hits** license for **$1 / day**. 
-
-## Other details
-
-- No contracts to sign, cancel anytime, first week is on us (try it **free** for a week)
-- **eJukebox hits** runs from the Microsoft cloud and is backed with a 99.95% up-time service level guarantee.
-- An **eJukebox hits** subscription is similar to a Netflix subscription, where each subscriber can listen from anywhere over the internet and has a maximum number of connections.
-- **eJukebox hits** is a radically simplified version of **eJukebox**. It costs us less to run **eJukebox hits**, and as a result, we are passing on the savings to you.
-- **eJukebox** or **eJukebox hits** has no expletives in any of the music heard, so it's always safe for all ages.
+<div class="other-details">
+  <div class="section-header">
+    <i class="fas fa-info-circle"></i>
+    <h2>Other Details</h2>
+  </div>
+  <div class="details-grid">
+    <div class="detail-item">
+      <i class="fas fa-file-contract"></i>
+      <h4>No Contracts</h4>
+      <p>No contracts to sign, cancel anytime, first week is on us (try it <strong>free</strong> for a week)</p>
+    </div>
+    <div class="detail-item">
+      <i class="fab fa-microsoft"></i>
+      <h4>Microsoft Cloud</h4>
+      <p><strong>eJukebox Hits</strong> runs from the Microsoft cloud and is backed with a 99.95% up-time service level guarantee.</p>
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-tv"></i>
+      <h4>Netflix-Style Access</h4>
+      <p>An <strong>eJukebox Hits</strong> subscription is similar to a Netflix subscription, where each subscriber can listen from anywhere over the internet and has a maximum number of connections.</p>
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-dollar-sign"></i>
+      <h4>Cost-Effective</h4>
+      <p><strong>eJukebox Hits</strong> is a radically simplified version of <strong>eJukebox</strong>. It costs us less to run, and as a result, we are passing on the savings to you.</p>
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-child"></i>
+      <h4>Family Safe</h4>
+      <p><strong>eJukebox</strong> or <strong>eJukebox Hits</strong> has no expletives in any of the music heard, so it's always safe for all ages.</p>
+    </div>
+  </div>
+</div>

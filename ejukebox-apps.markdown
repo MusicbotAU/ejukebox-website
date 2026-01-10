@@ -1,20 +1,76 @@
-[//]: # (margin:top right bottom left)
+---
+layout: default
+title: Download Apps
+---
 
-**eJukebox** is a music solution for pubs, clubs, bars, venues, cafes, retail outlets & functions. Download the **eJukebox Controller App** today to be in total control of the music at your venue. 
+<div class="apps-hero">
+  <div class="hero-content">
+    <div class="hero-icon">
+      <i class="fas fa-mobile-alt"></i>
+    </div>
+    <h1>Download the <span class="gradient-text">Controller App</span></h1>
+    <p class="hero-subtitle">Be in total control of the music at your venue</p>
+  </div>
+</div>
 
-<p align="center"><a href="https://apps.apple.com/us/app/ejukebox-controller-app/id978645792">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="200" src="blobs/AppleAppStoreLogo.png"></a></p>
+<div class="apps-intro">
+  <p><strong>eJukebox</strong> is a music solution for pubs, clubs, bars, venues, cafes, retail outlets & functions. Download the <strong>eJukebox Controller App</strong> today to be in total control of the music at your venue.</p>
+</div>
 
-Easily set guardrails:
-- Allow requests from currently selected playlist
-- Allow requests from the entire music library
+<div class="download-cards">
+  <a href="https://apps.apple.com/us/app/ejukebox-controller-app/id978645792" class="download-card apple" target="_blank">
+    <img src="blobs/AppleAppStoreLogo.png" alt="Download on the App Store">
+    <span class="platform-label">iOS</span>
+  </a>
+  <a href="https://play.google.com/store/apps/details?id=au.com.ejukebox.ejukeboxcontrollerv2" class="download-card google" target="_blank">
+    <img src="blobs/GooglePlayStoreLogo.png" alt="Get it on Google Play">
+    <span class="platform-label">Android</span>
+  </a>
+</div>
 
-It's your choice, as you're in control. Then sit back, relax and keep your customers happy, let your customers request any song they like. You can then **move requests to the top of the queue**, **freeze requests**, **delete requests** or **instantly play a request**. 
+<div class="guardrails-section">
+  <div class="section-header">
+    <i class="fas fa-shield-alt"></i>
+    <h2>Easily Set Guardrails</h2>
+  </div>
+  <div class="guardrails-options">
+    <div class="guardrail-option">
+      <i class="fas fa-music"></i>
+      <p>Allow requests from currently selected playlist</p>
+    </div>
+    <div class="guardrail-option">
+      <i class="fas fa-database"></i>
+      <p>Allow requests from the entire music library</p>
+    </div>
+  </div>
+  <p class="guardrails-note">It's your choice, as you're in control. Then sit back, relax and keep your customers happy, let your customers request any song they like.</p>
+</div>
 
-<p align="center"><a href="https://play.google.com/store/apps/details?id=au.com.ejukebox.ejukeboxcontrollerv2">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="200" src="blobs/GooglePlayStoreLogo.png"></a></p>
+<div class="control-features">
+  <div class="feature-pill">
+    <i class="fas fa-arrow-up"></i>
+    Move requests to top
+  </div>
+  <div class="feature-pill">
+    <i class="fas fa-snowflake"></i>
+    Freeze requests
+  </div>
+  <div class="feature-pill">
+    <i class="fas fa-trash"></i>
+    Delete requests
+  </div>
+  <div class="feature-pill">
+    <i class="fas fa-play"></i>
+    Instantly play
+  </div>
+</div>
 
-Whether you run a venue (pub, club, cafe or retail outlet) or a function, the **eJukebox Controller App** is so easy to use that you can mingle, blend in and have fun like everyone else. 
+<div class="use-case-section">
+  <div class="use-case-content">
+    <p>Whether you run a venue (pub, club, cafe or retail outlet) or a function, the <strong>eJukebox Controller App</strong> is so easy to use that you can mingle, blend in and have fun like everyone else.</p>
+  </div>
+</div>
 
-<p align="center">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="600" src="blobs/ejukebox-app.jpg"></p>
+<div class="app-screenshot">
+  <img src="blobs/ejukebox-app.jpg" alt="eJukebox App in action">
+</div>

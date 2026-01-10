@@ -1,74 +1,169 @@
-[//]: # (margin:top right bottom left)
+---
+layout: default
+title: $1/Day Streaming Package
+---
 
-The new **eJukebox** `Smooth` and **eJukebox** `Hits` packages have finally arrived!
+<div class="package-hero smooth-theme">
+  <div class="hero-content">
+    <div class="package-badge smooth">
+      <i class="fas fa-dollar-sign"></i>
+      BEST VALUE
+    </div>
+    <h1>eJukebox <span class="gradient-text">$1/Day</span> Package</h1>
+    <p class="hero-subtitle">Premium commercial-licensed music streaming for your business. Choose from 4 curated channels - no ads, no commercials, just back-to-back quality music.</p>
+    <div class="price-highlight">
+      <span class="price">$1</span>
+      <span class="period">/ day</span>
+    </div>
+  </div>
+</div>
 
-<!-- <p align="center">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="500" src="blobs/eJukebox_Smooth.png"></p> -->
+<div class="video-showcase">
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gjqB1u8GIxs?playlist=gjqB1u8GIxs&loop=1&autoplay=1&mute=1&showinfo=1&rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
 
-<p align="center"><iframe width="500" height="290"
-    src="https://www.youtube.com/embed/gjqB1u8GIxs?playlist=gjqB1u8GIxs&loop=1&Version=3&autoplay=1&mute=1&showinfo=1&rel=0">
-</iframe></p>
+<div class="package-intro">
+  <p class="lead-text"><strong>eJukebox $1/Day Package</strong> gives your business premium commercial-licensed music at an unbeatable price. Perfect for cafes, retail outlets, and smaller venues who want quality sound without the complexity.</p>
+</div>
 
-<!-- <p align="center">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="500" src="blobs/eJukebox_Hits.png"></p> -->
+<div class="options-section">
+  <div class="section-header">
+    <i class="fas fa-music"></i>
+    <h2>4 Channels Included</h2>
+  </div>
+  <div class="options-grid four-cols">
+    <div class="option-card smooth">
+      <div class="option-icon">
+        <i class="fas fa-spa"></i>
+      </div>
+      <h3>Smooth</h3>
+      <p>Relaxed vibes from the 60s to today. Perfect for cafes and dining.</p>
+    </div>
+    <div class="option-card hits">
+      <div class="option-icon">
+        <i class="fas fa-fire"></i>
+      </div>
+      <h3>Hits</h3>
+      <p>Latest chart hits and Pop/Top 40. Energetic and modern.</p>
+    </div>
+    <div class="option-card rock">
+      <div class="option-icon">
+        <i class="fas fa-guitar"></i>
+      </div>
+      <h3>Rock</h3>
+      <p>Classic rock anthems and modern favourites. Great for pubs and bars.</p>
+    </div>
+    <div class="option-card country">
+      <div class="option-icon">
+        <i class="fas fa-hat-cowboy"></i>
+      </div>
+      <h3>Country</h3>
+      <p>Country classics and new hits. Perfect for venues with a country vibe.</p>
+    </div>
+  </div>
+</div>
 
-All the same great smooth music that you love today, no ads, no commercials and no senseless talk. Just back-to-back music.
+<div class="why-choose-section">
+  <div class="section-header">
+    <i class="fas fa-star"></i>
+    <h2>Why Choose eJukebox?</h2>
+  </div>
+  
+  <div class="reasons-grid">
+    <div class="reason-card">
+      <div class="reason-number">1</div>
+      <div class="reason-content">
+        <h3><i class="fas fa-list-music"></i> Professionally Curated Playlists</h3>
+        <p>Our playlists aren't random. We closely monitor what radio stations in Sydney are playing, logging every song and tracking how often and at what times they play.</p>
+        <p class="highlight">Every fortnight, we use this data to generate high-quality, radio-station-style playlists with professional radio station automation software. Each channel sounds just like its closest radio station match.</p>
+      </div>
+    </div>
+    
+    <div class="reason-card">
+      <div class="reason-number">2</div>
+      <div class="reason-content">
+        <h3><i class="fas fa-volume-up"></i> Superior Sound Quality</h3>
+        <p>Each song undergoes state-of-the-art broadcast-quality audio processing, ensuring every track sounds impeccable with consistent volume levels—unlike Spotify, where volumes can vary within and between songs.</p>
+      </div>
+    </div>
+    
+    <div class="reason-card">
+      <div class="reason-number">3</div>
+      <div class="reason-content">
+        <h3><i class="fas fa-gavel"></i> Legal for Commercial Use</h3>
+        <p>Unlike Spotify, which is for personal use only and illegal to use in public places, all eJukebox channels are fully licensed for commercial use. You can confidently use our service in your business without worrying about legal issues.</p>
+        <div class="spotify-warning">
+          <a href="https://support.spotify.com/us/article/spotify-public-commercial-use/">
+            <img src="blobs/spotify_license.png" alt="Spotify licensing warning">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="reason-card">
+      <div class="reason-number">4</div>
+      <div class="reason-content">
+        <h3><i class="fas fa-child"></i> Safe for All Ages</h3>
+        <p>All music is free from expletives, making it suitable for all age groups. You can confidently play our music in any environment, knowing it's always family-friendly.</p>
+      </div>
+    </div>
+    
+    <div class="reason-card">
+      <div class="reason-number">5</div>
+      <div class="reason-content">
+        <h3><i class="fas fa-server"></i> Reliable and Robust</h3>
+        <p>Runs on the Microsoft cloud, backed by a <strong>99.95% uptime service level guarantee</strong>. You can count on uninterrupted, high-quality music streaming for your business.</p>
+      </div>
+    </div>
+    
+    <div class="reason-card">
+      <div class="reason-number">6</div>
+      <div class="reason-content">
+        <h3><i class="fas fa-plug"></i> Easy Setup</h3>
+        <p>You'll receive a unique URL allowing up to two simultaneous connections. Platform-agnostic, works with browsers, music players, Sonos and more. Like Netflix, each subscriber can listen from anywhere over the internet.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-**eJukebox** is a music full solution for pubs, clubs, cafes and retail outlets. Now, a streamlined version of **eJukebox** can be at **your** business today for the low cost of **$1 / day**.
+<div class="enhance-cta">
+  <div class="cta-content">
+    <h2>Start Streaming Today for Just $1/Day</h2>
+    <p>Get high-quality, professionally curated music tailored to your business needs. Choose from 4 channels, easy setup, and legal peace of mind.</p>
+    <a href="mailto:info@ejukebox.com.au" class="cta-button primary">
+      <i class="fas fa-envelope"></i>
+      Contact Us: info@ejukebox.com.au
+    </a>
+    <p class="price-reminder">All 4 channels included for just <strong>$1 / day</strong></p>
+  </div>
+</div>
 
-## Our Options:
-
-- **eJukebox Smooth**: Enjoy back-to-back smooth music from the 60s to today, providing a relaxed and inviting atmosphere for your business.
-
-- **eJukebox Hits**: Stay current with the latest chart hits and Pop/Top 40 music, creating an energetic and modern vibe.
-
-## Why Choose eJukebox?
-
-1. **Professionally Curated Playlists**:
-Our playlists aren't random. We closely monitor what radio stations in Sydney are playing, logging every song and tracking how often and at what times they play. Every fortnight, we use this data to generate high-quality, radio-station-style playlists with professional radio station automation software. This ensures that eJukebox Smooth and eJukebox Hits sound just like their closest radio station match. For example, if one song played 100 times in the past fortnight and another 90 times, our playlists reflect this precise scheduling.
-
-2. **Superior Sound Quality**:
-Each song on eJukebox Smooth and eJukebox Hits undergoes state-of-the-art broadcast-quality audio processing, ensuring every track sounds impeccable. Songs are perfectly mixed, maintaining consistent volume levels throughout—unlike Spotify, where volumes can vary within and between songs. This means every track you hear sounds like a million dollars, providing a seamless listening experience similar to professional radio stations.
-
-3. **Legal for Commercial Use**:
-Unlike Spotify, which is for personal use only and illegal to use in public places as per their terms and conditions, eJukebox Smooth and eJukebox Hits are fully licensed for commercial use. You can confidently use our service in your business without worrying about legal issues.
-
-<p align="center"><a href="https://support.spotify.com/us/article/spotify-public-commercial-use/">
-<img style="vertical-align:middle;margin:5px 0px 0px 5px" width="500" src="blobs/spotify_license.png">
-</a></p>
-
-4. **Safe for All Ages**
-All music on eJukebox Smooth and eJukebox Hits is free from expletives, making it suitable for all age groups. You can confidently play our music in any environment, knowing it’s always family-friendly.
-
-5. **Reliable and Robust**
-eJukebox runs on the Microsoft cloud, backed by a 99.95% uptime service level guarantee. You can count on uninterrupted, high-quality music streaming for your business.
-
-6. **Easy Setup**:
-Getting started with eJukebox is simple. You’ll receive a unique URL, such as **https://smooth.ejukebox.net/{unique_value}**, allowing up to two simultaneous connections. Play this on any computer or mobile device through your existing audio equipment. Our URL is platform-agnostic, compatible with browsers, music players, Sonos systems, and more. Like Netflix, each subscriber can listen from anywhere over the internet, within the maximum number of connections.
-
-**Enhance Your Business Atmosphere with eJukebox**
-With eJukebox Smooth and eJukebox Hits, you get high-quality, professionally curated music tailored to your business needs. Elevate the ambiance of your space with consistently great sound, easy setup, and legal peace of mind. Contact us today to learn more and get started!
-
-**Be up and running today**, **Contact us** [info@ejukebox.com.au](mailto:info@ejukebox.com.au) to get your **eJukebox smooth** license & unique URL for **$1 / day**.
-
-## Sneak preview
-Want to hear how **eJukebox** sounds? Check us out on **iHeart radio**:
-
-| eJukebox Smooth | eJukebox Hits |
-| -------- | ------- |
-|  [https://www.iheart.com/live/ejukebox-smooth-9750](https://www.iheart.com/live/ejukebox-smooth-9750) | [https://www.iheart.com/live/ejukebox-hits-9243](https://www.iheart.com/live/ejukebox-hits-9243) |
-
-
-
-<!-- <p align="center"><a href="https://www.iheart.com/live/ejukebox-smooth-9750/"><img style="vertical-align:middle;margin:5px 0px 0px 5px" width="200" src="blobs/eJukebox%20Smooth_72dpi.png"></a></p>
-<p align="center"><a href="https://www.iheart.com/live/ejukebox-hits-9243/"><img style="vertical-align:middle;margin:5px 0px 0px 5px" width="200" src="blobs/eJukebox%20Hits_72dpi.png"></a></p> -->
-
-Notice the quality of the sound? This is the exact same quality that **you** get!
-
-<!-- ## Other details
-
-- No contracts to sign, cancel anytime, first week is on us (try it **free** for a week)
-- **eJukebox Smooth** & **eJukebox Hits** runs from the Microsoft cloud and is backed with a 99.95% up-time service level guarantee.
-- An **eJukebox Smooth** & **eJukebox Hits** subscription is similar to a Netflix subscription, where each subscriber can listen from anywhere over the internet and has a maximum number of connections.
-- **eJukebox Smooth** & **eJukebox Hits** is a radically simplified version of **eJukebox**. It costs us less to run **eJukebox Smooth** & **eJukebox Hits**, and as a result, we are passing on the savings to you.
-- **eJukebox** or **eJukebox Smooth** & **eJukebox Hits** has no expletives in any of the music heard, so it's always safe for all ages. -->
+<div class="preview-section">
+  <div class="section-header">
+    <i class="fas fa-headphones"></i>
+    <h2>Preview All Channels</h2>
+  </div>
+  <p class="preview-intro">Want to hear how <strong>eJukebox</strong> sounds? <a href="/stream-us.html">Try all 4 channels</a> or check us out on <strong>iHeart Radio</strong>:</p>
+  
+  <div class="iheart-links">
+    <a href="https://www.iheart.com/live/ejukebox-smooth-9750" class="iheart-card smooth" target="_blank">
+      <div class="iheart-icon"><i class="fas fa-spa"></i></div>
+      <h3>Smooth</h3>
+      <span class="listen-now">Listen on iHeart <i class="fas fa-external-link-alt"></i></span>
+    </a>
+    <a href="https://www.iheart.com/live/ejukebox-hits-9243" class="iheart-card hits" target="_blank">
+      <div class="iheart-icon"><i class="fas fa-fire"></i></div>
+      <h3>Hits</h3>
+      <span class="listen-now">Listen on iHeart <i class="fas fa-external-link-alt"></i></span>
+    </a>
+    <a href="https://www.iheart.com/live/whisperscape-rock-10474/" class="iheart-card rock" target="_blank">
+      <div class="iheart-icon"><i class="fas fa-guitar"></i></div>
+      <h3>Rock</h3>
+      <span class="listen-now">Listen on iHeart <i class="fas fa-external-link-alt"></i></span>
+    </a>
+  </div>
+  
+  <p class="quality-note"><i class="fas fa-gem"></i> Notice the quality? This is the exact same quality that <strong>you</strong> get with all 4 channels!</p>
+</div>

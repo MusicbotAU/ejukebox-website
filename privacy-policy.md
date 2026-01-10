@@ -1,3 +1,8 @@
+---
+layout: default
+title: Privacy Policy
+---
+
 # Privacy Policy 
 
 Musicbot Pty Ltd is committed to providing quality services to you and this
@@ -20,7 +25,7 @@ addresses, phone and facsimile numbers.
 
 This Personal Information is obtained in many ways including **[interviews,
 correspondence, by telephone and facsimile, by email, via our website
-www.yourbusinessname.com.au, from your website, from media and publications,
+https://ejukebox.com.au, from your website, from media and publications,
 from other publicly available sources, from cookies- delete all that aren’t
 applicable]** and from third parties. We don’t guarantee website links or policy
 of authorised third parties.

@@ -1,72 +1,256 @@
-[//]: # (margin:top right bottom left)
-[//]: # (https://raw.githubusercontent.com/joshbuchea/HEAD/master/README.md | example of markdown)
-[//]: # (Guide to aligning images https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d)
+---
+layout: default
+title: Home
+---
 
-## eJukebox package - $1/day (Whisperscape)
+<div class="hero-stat-banner">
+  <div class="hero-stat-content">
+    <div class="hero-stat-label">Research Shows</div>
+    <div class="hero-stat-main">
+      <span class="hero-stat-text">Venues with music have</span>
+      <span class="hero-stat-number">48.2%</span>
+      <span class="hero-stat-text">more sales</span>
+    </div>
+    <div class="hero-stat-source">
+      <i class="fas fa-chart-bar"></i>
+      Source: OneMusic <a href="https://onemusic.com.au/presto/" target="_blank">Hospitality Presto Report</a>
+    </div>
+    <div class="hero-stat-cta">
+      <span class="pulse-dot"></span>
+      Is your venue maximizing its potential?
+    </div>
+  </div>
+  <div class="hero-stat-visual">
+    <div class="comparison-bars">
+      <div class="bar-group">
+        <div class="bar bar-without"></div>
+        <span class="bar-label">Without Music</span>
+      </div>
+      <div class="bar-group">
+        <div class="bar bar-with"></div>
+        <span class="bar-label">With Music</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p align="center">
-<img style="vertical-align:middle;margin:5px 0px 5px 0px" width="300" src="blobs/Black%20logo%20-%20no%20background.png"></p>
+---
 
-### Discover Whisperscape: Your Perfect Business Music Solution
+<div class="section-header-fancy">
+  <span class="section-icon"><i class="fas fa-users"></i></span>
+  <h2>Music Matters to Customers</h2>
+</div>
 
-This package used to be part fo the eJukebox suite of products, now it's being marketed separately with a complete rebranding. 
+<div class="stats-showcase">
+  <div class="stat-card">
+    <div class="stat-icon"><i class="fas fa-building"></i></div>
+    <div class="stat-number" data-target="97">97%</div>
+    <div class="stat-label">of venues recognise their customers want to hear music</div>
+  </div>
+  
+  <div class="stat-card warning">
+    <div class="stat-icon"><i class="fas fa-frown"></i></div>
+    <div class="stat-number" data-target="27">27%</div>
+    <div class="stat-label">of customers said the music chosen by a venue actually created a nice atmosphere</div>
+    <div class="stat-badge">Room for improvement!</div>
+  </div>
+  
+  <div class="stat-card danger">
+    <div class="stat-icon"><i class="fas fa-door-open"></i></div>
+    <div class="stat-number" data-target="90">90%</div>
+    <div class="stat-label">said bad music made them leave or vow never to return</div>
+    <div class="stat-badge">Don't lose customers!</div>
+  </div>
+  
+  <div class="stat-card success">
+    <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+    <div class="stat-number" data-target="21">+21%</div>
+    <div class="stat-label">more sales on weekdays in pubs with music vs no music</div>
+    <div class="stat-badge">Boost your revenue!</div>
+  </div>
+</div>
 
-Elevate your business ambiance with **Whisperscape**, the ultimate music service designed for pubs, cafes, and retail spaces. **Whisperscape** offers live-streamed, professionally curated playlists that create a welcoming and familiar atmosphere for your customers. Our music is free from swearing, fully licensed for commercial use, and sounds fantastic thanks to state-of-the-art audio processing.
+<div class="stats-cta">
+  <p><strong>The solution?</strong> Professionally curated music from <strong>eJukebox</strong></p>
+  <a href="/products.html" class="btn-glow">See Our Packages <i class="fas fa-arrow-right"></i></a>
+</div>
 
-Experience the ease of setup with **Whisperscape**. Simply type your custom stream URL into any browser and enjoy seamless music instantly, without needing any client app. With tailored playlists for different times of the day, **Whisperscape** ensures that your business always has the right vibe.
+---
 
-Visit [Whisperscape](https://whisperscape.live) to learn more and transform your business with the perfect soundtrack.
+<div class="section-header-fancy">
+  <span class="section-icon"><i class="fas fa-music"></i></span>
+  <h2>Music for your business</h2>
+</div>
 
-<br>
+<div class="features-grid-home">
+  <div class="feature-card-home">
+    <div class="feature-icon-home radio"><i class="fas fa-broadcast-tower"></i></div>
+    <h3>Live-Streamed Like a Radio Station</h3>
+    <p>Unlike other services that play songs one by one, <strong>eJukebox</strong> streams music live from Australia, creating a seamless and cohesive listening experience similar to popular in-store radio stations like Coles Radio or Woolworths Radio.</p>
+  </div>
+  
+  <div class="feature-card-home">
+    <div class="feature-icon-home playlist"><i class="fas fa-list-music"></i></div>
+    <h3>Professionally Curated Playlists</h3>
+    <p>Our playlists are crafted by real people, not algorithms. This means each song is carefully selected and positioned for a perfect flow, so you'll never need to skip a track.</p>
+  </div>
+  
+  <div class="feature-card-home">
+    <div class="feature-icon-home setup"><i class="fas fa-magic"></i></div>
+    <h3>Stress-Free Setup</h3>
+    <p>With <strong>eJukebox</strong>, there's no need to worry about creating or managing playlists. Our tried and tested music selection is designed to provide a stress-free, enjoyable ambiance for your customers.</p>
+  </div>
+  
+  <div class="feature-card-home">
+    <div class="feature-icon-home volume"><i class="fas fa-sliders-h"></i></div>
+    <h3>Consistent Volume Levels</h3>
+    <p>Enjoy superior sound quality with consistent volume levels across all songs, avoiding the jarring volume changes common in other music services.</p>
+  </div>
+  
+  <div class="feature-card-home">
+    <div class="feature-icon-home custom"><i class="fas fa-star"></i></div>
+    <h3>Custom Radio Stations</h3>
+    <p>We can create a custom radio station tailored specifically for your business, just like the supermarkets, enhancing your brand and customer experience.</p>
+  </div>
+</div>
 
-## eJukebox package - $115/month
+<div class="home-image-showcase">
+  <img src="blobs/eJukebox_fun04.jpg" alt="eJukebox in action">
+</div>
 
-Exactly the same as **Whisperscape**, with the addition of:
-- Your own unique dedicted hardware to play the music - plugs into your existing sound system
-  - eJukebox is a real music solution for your business
-- Your choice of 12 playlists (including Hits and Smooth), which you can change at anytime using an app on your phone
-- Allow your customers to make song requests automatically using their own phones - like a jukebox in the palm of their hands
-  - You have complete control of the requests, delete requests, move requests to the top of the queue
-  - Allow customers to request songs from the currently selected playlist, or allow customers to request any song from the entire music library
-  - Customers can see the current playing song, the last played songs, and the request queue to see when their song/s will be played
-- The app also allows you to skip songs, pause or play songs instantly
+---
 
-<br>
+<div class="venue-showcase pub-cafe">
+  <div class="venue-content">
+    <div class="venue-icon"><i class="fas fa-beer"></i></div>
+    <h2>Enhance Your Pub or Café Atmosphere</h2>
+    <p>At <strong>eJukebox</strong>, our playlists are meticulously curated to mirror the familiar feel of top radio stations, ensuring each song resonates with your customers. This familiarity creates a warm and inviting atmosphere in your pub or café, encouraging patrons to stay longer and spend more. Studies show that customers who feel comfortable in familiar surroundings are more likely to make purchases, boosting your business's revenue.</p>
+    <p>Additionally, all our songs are free from swearing, making them safe for families and suitable for all age groups. Choose <strong>eJukebox</strong> for a seamless, family-friendly music experience that enhances your customers' visit.</p>
+    <div class="venue-badges">
+      <span class="venue-badge"><i class="fas fa-child"></i> Family Friendly</span>
+      <span class="venue-badge"><i class="fas fa-clock"></i> Stay Longer</span>
+      <span class="venue-badge"><i class="fas fa-dollar-sign"></i> Spend More</span>
+    </div>
+  </div>
+  <div class="venue-image">
+    <img src="blobs/eJukebox_fun07.jpg" alt="Pub and Café atmosphere">
+  </div>
+</div>
 
-<img align="left" style="vertical-align:middle;margin:10px 10px 5px 0px" width="225" src="blobs/what_is_ejukebox.jpg">
+---
 
-**eJukebox** is a music solution for pubs, clubs, bars, venues, cafes, retail outlets & functions. **eJukebox** is not your average jukebox, our music solution for your venue is a technologically advanced and cloud driven music solution with access to thousands of songs. We are fully licensed and competitive to supply all the latest, safe non-explicit music that can be used as the music source to play throughout your venue. 
+<div class="venue-showcase medical reverse">
+  <div class="venue-content">
+    <div class="venue-icon"><i class="fas fa-hospital"></i></div>
+    <h2>Elevate Your Medical Center's Ambiance</h2>
+    <p>At <strong>eJukebox</strong>, every track undergoes state-of-the-art broadcast-quality audio processing to ensure impeccable sound. Unlike other online music services where volume levels can fluctuate, our songs are perfectly mixed for consistent volume throughout. This professional-grade sound quality provides a seamless listening experience akin to top radio stations, creating a calming and flawless ambiance in your medical center. Patients will appreciate the serene and consistent audio environment, enhancing their overall experience and comfort during their visit.</p>
+    <div class="venue-badges">
+      <span class="venue-badge"><i class="fas fa-volume-down"></i> Calming Audio</span>
+      <span class="venue-badge"><i class="fas fa-heart"></i> Patient Comfort</span>
+      <span class="venue-badge"><i class="fas fa-check-circle"></i> Professional Sound</span>
+    </div>
+  </div>
+  <div class="venue-image">
+    <img src="blobs/pexels-photo-6809658-1920w.webp" alt="Medical center ambiance">
+  </div>
+</div>
 
-**eJukebox** is a technically advanced jukebox and can accept song requests from any smartphone and also plays music 24/7 throughout the entirety of your venue. It can plug into any existing sound system and can easily extend to cover any size venue, whether that be a pub, club, bar, cafe or retail outlet.
+---
 
-Unlike the others, our music solution for venues **eJukebox** uses state of the art digital audio processing with songs professionally mixed (just like FM radio stations). With many curated playlists to choose from, your customers can use their smartphones to request any song of their liking from the currently selected playlist.
+<div class="venue-showcase retail">
+  <div class="venue-content">
+    <div class="venue-icon"><i class="fas fa-store"></i></div>
+    <h2>Ensure Legal Compliance in your pub, bar or retail store</h2>
+    <p><strong>eJukebox</strong> is fully licensed for commercial use, unlike personal music services like Spotify or Amazon Music, which are illegal to play in public settings according to their terms and conditions. With <strong>eJukebox</strong>, you can confidently play music in your pub, bar or retail store without any legal concerns, ensuring compliance and peace of mind. Enjoy high-quality, professionally curated playlists that enhance your store's atmosphere while staying within the law.</p>
+    <div class="venue-badges">
+      <span class="venue-badge"><i class="fas fa-gavel"></i> Fully Licensed</span>
+      <span class="venue-badge"><i class="fas fa-shield-alt"></i> Legal & Compliant</span>
+      <span class="venue-badge"><i class="fas fa-smile"></i> Peace of Mind</span>
+    </div>
+  </div>
+  <div class="venue-image">
+    <img src="blobs/pexels-photo-3851422-1920w.webp" alt="Retail store ambiance">
+  </div>
+</div>
 
-The **eJukebox** music system has arguably the largest collection of popular music with all the newest music. We have a full music library with all the latest music thanks to our licenses which provide you with regular new music releases from all the major record companies.
+---
 
-<p align="center">
-<img style="vertical-align:middle;margin:5px 0px 5px 0px" width="600" src="blobs/eJukebox_fun04.jpg"></p>
+<div class="dayparting-section">
+  <div class="dayparting-header">
+    <span class="dayparting-icon"><i class="fas fa-clock"></i></span>
+    <h2>Perfectly Timed Music for Every Part of the Day</h2>
+    <p class="dayparting-subtitle"><strong>eJukebox</strong> uses time-of-day music scheduling, or 'dayparting,' to ensure the right songs play at the right times.</p>
+  </div>
+  <div class="dayparting-timeline">
+    <div class="time-block morning">
+      <div class="time-icon"><i class="fas fa-sun"></i></div>
+      <h4>Morning</h4>
+      <p>Light, uplifting tunes to start the day</p>
+    </div>
+    <div class="time-block afternoon">
+      <div class="time-icon"><i class="fas fa-cloud-sun"></i></div>
+      <h4>Afternoon</h4>
+      <p>Energetic tracks for the midday rush</p>
+    </div>
+    <div class="time-block evening">
+      <div class="time-icon"><i class="fas fa-moon"></i></div>
+      <h4>Evening</h4>
+      <p>Upbeat vibes for the night crowd</p>
+    </div>
+  </div>
+  <p class="dayparting-description">Our live-streamed service provides a dynamic and engaging atmosphere tailored to your customers' moods throughout the day.</p>
+</div>
 
-**eJukebox** is fully controlled by a smartphone app that can replace a DJ on most occasions. Lets face it, a normal DJ just stands in the corner and presses buttons mostly playing what they think the crowd wants to hear. Instead, your customers will be happy customers where they themselves can be the DJ choosing songs on their smartphone with the guardrails in place that you setup, so that a heavy metal song won't play while people are dining for example. The **eJukebox** music solution is available for functions or is available as a permanent music solution. We are a popular music provider and an obvious choice for venues such as pubs, clubs, bars, cafes or retail outlets.
+---
 
-<p align="center">
-<img style="vertical-align:middle;margin:5px 0px 5px 0px" width="600" src="blobs/eJukebox_fun07.jpg"></p>
+<div class="test-drive-section">
+  <div class="test-drive-content">
+    <span class="test-drive-badge"><i class="fas fa-headphones"></i> Listen Now</span>
+    <h2>Test Drive eJukebox Before You Sign Up</h2>
+    <p><strong>eJukebox</strong> is now an online radio station and has signed with iHeart Radio. We are streaming across the planet, commercial-free music 24/7 showing exactly what <strong>eJukebox</strong> is all about.</p>
+    <a href="./stream-us.html" class="iheart-link">
+      <img src="blobs/iHeartRadio_logo.png" alt="Listen on iHeart Radio">
+    </a>
+    <div class="test-drive-features">
+      <div class="test-feature">
+        <i class="fas fa-check-circle"></i>
+        <span>The music played is exactly the same as what you hear on commercial radio so that you don't alienate your customers</span>
+      </div>
+      <div class="test-feature">
+        <i class="fas fa-check-circle"></i>
+        <span>You won't be slapped with a law suit by playing music with swearing or explicit lyrics</span>
+      </div>
+      <div class="test-feature">
+        <i class="fas fa-check-circle"></i>
+        <span>You're not breaking the law by playing music without a licence e.g. Spotify can't be played in public</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-Contact us today [info@ejukebox.com.au](mailto:info@ejukebox.com.au) to get your **eJukebox** licence for **$115 / month**.
+---
 
-## Test drive **eJukebox** before you sign up, right now
-**eJukebox** is now an online radio station and has signed with iHeart Radio. We are streaming across the planet, commercial free music 24/7 showing exactly what **eJukebox** is all about. **eJukebox** is a music solution for pubs, clubs, bars, venues, cafes, retail outlets & functions, and now, we're your **online** music solution. You can take us for a spin and put us to our paces by giving us the pub test. 
+<div class="trial-cta-section">
+  <div class="trial-glow"></div>
+  <div class="trial-content">
+    <span class="trial-badge"><i class="fas fa-gift"></i> Risk-Free Offer</span>
+    <h2>Free 7-Day Trial</h2>
+    <p>Have <strong>eJukebox</strong> in your business for a risk-free 7 day trial. If you don't like it, you can cancel at any time. If you do like it, you can seamlessly continue with a monthly subscription.</p>
+    <a href="mailto:info@ejukebox.com.au" class="trial-cta-button">
+      <i class="fas fa-envelope"></i> Contact us today: info@ejukebox.com.au
+    </a>
+  </div>
+</div>
 
-**eJukebox** is now on iHeart radio appearing with the **Whisperscape** brand. .Hear for yourself the quality and the the selection of the music:
+---
 
-<p align="center"><a href="./stream-us.html">
-<img style="vertical-align:middle;margin:10px 0px 10px 0px" width="200" src="blobs/iHeartRadio_logo.png">
-</a></p>
-
-- The music played is exactly the same as what you hear on commercial radio so that you don't alienate your customers
-- You won't be slapped with a law suit by playing music with swearing or explicit lyrics
-- You're not breaking the law by playing music without a licence e.g. Spotify can't be played in public
-
-## **eJukebox** trial
-Have **eJukebox** or **Whisperscape** in your business for a risk free 7 day trial. If you don't like it, you can cancel at any time. If you do like it, you can seamlessly continue with a monthly subscription.
-
-[info@ejukebox.com.au](mailto:info@ejukebox.com.au)
+<div class="testimonial-home-section">
+  <div class="testimonial-card-home">
+    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+    <blockquote>"Much better music than the other music solution"</blockquote>
+    <div class="testimonial-author">
+      <div class="author-avatar"><i class="fas fa-user"></i></div>
+      <span>— Diana F.</span>
+    </div>
+  </div>
+</div>
