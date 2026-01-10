@@ -67,15 +67,15 @@ title: Why Us
       
       <div class="data-box">
         <i class="fas fa-database"></i>
-        <p>At <strong>eJukebox</strong>, we capture each and every song that commercial radio stations play, how many times a particular song is played and when exactly the song is played. We take this data and use it to create our playlists.</p>
+        <p>At <strong>eJukebox</strong>, we capture each and every song that commercial radio stations play, how many times a particular song is played and when exactly the song is played. We take this data and use it to create our channels.</p>
       </div>
       
       <div class="example-box">
         <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400" alt="Radio station" class="example-img">
         <div class="example-content">
           <p><strong>Kyle Sandilands</strong> is the highest paid media personality in Australia, he attracts listeners to <strong>Kiis FM</strong> Sydney. Being the number one FM radio station in Sydney, <strong>Kiis FM</strong> listeners are all too familiar with music on <strong>Kiis FM</strong>.</p>
-          <p>With <strong>eJukebox</strong>, our <strong>CHR/Pop</strong> playlist is a direct match to that of Kiis FM. As an example, if an <strong>Ed Sheeran</strong> song is played 100 times in a week on Kiis FM in comparison to a <strong>Dua Lipa</strong> song played 50 times in this same week, with <strong>eJukebox</strong> you'd hear exactly the same rotation of songs.</p>
-          <p class="tagline">So you can say that with the <strong>Top 40/Pop</strong> playlist we sound exactly like <strong>Kiis FM</strong>, without the commercials and talking.</p>
+          <p>With <strong>eJukebox</strong>, our <strong>CHR/Pop</strong> channel is a direct match to that of Kiis FM. As an example, if an <strong>Ed Sheeran</strong> song is played 100 times in a week on Kiis FM in comparison to a <strong>Dua Lipa</strong> song played 50 times in this same week, with <strong>eJukebox</strong> you'd hear exactly the same rotation of songs.</p>
+          <p class="tagline">So you can say that with the <strong>Top 40/Pop</strong> channel we sound exactly like <strong>Kiis FM</strong>, without the commercials and talking.</p>
         </div>
       </div>
     </div>

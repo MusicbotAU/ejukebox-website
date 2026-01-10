@@ -122,7 +122,7 @@ title: Products
   </div>
   <h2>Why $1 per Day is a Game-Changer</h2>
   <p>Unlike other music suppliers that stream songs individually, <strong>eJukebox</strong> offers a live-streaming experience akin to a radio station.</p>
-  <p>Using advanced radio station automation software in the cloud, our playlists are expertly curated and seamlessly integrated, providing a polished and cohesive listening experience. This ensures that each song transitions smoothly, creating a more enjoyable and engaging atmosphere for your customers.</p>
+  <p>Using advanced radio station automation software in the cloud, our channels are expertly curated and seamlessly integrated, providing a polished and cohesive listening experience. This ensures that each song transitions smoothly, creating a more enjoyable and engaging atmosphere for your customers.</p>
   <p><strong>Choose eJukebox for a superior sound experience that sets your business apart.</strong></p>
   <a href="mailto:info@ejukebox.com.au?subject=Free%20Trial%20Request" class="btn-glow">
     <i class="fas fa-play-circle"></i> Start Your Free Trial

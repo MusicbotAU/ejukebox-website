@@ -14,15 +14,38 @@ title: Automated Jukebox System
   </div>
 </div>
 
+<div class="auto-features-banner">
+  <div class="auto-feature">
+    <i class="fas fa-mobile-alt"></i>
+    <span>Smartphone Control</span>
+  </div>
+  <div class="auto-feature">
+    <i class="fas fa-music"></i>
+    <span>Seamless Music</span>
+  </div>
+  <div class="auto-feature">
+    <i class="fas fa-cloud"></i>
+    <span>Cloud Powered</span>
+  </div>
+  <div class="auto-feature">
+    <i class="fas fa-users"></i>
+    <span>Everyone's a DJ</span>
+  </div>
+</div>
+
 <div class="automated-showcase">
   <div class="showcase-image">
     <img src="blobs/totally_automated_jukebox_music_solution.jpg" alt="Totally automated jukebox music solution">
   </div>
   <div class="showcase-content">
-    <h2>New & Hip</h2>
+    <div class="showcase-badge"><i class="fas fa-sparkles"></i> New & Hip</div>
+    <h2>The Modern Jukebox Experience</h2>
     <p><strong>eJukebox</strong> is new and hip. While all other music solutions are static, eJukebox is the only totally automated shared music solution which is totally dynamic.</p>
     <p><strong>eJukebox</strong> is exactly like a conventional jukebox, except much newer - conventional jukeboxes are old school. An old school jukebox is a static device that sits on a wall or in the corner of a room, whereas <strong>eJukebox</strong> is today's technology in a jukebox eliminating the need to be anti-social lining up or standing in front of a jukebox for ages browsing through songs.</p>
-    <p>There are many other leading features that make our jukeboxes better than a standard jukebox, the biggest difference is that our jukebox is totally controlled by a smartphone from practically anywhere the music is heard.</p>
+    <div class="showcase-highlight">
+      <i class="fas fa-check-circle"></i>
+      <span>Totally controlled by smartphone from practically anywhere the music is heard</span>
+    </div>
   </div>
 </div>
 
@@ -33,6 +56,11 @@ title: Automated Jukebox System
     </div>
     <h2>Who Needs a DJ, When Everyone Can Be the DJ</h2>
     <p>With an <strong>eJukebox</strong> system, all your customers become the DJ. They can browse through all the music available on eJukebox conveniently from their smartphone, then they can choose a song straight away at the same time while holding a drink in the other hand. Customers can see what songs have been requested by everyone and see when their song is coming up.</p>
+    <div class="dj-badges">
+      <span class="dj-badge"><i class="fas fa-search"></i> Browse Songs</span>
+      <span class="dj-badge"><i class="fas fa-hand-pointer"></i> Request Instantly</span>
+      <span class="dj-badge"><i class="fas fa-list-ol"></i> See Queue</span>
+    </div>
   </div>
 </div>
 
@@ -45,6 +73,20 @@ title: Automated Jukebox System
     <p>As <strong>eJukebox</strong> is interactive, it will bring people closer together in an environment where they can interact with one another with excitement.</p>
     <div class="highlight-box">
       <p>Background music won't remain background music any longer, it will become the focus of the venue and spark that party atmosphere that will effortlessly drive those repeatable drink sales that you've been looking for.</p>
+    </div>
+    <div class="spark-benefits">
+      <div class="spark-benefit">
+        <i class="fas fa-glass-cheers"></i>
+        <span>Increase Drink Sales</span>
+      </div>
+      <div class="spark-benefit">
+        <i class="fas fa-heart"></i>
+        <span>Customer Engagement</span>
+      </div>
+      <div class="spark-benefit">
+        <i class="fas fa-redo"></i>
+        <span>Repeat Visits</span>
+      </div>
     </div>
   </div>
 </div>
@@ -88,5 +130,17 @@ title: Automated Jukebox System
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="automated-cta-section">
+  <div class="cta-glow"></div>
+  <div class="cta-content">
+    <span class="cta-badge"><i class="fas fa-rocket"></i> Get Started Today</span>
+    <h2>Ready to Transform Your Venue?</h2>
+    <p>Give your customers the ultimate music experience with eJukebox - where everyone becomes the DJ!</p>
+    <a href="mailto:info@ejukebox.com.au" class="cta-button-auto">
+      <i class="fas fa-envelope"></i> Contact Us Now
+    </a>
   </div>
 </div>

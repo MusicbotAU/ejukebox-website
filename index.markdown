@@ -34,6 +34,25 @@ title: Home
   </div>
 </div>
 
+<div class="hero-image-section">
+  <div class="hero-image-container">
+    <div class="hero-image-glow"></div>
+    <img src="blobs/eJukebox_fun04.jpg" alt="eJukebox in action">
+    <div class="hero-image-overlay">
+      <div class="hero-image-content">
+        <a href="./stream-us.html" class="hero-image-badge"><i class="fas fa-play-circle"></i> Listen to eJukebox Now</a>
+        <h2>Music That Brings People Together</h2>
+        <p>Transform your venue's atmosphere with professionally curated music channels</p>
+        <div class="hero-image-features">
+          <span><i class="fas fa-check"></i> Family Friendly</span>
+          <span><i class="fas fa-check"></i> Fully Licensed</span>
+          <span><i class="fas fa-check"></i> No Ads</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 ---
 
 <div class="section-header-fancy">
@@ -91,14 +110,14 @@ title: Home
   
   <div class="feature-card-home">
     <div class="feature-icon-home playlist"><i class="fas fa-list-music"></i></div>
-    <h3>Professionally Curated Playlists</h3>
-    <p>Our playlists are crafted by real people, not algorithms. This means each song is carefully selected and positioned for a perfect flow, so you'll never need to skip a track.</p>
+    <h3>Professionally Curated Channels</h3>
+    <p>Our channels are crafted by real people, not algorithms. This means each song is carefully selected and positioned for a perfect flow, so you'll never need to skip a track.</p>
   </div>
   
   <div class="feature-card-home">
     <div class="feature-icon-home setup"><i class="fas fa-magic"></i></div>
     <h3>Stress-Free Setup</h3>
-    <p>With <strong>eJukebox</strong>, there's no need to worry about creating or managing playlists. Our tried and tested music selection is designed to provide a stress-free, enjoyable ambiance for your customers.</p>
+    <p>With <strong>eJukebox</strong>, there's no need to worry about creating or managing music. Our tried and tested selection is designed to provide a stress-free, enjoyable ambiance for your customers.</p>
   </div>
   
   <div class="feature-card-home">
@@ -114,17 +133,13 @@ title: Home
   </div>
 </div>
 
-<div class="home-image-showcase">
-  <img src="blobs/eJukebox_fun04.jpg" alt="eJukebox in action">
-</div>
-
 ---
 
 <div class="venue-showcase pub-cafe">
   <div class="venue-content">
     <div class="venue-icon"><i class="fas fa-beer"></i></div>
     <h2>Enhance Your Pub or Café Atmosphere</h2>
-    <p>At <strong>eJukebox</strong>, our playlists are meticulously curated to mirror the familiar feel of top radio stations, ensuring each song resonates with your customers. This familiarity creates a warm and inviting atmosphere in your pub or café, encouraging patrons to stay longer and spend more. Studies show that customers who feel comfortable in familiar surroundings are more likely to make purchases, boosting your business's revenue.</p>
+    <p>At <strong>eJukebox</strong>, our music channels are meticulously curated to mirror the familiar feel of top radio stations, ensuring each song resonates with your customers. This familiarity creates a warm and inviting atmosphere in your pub or café, encouraging patrons to stay longer and spend more. Studies show that customers who feel comfortable in familiar surroundings are more likely to make purchases, boosting your business's revenue.</p>
     <p>Additionally, all our songs are free from swearing, making them safe for families and suitable for all age groups. Choose <strong>eJukebox</strong> for a seamless, family-friendly music experience that enhances your customers' visit.</p>
     <div class="venue-badges">
       <span class="venue-badge"><i class="fas fa-child"></i> Family Friendly</span>
@@ -161,7 +176,7 @@ title: Home
   <div class="venue-content">
     <div class="venue-icon"><i class="fas fa-store"></i></div>
     <h2>Ensure Legal Compliance in your pub, bar or retail store</h2>
-    <p><strong>eJukebox</strong> is fully licensed for commercial use, unlike personal music services like Spotify or Amazon Music, which are illegal to play in public settings according to their terms and conditions. With <strong>eJukebox</strong>, you can confidently play music in your pub, bar or retail store without any legal concerns, ensuring compliance and peace of mind. Enjoy high-quality, professionally curated playlists that enhance your store's atmosphere while staying within the law.</p>
+    <p><strong>eJukebox</strong> is fully licensed for commercial use, unlike personal music services like Spotify or Amazon Music, which are illegal to play in public settings according to their terms and conditions. With <strong>eJukebox</strong>, you can confidently play music in your pub, bar or retail store without any legal concerns, ensuring compliance and peace of mind. Enjoy high-quality, professionally curated music channels that enhance your store's atmosphere while staying within the law.</p>
     <div class="venue-badges">
       <span class="venue-badge"><i class="fas fa-gavel"></i> Fully Licensed</span>
       <span class="venue-badge"><i class="fas fa-shield-alt"></i> Legal & Compliant</span>
