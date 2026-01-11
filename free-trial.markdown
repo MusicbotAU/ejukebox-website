@@ -90,7 +90,7 @@ title: Free 7-Day Trial
           
           <div class="form-group">
             <label for="phone"><i class="fas fa-mobile-alt"></i> Phone Number (Australian Mobile)</label>
-            <input type="tel" id="phone" name="Phone Number" required placeholder="04XX XXX XXX" pattern="^(\+?61|0)4[0-9]{8}$">
+            <input type="tel" id="phone" name="Phone Number" required placeholder="04XX XXX XXX" pattern="^(\+?61\s?|0)4[0-9\s]{8,12}$">
             <span class="form-hint">We'll SMS your unique streaming URL to this number</span>
           </div>
           
@@ -199,8 +199,8 @@ title: Free 7-Day Trial
 </div>
 
 <script>
-// Azure Function URL - Update this with your actual function URL
-const AZURE_FUNCTION_URL = 'https://your-function-app.azurewebsites.net/api/UrlProvisionWebhook';
+// Azure Function URL for trial signup
+const AZURE_FUNCTION_URL = 'https://whisperscape-sms-form-response.azurewebsites.net/api/UrlProvisionWebhook';
 
 document.getElementById('trialSignupForm').addEventListener('submit', async function(e) {
   e.preventDefault();
@@ -214,11 +214,14 @@ document.getElementById('trialSignupForm').addEventListener('submit', async func
   submitBtn.classList.add('loading');
   submitBtn.disabled = true;
   
-  // Gather form data
+  // Gather form data - strip all spaces from phone number
+  const phoneRaw = document.getElementById('phone').value.trim();
+  const phoneClean = phoneRaw.replace(/\s/g, ''); // Remove all spaces
+  
   const formData = {
     'Full Name': document.getElementById('fullName').value.trim(),
     'Email Address': document.getElementById('email').value.trim(),
-    'Phone Number': document.getElementById('phone').value.trim(),
+    'Phone Number': phoneClean,
     'Channel': document.querySelector('input[name="Channel"]:checked').value,
     'trialType': 'free'
   };
@@ -226,11 +229,20 @@ document.getElementById('trialSignupForm').addEventListener('submit', async func
   try {
     const response = await fetch(AZURE_FUNCTION_URL, {
       method: 'POST',
+      mode: 'cors',
       headers: {
         'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
       body: JSON.stringify(formData)
     });
+    
+    // Check if response is OK before parsing
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('Server error response:', errorText);
+      throw new Error(`Server error: ${response.status} - ${errorText || 'Unknown error'}`);
+    }
     
     const result = await response.json();
     
