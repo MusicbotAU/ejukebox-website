@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Licensing
+title: Music Licensing for Business | APRA AMCOS Compliance Australia
+description: Music licensing made simple for Australian businesses. APRA AMCOS compliant background music for pubs, clubs, cafes & retail. eJukebox handles the paperwork.
 ---
 
 <div class="hero-stat-banner licensing-hero">
   <div class="hero-stat-content">
     <div class="hero-stat-label">Licensing Made Simple</div>
     <div class="hero-stat-main">
-      <span class="hero-stat-text">Sick and tired of</span>
-      <span class="hero-stat-number license-red">licence fees?</span>
+      <h1 class="hero-stat-text">Music Licensing for Business - <span class="hero-stat-number license-red">APRA AMCOS Compliant</span></h1>
     </div>
     <div class="hero-stat-cta">
       <span class="pulse-dot"></span>
-      That's where we come in...
+      We handle the paperwork so you don't have to
     </div>
     <div style="margin-top: 20px;">
       <a href="https://backgroundmusicguide.com.au/" target="_blank" class="btn-glow">

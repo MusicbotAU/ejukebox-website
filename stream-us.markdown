@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Stream Us
+title: Listen to Demo Music Streams | Try eJukebox Free Australia
+description: Listen to eJukebox demo streams free. Hear our Hits, Smooth, Rock & Country channels. Premium background music for pubs, clubs, cafes. Test before you buy.
 ---
 
 <div class="stream-hero">
@@ -8,7 +9,7 @@ title: Stream Us
     <div class="hero-icon pulse-ring">
       <i class="fas fa-headphones-alt"></i>
     </div>
-    <h1>Want to <span class="gradient-text">Hear It</span> for Yourself?</h1>
+    <h1>Listen to <span class="gradient-text">Demo Music Streams</span> - Try Before You Buy</h1>
     <p class="hero-subtitle">Experience what eJukebox sounds like in real life. Hook it up to some decent speakers or headphones, give it the pub test!</p>
   </div>
 </div>

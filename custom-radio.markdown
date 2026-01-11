@@ -1,17 +1,18 @@
 ---
 layout: default
-title: Custom Radio
+title: Custom Branded Radio | In-Store Radio for Retail & Shopping Centres
+description: Custom branded radio station for your business. In-store radio like Coles Radio. Perfect for retail chains, shopping centres & RSL clubs. Professional voiceovers.
 ---
 
 <div class="hero-stat-banner custom-radio-hero">
   <div class="hero-stat-content">
     <div class="hero-stat-label"><i class="fas fa-broadcast-tower"></i> Custom Branded Radio</div>
     <div class="hero-stat-main">
-      <span class="hero-stat-number custom-gradient">People like to listen to music they know!</span>
+      <h1 class="hero-stat-number custom-gradient">In-Store Radio for Retail & Shopping Centres</h1>
     </div>
     <div class="hero-stat-cta">
       <span class="pulse-dot"></span>
-      Create your own branded radio station experience
+      Create your own branded radio station experience - like Coles Radio
     </div>
     <div style="margin-top: 20px;">
       <a href="https://onemusic.com.au/news/how-to-get-customers-to-spend-more-in-your-shop-through-music/" target="_blank" class="btn-glow">

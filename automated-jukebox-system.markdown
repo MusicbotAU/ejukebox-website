@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Automated Jukebox System
+title: Automated Jukebox System | DJ Replacement for Pubs & Clubs
+description: Automated jukebox system - the perfect DJ replacement for pubs, clubs & bars. Cloud-powered music automation with smart dayparting. Australian technology.
 ---
 
 <div class="automated-hero">
@@ -9,8 +10,8 @@ title: Automated Jukebox System
       <i class="fas fa-robot"></i>
       FULLY AUTOMATED
     </div>
-    <h1>A Totally Automated <span class="gradient-text">Jukebox</span> Music Solution</h1>
-    <p class="hero-subtitle">For your pub, club, cafe or retail outlet</p>
+    <h1>Automated Jukebox System - <span class="gradient-text">DJ Replacement</span> for Pubs & Clubs</h1>
+    <p class="hero-subtitle">The smart music solution for your pub, club, cafe or retail outlet</p>
   </div>
 </div>
 

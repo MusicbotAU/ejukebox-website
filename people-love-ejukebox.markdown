@@ -1,17 +1,18 @@
 ---
 layout: default
-title: Full Package - eJukebox Complete
+title: Why People Love eJukebox | Customer Testimonials & Reviews
+description: See why pubs, clubs & cafes love eJukebox. Customer testimonials and reviews. Australia's favourite music solution for hospitality venues. Start your free trial.
 ---
 
 <div class="love-hero">
   <div class="hero-content">
     <div class="hero-hearts">
-      <i class="fas fa-crown"></i>
+      <i class="fas fa-heart"></i>
       <i class="fas fa-star"></i>
-      <i class="fas fa-crown"></i>
+      <i class="fas fa-heart"></i>
     </div>
-    <h1>eJukebox <span class="gradient-text">Full Package</span></h1>
-    <p class="hero-subtitle">The complete music solution for pubs, clubs, cafes and retail outlets - with customer song requests!</p>
+    <h1>Why Pubs & Clubs <span class="gradient-text">Love eJukebox</span></h1>
+    <p class="hero-subtitle">See what venue owners are saying about Australia's favourite music solution</p>
   </div>
 </div>
 
@@ -61,7 +62,7 @@ title: Full Package - eJukebox Complete
         <i class="fas fa-rocket"></i>
         <h3>Ready to Get Started?</h3>
         <p>Sign up today to see why <strong>eJukebox</strong> is the perfect solution for pubs, clubs, cafes and retail outlets.</p>
-        <a href="mailto:info@ejukebox.com.au" class="cta-button">
+        <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="cta-button">
           <i class="fas fa-envelope"></i>
           Contact Us Today
         </a>

@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Free 7-Day Trial
+title: Free 7-Day Music Trial | Try eJukebox for Pubs, Clubs & Cafes
+description: Free 7-day trial of eJukebox music for business. No credit card required. Premium background music for pubs, clubs, cafes & retail. Start streaming today.
 ---
 
 <div class="trial-page-hero">
   <div class="trial-hero-glow"></div>
   <div class="trial-hero-content">
     <span class="trial-hero-badge"><i class="fas fa-gift"></i> Risk-Free Offer</span>
-    <h1>Start Your Free 7-Day Trial</h1>
+    <h1>Free 7-Day Music Trial for Pubs, Clubs & Cafes</h1>
     <p>Experience premium, ad-free background music for your venue. No credit card required.</p>
   </div>
 </div>

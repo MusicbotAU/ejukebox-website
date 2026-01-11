@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Request Portal
+title: Song Request Portal | Customer Music Requests for Pubs & Clubs
+description: Let customers request songs at your venue. eJukebox request portal for pubs, clubs & functions. Easy QR code access, staff-controlled approval system.
 ---
 
 <div class="portal-hero">
@@ -8,8 +9,8 @@ title: Request Portal
     <div class="hero-icon">
       <i class="fas fa-mobile-alt"></i>
     </div>
-    <h1>The eJukebox <span class="gradient-text">Request Portal</span></h1>
-    <p class="hero-subtitle">What your customers see</p>
+    <h1>Song Request Portal for <span class="gradient-text">Pubs & Functions</span></h1>
+    <p class="hero-subtitle">Let customers request songs - you stay in control</p>
   </div>
 </div>
 

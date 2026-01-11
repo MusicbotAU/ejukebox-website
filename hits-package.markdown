@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Hits Package
+title: Hits Music Package | Pop & Top 40 for Pubs, Clubs & Cafes
+description: eJukebox Hits - pop & top 40 music streaming for business. Chart hits, current releases for pubs, clubs & cafes. Just $1/day. Family-friendly, no explicit lyrics.
 ---
 
 <div class="package-hero hits-theme">
@@ -9,7 +10,7 @@ title: Hits Package
       <i class="fas fa-fire"></i>
       HOT & TRENDING
     </div>
-    <h1>eJukebox <span class="gradient-text">Hits</span></h1>
+    <h1>Pop & Top 40 Music for <span class="gradient-text">Pubs & Cafes</span></h1>
     <p class="hero-subtitle">All the same great hit music that you love today, no ads, no commercials and no senseless talk. Just back-to-back <strong>hit</strong> music.</p>
     <div class="price-highlight">
       <span class="price">$1</span>
@@ -56,7 +57,7 @@ title: Hits Package
 </div>
 
 <div class="contact-cta">
-  <a href="mailto:info@ejukebox.com.au" class="cta-button">
+  <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="cta-button">
     <i class="fas fa-envelope"></i>
     Contact Us: info@ejukebox.com.au
   </a>

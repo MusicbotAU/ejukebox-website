@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Why Us
+title: Why Choose eJukebox | Best Music for Pubs, Clubs & Hospitality
+description: Why eJukebox beats competitors - 3% faster music tempo, AGC processing, Australian DJ curation. The music solution for pubs, clubs, cafes & retail.
 ---
 
 <div class="why-us2-hero">
   <div class="hero-content">
     <i class="fas fa-award"></i>
-    <h1>What Sets <span class="gradient-text">eJukebox</span> Apart?</h1>
-    <p class="hero-subtitle">The music solution for pubs, clubs, cafes and retail outlets</p>
+    <h1>Best Music for <span class="gradient-text">Pubs, Clubs & Hospitality</span></h1>
+    <p class="hero-subtitle">Why eJukebox beats the competition - the music solution for pubs, clubs, cafes & retail</p>
   </div>
 </div>
 

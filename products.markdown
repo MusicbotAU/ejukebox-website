@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Products
+title: Music Solutions & Pricing | Background Music for Pubs, Clubs & Retail
+description: Music solutions for pubs, clubs, cafes & retail from $1/day. Licensed background music streaming packages. Free demo, no contracts. Australian business music.
 ---
 
 <div class="hero-stat-banner products-hero">
   <div class="hero-stat-content">
     <div class="hero-stat-label">Music Solutions</div>
     <div class="hero-stat-main">
-      <span class="hero-stat-number products-gradient">We've got you covered</span>
+      <h1 class="hero-stat-number products-gradient">Background Music for Pubs, Clubs & Retail</h1>
     </div>
     <p class="hero-description">Explore <strong>eJukebox's</strong> flexible music solutions designed for businesses of all sizes. Whether you're looking for a free shared channel, affordable back-to-back music for just $1/day, or a fully custom-branded radio station with dedicated infrastructure, we've got you covered. From small businesses to large enterprises, our plans ensure a seamless, legal, and engaging music experience for your customers.</p>
   </div>
@@ -34,7 +35,7 @@ title: Products
       <li><i class="fas fa-check"></i> <strong>Family-friendly</strong> (no explicit lyrics).</li>
       <li><i class="fas fa-check"></i> Great for sharing with staff to pick the right vibe.</li>
     </ul>
-    <a href="mailto:info@ejukebox.com.au" class="pricing-cta">Contact Us</a>
+    <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="pricing-cta">Contact Us</a>
   </div>
 
   <div class="pricing-card popular-tier">
@@ -58,7 +59,7 @@ title: Products
     </ul>
     <div class="pricing-cta-group">
       <a href="./dollar-a-day.html" class="pricing-cta secondary">More Details</a>
-      <a href="mailto:info@ejukebox.com.au" class="pricing-cta">Contact Us</a>
+      <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="pricing-cta">Contact Us</a>
     </div>
   </div>
 
@@ -84,7 +85,7 @@ title: Products
     </ul>
     <div class="pricing-cta-group">
       <a href="./full-package.html" class="pricing-cta secondary">More Details</a>
-      <a href="mailto:info@ejukebox.com.au" class="pricing-cta">Contact Us</a>
+      <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="pricing-cta">Contact Us</a>
     </div>
   </div>
 
@@ -108,7 +109,7 @@ title: Products
     </ul>
     <div class="pricing-cta-group">
       <a href="./custom-radio.html" class="pricing-cta secondary">More Details</a>
-      <a href="mailto:info@ejukebox.com.au" class="pricing-cta">Contact Us</a>
+      <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="pricing-cta">Contact Us</a>
     </div>
   </div>
 

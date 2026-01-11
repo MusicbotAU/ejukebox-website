@@ -1,6 +1,7 @@
 ---
 layout: default
-title: $1/Day Streaming Package
+title: $1/Day Background Music | Cheap Music Streaming for Business Australia
+description: Background music for business from just $1/day. Australia's most affordable licensed music for cafes, retail, medical centres & small venues. Free trial available.
 ---
 
 <div class="package-hero smooth-theme">
@@ -9,8 +10,8 @@ title: $1/Day Streaming Package
       <i class="fas fa-dollar-sign"></i>
       BEST VALUE
     </div>
-    <h1>eJukebox <span class="gradient-text">$1/Day</span> Package</h1>
-    <p class="hero-subtitle">Premium commercial-licensed music streaming for your business. Choose from 4 curated channels - no ads, no commercials, just back-to-back quality music.</p>
+    <h1>Background Music for Business - <span class="gradient-text">Just $1/Day</span></h1>
+    <p class="hero-subtitle">Premium commercial-licensed music streaming for cafes, retail, medical centres & small venues. Choose from 4 curated channels - no ads, just back-to-back quality music.</p>
     <div class="price-highlight">
       <span class="price">$1</span>
       <span class="period">/ day</span>
@@ -132,7 +133,7 @@ title: $1/Day Streaming Package
   <div class="cta-content">
     <h2>Start Streaming Today for Just $1/Day</h2>
     <p>Get high-quality, professionally curated music tailored to your business needs. Choose from 4 channels, easy setup, and legal peace of mind.</p>
-    <a href="mailto:info@ejukebox.com.au" class="cta-button primary">
+    <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="cta-button primary">
       <i class="fas fa-envelope"></i>
       Contact Us: info@ejukebox.com.au
     </a>

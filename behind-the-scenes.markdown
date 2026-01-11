@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Behind the Scenes
+title: Behind the Scenes | Jukebox Installation for Pubs & Venues
+description: See eJukebox installed at pubs, clubs & venues. Zero-touch cloud jukebox system with automatic music updates. Background music installation Australia.
 ---
 
 <div class="bts-hero">
@@ -8,8 +9,8 @@ title: Behind the Scenes
     <div class="hero-icon">
       <i class="fas fa-server"></i>
     </div>
-    <h1>Behind the <span class="gradient-text">Scenes</span></h1>
-    <p class="hero-subtitle">At the pub, club, bar, venue, cafe or retail outlet</p>
+    <h1>Jukebox Installation for <span class="gradient-text">Pubs & Venues</span></h1>
+    <p class="hero-subtitle">See eJukebox behind the scenes at pubs, clubs, bars & retail outlets</p>
   </div>
 </div>
 

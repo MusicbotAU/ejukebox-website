@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Full Package - eJukebox Complete
+title: Full Jukebox Package | Complete Music Solution for Pubs & Clubs
+description: Complete jukebox package for pubs, clubs & venues. Customer song requests, multi-zone audio, dayparting & staff announcements. From $130/month. Australian support.
 ---
 
 <div class="love-hero">
@@ -10,8 +11,8 @@ title: Full Package - eJukebox Complete
       <i class="fas fa-star"></i>
       <i class="fas fa-crown"></i>
     </div>
-    <h1>eJukebox <span class="gradient-text">Full Package</span></h1>
-    <p class="hero-subtitle">The complete music solution for pubs, clubs, cafes and retail outlets - with customer song requests!</p>
+    <h1>Complete Jukebox Solution for <span class="gradient-text">Pubs & Clubs</span></h1>
+    <p class="hero-subtitle">The ultimate music solution for pubs, clubs, cafes and retail outlets - with customer song requests!</p>
   </div>
 </div>
 
@@ -61,7 +62,7 @@ title: Full Package - eJukebox Complete
         <i class="fas fa-rocket"></i>
         <h3>Ready to Get Started?</h3>
         <p>Sign up today to see why <strong>eJukebox</strong> is the perfect solution for pubs, clubs, cafes and retail outlets.</p>
-        <a href="mailto:info@ejukebox.com.au" class="cta-button">
+        <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="cta-button">
           <i class="fas fa-envelope"></i>
           Contact Us Today
         </a>

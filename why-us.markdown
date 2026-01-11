@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Why Us
+title: About Musicbot | Australian Music Solution for Business | eJukebox
+description: Australian-owned music solution for pubs, clubs & cafes. Musicbot - the creators of eJukebox. Cloud-powered jukebox technology made in Australia.
 ---
 
 <div class="why-us-hero">
@@ -9,8 +10,8 @@ title: Why Us
       <i class="fas fa-flag"></i>
       Australian Made
     </div>
-    <h1>About <span class="gradient-text">Musicbot</span></h1>
-    <p class="hero-subtitle">The proud creators of eJukebox - your ultimate music solution for pubs, cafes, and businesses across Australia</p>
+    <h1>Australian Music Solution for <span class="gradient-text">Business</span></h1>
+    <p class="hero-subtitle">Musicbot - the proud creators of eJukebox, your ultimate music solution for pubs, cafes & businesses across Australia</p>
   </div>
 </div>
 
