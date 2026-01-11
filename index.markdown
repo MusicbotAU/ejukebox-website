@@ -250,9 +250,9 @@ title: Home
   <div class="trial-content">
     <span class="trial-badge"><i class="fas fa-gift"></i> Risk-Free Offer</span>
     <h2>Free 7-Day Trial</h2>
-    <p>Have <strong>eJukebox</strong> in your business for a risk-free 7 day trial. If you don't like it, you can cancel at any time. If you do like it, you can seamlessly continue with a monthly subscription.</p>
-    <a href="mailto:info@ejukebox.com.au" class="trial-cta-button">
-      <i class="fas fa-envelope"></i> Contact us today: info@ejukebox.com.au
+    <p>Get your own private streaming URL delivered instantly via SMS. No credit card required. Experience premium, ad-free background music for your venue.</p>
+    <a href="./free-trial.html" class="trial-cta-button">
+      <i class="fas fa-rocket"></i> Start Your Free Trial Now
     </a>
   </div>
 </div>
