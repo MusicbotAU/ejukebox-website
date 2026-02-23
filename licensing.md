@@ -122,372 +122,537 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
 
 ---
 
-## <i class="fas fa-store"></i> Retail & Service Providers - What You'd Pay Without eJukebox
+## <i class="fas fa-store"></i> Retail & Service Providers - OneMusic Licence Rates
 
 <div class="package-intro">
   <p class="lead-text">If you run a shop, salon, or service business and want to play music, here's what OneMusic charges you directly. The price depends on <strong>how you play the music</strong> and <strong>how big your space is</strong>.</p>
 </div>
 
-<div class="details-grid">
-  <div class="detail-item">
-    <i class="fas fa-trophy" style="color: #FFD700;"></i>
-    <h4>Gold Package (from $642/yr)</h4>
-    <p>Required if you use a <strong>personal streaming service</strong> like Spotify, Apple Music, or YouTube Music. Covers unlimited devices and includes Digital Copy/Delivery for up to 2,000 tracks. <strong>This is the most expensive option</strong> - and it still doesn't make Spotify legal for commercial use (more on that below).</p>
-    <p><em>Ranges from $642/yr (tiny shop under 50m²) up to $6,190/yr (20,000m²+)</em></p>
+<!-- RETAIL PRICING TABLES -->
+
+<div class="lic-tier-grid">
+
+  <!-- GOLD -->
+  <div class="lic-tier-card lic-gold">
+    <div class="lic-tier-header">
+      <div class="lic-tier-icon"><i class="fas fa-trophy"></i></div>
+      <h3>Gold</h3>
+      <span class="lic-tier-tag lic-tag-expensive">Most Expensive</span>
+    </div>
+    <div class="lic-tier-desc">
+      <p>Required if you use a <strong>personal streaming service</strong> like Spotify, Apple Music, or YouTube Music. Unlimited devices. Includes Digital Copy/Delivery for up to 2,000 tracks.</p>
+      <p><strong><i class="fas fa-exclamation-triangle"></i> Even with Gold, Spotify is still not legal for commercial use.</strong></p>
+    </div>
+    <table class="lic-rate-table">
+      <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
+      <tbody>
+        <tr><td>1 – 50 m²</td><td>$641.94</td></tr>
+        <tr><td>51 – 150 m²</td><td>$745.11</td></tr>
+        <tr><td>151 – 500 m²</td><td>$888.40</td></tr>
+        <tr><td>501 – 1,000 m²</td><td>$1,318.27</td></tr>
+        <tr><td>1,001 – 2,000 m²</td><td>$1,604.85</td></tr>
+        <tr><td>2,001 – 5,000 m²</td><td>$2,464.59</td></tr>
+        <tr><td>5,001 – 7,500 m²</td><td>$3,037.76</td></tr>
+        <tr><td>7,501 – 10,000 m²</td><td>$3,324.34</td></tr>
+        <tr><td>10,001 – 15,000 m²</td><td>$3,897.49</td></tr>
+        <tr><td>15,001 – 20,000 m²</td><td>$4,470.66</td></tr>
+        <tr><td>20,001+ m²</td><td>$6,190.14</td></tr>
+      </tbody>
+    </table>
   </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-medal" style="color: #C0C0C0;"></i>
-    <h4>Silver Package (from $183/yr)</h4>
-    <p>If you use a <strong>commercial background music supplier</strong> (like eJukebox), CDs, internet radio, or terrestrial radio/TV. No personal streaming services. Unlimited devices.</p>
-    <p><em>Ranges from $183/yr (under 50m²) up to $5,732/yr (20,000m²+)</em></p>
+
+  <!-- SILVER -->
+  <div class="lic-tier-card lic-silver">
+    <div class="lic-tier-header">
+      <div class="lic-tier-icon"><i class="fas fa-medal"></i></div>
+      <h3>Silver</h3>
+      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox Tier</span>
+    </div>
+    <div class="lic-tier-desc">
+      <p>For businesses using a <strong>commercial background music supplier</strong> (like eJukebox), CDs, internet radio, or terrestrial radio/TV. No personal streaming. Unlimited devices.</p>
+    </div>
+    <table class="lic-rate-table">
+      <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
+      <tbody>
+        <tr><td>1 – 50 m²</td><td>$183.41</td></tr>
+        <tr><td>51 – 150 m²</td><td>$286.57</td></tr>
+        <tr><td>151 – 500 m²</td><td>$429.87</td></tr>
+        <tr><td>501 – 1,000 m²</td><td>$859.74</td></tr>
+        <tr><td>1,001 – 2,000 m²</td><td>$1,146.32</td></tr>
+        <tr><td>2,001 – 5,000 m²</td><td>$2,006.06</td></tr>
+        <tr><td>5,001 – 7,500 m²</td><td>$2,579.22</td></tr>
+        <tr><td>7,501 – 10,000 m²</td><td>$2,865.81</td></tr>
+        <tr><td>10,001 – 15,000 m²</td><td>$3,438.96</td></tr>
+        <tr><td>15,001 – 20,000 m²</td><td>$4,012.13</td></tr>
+        <tr><td>20,001+ m²</td><td>$5,731.60</td></tr>
+      </tbody>
+    </table>
   </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-medal" style="color: #C0C0C0;"></i>
-    <h4>Silver Lite Package (from $172/yr)</h4>
-    <p>Same as Silver but limited to a <strong>single device</strong>. Perfect for small businesses with just one speaker or player.</p>
-    <p><em>Ranges from $172/yr (under 50m²) up to $1,433/yr (5,000m²+)</em></p>
+
+  <!-- SILVER LITE -->
+  <div class="lic-tier-card lic-silver-lite">
+    <div class="lic-tier-header">
+      <div class="lic-tier-icon"><i class="fas fa-feather-alt"></i></div>
+      <h3>Silver Lite</h3>
+      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox Tier</span>
+    </div>
+    <div class="lic-tier-desc">
+      <p>Same as Silver but limited to a <strong>single device</strong>. Perfect for small businesses with just one speaker or player.</p>
+    </div>
+    <table class="lic-rate-table">
+      <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
+      <tbody>
+        <tr><td>1 – 50 m²</td><td>$171.94</td></tr>
+        <tr><td>51 – 150 m²</td><td>$234.99</td></tr>
+        <tr><td>151 – 500 m²</td><td>$286.57</td></tr>
+        <tr><td>501 – 1,000 m²</td><td>$573.16</td></tr>
+        <tr><td>1,001 – 2,000 m²</td><td>$745.11</td></tr>
+        <tr><td>2,001 – 5,000 m²</td><td>$1,089.01</td></tr>
+        <tr><td>5,001+ m²</td><td>$1,432.89</td></tr>
+      </tbody>
+    </table>
   </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-medal" style="color: #CD7F32;"></i>
-    <h4>Bronze Package (from $100/yr)</h4>
-    <p>Only covers music from <strong>free-to-air radio or TV</strong>. That's it. If you're only playing Triple J through a radio, this is all you need.</p>
-    <p><em>Ranges from $100/yr (under 50m²) up to $589/yr (5,000m²+)</em></p>
+
+  <!-- BRONZE -->
+  <div class="lic-tier-card lic-bronze">
+    <div class="lic-tier-header">
+      <div class="lic-tier-icon"><i class="fas fa-radio"></i></div>
+      <h3>Bronze</h3>
+      <span class="lic-tier-tag">Radio / TV Only</span>
+    </div>
+    <div class="lic-tier-desc">
+      <p>Only covers music from <strong>free-to-air radio or TV</strong>. That's it - if you're only playing Triple J through a radio, this is all you need.</p>
+    </div>
+    <table class="lic-rate-table">
+      <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
+      <tbody>
+        <tr><td>1 – 50 m²</td><td>$100.07</td></tr>
+        <tr><td>51 – 150 m²</td><td>$105.96</td></tr>
+        <tr><td>151 – 500 m²</td><td>$111.85</td></tr>
+        <tr><td>501 – 1,000 m²</td><td>$158.96</td></tr>
+        <tr><td>1,001 – 2,000 m²</td><td>$235.48</td></tr>
+        <tr><td>2,001 – 5,000 m²</td><td>$441.54</td></tr>
+        <tr><td>5,001+ m²</td><td>$588.72</td></tr>
+      </tbody>
+    </table>
   </div>
+
 </div>
 
-<div class="warning-section">
-  <div class="warning-card">
-    <div class="warning-header">
-      <i class="fas fa-info-circle"></i>
-      <h3>The Key Takeaway for Retail</h3>
-    </div>
+<!-- RETAIL KEY TAKEAWAY -->
+<div class="lic-callout lic-callout-tip">
+  <div class="lic-callout-icon"><i class="fas fa-lightbulb"></i></div>
+  <div class="lic-callout-body">
+    <h4>The Key Takeaway for Retail</h4>
     <p>If you use a <strong>commercial background music supplier like eJukebox</strong>, you qualify for the cheaper <strong>Silver</strong> or <strong>Silver Lite</strong> package. If you use Spotify or similar personal streaming, you're stuck with the more expensive <strong>Gold</strong> package - and you're still breaking Spotify's rules.</p>
   </div>
 </div>
 
 ---
 
-## <i class="fas fa-beer"></i> Hotels, Pubs, Bars & Casinos - What You'd Pay Without eJukebox
+## <i class="fas fa-beer"></i> Hotels, Pubs, Bars & Casinos - OneMusic Licence Rates
 
 <div class="package-intro">
   <p class="lead-text">Hospitality licensing is more complex because venues use music in more ways - TVs, jukeboxes, dining areas, live bands, DJs, and more. OneMusic uses a tiered "package" system based on <strong>how many TVs and music systems</strong> you have.</p>
 </div>
 
-<div class="details-grid">
-  <div class="detail-item">
-    <i class="fas fa-gem" style="color: #0F52BA;"></i>
-    <h4>Sapphire - $3,944/yr</h4>
-    <p>10+ TV screens, unlimited radios, music systems, and music video screens.</p>
+<!-- HOSPITALITY BACKGROUND MUSIC TABLE -->
+<div class="lic-tier-card lic-full-width">
+  <div class="lic-tier-header">
+    <div class="lic-tier-icon"><i class="fas fa-glass-cheers"></i></div>
+    <h3>Background Music for Location</h3>
   </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-gem" style="color: #B9F2FF;"></i>
-    <h4>Diamond - $2,473/yr</h4>
-    <p>7-9 TV screens, unlimited radios, music systems, and music video screens.</p>
+  <div class="lic-tier-desc">
+    <p>This is background music in general areas - including attached bottle shops. <strong>Not</strong> for DJs, live bands, featured music events, or separate dining areas.</p>
   </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-gem" style="color: #E5E4E2;"></i>
-    <h4>Platinum - $1,413/yr</h4>
-    <p>2-6 TV screens, unlimited radios, music systems, and music video screens.</p>
-  </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-gem" style="color: #FFD700;"></i>
-    <h4>Gold - $618/yr</h4>
-    <p>1 TV screen, unlimited radios, and a single music system.</p>
-  </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-gem" style="color: #C0C0C0;"></i>
-    <h4>Silver - $235/yr</h4>
-    <p>1 TV screen, unlimited radios. No music systems.</p>
-  </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-gem" style="color: #CD7F32;"></i>
-    <h4>Bronze - $153/yr</h4>
-    <p>1 TV screen, 1 radio. The bare minimum.</p>
-  </div>
+  <table class="lic-rate-table lic-rate-table-wide">
+    <thead>
+      <tr>
+        <th>Package</th>
+        <th>What You Get</th>
+        <th>Annual Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="lic-row-highlight">
+        <td><i class="fas fa-gem" style="color:#0F52BA"></i> <strong>Sapphire</strong></td>
+        <td>10+ TV screens, unlimited radios, music systems &amp; music video screens</td>
+        <td><strong>$3,944.48</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-gem" style="color:#B9F2FF"></i> <strong>Diamond</strong></td>
+        <td>7–9 TV screens, unlimited radios, music systems &amp; music video screens</td>
+        <td><strong>$2,472.66</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-gem" style="color:#E5E4E2"></i> <strong>Platinum</strong></td>
+        <td>2–6 TV screens, unlimited radios, music systems &amp; music video screens</td>
+        <td><strong>$1,412.95</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-gem" style="color:#FFD700"></i> <strong>Gold</strong></td>
+        <td>1 TV screen, unlimited radios, 1 music system</td>
+        <td><strong>$618.16</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-gem" style="color:#C0C0C0"></i> <strong>Silver</strong></td>
+        <td>1 TV screen, unlimited radios (no music systems)</td>
+        <td><strong>$235.48</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-gem" style="color:#CD7F32"></i> <strong>Bronze</strong></td>
+        <td>1 TV screen, 1 radio only</td>
+        <td><strong>$153.07</strong></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="lic-table-note"><em>All packages include Workplace Music (excluding branch/head office staff) and Telephone on Hold for up to 2 lines (Gold and above).</em></p>
 </div>
 
-<div class="warning-section">
-  <div class="warning-card">
-    <div class="warning-header">
-      <i class="fas fa-plus-circle"></i>
-      <h3>But Wait - There's More You Might Need to Pay</h3>
-    </div>
-    <p>Those package prices above are <strong>just for background music</strong>. On top of that, you may also need to pay for:</p>
-    <ul>
-      <li><strong>Digital Copy/Delivery: +$471/yr</strong> - Required if you use a personal streaming service like Spotify or download music digitally. NOT required if you use a commercial background music supplier like eJukebox.</li>
-      <li><strong>Website Use: +$648/yr</strong> - If you have music on your business website.</li>
-      <li><strong>Dining Area licence: $249 - $1,994/yr</strong> - If your dining area plays different music to the main venue.</li>
-      <li><strong>Featured Recorded Music: $0.29/person/day</strong> - For DJ nights, karaoke, retro nights etc.</li>
-      <li><strong>Live Music: 2.2% of what you pay performers</strong> - For live bands and solo artists.</li>
-      <li><strong>Dance Music: $2.11/person/day</strong> - For nightclub-style dance areas.</li>
-    </ul>
-    <p><em>All prices are per year, as at September 2025. Prices increase by CPI annually.</em></p>
+<!-- HOSPITALITY ADD-ONS -->
+<div class="lic-tier-card lic-full-width lic-addon-card">
+  <div class="lic-tier-header">
+    <div class="lic-tier-icon"><i class="fas fa-plus-circle"></i></div>
+    <h3>Additional Fees You Might Need to Pay</h3>
   </div>
+  <div class="lic-tier-desc">
+    <p>The background music packages above are <strong>just the starting point</strong>. Depending on how your venue uses music, you may also need the following on top:</p>
+  </div>
+  <table class="lic-rate-table lic-rate-table-wide">
+    <thead>
+      <tr>
+        <th>Add-On</th>
+        <th>When You Need It</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="lic-row-warning">
+        <td><i class="fas fa-download"></i> <strong>Digital Copy / Delivery</strong></td>
+        <td>Using a personal streaming service (Spotify, Apple Music etc.) or downloading music digitally</td>
+        <td><strong>+$470.98/yr</strong></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="lic-row-note"><i class="fas fa-check-circle" style="color:#10b981"></i> <strong>NOT required if you use a commercial background music supplier like eJukebox</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-globe"></i> <strong>Website Use</strong></td>
+        <td>Background music on your business website</td>
+        <td><strong>+$647.60/yr</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-utensils"></i> <strong>Dining Area</strong></td>
+        <td>Separate music zone in your dining area (7+ seats)</td>
+        <td><strong>$249 – $1,994/yr</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-headphones-alt"></i> <strong>Featured Recorded Music</strong></td>
+        <td>DJ nights, karaoke, retro nights, jazz nights</td>
+        <td><strong>$0.29/person/day</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-guitar"></i> <strong>Live Music</strong></td>
+        <td>Live bands and solo performers</td>
+        <td><strong>2.2% of performer fees</strong></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-compact-disc"></i> <strong>Recorded Music for Dance</strong></td>
+        <td>Nightclub-style dance areas</td>
+        <td><strong>$2.11/person/day</strong></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="lic-table-note"><em>All prices as at September 2025. Prices increase by CPI annually on 1 September each year.</em></p>
 </div>
 
 ---
 
-## <i class="fab fa-spotify" style="color: #1DB954;"></i> The Spotify Trap - Why Personal Streaming is a Double Problem
+## <i class="fab fa-spotify" style="color: #1DB954;"></i> The Spotify Trap
 
-<div class="warning-section">
-  <div class="warning-card">
-    <div class="warning-header">
-      <i class="fas fa-exclamation-triangle"></i>
-      <h3>Using Spotify in Your Business? You've Got TWO Problems</h3>
-    </div>
-    <p>Many business owners think: <em>"I'll just play my Spotify Premium in the shop - it's only $14 a month."</em> Here's why that's more expensive and risky than you think:</p>
-  </div>
+<div class="package-intro">
+  <p class="lead-text">Many business owners think: <em>"I'll just play my Spotify Premium in the shop - it's only $14 a month."</em> Here's why that's more expensive and risky than you think.</p>
 </div>
 
-<div class="license-reasons">
-  <div class="license-reason">
-    <div class="reason-number">1</div>
-    <div class="reason-content">
-      <h4><i class="fas fa-ban"></i> Problem #1: Spotify Says No</h4>
+<div class="lic-problems-grid">
+
+  <div class="lic-problem-card">
+    <div class="lic-problem-number">1</div>
+    <div class="lic-problem-content">
+      <h4><i class="fas fa-ban"></i> Spotify Says No</h4>
       <p>Spotify's own terms and conditions <strong>explicitly forbid</strong> using a personal subscription for commercial or public use. Even if you pay for a OneMusic licence separately, Spotify still hasn't given <strong>you</strong> permission to use <strong>their service</strong> commercially. A OneMusic licence covers the music rights, but it <strong>cannot override</strong> Spotify's terms of service. You're breaching your contract with Spotify.</p>
     </div>
   </div>
-  
-  <div class="license-reason">
-    <div class="reason-number">2</div>
-    <div class="reason-content">
-      <h4><i class="fas fa-dollar-sign"></i> Problem #2: It Costs You More</h4>
+
+  <div class="lic-problem-card">
+    <div class="lic-problem-number">2</div>
+    <div class="lic-problem-content">
+      <h4><i class="fas fa-dollar-sign"></i> It Costs You More</h4>
       <p>Because Spotify is a "personal digital music service" (not a commercial music supplier), OneMusic requires you to take their <strong>most expensive package</strong>. For retail, that's the Gold package. For hospitality, you also need the Digital Copy/Delivery add-on (+$471/yr). A commercial background music supplier like eJukebox puts you on a cheaper tier.</p>
     </div>
   </div>
-  
-  <div class="license-reason highlight">
-    <div class="reason-number">3</div>
-    <div class="reason-content">
-      <h4><i class="fas fa-shield-alt"></i> Problem #3: You're Still Not Legal</h4>
-      <p><strong>Even with a OneMusic licence, playing Spotify commercially is technically in breach of Spotify's terms.</strong> OneMusic's own documentation states: <em>"Even with our licence, the use of digital music (streaming) services by you in your business may be in breach of the terms and conditions of your end user agreement with that service."</em> You're paying more for a setup that still isn't properly legal.</p>
+
+  <div class="lic-problem-card lic-problem-highlight">
+    <div class="lic-problem-number">3</div>
+    <div class="lic-problem-content">
+      <h4><i class="fas fa-shield-alt"></i> You're Still Not Legal</h4>
+      <p><strong>Even with a OneMusic licence, playing Spotify commercially is technically in breach of Spotify's terms.</strong> OneMusic's own documentation states:</p>
+      <blockquote>"Even with our licence, the use of digital music (streaming) services by you in your business may be in breach of the terms and conditions of your end user agreement with that service."</blockquote>
+      <p>You're paying more for a setup that still isn't properly legal.</p>
     </div>
   </div>
+
 </div>
 
 ---
 
-## <i class="fas fa-calculator"></i> Real Cost Comparisons - See How Much You Can Save
+## <i class="fas fa-calculator"></i> Real Cost Comparisons
 
 <div class="package-intro">
   <p class="lead-text">Let's compare what you'd actually pay going the Spotify route versus using eJukebox. These are based on <strong>real OneMusic rates</strong> from their official 2025-2026 pricing guides.</p>
 </div>
 
-### <i class="fas fa-cut"></i> Scenario 1: Hair Salon (38m²)
-
-<div class="stats-showcase licensing-benefits">
-  <div class="stat-card danger">
-    <div class="stat-icon"><i class="fab fa-spotify"></i></div>
-    <div class="stat-number">$810</div>
-    <div class="stat-label"><strong>Spotify Route (Per Year)</strong></div>
-    <p class="stat-description">
-      Spotify Premium: $168/yr<br>
-      OneMusic Gold (required for personal streaming): $642/yr<br>
-      <strong>Total: $810/yr ($67.50/mo)</strong><br>
-      <em><i class="fas fa-exclamation-triangle"></i> Still breaching Spotify's terms!</em>
-    </p>
+<!-- SCENARIO 1 -->
+<div class="lic-scenario">
+  <div class="lic-scenario-header">
+    <div class="lic-scenario-badge"><i class="fas fa-cut"></i></div>
+    <div>
+      <h3>Scenario 1: Hair Salon</h3>
+      <p>Small salon, 38 m² retail area</p>
+    </div>
   </div>
-  
-  <div class="stat-card success">
-    <div class="stat-icon"><i class="fas fa-music"></i></div>
-    <div class="stat-number">$365</div>
-    <div class="stat-label"><strong>eJukebox Route (Per Year)</strong></div>
-    <p class="stat-description">
-      eJukebox $1/day plan: $365/yr<br>
-      OneMusic: Included or Silver Lite from $172/yr<br>
-      <strong>As low as $365/yr ($30.42/mo)</strong><br>
-      <em><i class="fas fa-check-circle"></i> 100% legal and compliant</em>
-    </p>
+  <div class="lic-vs-grid">
+    <div class="lic-vs-card lic-vs-spotify">
+      <div class="lic-vs-label"><i class="fab fa-spotify"></i> Spotify + OneMusic Route</div>
+      <table class="lic-vs-table">
+        <tbody>
+          <tr><td>Spotify Premium subscription</td><td class="lic-vs-amount">$168/yr</td></tr>
+          <tr><td>OneMusic Gold (1–50 m², required for personal streaming)</td><td class="lic-vs-amount">$642/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$810/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$67.50/mo</td></tr>
+        </tbody>
+      </table>
+      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> Still breaching Spotify's terms!</div>
+    </div>
+    <div class="lic-vs-divider"><span>VS</span></div>
+    <div class="lic-vs-card lic-vs-ejukebox">
+      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Route</div>
+      <table class="lic-vs-table">
+        <tbody>
+          <tr><td>eJukebox $1/day plan</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td>OneMusic: included or Silver Lite (1–50 m²)</td><td class="lic-vs-amount">from $172/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>as low as $365/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$30.42/mo</td></tr>
+        </tbody>
+      </table>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal and compliant</div>
+    </div>
   </div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $445 per year</strong> — and you're actually legal.</div>
 </div>
 
-<div class="stats-cta">
-  <p><strong><i class="fas fa-piggy-bank"></i> Potential saving: up to $445 per year</strong> - and you're actually legal.</p>
+<!-- SCENARIO 2 -->
+<div class="lic-scenario">
+  <div class="lic-scenario-header">
+    <div class="lic-scenario-badge"><i class="fas fa-store"></i></div>
+    <div>
+      <h3>Scenario 2: Medium Retail Store</h3>
+      <p>Fashion or homewares shop, 100 m² retail area</p>
+    </div>
+  </div>
+  <div class="lic-vs-grid">
+    <div class="lic-vs-card lic-vs-spotify">
+      <div class="lic-vs-label"><i class="fab fa-spotify"></i> Spotify + OneMusic Route</div>
+      <table class="lic-vs-table">
+        <tbody>
+          <tr><td>Spotify Premium subscription</td><td class="lic-vs-amount">$168/yr</td></tr>
+          <tr><td>OneMusic Gold (51–150 m²)</td><td class="lic-vs-amount">$745/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$913/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$76/mo</td></tr>
+        </tbody>
+      </table>
+      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> Still not legal under Spotify's terms</div>
+    </div>
+    <div class="lic-vs-divider"><span>VS</span></div>
+    <div class="lic-vs-card lic-vs-ejukebox">
+      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Route</div>
+      <table class="lic-vs-table">
+        <tbody>
+          <tr><td>eJukebox $1/day plan</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td>OneMusic: included or Silver Lite (51–150 m²)</td><td class="lic-vs-amount">from $235/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>as low as $365/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$30.42/mo</td></tr>
+        </tbody>
+      </table>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Fully compliant, professional sound</div>
+    </div>
+  </div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $548 per year</strong> — plus broadcast-quality sound and no ads.</div>
 </div>
 
-### <i class="fas fa-store"></i> Scenario 2: Medium Retail Store (100m²)
-
-<div class="stats-showcase licensing-benefits">
-  <div class="stat-card danger">
-    <div class="stat-icon"><i class="fab fa-spotify"></i></div>
-    <div class="stat-number">$913</div>
-    <div class="stat-label"><strong>Spotify Route (Per Year)</strong></div>
-    <p class="stat-description">
-      Spotify Premium: $168/yr<br>
-      OneMusic Gold (51-150m²): $745/yr<br>
-      <strong>Total: $913/yr ($76/mo)</strong><br>
-      <em><i class="fas fa-exclamation-triangle"></i> Still not legal under Spotify's terms</em>
-    </p>
+<!-- SCENARIO 3 -->
+<div class="lic-scenario">
+  <div class="lic-scenario-header">
+    <div class="lic-scenario-badge"><i class="fas fa-beer"></i></div>
+    <div>
+      <h3>Scenario 3: Small Pub</h3>
+      <p>3 TV screens with sound, 1 music system, using Spotify</p>
+    </div>
   </div>
-  
-  <div class="stat-card success">
-    <div class="stat-icon"><i class="fas fa-music"></i></div>
-    <div class="stat-number">$365</div>
-    <div class="stat-label"><strong>eJukebox Route (Per Year)</strong></div>
-    <p class="stat-description">
-      eJukebox $1/day plan: $365/yr<br>
-      OneMusic: Included or Silver Lite from $235/yr<br>
-      <strong>As low as $365/yr ($30.42/mo)</strong><br>
-      <em><i class="fas fa-check-circle"></i> Fully compliant, professional sound</em>
-    </p>
+  <div class="lic-vs-grid">
+    <div class="lic-vs-card lic-vs-spotify">
+      <div class="lic-vs-label"><i class="fab fa-spotify"></i> Spotify + OneMusic Route</div>
+      <table class="lic-vs-table">
+        <tbody>
+          <tr><td>Spotify Premium subscription</td><td class="lic-vs-amount">$168/yr</td></tr>
+          <tr><td>OneMusic Platinum (2–6 TV screens)</td><td class="lic-vs-amount">$1,413/yr</td></tr>
+          <tr><td>Digital Copy/Delivery (required for streaming)</td><td class="lic-vs-amount">$471/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$2,052/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$171/mo</td></tr>
+        </tbody>
+      </table>
+      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> Inconsistent volume, still not legal</div>
+    </div>
+    <div class="lic-vs-divider"><span>VS</span></div>
+    <div class="lic-vs-card lic-vs-ejukebox">
+      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Route</div>
+      <table class="lic-vs-table">
+        <tbody>
+          <tr><td>eJukebox Full Package</td><td class="lic-vs-amount">from $1,560/yr</td></tr>
+          <tr><td>OneMusic: included or reduced (no Digital Copy/Delivery needed)</td><td class="lic-vs-amount">$0 extra</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $1,560/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$130/mo</td></tr>
+        </tbody>
+      </table>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Customer requests, multi-zone &amp; dayparting included</div>
+    </div>
   </div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>$492+ per year</strong> — plus song requests, consistent volume, and professional sound.</div>
 </div>
 
-<div class="stats-cta">
-  <p><strong><i class="fas fa-piggy-bank"></i> Potential saving: up to $548 per year</strong> - plus broadcast-quality sound and no ads.</p>
-</div>
-
-### <i class="fas fa-beer"></i> Scenario 3: Small Pub (3 TVs, music system, using Spotify)
-
-<div class="stats-showcase licensing-benefits">
-  <div class="stat-card danger">
-    <div class="stat-icon"><i class="fab fa-spotify"></i></div>
-    <div class="stat-number">$2,052</div>
-    <div class="stat-label"><strong>Spotify Route (Per Year)</strong></div>
-    <p class="stat-description">
-      Spotify Premium: $168/yr<br>
-      OneMusic Platinum (2-6 TVs): $1,413/yr<br>
-      Digital Copy/Delivery (required for streaming): $471/yr<br>
-      <strong>Total: $2,052/yr ($171/mo)</strong><br>
-      <em><i class="fas fa-exclamation-triangle"></i> Inconsistent volume, still not legal</em>
-    </p>
+<!-- SCENARIO 4 -->
+<div class="lic-scenario">
+  <div class="lic-scenario-header">
+    <div class="lic-scenario-badge"><i class="fas fa-shopping-bag"></i></div>
+    <div>
+      <h3>Scenario 4: Large Retail / Shopping Centre</h3>
+      <p>5,000 m² floor area with music throughout</p>
+    </div>
   </div>
-  
-  <div class="stat-card success">
-    <div class="stat-icon"><i class="fas fa-music"></i></div>
-    <div class="stat-number">$1,560</div>
-    <div class="stat-label"><strong>eJukebox Full Package (Per Year)</strong></div>
-    <p class="stat-description">
-      eJukebox Full Package: from $130/mo ($1,560/yr)<br>
-      OneMusic: Included or reduced (no Digital Copy/Delivery needed)<br>
-      <strong>From $1,560/yr ($130/mo)</strong><br>
-      <em><i class="fas fa-check-circle"></i> Customer requests, multi-zone, dayparting included</em>
-    </p>
+  <div class="lic-vs-grid">
+    <div class="lic-vs-card lic-vs-spotify">
+      <div class="lic-vs-label"><i class="fab fa-spotify"></i> Spotify + OneMusic Route</div>
+      <table class="lic-vs-table">
+        <tbody>
+          <tr><td>Spotify Premium subscription</td><td class="lic-vs-amount">$168/yr</td></tr>
+          <tr><td>OneMusic Gold (2,001–5,000 m²)</td><td class="lic-vs-amount">$2,465/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$2,633/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$219/mo</td></tr>
+        </tbody>
+      </table>
+      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> No branding, no control, not compliant</div>
+    </div>
+    <div class="lic-vs-divider"><span>VS</span></div>
+    <div class="lic-vs-card lic-vs-ejukebox">
+      <div class="lic-vs-label"><i class="fas fa-broadcast-tower"></i> eJukebox Custom Branded</div>
+      <table class="lic-vs-table">
+        <tbody>
+          <tr><td>Your own branded radio station (like Coles Radio)</td><td class="lic-vs-amount">Custom</td></tr>
+          <tr><td>Professional voiceovers, in-store promos, timed messages</td><td class="lic-vs-amount">included</td></tr>
+          <tr><td>OneMusic: included or Silver (2,001–5,000 m²)</td><td class="lic-vs-amount">from $2,006/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>Custom pricing</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Full brand experience, fully legal</div>
+    </div>
   </div>
-</div>
-
-<div class="stats-cta">
-  <p><strong><i class="fas fa-piggy-bank"></i> Potential saving: $492+ per year</strong> - plus song requests, consistent volume, and professional sound.</p>
-</div>
-
-### <i class="fas fa-shopping-bag"></i> Scenario 4: Large Retail / Shopping Centre (5,000m²)
-
-<div class="stats-showcase licensing-benefits">
-  <div class="stat-card danger">
-    <div class="stat-icon"><i class="fab fa-spotify"></i></div>
-    <div class="stat-number">$2,633</div>
-    <div class="stat-label"><strong>Spotify Route (Per Year)</strong></div>
-    <p class="stat-description">
-      Spotify Premium: $168/yr<br>
-      OneMusic Gold (2,001-5,000m²): $2,465/yr<br>
-      <strong>Total: $2,633/yr ($219/mo)</strong><br>
-      <em><i class="fas fa-exclamation-triangle"></i> No branding, no control, not compliant</em>
-    </p>
-  </div>
-  
-  <div class="stat-card success">
-    <div class="stat-icon"><i class="fas fa-broadcast-tower"></i></div>
-    <div class="stat-number">Custom</div>
-    <div class="stat-label"><strong>eJukebox Custom Branded (Per Year)</strong></div>
-    <p class="stat-description">
-      Your own branded radio station (like Coles Radio)<br>
-      Professional voiceovers, in-store promos, timed messages<br>
-      OneMusic: Included or Silver from $2,006/yr<br>
-      <em><i class="fas fa-check-circle"></i> Full brand experience, fully legal</em>
-    </p>
-  </div>
-</div>
-
-<div class="stats-cta">
-  <p><strong><i class="fas fa-piggy-bank"></i> Save on licensing AND get a professional, branded music experience.</strong></p>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Save on licensing <strong>AND</strong> get a professional, branded music experience.</div>
 </div>
 
 ---
 
 ## <i class="fas fa-lightbulb"></i> Why eJukebox Saves You Money on Licensing
 
-<div class="license-reasons">
-  <div class="license-reason highlight">
-    <div class="reason-number">1</div>
-    <div class="reason-content">
-      <h4><i class="fas fa-briefcase"></i> We're a Commercial Background Music Supplier</h4>
-      <p>This is the key difference. Because eJukebox is a <strong>licensed commercial background music supplier</strong> (listed on <a href="https://backgroundmusicguide.com.au/" target="_blank">backgroundmusicguide.com.au</a>), your OneMusic requirements change in your favour. You qualify for <strong>cheaper licence tiers</strong>, you <strong>don't need the Digital Copy/Delivery add-on</strong> ($471/yr saved for hospitality), and depending on our arrangements with OneMusic, <strong>your licence may already be included</strong> in your eJukebox subscription.</p>
-    </div>
-  </div>
+<div class="lic-savings-grid">
   
-  <div class="license-reason">
-    <div class="reason-number">2</div>
-    <div class="reason-content">
-      <h4><i class="fas fa-file-alt"></i> No Digital Copy/Delivery Fees</h4>
-      <p>OneMusic's own guides say: <em>"You do not need to include Digital Copy/Delivery in your licence if you are only playing music from a commercial background music supplier."</em> That's eJukebox. That's $471 per year you don't have to pay.</p>
-    </div>
+  <div class="lic-savings-card lic-savings-highlight">
+    <div class="lic-savings-icon"><i class="fas fa-briefcase"></i></div>
+    <h4>We're a Commercial Background Music Supplier</h4>
+    <p>This is the key difference. Because eJukebox is a <strong>licensed commercial background music supplier</strong> (listed on <a href="https://backgroundmusicguide.com.au/" target="_blank">backgroundmusicguide.com.au</a>), your OneMusic requirements change in your favour:</p>
+    <ul>
+      <li><i class="fas fa-check" style="color:#10b981"></i> You qualify for <strong>cheaper licence tiers</strong></li>
+      <li><i class="fas fa-check" style="color:#10b981"></i> You <strong>don't need Digital Copy/Delivery</strong> ($471/yr saved)</li>
+      <li><i class="fas fa-check" style="color:#10b981"></i> Your licence <strong>may already be included</strong> in your eJukebox subscription</li>
+    </ul>
   </div>
-  
-  <div class="license-reason">
-    <div class="reason-number">3</div>
-    <div class="reason-content">
-      <h4><i class="fas fa-arrow-down"></i> Lower Licence Tier</h4>
-      <p>For retail, using a commercial supplier like eJukebox means you can use the <strong>Silver or Silver Lite</strong> package instead of Gold. That's a saving of <strong>$459 or more per year</strong> for a small shop alone.</p>
-    </div>
+
+  <div class="lic-savings-card">
+    <div class="lic-savings-icon"><i class="fas fa-file-alt"></i></div>
+    <h4>No Digital Copy/Delivery Fees</h4>
+    <p>OneMusic's own guides say: <em>"You do not need to include Digital Copy/Delivery in your licence if you are only playing music from a commercial background music supplier."</em> That's eJukebox. That's <strong>$471 per year</strong> you don't have to pay.</p>
   </div>
-  
-  <div class="license-reason">
-    <div class="reason-number">4</div>
-    <div class="reason-content">
-      <h4><i class="fas fa-ban"></i> No Spotify Subscription Needed</h4>
-      <p>You don't need to pay for Spotify Premium ($168/yr) on top of everything else. eJukebox replaces it entirely - and unlike Spotify, we're <strong>actually designed</strong> for commercial use.</p>
-    </div>
+
+  <div class="lic-savings-card">
+    <div class="lic-savings-icon"><i class="fas fa-arrow-down"></i></div>
+    <h4>Lower Licence Tier</h4>
+    <p>For retail, using a commercial supplier like eJukebox means you can use the <strong>Silver or Silver Lite</strong> package instead of Gold. That's a saving of <strong>$459 or more per year</strong> for a small shop alone.</p>
   </div>
+
+  <div class="lic-savings-card">
+    <div class="lic-savings-icon"><i class="fas fa-ban"></i></div>
+    <h4>No Spotify Subscription Needed</h4>
+    <p>You don't need to pay for Spotify Premium ($168/yr) on top of everything else. eJukebox replaces it entirely - and unlike Spotify, we're <strong>actually designed</strong> for commercial use.</p>
+  </div>
+
 </div>
 
 ---
 
 ## <i class="fas fa-question-circle"></i> Common Questions in Plain English
 
-<div class="details-grid">
-  <div class="detail-item">
-    <i class="fas fa-radio"></i>
-    <h4>What if I just play the radio?</h4>
-    <p>You still need a licence, but it's the cheapest option. Retail shops pay as little as $100/yr (Bronze). For pubs, it's $153/yr (Bronze) for a single radio and TV. Using a commercial background music supplier like eJukebox is a separate, slightly higher tier, but you get much better music.</p>
-  </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-tv"></i>
-    <h4>What counts as a "TV Screen"?</h4>
-    <p>Any screen showing free-to-air or pay TV (including Fox Sports) <strong>with sound</strong>. Screens that only show racing, betting, or Keno silently don't count. A video wall counts as just one screen.</p>
-  </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-compact-disc"></i>
-    <h4>What's a "Music System"?</h4>
-    <p>Any device used to play music - including background music supplier systems (like eJukebox), audio jukeboxes, PCs, tablets, smartphones, CDs, or record players. If you play a radio station through an app like TuneIn, that counts as a Music System, not a radio.</p>
-  </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-utensils"></i>
-    <h4>My dining area plays different music - do I pay extra?</h4>
-    <p>Yes, but only if your dining area has its own separate music source playing different music to the rest of the venue, and it seats at least 7 people. If the same music is heard throughout, there's no extra charge.</p>
-  </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-phone"></i>
-    <h4>What about telephone on-hold music?</h4>
-    <p>Yes, that needs a licence too. For hospitality venues with Gold package or above, up to 2 on-hold lines are included. For retail and service providers, it's a separate fee starting from $283/yr for 1-2 lines.</p>
-  </div>
-  
-  <div class="detail-item">
-    <i class="fas fa-globe"></i>
-    <h4>What about music on my website?</h4>
-    <p>If you have background music on your business website, that's an extra $648/yr with OneMusic. There are restrictions: 10-15 different tracks, no more than one per artist, and visitors can't choose tracks.</p>
-  </div>
+<div class="lic-faq-grid">
+
+  <details class="lic-faq-item">
+    <summary><i class="fas fa-radio"></i> What if I just play the radio?</summary>
+    <div class="lic-faq-answer">
+      <p>You still need a licence, but it's the cheapest option. Retail shops pay as little as $100/yr (Bronze). For pubs, it's $153/yr (Bronze) for a single radio and TV. Using a commercial background music supplier like eJukebox is a separate, slightly higher tier, but you get much better music.</p>
+    </div>
+  </details>
+
+  <details class="lic-faq-item">
+    <summary><i class="fas fa-tv"></i> What counts as a "TV Screen"?</summary>
+    <div class="lic-faq-answer">
+      <p>Any screen showing free-to-air or pay TV (including Fox Sports) <strong>with sound</strong>. Screens that only show racing, betting, or Keno silently don't count. A video wall counts as just one screen.</p>
+    </div>
+  </details>
+
+  <details class="lic-faq-item">
+    <summary><i class="fas fa-compact-disc"></i> What's a "Music System"?</summary>
+    <div class="lic-faq-answer">
+      <p>Any device used to play music - including background music supplier systems (like eJukebox), audio jukeboxes, PCs, tablets, smartphones, CDs, or record players. If you play a radio station through an app like TuneIn, that counts as a Music System, not a radio.</p>
+    </div>
+  </details>
+
+  <details class="lic-faq-item">
+    <summary><i class="fas fa-utensils"></i> My dining area plays different music - do I pay extra?</summary>
+    <div class="lic-faq-answer">
+      <p>Yes, but only if your dining area has its own separate music source playing different music to the rest of the venue, and it seats at least 7 people. If the same music is heard throughout, there's no extra charge.</p>
+    </div>
+  </details>
+
+  <details class="lic-faq-item">
+    <summary><i class="fas fa-phone"></i> What about telephone on-hold music?</summary>
+    <div class="lic-faq-answer">
+      <p>Yes, that needs a licence too. For hospitality venues with Gold package or above, up to 2 on-hold lines are included. For retail and service providers, it's a separate fee starting from $283/yr for 1-2 lines.</p>
+    </div>
+  </details>
+
+  <details class="lic-faq-item">
+    <summary><i class="fas fa-globe"></i> What about music on my website?</summary>
+    <div class="lic-faq-answer">
+      <p>If you have background music on your business website, that's an extra $648/yr with OneMusic. There are restrictions: 10-15 different tracks, no more than one per artist, and visitors can't choose tracks.</p>
+    </div>
+  </details>
+
 </div>
 
 ---
