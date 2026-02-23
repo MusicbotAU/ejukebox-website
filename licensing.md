@@ -52,7 +52,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <div class="stat-icon"><i class="fas fa-piggy-bank"></i></div>
     <div class="stat-number"><i class="fas fa-dollar-sign"></i></div>
     <div class="stat-label"><strong>eJukebox Saves You Money</strong></div>
-    <p class="stat-description">Because eJukebox is a <strong>commercial background music supplier</strong>, your OneMusic licensing is either included or dramatically reduced. You could save <strong>$400-$800+ per year</strong> compared to going it alone with Spotify.</p>
+    <p class="stat-description">Because eJukebox is a <strong>commercial background music supplier</strong>, your OneMusic licensing tier is dramatically reduced. We can also <strong>collect your OneMusic licence fee on your behalf</strong> and remit it directly to OneMusic. You could save <strong>$400-$800+ per year</strong> compared to going it alone with Spotify.</p>
   </div>
 </div>
 
@@ -460,15 +460,15 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>eJukebox $1/day plan (Silver licence tier)</td><td class="lic-vs-amount">$365/yr</td></tr>
-          <tr><td>OneMusic Silver (1–50 m²) - included with plan</td><td class="lic-vs-amount">from $183/yr</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>as low as $365/yr</strong></td></tr>
-          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$30.42/mo</td></tr>
+          <tr><td>OneMusic Silver (1–50 m²) — paid separately</td><td class="lic-vs-amount">from $183/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $548/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$45.67/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal - Silver tier, fully compliant</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal — Silver tier, fully compliant. We can collect your OneMusic fee for you.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $445 per year</strong> - and you're actually legal.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $262 per year</strong> — and you're actually legal. We can handle your OneMusic payment on your behalf.</div>
 </div>
 
 <!-- SCENARIO 2 -->
@@ -499,15 +499,15 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>eJukebox $1/day plan (Silver licence tier)</td><td class="lic-vs-amount">$365/yr</td></tr>
-          <tr><td>OneMusic Silver (51–150 m²) - included with plan</td><td class="lic-vs-amount">from $287/yr</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>as low as $365/yr</strong></td></tr>
-          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$30.42/mo</td></tr>
+          <tr><td>OneMusic Silver (51–150 m²) — paid separately</td><td class="lic-vs-amount">from $287/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $652/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$54.33/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Silver tier - fully compliant, professional sound</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Silver tier — fully compliant, professional sound. We can collect your OneMusic fee for you.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $548 per year</strong> - plus broadcast-quality sound and no ads.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $261 per year</strong> — plus broadcast-quality sound and no ads. We handle your OneMusic payment on your behalf.</div>
 </div>
 
 <!-- SCENARIO 3 -->
@@ -546,10 +546,10 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$248/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Saves $639/yr on DCD + Spotify — plus song requests, multi-zone &amp; dayparting</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Saves $639/yr on DCD + Spotify — plus song requests, multi-zone &amp; dayparting. We can collect your OneMusic fee for you.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>$639 per year</strong> (no Digital Copy/Delivery + no Spotify sub) — plus professional sound, song requests, and consistent volume.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>$639 per year</strong> (no Digital Copy/Delivery + no Spotify sub) — plus professional sound, song requests, and consistent volume. We handle your OneMusic payment on your behalf.</div>
 </div>
 
 <!-- SCENARIO 4 -->
@@ -591,10 +591,10 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$376/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Saves $639/yr on DCD + Spotify — multi-zone, song requests, dayparting, fully legal</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Saves $639/yr on DCD + Spotify — multi-zone, song requests, dayparting, fully legal. We can collect your OneMusic fee for you.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>$639 per year</strong> (no Digital Copy/Delivery + no Spotify sub) — plus professional sound, song requests, and complete compliance.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>$639 per year</strong> (no Digital Copy/Delivery + no Spotify sub) — plus professional sound, song requests, and complete compliance. We handle your OneMusic payment on your behalf.</div>
 </div>
 
 ---
@@ -630,6 +630,12 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <div class="lic-savings-icon"><i class="fas fa-ban"></i></div>
     <h4>No Spotify Subscription Needed</h4>
     <p>You don't need to pay for Spotify Premium ($168/yr) on top of everything else. eJukebox replaces it entirely - and unlike Spotify, we're <strong>actually designed</strong> for commercial use.</p>
+  </div>
+
+  <div class="lic-savings-card">
+    <div class="lic-savings-icon"><i class="fas fa-handshake"></i></div>
+    <h4>We Collect Your OneMusic Fee For You</h4>
+    <p>Don't want the hassle of dealing with OneMusic directly? We can <strong>collect your OneMusic licence fee on your behalf</strong> and send it straight to OneMusic for you. One less thing to worry about — we take care of it so you can focus on running your business.</p>
   </div>
 
 </div>
