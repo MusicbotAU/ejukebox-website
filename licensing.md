@@ -60,6 +60,10 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
 
 ## Who Needs a Music Licence?
 
+<div class="lic-hero-image">
+  <img src="assets/images/cafe-restaurant.jpg" alt="Café playing background music for customers" loading="lazy">
+</div>
+
 <div class="license-reasons">
   <div class="license-reason">
     <div class="reason-number"><i class="fas fa-store"></i></div>
@@ -124,6 +128,10 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
 
 ## <i class="fas fa-store"></i> Retail & Service Providers - OneMusic Licence Rates
 
+<div class="lic-hero-image">
+  <img src="assets/images/retail-store.jpg" alt="Retail store with background music" loading="lazy">
+</div>
+
 <div class="package-intro">
   <p class="lead-text">If you run a shop, salon, or service business and want to play music, here's what OneMusic charges you directly. The price depends on <strong>how you play the music</strong> and <strong>how big your space is</strong>.</p>
 </div>
@@ -166,10 +174,11 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <div class="lic-tier-header">
       <div class="lic-tier-icon"><i class="fas fa-medal"></i></div>
       <h3>Silver</h3>
-      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox Tier</span>
+      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox $1/Day Plan</span>
     </div>
     <div class="lic-tier-desc">
       <p>For businesses using a <strong>commercial background music supplier</strong> (like eJukebox), CDs, internet radio, or terrestrial radio/TV. No personal streaming. Unlimited devices.</p>
+      <p><strong><i class="fas fa-star" style="color:#ffd700"></i> This is the licence tier you get with the eJukebox $1/Day plan.</strong></p>
     </div>
     <table class="lic-rate-table">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
@@ -194,10 +203,11 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <div class="lic-tier-header">
       <div class="lic-tier-icon"><i class="fas fa-feather-alt"></i></div>
       <h3>Silver Lite</h3>
-      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox Tier</span>
+      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox Full Package</span>
     </div>
     <div class="lic-tier-desc">
       <p>Same as Silver but limited to a <strong>single device</strong>. Perfect for small businesses with just one speaker or player.</p>
+      <p><strong><i class="fas fa-star" style="color:#ffd700"></i> This is the licence tier you get with the eJukebox Full Package.</strong></p>
     </div>
     <table class="lic-rate-table">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
@@ -244,13 +254,17 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
   <div class="lic-callout-icon"><i class="fas fa-lightbulb"></i></div>
   <div class="lic-callout-body">
     <h4>The Key Takeaway for Retail</h4>
-    <p>If you use a <strong>commercial background music supplier like eJukebox</strong>, you qualify for the cheaper <strong>Silver</strong> or <strong>Silver Lite</strong> package. If you use Spotify or similar personal streaming, you're stuck with the more expensive <strong>Gold</strong> package - and you're still breaking Spotify's rules.</p>
+    <p>If you use a <strong>commercial background music supplier like eJukebox</strong>, you qualify for the cheaper <strong>Silver</strong> (eJukebox $1/Day plan) or <strong>Silver Lite</strong> (eJukebox Full Package) tier instead of the expensive Gold package. If you use Spotify or similar personal streaming, you're stuck with <strong>Gold</strong> - and you're still breaking Spotify's rules.</p>
   </div>
 </div>
 
 ---
 
 ## <i class="fas fa-beer"></i> Hotels, Pubs, Bars & Casinos - OneMusic Licence Rates
+
+<div class="lic-hero-image">
+  <img src="assets/images/pub-bar.jpg" alt="Pub bar with music system and TVs" loading="lazy">
+</div>
 
 <div class="package-intro">
   <p class="lead-text">Hospitality licensing is more complex because venues use music in more ways - TVs, jukeboxes, dining areas, live bands, DJs, and more. OneMusic uses a tiered "package" system based on <strong>how many TVs and music systems</strong> you have.</p>
@@ -407,12 +421,19 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
 
 ## <i class="fas fa-calculator"></i> Real Cost Comparisons
 
+<div class="lic-hero-image">
+  <img src="assets/images/music-speakers.jpg" alt="Music and sound equipment in a venue" loading="lazy">
+</div>
+
 <div class="package-intro">
   <p class="lead-text">Let's compare what you'd actually pay going the Spotify route versus using eJukebox. These are based on <strong>real OneMusic rates</strong> from their official 2025-2026 pricing guides.</p>
 </div>
 
 <!-- SCENARIO 1 -->
 <div class="lic-scenario">
+  <div class="lic-scenario-img">
+    <img src="assets/images/salon.jpg" alt="Hair salon playing music" loading="lazy">
+  </div>
   <div class="lic-scenario-header">
     <div class="lic-scenario-badge"><i class="fas fa-cut"></i></div>
     <div>
@@ -438,13 +459,13 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Route</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>eJukebox $1/day plan</td><td class="lic-vs-amount">$365/yr</td></tr>
-          <tr><td>OneMusic: included or Silver Lite (1–50 m²)</td><td class="lic-vs-amount">from $172/yr</td></tr>
+          <tr><td>eJukebox $1/day plan (Silver licence tier)</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td>OneMusic Silver (1–50 m²) — included with plan</td><td class="lic-vs-amount">from $183/yr</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>as low as $365/yr</strong></td></tr>
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$30.42/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal and compliant</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal — Silver tier, fully compliant</div>
     </div>
   </div>
   <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $445 per year</strong> — and you're actually legal.</div>
@@ -477,13 +498,13 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Route</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>eJukebox $1/day plan</td><td class="lic-vs-amount">$365/yr</td></tr>
-          <tr><td>OneMusic: included or Silver Lite (51–150 m²)</td><td class="lic-vs-amount">from $235/yr</td></tr>
+          <tr><td>eJukebox $1/day plan (Silver licence tier)</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td>OneMusic Silver (51–150 m²) — included with plan</td><td class="lic-vs-amount">from $287/yr</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>as low as $365/yr</strong></td></tr>
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$30.42/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Fully compliant, professional sound</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Silver tier — fully compliant, professional sound</div>
     </div>
   </div>
   <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $548 per year</strong> — plus broadcast-quality sound and no ads.</div>
@@ -517,13 +538,13 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Route</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>eJukebox Full Package</td><td class="lic-vs-amount">from $1,560/yr</td></tr>
-          <tr><td>OneMusic: included or reduced (no Digital Copy/Delivery needed)</td><td class="lic-vs-amount">$0 extra</td></tr>
+          <tr><td>eJukebox Full Package (Silver Lite licence tier)</td><td class="lic-vs-amount">from $1,560/yr</td></tr>
+          <tr><td>OneMusic Silver Lite — included, no Digital Copy/Delivery needed</td><td class="lic-vs-amount">$0 extra</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $1,560/yr</strong></td></tr>
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$130/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Customer requests, multi-zone &amp; dayparting included</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Silver Lite tier — customer requests, multi-zone &amp; dayparting included</div>
     </div>
   </div>
   <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>$492+ per year</strong> — plus song requests, consistent volume, and professional sound.</div>
@@ -531,11 +552,14 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
 
 <!-- SCENARIO 4 -->
 <div class="lic-scenario">
+  <div class="lic-scenario-img">
+    <img src="assets/images/large-pub.jpg" alt="Large pub with multiple screens and music" loading="lazy">
+  </div>
   <div class="lic-scenario-header">
-    <div class="lic-scenario-badge"><i class="fas fa-shopping-bag"></i></div>
+    <div class="lic-scenario-badge"><i class="fas fa-glass-cheers"></i></div>
     <div>
-      <h3>Scenario 4: Large Retail / Shopping Centre</h3>
-      <p>5,000 m² floor area with music throughout</p>
+      <h3>Scenario 4: Large Pub</h3>
+      <p>8 TV screens with sound, multiple music systems, using Spotify</p>
     </div>
   </div>
   <div class="lic-vs-grid">
@@ -544,28 +568,29 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>Spotify Premium subscription</td><td class="lic-vs-amount">$168/yr</td></tr>
-          <tr><td>OneMusic Gold (2,001–5,000 m²)</td><td class="lic-vs-amount">$2,465/yr</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$2,633/yr</strong></td></tr>
-          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$219/mo</td></tr>
+          <tr><td>OneMusic Diamond (7–9 TV screens)</td><td class="lic-vs-amount">$2,473/yr</td></tr>
+          <tr><td>Digital Copy/Delivery (required for streaming)</td><td class="lic-vs-amount">$471/yr</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$3,112/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$259/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> No branding, no control, not compliant</div>
+      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> Expensive, inconsistent, and still not legal</div>
     </div>
     <div class="lic-vs-divider"><span>VS</span></div>
     <div class="lic-vs-card lic-vs-ejukebox">
-      <div class="lic-vs-label"><i class="fas fa-broadcast-tower"></i> eJukebox Custom Branded</div>
+      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Full Package (Silver Lite tier)</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>Your own branded radio station (like Coles Radio)</td><td class="lic-vs-amount">Custom</td></tr>
-          <tr><td>Professional voiceovers, in-store promos, timed messages</td><td class="lic-vs-amount">included</td></tr>
-          <tr><td>OneMusic: included or Silver (2,001–5,000 m²)</td><td class="lic-vs-amount">from $2,006/yr</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>Custom pricing</strong></td></tr>
+          <tr><td>eJukebox Full Package</td><td class="lic-vs-amount">from $2,040/yr</td></tr>
+          <tr><td>OneMusic Silver Lite — included, no Digital Copy/Delivery</td><td class="lic-vs-amount">$0 extra</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $2,040/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$170/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Full brand experience, fully legal</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Silver Lite tier — multi-zone, song requests, dayparting, fully legal</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Save on licensing <strong>AND</strong> get a professional, branded music experience.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>$1,072+ per year</strong> — plus professional sound, song requests, and complete compliance.</div>
 </div>
 
 ---
@@ -594,7 +619,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
   <div class="lic-savings-card">
     <div class="lic-savings-icon"><i class="fas fa-arrow-down"></i></div>
     <h4>Lower Licence Tier</h4>
-    <p>For retail, using a commercial supplier like eJukebox means you can use the <strong>Silver or Silver Lite</strong> package instead of Gold. That's a saving of <strong>$459 or more per year</strong> for a small shop alone.</p>
+    <p>For retail, our <strong>$1/Day plan puts you on the Silver</strong> tier and our <strong>Full Package puts you on Silver Lite</strong> — both significantly cheaper than the Gold package you'd need with Spotify. That's a saving of <strong>$459 or more per year</strong> for a small shop alone.</p>
   </div>
 
   <div class="lic-savings-card">
