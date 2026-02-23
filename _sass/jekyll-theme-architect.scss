@@ -7904,6 +7904,12 @@ a.hero-image-badge:hover {
   font-size: 0.9em;
 }
 
+.lic-strikethrough {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-style: italic;
+}
+
 /* VS Divider */
 .lic-vs-divider {
   display: flex;
