@@ -535,21 +535,28 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     </div>
     <div class="lic-vs-divider"><span>VS</span></div>
     <div class="lic-vs-card lic-vs-ejukebox">
-      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Route</div>
+      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox $1/Day Plan</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>eJukebox Full Package</td><td class="lic-vs-amount">from $1,560/yr</td></tr>
-          <tr><td>OneMusic Platinum (2–6 TV screens) - still required</td><td class="lic-vs-amount">$1,413/yr</td></tr>
+          <tr><td>eJukebox $1/day plan</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td>OneMusic Platinum (2–6 TV screens) - paid separately</td><td class="lic-vs-amount">$1,413/yr</td></tr>
           <tr><td>Digital Copy/Delivery</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
           <tr><td>Spotify subscription</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $2,973/yr</strong></td></tr>
-          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$248/mo</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $1,778/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$148/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Saves $639/yr on DCD + Spotify - plus song requests, multi-zone &amp; dayparting. We can collect your OneMusic fee for you.</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, broadcast-quality sound, consistent volume, no ads. We can collect your OneMusic fee for you.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>$639 per year</strong> (no Digital Copy/Delivery + no Spotify sub) - plus professional sound, song requests, and consistent volume. We handle your OneMusic payment on your behalf.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>up to $274 per year</strong> - plus professional sound, consistent volume, and complete legal compliance. We handle your OneMusic payment on your behalf.</div>
+  <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
+    <div class="lic-callout-icon"><i class="fas fa-crown"></i></div>
+    <div class="lic-callout-body">
+      <h4>Want More? Upgrade to the Full Package</h4>
+      <p>For venues that want the ultimate experience, our <strong>Full Package</strong> (from $1,560/yr) adds customer song requests, multi-zone audio, dayparting, and priority support. <a href="/full-package.html">Learn more about the Full Package</a>.</p>
+    </div>
+  </div>
 </div>
 
 <!-- SCENARIO 4 -->
@@ -580,21 +587,28 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     </div>
     <div class="lic-vs-divider"><span>VS</span></div>
     <div class="lic-vs-card lic-vs-ejukebox">
-      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Full Package</div>
+      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox $1/Day Plan</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>eJukebox Full Package</td><td class="lic-vs-amount">from $2,040/yr</td></tr>
-          <tr><td>OneMusic Diamond (7–9 TV screens) - still required</td><td class="lic-vs-amount">$2,473/yr</td></tr>
+          <tr><td>eJukebox $1/day plan</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td>OneMusic Diamond (7–9 TV screens) - paid separately</td><td class="lic-vs-amount">$2,473/yr</td></tr>
           <tr><td>Digital Copy/Delivery</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
           <tr><td>Spotify subscription</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $4,513/yr</strong></td></tr>
-          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$376/mo</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $2,838/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$237/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Saves $639/yr on DCD + Spotify - multi-zone, song requests, dayparting, fully legal. We can collect your OneMusic fee for you.</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, broadcast-quality sound, no ads, fully compliant. We can collect your OneMusic fee for you.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>$639 per year</strong> (no Digital Copy/Delivery + no Spotify sub) - plus professional sound, song requests, and complete compliance. We handle your OneMusic payment on your behalf.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>up to $274 per year</strong> - plus professional sound, consistent volume, and complete legal compliance. We handle your OneMusic payment on your behalf.</div>
+  <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
+    <div class="lic-callout-icon"><i class="fas fa-crown"></i></div>
+    <div class="lic-callout-body">
+      <h4>Want More? Upgrade to the Full Package</h4>
+      <p>For larger venues that want premium features, our <strong>Full Package</strong> (from $2,040/yr) adds customer song requests, multi-zone audio, dayparting, and priority support. Even with the Full Package, you still save on Digital Copy/Delivery and Spotify fees. <a href="/full-package.html">Learn more about the Full Package</a>.</p>
+    </div>
+  </div>
 </div>
 
 ---
