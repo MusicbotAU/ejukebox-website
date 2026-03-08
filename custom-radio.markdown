@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Custom Branded Radio | In-Store Radio for Retail & Shopping Centres
 description: Custom branded radio station for your business. In-store radio like Coles Radio. Perfect for retail chains, shopping centres & RSL clubs. Professional voiceovers.
@@ -34,7 +34,7 @@ description: Custom branded radio station for your business. In-store radio like
       <i class="fas fa-headphones"></i>
     </div>
     <h2>Hear What Custom Radio Sounds Like</h2>
-    <p>Listen to this demo from an RSL club – this is what your own branded radio station could sound like:</p>
+    <p>Listen to this demo from an RSL club - this is what your own branded radio station could sound like:</p>
     <div class="audio-player-wrapper">
       <audio controls style="width: 100%; max-width: 500px;">
         <source src="/blobs/RSL_club_radio_-_demo.mp3" type="audio/mpeg">
@@ -107,7 +107,7 @@ description: Custom branded radio station for your business. In-store radio like
   <div class="features-grid">
     <div class="feature-item">
       <div class="feature-item-icon"><i class="fas fa-broadcast-tower"></i></div>
-      <p>Your <strong>own branded radio station</strong> (think Coles Radio), with 1–4 channels: Hits, Smooth, Rock, Country.</p>
+      <p>Your <strong>own branded radio station</strong> (think Coles Radio), with 1-4 channels: Hits, Smooth, Rock, Country.</p>
     </div>
     <div class="feature-item">
       <div class="feature-item-icon"><i class="fas fa-microphone"></i></div>

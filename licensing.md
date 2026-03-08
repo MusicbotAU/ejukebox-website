@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Music Licensing for Business | APRA AMCOS Compliance Australia
 description: Music licensing made simple for Australian businesses. APRA AMCOS compliant background music for pubs, clubs, cafes & retail. eJukebox handles the paperwork. Save hundreds vs Spotify.
@@ -154,16 +154,16 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <table class="lic-rate-table">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
       <tbody>
-        <tr><td>1 – 50 m²</td><td>$641.94</td></tr>
-        <tr><td>51 – 150 m²</td><td>$745.11</td></tr>
-        <tr><td>151 – 500 m²</td><td>$888.40</td></tr>
-        <tr><td>501 – 1,000 m²</td><td>$1,318.27</td></tr>
-        <tr><td>1,001 – 2,000 m²</td><td>$1,604.85</td></tr>
-        <tr><td>2,001 – 5,000 m²</td><td>$2,464.59</td></tr>
-        <tr><td>5,001 – 7,500 m²</td><td>$3,037.76</td></tr>
-        <tr><td>7,501 – 10,000 m²</td><td>$3,324.34</td></tr>
-        <tr><td>10,001 – 15,000 m²</td><td>$3,897.49</td></tr>
-        <tr><td>15,001 – 20,000 m²</td><td>$4,470.66</td></tr>
+        <tr><td>1 - 50 m²</td><td>$641.94</td></tr>
+        <tr><td>51 - 150 m²</td><td>$745.11</td></tr>
+        <tr><td>151 - 500 m²</td><td>$888.40</td></tr>
+        <tr><td>501 - 1,000 m²</td><td>$1,318.27</td></tr>
+        <tr><td>1,001 - 2,000 m²</td><td>$1,604.85</td></tr>
+        <tr><td>2,001 - 5,000 m²</td><td>$2,464.59</td></tr>
+        <tr><td>5,001 - 7,500 m²</td><td>$3,037.76</td></tr>
+        <tr><td>7,501 - 10,000 m²</td><td>$3,324.34</td></tr>
+        <tr><td>10,001 - 15,000 m²</td><td>$3,897.49</td></tr>
+        <tr><td>15,001 - 20,000 m²</td><td>$4,470.66</td></tr>
         <tr><td>20,001+ m²</td><td>$6,190.14</td></tr>
       </tbody>
     </table>
@@ -183,16 +183,16 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <table class="lic-rate-table">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
       <tbody>
-        <tr><td>1 – 50 m²</td><td>$183.41</td></tr>
-        <tr><td>51 – 150 m²</td><td>$286.57</td></tr>
-        <tr><td>151 – 500 m²</td><td>$429.87</td></tr>
-        <tr><td>501 – 1,000 m²</td><td>$859.74</td></tr>
-        <tr><td>1,001 – 2,000 m²</td><td>$1,146.32</td></tr>
-        <tr><td>2,001 – 5,000 m²</td><td>$2,006.06</td></tr>
-        <tr><td>5,001 – 7,500 m²</td><td>$2,579.22</td></tr>
-        <tr><td>7,501 – 10,000 m²</td><td>$2,865.81</td></tr>
-        <tr><td>10,001 – 15,000 m²</td><td>$3,438.96</td></tr>
-        <tr><td>15,001 – 20,000 m²</td><td>$4,012.13</td></tr>
+        <tr><td>1 - 50 m²</td><td>$183.41</td></tr>
+        <tr><td>51 - 150 m²</td><td>$286.57</td></tr>
+        <tr><td>151 - 500 m²</td><td>$429.87</td></tr>
+        <tr><td>501 - 1,000 m²</td><td>$859.74</td></tr>
+        <tr><td>1,001 - 2,000 m²</td><td>$1,146.32</td></tr>
+        <tr><td>2,001 - 5,000 m²</td><td>$2,006.06</td></tr>
+        <tr><td>5,001 - 7,500 m²</td><td>$2,579.22</td></tr>
+        <tr><td>7,501 - 10,000 m²</td><td>$2,865.81</td></tr>
+        <tr><td>10,001 - 15,000 m²</td><td>$3,438.96</td></tr>
+        <tr><td>15,001 - 20,000 m²</td><td>$4,012.13</td></tr>
         <tr><td>20,001+ m²</td><td>$5,731.60</td></tr>
       </tbody>
     </table>
@@ -212,12 +212,12 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <table class="lic-rate-table">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
       <tbody>
-        <tr><td>1 – 50 m²</td><td>$171.94</td></tr>
-        <tr><td>51 – 150 m²</td><td>$234.99</td></tr>
-        <tr><td>151 – 500 m²</td><td>$286.57</td></tr>
-        <tr><td>501 – 1,000 m²</td><td>$573.16</td></tr>
-        <tr><td>1,001 – 2,000 m²</td><td>$745.11</td></tr>
-        <tr><td>2,001 – 5,000 m²</td><td>$1,089.01</td></tr>
+        <tr><td>1 - 50 m²</td><td>$171.94</td></tr>
+        <tr><td>51 - 150 m²</td><td>$234.99</td></tr>
+        <tr><td>151 - 500 m²</td><td>$286.57</td></tr>
+        <tr><td>501 - 1,000 m²</td><td>$573.16</td></tr>
+        <tr><td>1,001 - 2,000 m²</td><td>$745.11</td></tr>
+        <tr><td>2,001 - 5,000 m²</td><td>$1,089.01</td></tr>
         <tr><td>5,001+ m²</td><td>$1,432.89</td></tr>
       </tbody>
     </table>
@@ -236,12 +236,12 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <table class="lic-rate-table">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
       <tbody>
-        <tr><td>1 – 50 m²</td><td>$100.07</td></tr>
-        <tr><td>51 – 150 m²</td><td>$105.96</td></tr>
-        <tr><td>151 – 500 m²</td><td>$111.85</td></tr>
-        <tr><td>501 – 1,000 m²</td><td>$158.96</td></tr>
-        <tr><td>1,001 – 2,000 m²</td><td>$235.48</td></tr>
-        <tr><td>2,001 – 5,000 m²</td><td>$441.54</td></tr>
+        <tr><td>1 - 50 m²</td><td>$100.07</td></tr>
+        <tr><td>51 - 150 m²</td><td>$105.96</td></tr>
+        <tr><td>151 - 500 m²</td><td>$111.85</td></tr>
+        <tr><td>501 - 1,000 m²</td><td>$158.96</td></tr>
+        <tr><td>1,001 - 2,000 m²</td><td>$235.48</td></tr>
+        <tr><td>2,001 - 5,000 m²</td><td>$441.54</td></tr>
         <tr><td>5,001+ m²</td><td>$588.72</td></tr>
       </tbody>
     </table>
@@ -295,12 +295,12 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       </tr>
       <tr>
         <td><i class="fas fa-gem" style="color:#B9F2FF"></i> <strong>Diamond</strong></td>
-        <td>7–9 TV screens, unlimited radios, music systems &amp; music video screens</td>
+        <td>7-9 TV screens, unlimited radios, music systems &amp; music video screens</td>
         <td><strong>$2,472.66</strong></td>
       </tr>
       <tr>
         <td><i class="fas fa-gem" style="color:#E5E4E2"></i> <strong>Platinum</strong></td>
-        <td>2–6 TV screens, unlimited radios, music systems &amp; music video screens</td>
+        <td>2-6 TV screens, unlimited radios, music systems &amp; music video screens</td>
         <td><strong>$1,412.95</strong></td>
       </tr>
       <tr>
@@ -357,7 +357,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <tr>
         <td><i class="fas fa-utensils"></i> <strong>Dining Area</strong></td>
         <td>Separate music zone in your dining area (7+ seats)</td>
-        <td><strong>$249 – $1,994/yr</strong></td>
+        <td><strong>$249 - $1,994/yr</strong></td>
       </tr>
       <tr>
         <td><i class="fas fa-headphones-alt"></i> <strong>Featured Recorded Music</strong></td>
@@ -447,7 +447,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>Spotify Premium subscription</td><td class="lic-vs-amount">$168/yr</td></tr>
-          <tr><td>OneMusic Gold (1–50 m², required for personal streaming)</td><td class="lic-vs-amount">$642/yr</td></tr>
+          <tr><td>OneMusic Gold (1-50 m², required for personal streaming)</td><td class="lic-vs-amount">$642/yr</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$810/yr</strong></td></tr>
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$67.50/mo</td></tr>
         </tbody>
@@ -460,7 +460,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>eJukebox $1/day plan (Silver licence tier)</td><td class="lic-vs-amount">$365/yr</td></tr>
-          <tr><td>OneMusic Silver (1–50 m²) - paid separately</td><td class="lic-vs-amount">from $183/yr</td></tr>
+          <tr><td>OneMusic Silver (1-50 m²) - paid separately</td><td class="lic-vs-amount">from $183/yr</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $548/yr</strong></td></tr>
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$45.67/mo</td></tr>
         </tbody>
@@ -486,7 +486,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>Spotify Premium subscription</td><td class="lic-vs-amount">$168/yr</td></tr>
-          <tr><td>OneMusic Gold (51–150 m²)</td><td class="lic-vs-amount">$745/yr</td></tr>
+          <tr><td>OneMusic Gold (51-150 m²)</td><td class="lic-vs-amount">$745/yr</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$913/yr</strong></td></tr>
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$76/mo</td></tr>
         </tbody>
@@ -499,7 +499,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>eJukebox $1/day plan (Silver licence tier)</td><td class="lic-vs-amount">$365/yr</td></tr>
-          <tr><td>OneMusic Silver (51–150 m²) - paid separately</td><td class="lic-vs-amount">from $287/yr</td></tr>
+          <tr><td>OneMusic Silver (51-150 m²) - paid separately</td><td class="lic-vs-amount">from $287/yr</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $652/yr</strong></td></tr>
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$54.33/mo</td></tr>
         </tbody>
@@ -525,13 +525,13 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>Spotify Premium subscription</td><td class="lic-vs-amount">$168/yr</td></tr>
-          <tr><td>OneMusic Platinum (2–6 TV screens)</td><td class="lic-vs-amount">$1,413/yr</td></tr>
+          <tr><td>OneMusic Platinum (2-6 TV screens)</td><td class="lic-vs-amount">$1,413/yr</td></tr>
           <tr><td>Digital Copy/Delivery (required for streaming)</td><td class="lic-vs-amount">$471/yr</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$2,052/yr</strong></td></tr>
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$171/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> Still breaching Spotify's terms — not actually legal!</div>
+      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> Still breaching Spotify's terms - not actually legal!</div>
     </div>
     <div class="lic-vs-divider"><span>VS</span></div>
     <div class="lic-vs-card lic-vs-ejukebox">
@@ -539,7 +539,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>eJukebox Full Package (from $130/mo ex GST)</td><td class="lic-vs-amount">from $1,560/yr</td></tr>
-          <tr><td>OneMusic Platinum (2–6 TV screens) - paid separately</td><td class="lic-vs-amount">$1,413/yr</td></tr>
+          <tr><td>OneMusic Platinum (2-6 TV screens) - paid separately</td><td class="lic-vs-amount">$1,413/yr</td></tr>
           <tr><td>Digital Copy/Delivery</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
           <tr><td>Spotify subscription</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $2,973/yr</strong></td></tr>
@@ -552,17 +552,17 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
   <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
     <div class="lic-callout-icon"><i class="fas fa-balance-scale"></i></div>
     <div class="lic-callout-body">
-      <h4>It Costs More — Here's Why It's Worth Every Cent</h4>
+      <h4>It Costs More - Here's Why It's Worth Every Cent</h4>
       <p>Yes, the Full Package costs around <strong>$2.52 more per day</strong> than the Spotify route. But consider: you're currently paying $639/yr on Spotify fees + Digital Copy/Delivery for a setup that's <strong>still not legal</strong> under Spotify's own terms. For that $2.52/day, you upgrade from a consumer music app to a <strong>professional entertainment system</strong> built for venues:</p>
       <ul>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Customer song requests</strong> from their smartphones — keeps punters engaged and staying longer</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> — different music for bar, dining, and gaming areas</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Dayparting</strong> — quieter mornings, upbeat nights, automatic scheduling</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Broadcast-quality sound</strong> — consistent volume, no sudden loud or quiet tracks</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>No ads, ever</strong> — uninterrupted music all day, every day</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Staff announcements</strong> — record on your phone, schedule between songs</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>24/7 monitoring &amp; support</strong> — we keep it running so you don't have to</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>100% legal</strong> — no grey areas, no risk of your music being shut down</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Customer song requests</strong> from their smartphones - keeps punters engaged and staying longer</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> - different music for bar, dining, and gaming areas</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Dayparting</strong> - quieter mornings, upbeat nights, automatic scheduling</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Broadcast-quality sound</strong> - consistent volume, no sudden loud or quiet tracks</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>No ads, ever</strong> - uninterrupted music all day, every day</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Staff announcements</strong> - record on your phone, schedule between songs</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>24/7 monitoring &amp; support</strong> - we keep it running so you don't have to</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>100% legal</strong> - no grey areas, no risk of your music being shut down</li>
       </ul>
       <p><em>If just one extra customer per week stays for one more drink because they're enjoying the music and requesting songs, that extra revenue more than covers the difference.</em></p>
     </div>
@@ -571,7 +571,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <div class="lic-callout-icon"><i class="fas fa-piggy-bank"></i></div>
     <div class="lic-callout-body">
       <h4>On a Tight Budget? The $1/Day Plan Saves You Money</h4>
-      <p>Our <strong><a href="./dollar-a-day.html">$1/Day plan</a></strong> ($365/yr) brings your total to just <strong>$1,778/yr — saving $274/yr vs Spotify</strong> — with broadcast-quality, ad-free, fully licensed background music. No customer song requests, but still beats Spotify on sound quality, legality, and price. A great starting point before upgrading to the Full Package.</p>
+      <p>Our <strong><a href="./dollar-a-day.html">$1/Day plan</a></strong> ($365/yr) brings your total to just <strong>$1,778/yr - saving $274/yr vs Spotify</strong> - with broadcast-quality, ad-free, fully licensed background music. No customer song requests, but still beats Spotify on sound quality, legality, and price. A great starting point before upgrading to the Full Package.</p>
     </div>
   </div>
 </div>
@@ -594,7 +594,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>Spotify Premium subscription</td><td class="lic-vs-amount">$168/yr</td></tr>
-          <tr><td>OneMusic Diamond (7–9 TV screens)</td><td class="lic-vs-amount">$2,473/yr</td></tr>
+          <tr><td>OneMusic Diamond (7-9 TV screens)</td><td class="lic-vs-amount">$2,473/yr</td></tr>
           <tr><td>Digital Copy/Delivery (required for streaming)</td><td class="lic-vs-amount">$471/yr</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>$3,112/yr</strong></td></tr>
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$259/mo</td></tr>
@@ -608,7 +608,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
       <table class="lic-vs-table">
         <tbody>
           <tr><td>eJukebox Full Package (from $170/mo ex GST)</td><td class="lic-vs-amount">from $2,040/yr</td></tr>
-          <tr><td>OneMusic Diamond (7–9 TV screens) - paid separately</td><td class="lic-vs-amount">$2,473/yr</td></tr>
+          <tr><td>OneMusic Diamond (7-9 TV screens) - paid separately</td><td class="lic-vs-amount">$2,473/yr</td></tr>
           <tr><td>Digital Copy/Delivery</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
           <tr><td>Spotify subscription</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
           <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $4,513/yr</strong></td></tr>
@@ -621,27 +621,27 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
   <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
     <div class="lic-callout-icon"><i class="fas fa-balance-scale"></i></div>
     <div class="lic-callout-body">
-      <h4>It Costs More — Here's Why It's Worth Every Cent</h4>
+      <h4>It Costs More - Here's Why It's Worth Every Cent</h4>
       <p>The Full Package costs around <strong>$3.84 more per day</strong> than the Spotify route. But remember: you're comparing an <strong>illegal, consumer-grade music app</strong> against a <strong>professional entertainment platform built for large venues</strong>. You're already wasting $639/yr on Spotify + DCD fees for a setup that shouldn't even be used commercially.</p>
       <p>For that $3.84/day, your venue gets:</p>
       <ul>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Customer song requests</strong> — interactive entertainment that keeps punters at the bar longer</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> — different vibes for each area of your venue</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Dayparting</strong> — music adapts automatically throughout the day and week</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Broadcast-quality sound</strong> — professionally mixed, consistent volume across every song</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>No ads, ever</strong> — uninterrupted music, always</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Staff announcements</strong> — schedule messages between songs from your phone</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>24/7 monitoring &amp; support</strong> — we manage it, you run your pub</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>100% legal</strong> — complete peace of mind, zero compliance risk</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Customer song requests</strong> - interactive entertainment that keeps punters at the bar longer</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> - different vibes for each area of your venue</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Dayparting</strong> - music adapts automatically throughout the day and week</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Broadcast-quality sound</strong> - professionally mixed, consistent volume across every song</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>No ads, ever</strong> - uninterrupted music, always</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Staff announcements</strong> - schedule messages between songs from your phone</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>24/7 monitoring &amp; support</strong> - we manage it, you run your pub</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>100% legal</strong> - complete peace of mind, zero compliance risk</li>
       </ul>
-      <p><em>A venue this size could easily recoup the difference with just 2–3 extra drinks per week from customers staying longer to enjoy the music and request their favourites.</em></p>
+      <p><em>A venue this size could easily recoup the difference with just 2-3 extra drinks per week from customers staying longer to enjoy the music and request their favourites.</em></p>
     </div>
   </div>
   <div class="lic-callout lic-callout-info" style="margin-top: 10px;">
     <div class="lic-callout-icon"><i class="fas fa-piggy-bank"></i></div>
     <div class="lic-callout-body">
       <h4>On a Tight Budget? The $1/Day Plan Saves You Money</h4>
-      <p>Our <strong><a href="./dollar-a-day.html">$1/Day plan</a></strong> ($365/yr) brings your total to just <strong>$2,838/yr — saving $274/yr vs Spotify</strong> — with broadcast-quality, ad-free, fully licensed background music. A great starting point before upgrading to the Full Package when you're ready.</p>
+      <p>Our <strong><a href="./dollar-a-day.html">$1/Day plan</a></strong> ($365/yr) brings your total to just <strong>$2,838/yr - saving $274/yr vs Spotify</strong> - with broadcast-quality, ad-free, fully licensed background music. A great starting point before upgrading to the Full Package when you're ready.</p>
     </div>
   </div>
 </div>

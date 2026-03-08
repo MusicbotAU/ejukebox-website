@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Music Solutions & Pricing | Background Music for Pubs, Clubs & Retail
 description: Music solutions for pubs, clubs, cafes & retail from $1/day. Licensed background music streaming packages. Free demo, no contracts. Australian business music.
@@ -49,7 +49,7 @@ description: Music solutions for pubs, clubs, cafes & retail from $1/day. Licens
       <span class="price-period">per day</span>
     </div>
     <ul class="pricing-features">
-      <li><i class="fas fa-check"></i> <strong>Business-ready background music</strong> – ad-free and no talk.</li>
+      <li><i class="fas fa-check"></i> <strong>Business-ready background music</strong> - ad-free and no talk.</li>
       <li><i class="fas fa-check"></i> Choose one curated channel (Hits, Smooth, Rock or Country). Add extra channels for $1/day each.</li>
       <li><i class="fas fa-check"></i> <strong>Simple unique URL</strong>works on any computer, tablet, phone, Sonos/streamers.</li>
       <li><i class="fas fa-check"></i> Shared cloud infrastructure for scale and reliability.</li>
@@ -73,12 +73,12 @@ description: Music solutions for pubs, clubs, cafes & retail from $1/day. Licens
       <span class="price-amount">$130-$170</span>
       <span class="price-period">/month ex GST</span>
     </div>
-    <p class="pricing-subtitle"><strong>Self-Hosted or Cloud-Hosted</strong> – same features, choose your delivery model</p>
+    <p class="pricing-subtitle"><strong>Self-Hosted or Cloud-Hosted</strong> - same features, choose your delivery model</p>
     <ul class="pricing-features">
       <li><i class="fas fa-server"></i> <strong>Self-Hosted (on-site player):</strong> one-off hardware (typically <$500), lower monthly, caches music so it plays through internet dropouts.</li>
       <li><i class="fas fa-cloud"></i> <strong>Cloud-Hosted (managed in the cloud):</strong> no upfront hardware, higher monthly, requires a reliable internet connection; easy remote management.</li>
-      <li><i class="fas fa-check"></i> <strong>Interactive Requests</strong> – set your rules (e.g. up to 5 songs/hour).</li>
-      <li><i class="fas fa-check"></i> <strong>Staff/manager voice messages</strong> – record on your phone, schedule between songs.</li>
+      <li><i class="fas fa-check"></i> <strong>Interactive Requests</strong> - set your rules (e.g. up to 5 songs/hour).</li>
+      <li><i class="fas fa-check"></i> <strong>Staff/manager voice messages</strong> - record on your phone, schedule between songs.</li>
       <li><i class="fas fa-check"></i> <strong>Multi-zone support</strong> (e.g. main bar, dining, gaming) with different channels per zone.</li>
       <li><i class="fas fa-check"></i> <strong>Dayparting built in:</strong> lighter mornings, upbeat nights, weekend modes.</li>
       <li><i class="fas fa-check"></i> <strong>24/7 monitoring</strong> and remote support.</li>
@@ -100,7 +100,7 @@ description: Music solutions for pubs, clubs, cafes & retail from $1/day. Licens
       <span class="price-period">pricing</span>
     </div>
     <ul class="pricing-features">
-      <li><i class="fas fa-star"></i> Your <strong>own branded radio station</strong> (think Coles Radio), with 1–4 channels: Hits, Smooth, Rock, Country.</li>
+      <li><i class="fas fa-star"></i> Your <strong>own branded radio station</strong> (think Coles Radio), with 1-4 channels: Hits, Smooth, Rock, Country.</li>
       <li><i class="fas fa-microphone"></i> <strong>Professional voice-overs & imaging</strong>, plus in-store promos and timed messages (national, regional or venue-specific).</li>
       <li><i class="fas fa-shield-alt"></i> <strong>Dedicated infrastructure</strong> and priority support for rock-solid reliability.</li>
       <li><i class="fas fa-globe"></i> Option to <strong>stream publicly online</strong> (e.g. iHeartRadio or your website/app) to extend your brand.</li>
