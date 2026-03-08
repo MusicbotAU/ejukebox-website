@@ -531,30 +531,47 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$171/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> Inconsistent volume, still not legal</div>
+      <div class="lic-vs-verdict lic-verdict-bad"><i class="fas fa-exclamation-triangle"></i> Still breaching Spotify's terms — not actually legal!</div>
     </div>
     <div class="lic-vs-divider"><span>VS</span></div>
     <div class="lic-vs-card lic-vs-ejukebox">
-      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox $1/Day Plan</div>
+      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Full Package</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>eJukebox $1/day plan</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td>eJukebox Full Package (from $130/mo ex GST)</td><td class="lic-vs-amount">from $1,560/yr</td></tr>
           <tr><td>OneMusic Platinum (2–6 TV screens) - paid separately</td><td class="lic-vs-amount">$1,413/yr</td></tr>
           <tr><td>Digital Copy/Delivery</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
           <tr><td>Spotify subscription</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $1,778/yr</strong></td></tr>
-          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$148/mo</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $2,973/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">from $248/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, broadcast-quality sound, consistent volume, no ads. We can collect your OneMusic fee for you.</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, professional entertainment system. We can collect your OneMusic fee for you.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>up to $274 per year</strong> - plus professional sound, consistent volume, and complete legal compliance. We handle your OneMusic payment on your behalf.</div>
   <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
-    <div class="lic-callout-icon"><i class="fas fa-crown"></i></div>
+    <div class="lic-callout-icon"><i class="fas fa-balance-scale"></i></div>
     <div class="lic-callout-body">
-      <h4>Want More? Upgrade to the Full Package</h4>
-      <p>For venues that want the ultimate experience, our <strong>Full Package</strong> (from $1,560/yr) adds customer song requests, multi-zone audio, dayparting, and priority support. <a href="/full-package.html">Learn more about the Full Package</a>.</p>
+      <h4>It Costs More — Here's Why It's Worth Every Cent</h4>
+      <p>Yes, the Full Package costs around <strong>$2.52 more per day</strong> than the Spotify route. But consider: you're currently paying $639/yr on Spotify fees + Digital Copy/Delivery for a setup that's <strong>still not legal</strong> under Spotify's own terms. For that $2.52/day, you upgrade from a consumer music app to a <strong>professional entertainment system</strong> built for venues:</p>
+      <ul>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Customer song requests</strong> from their smartphones — keeps punters engaged and staying longer</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> — different music for bar, dining, and gaming areas</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Dayparting</strong> — quieter mornings, upbeat nights, automatic scheduling</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Broadcast-quality sound</strong> — consistent volume, no sudden loud or quiet tracks</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>No ads, ever</strong> — uninterrupted music all day, every day</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Staff announcements</strong> — record on your phone, schedule between songs</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>24/7 monitoring &amp; support</strong> — we keep it running so you don't have to</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>100% legal</strong> — no grey areas, no risk of your music being shut down</li>
+      </ul>
+      <p><em>If just one extra customer per week stays for one more drink because they're enjoying the music and requesting songs, that extra revenue more than covers the difference.</em></p>
+    </div>
+  </div>
+  <div class="lic-callout lic-callout-info" style="margin-top: 10px;">
+    <div class="lic-callout-icon"><i class="fas fa-piggy-bank"></i></div>
+    <div class="lic-callout-body">
+      <h4>On a Tight Budget? The $1/Day Plan Saves You Money</h4>
+      <p>Our <strong><a href="./dollar-a-day.html">$1/Day plan</a></strong> ($365/yr) brings your total to just <strong>$1,778/yr — saving $274/yr vs Spotify</strong> — with broadcast-quality, ad-free, fully licensed background music. No customer song requests, but still beats Spotify on sound quality, legality, and price. A great starting point before upgrading to the Full Package.</p>
     </div>
   </div>
 </div>
@@ -587,26 +604,44 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     </div>
     <div class="lic-vs-divider"><span>VS</span></div>
     <div class="lic-vs-card lic-vs-ejukebox">
-      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox $1/Day Plan</div>
+      <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Full Package</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>eJukebox $1/day plan</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td>eJukebox Full Package (from $170/mo ex GST)</td><td class="lic-vs-amount">from $2,040/yr</td></tr>
           <tr><td>OneMusic Diamond (7–9 TV screens) - paid separately</td><td class="lic-vs-amount">$2,473/yr</td></tr>
           <tr><td>Digital Copy/Delivery</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
           <tr><td>Spotify subscription</td><td class="lic-vs-amount lic-strikethrough">Not needed - $0</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $2,838/yr</strong></td></tr>
-          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$237/mo</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $4,513/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">from $376/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, broadcast-quality sound, no ads, fully compliant. We can collect your OneMusic fee for you.</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, professional entertainment system. We can collect your OneMusic fee for you.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> You save: <strong>up to $274 per year</strong> - plus professional sound, consistent volume, and complete legal compliance. We handle your OneMusic payment on your behalf.</div>
   <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
-    <div class="lic-callout-icon"><i class="fas fa-crown"></i></div>
+    <div class="lic-callout-icon"><i class="fas fa-balance-scale"></i></div>
     <div class="lic-callout-body">
-      <h4>Want More? Upgrade to the Full Package</h4>
-      <p>For larger venues that want premium features, our <strong>Full Package</strong> (from $2,040/yr) adds customer song requests, multi-zone audio, dayparting, and priority support. Even with the Full Package, you still save on Digital Copy/Delivery and Spotify fees. <a href="/full-package.html">Learn more about the Full Package</a>.</p>
+      <h4>It Costs More — Here's Why It's Worth Every Cent</h4>
+      <p>The Full Package costs around <strong>$3.84 more per day</strong> than the Spotify route. But remember: you're comparing an <strong>illegal, consumer-grade music app</strong> against a <strong>professional entertainment platform built for large venues</strong>. You're already wasting $639/yr on Spotify + DCD fees for a setup that shouldn't even be used commercially.</p>
+      <p>For that $3.84/day, your venue gets:</p>
+      <ul>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Customer song requests</strong> — interactive entertainment that keeps punters at the bar longer</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> — different vibes for each area of your venue</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Dayparting</strong> — music adapts automatically throughout the day and week</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Broadcast-quality sound</strong> — professionally mixed, consistent volume across every song</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>No ads, ever</strong> — uninterrupted music, always</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Staff announcements</strong> — schedule messages between songs from your phone</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>24/7 monitoring &amp; support</strong> — we manage it, you run your pub</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>100% legal</strong> — complete peace of mind, zero compliance risk</li>
+      </ul>
+      <p><em>A venue this size could easily recoup the difference with just 2–3 extra drinks per week from customers staying longer to enjoy the music and request their favourites.</em></p>
+    </div>
+  </div>
+  <div class="lic-callout lic-callout-info" style="margin-top: 10px;">
+    <div class="lic-callout-icon"><i class="fas fa-piggy-bank"></i></div>
+    <div class="lic-callout-body">
+      <h4>On a Tight Budget? The $1/Day Plan Saves You Money</h4>
+      <p>Our <strong><a href="./dollar-a-day.html">$1/Day plan</a></strong> ($365/yr) brings your total to just <strong>$2,838/yr — saving $274/yr vs Spotify</strong> — with broadcast-quality, ad-free, fully licensed background music. A great starting point before upgrading to the Full Package when you're ready.</p>
     </div>
   </div>
 </div>

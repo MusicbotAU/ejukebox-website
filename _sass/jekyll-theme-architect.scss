@@ -7679,6 +7679,19 @@ a.hero-image-badge:hover {
   border: 1px solid rgba(16, 185, 129, 0.25);
 }
 
+.lic-callout-info {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+
+  .lic-callout-icon {
+    color: #60a5fa;
+  }
+
+  .lic-callout-body h4 {
+    color: #60a5fa;
+  }
+}
+
 .lic-callout-icon {
   font-size: 1.5em;
   color: #34d399;
@@ -7696,6 +7709,18 @@ a.hero-image-badge:hover {
   margin: 0;
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
+}
+
+.lic-callout-body ul {
+  margin: 10px 0;
+  padding-left: 5px;
+  list-style: none;
+}
+
+.lic-callout-body ul li {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin-bottom: 4px;
 }
 
 /* ===================================
