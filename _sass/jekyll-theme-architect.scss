@@ -670,6 +670,66 @@ aside#sidebar iframe {
 }
 
 /* ============================================
+   HERO LOOP VIDEO (top of homepage)
+   ============================================ */
+.hero-loop-video {
+  margin: 20px 0 30px;
+}
+
+.hero-loop-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    0 0 60px rgba(99, 102, 241, 0.15);
+  background: #0f0f1a;
+}
+
+.hero-loop-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+.hero-loop-unmute {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(15, 15, 26, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #f8fafc;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.hero-loop-unmute:hover {
+  background: rgba(99, 102, 241, 0.55);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.hero-loop-unmute.unmuted {
+  background: rgba(236, 72, 153, 0.55);
+  border-color: rgba(236, 72, 153, 0.6);
+}
+
+/* ============================================
    HERO STAT BANNER
    ============================================ */
 .hero-stat-banner {
