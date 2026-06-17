@@ -156,23 +156,21 @@
           <h4><i class="fas fa-video"></i> See eJukebox in Action</h4>
 
           <div class="video-container">
-            <iframe id="video3" width="100%" height="180"
-              src="https://www.youtube-nocookie.com/embed/LkLWbcs0YSI?playlist=LkLWbcs0YSI&loop=1&autoplay=1&mute=1&controls=1&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&enablejsapi=1"
-              frameborder="0" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture" loading="lazy">
-            </iframe>
-            <button class="video-unmute-btn" onclick="toggleMute('video3', this)" title="Click to unmute">
-              <i class="fas fa-volume-mute"></i> <span class="vb-label">Unmute</span>
-            </button>
+            <div class="video-facade" data-video-id="LkLWbcs0YSI" role="button" tabindex="0"
+              aria-label="Play eJukebox video" onclick="loadYouTube(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();loadYouTube(this);}">
+              <img class="video-facade-thumb" src="https://i.ytimg.com/vi/LkLWbcs0YSI/maxresdefault.jpg"
+                onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/LkLWbcs0YSI/hqdefault.jpg';" alt="" loading="lazy">
+              <span class="video-facade-play"><i class="fas fa-play"></i></span>
+            </div>
           </div>
 
           <div class="video-container">
-            <iframe id="video2" width="100%" height="180"
-              src="https://www.youtube-nocookie.com/embed/KsEeYdxmwkA?playlist=KsEeYdxmwkA&loop=1&autoplay=1&mute=1&controls=1&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&enablejsapi=1"
-              frameborder="0" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture" loading="lazy">
-            </iframe>
-            <button class="video-unmute-btn" onclick="toggleMute('video2', this)" title="Click to unmute">
-              <i class="fas fa-volume-mute"></i> <span class="vb-label">Unmute</span>
-            </button>
+            <div class="video-facade" data-video-id="KsEeYdxmwkA" role="button" tabindex="0"
+              aria-label="Play eJukebox video" onclick="loadYouTube(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();loadYouTube(this);}">
+              <img class="video-facade-thumb" src="https://i.ytimg.com/vi/KsEeYdxmwkA/maxresdefault.jpg"
+                onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/KsEeYdxmwkA/hqdefault.jpg';" alt="" loading="lazy">
+              <span class="video-facade-play"><i class="fas fa-play"></i></span>
+            </div>
           </div>
 
 
@@ -314,28 +312,23 @@
           });
         });
 
-        // Video mute/unmute toggle function
-        function toggleMute(videoId, button) {
-          const iframe = document.getElementById(videoId);
-          const currentSrc = iframe.src;
-          const icon = button.querySelector('i');
-          const label = button.querySelector('.vb-label');
-
-          if (currentSrc.includes('mute=1')) {
-            // Unmute - replace mute=1 with mute=0
-            iframe.src = currentSrc.replace('mute=1', 'mute=0');
-            if (icon) icon.className = 'fas fa-volume-up';
-            if (label) label.textContent = 'Mute';
-            button.title = 'Click to mute';
-            button.classList.add('unmuted');
-          } else {
-            // Mute - replace mute=0 with mute=1
-            iframe.src = currentSrc.replace('mute=0', 'mute=1');
-            if (icon) icon.className = 'fas fa-volume-mute';
-            if (label) label.textContent = 'Unmute';
-            button.title = 'Click to unmute';
-            button.classList.remove('unmuted');
-          }
+        // Click-to-play YouTube facade.
+        // The real iframe is only injected on a genuine user click/keypress, so the
+        // playback is user-initiated. This avoids YouTube's "Sign in to confirm you're
+        // not a bot" gate, which is triggered by programmatic autoplay of embeds.
+        function loadYouTube(el) {
+          if (el.classList.contains('loaded')) return;
+          el.classList.add('loaded');
+          const id = el.getAttribute('data-video-id');
+          const iframe = document.createElement('iframe');
+          iframe.src = 'https://www.youtube-nocookie.com/embed/' + id +
+            '?playlist=' + id + '&loop=1&autoplay=1&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3';
+          iframe.setAttribute('frameborder', '0');
+          iframe.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture; fullscreen');
+          iframe.setAttribute('allowfullscreen', '');
+          iframe.setAttribute('title', 'eJukebox');
+          el.innerHTML = '';
+          el.appendChild(iframe);
         }
       </script>
 </body>

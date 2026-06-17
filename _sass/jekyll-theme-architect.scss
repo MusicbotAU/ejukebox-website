@@ -698,35 +698,70 @@ aside#sidebar iframe {
   border: 0;
 }
 
-.hero-loop-unmute {
+/* Click-to-play facade (shared by hero + sidebar videos).
+   Avoids YouTube's anti-bot gate by only loading the real iframe on user click.
+   Self-sizing via aspect-ratio so it doesn't depend on its parent's height. */
+.video-facade {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Sidebar facades keep the rounded corners + shadow the old iframes had */
+.video-section .video-facade {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-facade-thumb {
   position: absolute;
-  bottom: 14px;
-  right: 14px;
-  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.video-facade:hover .video-facade-thumb {
+  transform: scale(1.04);
+  filter: brightness(1.08);
+}
+
+.video-facade-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
-  background: rgba(15, 15, 26, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #f8fafc;
-  font-size: 16px;
-  cursor: pointer;
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-  transition: all 0.3s ease;
+  background: rgba(99, 102, 241, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  color: #fff;
+  font-size: 26px;
+  padding-left: 5px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45), 0 0 40px rgba(99, 102, 241, 0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.hero-loop-unmute:hover {
-  background: rgba(99, 102, 241, 0.55);
-  border-color: rgba(255, 255, 255, 0.35);
+.video-facade:hover .video-facade-play {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: rgba(236, 72, 153, 0.9);
 }
 
-.hero-loop-unmute.unmuted {
-  background: rgba(236, 72, 153, 0.55);
-  border-color: rgba(236, 72, 153, 0.6);
+.video-facade iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* ============================================

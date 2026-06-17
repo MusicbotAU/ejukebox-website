@@ -21,7 +21,12 @@ description: Background music for business from just $1/day. Australia's most af
 
 <div class="video-showcase">
   <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gjqB1u8GIxs?playlist=gjqB1u8GIxs&loop=1&autoplay=1&mute=1&showinfo=1&rel=0" frameborder="0" allowfullscreen></iframe>
+    <div class="video-facade" data-video-id="gjqB1u8GIxs" role="button" tabindex="0"
+      aria-label="Play eJukebox video" onclick="loadYouTube(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();loadYouTube(this);}">
+      <img class="video-facade-thumb" src="https://i.ytimg.com/vi/gjqB1u8GIxs/maxresdefault.jpg"
+        onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gjqB1u8GIxs/hqdefault.jpg';" alt="" loading="lazy">
+      <span class="video-facade-play"><i class="fas fa-play"></i></span>
+    </div>
   </div>
 </div>
 

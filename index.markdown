@@ -6,12 +6,12 @@ description: Music for business - Australia's leading jukebox and background mus
 
 <div class="hero-loop-video">
   <div class="hero-loop-video-frame">
-    <iframe id="heroLoopVideo"
-      src="https://www.youtube-nocookie.com/embed/MiZogttwJjI?playlist=MiZogttwJjI&loop=1&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&fs=0&iv_load_policy=3&enablejsapi=1"
-      frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" title="eJukebox"></iframe>
-    <button class="hero-loop-unmute" onclick="toggleMute('heroLoopVideo', this)" aria-label="Unmute video" title="Click to turn sound on">
-      <i class="fas fa-volume-mute"></i>
-    </button>
+    <div class="video-facade" data-video-id="MiZogttwJjI" role="button" tabindex="0"
+      aria-label="Play eJukebox video" onclick="loadYouTube(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();loadYouTube(this);}">
+      <img class="video-facade-thumb" src="https://i.ytimg.com/vi/MiZogttwJjI/maxresdefault.jpg"
+        onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/MiZogttwJjI/hqdefault.jpg';" alt="" loading="eager">
+      <span class="video-facade-play"><i class="fas fa-play"></i></span>
+    </div>
   </div>
 </div>
 
