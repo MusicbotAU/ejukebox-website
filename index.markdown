@@ -4,17 +4,6 @@ title: Music for Business Australia | Pubs, Clubs, Cafes & Retail Music Solution
 description: Music for business - Australia's leading jukebox and background music solution for pubs, clubs, bars, cafes & retail. Licensed streaming from $1/day. Free trial.
 ---
 
-<div class="hero-loop-video">
-  <div class="hero-loop-video-frame">
-    <div class="video-facade" data-video-id="MiZogttwJjI" role="button" tabindex="0"
-      aria-label="Play eJukebox video" onclick="loadYouTube(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();loadYouTube(this);}">
-      <img class="video-facade-thumb" src="https://i.ytimg.com/vi/MiZogttwJjI/maxresdefault.jpg"
-        onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/MiZogttwJjI/hqdefault.jpg';" alt="" loading="eager">
-      <span class="video-facade-play"><i class="fas fa-play"></i></span>
-    </div>
-  </div>
-</div>
-
 <div class="hero-stat-banner">
   <div class="hero-stat-content">
     <div class="hero-stat-label">Research Shows</div>
