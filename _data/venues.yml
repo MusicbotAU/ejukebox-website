@@ -1,0 +1,30 @@
+# Master list of venue landing pages. Feeds the header "Music for Your Venue"
+# dropdown, the mobile menu, and the "Other venues we cover" cross-links.
+# Edit here once and every menu + page updates.
+- slug: music-for-pubs-bars
+  label: Pubs & Bars
+  icon: fa-beer-mug-empty
+- slug: music-for-nightclubs
+  label: Clubs & Nightclubs
+  icon: fa-record-vinyl
+- slug: music-for-cafes
+  label: Cafés & Coffee Shops
+  icon: fa-mug-hot
+- slug: music-for-restaurants
+  label: Restaurants & Dining
+  icon: fa-utensils
+- slug: music-for-gyms
+  label: Gyms & Fitness
+  icon: fa-dumbbell
+- slug: music-for-hotels
+  label: Hotels & Accommodation
+  icon: fa-hotel
+- slug: music-for-retail
+  label: Retail & Shops
+  icon: fa-bag-shopping
+- slug: music-for-salons-spas
+  label: Salons & Spas
+  icon: fa-spa
+- slug: music-for-medical
+  label: Medical & Waiting Rooms
+  icon: fa-stethoscope

@@ -52,19 +52,29 @@
     </div>
     <ul class="mobile-nav-links">
       <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="/products.html"><i class="fas fa-box"></i> Products & Pricing</a></li>
       <li><a href="/free-trial.html" class="trial-link"><i class="fas fa-gift"></i> Free 7-Day Trial</a></li>
-      <li class="mobile-nav-subheader">Package Info:</li>
+      <li class="mobile-nav-subheader">Music for Your Venue:</li>
+      {% for v in site.data.venues %}
+      <li><a href="/{{ v.slug }}/"><i class="fas {{ v.icon }}"></i> {{ v.label }}</a></li>
+      {% endfor %}
+      <li class="mobile-nav-subheader">How It Works:</li>
+      <li><a href="/automated-jukebox-system.html"><i class="fas fa-cogs"></i> Automated Jukebox System</a></li>
+      <li><a href="/ejukebox-request-portal.html"><i class="fas fa-hand-pointer"></i> Song Request Portal</a></li>
+      <li><a href="/controller-app.html"><i class="fas fa-mobile-screen"></i> Controller App</a></li>
+      <li><a href="/ejukebox-apps.html"><i class="fas fa-download"></i> Download the Apps</a></li>
+      <li><a href="/custom-radio.html"><i class="fas fa-broadcast-tower"></i> Custom Branded Radio</a></li>
+      <li><a href="/behind-the-scenes.html"><i class="fas fa-screwdriver-wrench"></i> Behind the Scenes</a></li>
+      <li class="mobile-nav-subheader">Licensing &amp; Pricing:</li>
+      <li><a href="/licensing.html"><i class="fas fa-certificate"></i> Music Licensing</a></li>
+      <li><a href="/products.html"><i class="fas fa-box"></i> All Plans &amp; Pricing</a></li>
       <li><a href="/dollar-a-day.html"><i class="fas fa-dollar-sign"></i> $1/Day Package</a></li>
       <li><a href="/full-package.html"><i class="fas fa-crown"></i> Full Package</a></li>
-      <li><a href="/custom-radio.html"><i class="fas fa-broadcast-tower"></i> Custom Radio</a></li>
-      <li class="mobile-nav-subheader">More:</li>
-      <li><a href="/why-us.html"><i class="fas fa-star"></i> Why Us?</a></li>
-      <li><a href="/licensing.html"><i class="fas fa-certificate"></i> Licensing</a></li>
-      <li><a href="/stream-us.html"><i class="fas fa-play-circle"></i> Stream Us</a></li>
+      <li><a href="/hits-package.html"><i class="fas fa-fire"></i> Hits Package</a></li>
+      <li class="mobile-nav-subheader">Why eJukebox:</li>
+      <li><a href="/why-us2.html"><i class="fas fa-star"></i> Why Choose Us</a></li>
       <li><a href="/BenefitsofMusic.html"><i class="fas fa-music"></i> Benefits of Music</a></li>
-      <li><a href="/automated-jukebox-system.html"><i class="fas fa-cogs"></i> Automated Jukebox</a></li>
-      <li><a href="/privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+      <li><a href="/people-love-ejukebox.html"><i class="fas fa-heart"></i> Testimonials</a></li>
+      <li><a href="/stream-us.html"><i class="fas fa-play-circle"></i> Listen to Demos</a></li>
     </ul>
     <div class="mobile-nav-contact">
       <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website"><i class="fas fa-envelope"></i>
@@ -92,33 +102,59 @@
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li class="dropdown">
-            <a href="/products.html" class="dropdown-toggle">Products <i class="fas fa-chevron-down"></i></a>
+            <a href="#" class="dropdown-toggle">Music for Your Venue <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="/products.html"><span class="dropdown-icon"><i class="fas fa-box"></i></span><span
-                    class="dropdown-text">All Products & Pricing</span></a></li>
-              <li class="dropdown-divider"></li>
-              <li><a href="/dollar-a-day.html"><span class="dropdown-icon"><i
-                      class="fas fa-dollar-sign"></i></span><span class="dropdown-text">$1/Day Package Info</span></a>
-              </li>
-              <li><a href="/full-package.html"><span class="dropdown-icon"><i class="fas fa-crown"></i></span><span
-                    class="dropdown-text">Full Package Info</span></a></li>
-              <li><a href="/custom-radio.html"><span class="dropdown-icon"><i
-                      class="fas fa-broadcast-tower"></i></span><span class="dropdown-text">Custom Radio Info</span></a>
-              </li>
+              {% for v in site.data.venues %}
+              <li><a href="/{{ v.slug }}/"><span class="dropdown-icon"><i class="fas {{ v.icon }}"></i></span><span
+                    class="dropdown-text">{{ v.label }}</span></a></li>
+              {% endfor %}
             </ul>
           </li>
-          <li><a href="/why-us.html">Why Us</a></li>
-          <li><a href="/licensing.html">Licensing</a></li>
-          <li><a href="/stream-us.html">Stream Us</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle">More <i class="fas fa-chevron-down"></i></a>
+            <a href="#" class="dropdown-toggle">How It Works <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
+              <li><a href="/automated-jukebox-system.html"><span class="dropdown-icon"><i class="fas fa-cogs"></i></span><span
+                    class="dropdown-text">Automated Jukebox System</span></a></li>
+              <li><a href="/ejukebox-request-portal.html"><span class="dropdown-icon"><i class="fas fa-hand-pointer"></i></span><span
+                    class="dropdown-text">Song Request Portal</span></a></li>
+              <li><a href="/controller-app.html"><span class="dropdown-icon"><i class="fas fa-mobile-screen"></i></span><span
+                    class="dropdown-text">Jukebox Controller App</span></a></li>
+              <li><a href="/ejukebox-apps.html"><span class="dropdown-icon"><i class="fas fa-download"></i></span><span
+                    class="dropdown-text">Download the Apps</span></a></li>
+              <li><a href="/custom-radio.html"><span class="dropdown-icon"><i class="fas fa-broadcast-tower"></i></span><span
+                    class="dropdown-text">Custom Branded Radio</span></a></li>
+              <li><a href="/behind-the-scenes.html"><span class="dropdown-icon"><i class="fas fa-screwdriver-wrench"></i></span><span
+                    class="dropdown-text">Behind the Scenes</span></a></li>
+            </ul>
+          </li>
+          <li><a href="/licensing.html">Music Licensing</a></li>
+          <li class="dropdown">
+            <a href="/products.html" class="dropdown-toggle">Plans &amp; Pricing <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="/products.html"><span class="dropdown-icon"><i class="fas fa-box"></i></span><span
+                    class="dropdown-text">All Plans &amp; Pricing</span></a></li>
+              <li class="dropdown-divider"></li>
+              <li><a href="/dollar-a-day.html"><span class="dropdown-icon"><i class="fas fa-dollar-sign"></i></span><span
+                    class="dropdown-text">$1/Day Package</span></a></li>
+              <li><a href="/full-package.html"><span class="dropdown-icon"><i class="fas fa-crown"></i></span><span
+                    class="dropdown-text">Full Package</span></a></li>
+              <li><a href="/hits-package.html"><span class="dropdown-icon"><i class="fas fa-fire"></i></span><span
+                    class="dropdown-text">Hits Package</span></a></li>
+              <li><a href="/custom-radio.html"><span class="dropdown-icon"><i class="fas fa-broadcast-tower"></i></span><span
+                    class="dropdown-text">Custom Radio</span></a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="/why-us2.html" class="dropdown-toggle">Why eJukebox <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="/why-us2.html"><span class="dropdown-icon"><i class="fas fa-star"></i></span><span
+                    class="dropdown-text">Why Choose Us</span></a></li>
               <li><a href="/BenefitsofMusic.html"><span class="dropdown-icon"><i class="fas fa-music"></i></span><span
                     class="dropdown-text">Benefits of Music</span></a></li>
-              <li><a href="/automated-jukebox-system.html"><span class="dropdown-icon"><i
-                      class="fas fa-cogs"></i></span><span class="dropdown-text">Automated Jukebox</span></a></li>
-              <li><a href="/privacy-policy.html"><span class="dropdown-icon"><i
-                      class="fas fa-shield-alt"></i></span><span class="dropdown-text">Privacy Policy</span></a></li>
+              <li><a href="/people-love-ejukebox.html"><span class="dropdown-icon"><i class="fas fa-heart"></i></span><span
+                    class="dropdown-text">Testimonials</span></a></li>
+              <li><a href="/stream-us.html"><span class="dropdown-icon"><i class="fas fa-play-circle"></i></span><span
+                    class="dropdown-text">Listen to Demos</span></a></li>
             </ul>
           </li>
           <li><a href="/free-trial.html" class="nav-cta trial-nav-btn"><i class="fas fa-gift"></i> Free Trial</a></li>
