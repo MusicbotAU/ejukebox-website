@@ -4,7 +4,7 @@ permalink: /music-for-restaurants/
 slug: music-for-restaurants
 label: Restaurants & Dining
 venue_name: restaurants
-title: Music for Restaurants Australia | Dining Music | eJukebox
+title: Music for Restaurants Australia | Dining Music
 description: Licensed background music for Australian restaurants. Curated dining playlists with dayparting and easy control. OneMusic licence included. Free trial.
 h1: Music for Restaurants & Dining
 intro: Great dining music sets the pace of a room without ever getting in the way. eJukebox gives your restaurant tasteful, licensed playlists matched to your cuisine and service, easily controlled from a phone or tablet through every sitting.

@@ -4,7 +4,7 @@ permalink: /music-for-hotels/
 slug: music-for-hotels
 label: Hotels & Accommodation
 venue_name: hotels & accommodation
-title: Music for Hotels & Accommodation Australia | eJukebox
+title: Music for Hotels & Accommodation Australia
 description: Licensed background music for Australian hotels, resorts and accommodation. Zone-based playlists from lobby to bar. OneMusic licence included. Free trial.
 h1: Music for Hotels & Accommodation
 intro: From the lobby to the pool bar, every space in your hotel has its own mood. eJukebox provides licensed, professionally curated music you can tailor by zone and time of day, lifting the guest experience from check-in to last drinks.

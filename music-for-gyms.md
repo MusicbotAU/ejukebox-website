@@ -4,7 +4,7 @@ permalink: /music-for-gyms/
 slug: music-for-gyms
 label: Gyms & Fitness
 venue_name: gyms & fitness studios
-title: Music for Gyms & Fitness Studios Australia | eJukebox
+title: Music for Gyms & Fitness Studios Australia
 description: Licensed, motivating music for Australian gyms and fitness studios. High-energy playlists and dayparting. OneMusic licence included. Free trial.
 h1: Music for Gyms & Fitness
 intro: Energy on the floor starts with the music. eJukebox delivers motivating, licensed playlists built for training, from early-morning sessions to peak evening classes, without the copyright risk of running a personal Spotify account in a commercial space.
