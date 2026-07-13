@@ -36,3 +36,10 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Required for Ruby 3.0+
 gem "webrick"
 
+# Ruby 3.4+/4.0 removed these from the default gems; Jekyll still needs them
+gem "logger"
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+gem "ostruct"
+

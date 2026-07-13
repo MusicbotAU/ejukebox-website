@@ -74,6 +74,40 @@ description: Control your venue's music from your smartphone. eJukebox controlle
   </div>
 </div>
 
+<div class="functions-section">
+  <div class="section-header">
+    <i class="fas fa-arrows-up-down"></i>
+    <h2>Next Songs Reordering</h2>
+  </div>
+  <p class="section-intro"><strong>Direct the soundtrack of the night.</strong> A great night has a shape, a rise and fall in energy that a good host feels and steers. Next Songs reordering hands you that control, and because it is part of the standard package, it is included, never an upsell.</p>
+
+  <div class="function-features">
+    <div class="function-card">
+      <div class="function-icon">
+        <i class="fas fa-hand-pointer"></i>
+      </div>
+      <h3>Drag to reorder</h3>
+      <p>See the upcoming songs laid out and simply drag them, or nudge them up and down, to reshape the queue. The change takes effect on the player right away, all from your phone, mid-shift, without missing a beat.</p>
+    </div>
+
+    <div class="function-card">
+      <div class="function-icon">
+        <i class="fas fa-arrow-trend-up"></i>
+      </div>
+      <h3>Match the mood</h3>
+      <p>Bump the crowd-pleaser earlier, hold the mellow track back for later, and drag the perfect closer into place. Lift the energy in the final hour, or keep it smooth and low during dinner service.</p>
+    </div>
+
+    <div class="function-card">
+      <div class="function-icon">
+        <i class="fas fa-user-tie"></i>
+      </div>
+      <h3>You're in the chair</h3>
+      <p>Most background-music systems are set-and-forget and the room feels accidental. This puts you in the director's chair so your venue always feels intentional, curated and alive.</p>
+    </div>
+  </div>
+</div>
+
 <div class="download-cta">
   <div class="cta-content">
     <h2><i class="fas fa-download"></i> Get the Controller App</h2>

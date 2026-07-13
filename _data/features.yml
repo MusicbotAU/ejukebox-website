@@ -1,0 +1,21 @@
+# Master list of feature landing pages. Feeds the header "Features" dropdown,
+# the mobile menu, and the footer. Edit here once and every menu updates.
+- slug: voice-announcements
+  label: Voice & Announcements
+  icon: fa-bullhorn
+- slug: live-microphone
+  label: Live Microphone
+  icon: fa-microphone-lines
+- slug: spotify-integration
+  label: Spotify Integration
+  icon: fa-spotify
+  brand: true
+- slug: in-venue-screens
+  label: In-Venue Screens
+  icon: fa-tv
+- slug: functions-events
+  label: Functions & Events
+  icon: fa-champagne-glasses
+- slug: playing-across-the-country
+  label: Playing Across the Country
+  icon: fa-map-location-dot

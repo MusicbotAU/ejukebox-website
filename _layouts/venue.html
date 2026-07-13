@@ -21,6 +21,13 @@ layout: default
   </section>
   {% endif %}
 
+  {% if page.spotlight_title %}
+  <section class="venue-block venue-spotlight">
+    <h2>{{ page.spotlight_title }}</h2>
+    {{ page.spotlight_body | markdownify }}
+  </section>
+  {% endif %}
+
   <section class="venue-block">
     <h2>How the eJukebox jukebox works in your venue</h2>
     <p>eJukebox is a cloud-powered music system. Staff control it from any smartphone, and your customers can request songs from their own phones, no hardware jukebox required.</p>
@@ -37,7 +44,7 @@ layout: default
   </section>
 
   <section class="venue-block venue-pricing">
-    <h2>Simple pricing from $1 a day</h2>
+    <h2>Plans to suit your venue</h2>
     <p>No lock-in contracts, no hardware to buy. Pick the plan that suits your venue and start today.</p>
     <p class="venue-ctas">
       <a href="/products.html" class="venue-btn-outline">See plans &amp; pricing</a>
@@ -82,6 +89,10 @@ layout: default
 .venue-block h2{font-size:1.4rem;margin:0 0 12px}
 .venue-links{padding-left:20px}.venue-links li{margin:7px 0}
 .venue-licensing{background:#f7f4ec;border-left:3px solid #f5a623;padding:18px 22px;border-radius:8px}
+.venue-spotlight{background:linear-gradient(135deg,#1a1a2e,#23233f);color:#e8eaf0;padding:24px 26px;border-radius:12px;border:1px solid rgba(245,166,35,.25)}
+.venue-spotlight h2{color:#fff}
+.venue-spotlight p{color:#c7cbd6}
+.venue-spotlight a{color:#f5a623;font-weight:600}
 .venue-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
 .venue-btn{background:#f5a623;color:#1a1a2e;font-weight:700;padding:11px 20px;border-radius:8px;text-decoration:none}
 .venue-btn-outline{border:1.5px solid #f5a623;color:#b06f12;font-weight:700;padding:11px 20px;border-radius:8px;text-decoration:none}

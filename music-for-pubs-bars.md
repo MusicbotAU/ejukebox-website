@@ -8,6 +8,9 @@ title: Music for Pubs & Bars Australia | Jukebox & Music
 description: Background music and an interactive jukebox for Australian pubs & bars. Patrons request songs from their phone. OneMusic licence included. Free trial.
 h1: Music for Pubs & Bars
 intro: The right music keeps patrons in the room and ordering at the bar. eJukebox gives your pub or bar a professionally curated, fully licensed soundtrack your staff steer from a phone, and lets customers request the songs they want to hear, no DJ and no jukebox box bolted to the wall.
+spotlight_title: Running an Irish bar?
+spotlight_body: >-
+  We have a dedicated channel of authentic Irish music, traditional and modern, plus a ready-made St Patrick's Day playlist. [See Irish pub music &rarr;](/irish-pub-music/)
 benefits:
   - icon: fa-beer-mug-empty
     title: Keep the bar buzzing
