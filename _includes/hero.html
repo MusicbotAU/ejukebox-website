@@ -97,7 +97,9 @@
   .ej-hero::after{content:"";position:absolute;inset:0;z-index:-1;
     background:linear-gradient(105deg,rgba(15,15,26,.94) 0%,rgba(15,15,26,.82) 38%,rgba(15,15,26,.5) 68%,rgba(99,102,241,.35) 100%)}
   .ej-hero__inner{max-width:1200px;margin:0 auto;padding:64px 30px 72px;display:grid;gap:40px;
-    grid-template-columns:1.15fr minmax(330px,430px);align-items:center}
+    grid-template-columns:1fr;align-items:center}
+  /* Two-column split only when the trial form card is present; otherwise the copy spans full width. */
+  .ej-hero__inner:has(.ej-hero__card){grid-template-columns:1.15fr minmax(330px,430px)}
   .ej-hero__eyebrow{margin:0 0 14px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
     color:var(--accent-glow,#22d3ee)}
   .ej-hero__title{margin:0;font-weight:800;line-height:1.06;letter-spacing:-.02em;text-wrap:balance;

@@ -1,13 +1,20 @@
 ---
 layout: default
 ---
-<article class="venue-page">
+{% comment %} Full-width hero banner. Image convention: /assets/images/venues/<slug>.jpg
+   (override per page with `hero_image:` in front matter). Wording comes from the page h1/intro. {% endcomment %}
+{% capture default_hero_img %}/assets/images/venues/{{ page.slug }}.jpg{% endcapture %}
+{% assign venue_hero_img = page.hero_image | default: default_hero_img %}
+{% include hero.html
+   image=venue_hero_img
+   eyebrow="Licensed music for Australian venues"
+   h1=page.h1
+   sub=page.intro
+   form=page.hero_form
+   cta_text="See plans & pricing"
+   cta_url="/products.html" %}
 
-  <header class="venue-hero">
-    <h1>{{ page.h1 }}</h1>
-    <p class="venue-intro">{{ page.intro }}</p>
-    <a href="/free-trial.html" class="venue-cta"><i class="fas fa-gift"></i> Start your free 7-day trial</a>
-  </header>
+<article class="venue-page">
 
   {% if page.benefits %}
   <section class="venue-benefits">
