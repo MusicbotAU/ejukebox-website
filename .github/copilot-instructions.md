@@ -2,8 +2,8 @@
 
 ## Typography Rules
 
-- **Never use em dashes (—) or en dashes (–).** Always use a regular hyphen/dash (-) instead. This applies to all content across the entire site: markdown files, HTML templates, SCSS, and any other text content.
-  - Wrong: `It Costs More — Here's Why`
+- **Never use em dashes (-) or en dashes (-).** Always use a regular hyphen/dash (-) instead. This applies to all content across the entire site: markdown files, HTML templates, SCSS, and any other text content.
+  - Wrong: `It Costs More - Here's Why`
   - Right: `It Costs More - Here's Why`
 
 ## General

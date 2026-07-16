@@ -14,7 +14,7 @@
 <div class="ejm-confidential">
   <div class="ejm-conf-icon"><i class="fas fa-user-secret"></i></div>
   <div class="ejm-conf-body">
-    <strong>Confidential &mdash; not for distribution.</strong>
+    <strong>Confidential - not for distribution.</strong>
     {% if wholesale %}
     This page sets out eJukebox wholesale (partner) rates and is provided in confidence to approved resellers only.
     The wholesale column, margins and any figures on this page must not be shown to end customers, forwarded, or shared
@@ -42,7 +42,7 @@
     the recommended retail price, and keep the difference. Every box below shows both numbers and the margin between
     them. Tick what the venue wants and the totals at the bottom add up in real time.
     {% else %}
-    Start with the base product, then add only the features you want &mdash; like an &agrave; la carte menu. Tick the boxes
+    Start with the base product, then add only the features you want - like an &agrave; la carte menu. Tick the boxes
     below and your monthly total adds up as you go. Every feature has a short video, so you can see exactly what
     you're paying for before you decide.
     {% endif %}
@@ -50,7 +50,7 @@
   <div class="ejm-hero-notes">
     <span><i class="fas fa-check"></i> All prices per venue, per month, ex GST</span>
     <span><i class="fas fa-check"></i> Two zones included in Core</span>
-    <span><i class="fas fa-certificate"></i> OneMusic licence is separate &mdash; see below</span>
+    <span><i class="fas fa-certificate"></i> OneMusic licence is separate - see below</span>
   </div>
 </header>
 
@@ -62,11 +62,11 @@
   </div>
   <div class="ejm-how-item">
     <div class="ejm-how-n">2</div>
-    <div><h4>Add what you want</h4><p>Every add-on is optional and priced on its own. Tap any box to watch a short video of the feature in action.</p></div>
+    <div><h4>Add what you want</h4><p>Every add-on is optional and priced on its own. Not sure what one does? Press <b>Watch video</b> and see it in about 30 seconds.</p></div>
   </div>
   <div class="ejm-how-item">
     <div class="ejm-how-n">3</div>
-    <div><h4>See your total</h4><p>The bar at the bottom keeps a running monthly total{% if wholesale %}, your cost and the recommended retail price side by side{% endif %}.</p></div>
+    <div><h4>See your total</h4><p>The bar at the bottom follows you down the page with your monthly total{% if wholesale %}, your cost and the retail price side by side{% endif %}. Nothing is ordered until you send it to us.</p></div>
   </div>
 </div>
 
@@ -76,16 +76,16 @@
     <h2>The base product</h2>
     <span class="ejm-tag ejm-tag-base">Where every package starts</span>
   </div>
-  <p class="ejm-sec-note">Always-on, professionally curated music installed on-site at your venue &mdash; not streamed down from the cloud. If the internet drops out, the music keeps playing. This is the product itself; everything further down bolts on top of it.</p>
+  <p class="ejm-sec-note">Always-on, professionally curated music installed on-site at your venue - not streamed down from the cloud. If the internet drops out, the music keeps playing. This is the product itself; everything further down bolts on top of it.</p>
 
   <div class="ejm-base">
     <div class="ejm-base-main">
       <h3>Music isn't background. It's business.</h3>
-      <p>The right music, curated by real Australian music directors, creates genuine warmth the moment your customers walk in &mdash; and that warmth is worth real money. Get it wrong and people leave; get it right and they relax, they linger, and they spend. eJukebox is built to get it right every hour of every day, and we can run the whole thing for you.</p>
+      <p>The right music, curated by real Australian music directors, creates genuine warmth the moment your customers walk in - and that warmth is worth real money. Get it wrong and people leave; get it right and they relax, they linger, and they spend. eJukebox is built to get it right every hour of every day, and we can run the whole thing for you.</p>
       <div class="ejm-base-pillars">
         <div><i class="fas fa-plug-circle-bolt"></i><b>Always on, even offline</b><span>A compact solid-state player lives at your venue and keeps playing through internet dropouts.</span></div>
         <div><i class="fas fa-user-pen"></i><b>Curated by real people</b><span>Every channel is hand-built by professional music directors, never guessed at by an algorithm.</span></div>
-        <div><i class="fas fa-clock"></i><b>Right music, right hour</b><span>Dayparting done properly &mdash; light mornings, energetic middays, upbeat evenings, scheduled automatically.</span></div>
+        <div><i class="fas fa-clock"></i><b>Right music, right hour</b><span>Dayparting done properly - light mornings, energetic middays, upbeat evenings, scheduled automatically.</span></div>
         <div><i class="fas fa-shield-halved"></i><b>Licensed and clean</b><span>Fully licensed for public play, free of explicit lyrics, and volume-levelled so nothing jumps.</span></div>
       </div>
     </div>
@@ -103,12 +103,17 @@
 <section class="ejm-section" id="ejm-menu">
   <div class="ejm-sec-head">
     <h2>The menu</h2>
-    <span class="ejm-tag ejm-tag-menu">Tick what you want &mdash; the total adds up below</span>
+    <span class="ejm-tag ejm-tag-menu">Tick what you want - the total adds up below</span>
   </div>
   <p class="ejm-sec-note">Choose a base, then tick any add-ons. Every box shows its own monthly price{% if wholesale %} at wholesale, with the recommended retail price and your margin underneath{% endif %}. Hit <b>Watch</b> on any feature to see it running in the real system.</p>
 
   <!-- ---- STEP 1: BASE ---- -->
-  <h3 class="ejm-step"><span>Step 1</span> Choose your base</h3>
+  <h3 class="ejm-step"><span>Step 1</span> Choose your base <em>everyone needs one - most venues pick Core</em></h3>
+  <p class="ejm-help">
+    <i class="fas fa-hand-pointer"></i>
+    Click one of the three boxes below. This is the foundation your package is built on, and you can
+    change it at any time.
+  </p>
   <div class="ejm-tiers">
     {% for t in P.tiers %}
     {% if wholesale %}{% assign tprice = t.whl %}{% else %}{% assign tprice = t.retail %}{% endif %}
@@ -172,7 +177,7 @@
         <span class="ejm-price-incl"><i class="fas fa-check"></i> Included</span>
       </div>
       <h4>2 zones</h4>
-      <p>Play different music in different areas &mdash; the bar, the bistro, the beer garden. Two zones come standard where most providers charge for every single one.</p>
+      <p>Play different music in different areas - the bar, the bistro, the beer garden. Two zones come standard where most providers charge for every single one.</p>
       <div class="ejm-card-foot"><span class="ejm-novideo"><i class="fas fa-video-slash"></i> Video coming soon</span></div>
     </div>
     <div class="ejm-card ejm-card-incl">
@@ -181,17 +186,23 @@
         <span class="ejm-price-incl"><i class="fas fa-check"></i> Included</span>
       </div>
       <h4>OneMusic administration</h4>
-      <p>We can collect your OneMusic licence fee on your behalf and remit it straight to OneMusic, so the paperwork stops being your problem. The licence fee itself is separate &mdash; see the licensing section below.</p>
+      <p>We can collect your OneMusic licence fee on your behalf and remit it straight to OneMusic, so the paperwork stops being your problem. The licence fee itself is separate - see the licensing section below.</p>
       <div class="ejm-card-foot"><span class="ejm-novideo"><i class="fas fa-video-slash"></i> Video coming soon</span></div>
     </div>
   </div>
 
   <!-- ---- STEP 3: ADD-ONS ---- -->
-  <h3 class="ejm-step"><span>Step 3</span> Add exactly what you want</h3>
+  <h3 class="ejm-step"><span>Step 3</span> Add exactly what you want <em>optional - pick as many or as few as you like</em></h3>
+  <p class="ejm-help">
+    <i class="fas fa-hand-pointer"></i>
+    Click anywhere on a box to add that feature, and click it again to take it off. The total at the
+    bottom updates as you go, and nothing is ordered until you send it to us. To see what a feature
+    actually does first, press <b>Watch video</b> - each one is about 30 seconds.
+  </p>
 
   <div class="ejm-solo-lock" id="ejm-solo-lock" hidden>
-    <i class="fas fa-lock"></i>
-    <span><b>Solo is background music only.</b> The interaction layer and add-ons below need Core or Complete. Switch your base above to add them.</span>
+    <i class="fas fa-circle-info"></i>
+    <span><b>Solo is background music only.</b> The add-ons below need Core or Complete - tick any one and we'll move you up to Core automatically.</span>
   </div>
 
   <div class="ejm-grid" id="ejm-addon-grid">
@@ -219,18 +230,27 @@
         <span class="ejm-margin">Margin <b>${{ a.retail | minus: a.whl }}</b>/mo</span>
       </div>
       {% endif %}
+      {% if a.requires_label or a.hardware %}
+      <div class="ejm-reqs">
+        {% if a.requires_label %}<span class="ejm-req"><i class="fas fa-link"></i> {{ a.requires_label }}</span>{% endif %}
+        {% if a.hardware %}<span class="ejm-req ejm-req-hw"><i class="fas fa-screwdriver-wrench"></i> {{ a.hardware }}</span>{% endif %}
+      </div>
+      {% endif %}
       <div class="ejm-card-foot">
         {% if a.video %}
         <button type="button" class="ejm-watch" data-video="{{ P.video_base }}{{ a.video }}" data-title="{{ a.name | escape }}">
-          <i class="fas fa-play"></i> Watch
+          <i class="fas fa-play"></i> Watch video
         </button>
         {% else %}
         <span class="ejm-novideo"><i class="fas fa-video-slash"></i> Video coming soon</span>
         {% endif %}
-        <span class="ejm-reqs">
-          {% if a.requires_label %}<span class="ejm-req"><i class="fas fa-link"></i> {{ a.requires_label }}</span>{% endif %}
-          {% if a.hardware %}<span class="ejm-req ejm-req-hw"><i class="fas fa-screwdriver-wrench"></i> {{ a.hardware }}</span>{% endif %}
-        </span>
+        {%- comment -%}
+          Visual affordance only - a plain tick box is easy to miss. The real control
+          is the checkbox in the label above; this is aria-hidden so screen readers
+          aren't told about the same thing twice. Clicking anywhere on the card
+          (including here) toggles it.
+        {%- endcomment -%}
+        <span class="ejm-addstate" data-add-for="{{ a.id }}" aria-hidden="true"></span>
       </div>
     </div>
     {% endfor %}
@@ -241,12 +261,16 @@
   {% if wholesale %}{% assign bprice = b.whl %}{% else %}{% assign bprice = b.retail %}{% endif %}
   <div class="ejm-bundle" id="ejm-bundle-{{ b.id }}">
     <div class="ejm-bundle-l">
-      <span class="ejm-cat ejm-cat-bundle">Bundle</span>
-      <b>{{ b.name }} &mdash; ${{ bprice }}/mo</b>
-      <span>{{ b.desc }} Tick all four voice add-ons above and the bundle price applies automatically, instead of paying for each one.</span>
+      <span class="ejm-cat ejm-cat-bundle">Save with a bundle</span>
+      <b>{{ b.name }} - all four voice features for ${{ bprice }}/mo</b>
+      <span>{{ b.desc }} Buying them one by one costs more, so if you want the lot, use the button and we'll apply the cheaper bundle price for you.</span>
     </div>
-    <div class="ejm-bundle-r" id="ejm-bundle-state-{{ b.id }}">
-      <span class="ejm-bundle-off"><i class="fas fa-circle-notch"></i> Not applied</span>
+    <div class="ejm-bundle-r">
+      {%- comment -%} Real text here, not left to JS, so the button is never nameless. {%- endcomment -%}
+      <button type="button" class="ejm-bundle-btn" id="ejm-bundle-btn-{{ b.id }}">
+        <i class="fas fa-plus"></i> Add all four for ${{ bprice }}/mo
+      </button>
+      <span class="ejm-bundle-state" id="ejm-bundle-state-{{ b.id }}"></span>
     </div>
   </div>
   {% endfor %}
@@ -266,7 +290,7 @@
         <output id="ejm-zone-count">2</output>
         <button type="button" id="ejm-zone-plus" aria-label="Add a zone">+</button>
       </div>
-      <span class="ejm-zones-cost" id="ejm-zone-cost">2 included &mdash; $0/mo</span>
+      <span class="ejm-zones-cost" id="ejm-zone-cost">2 included - $0/mo</span>
     </div>
   </div>
 </section>
@@ -280,7 +304,7 @@
         <span id="ejm-total-summary">2 zones, no add-ons</span>
       </div>
       <button type="button" class="ejm-total-toggle" id="ejm-total-toggle" aria-expanded="false">
-        <i class="fas fa-receipt"></i> <span>Itemise</span>
+        <i class="fas fa-receipt"></i> <span>Show breakdown</span>
       </button>
     </div>
     <div class="ejm-total-right">
@@ -315,7 +339,7 @@
     <h2>One-off hardware &amp; install</h2>
     <span class="ejm-tag ejm-tag-hw">Separate from the monthly price</span>
   </div>
-  <p class="ejm-sec-note">The monthly prices above are software and service. The kit that makes it work is a one-off cost, priced to cover what it costs us &mdash; there's no margin loaded into the hardware.</p>
+  <p class="ejm-sec-note">The monthly prices above are software and service. The kit that makes it work is a one-off cost, priced to cover what it costs us - there's no margin loaded into the hardware.</p>
   <div class="ejm-hw-grid">
     <div class="ejm-hw">
       <i class="fas fa-hard-drive"></i>
@@ -339,12 +363,12 @@
   {% if wholesale %}
   <div class="ejm-note ejm-note-dev">
     <i class="fas fa-handshake-angle"></i>
-    <div><b>Deal lever for partners.</b> Where you need to move on price, discount <b>time, not rate</b> &mdash; waive or discount the install against a 12-month commitment, run a time-boxed intro price for the first three months, or throw in an add-on free for six months. All three expire and reset to standard. A permanently reduced monthly rate becomes the reference price on every future deal, so we don't do those.</div>
+    <div><b>Deal lever for partners.</b> Where you need to move on price, discount <b>time, not rate</b> - waive or discount the install against a 12-month commitment, run a time-boxed intro price for the first three months, or throw in an add-on free for six months. All three expire and reset to standard. A permanently reduced monthly rate becomes the reference price on every future deal, so we don't do those.</div>
   </div>
   {% else %}
   <div class="ejm-note ejm-note-dev">
     <i class="fas fa-gift"></i>
-    <div><b>Try the whole thing free for 30 days.</b> We install the complete system &mdash; hardware and setup covered &mdash; and you run it live in your venue for a month with your own customers. Not a demo: the real thing. If you love it, you simply continue.</div>
+    <div><b>Try the whole thing free for 30 days.</b> We install the complete system - hardware and setup covered - and you run it live in your venue for a month with your own customers. Not a demo: the real thing. If you love it, you simply continue.</div>
   </div>
   {% endif %}
 </section>
@@ -355,16 +379,16 @@
     <h2>OneMusic licensing, explained honestly</h2>
     <span class="ejm-tag ejm-tag-lic">Separate from what you pay us</span>
   </div>
-  <p class="ejm-sec-note">This is the part most suppliers gloss over, so here it is straight. Your OneMusic licence is a <b>separate fee you owe regardless of who supplies your music</b> &mdash; Spotify, Soundtrack, or us. It is not included in the prices above. What changes depending on your supplier is <em>which tier you land on</em>, and for some venue types that's worth real money.</p>
+  <p class="ejm-sec-note">This is the part most suppliers gloss over, so here it is straight. Your OneMusic licence is a <b>separate fee you owe regardless of who supplies your music</b> - Spotify, Soundtrack, or us. It is not included in the prices above. What changes depending on your supplier is <em>which tier you land on</em>, and for some venue types that's worth real money.</p>
 
   <div class="ejm-lic-basics">
     <div>
       <span class="ejm-lic-n">APRA AMCOS</span>
-      <p>Represents the <b>songwriters and composers</b> &mdash; the underlying song. The "sheet music" copyright.</p>
+      <p>Represents the <b>songwriters and composers</b> - the underlying song. The "sheet music" copyright.</p>
     </div>
     <div>
       <span class="ejm-lic-n">PPCA</span>
-      <p>Represents the <b>recording artists and labels</b> &mdash; the specific recording you hear. The "recording" copyright.</p>
+      <p>Represents the <b>recording artists and labels</b> - the specific recording you hear. The "recording" copyright.</p>
     </div>
     <div>
       <span class="ejm-lic-n">OneMusic</span>
@@ -381,8 +405,8 @@
         <thead><tr><th>Tier</th><th>Qualifies</th><th>Per year</th></tr></thead>
         <tbody>
           <tr><td>Sapphire</td><td>10+ TV screens, any radios &amp; music systems</td><td>$3,944.48</td></tr>
-          <tr><td>Diamond</td><td>7&ndash;9 TV screens</td><td>$2,472.66</td></tr>
-          <tr><td>Platinum</td><td>2&ndash;6 TV screens</td><td>$1,412.95</td></tr>
+          <tr><td>Diamond</td><td>7-9 TV screens</td><td>$2,472.66</td></tr>
+          <tr><td>Platinum</td><td>2-6 TV screens</td><td>$1,412.95</td></tr>
           <tr class="is-hi"><td>Gold</td><td>1 TV screen, single music system</td><td>$618.16</td></tr>
           <tr><td>Silver</td><td>1 TV screen, no music system</td><td>$235.48</td></tr>
           <tr><td>Bronze</td><td>1 TV screen, 1 radio</td><td>$153.07</td></tr>
@@ -393,7 +417,7 @@
 
     <div class="ejm-lic-card">
       <div class="ejm-lic-head"><i class="fas fa-golf-ball-tee"></i><h4>Registered clubs</h4></div>
-      <p>Clubs are charged <b>per member</b>, not by TV count &mdash; and Digital Copy/Delivery is already included in that fee.</p>
+      <p>Clubs are charged <b>per member</b>, not by TV count - and Digital Copy/Delivery is already included in that fee.</p>
       <table class="ejm-lic-table">
         <thead><tr><th>Background music for clubs</th><th>Per member / yr</th></tr></thead>
         <tbody>
@@ -403,12 +427,12 @@
           <tr class="is-hi"><td>Digital Copy/Delivery</td><td>Included</td></tr>
         </tbody>
       </table>
-      <p class="ejm-lic-foot"><b>Worked example from OneMusic's own guide:</b> a bowling club with 1,504 members pays $1,233.28/yr for background music &mdash; about $103/month &mdash; and that figure is the same whether they run Spotify or eJukebox. Live music or DJs where entry is over $40 is charged separately.</p>
+      <p class="ejm-lic-foot"><b>Worked example from OneMusic's own guide:</b> a bowling club with 1,504 members pays $1,233.28/yr for background music - about $103/month - and that figure is the same whether they run Spotify or eJukebox. Live music or DJs where entry is over $40 is charged separately.</p>
     </div>
 
     <div class="ejm-lic-card">
       <div class="ejm-lic-head"><i class="fas fa-store"></i><h4>Retail &amp; service</h4></div>
-      <p>Here the tier <b>is</b> driven by your music source, so changing supplier genuinely drops the tier. Rates shown for the smallest 1&ndash;50&nbsp;m&sup2; area.</p>
+      <p>Here the tier <b>is</b> driven by your music source, so changing supplier genuinely drops the tier. Rates shown for the smallest 1-50&nbsp;m&sup2; area.</p>
       <table class="ejm-lic-table">
         <thead><tr><th>Tier</th><th>Applies to</th><th>Per year</th></tr></thead>
         <tbody>
@@ -418,7 +442,7 @@
           <tr><td>Bronze</td><td>Free-to-air radio or TV only</td><td>$100.07</td></tr>
         </tbody>
       </table>
-      <p class="ejm-lic-foot">A shop on Spotify sits on Gold at $641.94. On a commercial supplier like eJukebox it drops to Silver at $183.41 &mdash; a genuine saving of about <b>$458/yr</b>, before you count the product at all.</p>
+      <p class="ejm-lic-foot">A shop on Spotify sits on Gold at $641.94. On a commercial supplier like eJukebox it drops to Silver at $183.41 - a genuine saving of about <b>$458/yr</b>, before you count the product at all.</p>
     </div>
   </div>
 
@@ -435,7 +459,7 @@
         </tr>
         <tr>
           <td><b>Retail / shop</b></td>
-          <td>Gold tier (e.g. $641.94 at 1&ndash;50&nbsp;m&sup2;)</td>
+          <td>Gold tier (e.g. $641.94 at 1-50&nbsp;m&sup2;)</td>
           <td>Silver tier (e.g. $183.41)</td>
           <td class="ejm-good">~$458</td>
         </tr>
@@ -443,7 +467,7 @@
           <td><b>Registered club</b></td>
           <td>Per-member fee (Digital Copy/Delivery included)</td>
           <td>Same per-member fee</td>
-          <td class="ejm-flat">$0 &mdash; no licence saving</td>
+          <td class="ejm-flat">$0 - no licence saving</td>
         </tr>
       </tbody>
     </table>
@@ -453,7 +477,7 @@
     <i class="fas fa-scale-balanced"></i>
     <div>
       <b>We'd rather you heard this from us than found out later.</b>
-      For pubs and shops, switching off Spotify is a real, documented OneMusic saving. <b>For a registered club it saves you nothing on the licence</b> &mdash; clubs pay per member regardless of supplier, and Digital Copy/Delivery is already bundled in. If you're a club, the reasons to move are compliance and the product, not a discount on your licence. And to be straight about it: eJukebox costs more per month than a consumer Spotify subscription. The licence saving offsets much of that gap for a pub or a shop &mdash; it doesn't make us cheaper outright.
+      For pubs and shops, switching off Spotify is a real, documented OneMusic saving. <b>For a registered club it saves you nothing on the licence</b> - clubs pay per member regardless of supplier, and Digital Copy/Delivery is already bundled in. If you're a club, the reasons to move are compliance and the product, not a discount on your licence. And to be straight about it: eJukebox costs more per month than a consumer Spotify subscription. The licence saving offsets much of that gap for a pub or a shop - it doesn't make us cheaper outright.
     </div>
   </div>
 
@@ -461,7 +485,7 @@
     <div class="ejm-note ejm-note-bad">
       <i class="fas fa-ban"></i>
       <div>
-        <b>The one thing that isn't a grey area.</b> Consumer Spotify's own terms forbid commercial and public use, so a venue cannot legally run it &mdash; no matter what it pays OneMusic. OneMusic says so in writing:
+        <b>The one thing that isn't a grey area.</b> Consumer Spotify's own terms forbid commercial and public use, so a venue cannot legally run it - no matter what it pays OneMusic. OneMusic says so in writing:
         <em>&ldquo;Even with our licence, the use of digital music streaming services by you in your business may be in breach of the terms and conditions of your end user agreement with that service.&rdquo;</em>
         A OneMusic licence covers the music rights; it can't override your contract with Spotify.
       </div>
@@ -469,14 +493,14 @@
     <div class="ejm-note ejm-note-good">
       <i class="fas fa-file-shield"></i>
       <div>
-        <b>Why we're a licensed supplier and Spotify isn't.</b> eJukebox holds the upstream Australian licences a compliant background-music supplier needs: <b>AMCOS</b> (reproduction of the musical works), <b>ARIA</b> (reproduction of the sound recordings, jukebox licence), and <b>APRA + PPCA</b> for public performance and webcasting &mdash; plus registration as a jukebox operator under the MIPI/MRA code of conduct. That's what makes a venue playing eJukebox a venue using a <em>commercial background music supplier</em>, which is what drops the Digital Copy/Delivery add-on and the retail tier.
+        <b>Why we're a licensed supplier and Spotify isn't.</b> eJukebox holds the upstream Australian licences a compliant background-music supplier needs: <b>AMCOS</b> (reproduction of the musical works), <b>ARIA</b> (reproduction of the sound recordings, jukebox licence), and <b>APRA + PPCA</b> for public performance and webcasting - plus registration as a jukebox operator under the MIPI/MRA code of conduct. That's what makes a venue playing eJukebox a venue using a <em>commercial background music supplier</em>, which is what drops the Digital Copy/Delivery add-on and the retail tier.
       </div>
     </div>
   </div>
 
   <div class="ejm-note">
     <i class="fas fa-circle-info"></i>
-    <div>OneMusic rates on this page are taken from OneMusic Australia's own published agreements and guides and include GST, current as at the 2025&ndash;26 licence period. They're indexed to CPI each 1 September. Your exact fee depends on your venue &mdash; we'll work it out with you, and we can collect and remit it on your behalf. Official guides: <a href="/assets/Hotels-Pubs-Taverns-Bars-Casinos.pdf" target="_blank" rel="noopener">Hotels, Pubs &amp; Bars</a> &middot; <a href="/assets/Retail.pdf" target="_blank" rel="noopener">Retail &amp; Service</a> &middot; <a href="https://onemusic.com.au/" target="_blank" rel="noopener">onemusic.com.au</a></div>
+    <div>OneMusic rates on this page are taken from OneMusic Australia's own published agreements and guides and include GST, current as at the 2025-26 licence period. They're indexed to CPI each 1 September. Your exact fee depends on your venue - we'll work it out with you, and we can collect and remit it on your behalf. Official guides: <a href="/assets/Hotels-Pubs-Taverns-Bars-Casinos.pdf" target="_blank" rel="noopener">Hotels, Pubs &amp; Bars</a> &middot; <a href="/assets/Retail.pdf" target="_blank" rel="noopener">Retail &amp; Service</a> &middot; <a href="https://onemusic.com.au/" target="_blank" rel="noopener">onemusic.com.au</a></div>
   </div>
 </section>
 
@@ -486,7 +510,7 @@
     <h2>How we compare</h2>
     <span class="ejm-tag ejm-tag-cmp">Verifiable facts only</span>
   </div>
-  <p class="ejm-sec-note">The nearest comparison is Soundtrack Your Brand &mdash; Spotify's commercial arm. They do background music well, and we won't pretend otherwise: big licensed catalogue, playlist scheduling, multi-site management, offline playback. Where we differ is everything that happens <em>after</em> the music starts playing.</p>
+  <p class="ejm-sec-note">The nearest comparison is Soundtrack Your Brand - Spotify's commercial arm. They do background music well, and we won't pretend otherwise: big licensed catalogue, playlist scheduling, multi-site management, offline playback. Where we differ is everything that happens <em>after</em> the music starts playing.</p>
 
   <div class="ejm-cmp-wrap">
     <table class="ejm-cmp">
@@ -514,12 +538,12 @@
   </div>
 
   <div class="ejm-oneliner">
-    <p>&ldquo;Soundtrack plays music <em>at</em> your customers. eJukebox lets your customers be part of the night &mdash; request songs, hear their shout-out on the big system, feel at home &mdash; professionally curated by Australians, for about the same money once you count every zone.&rdquo;</p>
+    <p>&ldquo;Soundtrack plays music <em>at</em> your customers. eJukebox lets your customers be part of the night - request songs, hear their shout-out on the big system, feel at home - professionally curated by Australians, for about the same money once you count every zone.&rdquo;</p>
   </div>
 
   <div class="ejm-note">
     <i class="fas fa-circle-info"></i>
-    <div>Soundtrack is priced <b>per zone</b>, so the comparison depends entirely on how many zones you run: at three or four zones we're competitive or cheaper while doing far more. Their published rates are roughly $55/zone (Essential) to $85&ndash;95/zone (Unlimited) in AUD, billed annually, and higher billed monthly &mdash; but always get a current quote from them rather than relying on our number. Feature comparisons here are limited to things you can verify yourself.</div>
+    <div>Soundtrack is priced <b>per zone</b>, so the comparison depends entirely on how many zones you run: at three or four zones we're competitive or cheaper while doing far more. Their published rates are roughly $55/zone (Essential) to $85-95/zone (Unlimited) in AUD, billed annually, and higher billed monthly - but always get a current quote from them rather than relying on our number. Feature comparisons here are limited to things you can verify yourself.</div>
   </div>
 </section>
 
@@ -527,7 +551,7 @@
 <div class="ejm-close">
   <div class="ejm-close-main">
     <h3>{% if wholesale %}Ready to quote a venue?{% else %}Ready to hear it in your venue?{% endif %}</h3>
-    <p>{% if wholesale %}Build the package above, hit &ldquo;Send this build&rdquo;, and we'll turn it into a firm quote you can put in front of your customer &mdash; with the install and hardware costed for that site.{% else %}Build your package above and send it through. We'll confirm your OneMusic position, quote the one-off hardware for your site, and get a 30-day free trial installed.{% endif %}</p>
+    <p>{% if wholesale %}Build the package above, hit &ldquo;Send this build&rdquo;, and we'll turn it into a firm quote you can put in front of your customer - with the install and hardware costed for that site.{% else %}Build your package above and send it through. We'll confirm your OneMusic position, quote the one-off hardware for your site, and get a 30-day free trial installed.{% endif %}</p>
     <span class="ejm-close-contact">Musicbot Pty Ltd &middot; ABN 44 163 918 054 &middot; ejukebox.com.au &middot; info@ejukebox.com.au</span>
   </div>
   <a class="ejm-close-cta" href="mailto:info@ejukebox.com.au?subject={% if wholesale %}Wholesale%20enquiry{% else %}eJukebox%20enquiry{% endif %}">

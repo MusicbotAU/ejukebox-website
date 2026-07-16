@@ -5,7 +5,7 @@
    eJukebox a-la-carte pricing menu  (scoped under .ejm)
    Sits on the site's dark theme: indigo #6366f1, teal #14b8a6, pink #ec4899
    ========================================================================= */
-/* Variables live on :root, not .ejm — the video modal gets relocated to <body>
+/* Variables live on :root, not .ejm - the video modal gets relocated to <body>
    at runtime (see script) and must still resolve them. */
 :root {
   --ejm-ind:#6366f1; --ejm-ind-lt:#818cf8; --ejm-teal:#14b8a6; --ejm-cyan:#22d3ee;
@@ -24,13 +24,13 @@
    video modal would size itself to this (8000px tall) wrapper instead of the
    viewport. The modal is also reparented to <body> in the script below, which is
    the actual guard; this rule removes the hazard at source and skips a pointless
-   whole-page fade. (Verified: it is NOT needed for the sticky total bar — sticky
+   whole-page fade. (Verified: it is NOT needed for the sticky total bar - sticky
    is unaffected by an ancestor transform.) !important beats the inline style. */
 #main-content > .ejm { opacity:1 !important; transform:none !important; }
 
 /* The `hidden` attribute is toggled from JS on several of these. The UA's
    [hidden]{display:none} is a bare attribute selector, so any class rule setting
-   display (flex, etc.) silently beats it — these panels must lose that fight. */
+   display (flex, etc.) silently beats it - these panels must lose that fight. */
 .ejm-complete-nudge[hidden], .ejm-solo-lock[hidden],
 .ejm-itemised[hidden], .ejm-modal[hidden] { display:none !important; }
 .ejm p { color:var(--ejm-soft); }
@@ -117,6 +117,15 @@
   color:var(--ejm-cyan); background:rgba(34,211,238,.13); border:1px solid rgba(34,211,238,.3);
   padding:5px 9px; border-radius:6px; }
 .ejm-step em { font-style:normal; font-weight:500; color:var(--ejm-mut); font-size:14px; }
+
+/* Short plain-language instruction under each step. Aimed at people who aren't
+   confident with computers - say what to click and what happens. */
+.ejm-help { display:flex; gap:11px; align-items:flex-start; margin:0 0 18px !important;
+  background:rgba(34,211,238,.07); border:1px solid rgba(34,211,238,.22);
+  border-radius:11px; padding:13px 16px; font-size:13.5px; line-height:1.6;
+  color:var(--ejm-soft) !important; max-width:86ch; }
+.ejm-help i { flex:none; color:var(--ejm-cyan); font-size:14px; margin-top:3px; }
+.ejm-help b { color:var(--ejm-ink); }
 
 /* ---- base product ---- */
 .ejm-base { display:grid; grid-template-columns:1.55fr 1fr; gap:20px; }
@@ -229,9 +238,34 @@
 .ejm-card-addon:has(input:checked) .ejm-check { background:var(--ejm-teal); border-color:var(--ejm-teal); }
 .ejm-card-addon:has(input:checked) .ejm-check::after { opacity:1; }
 .ejm-card-addon:has(input:focus-visible) { outline:2px solid var(--ejm-cyan); outline-offset:2px; }
-.ejm-card-addon.is-locked { opacity:.42; cursor:not-allowed; transform:none; filter:saturate(.4); }
-.ejm-card-addon.is-locked:hover { transform:none; border-color:var(--ejm-line); }
+/* "Dimmed" means not-yet-available, NOT un-clickable: clicking one switches your
+   base up, or turns its parent add-on on. So it keeps a pointer cursor - never
+   `not-allowed`, which reads as "this is broken" on something that does respond.
+
+   Dim the descriptive parts individually rather than putting opacity on the tile:
+   opacity on a parent applies to every descendant and a child CANNOT opt back out,
+   which would drag the Watch button down with it. Watching the video is how people
+   understand the feature, so it has to stay fully lit in every state. */
+.ejm-card-addon.is-locked { cursor:pointer; }
+.ejm-card-addon.is-locked .ejm-card-head,
+.ejm-card-addon.is-locked h4,
+.ejm-card-addon.is-locked p,
+.ejm-card-addon.is-locked .ejm-whl-card {
+  opacity:.45; filter:saturate(.5); transition:opacity .18s, filter .18s;
+}
+.ejm-card-addon.is-locked:hover .ejm-card-head,
+.ejm-card-addon.is-locked:hover h4,
+.ejm-card-addon.is-locked:hover p,
+.ejm-card-addon.is-locked:hover .ejm-whl-card { opacity:.9; filter:none; }
+.ejm-card-addon.is-locked:hover { border-color:var(--ejm-line-2); }
+/* never dimmed, never disabled, in any card state */
+.ejm-card-addon.is-locked .ejm-card-foot,
+.ejm-card-addon.is-locked .ejm-watch { opacity:1; filter:none; }
+/* Complete: every add-on is already on, so there is genuinely nothing to click. */
 .ejm-card-addon.is-forced { cursor:default; }
+.ejm-card-addon.is-forced:hover { transform:none; border-color:var(--ejm-teal); }
+.ejm-card-addon.is-forced .ejm-tick { cursor:default; }
+.ejm-watch { cursor:pointer; }   /* watching a video never depends on tier/deps */
 
 .ejm-price { display:flex; align-items:baseline; gap:3px; white-space:nowrap; }
 .ejm-price b { font-size:20px; font-weight:800; letter-spacing:-.02em; font-variant-numeric:tabular-nums; color:var(--ejm-ink); }
@@ -245,7 +279,17 @@
 .ejm-watch:hover { background:var(--ejm-ind); color:#fff; border-color:var(--ejm-ind); }
 .ejm-novideo { display:inline-flex; align-items:center; gap:7px; font-size:11.5px; color:var(--ejm-mut);
   border:1px dashed var(--ejm-line-2); border-radius:8px; padding:7px 11px; }
-.ejm-reqs { display:flex; flex-wrap:wrap; gap:6px; margin-left:auto; }
+/* Add / Added chip - the plain-language twin of the tick box */
+.ejm-addstate { margin-left:auto; display:inline-flex; align-items:center; gap:6px; white-space:nowrap;
+  font-size:12.5px; font-weight:800; padding:7px 13px; border-radius:8px;
+  border:1px dashed var(--ejm-line-2); color:var(--ejm-soft); background:rgba(255,255,255,.04);
+  transition:background .15s, color .15s, border-color .15s; }
+.ejm-card-addon:hover .ejm-addstate { border-color:var(--ejm-teal); color:var(--ejm-teal); }
+.ejm-addstate.is-on { background:var(--ejm-teal); border-style:solid; border-color:var(--ejm-teal); color:#06231d; }
+.ejm-card-addon:hover .ejm-addstate.is-on { background:#2dd4bf; border-color:#2dd4bf; color:#06231d; }
+.ejm-addstate.is-fixed { background:rgba(20,184,166,.14); border-style:solid;
+  border-color:rgba(20,184,166,.35); color:var(--ejm-teal); }
+.ejm-reqs { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 12px; }
 .ejm-req { font-size:10.5px; font-weight:600; color:var(--ejm-mut); background:rgba(255,255,255,.04);
   border:1px solid var(--ejm-line); border-radius:5px; padding:4px 7px; white-space:nowrap; }
 .ejm-req-hw { color:#f0c98a; border-color:rgba(245,166,35,.3); background:rgba(245,166,35,.08); }
@@ -257,14 +301,23 @@
   border:1px solid rgba(236,72,153,.3); }
 .ejm-bundle.is-on { border-color:var(--ejm-pink); box-shadow:0 0 0 1px rgba(236,72,153,.3); }
 .ejm-bundle-l, .ejm-zones-l { flex:1 1 380px; }
-.ejm-bundle-l b, .ejm-zones-l b { display:block; font-size:15px; font-weight:750; margin:8px 0 5px; }
+/* Direct child only. Without `>` this also hit the inline <b>+$120/mo</b> inside the
+   note text and blew the sentence apart onto three lines. */
+.ejm-bundle-l > b, .ejm-zones-l > b { display:block; font-size:15px; font-weight:750; margin:8px 0 5px; }
+.ejm-bundle-l span b, .ejm-zones-l span b { display:inline; font-weight:750; color:var(--ejm-ink); }
 .ejm-bundle-l > span:last-child, .ejm-zones-l > span:last-child { display:block; font-size:12.5px;
   color:var(--ejm-mut); line-height:1.55; max-width:74ch; }
-.ejm-bundle-r { flex:none; }
-.ejm-bundle-off, .ejm-bundle-on { display:inline-flex; align-items:center; gap:8px; font-size:12.5px;
-  font-weight:700; border-radius:999px; padding:8px 14px; }
-.ejm-bundle-off { color:var(--ejm-mut); background:rgba(255,255,255,.05); border:1px solid var(--ejm-line); }
-.ejm-bundle-on { color:#0f0f1a; background:var(--ejm-pink); }
+.ejm-bundle-r { flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+.ejm-bundle-btn { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; cursor:pointer;
+  font-family:inherit; font-size:13.5px; font-weight:800; border:0; border-radius:10px; padding:12px 18px;
+  background:var(--ejm-pink); color:#2a0716; transition:background .15s, transform .15s; }
+.ejm-bundle-btn:hover { background:#f472b6; transform:translateY(-1px); }
+.ejm-bundle-btn[hidden] { display:none !important; }
+.ejm-bundle-btn.is-remove { background:rgba(255,255,255,.07); color:var(--ejm-soft);
+  border:1px solid var(--ejm-line-2); }
+.ejm-bundle-btn.is-remove:hover { background:rgba(248,113,113,.16); color:#fca5a5; border-color:var(--ejm-red); }
+.ejm-bundle-state { font-size:11.5px; font-weight:700; color:var(--ejm-mut); text-align:right; }
+.ejm-bundle-state.is-on { color:var(--ejm-teal); }
 
 .ejm-zones { background:var(--ejm-card); border:1px solid var(--ejm-line); }
 .ejm-zones-r { flex:none; display:flex; flex-direction:column; align-items:center; gap:8px; }
@@ -560,13 +613,19 @@
       var pr   = root.querySelector('[data-price-for="' + a.id + '"]');
       if (!cb || !card || !pr) return;
 
-      var parentOff = a.requires && !r.on[a.requires];
-      var locked = r.noAddons || r.everything || parentOff;
+      // Boolean() is load-bearing: `a.requires` is undefined on most add-ons, so
+      // these expressions evaluate to undefined, and classList.toggle(name, undefined)
+      // FLIPS the class instead of removing it - which made every card alternate
+      // between dim and lit on each render.
+      var parentOff = Boolean(a.requires && !r.on[a.requires]);
+      var dimmed    = Boolean(!r.everything && (r.noAddons || parentOff));
 
       cb.checked  = !!r.on[a.id];
-      cb.disabled = locked;
-      card.classList.toggle('is-locked', (r.noAddons || parentOff) && !r.everything);
-      card.classList.toggle('is-forced', r.everything);
+      // Only Complete truly disables a box (everything is already included). Solo and
+      // an unmet dependency stay clickable and resolve themselves - see the change handler.
+      cb.disabled = r.everything;
+      card.classList.toggle('is-locked', dimmed);
+      card.classList.toggle('is-forced', Boolean(r.everything));
 
       // price shown on the card
       var bundled = false;
@@ -578,21 +637,44 @@
       if (r.everything)      { pr.classList.add('is-free');    pr.innerHTML = '<b>Included</b>'; }
       else if (bundled)      { pr.classList.add('is-bundled'); pr.innerHTML = '<b>In bundle</b>'; }
       else                   { pr.innerHTML = '<b>' + money(cost(a)) + '</b><i>/mo</i>'; }
+
+      // Plain-language Add / Added chip. A bare tick box is easy to miss, and this
+      // spells out what clicking the card will do.
+      var chip = root.querySelector('[data-add-for="' + a.id + '"]');
+      if (chip) {
+        chip.classList.remove('is-on', 'is-fixed');
+        if (r.everything)   { chip.classList.add('is-fixed'); chip.innerHTML = '<i class="fas fa-check"></i> Included'; }
+        else if (r.on[a.id]){ chip.classList.add('is-on');    chip.innerHTML = '<i class="fas fa-check"></i> Added'; }
+        else                { chip.innerHTML = '<i class="fas fa-plus"></i> Add'; }
+      }
     });
 
     // bundle strips
     D.bundles.forEach(function (b) {
       var strip = root.querySelector('#ejm-bundle-' + b.id);
       var st    = root.querySelector('#ejm-bundle-state-' + b.id);
-      if (!strip || !st) return;
-      var applied = !r.everything && b.members.every(function (m) { return r.on[m]; });
+      var btn   = root.querySelector('#ejm-bundle-btn-' + b.id);
+      if (!strip || !st || !btn) return;
+      var applied = Boolean(!r.everything && b.members.every(function (m) { return r.on[m]; }));
       var saving = b.members.reduce(function (s, m) { return s + cost(byId(D.addons, m)); }, 0) - cost(b);
       strip.classList.toggle('is-on', applied);
-      st.innerHTML = applied
-        ? '<span class="ejm-bundle-on"><i class="fas fa-check"></i> Applied &mdash; saving ' + money(saving) + '/mo</span>'
-        : (r.everything
-            ? '<span class="ejm-bundle-off"><i class="fas fa-check"></i> Included in Complete</span>'
-            : '<span class="ejm-bundle-off"><i class="fas fa-circle-notch"></i> Not applied</span>');
+      if (r.everything) {
+        btn.hidden = true;
+        st.className = 'ejm-bundle-state is-on';
+        st.innerHTML = '<i class="fas fa-check"></i> Already included in Complete';
+      } else if (applied) {
+        btn.hidden = false;
+        btn.className = 'ejm-bundle-btn is-remove';
+        btn.innerHTML = '<i class="fas fa-xmark"></i> Remove the bundle';
+        st.className = 'ejm-bundle-state is-on';
+        st.innerHTML = '<i class="fas fa-check"></i> Added - saving you ' + money(saving) + '/mo';
+      } else {
+        btn.hidden = false;
+        btn.className = 'ejm-bundle-btn';
+        btn.innerHTML = '<i class="fas fa-plus"></i> Add all four for ' + money(cost(b)) + '/mo';
+        st.className = 'ejm-bundle-state';
+        st.innerHTML = 'Saves ' + money(saving) + '/mo compared with adding them one by one';
+      }
     });
 
     if (soloLock) soloLock.hidden = !r.noAddons;
@@ -603,8 +685,8 @@
     zoneMinus.disabled = state.zones <= 1;
     zonePlus.disabled  = state.zones >= 20;
     zoneCost.textContent = r.zoneCost === 0
-      ? D.zones.included + ' included — $0/mo'
-      : (state.zones >= D.zones.cap_from ? 'Unlimited-zone cap — ' : '') + '+' + money(r.zoneCost) + '/mo';
+      ? D.zones.included + ' included - $0/mo'
+      : (state.zones >= D.zones.cap_from ? 'Unlimited-zone cap - ' : '') + '+' + money(r.zoneCost) + '/mo';
 
     // nudge: only worth showing on a tier that isn't already Complete
     var complete = byId(D.tiers, 'complete');
@@ -614,7 +696,7 @@
       if (saving > 0) {
         nudge.hidden = false;
         nudgeText.innerHTML = 'You’ve ticked <b>' + money(softwareNow) + '/mo</b> of base + add-ons. ' +
-          '<b>Complete</b> gives you every software add-on for <b>' + money(cost(complete)) + '/mo</b> — ' +
+          '<b>Complete</b> gives you every software add-on for <b>' + money(cost(complete)) + '/mo</b> - ' +
           'you’d save <b>' + money(saving) + '/mo</b> and get the rest as well.';
       } else { nudge.hidden = true; }
     } else if (nudge) { nudge.hidden = true; }
@@ -674,9 +756,22 @@
   });
   Array.prototype.forEach.call(addonBoxes, function (cb) {
     cb.addEventListener('change', function () {
+      var a = byId(D.addons, cb.value);
+      if (cb.checked) {
+        // Ticking something the current base can't carry moves you up rather than
+        // refusing the click.
+        var t = byId(D.tiers, state.tier);
+        if (t && !t.allows_addons) {
+          state.tier = 'core';
+          var rd = root.querySelector('#tier-core');
+          if (rd) rd.checked = true;
+        }
+        // Ticking a dependant switches its parent on too (Monitor -> Live Mic).
+        if (a && a.requires) state.addons[a.requires] = true;
+      }
       state.addons[cb.value] = cb.checked;
       // turning a parent off takes its dependants with it
-      if (!cb.checked) D.addons.forEach(function (a) { if (a.requires === cb.value) state.addons[a.id] = false; });
+      if (!cb.checked) D.addons.forEach(function (x) { if (x.requires === cb.value) state.addons[x.id] = false; });
       render();
     });
     // the whole card is a hit target, but leave the <label> and Watch button to themselves
@@ -689,6 +784,25 @@
       cb.dispatchEvent(new Event('change', { bubbles: true }));
     });
   });
+  // Bundle button: one click adds or removes all of its members. Previously the
+  // bundle only ever applied if you happened to tick all four individually, and the
+  // strip just said "Not applied" with no way to act on it.
+  D.bundles.forEach(function (b) {
+    var btn = root.querySelector('#ejm-bundle-btn-' + b.id);
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var on = b.members.every(function (m) { return state.addons[m]; });
+      var t = byId(D.tiers, state.tier);
+      if (!on && t && !t.allows_addons) {        // adding from Solo moves you up to Core
+        state.tier = 'core';
+        var rd = root.querySelector('#tier-core');
+        if (rd) rd.checked = true;
+      }
+      b.members.forEach(function (m) { state.addons[m] = !on; });
+      render();
+    });
+  });
+
   zoneMinus.addEventListener('click', function () { if (state.zones > 1) { state.zones--; render(); } });
   zonePlus .addEventListener('click', function () { if (state.zones < 20) { state.zones++; render(); } });
   if (nudgeBtn) nudgeBtn.addEventListener('click', function () {
@@ -699,7 +813,7 @@
     var open = elItemised.hidden;
     elItemised.hidden = !open;
     elToggle.setAttribute('aria-expanded', String(open));
-    elToggle.querySelector('span').textContent = open ? 'Hide' : 'Itemise';
+    elToggle.querySelector('span').textContent = open ? 'Hide breakdown' : 'Show breakdown';
   });
 
   // ---- video modal. Clips are 30-90MB, so nothing loads until Watch is pressed.
@@ -708,7 +822,7 @@
   var mTitle = modal.querySelector('#ejm-modal-title');
 
   // The layout's fade-in animation leaves a transform on #main-content's children,
-  // and a transformed ancestor becomes the containing block for position:fixed —
+  // and a transformed ancestor becomes the containing block for position:fixed -
   // which would size the modal to the (very tall) page wrapper instead of the
   // viewport. Reparenting to <body> puts it outside that transform for good.
   document.body.appendChild(modal);

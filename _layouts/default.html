@@ -32,7 +32,7 @@
 
   {%- comment -%}
     Unlisted pages (e.g. /pricing/, /wholesale/): set `noindex: true` in the page's front matter.
-    Deliberately NOT paired with a robots.txt Disallow — a blocked crawler never reads this tag,
+    Deliberately NOT paired with a robots.txt Disallow - a blocked crawler never reads this tag,
     which is what actually keeps the URL out of the index.
   {%- endcomment -%}
   {% if page.noindex %}<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">{% endif %}

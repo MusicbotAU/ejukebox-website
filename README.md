@@ -34,7 +34,7 @@ full-width hero at the top. The headline and subtitle come from each page's `h1:
 no per-page hero markup is needed.
 
 **Images** follow the convention `/assets/images/venues/<slug>.jpg`, matching the page's `slug:`. To set a page's
-hero image, just drop a file with the matching name into [`assets/images/venues/`](assets/images/venues/) —
+hero image, just drop a file with the matching name into [`assets/images/venues/`](assets/images/venues/) -
 no code change required. Current filenames:
 
 ```
@@ -50,7 +50,7 @@ assets/images/venues/music-for-medical.jpg
 assets/images/venues/irish-pub-music.jpg
 ```
 
-These currently hold placeholder photos — replace each file (same name) with the matching venue image.
+These currently hold placeholder photos - replace each file (same name) with the matching venue image.
 To point a page at a different path, add `hero_image: /path/to/img.jpg` to its front matter.
 To also show the quick-trial form in a venue hero, add `hero_form: true`.
 
@@ -61,8 +61,8 @@ differently per device (top/bottom crop on wide screens, sides crop on mobile). 
 
 | | Recommendation |
 |---|---|
-| **Resolution** | **2560 × 1440 px** (16:9) — stays crisp on large / retina displays |
+| **Resolution** | **2560 × 1440 px** (16:9) - stays crisp on large / retina displays |
 | **Minimum** | 1920 × 1080 px |
 | **Composition** | Keep the key subject in the **centre / upper-centre**; sides crop on mobile, top & bottom crop on ultrawide |
-| **Overlay-safe area** | Avoid busy detail in the **left third** — it sits under the dark text overlay |
-| **File** | WebP ~200–350 KB, with a JPEG fallback ~400 KB |
+| **Overlay-safe area** | Avoid busy detail in the **left third** - it sits under the dark text overlay |
+| **File** | WebP ~200-350 KB, with a JPEG fallback ~400 KB |
