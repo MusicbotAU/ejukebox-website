@@ -1,0 +1,745 @@
+{% comment %} Styles + calculator for the /pricing and /wholesale menu. Included by pricing-menu.html. {% endcomment %}
+
+<style>
+/* =========================================================================
+   eJukebox a-la-carte pricing menu  (scoped under .ejm)
+   Sits on the site's dark theme: indigo #6366f1, teal #14b8a6, pink #ec4899
+   ========================================================================= */
+/* Variables live on :root, not .ejm — the video modal gets relocated to <body>
+   at runtime (see script) and must still resolve them. */
+:root {
+  --ejm-ind:#6366f1; --ejm-ind-lt:#818cf8; --ejm-teal:#14b8a6; --ejm-cyan:#22d3ee;
+  --ejm-pink:#ec4899; --ejm-amber:#f5a623; --ejm-red:#f87171; --ejm-green:#34d399;
+  --ejm-card:#1a1a2e; --ejm-card-2:#20203a; --ejm-line:rgba(255,255,255,.09);
+  --ejm-line-2:rgba(255,255,255,.16);
+  --ejm-ink:#f1f5f9; --ejm-soft:#c3cad8; --ejm-mut:#8d97ab;
+  --ejm-r:14px;
+}
+.ejm { color:var(--ejm-ink); font-size:16px; line-height:1.62; }
+.ejm *,.ejm *::before,.ejm *::after { box-sizing:border-box; }
+
+/* The layout fades in #main-content's children by animating an inline transform,
+   and leaves `transform: translateY(0)` on them permanently. A transformed
+   ancestor becomes the containing block for position:fixed descendants, so the
+   video modal would size itself to this (8000px tall) wrapper instead of the
+   viewport. The modal is also reparented to <body> in the script below, which is
+   the actual guard; this rule removes the hazard at source and skips a pointless
+   whole-page fade. (Verified: it is NOT needed for the sticky total bar — sticky
+   is unaffected by an ancestor transform.) !important beats the inline style. */
+#main-content > .ejm { opacity:1 !important; transform:none !important; }
+
+/* The `hidden` attribute is toggled from JS on several of these. The UA's
+   [hidden]{display:none} is a bare attribute selector, so any class rule setting
+   display (flex, etc.) silently beats it — these panels must lose that fight. */
+.ejm-complete-nudge[hidden], .ejm-solo-lock[hidden],
+.ejm-itemised[hidden], .ejm-modal[hidden] { display:none !important; }
+.ejm p { color:var(--ejm-soft); }
+.ejm a { color:var(--ejm-cyan); }
+
+/* ---- reset the theme's #main-content heading rules -------------------------
+   The theme sets font-size/colour with !important and hangs a gradient bar off
+   h1:before. Same !important + higher specificity, so these win inside .ejm. */
+#main-content .ejm h1, #main-content .ejm h2,
+#main-content .ejm h3, #main-content .ejm h4 {
+  font-family:'Poppins',Inter,sans-serif !important;
+  color:var(--ejm-ink) !important;
+  margin-top:0 !important; padding-bottom:0 !important;
+  border-bottom:0 !important; letter-spacing:normal;
+}
+#main-content .ejm h1::before, #main-content .ejm h2::before,
+#main-content .ejm h3::before, #main-content .ejm h4::before {
+  content:none !important; display:none !important;
+}
+#main-content .ejm h1 { font-size:clamp(28px,4.4vw,46px) !important; font-weight:800 !important;
+  line-height:1.07; letter-spacing:-.02em; margin:0 0 14px !important; }
+#main-content .ejm h2 { font-size:clamp(21px,2.6vw,27px) !important; font-weight:750 !important;
+  letter-spacing:-.015em; margin:0 !important; }
+#main-content .ejm h3 { font-size:16px !important; font-weight:700 !important; }
+#main-content .ejm h4 { font-size:15px !important; font-weight:700 !important; margin:0 0 7px !important; }
+#main-content .ejm .ejm-base-main h3 { font-size:clamp(19px,2.3vw,25px) !important; font-weight:800 !important;
+  letter-spacing:-.02em; margin:0 0 11px !important; }
+#main-content .ejm .ejm-close h3 { font-size:23px !important; font-weight:800 !important;
+  color:#fff !important; margin:0 0 8px !important; }
+#main-content .ejm .ejm-step { margin:38px 0 16px !important; }
+#main-content .ejm .ejm-lic-head h4, #main-content .ejm .ejm-hw h4 { font-size:15.5px !important; }
+#main-content .ejm li strong { color:inherit !important; }
+
+/* ---- confidential banner ---- */
+.ejm-confidential {
+  display:flex; gap:14px; align-items:flex-start;
+  background:linear-gradient(100deg, rgba(245,166,35,.16), rgba(236,72,153,.07));
+  border:1px solid rgba(245,166,35,.42); border-left-width:4px;
+  border-radius:var(--ejm-r); padding:16px 18px; margin:0 0 34px;
+}
+.ejm-conf-icon { flex:none; width:34px; height:34px; border-radius:9px; background:rgba(245,166,35,.18);
+  color:var(--ejm-amber); display:flex; align-items:center; justify-content:center; font-size:15px; }
+.ejm-conf-body { font-size:13.5px; line-height:1.6; color:#e6dcc9; }
+.ejm-conf-body strong { color:var(--ejm-amber); }
+.ejm-confidential-foot { margin:34px 0 0; }
+
+/* ---- hero ---- */
+.ejm-hero { margin:0 0 34px; }
+.ejm-eyebrow { display:inline-flex; align-items:center; gap:9px; font-size:12px; font-weight:700;
+  letter-spacing:.15em; text-transform:uppercase; color:var(--ejm-cyan); margin-bottom:14px; }
+.ejm-eyebrow::before { content:""; width:26px; height:2px; background:var(--ejm-cyan); border-radius:2px; }
+.ejm-hero h1 { font-size:clamp(28px,4.4vw,46px); line-height:1.07; letter-spacing:-.02em; font-weight:800; margin:0 0 14px; }
+.ejm-grad { background:linear-gradient(120deg,var(--ejm-ind-lt),var(--ejm-cyan)); -webkit-background-clip:text;
+  background-clip:text; -webkit-text-fill-color:transparent; }
+.ejm-lede { font-size:17px; max-width:74ch; margin:0 0 20px; }
+.ejm-hero-notes { display:flex; flex-wrap:wrap; gap:10px; }
+.ejm-hero-notes span { font-size:12.5px; font-weight:600; color:var(--ejm-soft); background:var(--ejm-card);
+  border:1px solid var(--ejm-line); border-radius:999px; padding:7px 13px; }
+.ejm-hero-notes i { color:var(--ejm-teal); margin-right:6px; }
+
+/* ---- how it works ---- */
+.ejm-how { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:0 0 46px; }
+.ejm-how-item { display:flex; gap:13px; background:var(--ejm-card); border:1px solid var(--ejm-line);
+  border-radius:var(--ejm-r); padding:18px; }
+.ejm-how-n { flex:none; width:30px; height:30px; border-radius:9px; background:rgba(99,102,241,.2);
+  color:var(--ejm-ind-lt); font-weight:800; font-size:14px; display:flex; align-items:center; justify-content:center; }
+.ejm-how-item h4 { margin:0 0 5px; font-size:14.5px; font-weight:700; }
+.ejm-how-item p { margin:0; font-size:13px; color:var(--ejm-mut); line-height:1.55; }
+
+/* ---- sections ---- */
+.ejm-section { margin:0 0 58px; }
+.ejm-sec-head { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin:0 0 8px; }
+.ejm-sec-head h2 { font-size:clamp(21px,2.6vw,27px); font-weight:750; letter-spacing:-.015em; margin:0; }
+.ejm-tag { font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; padding:5px 10px; border-radius:999px; }
+.ejm-tag-base { color:var(--ejm-ind-lt); background:rgba(99,102,241,.16); }
+.ejm-tag-menu { color:var(--ejm-teal); background:rgba(20,184,166,.14); }
+.ejm-tag-hw   { color:var(--ejm-mut);  background:rgba(255,255,255,.06); }
+.ejm-tag-lic  { color:var(--ejm-amber);background:rgba(245,166,35,.14); }
+.ejm-tag-cmp  { color:var(--ejm-pink); background:rgba(236,72,153,.14); }
+.ejm-sec-note { font-size:14.5px; max-width:84ch; margin:0 0 24px; }
+
+.ejm-step { display:flex; align-items:center; gap:11px; font-size:16px; font-weight:700; margin:38px 0 16px; }
+.ejm-step span { font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ejm-cyan); background:rgba(34,211,238,.13); border:1px solid rgba(34,211,238,.3);
+  padding:5px 9px; border-radius:6px; }
+.ejm-step em { font-style:normal; font-weight:500; color:var(--ejm-mut); font-size:14px; }
+
+/* ---- base product ---- */
+.ejm-base { display:grid; grid-template-columns:1.55fr 1fr; gap:20px; }
+.ejm-base-main { background:linear-gradient(155deg, rgba(99,102,241,.16), var(--ejm-card) 62%);
+  border:1px solid var(--ejm-line-2); border-radius:16px; padding:26px 28px; }
+.ejm-base-main h3 { font-size:clamp(19px,2.3vw,25px); font-weight:800; letter-spacing:-.02em; margin:0 0 11px; }
+.ejm-base-main > p { font-size:15px; margin:0 0 22px; max-width:70ch; }
+.ejm-base-pillars { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.ejm-base-pillars > div { background:rgba(0,0,0,.24); border:1px solid var(--ejm-line); border-radius:11px; padding:15px; }
+.ejm-base-pillars i { color:var(--ejm-teal); font-size:15px; }
+.ejm-base-pillars b { display:block; font-size:13.5px; margin:8px 0 5px; }
+.ejm-base-pillars span { display:block; font-size:12.5px; color:var(--ejm-mut); line-height:1.5; }
+.ejm-base-video { display:flex; }
+.ejm-video-placeholder { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; gap:9px; background:var(--ejm-card); border:1px dashed var(--ejm-line-2);
+  border-radius:16px; padding:26px; min-height:230px; }
+.ejm-video-placeholder i { font-size:26px; color:var(--ejm-mut); }
+.ejm-video-placeholder b { font-size:14px; }
+.ejm-video-placeholder span { font-size:12.5px; color:var(--ejm-mut); max-width:32ch; line-height:1.5; }
+
+/* ---- tiers ---- */
+.ejm-tiers { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.ejm-tier { position:relative; display:block; cursor:pointer; margin:0; }
+.ejm-tier input { position:absolute; opacity:0; width:0; height:0; }
+.ejm-tier-inner { display:flex; flex-direction:column; gap:11px; height:100%;
+  background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:16px;
+  padding:20px; transition:border-color .18s, background .18s, transform .18s; }
+.ejm-tier:hover .ejm-tier-inner { border-color:var(--ejm-line-2); transform:translateY(-2px); }
+.ejm-tier input:focus-visible + .ejm-tier-inner { outline:2px solid var(--ejm-cyan); outline-offset:2px; }
+.ejm-tier input:checked + .ejm-tier-inner { border-color:var(--ejm-teal);
+  background:linear-gradient(160deg, rgba(20,184,166,.14), var(--ejm-card) 60%);
+  box-shadow:0 0 0 1px rgba(20,184,166,.35), 0 10px 34px rgba(20,184,166,.14); }
+.ejm-rec-flag { position:absolute; top:-9px; left:20px; z-index:2; font-size:10px; font-weight:800;
+  letter-spacing:.08em; text-transform:uppercase; color:#0f0f1a; background:var(--ejm-cyan);
+  padding:4px 9px; border-radius:5px; }
+.ejm-tier-top { display:flex; align-items:center; gap:11px; }
+.ejm-radio { flex:none; width:19px; height:19px; border-radius:50%; border:2px solid var(--ejm-line-2);
+  position:relative; transition:border-color .18s; }
+.ejm-tier input:checked + .ejm-tier-inner .ejm-radio { border-color:var(--ejm-teal); }
+.ejm-tier input:checked + .ejm-tier-inner .ejm-radio::after { content:""; position:absolute; inset:3px;
+  border-radius:50%; background:var(--ejm-teal); }
+.ejm-tier-name { font-size:17px; font-weight:750; line-height:1.25; }
+.ejm-tier-name em { display:block; font-style:normal; font-size:12px; font-weight:500; color:var(--ejm-mut); }
+.ejm-tier-price { display:flex; align-items:baseline; gap:5px; }
+.ejm-tier-price b { font-size:34px; font-weight:800; letter-spacing:-.03em; font-variant-numeric:tabular-nums; }
+.ejm-tier-price i { font-style:normal; font-size:12.5px; color:var(--ejm-mut); }
+.ejm-tier-blurb { font-size:13px; color:var(--ejm-soft); line-height:1.55; }
+.ejm-tier-points { display:flex; flex-direction:column; gap:6px; margin-top:auto; padding-top:11px;
+  border-top:1px solid var(--ejm-line); }
+.ejm-tier-points span { display:flex; gap:8px; font-size:12.5px; color:var(--ejm-mut); line-height:1.45; }
+.ejm-tier-points i { color:var(--ejm-teal); font-size:10px; margin-top:5px; flex:none; }
+
+/* wholesale strip */
+.ejm-whl-line { display:flex; flex-wrap:wrap; gap:8px; font-size:11.5px; }
+.ejm-whl-line > span { background:rgba(0,0,0,.3); border:1px solid var(--ejm-line); border-radius:6px;
+  padding:5px 9px; color:var(--ejm-mut); }
+.ejm-whl-line b { color:var(--ejm-ink); font-variant-numeric:tabular-nums; }
+.ejm-whl-line .ejm-margin { border-color:rgba(52,211,153,.35); background:rgba(52,211,153,.1); color:#a7e9cf; }
+.ejm-whl-line .ejm-margin b { color:var(--ejm-green); }
+.ejm-whl-card { margin:0 0 12px; }
+
+/* ---- nudge ---- */
+.ejm-complete-nudge { display:flex; align-items:center; gap:13px; margin:16px 0 0;
+  background:linear-gradient(100deg, rgba(34,211,238,.16), rgba(99,102,241,.08));
+  border:1px solid rgba(34,211,238,.42); border-radius:12px; padding:14px 17px; font-size:13.5px; color:#d8f4fb; }
+.ejm-complete-nudge > i { color:var(--ejm-cyan); font-size:16px; flex:none; }
+.ejm-complete-nudge span { flex:1; }
+.ejm-complete-nudge b { color:#fff; }
+.ejm-nudge-btn { flex:none; background:var(--ejm-cyan); color:#0f0f1a; border:0; border-radius:8px;
+  padding:9px 15px; font-weight:800; font-size:12.5px; cursor:pointer; font-family:inherit; }
+.ejm-nudge-btn:hover { background:#67e8f9; }
+
+.ejm-solo-lock { display:flex; align-items:center; gap:12px; margin:0 0 16px;
+  background:rgba(245,166,35,.1); border:1px solid rgba(245,166,35,.35); border-radius:12px;
+  padding:13px 16px; font-size:13.5px; color:#e6dcc9; }
+.ejm-solo-lock i { color:var(--ejm-amber); }
+.ejm-solo-lock b { color:var(--ejm-amber); }
+
+/* ---- feature cards ---- */
+.ejm-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(288px,1fr)); gap:15px; }
+.ejm-card { display:flex; flex-direction:column; background:var(--ejm-card); border:1.5px solid var(--ejm-line);
+  border-radius:var(--ejm-r); padding:17px 18px; margin:0; }
+.ejm-card-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:9px; }
+.ejm-cat { font-size:10px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--ejm-mut);
+  background:rgba(255,255,255,.05); border:1px solid var(--ejm-line); border-radius:5px; padding:4px 8px; }
+.ejm-cat-bundle { color:var(--ejm-pink); background:rgba(236,72,153,.12); border-color:rgba(236,72,153,.3); }
+.ejm-card h4 { display:flex; align-items:center; gap:9px; font-size:15px; font-weight:700; margin:0 0 7px; line-height:1.3; }
+.ejm-card p { font-size:13px; color:var(--ejm-mut); line-height:1.55; margin:0 0 13px; }
+.ejm-card-foot { display:flex; align-items:center; gap:9px; flex-wrap:wrap; margin-top:auto;
+  padding-top:12px; border-top:1px solid var(--ejm-line); }
+
+.ejm-card-incl { border-style:dashed; border-color:rgba(20,184,166,.3);
+  background:linear-gradient(165deg, rgba(20,184,166,.06), var(--ejm-card) 70%); }
+.ejm-price-incl { font-size:11.5px; font-weight:800; letter-spacing:.03em; color:var(--ejm-teal);
+  background:rgba(20,184,166,.14); border:1px solid rgba(20,184,166,.35); border-radius:999px; padding:5px 10px; }
+
+/* checkbox cards */
+.ejm-card-addon { position:relative; cursor:pointer; transition:border-color .18s, background .18s, transform .18s; }
+.ejm-card-addon:hover { border-color:var(--ejm-line-2); transform:translateY(-2px); }
+.ejm-card-addon input { position:absolute; opacity:0; width:0; height:0; }
+.ejm-tick { display:flex; align-items:center; gap:9px; margin:0; cursor:pointer; font:inherit; color:inherit; }
+.ejm-check { flex:none; width:19px; height:19px; border-radius:5px; border:2px solid var(--ejm-line-2);
+  position:relative; transition:all .18s; }
+.ejm-check::after { content:"\f00c"; font-family:"Font Awesome 6 Free"; font-weight:900; font-size:10px;
+  color:#0f0f1a; position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  opacity:0; transition:opacity .18s; }
+.ejm-card-addon:has(input:checked) { border-color:var(--ejm-teal);
+  background:linear-gradient(160deg, rgba(20,184,166,.13), var(--ejm-card) 62%);
+  box-shadow:0 0 0 1px rgba(20,184,166,.32), 0 8px 28px rgba(20,184,166,.12); }
+.ejm-card-addon:has(input:checked) .ejm-check { background:var(--ejm-teal); border-color:var(--ejm-teal); }
+.ejm-card-addon:has(input:checked) .ejm-check::after { opacity:1; }
+.ejm-card-addon:has(input:focus-visible) { outline:2px solid var(--ejm-cyan); outline-offset:2px; }
+.ejm-card-addon.is-locked { opacity:.42; cursor:not-allowed; transform:none; filter:saturate(.4); }
+.ejm-card-addon.is-locked:hover { transform:none; border-color:var(--ejm-line); }
+.ejm-card-addon.is-forced { cursor:default; }
+
+.ejm-price { display:flex; align-items:baseline; gap:3px; white-space:nowrap; }
+.ejm-price b { font-size:20px; font-weight:800; letter-spacing:-.02em; font-variant-numeric:tabular-nums; color:var(--ejm-ink); }
+.ejm-price i { font-style:normal; font-size:11.5px; color:var(--ejm-mut); }
+.ejm-price.is-free b { color:var(--ejm-teal); font-size:13px; font-weight:800; }
+.ejm-price.is-bundled b { color:var(--ejm-pink); font-size:13px; font-weight:800; }
+
+.ejm-watch { display:inline-flex; align-items:center; gap:7px; background:rgba(99,102,241,.16);
+  color:var(--ejm-ind-lt); border:1px solid rgba(99,102,241,.42); border-radius:8px; padding:7px 13px;
+  font-size:12.5px; font-weight:700; cursor:pointer; font-family:inherit; transition:all .15s; }
+.ejm-watch:hover { background:var(--ejm-ind); color:#fff; border-color:var(--ejm-ind); }
+.ejm-novideo { display:inline-flex; align-items:center; gap:7px; font-size:11.5px; color:var(--ejm-mut);
+  border:1px dashed var(--ejm-line-2); border-radius:8px; padding:7px 11px; }
+.ejm-reqs { display:flex; flex-wrap:wrap; gap:6px; margin-left:auto; }
+.ejm-req { font-size:10.5px; font-weight:600; color:var(--ejm-mut); background:rgba(255,255,255,.04);
+  border:1px solid var(--ejm-line); border-radius:5px; padding:4px 7px; white-space:nowrap; }
+.ejm-req-hw { color:#f0c98a; border-color:rgba(245,166,35,.3); background:rgba(245,166,35,.08); }
+
+/* ---- bundle + zones ---- */
+.ejm-bundle, .ejm-zones { display:flex; align-items:center; justify-content:space-between; gap:20px;
+  flex-wrap:wrap; margin:15px 0 0; padding:17px 20px; border-radius:var(--ejm-r); }
+.ejm-bundle { background:linear-gradient(100deg, rgba(236,72,153,.1), var(--ejm-card) 60%);
+  border:1px solid rgba(236,72,153,.3); }
+.ejm-bundle.is-on { border-color:var(--ejm-pink); box-shadow:0 0 0 1px rgba(236,72,153,.3); }
+.ejm-bundle-l, .ejm-zones-l { flex:1 1 380px; }
+.ejm-bundle-l b, .ejm-zones-l b { display:block; font-size:15px; font-weight:750; margin:8px 0 5px; }
+.ejm-bundle-l > span:last-child, .ejm-zones-l > span:last-child { display:block; font-size:12.5px;
+  color:var(--ejm-mut); line-height:1.55; max-width:74ch; }
+.ejm-bundle-r { flex:none; }
+.ejm-bundle-off, .ejm-bundle-on { display:inline-flex; align-items:center; gap:8px; font-size:12.5px;
+  font-weight:700; border-radius:999px; padding:8px 14px; }
+.ejm-bundle-off { color:var(--ejm-mut); background:rgba(255,255,255,.05); border:1px solid var(--ejm-line); }
+.ejm-bundle-on { color:#0f0f1a; background:var(--ejm-pink); }
+
+.ejm-zones { background:var(--ejm-card); border:1px solid var(--ejm-line); }
+.ejm-zones-r { flex:none; display:flex; flex-direction:column; align-items:center; gap:8px; }
+.ejm-zones-lbl { font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--ejm-mut); }
+.ejm-stepper { display:flex; align-items:center; gap:4px; background:rgba(0,0,0,.32);
+  border:1px solid var(--ejm-line-2); border-radius:10px; padding:4px; }
+.ejm-stepper button { width:34px; height:34px; border:0; border-radius:7px; background:rgba(255,255,255,.07);
+  color:var(--ejm-ink); font-size:17px; font-weight:800; cursor:pointer; font-family:inherit;
+  display:flex; align-items:center; justify-content:center; transition:background .15s; }
+.ejm-stepper button:hover:not(:disabled) { background:var(--ejm-ind); color:#fff; }
+.ejm-stepper button:disabled { opacity:.3; cursor:not-allowed; }
+.ejm-stepper output { min-width:40px; text-align:center; font-size:18px; font-weight:800;
+  font-variant-numeric:tabular-nums; }
+.ejm-zones-cost { font-size:12px; font-weight:700; color:var(--ejm-teal); white-space:nowrap; }
+
+/* ---- sticky total ---- */
+.ejm-total { position:sticky; bottom:10px; z-index:40; margin:26px 0 44px;
+  background:rgba(18,18,34,.93); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+  border:1.5px solid rgba(34,211,238,.4); border-radius:16px;
+  box-shadow:0 14px 44px rgba(0,0,0,.55), 0 0 0 1px rgba(34,211,238,.12); overflow:hidden; }
+.ejm-total-inner { display:flex; align-items:center; justify-content:space-between; gap:18px;
+  flex-wrap:wrap; padding:15px 20px; }
+.ejm-total-lines { display:flex; align-items:center; gap:14px; flex:1 1 260px; min-width:0; }
+.ejm-total-label b { display:block; font-size:15px; font-weight:750; line-height:1.25; }
+.ejm-total-label span { display:block; font-size:12px; color:var(--ejm-mut); }
+.ejm-total-toggle { display:inline-flex; align-items:center; gap:7px; background:rgba(255,255,255,.06);
+  color:var(--ejm-soft); border:1px solid var(--ejm-line-2); border-radius:8px; padding:8px 12px;
+  font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; white-space:nowrap; }
+.ejm-total-toggle:hover { background:rgba(255,255,255,.11); color:#fff; }
+.ejm-total-right { display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+.ejm-total-col { display:flex; flex-direction:column; line-height:1.1; }
+.ejm-total-col span { font-size:10.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--ejm-mut); margin-bottom:4px; }
+.ejm-total-col b { font-size:30px; font-weight:800; letter-spacing:-.03em; font-variant-numeric:tabular-nums; }
+.ejm-total-col i { font-style:normal; font-size:10.5px; color:var(--ejm-mut); margin-top:3px; }
+.ejm-total-rrp b { color:var(--ejm-soft); }
+.ejm-total-marg b { color:var(--ejm-green); }
+.ejm-total-cta { display:inline-flex; align-items:center; gap:8px; background:var(--ejm-teal); color:#06231d !important;
+  border-radius:10px; padding:13px 20px; font-size:13.5px; font-weight:800; text-decoration:none !important;
+  white-space:nowrap; transition:background .15s, transform .15s; }
+.ejm-total-cta:hover { background:#2dd4bf; transform:translateY(-1px); }
+.ejm-itemised { border-top:1px solid var(--ejm-line); background:rgba(0,0,0,.3); padding:13px 20px 15px; }
+.ejm-itemised ul { list-style:none; margin:0; padding:0; }
+.ejm-itemised li { display:flex; justify-content:space-between; gap:16px; padding:7px 0;
+  border-bottom:1px dashed var(--ejm-line); font-size:13px; color:var(--ejm-soft); }
+.ejm-itemised li:last-child { border-bottom:0; }
+.ejm-itemised li b { font-variant-numeric:tabular-nums; white-space:nowrap; color:var(--ejm-ink); }
+.ejm-itemised li.is-free b { color:var(--ejm-teal); }
+.ejm-itemised li.is-sum { margin-top:5px; padding-top:11px; border-top:1px solid var(--ejm-line-2);
+  border-bottom:0; font-weight:800; color:var(--ejm-ink); font-size:14.5px; }
+
+/* ---- hardware ---- */
+.ejm-hw-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:15px; margin-bottom:18px; }
+.ejm-hw { background:var(--ejm-card); border:1px solid var(--ejm-line); border-radius:var(--ejm-r); padding:19px; }
+.ejm-hw > i { font-size:18px; color:var(--ejm-ind-lt); }
+.ejm-hw h4 { font-size:15px; font-weight:700; margin:11px 0 7px; }
+.ejm-hw p { font-size:12.5px; color:var(--ejm-mut); line-height:1.55; margin:0 0 12px; }
+.ejm-hw-price { font-size:11.5px; font-weight:800; color:var(--ejm-amber); background:rgba(245,166,35,.12);
+  border:1px solid rgba(245,166,35,.3); border-radius:999px; padding:5px 11px; display:inline-block; }
+
+/* ---- notes ---- */
+.ejm-note { display:flex; gap:13px; align-items:flex-start; background:var(--ejm-card);
+  border:1px solid var(--ejm-line); border-left:4px solid var(--ejm-mut);
+  border-radius:11px; padding:16px 18px; margin:16px 0 0; font-size:13.5px; line-height:1.62; color:var(--ejm-soft); }
+.ejm-note > i { flex:none; font-size:15px; color:var(--ejm-mut); margin-top:2px; }
+.ejm-note b { color:var(--ejm-ink); }
+.ejm-note em { color:var(--ejm-soft); }
+.ejm-note-dev  { border-left-color:var(--ejm-ind);  } .ejm-note-dev > i  { color:var(--ejm-ind-lt); }
+.ejm-note-warn { border-left-color:var(--ejm-amber); background:linear-gradient(100deg,rgba(245,166,35,.09),var(--ejm-card) 60%); }
+.ejm-note-warn > i { color:var(--ejm-amber); }
+.ejm-note-bad  { border-left-color:var(--ejm-red); } .ejm-note-bad > i { color:var(--ejm-red); }
+.ejm-note-good { border-left-color:var(--ejm-green); } .ejm-note-good > i { color:var(--ejm-green); }
+.ejm-lic-split { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.ejm-lic-split .ejm-note { margin-top:16px; height:100%; }
+
+/* ---- licensing ---- */
+.ejm-lic-basics { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; margin:0 0 8px; }
+.ejm-lic-basics > div { background:var(--ejm-card); border:1px solid var(--ejm-line); border-radius:var(--ejm-r); padding:17px; }
+.ejm-lic-n { font-size:11.5px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--ejm-amber); background:rgba(245,166,35,.12); border-radius:5px; padding:4px 9px; display:inline-block; }
+.ejm-lic-basics p { font-size:13px; color:var(--ejm-mut); line-height:1.55; margin:10px 0 0; }
+.ejm-lic-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px; }
+.ejm-lic-card { background:var(--ejm-card); border:1px solid var(--ejm-line); border-radius:var(--ejm-r); padding:20px; }
+.ejm-lic-head { display:flex; align-items:center; gap:11px; margin-bottom:11px; }
+.ejm-lic-head i { width:34px; height:34px; border-radius:9px; background:rgba(99,102,241,.16);
+  color:var(--ejm-ind-lt); display:flex; align-items:center; justify-content:center; font-size:14px; flex:none; }
+.ejm-lic-head h4 { font-size:15.5px; font-weight:750; margin:0; }
+.ejm-lic-card > p { font-size:13px; color:var(--ejm-mut); line-height:1.55; margin:0 0 14px; }
+.ejm-lic-foot { font-size:12px !important; color:var(--ejm-mut) !important; line-height:1.55; margin:12px 0 0 !important;
+  padding-top:11px; border-top:1px dashed var(--ejm-line); }
+.ejm-lic-table-wrap, .ejm-cmp-wrap { overflow-x:auto; border:1px solid var(--ejm-line); border-radius:var(--ejm-r); }
+.ejm-lic-table { width:100%; border-collapse:collapse; font-size:12.5px; }
+.ejm-lic-table-wide { min-width:640px; font-size:13px; }
+.ejm-lic-table th { text-align:left; font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--ejm-mut); padding:10px 11px; border-bottom:1px solid var(--ejm-line-2); background:rgba(0,0,0,.25); }
+.ejm-lic-table td { padding:10px 11px; border-bottom:1px solid var(--ejm-line); color:var(--ejm-soft);
+  vertical-align:top; }
+.ejm-lic-table tbody tr:last-child td { border-bottom:0; }
+.ejm-lic-table td:last-child { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; font-weight:700; color:var(--ejm-ink); }
+.ejm-lic-table-wide td:last-child { text-align:left; }
+.ejm-lic-table tr.is-hi td { background:rgba(20,184,166,.09); color:#bdeee4; }
+.ejm-lic-table tr.is-hi td:last-child { color:var(--ejm-teal); }
+.ejm-lic-table tr.is-warn td { background:rgba(248,113,113,.08); }
+.ejm-lic-table tr.is-warn td:last-child { color:var(--ejm-red); }
+.ejm-good { color:var(--ejm-green) !important; font-weight:800; }
+.ejm-flat { color:var(--ejm-amber) !important; font-weight:800; }
+
+/* ---- comparison ---- */
+.ejm-cmp { width:100%; border-collapse:collapse; font-size:13.5px; min-width:640px; }
+.ejm-cmp th { text-align:left; font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--ejm-mut); padding:12px 14px; border-bottom:1px solid var(--ejm-line-2); background:rgba(0,0,0,.25); }
+.ejm-cmp th.ejm-cmp-us { color:var(--ejm-teal); }
+.ejm-cmp td { padding:11px 14px; border-bottom:1px solid var(--ejm-line); color:var(--ejm-soft); }
+.ejm-cmp tbody tr:last-child td { border-bottom:0; }
+.ejm-cmp tbody tr:hover td { background:rgba(99,102,241,.06); }
+.ejm-cmp td.ejm-cmp-us { color:var(--ejm-ink); font-weight:650; background:rgba(20,184,166,.05); }
+.ejm-cmp td.ejm-cmp-us i { color:var(--ejm-teal); margin-right:7px; }
+.ejm-cmp i.ejm-no { color:var(--ejm-red); margin-right:7px; }
+.ejm-cmp i.ejm-dim { color:var(--ejm-mut); margin-right:7px; }
+.ejm-oneliner { margin:18px 0 0; background:linear-gradient(120deg, rgba(99,102,241,.14), rgba(236,72,153,.09));
+  border:1px solid var(--ejm-line-2); border-radius:var(--ejm-r); padding:22px 26px; }
+.ejm-oneliner p { margin:0; font-size:17px; line-height:1.55; font-weight:600; color:var(--ejm-ink); max-width:80ch; }
+.ejm-oneliner em { color:var(--ejm-cyan); font-style:italic; }
+
+/* ---- close ---- */
+.ejm-close { display:flex; align-items:center; justify-content:space-between; gap:22px; flex-wrap:wrap;
+  background:linear-gradient(120deg,#4f46e5,#0e7490); border-radius:16px; padding:26px 30px; }
+.ejm-close-main { flex:1 1 400px; }
+.ejm-close h3 { font-size:23px; font-weight:800; letter-spacing:-.02em; margin:0 0 8px; color:#fff; }
+.ejm-close p { font-size:14px; color:rgba(255,255,255,.9); margin:0 0 12px; max-width:66ch; }
+.ejm-close-contact { font-size:11.5px; color:rgba(255,255,255,.72); letter-spacing:.02em; }
+.ejm-close-cta { flex:none; display:inline-flex; align-items:center; gap:9px; background:#fff; color:#4f46e5 !important;
+  border-radius:999px; padding:14px 24px; font-weight:800; font-size:14px; text-decoration:none !important; }
+.ejm-close-cta:hover { background:#f1f5f9; }
+
+/* ---- modal ---- */
+.ejm-modal { position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; padding:20px; }
+.ejm-modal-backdrop { position:absolute; inset:0; background:rgba(4,4,10,.86);
+  -webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px); }
+.ejm-modal-box { position:relative; width:min(980px,100%); background:var(--ejm-card);
+  border:1px solid var(--ejm-line-2); border-radius:16px; overflow:hidden; box-shadow:0 30px 90px rgba(0,0,0,.7); }
+.ejm-modal-head { display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:14px 18px; border-bottom:1px solid var(--ejm-line); }
+.ejm-modal-head h4 { margin:0; font-size:15.5px; font-weight:750; }
+.ejm-modal-x { width:34px; height:34px; flex:none; border:0; border-radius:8px; background:rgba(255,255,255,.07);
+  color:var(--ejm-ink); font-size:15px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+.ejm-modal-x:hover { background:var(--ejm-red); color:#fff; }
+.ejm-modal-video { background:#000; }
+.ejm-modal-video video { display:block; width:100%; max-height:72vh; background:#000; }
+
+/* ---- responsive ---- */
+@media (max-width:1000px) {
+  .ejm-base { grid-template-columns:1fr; }
+  .ejm-tiers { grid-template-columns:1fr; }
+  .ejm-how { grid-template-columns:1fr; }
+  .ejm-lic-basics { grid-template-columns:1fr; }
+  .ejm-lic-split { grid-template-columns:1fr; }
+}
+@media (max-width:680px) {
+  .ejm-base-pillars { grid-template-columns:1fr; }
+  .ejm-grid { grid-template-columns:1fr; }
+  .ejm-total { bottom:0; border-radius:14px 14px 0 0; margin-bottom:34px; }
+  .ejm-total-inner { padding:13px 15px; gap:12px; }
+  .ejm-total-right { width:100%; justify-content:space-between; gap:12px; }
+  .ejm-total-col b { font-size:24px; }
+  .ejm-total-cta { width:100%; justify-content:center; }
+  .ejm-close { padding:22px; }
+  .ejm-complete-nudge { flex-wrap:wrap; }
+  .ejm-nudge-btn { width:100%; }
+}
+@media print {
+  .ejm-total { position:static; }
+  .ejm-modal, .ejm-watch, .ejm-nudge-btn { display:none !important; }
+}
+</style>
+
+<script>
+(function () {
+  var D = window.EJM_DATA;
+  if (!D) return;
+  var root = document.querySelector('.ejm');
+  if (!root) return;
+
+  var WHOLESALE = D.mode === 'wholesale';
+  var byId = function (list, id) { for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i]; return null; };
+  var cost = function (o) { return WHOLESALE ? o.whl : o.retail; };   // what the buyer of THIS page pays
+  var rrp  = function (o) { return o.retail; };                        // recommended retail, for margin maths
+  var money = function (n) { return '$' + n.toLocaleString('en-AU'); };
+
+  var state = { tier: 'core', addons: {}, zones: D.zones.included };
+
+  // ---- elements
+  var tierRadios  = root.querySelectorAll('input[name="ejm-tier"]');
+  var addonBoxes  = root.querySelectorAll('.ejm-addon-cb');
+  var soloLock    = root.querySelector('#ejm-solo-lock');
+  var inclNote    = root.querySelector('#ejm-incl-note');
+  var nudge       = root.querySelector('#ejm-nudge');
+  var nudgeText   = root.querySelector('#ejm-nudge-text');
+  var nudgeBtn    = root.querySelector('#ejm-nudge-btn');
+  var zoneCount   = root.querySelector('#ejm-zone-count');
+  var zoneCost    = root.querySelector('#ejm-zone-cost');
+  var zoneMinus   = root.querySelector('#ejm-zone-minus');
+  var zonePlus    = root.querySelector('#ejm-zone-plus');
+  var elAmount    = root.querySelector('#ejm-total-amount');
+  var elRrp       = root.querySelector('#ejm-total-rrp');
+  var elMargin    = root.querySelector('#ejm-total-margin');
+  var elTierName  = root.querySelector('#ejm-total-tier');
+  var elSummary   = root.querySelector('#ejm-total-summary');
+  var elItemList  = root.querySelector('#ejm-itemised-list');
+  var elItemised  = root.querySelector('#ejm-itemised');
+  var elToggle    = root.querySelector('#ejm-total-toggle');
+  var elCta       = root.querySelector('#ejm-total-cta');
+
+  // ---- zone cost for a given zone count (returns [costPrice, rrpPrice])
+  function zonePrices(n) {
+    var extra = Math.max(0, n - D.zones.included);
+    if (extra === 0) return [0, 0];
+    if (n >= D.zones.cap_from) return [WHOLESALE ? D.zones.cap_whl : D.zones.cap_retail, D.zones.cap_retail];
+    return [extra * (WHOLESALE ? D.zones.extra_whl : D.zones.extra_retail), extra * D.zones.extra_retail];
+  }
+
+  // ---- the whole calculation
+  function calc() {
+    var tier = byId(D.tiers, state.tier);
+    var everything = !!tier.includes_all_addons;
+    var noAddons   = !tier.allows_addons;
+
+    // which add-ons are actually on
+    var on = {};
+    D.addons.forEach(function (a) {
+      if (everything) { on[a.id] = true; }
+      else if (noAddons) { on[a.id] = false; }
+      else { on[a.id] = !!state.addons[a.id]; }
+    });
+    // a dependent add-on can't be on without its parent
+    D.addons.forEach(function (a) {
+      if (a.requires && on[a.id] && !on[a.requires]) on[a.id] = false;
+    });
+
+    var lines = [];
+    lines.push({ label: tier.name + ' base', cost: cost(tier), rrp: rrp(tier) });
+
+    var addonCost = 0, addonRrp = 0;
+
+    if (everything) {
+      // all add-ons folded into the tier price
+      D.addons.forEach(function (a) { lines.push({ label: a.name, cost: 0, rrp: 0, free: 'In Complete' }); });
+    } else {
+      // bundle: every member on -> bundle price replaces the members' individual prices
+      var bundledIds = {};
+      D.bundles.forEach(function (b) {
+        var all = b.members.every(function (m) { return on[m]; });
+        if (!all) return;
+        b.members.forEach(function (m) { bundledIds[m] = b.id; });
+        addonCost += cost(b); addonRrp += rrp(b);
+        lines.push({ label: b.name + ' bundle (' + b.members.length + ' voice add-ons)', cost: cost(b), rrp: rrp(b) });
+      });
+      D.addons.forEach(function (a) {
+        if (!on[a.id]) return;
+        if (bundledIds[a.id]) { lines.push({ label: a.name, cost: 0, rrp: 0, free: 'In bundle' }); return; }
+        addonCost += cost(a); addonRrp += rrp(a);
+        lines.push({ label: a.name, cost: cost(a), rrp: rrp(a) });
+      });
+    }
+
+    var zp = zonePrices(state.zones);
+    if (zp[0] > 0 || zp[1] > 0) {
+      var extra = state.zones - D.zones.included;
+      var zlabel = state.zones >= D.zones.cap_from
+        ? state.zones + ' zones (unlimited-zone cap)'
+        : extra + ' extra zone' + (extra === 1 ? '' : 's') + ' (' + state.zones + ' total)';
+      lines.push({ label: zlabel, cost: zp[0], rrp: zp[1] });
+    }
+
+    return {
+      tier: tier, on: on, lines: lines,
+      addonCost: addonCost, addonRrp: addonRrp,
+      zoneCost: zp[0], zoneRrp: zp[1],
+      totalCost: cost(tier) + addonCost + zp[0],
+      totalRrp:  rrp(tier)  + addonRrp  + zp[1],
+      everything: everything, noAddons: noAddons
+    };
+  }
+
+  // ---- paint
+  function render() {
+    var r = calc();
+
+    // add-on cards
+    D.addons.forEach(function (a) {
+      var cb   = root.querySelector('#add-' + a.id);
+      var card = root.querySelector('[data-addon="' + a.id + '"]');
+      var pr   = root.querySelector('[data-price-for="' + a.id + '"]');
+      if (!cb || !card || !pr) return;
+
+      var parentOff = a.requires && !r.on[a.requires];
+      var locked = r.noAddons || r.everything || parentOff;
+
+      cb.checked  = !!r.on[a.id];
+      cb.disabled = locked;
+      card.classList.toggle('is-locked', (r.noAddons || parentOff) && !r.everything);
+      card.classList.toggle('is-forced', r.everything);
+
+      // price shown on the card
+      var bundled = false;
+      D.bundles.forEach(function (b) {
+        if (b.members.indexOf(a.id) === -1) return;
+        if (b.members.every(function (m) { return r.on[m]; })) bundled = true;
+      });
+      pr.classList.remove('is-free', 'is-bundled');
+      if (r.everything)      { pr.classList.add('is-free');    pr.innerHTML = '<b>Included</b>'; }
+      else if (bundled)      { pr.classList.add('is-bundled'); pr.innerHTML = '<b>In bundle</b>'; }
+      else                   { pr.innerHTML = '<b>' + money(cost(a)) + '</b><i>/mo</i>'; }
+    });
+
+    // bundle strips
+    D.bundles.forEach(function (b) {
+      var strip = root.querySelector('#ejm-bundle-' + b.id);
+      var st    = root.querySelector('#ejm-bundle-state-' + b.id);
+      if (!strip || !st) return;
+      var applied = !r.everything && b.members.every(function (m) { return r.on[m]; });
+      var saving = b.members.reduce(function (s, m) { return s + cost(byId(D.addons, m)); }, 0) - cost(b);
+      strip.classList.toggle('is-on', applied);
+      st.innerHTML = applied
+        ? '<span class="ejm-bundle-on"><i class="fas fa-check"></i> Applied &mdash; saving ' + money(saving) + '/mo</span>'
+        : (r.everything
+            ? '<span class="ejm-bundle-off"><i class="fas fa-check"></i> Included in Complete</span>'
+            : '<span class="ejm-bundle-off"><i class="fas fa-circle-notch"></i> Not applied</span>');
+    });
+
+    if (soloLock) soloLock.hidden = !r.noAddons;
+    if (inclNote) inclNote.textContent = 'in ' + r.tier.name;
+
+    // zones
+    zoneCount.textContent = state.zones;
+    zoneMinus.disabled = state.zones <= 1;
+    zonePlus.disabled  = state.zones >= 20;
+    zoneCost.textContent = r.zoneCost === 0
+      ? D.zones.included + ' included — $0/mo'
+      : (state.zones >= D.zones.cap_from ? 'Unlimited-zone cap — ' : '') + '+' + money(r.zoneCost) + '/mo';
+
+    // nudge: only worth showing on a tier that isn't already Complete
+    var complete = byId(D.tiers, 'complete');
+    if (nudge && complete && !r.everything && !r.noAddons) {
+      var softwareNow = cost(r.tier) + r.addonCost;   // zones sit outside the Complete price
+      var saving = softwareNow - cost(complete);
+      if (saving > 0) {
+        nudge.hidden = false;
+        nudgeText.innerHTML = 'You’ve ticked <b>' + money(softwareNow) + '/mo</b> of base + add-ons. ' +
+          '<b>Complete</b> gives you every software add-on for <b>' + money(cost(complete)) + '/mo</b> — ' +
+          'you’d save <b>' + money(saving) + '/mo</b> and get the rest as well.';
+      } else { nudge.hidden = true; }
+    } else if (nudge) { nudge.hidden = true; }
+
+    // totals
+    elTierName.textContent = r.tier.name;
+    var chosen = D.addons.filter(function (a) { return r.on[a.id]; }).length;
+    elSummary.textContent = state.zones + ' zone' + (state.zones === 1 ? '' : 's') + ', ' +
+      (r.everything ? 'every add-on included' : (chosen === 0 ? 'no add-ons' : chosen + ' add-on' + (chosen === 1 ? '' : 's')));
+
+    elAmount.textContent = money(r.totalCost);
+    if (WHOLESALE && elRrp && elMargin) {
+      elRrp.textContent = money(r.totalRrp);
+      elMargin.textContent = money(r.totalRrp - r.totalCost);
+    }
+
+    // itemised
+    elItemList.innerHTML = '';
+    r.lines.forEach(function (l) {
+      var li = document.createElement('li');
+      var name = document.createElement('span'); name.textContent = l.label;
+      var val  = document.createElement('b');
+      if (l.free) { val.textContent = l.free; li.className = 'is-free'; }
+      else { val.textContent = money(l.cost) + '/mo'; }
+      li.appendChild(name); li.appendChild(val); elItemList.appendChild(li);
+    });
+    var sum = document.createElement('li'); sum.className = 'is-sum';
+    var sl = document.createElement('span');
+    sl.textContent = WHOLESALE ? 'Your wholesale cost per month' : 'Total per month (ex GST)';
+    var sv = document.createElement('b'); sv.textContent = money(r.totalCost) + '/mo';
+    sum.appendChild(sl); sum.appendChild(sv); elItemList.appendChild(sum);
+    if (WHOLESALE) {
+      var m = document.createElement('li'); m.className = 'is-sum';
+      var ml = document.createElement('span'); ml.textContent = 'Sell at ' + money(r.totalRrp) + '/mo → your margin';
+      var mv = document.createElement('b'); mv.textContent = money(r.totalRrp - r.totalCost) + '/mo';
+      mv.style.color = 'var(--ejm-green)';
+      m.appendChild(ml); m.appendChild(mv); elItemList.appendChild(m);
+    }
+
+    // the CTA carries the build with it
+    if (elCta) {
+      var body = (WHOLESALE ? 'Wholesale package build\n\n' : 'My eJukebox package\n\n');
+      r.lines.forEach(function (l) { body += '- ' + l.label + ': ' + (l.free ? l.free : money(l.cost) + '/mo') + '\n'; });
+      body += '\n' + (WHOLESALE
+        ? 'Wholesale cost: ' + money(r.totalCost) + '/mo\nRRP: ' + money(r.totalRrp) + '/mo\nMargin: ' + money(r.totalRrp - r.totalCost) + '/mo'
+        : 'Total: ' + money(r.totalCost) + '/mo ex GST');
+      body += '\n\n(Excludes one-off hardware/install and the OneMusic licence.)\n\nVenue:\nContact:\n';
+      var subj = WHOLESALE ? 'Wholesale package build - ' + money(r.totalCost) + '/mo'
+                           : 'eJukebox package - ' + money(r.totalCost) + '/mo';
+      elCta.href = 'mailto:info@ejukebox.com.au?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
+    }
+  }
+
+  // ---- events
+  Array.prototype.forEach.call(tierRadios, function (rd) {
+    rd.addEventListener('change', function () { if (rd.checked) { state.tier = rd.value; render(); } });
+  });
+  Array.prototype.forEach.call(addonBoxes, function (cb) {
+    cb.addEventListener('change', function () {
+      state.addons[cb.value] = cb.checked;
+      // turning a parent off takes its dependants with it
+      if (!cb.checked) D.addons.forEach(function (a) { if (a.requires === cb.value) state.addons[a.id] = false; });
+      render();
+    });
+    // the whole card is a hit target, but leave the <label> and Watch button to themselves
+    var card = cb.closest('.ejm-card-addon');
+    if (!card) return;
+    card.addEventListener('click', function (e) {
+      if (cb.disabled) return;
+      if (e.target.closest('label') || e.target.closest('.ejm-watch')) return;
+      cb.checked = !cb.checked;
+      cb.dispatchEvent(new Event('change', { bubbles: true }));
+    });
+  });
+  zoneMinus.addEventListener('click', function () { if (state.zones > 1) { state.zones--; render(); } });
+  zonePlus .addEventListener('click', function () { if (state.zones < 20) { state.zones++; render(); } });
+  if (nudgeBtn) nudgeBtn.addEventListener('click', function () {
+    var rd = root.querySelector('#tier-complete');
+    if (rd) { rd.checked = true; state.tier = 'complete'; render(); rd.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  });
+  elToggle.addEventListener('click', function () {
+    var open = elItemised.hidden;
+    elItemised.hidden = !open;
+    elToggle.setAttribute('aria-expanded', String(open));
+    elToggle.querySelector('span').textContent = open ? 'Hide' : 'Itemise';
+  });
+
+  // ---- video modal. Clips are 30-90MB, so nothing loads until Watch is pressed.
+  var modal  = root.querySelector('#ejm-modal');
+  var player = modal.querySelector('#ejm-modal-player');
+  var mTitle = modal.querySelector('#ejm-modal-title');
+
+  // The layout's fade-in animation leaves a transform on #main-content's children,
+  // and a transformed ancestor becomes the containing block for position:fixed —
+  // which would size the modal to the (very tall) page wrapper instead of the
+  // viewport. Reparenting to <body> puts it outside that transform for good.
+  document.body.appendChild(modal);
+
+  function openVideo(src, title) {
+    mTitle.textContent = title;
+    player.src = src;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    player.play().catch(function () { /* user can press play */ });
+  }
+  function closeVideo() {
+    player.pause();
+    player.removeAttribute('src');
+    player.load();
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  root.addEventListener('click', function (e) {
+    var w = e.target.closest ? e.target.closest('.ejm-watch') : null;
+    if (!w) return;
+    e.preventDefault();
+    e.stopPropagation();   // the Watch button sits inside a <label>; don't toggle the tick
+    openVideo(w.getAttribute('data-video'), w.getAttribute('data-title'));
+  });
+  // modal now lives on <body>, so it needs its own handler
+  modal.addEventListener('click', function (e) {
+    if (e.target.closest && e.target.closest('[data-close]')) closeVideo();
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) closeVideo(); });
+
+  render();
+})();
+</script>

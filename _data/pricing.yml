@@ -1,0 +1,175 @@
+# =============================================================================
+# eJukebox a-la-carte pricing - single source of truth for /pricing and /wholesale
+# =============================================================================
+# Both pages render from this file via _includes/pricing-menu.html, so retail and
+# wholesale can never drift apart. Change a price here and both pages update.
+#
+# retail = what an end customer pays buying direct (ex GST)
+# whl    = what a reseller pays us (~72% of retail); they keep the ~28% margin
+#
+# Figures from: eJukebox-Pricing-Licensing-Strategy-Deck.pptx (working draft v3,
+# 15 July 2026), slides 34-36. The deck lists these as Marc's recommended locks.
+# -----------------------------------------------------------------------------
+
+video_base: https://ejukebox01.blob.core.windows.net/websiteblobs/features/
+
+tiers:
+  - id: solo
+    name: Solo
+    tagline: Small shop, salon or cafe
+    retail: 49
+    whl: 35
+    blurb: Curated, licensed background music for a single-zone room. No interaction layer.
+    points:
+      - Single zone
+      - Human-curated, licensed, family-friendly music
+      - Broadcast-quality consistent volume
+      - No song requests or interaction features
+    allows_addons: false
+  - id: core
+    name: Core
+    tagline: The hospitality base
+    retail: 169
+    whl: 122
+    recommended: true
+    blurb: The curated, licensed music your venue runs on, plus the interaction layer. Bolt on exactly what you want.
+    points:
+      - 2 zones included
+      - Song Requests and the full interaction layer
+      - On-site player, keeps playing offline
+      - We collect and remit your OneMusic licence
+    allows_addons: true
+  - id: complete
+    name: Complete
+    tagline: Get the lot
+    retail: 299
+    whl: 215
+    blurb: Core plus every software add-on in one price. Cheaper than ticking them all individually.
+    points:
+      - Everything in Core
+      - Every software add-on included
+      - Voice suite, dedications, Spotify, both screens, functions
+      - Extra zones and hardware still priced separately
+    allows_addons: true
+    includes_all_addons: true
+
+# ---- Included in Core at no extra cost -------------------------------------
+core_features:
+  - id: song-requests
+    name: Song Requests
+    category: Requests
+    desc: Customers request from their own phone with no app. Staff keep full control - open the whole library or lock it to the current channel, and pause requests anytime.
+    video: eJukebox-Feature-Song-Requests.mp4
+  - id: song-previews
+    name: Song Previews
+    category: Discovery
+    desc: Tap any track for an official 30-second preview before requesting it. Try before you queue.
+    video:
+  - id: playing-across-country
+    name: Playing Across the Country
+    category: Discovery
+    desc: A live grid of what venues nationwide are playing right now, filtered to your venue's style. Tap any track to request it.
+    video:
+  - id: next-songs
+    name: Next Songs Reordering
+    category: Control
+    desc: See what's coming up and drag it into the order you want, live from the admin panel. Takes effect on the player straight away.
+    video: eJukebox-Feature-Next-Songs-Reordering.mp4
+  - id: record-voice
+    name: Record Voice Announcement
+    category: Voice
+    desc: Record your own voice on any phone; it plays neatly between songs, never over the music. Profanity-moderated.
+    video: eJukebox-Feature-Record-Voice-Announcement.mp4
+
+# ---- Paid add-ons (on top of Core) -----------------------------------------
+addons:
+  - id: spotify
+    name: Spotify Integration
+    category: Music
+    retail: 29
+    whl: 21
+    desc: Guests sign in with Spotify and pick one of their own playlists; every track is fuzzy-matched to your library so they can request it in a tap. Staff can load a whole curated playlist into the queue in one move.
+    video: eJukebox-Feature-Spotify-Integration.mp4
+  - id: tts
+    name: Type a Message
+    category: Voice
+    retail: 19
+    whl: 14
+    desc: Type a line and a warm, broadcast-quality voice reads it across the room between songs. No microphone, no staff member put on the spot.
+    video: eJukebox-Feature-Type-A-Message.mp4
+    bundle: voice-suite
+  - id: scheduled
+    name: Scheduled Announcements
+    category: Automation
+    retail: 25
+    whl: 18
+    desc: Book a typed or recorded message to play itself - daily, on chosen nights, or once. Happy hour, last drinks, trivia night, on flawless autopilot.
+    video: eJukebox-Feature-Scheduled-Announcements.mp4
+    bundle: voice-suite
+  - id: livemic
+    name: Live Microphone
+    category: Live
+    retail: 29
+    whl: 21
+    desc: Any staff phone becomes a professional PA mic in seconds. The music ducks the instant you speak and swells back when you stop.
+    video: eJukebox-Feature-Live-Microphone.mp4
+    bundle: voice-suite
+  - id: livemic-monitor
+    name: Live Mic Monitor
+    category: Live
+    retail: 15
+    whl: 11
+    desc: The venue's program audio - with your own voice stripped out - streamed back to your headphones, so you can talk up to the vocal like a radio DJ.
+    video: eJukebox-Feature-Live-Mic-Monitor.mp4
+    requires: livemic
+    requires_label: Requires Live Microphone
+    bundle: voice-suite
+  - id: dedications
+    name: Voice Dedications
+    category: Interaction
+    retail: 25
+    whl: 18
+    desc: Customers record an 8-second shout-out that plays right before their song. Transcribed and profanity-scanned in real time, so it's safe to hand to a full room.
+    video: eJukebox-Feature-Voice-Dedications.mp4
+  - id: photo-screen
+    name: Photo Slideshow Display
+    category: Display
+    retail: 25
+    whl: 18
+    desc: When requests go quiet your screen blooms into a branded slideshow - event nights, specials, your logo. A 24/7 billboard you already own.
+    video: eJukebox-Feature-Photo-Display.mp4
+    hardware: Needs a screen (one-off hardware)
+  - id: request-screen
+    name: Interactive Request Screen
+    category: Requests
+    retail: 39
+    whl: 28
+    desc: A wall-mounted touchscreen request booth. Customers walk up, browse the library and pick a song - no phone needed. Same request engine, big-screen sized.
+    video: eJukebox-Feature-Interactive-Request-Screen.mp4
+    hardware: Needs a touchscreen (one-off hardware)
+  - id: functions
+    name: Functions & Events
+    category: Events
+    retail: 19
+    whl: 14
+    desc: Give a function host their own night-only controls - skip, cue the right track, and stop cleanly for the speeches - without pulling staff off the floor.
+    video: eJukebox-Feature-Functions-and-Events.mp4
+
+# ---- Bundles ---------------------------------------------------------------
+bundles:
+  - id: voice-suite
+    name: Voice Suite
+    retail: 69
+    whl: 50
+    members: [tts, scheduled, livemic, livemic-monitor]
+    desc: Type a Message + Scheduled Announcements + Live Microphone + Live Mic Monitor, bundled.
+
+# ---- Zones -----------------------------------------------------------------
+zones:
+  included: 2
+  extra_retail: 39
+  extra_whl: 28
+  cap_from: 5
+  cap_retail: 120
+  cap_whl: 86
+  note: Two zones come standard. Extra zones are added individually, and each one still costs less than a single Soundtrack zone.
