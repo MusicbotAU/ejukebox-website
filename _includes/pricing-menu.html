@@ -149,11 +149,23 @@
     <button type="button" class="ejm-nudge-btn" id="ejm-nudge-btn">Switch to Complete</button>
   </div>
 
-  <!-- ---- STEP 2: INCLUDED ---- -->
+  <!-- ---- STEP 2: INCLUDED (filtered to the chosen base) ---- -->
   <h3 class="ejm-step"><span>Step 2</span> What's already included <em id="ejm-incl-note">in Core</em></h3>
+  <p class="ejm-help">
+    <i class="fas fa-circle-check"></i>
+    These come with the base you picked above, at no extra cost. This list changes with your
+    base, so it always shows what <b id="ejm-incl-tier">Core</b> actually gives you.
+  </p>
+
+  {%- comment -%}
+    Every item renders once and carries the tiers that include it; the script shows
+    only the matching ones. Previously this was a fixed Core list with the tier name
+    swapped into the heading, which told Solo customers they got Song Requests when
+    the Solo box directly above says they don't.
+  {%- endcomment -%}
   <div class="ejm-grid" id="ejm-core-grid">
-    {% for f in P.core_features %}
-    <div class="ejm-card ejm-card-incl">
+    {% for f in P.included %}
+    <div class="ejm-card ejm-card-incl" data-inc="{{ f.id }}" data-inc-tiers="{{ f.tiers | join: ' ' }}">
       <div class="ejm-card-head">
         <span class="ejm-cat">{{ f.category }}</span>
         <span class="ejm-price-incl"><i class="fas fa-check"></i> Included</span>
@@ -163,7 +175,7 @@
       <div class="ejm-card-foot">
         {% if f.video %}
         <button type="button" class="ejm-watch" data-video="{{ P.video_base }}{{ f.video }}" data-title="{{ f.name | escape }}">
-          <i class="fas fa-play"></i> Watch
+          <i class="fas fa-play"></i> Watch video
         </button>
         {% else %}
         <span class="ejm-novideo"><i class="fas fa-video-slash"></i> Video coming soon</span>
@@ -171,23 +183,15 @@
       </div>
     </div>
     {% endfor %}
-    <div class="ejm-card ejm-card-incl">
-      <div class="ejm-card-head">
-        <span class="ejm-cat">Capacity</span>
-        <span class="ejm-price-incl"><i class="fas fa-check"></i> Included</span>
-      </div>
-      <h4>2 zones</h4>
-      <p>Play different music in different areas - the bar, the bistro, the beer garden. Two zones come standard where most providers charge for every single one.</p>
-      <div class="ejm-card-foot"><span class="ejm-novideo"><i class="fas fa-video-slash"></i> Video coming soon</span></div>
-    </div>
-    <div class="ejm-card ejm-card-incl">
-      <div class="ejm-card-head">
-        <span class="ejm-cat">Licensing</span>
-        <span class="ejm-price-incl"><i class="fas fa-check"></i> Included</span>
-      </div>
-      <h4>OneMusic administration</h4>
-      <p>We can collect your OneMusic licence fee on your behalf and remit it straight to OneMusic, so the paperwork stops being your problem. The licence fee itself is separate - see the licensing section below.</p>
-      <div class="ejm-card-foot"><span class="ejm-novideo"><i class="fas fa-video-slash"></i> Video coming soon</span></div>
+  </div>
+
+  <div class="ejm-note ejm-note-warn" id="ejm-solo-excl" hidden>
+    <i class="fas fa-circle-exclamation"></i>
+    <div>
+      <b>So there's no confusion about what Solo is not.</b> Solo is background music streaming only -
+      think of it as your own ad-free radio station. It does <b>not</b> include song requests, the
+      customer request page, voice announcements, extra zones, or the on-site player. If you want your
+      customers picking songs from their phones, that starts at <b>Core</b>.
     </div>
   </div>
 
@@ -279,16 +283,20 @@
     <div class="ejm-zones-l">
       <span class="ejm-cat">Capacity</span>
       <b>Zones</b>
-      <span>{{ P.zones.note }} From {{ P.zones.cap_from }} zones we cap it at a flat
+      <span id="ejm-zone-fixed" hidden><b>Solo is a single-area service</b>, so there are no zones to add.
+        Choose Core or Complete if you need different music in different parts of your venue.</span>
+      <span id="ejm-zone-note">{{ P.zones.note }} From {{ P.zones.cap_from }} zones we cap it at a flat
         <b>+${% if wholesale %}{{ P.zones.cap_whl }}{% else %}{{ P.zones.cap_retail }}{% endif %}/mo</b>
-        for unlimited zones, so a big club never runs away.</span>
+        for unlimited zones, so a big club never runs away - you are always charged whichever is cheaper.</span>
     </div>
     <div class="ejm-zones-r">
-      <span class="ejm-zones-lbl">Total zones</span>
-      <div class="ejm-stepper">
-        <button type="button" id="ejm-zone-minus" aria-label="Remove a zone">&minus;</button>
-        <output id="ejm-zone-count">2</output>
-        <button type="button" id="ejm-zone-plus" aria-label="Add a zone">+</button>
+      <div id="ejm-zone-ctl">
+        <span class="ejm-zones-lbl">Total zones</span>
+        <div class="ejm-stepper">
+          <button type="button" id="ejm-zone-minus" aria-label="Remove a zone">&minus;</button>
+          <output id="ejm-zone-count">2</output>
+          <button type="button" id="ejm-zone-plus" aria-label="Add a zone">+</button>
+        </div>
       </div>
       <span class="ejm-zones-cost" id="ejm-zone-cost">2 included - $0/mo</span>
     </div>
@@ -339,13 +347,19 @@
     <h2>One-off hardware &amp; install</h2>
     <span class="ejm-tag ejm-tag-hw">Separate from the monthly price</span>
   </div>
-  <p class="ejm-sec-note">The monthly prices above are software and service. The kit that makes it work is a one-off cost, priced to cover what it costs us - there's no margin loaded into the hardware.</p>
+  <p class="ejm-sec-note">The monthly prices above are software and service. The kit that makes it work is a one-off cost, priced to cover what it costs us - there's no margin loaded into the hardware. <b>Solo needs none of this</b>, because it streams to a device you already own.</p>
+
+  <div class="ejm-note ejm-note-good" id="ejm-hw-solo" hidden>
+    <i class="fas fa-feather"></i>
+    <div><b>You've picked Solo, so there's no hardware and no upfront cost.</b> Nothing gets installed at your venue - you just open your private streaming link on a computer, tablet, phone, Sonos or streamer you already have. The one-off costs below only apply to Core and Complete.</div>
+  </div>
+
   <div class="ejm-hw-grid">
     <div class="ejm-hw">
       <i class="fas fa-hard-drive"></i>
       <h4>On-site player</h4>
-      <p>The compact mini-PC that lives at the venue, caches your music and keeps playing through internet dropouts. Required for every install.</p>
-      <span class="ejm-hw-price">Quoted per venue</span>
+      <p>The compact mini-PC that lives at the venue, caches your music and keeps playing through internet dropouts. Needed for <b>Core and Complete</b> - it's what makes requests and the rest of the interactive features work. Not used by Solo.</p>
+      <span class="ejm-hw-price">Typically under $500, quoted per venue</span>
     </div>
     <div class="ejm-hw">
       <i class="fas fa-tv"></i>

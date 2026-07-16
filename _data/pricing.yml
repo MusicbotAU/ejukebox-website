@@ -14,17 +14,23 @@
 video_base: https://ejukebox01.blob.core.windows.net/websiteblobs/features/
 
 tiers:
+  # Solo is a STREAMING-ONLY product: a private URL, no on-site player, no upfront
+  # hardware, single zone, and explicitly NO song requests or interaction layer.
+  # It must never be described as sharing Core's feature set.
   - id: solo
     name: Solo
     tagline: Small shop, salon or cafe
     retail: 49
     whl: 35
-    blurb: Curated, licensed background music for a single-zone room. No interaction layer.
+    zones_included: 1
+    zones_fixed: true
+    hardware: none
+    blurb: Streaming only. One curated channel for a single area, like an ad-free radio station for your business. No song requests.
     points:
-      - Single zone
-      - Human-curated, licensed, family-friendly music
-      - Broadcast-quality consistent volume
-      - No song requests or interaction features
+      - Streams over the internet - nothing to install, no hardware to buy
+      - One curated channel, one area
+      - Ad-free, licensed, family-friendly, volume-levelled
+      - No song requests and no interaction features
     allows_addons: false
   - id: core
     name: Core
@@ -32,11 +38,13 @@ tiers:
     retail: 169
     whl: 122
     recommended: true
+    zones_included: 2
+    hardware: player
     blurb: The curated, licensed music your venue runs on, plus the interaction layer. Bolt on exactly what you want.
     points:
       - 2 zones included
       - Song Requests and the full interaction layer
-      - On-site player, keeps playing offline
+      - On-site player, keeps playing offline (one-off hardware cost)
       - We collect and remit your OneMusic licence
     allows_addons: true
   - id: complete
@@ -44,6 +52,8 @@ tiers:
     tagline: Get the lot
     retail: 299
     whl: 215
+    zones_included: 2
+    hardware: player
     blurb: Core plus every software add-on in one price. Cheaper than ticking them all individually.
     points:
       - Everything in Core
@@ -53,33 +63,94 @@ tiers:
     allows_addons: true
     includes_all_addons: true
 
-# ---- Included in Core at no extra cost -------------------------------------
-core_features:
+# ---- What each tier includes at no extra cost --------------------------------
+# `tiers` lists which bases actually include the item. Solo is streaming only, so
+# it shares ONLY the music-quality items - never the request/interaction ones.
+# The page filters this list by the selected tier; nothing here is hard-coded.
+included:
+  # -- the music itself: true of every tier
+  - id: curated-channels
+    name: Human-curated channels
+    category: Music
+    tiers: [solo, core, complete]
+    desc: Every channel is hand-built and refreshed by professional Australian music directors, never guessed at by an algorithm. Hits, Smooth, Rock and Country.
+    video:
+  - id: licensed-clean
+    name: Licensed and family-friendly
+    category: Compliance
+    tiers: [solo, core, complete]
+    desc: Fully licensed for public play, and free of swearing and explicit lyrics. Playing eJukebox is what makes you a venue on a commercial background music supplier, which is what changes your OneMusic position - see the licensing section below.
+    video:
+  - id: broadcast-quality
+    name: Ad-free, broadcast-quality sound
+    category: Music
+    tiers: [solo, core, complete]
+    desc: Professionally processed for consistent volume, so nothing jumps between songs. No ads and no talk over the music - it simply plays.
+    video:
+
+  # -- Solo only
+  - id: stream-url
+    name: Streams to a device you already own
+    category: Delivery
+    tiers: [solo]
+    desc: Solo is a streaming service, not an installation. You get your own private URL that plays through any browser, computer, tablet, phone, Sonos or streamer you already have. Nothing to install, no player at the venue, and no upfront hardware cost.
+    video:
+  - id: single-area
+    name: One channel, one area
+    category: Capacity
+    tiers: [solo]
+    desc: Solo covers a single area with one channel at a time. For different music in different areas, or for anything your customers or staff can interact with, you need Core.
+    video:
+
+  # -- Core and Complete only
+  - id: onsite-player
+    name: On-site player, keeps playing offline
+    category: Delivery
+    tiers: [core, complete]
+    desc: A compact solid-state player is installed at your venue and caches your music, so it keeps playing even if the internet drops out. This is the one-off hardware cost noted further down, and it is what makes the interactive features possible.
+    video:
   - id: song-requests
     name: Song Requests
     category: Requests
+    tiers: [core, complete]
     desc: Customers request from their own phone with no app. Staff keep full control - open the whole library or lock it to the current channel, and pause requests anytime.
     video: eJukebox-Feature-Song-Requests.mp4
   - id: song-previews
     name: Song Previews
     category: Discovery
+    tiers: [core, complete]
     desc: Tap any track for an official 30-second preview before requesting it. Try before you queue.
     video:
   - id: playing-across-country
     name: Playing Across the Country
     category: Discovery
+    tiers: [core, complete]
     desc: A live grid of what venues nationwide are playing right now, filtered to your venue's style. Tap any track to request it.
     video:
   - id: next-songs
     name: Next Songs Reordering
     category: Control
+    tiers: [core, complete]
     desc: See what's coming up and drag it into the order you want, live from the admin panel. Takes effect on the player straight away.
     video: eJukebox-Feature-Next-Songs-Reordering.mp4
   - id: record-voice
     name: Record Voice Announcement
     category: Voice
+    tiers: [core, complete]
     desc: Record your own voice on any phone; it plays neatly between songs, never over the music. Profanity-moderated.
     video: eJukebox-Feature-Record-Voice-Announcement.mp4
+  - id: two-zones
+    name: 2 zones included
+    category: Capacity
+    tiers: [core, complete]
+    desc: Play different music in different areas - the bar, the bistro, the beer garden. Two zones come standard where most providers charge for every single one.
+    video:
+  - id: onemusic-admin
+    name: OneMusic administration
+    category: Licensing
+    tiers: [core, complete]
+    desc: We can collect your OneMusic licence fee on your behalf and remit it straight to OneMusic, so the paperwork stops being your problem. The licence fee itself is separate - see the licensing section below.
+    video:
 
 # ---- Paid add-ons (on top of Core) -----------------------------------------
 addons:
@@ -165,6 +236,10 @@ bundles:
     desc: Type a Message + Scheduled Announcements + Live Microphone + Live Mic Monitor, bundled.
 
 # ---- Zones -----------------------------------------------------------------
+# `included` is the Core/Complete default; Solo overrides it to 1 via zones_included.
+# The cap is a CEILING: you are always charged the cheaper of (extra x rate) or the
+# flat cap, so it can never cost more than paying per zone. (At exactly 5 zones,
+# 3 x $39 = $117 is cheaper than the $120 cap, so $117 applies.)
 zones:
   included: 2
   extra_retail: 39
