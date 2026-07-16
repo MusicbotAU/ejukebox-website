@@ -237,14 +237,17 @@ bundles:
 
 # ---- Zones -----------------------------------------------------------------
 # `included` is the Core/Complete default; Solo overrides it to 1 via zones_included.
-# The cap is a CEILING: you are always charged the cheaper of (extra x rate) or the
-# flat cap, so it can never cost more than paying per zone. (At exactly 5 zones,
-# 3 x $39 = $117 is cheaper than the $120 cap, so $117 applies.)
+#
+# IMPORTANT: the on-site player fitted for the 2 included zones already drives up to
+# `max` zones. Zones 3 and 4 therefore cost NOTHING in extra hardware - they are a
+# monthly charge only. There is no such thing as "extra-zone hardware".
+#
+# Beyond `max` zones a second player would be needed, so the stepper stops at 4 and
+# points people at us. The deck's "5+ zones flat $120 cap" is parked until Marc
+# decides how a 5th zone is delivered and priced.
 zones:
   included: 2
+  max: 4
   extra_retail: 39
   extra_whl: 28
-  cap_from: 5
-  cap_retail: 120
-  cap_whl: 86
-  note: Two zones come standard. Extra zones are added individually, and each one still costs less than a single Soundtrack zone.
+  note: Two zones come standard, and the player we fit already drives up to four - so zones three and four add no hardware cost at all, just the monthly charge. Each extra zone still costs less than a single Soundtrack zone.

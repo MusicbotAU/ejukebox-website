@@ -378,6 +378,12 @@
 .ejm-hw p { font-size:12.5px; color:var(--ejm-mut); line-height:1.55; margin:0 0 12px; }
 .ejm-hw-price { font-size:11.5px; font-weight:800; color:var(--ejm-amber); background:rgba(245,166,35,.12);
   border:1px solid rgba(245,166,35,.3); border-radius:999px; padding:5px 11px; display:inline-block; }
+/* the "no extra hardware for zones 3-4" card: good news, so green not amber */
+.ejm-hw-none { border-color:rgba(52,211,153,.3);
+  background:linear-gradient(160deg, rgba(52,211,153,.07), var(--ejm-card) 70%); }
+.ejm-hw-none > i { color:var(--ejm-green); }
+.ejm-hw-price.ejm-hw-free { color:var(--ejm-green); background:rgba(52,211,153,.12);
+  border-color:rgba(52,211,153,.35); }
 
 /* ---- notes ---- */
 .ejm-note { display:flex; gap:13px; align-items:flex-start; background:var(--ejm-card);
@@ -545,20 +551,14 @@
   }
 
   // ---- zone cost for a given zone count (returns [costPrice, rrpPrice])
-  // The cap is a CEILING, so always charge the cheaper of per-zone or the flat cap.
-  // Charging the flat cap outright would overcharge at exactly 5 zones, where
-  // 3 x $39 = $117 is less than the $120 cap.
+  // Zones 3 and 4 are a monthly charge only - the player fitted for the first two
+  // already drives four, so there is no extra-zone hardware.
+  var MAX_ZONES = D.zones.max || 4;
   function zonePrices(n, tier) {
-    var inc = zonesIncluded(tier);
-    var extra = Math.max(0, n - inc);
+    var extra = Math.max(0, n - zonesIncluded(tier));
     if (extra === 0) return [0, 0];
-    var perCost = extra * (WHOLESALE ? D.zones.extra_whl : D.zones.extra_retail);
-    var perRrp  = extra * D.zones.extra_retail;
-    if (n >= D.zones.cap_from) {
-      return [Math.min(perCost, WHOLESALE ? D.zones.cap_whl : D.zones.cap_retail),
-              Math.min(perRrp, D.zones.cap_retail)];
-    }
-    return [perCost, perRrp];
+    return [extra * (WHOLESALE ? D.zones.extra_whl : D.zones.extra_retail),
+            extra * D.zones.extra_retail];
   }
 
   // ---- the whole calculation
@@ -612,13 +612,10 @@
     var zp = zonePrices(zones, tier);
     if (zp[0] > 0 || zp[1] > 0) {
       var extra = zones - inc;
-      var capped = zones >= D.zones.cap_from &&
-                   zp[1] === Math.min(extra * D.zones.extra_retail, D.zones.cap_retail) &&
-                   extra * D.zones.extra_retail > D.zones.cap_retail;
-      var zlabel = capped
-        ? zones + ' zones (unlimited-zone cap)'
-        : extra + ' extra zone' + (extra === 1 ? '' : 's') + ' (' + zones + ' total)';
-      lines.push({ label: zlabel, cost: zp[0], rrp: zp[1] });
+      lines.push({
+        label: extra + ' extra zone' + (extra === 1 ? '' : 's') + ' (' + zones + ' total, no extra hardware)',
+        cost: zp[0], rrp: zp[1]
+      });
     }
 
     return {
@@ -727,12 +724,10 @@
     if (zoneCtl)       zoneCtl.hidden = Boolean(r.zonesFixed);
     zoneCount.textContent = r.zones;
     zoneMinus.disabled = r.zones <= 1;
-    zonePlus.disabled  = r.zones >= 20;
-    var atCap = r.zones >= D.zones.cap_from &&
-                (r.zones - r.zonesIncluded) * D.zones.extra_retail > D.zones.cap_retail;
+    zonePlus.disabled  = r.zones >= MAX_ZONES;   // beyond 4 needs a second player
     zoneCost.textContent = r.zoneCost === 0
       ? r.zonesIncluded + (r.zonesIncluded === 1 ? ' zone included - $0/mo' : ' included - $0/mo')
-      : (atCap ? 'Unlimited-zone cap - ' : '') + '+' + money(r.zoneCost) + '/mo';
+      : '+' + money(r.zoneCost) + '/mo';
 
     // nudge: only worth showing on a tier that isn't already Complete
     var complete = byId(D.tiers, 'complete');
@@ -853,7 +848,7 @@
   });
 
   zoneMinus.addEventListener('click', function () { if (state.zones > 1) { state.zones--; render(); } });
-  zonePlus .addEventListener('click', function () { if (state.zones < 20) { state.zones++; render(); } });
+  zonePlus .addEventListener('click', function () { if (state.zones < MAX_ZONES) { state.zones++; render(); } });
   if (nudgeBtn) nudgeBtn.addEventListener('click', function () {
     var rd = root.querySelector('#tier-complete');
     if (rd) { rd.checked = true; state.tier = 'complete'; render(); rd.scrollIntoView({ behavior: 'smooth', block: 'center' }); }

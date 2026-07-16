@@ -285,9 +285,8 @@
       <b>Zones</b>
       <span id="ejm-zone-fixed" hidden><b>Solo is a single-area service</b>, so there are no zones to add.
         Choose Core or Complete if you need different music in different parts of your venue.</span>
-      <span id="ejm-zone-note">{{ P.zones.note }} From {{ P.zones.cap_from }} zones we cap it at a flat
-        <b>+${% if wholesale %}{{ P.zones.cap_whl }}{% else %}{{ P.zones.cap_retail }}{% endif %}/mo</b>
-        for unlimited zones, so a big club never runs away - you are always charged whichever is cheaper.</span>
+      <span id="ejm-zone-note">{{ P.zones.note }} Need more than {{ P.zones.max }}? That takes a second
+        player, so just talk to us and we'll quote it.</span>
     </div>
     <div class="ejm-zones-r">
       <div id="ejm-zone-ctl">
@@ -367,11 +366,11 @@
       <p>The wall-mounted display for the Interactive Request Screen, and the screen the Photo Slideshow runs on. Only needed if you take those add-ons.</p>
       <span class="ejm-hw-price">Quoted per venue</span>
     </div>
-    <div class="ejm-hw">
-      <i class="fas fa-volume-high"></i>
-      <h4>Extra-zone hardware</h4>
-      <p>Each additional zone beyond the first needs its own output hardware. Quoted with the zone.</p>
-      <span class="ejm-hw-price">Quoted per venue</span>
+    <div class="ejm-hw ejm-hw-none">
+      <i class="fas fa-circle-check"></i>
+      <h4>Extra zones: no hardware</h4>
+      <p>The player we fit for your first two zones already drives up to four. So zones three and four cost you <b>nothing in hardware</b> - they're a monthly charge only, and there's nothing extra to install.</p>
+      <span class="ejm-hw-price ejm-hw-free">Included in the player above</span>
     </div>
   </div>
   {% if wholesale %}
