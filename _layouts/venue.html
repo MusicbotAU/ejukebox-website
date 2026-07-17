@@ -7,6 +7,8 @@ layout: default
 {% assign venue_hero_img = page.hero_image | default: default_hero_img %}
 {% include hero.html
    image=venue_hero_img
+   alt=page.hero_alt
+   focus=page.hero_focus
    eyebrow="Licensed music for Australian venues"
    h1=page.h1
    sub=page.intro
