@@ -7,6 +7,9 @@ venue_name: Irish pubs & bars
 title: Irish Pub Music for Bars & Pubs Australia
 description: Authentic Irish pub music for Australian bars. Traditional and modern Irish tracks in licensed, curated channels. St Patrick's Day ready. Free trial.
 h1: Irish Pub Music for Your Bar
+hero_alt: Australia's oldest Irish pub, The Mercantile Hotel in The Rocks, Sydney
+# Subject (awning, signage, street tables) sits low in the frame; 35% would crop to bare brickwork.
+hero_focus: center 75%
 intro: Give your Irish bar the real thing, a licensed channel of Irish music with traditional favourites and current hits woven naturally through the day, not a novelty hour. Curated for the craic, controlled from a phone, and ready to lift from a quiet afternoon pint to a roaring session.
 benefits:
   - icon: fa-guitar

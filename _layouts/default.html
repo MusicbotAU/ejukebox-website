@@ -41,6 +41,19 @@
 
   <!-- Full-width layout + column-row grid + engagement band (overrides theme two-column) -->
   <style>
+    /* ---- Shared palette tokens ------------------------------------------------
+       Site-wide design tokens, matching /pricing/. _includes/pricing-menu-assets.html
+       declares an identical :root block for the pricing widget; keep the two in step
+       if either changes. */
+    :root {
+      --ejm-ind:#6366f1; --ejm-ind-lt:#818cf8; --ejm-teal:#14b8a6; --ejm-cyan:#22d3ee;
+      --ejm-pink:#ec4899; --ejm-amber:#f5a623; --ejm-red:#f87171; --ejm-green:#34d399;
+      --ejm-card:#1a1a2e; --ejm-card-2:#20203a; --ejm-line:rgba(255,255,255,.09);
+      --ejm-line-2:rgba(255,255,255,.16);
+      --ejm-ink:#f1f5f9; --ejm-soft:#c3cad8; --ejm-mut:#8d97ab;
+      --ejm-r:14px;
+    }
+
     /* Nested child item in the venue dropdown (e.g. Irish Pub Music under Pubs & Bars) */
     .dropdown-menu .dropdown-child > a { padding-left: 34px; font-size: .95em; opacity: .92; }
     .dropdown-menu .dropdown-child > a .dropdown-text::before { content: "\21B3"; margin-right: 6px; opacity: .5; }
@@ -67,7 +80,7 @@
     .ej-col > :first-child { margin-top: 0; }
     .ej-col > :last-child { margin-bottom: 0; }
     /* Optional visual card wrapper for a column */
-    .ej-col.card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 22px; box-shadow: 0 2px 10px rgba(20,25,33,.05); }
+    .ej-col.card { background: var(--ejm-card); border: 1.5px solid var(--ejm-line); border-radius: var(--ejm-r); padding: 22px; }
     @media (max-width: 820px) {
       .ej-row.cols-2, .ej-row.cols-3, .ej-row.cols-4,
       .ej-row.cols-1-2, .ej-row.cols-2-1 { grid-template-columns: 1fr; }
@@ -75,18 +88,26 @@
     }
 
     /* Full-width engagement band replacing the tall right sidebar */
-    .engage-band { border-top: 1px solid rgba(0,0,0,.06); background: #f7f8fa; padding: 42px 0; }
-    .engage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
-    .engage-card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 22px; box-shadow: 0 2px 10px rgba(20,25,33,.05); }
-    .engage-card h3 { margin: 0 0 8px; font-size: 1.1rem; }
-    .engage-card p { margin: 0 0 14px; color: #555; font-size: .95rem; }
-    .engage-icon { width: 42px; height: 42px; border-radius: 10px; background: #fff3e0; color: #e8991a; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 12px; }
-    .engage-trial { background: #1a1a2e; color: #fff; border-color: #1a1a2e; }
-    .engage-trial h3 { color: #fff; } .engage-trial p { color: #b9c0cc; } .engage-trial .engage-icon { background: rgba(245,166,35,.15); }
-    .engage-btn { display: inline-block; background: #f5a623; color: #1a1a2e; font-weight: 700; padding: 10px 18px; border-radius: 8px; text-decoration: none; }
-    .engage-btn:hover { background: #e8991a; }
-    .engage-link { color: #b06f12; font-weight: 700; text-decoration: none; }
-    .engage-video .video-container { margin: 0; }
+    .engage-band { border-top: 1px solid var(--ejm-line); background: #12121f; padding: 46px 0; }
+    .engage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: start; }
+    .engage-card { background: var(--ejm-card); border: 1.5px solid var(--ejm-line); border-radius: var(--ejm-r); padding: 22px; transition: border-color .18s, transform .18s; }
+    .engage-card:hover { border-color: var(--ejm-line-2); transform: translateY(-2px); }
+    .engage-card h3 { margin: 0 0 8px; font-size: 1.1rem; color: var(--ejm-ink); }
+    .engage-card p { margin: 0 0 14px; color: var(--ejm-mut); font-size: .95rem; }
+    .engage-icon { width: 42px; height: 42px; border-radius: 10px; background: rgba(99,102,241,.14); color: var(--ejm-ind-lt); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 12px; }
+    /* Trial card is the primary action: indigo->cyan gradient, as on /pricing/ */
+    .engage-trial { background: linear-gradient(120deg,#4f46e5,#0e7490); border-color: transparent; }
+    .engage-trial h3 { color: #fff; } .engage-trial p { color: rgba(255,255,255,.9); }
+    .engage-trial .engage-icon { background: rgba(255,255,255,.16); color: #fff; }
+    .engage-btn { display: inline-flex; align-items: center; gap: 9px; background: #fff; color: #4f46e5; font-weight: 800; font-size: 14px; padding: 12px 22px; border-radius: 999px; text-decoration: none; transition: background .18s; }
+    .engage-btn:hover { background: #f1f5f9; }
+    .engage-link { color: var(--ejm-cyan); font-weight: 700; text-decoration: none; }
+    /* The theme's .video-container reserves a 16:9 box with padding-bottom:56.25% for
+       the lazy-loaded iframe, but .video-facade is itself aspect-ratio:16/9 and flows
+       normally - so the card renders at double height with dead space underneath.
+       The facade already sets the height; drop the reserved padding here. */
+    .engage-video .video-container { margin: 0; padding-bottom: 0; }
+    .engage-video .video-facade { border-radius: 10px; }
 
     @media (max-width: 900px) {
       .engage-grid { grid-template-columns: 1fr; }
@@ -285,8 +306,8 @@
 
       <div class="ej-footer__brand">
         <img class="ej-footer__logo" src="/blobs/ejukebox-logo.png" alt="eJukebox" width="190" loading="lazy">
-        <p class="ej-footer__pitch">eJukebox is Australia's jukebox for business. Professionally curated, fully licensed music your staff can control from their phone, and your customers request from theirs.</p>
-        <p class="ej-footer__geo"><i class="fas fa-map-marker-alt"></i> From Kalgoorlie in the west to Bundaberg up north to the heart of The Rocks in Sydney, and everywhere in between, eJukebox keeps Australian pubs, bars, cafés and shops sounding their best.</p>
+        <p class="ej-footer__pitch">eJukebox is Australia's licensed music for single and multi-zoned venues. Professionally curated channels your team runs from a phone and your customers request from theirs.</p>
+        <p class="ej-footer__geo">From city rooftops to outback pubs and way out west, eJukebox keeps Aussie pubs, bars, cafés and clubs sounding their best, with requests, announcements and interactive screens built in.</p>
         <div class="ej-footer__social">
           <a href="https://www.facebook.com/ejukebox" aria-label="eJukebox on Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="https://x.com/ejukeboxmusic" aria-label="eJukebox on X"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
@@ -342,11 +363,11 @@
 
     <div class="ej-footer__parent">
       <div class="ej-footer__parentinner">
+        <span class="ej-footer__made"><i class="fas fa-earth-oceania"></i> Australian Owned &amp; Operated</span>
         <span class="ej-footer__parentlabel">eJukebox is a brand of</span>
         <a href="/why-us2.html" class="ej-footer__parentlogo" aria-label="Musicbot Pty Ltd, parent company of eJukebox">
           <img src="/blobs/musicbot-logo.svg" alt="Musicbot Pty Ltd" loading="lazy">
         </a>
-        <span class="ej-footer__made"><i class="fas fa-star"></i> Australian made &amp; owned</span>
       </div>
     </div>
 
@@ -378,14 +399,14 @@
     .ej-footer__col a{font-size:14px}
     .ej-footer__col a:hover{color:var(--accent-glow,#22d3ee)}
     .ej-footer__trial{color:var(--accent-glow,#22d3ee)!important;font-weight:600}
-    .ej-footer__parent{background:#fff}
-    .ej-footer__parentinner{max-width:1200px;margin:0 auto;padding:24px 30px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-    .ej-footer__parentlabel{font-size:14px;color:#5a5f70;font-weight:500}
-    .ej-footer__parentlogo{display:inline-flex;align-items:center;line-height:0}
-    .ej-footer__parentlogo:hover{opacity:.85}
-    .ej-footer__parentlogo img{height:clamp(76px,10vw,120px);width:auto;display:block}
-    .ej-footer__made{margin-left:auto;font-size:13px;color:#2a2e3d;font-weight:600}
-    .ej-footer__made i{color:#f0b429;margin-right:6px}
+    .ej-footer__parent{background:linear-gradient(120deg,#4f46e5,#0e7490)}
+    .ej-footer__parentinner{max-width:1200px;margin:0 auto;padding:10px 30px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+    .ej-footer__parentlabel{margin-left:auto;font-size:14px;color:rgba(255,255,255,.85);font-weight:500}
+    .ej-footer__parentlogo{display:inline-flex;align-items:center;line-height:0;background:#fff;border-radius:10px;padding:8px 14px}
+    .ej-footer__parentlogo:hover{background:#f1f5f9}
+    .ej-footer__parentlogo img{height:clamp(52px,6vw,70px);width:auto;display:block}
+    .ej-footer__made{font-size:13px;color:#fff;font-weight:600}
+    .ej-footer__made i{color:#fff;margin-right:7px;opacity:.9}
     .ej-footer__legal{max-width:1200px;margin:0 auto;padding:16px 30px 34px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.06)}
     .ej-footer__legal p{margin:0;font-size:12.5px;color:#6f7488}
     .ej-footer__legal ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
@@ -393,7 +414,8 @@
     @media(max-width:900px){
       .ej-footer__wrap{grid-template-columns:1fr;gap:34px;padding:44px 22px 26px}
       .ej-footer__cols{grid-template-columns:1fr 1fr;gap:26px 20px}
-      .ej-footer__made{margin-left:0;width:100%}
+      .ej-footer__made{width:100%}
+      .ej-footer__parentlabel{margin-left:0}
       .ej-footer__legal{flex-direction:column;align-items:flex-start}
     }
     @media(max-width:480px){ .ej-footer__cols{grid-template-columns:1fr} }
