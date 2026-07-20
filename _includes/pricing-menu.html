@@ -90,11 +90,18 @@
       </div>
     </div>
     <div class="ejm-base-video">
+      {% if P.base_video %}
+      <button type="button" class="ejm-video-poster ejm-watch" data-video="{{ P.base_video }}" data-title="eJukebox - the base product">
+        <span class="ejm-poster-play"><i class="fas fa-play"></i></span>
+        <span class="ejm-poster-label">Watch the overview<em>See the base product in action</em></span>
+      </button>
+      {% else %}
       <div class="ejm-video-placeholder">
         <i class="fas fa-video-slash"></i>
         <b>Overview video coming soon</b>
         <span>The base-product walkthrough is still in production. Every feature below has its video ready now.</span>
       </div>
+      {% endif %}
     </div>
   </div>
 </section>

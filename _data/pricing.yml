@@ -12,6 +12,8 @@
 # -----------------------------------------------------------------------------
 
 video_base: https://ejukebox01.blob.core.windows.net/websiteblobs/features/
+# Overview video for the base product (full URL - it lives in a different blob folder).
+base_video: https://ejukebox01.blob.core.windows.net/websiteblobs/base/eJukebox-Main-Deck.mp4
 
 tiers:
   # Solo is a STREAMING-ONLY product: a private URL, no on-site player, no upfront

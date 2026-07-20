@@ -146,6 +146,23 @@
 .ejm-video-placeholder i { font-size:26px; color:var(--ejm-mut); }
 .ejm-video-placeholder b { font-size:14px; }
 .ejm-video-placeholder span { font-size:12.5px; color:var(--ejm-mut); max-width:32ch; line-height:1.5; }
+/* Clickable poster that opens the base-product overview in the video modal. */
+.ejm-video-poster { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:15px; min-height:230px; width:100%; cursor:pointer; font-family:inherit; text-align:center;
+  border:1px solid var(--ejm-line-2); border-radius:16px; padding:26px; color:var(--ejm-ink);
+  background:linear-gradient(155deg, rgba(99,102,241,.28), rgba(20,184,166,.16) 60%, var(--ejm-card));
+  transition:border-color .18s, transform .18s, box-shadow .18s; }
+.ejm-video-poster:hover { border-color:var(--ejm-teal); transform:translateY(-2px);
+  box-shadow:0 12px 34px rgba(20,184,166,.22); }
+.ejm-video-poster:focus-visible { outline:2px solid var(--ejm-cyan); outline-offset:3px; }
+.ejm-poster-play { flex:none; width:66px; height:66px; border-radius:50%; display:flex; align-items:center;
+  justify-content:center; font-size:24px; color:#06231d; background:var(--ejm-teal);
+  box-shadow:0 8px 26px rgba(20,184,166,.45); transition:transform .18s; }
+.ejm-video-poster:hover .ejm-poster-play { transform:scale(1.08); }
+.ejm-poster-play i { margin-left:4px; }   /* optically centre the triangle */
+.ejm-poster-label { font-size:16px; font-weight:750; line-height:1.3; }
+.ejm-poster-label em { display:block; font-style:normal; font-size:12.5px; font-weight:500;
+  color:var(--ejm-soft); margin-top:5px; }
 
 /* ---- tiers ---- */
 .ejm-tiers { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
