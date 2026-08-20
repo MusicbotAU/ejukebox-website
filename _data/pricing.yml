@@ -117,6 +117,12 @@ included:
     tiers: [core, complete]
     desc: Customers request from their own phone with no app. Staff keep full control - open the whole library or lock it to the current channel, and pause requests anytime.
     video: eJukebox-Feature-Song-Requests.mp4
+  - id: ai-song-search
+    name: AI Song Search
+    category: Discovery
+    tiers: [core, complete]
+    desc: Ask for music the way you'd ask a person. "80s Australian pub rock", "something for a 50th", "songs from that Robin Williams movie" - it comes back with a list to browse and request from. Nobody needs to know the track name, which means the people who'd never normally request a song finally do.
+    video:
   - id: song-previews
     name: Song Previews
     category: Discovery
