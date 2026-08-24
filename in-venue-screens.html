@@ -101,6 +101,21 @@ description: Your guests put their own photos on your venue screens, branded wit
     padding:11px; border-radius:9px; color:#0d0d1a;
     background:linear-gradient(135deg, var(--ejm-cyan), var(--ejm-teal)); }
 
+  /* ---- TV input switcher mock ---- */
+  .bs-inputs { background:#0d0d1a; border:1.5px solid var(--ejm-line-2); border-radius:var(--ejm-r); padding:22px; }
+  .bs-inputs-head { font-size:.8rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--ejm-mut); padding-bottom:14px; margin-bottom:6px; border-bottom:1px solid var(--ejm-line); }
+  .bs-input { display:flex; justify-content:space-between; align-items:center; gap:14px;
+    padding:14px 16px; margin-top:9px; border-radius:10px;
+    border:1.5px solid var(--ejm-line); color:var(--ejm-mut); font-size:.95rem; }
+  .bs-input > span:first-child { display:inline-flex; align-items:center; gap:9px; font-weight:700; }
+  .bs-input-name { color:var(--ejm-soft); }
+  .bs-input-on { border-color:rgba(34,211,238,.55); color:var(--ejm-cyan);
+    background:linear-gradient(100deg, rgba(34,211,238,.14), rgba(20,184,166,.07)); }
+  .bs-input-on .bs-input-name { color:var(--ejm-ink); font-weight:700; }
+  .bs-remote { margin:16px 0 0 !important; font-size:.86rem !important; color:var(--ejm-mut) !important;
+    text-align:center; }
+
   /* ---- Safety chips ---- */
   .bs-safe { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:24px 0; }
   .bs-chip { display:flex; gap:14px; align-items:flex-start;
@@ -177,6 +192,25 @@ description: Your guests put their own photos on your venue screens, branded wit
     <i class="fas fa-stamp bs-ico"></i>
     <h3>Your brand goes on it</h3>
     <p>Your logo lands on every photo the moment it is accepted. So every picture that ends up in a group chat or on someone's story carries your venue's name with it.</p>
+  </div>
+</div>
+
+<div class="bs-sec-head">
+  <h2>You almost certainly already have the screen</h2>
+  <p>This is not a "buy our display" product. If there is a TV on your wall with a spare HDMI socket, you are ready. We plug in a small player, and your screen has a new input like any other.</p>
+</div>
+<div class="bs-split">
+  <div>
+    <p><strong style="color:var(--ejm-ink);">The footy stays exactly where it is.</strong> Sport runs on the input it always has. When the game finishes, someone picks up the same remote they always use and flicks across to the photo wall. At kickoff, they flick back. No new screen, no rewiring, no arguments about which TV.</p>
+    <p>It works with essentially any modern television or commercial display, whatever the brand. If you would rather we supplied a screen as well we can, but for most venues it is a spare HDMI port and nothing more.</p>
+    <p style="color:var(--ejm-mut);">Got several screens? Run the photo wall on the quiet one in the lounge and leave the sport untouched in the front bar.</p>
+  </div>
+  <div class="bs-inputs">
+    <div class="bs-inputs-head"><i class="fas fa-tv"></i> &nbsp;Your TV, tonight</div>
+    <div class="bs-input"><span><i class="fas fa-futbol"></i> HDMI 1</span><span class="bs-input-name">Sport</span></div>
+    <div class="bs-input bs-input-on"><span><i class="fas fa-camera-retro"></i> HDMI 2</span><span class="bs-input-name">eJukebox &middot; Photo Wall</span></div>
+    <div class="bs-input"><span><i class="fas fa-satellite-dish"></i> HDMI 3</span><span class="bs-input-name">Free to air</span></div>
+    <p class="bs-remote"><i class="fas fa-hand-pointer"></i> &nbsp;Switch with the remote you already use</p>
   </div>
 </div>
 

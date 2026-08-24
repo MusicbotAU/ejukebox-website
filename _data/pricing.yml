@@ -217,7 +217,7 @@ addons:
     whl: 18
     desc: When requests go quiet your screen blooms into a branded slideshow - event nights, specials, your logo. A 24/7 billboard you already own.
     video: eJukebox-Feature-Photo-Display.mp4
-    hardware: Needs a screen (one-off hardware)
+    hardware: Works with a screen you already have - just needs a spare HDMI input
   - id: guest-photos
     name: Guest Photo Wall
     category: Display
@@ -225,7 +225,7 @@ addons:
     whl: 42
     desc: Your customers send their own photos from their phone straight to your screen - screened automatically, branded with your logo, live in seconds. At the end of the night the whole lot is bundled with their handles and hashtags, ready for you to post.
     video:
-    hardware: Needs a screen (one-off hardware)
+    hardware: Works with a screen you already have - just needs a spare HDMI input
   - id: request-screen
     name: Interactive Request Screen
     category: Requests
