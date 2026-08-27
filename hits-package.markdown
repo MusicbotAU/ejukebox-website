@@ -1,99 +1,27 @@
 ---
 layout: default
-title: Hits Music Package | Pop & Top 40 for Pubs, Clubs & Cafes
-description: eJukebox Hits - pop & top 40 music streaming for business. Chart hits, current releases for pubs, clubs & cafes. Family-friendly, no explicit lyrics.
+permalink: /hits-package.html
+title: Plans & Pricing | eJukebox
+description: The Hits Package has been replaced. Hits is one of four channels included with every eJukebox plan - see current plans and pricing.
+sitemap: false
+noindex: true
+redirect_to: /products.html
 ---
 
-<div class="package-hero hits-theme">
-  <div class="hero-content">
-    <div class="package-badge">
-      <i class="fas fa-fire"></i>
-      HOT & TRENDING
-    </div>
-    <h1>Pop & Top 40 Music for <span class="gradient-text">Pubs & Cafes</span></h1>
-    <p class="hero-subtitle">All the same great hit music that you love today, no ads, no commercials and no senseless talk. Just back-to-back <strong>hit</strong> music.</p>
-    <div class="price-highlight">
-      <span class="price">$1</span>
-      <span class="period">/ day</span>
-    </div>
-  </div>
-</div>
+<meta http-equiv="refresh" content="0; url=/products.html">
+<link rel="canonical" href="/products.html">
 
-<div class="package-showcase">
-  <div class="showcase-image">
-    <img src="blobs/eJukebox_Hits.png" alt="eJukebox Hits Package">
-  </div>
-  <div class="showcase-content">
-    <h2>Your Music Solution Has Arrived</h2>
-    <p><strong>eJukebox</strong> is a music solution for pubs, clubs, cafes and retail outlets. Hits is one of the four channels included with every plan - see <a href="/products.html">plans &amp; pricing</a> for what it costs at your venue.</p>
-    <ul class="feature-list">
-      <li><i class="fas fa-check"></i> Latest chart hits & pop music</li>
-      <li><i class="fas fa-check"></i> No ads or commercials</li>
-      <li><i class="fas fa-check"></i> Professional broadcast quality</li>
-      <li><i class="fas fa-check"></i> Fully licensed for commercial use</li>
-    </ul>
-  </div>
-</div>
-
-<div class="warning-section">
-  <div class="warning-card">
-    <div class="warning-header">
-      <i class="fab fa-spotify"></i>
-      <h3>Important: Spotify is NOT Licensed for Public Use</h3>
-    </div>
-    <p>As a reminder, <strong>Spotify</strong> is not licensed for public performance, which means if you're currently using your <strong>personal</strong> Spotify subscription in a retail outlet, you are breaking licensing terms and putting your business at risk.</p>
-    <div class="warning-image">
-      <img src="blobs/spotify_license.png" alt="Spotify licensing terms">
-    </div>
-  </div>
-</div>
-
-<div class="easy-setup">
-  <div class="setup-icon">
-    <i class="fas fa-plug"></i>
-  </div>
-  <h3>Easy Setup</h3>
-  <p>On most occasions, you won't require any additional hardware or software to use <strong>eJukebox Hits</strong>.</p>
-</div>
-
-<div class="contact-cta">
-  <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="cta-button">
-    <i class="fas fa-envelope"></i>
-    Contact Us: info@ejukebox.com.au
+<div style="max-width:640px; margin:80px auto; padding:0 22px; text-align:center;">
+  <h1 style="font-size:1.8rem; line-height:1.2; margin:0 0 16px;">This package has moved</h1>
+  <p style="color:var(--ejm-soft, #c3cad8); font-size:1.05rem; line-height:1.65; margin:0 0 26px;">
+    <strong>Hits</strong> is now one of the four channels included with every eJukebox plan, alongside
+    Smooth, Rock and Country - so there's no separate Hits package to buy.
+  </p>
+  <p style="color:var(--ejm-mut, #8d97ab); font-size:.95rem; margin:0 0 30px;">
+    Taking you to Plans &amp; Pricing now.
+  </p>
+  <a href="/products.html" style="display:inline-block; background:var(--ejm-teal, #14b8a6); color:#04231F;
+     font-weight:700; padding:14px 28px; border-radius:999px; text-decoration:none;">
+    See plans &amp; pricing
   </a>
-  <p>Get <strong>eJukebox Hits</strong> playing in your venue - <a href="/products.html">see plans &amp; pricing</a></p>
-</div>
-
-<div class="other-details">
-  <div class="section-header">
-    <i class="fas fa-info-circle"></i>
-    <h2>Other Details</h2>
-  </div>
-  <div class="details-grid">
-    <div class="detail-item">
-      <i class="fas fa-file-contract"></i>
-      <h4>No Contracts</h4>
-      <p>No contracts to sign, cancel anytime, first week is on us (try it <strong>free</strong> for a week)</p>
-    </div>
-    <div class="detail-item">
-      <i class="fab fa-microsoft"></i>
-      <h4>Microsoft Cloud</h4>
-      <p><strong>eJukebox Hits</strong> runs from the Microsoft cloud and is backed with a 99.95% up-time service level guarantee.</p>
-    </div>
-    <div class="detail-item">
-      <i class="fas fa-tv"></i>
-      <h4>Netflix-Style Access</h4>
-      <p>An <strong>eJukebox Hits</strong> subscription is similar to a Netflix subscription, where each subscriber can listen from anywhere over the internet and has a maximum number of connections.</p>
-    </div>
-    <div class="detail-item">
-      <i class="fas fa-dollar-sign"></i>
-      <h4>Cost-Effective</h4>
-      <p><strong>eJukebox Hits</strong> is a radically simplified version of <strong>eJukebox</strong>. It costs us less to run, and as a result, we are passing on the savings to you.</p>
-    </div>
-    <div class="detail-item">
-      <i class="fas fa-child"></i>
-      <h4>Family Safe</h4>
-      <p><strong>eJukebox</strong> or <strong>eJukebox Hits</strong> has no expletives in any of the music heard, so it's always safe for all ages.</p>
-    </div>
-  </div>
 </div>
