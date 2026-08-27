@@ -1,72 +1,321 @@
 ---
 layout: default
 permalink: /functions-events/
-title: Functions & Events | Let the Host Run the Music for the Night
-description: Make your venue the easy yes for every booking. Hand the function host their own music controls for the night, skip, cue and cleanly stop for speeches, without ever bothering your team.
+title: Functions & Events | The Night Your Guests Are Actually Part Of
+description: Guests put their own photos on your screen, pick the music and record an eight-second dedication that plays to the whole room, all from their own phone. And whoever is running the night keeps full control.
 ---
 
-<div class="portal-hero">
-  <div class="hero-content">
-    <div class="hero-icon">
-      <i class="fas fa-champagne-glasses"></i>
+<style>
+  /* ---------- Functions & Events. Prefixed fx- to avoid collisions with site styles. ---------- */
+  .fx-hero { position:relative; overflow:hidden; border-radius:var(--ejm-r);
+    background: radial-gradient(120% 130% at 82% 0%, #2e2450 0%, #1a1a2e 46%, #14142a 100%);
+    border:1.5px solid var(--ejm-line-2); padding:54px 38px 46px; margin:8px 0 34px; }
+  .fx-hero::after { content:""; position:absolute; inset:auto -10% -55% -10%; height:60%;
+    background: radial-gradient(60% 100% at 50% 0%, rgba(245,166,35,.18), transparent 70%); pointer-events:none; }
+  .fx-hero-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center; position:relative; z-index:1; }
+  .fx-eyebrow { display:inline-flex; align-items:center; gap:8px; font-size:.78rem; font-weight:800;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--ejm-amber);
+    background:rgba(245,166,35,.10); border:1px solid rgba(245,166,35,.28);
+    padding:7px 14px; border-radius:999px; margin-bottom:18px; }
+  .fx-hero h1 { font-size:clamp(2rem,4.2vw,3.1rem); line-height:1.08; margin:0 0 16px; color:var(--ejm-ink); }
+  .fx-grad { background:linear-gradient(95deg, var(--ejm-amber), var(--ejm-pink) 55%, var(--ejm-ind-lt));
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  .fx-hero p { color:var(--ejm-soft); font-size:1.12rem; line-height:1.6; margin:0 0 12px; max-width:52ch; }
+
+  /* ---- live feed mockup ---- */
+  .fx-feed { background:#0d0d1a; border:1.5px solid var(--ejm-line-2); border-radius:16px;
+    box-shadow:0 30px 70px rgba(0,0,0,.5); padding:18px 18px 14px; }
+  .fx-feed-head { display:flex; justify-content:space-between; align-items:center;
+    padding-bottom:13px; margin-bottom:8px; border-bottom:1px solid var(--ejm-line);
+    font-size:.75rem; color:var(--ejm-mut); font-weight:700; letter-spacing:.05em; text-transform:uppercase; }
+  .fx-live { display:inline-flex; align-items:center; gap:7px; color:var(--ejm-green); }
+  .fx-live::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--ejm-green);
+    box-shadow:0 0 0 0 rgba(52,211,153,.7); animation:fxPulse 2s infinite; }
+  @keyframes fxPulse { 70%{box-shadow:0 0 0 9px rgba(52,211,153,0);} 100%{box-shadow:0 0 0 0 rgba(52,211,153,0);} }
+  .fx-item { display:grid; grid-template-columns:36px 1fr; gap:12px; align-items:start;
+    padding:11px 0; border-bottom:1px solid rgba(255,255,255,.05); animation:fxIn .6s ease-out both; }
+  .fx-item:last-of-type { border-bottom:none; }
+  .fx-item:nth-of-type(1){animation-delay:.05s;} .fx-item:nth-of-type(2){animation-delay:.3s;}
+  .fx-item:nth-of-type(3){animation-delay:.55s;} .fx-item:nth-of-type(4){animation-delay:.8s;}
+  @keyframes fxIn { from{opacity:0; transform:translateY(12px);} to{opacity:1; transform:none;} }
+  .fx-av { width:36px; height:36px; border-radius:10px; display:grid; place-items:center; font-size:.95rem; color:#fff; }
+  .fx-av.p { background:linear-gradient(150deg,#f5a623,#ec4899); }
+  .fx-av.v { background:linear-gradient(150deg,#6366f1,#22d3ee); }
+  .fx-av.m { background:linear-gradient(150deg,#14b8a6,#34d399); }
+  .fx-who { font-size:.82rem; font-weight:700; color:var(--ejm-ink); margin:0 0 3px; }
+  .fx-what { font-size:.8rem; color:var(--ejm-soft); margin:0; line-height:1.45; }
+  .fx-what em { font-style:normal; color:var(--ejm-amber); }
+  .fx-feed-foot { display:flex; justify-content:space-between; align-items:center; gap:10px; margin-top:12px;
+    padding-top:11px; border-top:1px solid var(--ejm-line); font-size:.72rem; color:var(--ejm-mut); }
+
+  /* ---- story band ---- */
+  .fx-story { background:linear-gradient(180deg,#17172c,#14142a); border:1.5px solid var(--ejm-line);
+    border-radius:var(--ejm-r); padding:40px 38px; margin:34px 0; }
+  .fx-story .fx-time { font-size:.8rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--ejm-amber); margin:0 0 14px; }
+  .fx-story p { color:var(--ejm-soft); font-size:1.06rem; line-height:1.72; margin:0 0 14px; max-width:70ch; }
+  .fx-story p:last-child { margin-bottom:0; }
+  .fx-story strong { color:var(--ejm-ink); }
+  .fx-kicker { font-size:1.24rem !important; font-weight:700; color:var(--ejm-ink) !important; line-height:1.45 !important; }
+
+  /* ---- section heads ---- */
+  .fx-sec-head { margin:44px 0 24px; max-width:74ch; }
+  .fx-sec-head h2 { font-size:clamp(1.5rem,2.9vw,2.1rem); line-height:1.16; margin:0 0 12px; color:var(--ejm-ink); }
+  .fx-sec-head p { color:var(--ejm-soft); font-size:1.04rem; line-height:1.65; margin:0; }
+
+  /* ---- pillar cards ---- */
+  .fx-pillars { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+  .fx-pillar { background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r);
+    padding:28px 26px; transition:border-color .2s ease, transform .2s ease; }
+  .fx-pillar:hover { border-color:var(--ejm-line-2); transform:translateY(-3px); }
+  .fx-pillar .fx-ico { font-size:1.5rem; color:var(--ejm-ind-lt); margin-bottom:14px; display:block; }
+  .fx-pillar h3 { font-size:1.22rem; margin:0 0 11px; color:var(--ejm-ink); line-height:1.28; }
+  .fx-pillar p { color:var(--ejm-soft); font-size:.98rem; line-height:1.62; margin:0 0 12px; }
+  .fx-pillar p:last-of-type { margin-bottom:14px; }
+  .fx-pillar strong { color:var(--ejm-ink); }
+  .fx-now { display:inline-flex; align-items:center; gap:7px; font-size:.74rem; font-weight:800;
+    letter-spacing:.06em; text-transform:uppercase; color:var(--ejm-green);
+    background:rgba(52,211,153,.11); border:1px solid rgba(52,211,153,.3); padding:6px 12px; border-radius:999px; }
+
+  /* ---- keepsake ---- */
+  .fx-keep { position:relative; overflow:hidden; text-align:center; margin:38px 0;
+    background:linear-gradient(155deg, rgba(99,102,241,.20), rgba(236,72,153,.09)), var(--ejm-card);
+    border:1.5px solid rgba(129,140,248,.34); border-radius:var(--ejm-r); padding:46px 38px; }
+  .fx-soon { display:inline-flex; align-items:center; gap:8px; font-size:.74rem; font-weight:800;
+    letter-spacing:.13em; text-transform:uppercase; color:var(--ejm-amber);
+    border:1px solid rgba(245,166,35,.45); background:rgba(245,166,35,.12);
+    padding:7px 15px; border-radius:999px; margin-bottom:20px; }
+  .fx-keep h2 { font-size:clamp(1.6rem,3.4vw,2.5rem); line-height:1.14; margin:0 0 18px; color:var(--ejm-ink); border:0; padding:0; }
+  .fx-keep p { color:var(--ejm-soft); font-size:1.08rem; line-height:1.68; max-width:64ch; margin:0 auto 16px; }
+  .fx-keep p:last-child { margin-bottom:0; }
+  .fx-keep strong { color:var(--ejm-ink); }
+
+  /* ---- steps ---- */
+  .fx-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .fx-step { background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:26px 24px; }
+  .fx-step .fx-ico { font-size:1.4rem; color:var(--ejm-cyan); margin-bottom:13px; display:block; }
+  .fx-step h3 { font-size:1.08rem; margin:0 0 9px; color:var(--ejm-ink); }
+  .fx-step p { color:var(--ejm-soft); font-size:.94rem; line-height:1.6; margin:0; }
+
+  /* ---- payoff ---- */
+  .fx-pay { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  .fx-p { background:var(--ejm-card-2); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:24px 22px; }
+  .fx-p h3 { font-size:1.03rem; margin:0 0 9px; color:var(--ejm-ind-lt); }
+  .fx-p p { color:var(--ejm-soft); font-size:.94rem; line-height:1.6; margin:0; }
+
+  /* ---- chips ---- */
+  .fx-chips { display:flex; flex-wrap:wrap; gap:10px; margin:6px 0 8px; }
+  .fx-chip { background:var(--ejm-card-2); border:1px solid var(--ejm-line); border-radius:999px;
+    padding:10px 18px; font-size:.92rem; color:var(--ejm-soft); }
+
+  /* ---- faq ---- */
+  .fx-faq { display:grid; gap:13px; }
+  .fx-qa { background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:22px 24px; }
+  .fx-qa h3 { font-size:1.02rem; margin:0 0 8px; color:var(--ejm-ink); }
+  .fx-qa p { color:var(--ejm-soft); font-size:.94rem; line-height:1.62; margin:0; }
+
+  @media (max-width:820px){
+    .fx-hero { padding:38px 24px 34px; }
+    .fx-hero-grid { grid-template-columns:1fr; gap:30px; }
+    .fx-story { padding:30px 24px; }
+    .fx-keep { padding:34px 24px; }
+    .fx-pillars, .fx-steps, .fx-pay { grid-template-columns:1fr; }
+    .fx-feed-foot { flex-direction:column; align-items:flex-start; gap:6px; }
+  }
+</style>
+
+<div class="fx-hero">
+  <div class="fx-hero-grid">
+    <div>
+      <span class="fx-eyebrow"><i class="fas fa-champagne-glasses"></i> Functions &amp; Events</span>
+      <h1>Your Guests Didn't Come To <span class="fx-grad">Watch The Night</span></h1>
+      <p>They put their own photos on your screen. They pick the music. They record eight seconds that plays to the whole room. All from the phone already in their pocket, and all while whoever is running the night keeps full control.</p>
+      <p style="color:var(--ejm-mut); font-size:1rem;">No app, no sign-up, no account. A screen you already own and a code on the tables.</p>
     </div>
-    <h1>An Easy Yes for Every <span class="gradient-text">Booking</span></h1>
-    <p class="hero-subtitle">Hand the function host their own music controls, just for the night</p>
+    <div>
+      <div class="fx-feed">
+        <div class="fx-feed-head">
+          <span class="fx-live">The function, live</span>
+          <span>Sat 8:52pm</span>
+        </div>
+        <div class="fx-item">
+          <div class="fx-av p"><i class="fas fa-camera-retro"></i></div>
+          <div><p class="fx-who">Beth &middot; Table 4</p><p class="fx-what">Sent a photo to the screen. Checked and live in 8 seconds.</p></div>
+        </div>
+        <div class="fx-item">
+          <div class="fx-av v"><i class="fas fa-microphone"></i></div>
+          <div><p class="fx-who">Uncle Rob</p><p class="fx-what">Recorded 8 seconds &middot; <em>"Sarah, this one's yours."</em></p></div>
+        </div>
+        <div class="fx-item">
+          <div class="fx-av m"><i class="fas fa-music"></i></div>
+          <div><p class="fx-who">Up next</p><p class="fx-what">Requested from the floor. Rob's dedication plays first.</p></div>
+        </div>
+        <div class="fx-item">
+          <div class="fx-av v"><i class="fas fa-hand"></i></div>
+          <div><p class="fx-who">The host</p><p class="fx-what">Speeches in five. Music stops clean at the end of this song.</p></div>
+        </div>
+        <div class="fx-feed-foot">
+          <span><i class="fas fa-shield-halved"></i> &nbsp;Everything checked before it lands</span>
+          <span>31 photos &middot; 14 voices</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="how-it-works">
-  <div class="section-header">
-    <i class="fas fa-calendar-star"></i>
-    <h2>Make your venue the room people choose to celebrate in</h2>
+<div class="fx-story">
+  <p class="fx-time"><i class="fas fa-ring"></i> &nbsp;Saturday, your sister's wedding</p>
+  <p>You have years of good photos of her sitting on your phone. The one from the road trip. The one nobody has seen. You scan the code on the table, pick one, and <strong>seconds later the whole room is looking at it</strong>.</p>
+  <p>Then you request the song you know she loves, and record eight seconds saying why. It plays across the room, in your voice, right before that song comes on. The room turns. She looks up.</p>
+  <p class="fx-kicker">So does her best friend. So does her uncle. So do fifty other people who came to celebrate and would never in a million years have stood up to make a speech.</p>
+  <p>Nobody organised it. Nobody was handed a microphone. It simply happened, all night, because the room was finally given a way to join in.</p>
+  <p><strong>That is the difference between a room with music in it and a night people are still talking about years later.</strong></p>
+</div>
+
+<div class="fx-sec-head">
+  <h2>Four things, one phone, nothing to download</h2>
+  <p>Everyone in the room scans the same code. From there it is all live, and it is all still yours to control.</p>
+</div>
+<div class="fx-pillars">
+
+  <div class="fx-pillar">
+    <i class="fas fa-images fx-ico"></i>
+    <h3>They put their photos on the screen</h3>
+    <p>Guests pick a photo from their phone and it is up on your screen within seconds, branded with your logo, for the whole room to see.</p>
+    <p>Every image is <strong>screened automatically before it can appear</strong>, and your staff can pull anything down with one tap. Nobody has to stand guard over the screen.</p>
+    <span class="fx-now"><i class="fas fa-check"></i> Available now</span>
   </div>
-  <div class="works-content">
-    <p>When someone is deciding where to hold their engagement, birthday or corporate night, eJukebox makes your venue the easy yes. Hand whoever is running the event their own controls for the evening and let them shape the music exactly the way they want, skipping to the perfect song, cueing the right track, and stopping cleanly for speeches, all without ever bothering your team.</p>
+
+  <div class="fx-pillar">
+    <i class="fas fa-list-ul fx-ico"></i>
+    <h3>They pick the music themselves</h3>
+    <p>Same phone, same code. Guests browse and request what they want, and they can ask for it in plain English, like "something for a 50th", instead of hunting for a track name.</p>
+    <p>Which means the people who would never normally request a song finally do.</p>
+    <span class="fx-now"><i class="fas fa-check"></i> Available now</span>
+  </div>
+
+  <div class="fx-pillar">
+    <i class="fas fa-microphone-lines fx-ico"></i>
+    <h3>They say eight seconds out loud</h3>
+    <p>Any guest can record a short dedication that plays across the room right before the song they picked. A message to the bride. A shout for the birthday girl. A word for someone who could not be there.</p>
+    <p>Every one is transcribed and checked before it airs, so it is safe to hand to a full room.</p>
+    <span class="fx-now"><i class="fas fa-check"></i> Available now</span>
+  </div>
+
+  <div class="fx-pillar">
+    <i class="fas fa-user-shield fx-ico"></i>
+    <h3>And someone stays in charge</h3>
+    <p>Whoever is running the night gets their own controls, for that night only. Skip a track, cue the right song for the first dance, pull a request that does not belong, and stop cleanly when the speeches start.</p>
+    <p>Your team never gets pulled off the floor, and <strong>when the night is over, so is their access</strong>.</p>
+    <span class="fx-now"><i class="fas fa-check"></i> Available now</span>
+  </div>
+
+</div>
+
+<div class="fx-keep">
+  <span class="fx-soon"><i class="fas fa-clock"></i> Coming soon</span>
+  <h2>And in the morning, they get the whole night back</h2>
+  <p>Every photo the guests put on that screen, gathered into one film, with <strong>every voice dedication playing back to back over the top of it</strong>. Sent to whoever booked the function.</p>
+  <p>The speeches get filmed and the photographer gets paid. But nobody has ever captured the fifty small voices that actually made the night. This does, without a single person being asked to.</p>
+  <p><strong>They booked a room. They keep the night.</strong></p>
+</div>
+
+<div class="fx-sec-head">
+  <h2>You almost certainly have everything already</h2>
+  <p>No rebuild, no rewiring, no new room. If there is a TV on the wall with a spare socket, you are ready.</p>
+</div>
+<div class="fx-steps">
+  <div class="fx-step">
+    <i class="fas fa-tv fx-ico"></i>
+    <h3>One spare HDMI socket</h3>
+    <p>It runs on a screen you already own. Venues with several screens can put the photos on one and leave the sport running untouched on the rest.</p>
+  </div>
+  <div class="fx-step">
+    <i class="fas fa-qrcode fx-ico"></i>
+    <h3>One code on the tables</h3>
+    <p>Guests scan it and they are in. Nothing to download, no account to create, no queue at a booth, no password read out over a microphone.</p>
+  </div>
+  <div class="fx-step">
+    <i class="fas fa-hand-pointer fx-ico"></i>
+    <h3>One person holding the reins</h3>
+    <p>The host gets night-only access from their own phone, and it switches itself off when the function ends. Your staff stay exactly where they are needed.</p>
   </div>
 </div>
 
-<div class="portal-features">
-  <div class="section-header">
-    <i class="fas fa-star"></i>
-    <h2>How Functions &amp; Events works</h2>
+<div class="fx-sec-head">
+  <h2>Every function room offers a room, a bar tab and a playlist</h2>
+  <p>This is what makes yours the easy yes, and what wins the next three bookings their friends make.</p>
+</div>
+<div class="fx-pay">
+  <div class="fx-p">
+    <h3>They remember where it happened</h3>
+    <p>People do not recommend a function room. They recommend the night they had in it, and this is the part they will be describing.</p>
   </div>
-  <div class="features-grid">
-    <div class="portal-feature">
-      <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
-      <h3>Host access for the night</h3>
-      <p>Give the function host their own access, just for the evening. From their phone they can skip straight to the track they want and line up exactly the right music for the moment. When the night is over, so is their access.</p>
-    </div>
-    <div class="portal-feature">
-      <div class="feature-icon"><i class="fas fa-champagne-glasses"></i></div>
-      <h3>Clean stop for speeches</h3>
-      <p>When it is time for a toast, the host stops the music neatly at the end of the current song. No fumbling, no awkward fade-outs, no dead air, just a clean pause for the moment that matters.</p>
-    </div>
-    <div class="portal-feature">
-      <div class="feature-icon"><i class="fas fa-images"></i></div>
-      <h3>A polished whole night</h3>
-      <p>Pair it with the photo screen showing the guest of honour and scheduled announcements ticking along, and the entire evening feels premium and personal from start to finish.</p>
-    </div>
+  <div class="fx-p">
+    <h3>Your staff stay on the floor</h3>
+    <p>Nobody gets stuck running music off a laptop or fielding "can you play" all night. The room looks after itself.</p>
+  </div>
+  <div class="fx-p">
+    <h3>Your brand rides along</h3>
+    <p>Every photo carries your logo. When guests reshare them, and they will, your venue goes out with them.</p>
+  </div>
+  <div class="fx-p">
+    <h3>It earns on ordinary nights too</h3>
+    <p>The same screen and the same system work every night you are open, not only when there is a function booked in. See <a href="/in-venue-screens/">In-Venue Screens</a>.</p>
   </div>
 </div>
 
-<div class="portal-features">
-  <div class="section-header">
-    <i class="fas fa-heart"></i>
-    <h2>Where it shines</h2>
+<div class="fx-sec-head">
+  <h2>Made for any night where the room already knows each other</h2>
+</div>
+<div class="fx-chips">
+  <span class="fx-chip">Weddings</span>
+  <span class="fx-chip">Engagements</span>
+  <span class="fx-chip">Milestone birthdays</span>
+  <span class="fx-chip">Work Christmas parties</span>
+  <span class="fx-chip">Anniversaries</span>
+  <span class="fx-chip">Wakes &amp; memorials</span>
+  <span class="fx-chip">Reunions</span>
+  <span class="fx-chip">Presentation nights</span>
+  <span class="fx-chip">Sportsman's nights</span>
+  <span class="fx-chip">Corporate functions</span>
+  <span class="fx-chip">Hens &amp; bucks nights</span>
+  <span class="fx-chip">Christenings</span>
+</div>
+
+<div class="fx-sec-head">
+  <h2>The questions everyone asks first</h2>
+</div>
+<div class="fx-faq">
+  <div class="fx-qa">
+    <h3>What stops someone putting something awful on the screen?</h3>
+    <p>Every photo is screened automatically before it can appear, and every voice dedication is transcribed and checked before it airs. On top of that your staff keep a live feed with a one-tap remove. Nothing reaches the wall unseen, and nobody has to stand there watching it all night.</p>
   </div>
-  <div class="works-content">
-    <p>Engagements, birthdays, wakes and corporate functions, any event where the music has to be spot-on and the person running it wants to feel in control from start to finish. The host feels completely in command, the night flows, and the event feels premium, so they do not just book once, they book again and tell their friends.</p>
-    <p>In hospitality, that is exactly how a one-off booking quietly becomes a regular, and how your room becomes the one people choose to celebrate in.</p>
+  <div class="fx-qa">
+    <h3>Do guests need to download an app?</h3>
+    <p>No. They scan the code and it opens in their phone's browser. No app, no sign-up, no account, no password. That is deliberate, because anything more and half the room will not bother.</p>
+  </div>
+  <div class="fx-qa">
+    <h3>Do we need to buy a screen?</h3>
+    <p>Usually not. A TV or commercial display with a spare HDMI socket is all it takes. If you would rather have a dedicated screen or a wall-mounted touchscreen we can supply one, quoted for your venue, with no margin loaded onto the hardware.</p>
+  </div>
+  <div class="fx-qa">
+    <h3>What if the host wants the music left alone?</h3>
+    <p>Then it is. Photos, requests and dedications can each be switched on or off for the night. Some hosts want the whole room running it, others just want the controls and a good playlist. Both work.</p>
+  </div>
+  <div class="fx-qa">
+    <h3>Does this only work for functions?</h3>
+    <p>No, and that is rather the point. The same system runs every night you are open. The function features simply hand the room over for one evening.</p>
   </div>
 </div>
 
 <div class="try-demo">
   <div class="demo-content">
-    <h2><i class="fas fa-rocket"></i> Win the next booking</h2>
-    <p>Functions &amp; Events is built into eJukebox and ready to hand to your next host. Try it free and make your venue the easy yes.</p>
+    <h2><i class="fas fa-rocket"></i> Give them a night they would hate to have missed</h2>
+    <p>Try it on one function. Put the codes on the tables, hand the host the controls, and watch what the room does with it. If it does not light the place up, you have lost nothing.</p>
     <a href="/free-trial.html" class="demo-link">
       <i class="fas fa-gift"></i>
-      Start your free 7-day trial
+      Start your free trial
     </a>
     <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for your venue.</p>
   </div>

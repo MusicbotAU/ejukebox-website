@@ -1,131 +1,68 @@
-﻿---
+---
 layout: default
-title: Music Solutions & Pricing | Background Music for Pubs, Clubs & Retail
-description: Music solutions for pubs, clubs, cafes & retail from $1/day. Licensed background music streaming packages. Free demo, no contracts. Australian business music.
+permalink: /products.html
+title: Plans & Pricing | Background Music for Pubs, Clubs, Cafes & Retail
+description: Build your own eJukebox. Solo from $49/mo for a single-area shop, Core from $169/mo for a venue, or Complete with every add-on included. Pick only the features you want, watch what each one does, and try it free for 30 days.
 ---
 
-<div class="hero-stat-banner products-hero">
-  <div class="hero-stat-content">
-    <div class="hero-stat-label">Music Solutions</div>
-    <div class="hero-stat-main">
-      <h1 class="hero-stat-number products-gradient">Background Music for Pubs, Clubs & Retail</h1>
-    </div>
-    <p class="hero-description">Explore <strong>eJukebox's</strong> flexible music solutions designed for businesses of all sizes. Whether you're looking for a free shared channel, affordable back-to-back music for just $1/day, or a fully custom-branded radio station with dedicated infrastructure, we've got you covered. From small businesses to large enterprises, our plans ensure a seamless, legal, and engaging music experience for your customers.</p>
+{% include pricing-menu.html mode="public" %}
+
+<style>
+  /* Beyond-the-menu section. Prefixed pb- so it cannot collide with the ejm- menu styles. */
+  .pb-more { max-width: 1080px; margin: 0 auto 64px; padding: 0 20px; }
+  .pb-more-head { text-align: center; margin: 0 0 34px; }
+  .pb-more-head h2 { font-size: clamp(1.5rem, 2.9vw, 2.1rem); line-height: 1.16; margin: 0 0 12px; color: var(--ejm-ink); }
+  .pb-more-head p { color: var(--ejm-soft); font-size: 1.04rem; line-height: 1.65; margin: 0 auto; max-width: 66ch; }
+  .pb-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  @media (max-width: 820px) { .pb-grid { grid-template-columns: 1fr; } }
+  .pb-card { background: var(--ejm-card); border: 1.5px solid var(--ejm-line); border-radius: var(--ejm-r);
+    padding: 28px 26px; transition: border-color .2s ease, transform .2s ease; }
+  .pb-card:hover { border-color: var(--ejm-line-2); transform: translateY(-3px); }
+  .pb-card .pb-ico { font-size: 1.5rem; color: var(--ejm-ind-lt); margin-bottom: 14px; display: block; }
+  .pb-card h3 { font-size: 1.22rem; margin: 0 0 11px; color: var(--ejm-ink); line-height: 1.28; border: 0; padding: 0; }
+  .pb-card p { color: var(--ejm-soft); font-size: .98rem; line-height: 1.62; margin: 0 0 14px; }
+  .pb-card ul { margin: 0 0 16px; padding-left: 20px; color: var(--ejm-soft); font-size: .95rem; line-height: 1.7; }
+  .pb-card strong { color: var(--ejm-ink); }
+  .pb-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: .95rem;
+    color: var(--ejm-cyan); text-decoration: none; }
+  .pb-link:hover { text-decoration: underline; }
+</style>
+
+<div class="pb-more">
+  <div class="pb-more-head">
+    <h2>Two more things, outside the menu</h2>
+    <p>The menu above covers what nearly every venue needs. These two sit either side of it - one is free, and one is built from scratch for you.</p>
   </div>
-</div>
+  <div class="pb-grid">
 
----
-
-<div class="pricing-grid">
-
-  <div class="pricing-card free-tier">
-    <div class="pricing-badge">Try It Out</div>
-    <div class="pricing-icon">
-      <img src="blobs/products free, 2.jpg" alt="Free" width="80">
+    <div class="pb-card">
+      <i class="fas fa-headphones pb-ico"></i>
+      <h3>Have a listen first - free</h3>
+      <p>Before you decide anything, hear what our music directors actually build. Four channels, streaming right now, no sign-up and no card.</p>
+      <ul>
+        <li><strong>Hits</strong> - current chart and recent favourites</li>
+        <li><strong>Smooth</strong> - relaxed, easy, good for daytime</li>
+        <li><strong>Rock</strong> - classic through to modern</li>
+        <li><strong>Country</strong> - Australian and international</li>
+      </ul>
+      <p>These demo streams carry eJukebox branding and promos, so they are for listening rather than for playing in your venue - but the sound and the programming are exactly what you would get.</p>
+      <a class="pb-link" href="/stream-us.html"><i class="fas fa-play-circle"></i> Listen to the demo channels</a>
     </div>
-    <h3 class="pricing-title">Free</h3>
-    <div class="pricing-price">
-      <span class="price-amount">$0</span>
-      <span class="price-period">demo access</span>
+
+    <div class="pb-card">
+      <i class="fas fa-tower-broadcast pb-ico"></i>
+      <h3>Custom Branded Radio</h3>
+      <p>For groups, shopping centres and large clubs that want their own station rather than a subscription - think Coles Radio, but yours.</p>
+      <ul>
+        <li>Your <strong>own branded station</strong>, one to four channels</li>
+        <li><strong>Professional voice-overs and imaging</strong>, plus national, regional or venue-specific promos</li>
+        <li><strong>Dedicated infrastructure</strong> and priority support</li>
+        <li>Option to <strong>stream publicly</strong> on iHeartRadio, your website or your app</li>
+        <li>Built for multi-site groups and RSL clubs, including the automated 6pm ode and silence</li>
+      </ul>
+      <p>Scoped and quoted per project rather than priced off a menu.</p>
+      <a class="pb-link" href="/custom-radio.html"><i class="fas fa-arrow-right"></i> See Custom Branded Radio</a>
     </div>
-    <ul class="pricing-features">
-      <li><i class="fas fa-check"></i> <strong>Listen on iHeartRadio</strong> - sample our four demo channels: Hits, Smooth, Rock, Country.</li>
-      <li><i class="fas fa-check"></i> Hear our <strong>broadcast-quality sound</strong> and smart time-of-day scheduling.</li>
-      <li><i class="fas fa-info-circle"></i> Includes eJukebox branding and promos; for demo/evaluation, not your in-venue solution.</li>
-      <li><i class="fas fa-check"></i> <strong>Family-friendly</strong> (no explicit lyrics).</li>
-      <li><i class="fas fa-check"></i> Great for sharing with staff to pick the right vibe.</li>
-    </ul>
-    <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="pricing-cta">Contact Us</a>
+
   </div>
-
-  <div class="pricing-card popular-tier">
-    <div class="pricing-badge popular">Most Popular</div>
-    <div class="pricing-icon">
-      <img src="blobs/products 1 a day, 2.jpg" alt="$1/day" width="80">
-    </div>
-    <h3 class="pricing-title">$1/day</h3>
-    <div class="pricing-price">
-      <span class="price-amount">$1</span>
-      <span class="price-period">per day</span>
-    </div>
-    <ul class="pricing-features">
-      <li><i class="fas fa-check"></i> <strong>Business-ready background music</strong> - ad-free and no talk.</li>
-      <li><i class="fas fa-check"></i> Choose one curated channel (Hits, Smooth, Rock or Country). Add extra channels for $1/day each.</li>
-      <li><i class="fas fa-check"></i> <strong>Simple unique URL</strong>works on any computer, tablet, phone, Sonos/streamers.</li>
-      <li><i class="fas fa-check"></i> Shared cloud infrastructure for scale and reliability.</li>
-      <li><i class="fas fa-check"></i> <strong>Consistent volume with pro AGC processing</strong>sounds like a real radio station.</li>
-      <li><i class="fas fa-check"></i> <strong>Commercial use cpliant</strong> (see <a href="./licensing.html">Licensing</a>).</li>
-      <li><i class="fas fa-check"></i> Ideal for clinics, dentists, cafés, retail stores that want set-and-forget music.</li>
-    </ul>
-    <div class="pricing-cta-group">
-      <a href="./dollar-a-day.html" class="pricing-cta secondary">More Details</a>
-      <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="pricing-cta">Contact Us</a>
-    </div>
-  </div>
-
-  <div class="pricing-card pro-tier">
-    <div class="pricing-badge pro">Professional</div>
-    <div class="pricing-icon">
-      <img src="blobs/products full, 2.jpg" alt="Full Package" width="80">
-    </div>
-    <h3 class="pricing-title">Full Package</h3>
-    <div class="pricing-price">
-      <span class="price-amount">$130-$170</span>
-      <span class="price-period">/month ex GST</span>
-    </div>
-    <p class="pricing-subtitle"><strong>Self-Hosted or Cloud-Hosted</strong> - same features, choose your delivery model</p>
-    <ul class="pricing-features">
-      <li><i class="fas fa-server"></i> <strong>Self-Hosted (on-site player):</strong> one-off hardware (typically <$500), lower monthly, caches music so it plays through internet dropouts.</li>
-      <li><i class="fas fa-cloud"></i> <strong>Cloud-Hosted (managed in the cloud):</strong> no upfront hardware, higher monthly, requires a reliable internet connection; easy remote management.</li>
-      <li><i class="fas fa-check"></i> <strong>Interactive Requests</strong> - set your rules (e.g. up to 5 songs/hour).</li>
-      <li><i class="fas fa-check"></i> <strong>Staff/manager voice messages</strong> - record on your phone, schedule between songs.</li>
-      <li><i class="fas fa-check"></i> <strong>Multi-zone support</strong> (e.g. main bar, dining, gaming) with different channels per zone.</li>
-      <li><i class="fas fa-check"></i> <strong>Dayparting built in:</strong> lighter mornings, upbeat nights, weekend modes.</li>
-      <li><i class="fas fa-check"></i> <strong>24/7 monitoring</strong> and remote support.</li>
-    </ul>
-    <div class="pricing-cta-group">
-      <a href="./full-package.html" class="pricing-cta secondary">More Details</a>
-      <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="pricing-cta">Contact Us</a>
-    </div>
-  </div>
-
-  <div class="pricing-card enterprise-tier">
-    <div class="pricing-badge enterprise">Enterprise</div>
-    <div class="pricing-icon">
-      <img src="blobs/products custom, 2.jpg" alt="Custom Branded" width="80">
-    </div>
-    <h3 class="pricing-title">Custom Branded</h3>
-    <div class="pricing-price">
-      <span class="price-amount">Custom</span>
-      <span class="price-period">pricing</span>
-    </div>
-    <ul class="pricing-features">
-      <li><i class="fas fa-star"></i> Your <strong>own branded radio station</strong> (think Coles Radio), with 1-4 channels: Hits, Smooth, Rock, Country.</li>
-      <li><i class="fas fa-microphone"></i> <strong>Professional voice-overs & imaging</strong>, plus in-store promos and timed messages (national, regional or venue-specific).</li>
-      <li><i class="fas fa-shield-alt"></i> <strong>Dedicated infrastructure</strong> and priority support for rock-solid reliability.</li>
-      <li><i class="fas fa-globe"></i> Option to <strong>stream publicly online</strong> (e.g. iHeartRadio or your website/app) to extend your brand.</li>
-      <li><i class="fas fa-building"></i> Perfect for <strong>groups, shopping centres and RSL clubs</strong> (incl. automated 6pm ode/silence).</li>
-      <li><i class="fas fa-file-invoice"></i> <strong>Custom proposal & pricing</strong> based on scope and commitment.</li>
-    </ul>
-    <div class="pricing-cta-group">
-      <a href="./custom-radio.html" class="pricing-cta secondary">More Details</a>
-      <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20eJukebox%20website" class="pricing-cta">Contact Us</a>
-    </div>
-  </div>
-
-</div>
-
----
-
-<div class="value-proposition">
-  <div class="value-icon">
-    <i class="fas fa-broadcast-tower"></i>
-  </div>
-  <h2>Why $1 per Day is a Game-Changer</h2>
-  <p>Unlike other music suppliers that stream songs individually, <strong>eJukebox</strong> offers a live-streaming experience akin to a radio station.</p>
-  <p>Using advanced radio station automation software in the cloud, our channels are expertly curated and seamlessly integrated, providing a polished and cohesive listening experience. This ensures that each song transitions smoothly, creating a more enjoyable and engaging atmosphere for your customers.</p>
-  <p><strong>Choose eJukebox for a superior sound experience that sets your business apart.</strong></p>
-  <a href="mailto:info@ejukebox.com.au?subject=Free%20Trial%20Request" class="btn-glow">
-    <i class="fas fa-play-circle"></i> Start Your Free Trial
-  </a>
 </div>

@@ -1,15 +1,22 @@
 {% comment %}
-  Shared body for /pricing (retail) and /wholesale (partner).
-  Usage: {% include pricing-menu.html mode="retail" %}  or  mode="wholesale"
-  All prices and copy come from _data/pricing.yml so the two pages cannot drift.
+  Shared body for the pricing pages. Three modes:
+    mode="public"     -> /products.html, the public Plans & Pricing page. No confidential
+                         banners, public-facing lede and close.
+    mode="retail"     -> /pricing, unlisted. Same menu, confidential framing.
+    mode="wholesale"  -> /wholesale, unlisted. Partner rates and margins.
+  Usage: {% include pricing-menu.html mode="public" %}
+  All prices and copy come from _data/pricing.yml so the pages cannot drift apart.
 {% endcomment %}
 
 {% assign P = site.data.pricing %}
 {% assign wholesale = false %}
+{% assign is_public = false %}
 {% if include.mode == "wholesale" %}{% assign wholesale = true %}{% endif %}
+{% if include.mode == "public" %}{% assign is_public = true %}{% endif %}
 
 <div class="ejm">
 
+{% unless is_public %}
 <!-- ============ CONFIDENTIAL BANNER ============ -->
 <div class="ejm-confidential">
   <div class="ejm-conf-icon"><i class="fas fa-user-secret"></i></div>
@@ -26,11 +33,12 @@
     Questions: <a href="mailto:info@ejukebox.com.au">info@ejukebox.com.au</a>
   </div>
 </div>
+{% endunless %}
 
 <!-- ============ HERO ============ -->
 <header class="ejm-hero">
   <span class="ejm-eyebrow">
-    {% if wholesale %}Partner &amp; reseller rate card{% else %}Pricing for your venue{% endif %}
+    {% if wholesale %}Partner &amp; reseller rate card{% elsif is_public %}Plans &amp; pricing{% else %}Pricing for your venue{% endif %}
   </span>
   <h1>
     {% if wholesale %}Wholesale pricing. <span class="ejm-grad">Your margin built in.</span>
@@ -44,7 +52,7 @@
     {% else %}
     Start with the base product, then add only the features you want - like an &agrave; la carte menu. Tick the boxes
     below and your monthly total adds up as you go. Every feature has a short video, so you can see exactly what
-    you're paying for before you decide.
+    you're paying for before you decide. No contracts, and a 30-day free trial in your own venue.
     {% endif %}
   </p>
   <div class="ejm-hero-notes">
@@ -571,7 +579,7 @@
 <div class="ejm-close">
   <div class="ejm-close-main">
     <h3>{% if wholesale %}Ready to quote a venue?{% else %}Ready to hear it in your venue?{% endif %}</h3>
-    <p>{% if wholesale %}Build the package above, hit &ldquo;Send this build&rdquo;, and we'll turn it into a firm quote you can put in front of your customer - with the install and hardware costed for that site.{% else %}Build your package above and send it through. We'll confirm your OneMusic position, quote the one-off hardware for your site, and get a 30-day free trial installed.{% endif %}</p>
+    <p>{% if wholesale %}Build the package above, hit &ldquo;Send this build&rdquo;, and we'll turn it into a firm quote you can put in front of your customer - with the install and hardware costed for that site.{% else %}Build your package above and send it through. We'll confirm your OneMusic position, quote the one-off hardware for your site, and get a 30-day free trial installed - hardware and setup covered, no obligation.{% endif %}</p>
     <span class="ejm-close-contact">Musicbot Pty Ltd &middot; ABN 44 163 918 054 &middot; ejukebox.com.au &middot; info@ejukebox.com.au</span>
   </div>
   <a class="ejm-close-cta" href="mailto:info@ejukebox.com.au?subject={% if wholesale %}Wholesale%20enquiry{% else %}eJukebox%20enquiry{% endif %}">
@@ -579,6 +587,17 @@
   </a>
 </div>
 
+{% if is_public %}
+<div class="ejm-confidential ejm-confidential-foot">
+  <div class="ejm-conf-icon"><i class="fas fa-circle-info"></i></div>
+  <div class="ejm-conf-body">
+    <strong>About these prices.</strong>
+    All prices are per venue, per month, and <b>exclude GST</b>. One-off hardware and install are quoted for your site.
+    Your OneMusic licence is separate from your subscription - we can collect and remit it for you.
+    &copy; 2026 Musicbot Pty Ltd &middot; ABN 44 163 918 054. Prices subject to change; nothing on this page is an offer or a contract.
+  </div>
+</div>
+{% else %}
 <div class="ejm-confidential ejm-confidential-foot">
   <div class="ejm-conf-icon"><i class="fas fa-user-secret"></i></div>
   <div class="ejm-conf-body">
@@ -588,6 +607,7 @@
     &copy; 2026 Musicbot Pty Ltd. Prices ex GST and subject to change; nothing on this page is an offer or a contract.
   </div>
 </div>
+{% endif %}
 
 <!-- ============ VIDEO MODAL ============ -->
 <div class="ejm-modal" id="ejm-modal" hidden>

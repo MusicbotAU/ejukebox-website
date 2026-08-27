@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hits Music Package | Pop & Top 40 for Pubs, Clubs & Cafes
-description: eJukebox Hits - pop & top 40 music streaming for business. Chart hits, current releases for pubs, clubs & cafes. Just $1/day. Family-friendly, no explicit lyrics.
+description: eJukebox Hits - pop & top 40 music streaming for business. Chart hits, current releases for pubs, clubs & cafes. Family-friendly, no explicit lyrics.
 ---
 
 <div class="package-hero hits-theme">
@@ -25,7 +25,7 @@ description: eJukebox Hits - pop & top 40 music streaming for business. Chart hi
   </div>
   <div class="showcase-content">
     <h2>Your Music Solution Has Arrived</h2>
-    <p><strong>eJukebox</strong> is a music solution for pubs, clubs, cafes and retail outlets. Now, <strong>eJukebox</strong> can be at <strong>your</strong> retail outlet today for the low cost of <strong>$1 / day</strong>.</p>
+    <p><strong>eJukebox</strong> is a music solution for pubs, clubs, cafes and retail outlets. Hits is one of the four channels included with every plan - see <a href="/products.html">plans &amp; pricing</a> for what it costs at your venue.</p>
     <ul class="feature-list">
       <li><i class="fas fa-check"></i> Latest chart hits & pop music</li>
       <li><i class="fas fa-check"></i> No ads or commercials</li>
@@ -61,7 +61,7 @@ description: eJukebox Hits - pop & top 40 music streaming for business. Chart hi
     <i class="fas fa-envelope"></i>
     Contact Us: info@ejukebox.com.au
   </a>
-  <p>Get your <strong>eJukebox Hits</strong> license for <strong>$1 / day</strong></p>
+  <p>Get <strong>eJukebox Hits</strong> playing in your venue - <a href="/products.html">see plans &amp; pricing</a></p>
 </div>
 
 <div class="other-details">
