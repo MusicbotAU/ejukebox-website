@@ -1,0 +1,191 @@
+# -----------------------------------------------------------------------------
+# IndexNow: tell Bing, Yandex, Seznam, Naver and Yep the moment a page changes,
+# instead of waiting for them to re-crawl.
+#
+# Google does NOT participate in IndexNow, so this changes nothing for Google.
+# It is still worth having: Bing's index is what ChatGPT search reads from, and
+# getting pages in there quickly is part of the same answer-engine push as
+# llms.txt, the JSON-LD and the AI crawler allows in robots.txt.
+#
+# How ownership is proved: the key file at the site root. The key is public by
+# design - that is the whole verification mechanism - so it is committed to the
+# repo rather than kept in a secret. Anyone who reads it can submit URLs for
+# this domain, which is a limitation of the protocol, not a misconfiguration.
+# If it is ever abused, generate a new key, replace the .txt file, and the old
+# one stops validating.
+#
+# Only pages that actually changed in the push are submitted. Submitting the
+# whole site on every deploy is what earns a 429 and gets a host ignored.
+# -----------------------------------------------------------------------------
+name: IndexNow
+
+on:
+  push:
+    branches: [gh-pages]
+    paths:
+      - '**.md'
+      - '**.markdown'
+      - '**.html'
+      - '_data/**'
+  workflow_dispatch:
+    inputs:
+      submit_all:
+        description: 'Submit every URL in sitemap.xml instead of just changed pages'
+        type: boolean
+        default: false
+
+# Never let two runs submit at once.
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Work out which URLs changed
+        id: urls
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import os, re, subprocess, json, sys
+
+          SITE = "https://ejukebox.com.au"
+
+          def front_matter(path):
+              # Read the whole file, not a fixed-size head. licensing.md carries its
+              # FAQ and HowTo schema in front matter and runs past 4,800 characters;
+              # a truncated read silently fails to find the closing delimiter and the
+              # most important page on the site never gets submitted.
+              try:
+                  with open(path, encoding="utf-8", errors="ignore") as fh:
+                      text = fh.read()
+              except OSError:
+                  return None
+              m = re.match(r"---\n(.*?)\n---", text, re.S)
+              return m.group(1) if m else None
+
+          # Pages that exist but must never be announced to a search engine.
+          SKIP = {"404.html"}
+
+          def url_for(path):
+              """Map a source file to its published URL, or None if it is not a page."""
+              if "/" in path:                      # only root-level pages are site pages
+                  return None
+              if path in SKIP:
+                  return None
+              fm = front_matter(path)
+              if fm is None:
+                  return None                      # no front matter, not a Jekyll page
+              # Respect the page's own opt-outs. A noindex or sitemap:false page
+              # should never be pushed to a search engine.
+              if re.search(r"^noindex:\s*true", fm, re.M):
+                  return None
+              if re.search(r"^sitemap:\s*false", fm, re.M):
+                  return None
+              perm = re.search(r"^permalink:\s*(\S+)", fm, re.M)
+              if perm:
+                  return SITE + perm.group(1)
+              if path in ("index.md", "index.markdown", "index.html"):
+                  return SITE + "/"
+              return SITE + "/" + re.sub(r"\.(md|markdown)$", ".html", path)
+
+          submit_all = "${{ inputs.submit_all }}" == "true"
+
+          if submit_all:
+              sm = open("sitemap.xml", encoding="utf-8").read()
+              urls = re.findall(r"<loc>\s*(.*?)\s*</loc>", sm)
+          else:
+              before = os.environ.get("BEFORE", "")
+              # On a branch's first push the before-SHA is all zeros; fall back to HEAD~1.
+              base = before if before and set(before) != {"0"} else "HEAD~1"
+              changed = subprocess.run(
+                  ["git", "diff", "--name-only", base, "HEAD"],
+                  capture_output=True, text=True,
+              ).stdout.split()
+
+              urls = []
+              # A change to shared data or layout affects every page, so fall back
+              # to the full sitemap rather than guessing which pages moved.
+              if any(c.startswith(("_data/", "_layouts/", "_includes/")) for c in changed):
+                  sm = open("sitemap.xml", encoding="utf-8").read()
+                  urls = re.findall(r"<loc>\s*(.*?)\s*</loc>", sm)
+              else:
+                  for c in changed:
+                      u = url_for(c)
+                      if u:
+                          urls.append(u)
+
+          urls = sorted(set(urls))
+          print(f"count={len(urls)}")
+          print("payload<<EOF")
+          print(json.dumps(urls))
+          print("EOF")
+          print("### IndexNow", file=sys.stderr)
+          for u in urls:
+              print("  " + u, file=sys.stderr)
+          PY
+        env:
+          BEFORE: ${{ github.event.before }}
+
+      - name: Wait for GitHub Pages to publish the change
+        if: steps.urls.outputs.count != '0'
+        run: |
+          # IndexNow engines fetch the URL almost immediately. Telling them about a
+          # page before Pages has finished building serves them the old copy, which
+          # wastes the notification.
+          for i in $(seq 1 30); do
+            live=$(curl -s "https://ejukebox.com.au/assets/css/style.css" -o /dev/null -w '%{http_code}')
+            if [ "$live" = "200" ]; then break; fi
+            sleep 10
+          done
+          sleep 45
+
+      - name: Submit to IndexNow
+        if: steps.urls.outputs.count != '0'
+        run: |
+          KEY_FILE=$(ls -1 [0-9a-f]*.txt 2>/dev/null | head -1)
+          if [ -z "$KEY_FILE" ]; then
+            echo "::error::No IndexNow key file found at the repository root."
+            exit 1
+          fi
+          KEY="${KEY_FILE%.txt}"
+          echo "Using key file $KEY_FILE"
+
+          # Confirm the key file is actually being served before submitting;
+          # a 403 "invalid key" response otherwise looks like a code problem.
+          served=$(curl -s -o /dev/null -w '%{http_code}' "https://ejukebox.com.au/$KEY_FILE")
+          if [ "$served" != "200" ]; then
+            echo "::error::https://ejukebox.com.au/$KEY_FILE returned $served, expected 200. IndexNow cannot verify ownership until that file is live."
+            exit 1
+          fi
+
+          BODY=$(jq -n \
+            --arg host "ejukebox.com.au" \
+            --arg key "$KEY" \
+            --arg loc "https://ejukebox.com.au/$KEY_FILE" \
+            --argjson urls '${{ steps.urls.outputs.payload }}' \
+            '{host: $host, key: $key, keyLocation: $loc, urlList: $urls}')
+
+          echo "$BODY" | jq '.urlList'
+
+          code=$(curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$BODY" \
+            -o /tmp/indexnow.out -w '%{http_code}')
+
+          echo "HTTP $code"
+          cat /tmp/indexnow.out || true
+
+          case "$code" in
+            200) echo "::notice::IndexNow accepted ${{ steps.urls.outputs.count }} URL(s)." ;;
+            202) echo "::notice::IndexNow accepted the submission; key validation pending." ;;
+            400) echo "::error::400 Bad request - malformed JSON body."; exit 1 ;;
+            403) echo "::error::403 Invalid key - the key file did not validate."; exit 1 ;;
+            422) echo "::error::422 - a URL does not belong to this host, or the key does not match."; exit 1 ;;
+            429) echo "::warning::429 Rate limited. Too many submissions; this run is being ignored, not failed." ;;
+            *)   echo "::error::Unexpected response $code"; exit 1 ;;
+          esac
