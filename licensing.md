@@ -1,7 +1,7 @@
-﻿---
+---
 layout: default
 title: Music Licensing for Business | APRA AMCOS Compliance Australia
-description: Music licensing made simple for Australian businesses. APRA AMCOS compliant background music for pubs, clubs, cafes & retail. eJukebox handles the paperwork. Save hundreds vs Spotify.
+description: Music licensing made simple for Australian businesses. OneMusic, APRA AMCOS and PPCA explained for pubs, clubs, cafes & retail, and how a commercial supplier puts you on a cheaper tier. Save hundreds vs Spotify.
 ---
 
 <div class="hero-stat-banner licensing-hero">

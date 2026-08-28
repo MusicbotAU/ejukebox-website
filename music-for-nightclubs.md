@@ -5,7 +5,7 @@ slug: music-for-nightclubs
 label: Clubs & Nightclubs
 venue_name: clubs & nightclubs
 title: Nightclub Music Australia | Licensed Club Music
-description: Licensed, high-energy music for Australian nightclubs. Curated channels, smartphone song requests and dayparting. Lower OneMusic licence tier. Free trial.
+description: Licensed, high-energy music for Australian nightclubs. Curated channels, smartphone song requests and dayparting. Cheaper OneMusic licence tier. Free trial.
 h1: Music for Clubs & Nightclubs
 intro: A club lives and dies by its sound. eJukebox delivers a licensed, high-energy stream you can programme across the whole night, from warm-up to peak, with optional crowd requests to keep the floor moving and the bar busy.
 benefits:

@@ -5,7 +5,7 @@ slug: music-for-medical
 label: Medical & Waiting Rooms
 venue_name: medical & waiting rooms
 title: Music for Medical & Waiting Rooms Australia
-description: Licensed, calming waiting-room music for Australian medical, dental and clinics. Reassuring channels. Lower OneMusic licence tier. Free 7-day trial.
+description: Licensed, calming waiting-room music for Australian medical, dental and clinics. Reassuring channels. Cheaper OneMusic licence tier. Free 7-day trial.
 h1: Music for Medical & Waiting Rooms
 intro: A calm waiting room puts patients at ease. eJukebox provides gentle, licensed background music for medical, dental and allied-health spaces, easy to set once and forget, and always compliant with Australian licensing.
 benefits:

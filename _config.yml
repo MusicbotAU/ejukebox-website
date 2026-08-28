@@ -47,6 +47,23 @@ defaults:
     values:
       image: /blobs/ejukebox-logo.png
 # Exclude from processing.
+# `form/` holds the Azure Function source for trial provisioning. It is backend
+# code, not website content, and Jekyll was publishing it at /form/ - so it is
+# excluded here. Jekyll 4 replaces its default exclude list when this key is
+# set, so the usual defaults are repeated below.
+exclude:
+  - form/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
 # the internal "default list".

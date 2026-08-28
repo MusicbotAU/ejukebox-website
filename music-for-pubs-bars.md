@@ -5,7 +5,7 @@ slug: music-for-pubs-bars
 label: Pubs & Bars
 venue_name: pubs & bars
 title: Music for Pubs & Bars Australia | Jukebox & Music
-description: Background music and an interactive jukebox for Australian pubs & bars. Patrons request songs from their phone. Lower OneMusic licence tier. Free trial.
+description: Background music and an interactive jukebox for Australian pubs & bars. Patrons request songs from their phone. Cheaper OneMusic licence tier. Free trial.
 h1: Music for Pubs & Bars
 intro: The right music keeps patrons in the room and ordering at the bar. eJukebox gives your pub or bar a professionally curated, fully licensed soundtrack your staff steer from a phone, and lets customers request the songs they want to hear, no DJ and no jukebox box bolted to the wall.
 spotlight_title: Running an Irish bar?
@@ -19,7 +19,7 @@ benefits:
     title: Song requests from any phone
     text: Patrons scan a QR code and request tracks. You stay in control with approvals, banned tracks and volume caps.
   - icon: fa-certificate
-    title: Lower licence tier
+    title: Cheaper licence tier
     text: As a commercial background music supplier, eJukebox puts your venue on a lower OneMusic tier. For pubs and clubs we can also collect your OneMusic fee and remit it directly to OneMusic.
 faqs:
   - q: Do I need a music licence to play music in my pub?
