@@ -3,6 +3,7 @@ layout: default
 permalink: /products.html
 title: Plans & Pricing | Background Music for Pubs, Clubs, Cafes & Retail
 description: Build your own eJukebox. Solo from $49/mo for a single-area shop, Core from $169/mo for a venue, or Complete with every add-on included. Pick only the features you want, watch what each one does, and try it free for 30 days.
+schema_page_type: CollectionPage
 ---
 
 {% include pricing-menu.html mode="public" %}

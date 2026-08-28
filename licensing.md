@@ -2,6 +2,57 @@
 layout: default
 title: Music Licensing for Business | APRA AMCOS Compliance Australia
 description: Music licensing made simple for Australian businesses. OneMusic, APRA AMCOS and PPCA explained for pubs, clubs, cafes & retail, and how a commercial supplier puts you on a cheaper tier. Save hundreds vs Spotify.
+schema_service: Music licensing guidance for Australian businesses
+service_type: OneMusic Australia licensing guidance and fee administration
+last_reviewed: 2026-08-28
+schema_article:
+  headline: Music Licensing for Australian Business - OneMusic, APRA AMCOS and PPCA Explained
+  section: Music licensing
+mentions:
+  - name: OneMusic Australia
+    url: https://onemusic.com.au/
+    type: Organization
+  - name: APRA AMCOS
+    url: https://www.apraamcos.com.au/
+    type: Organization
+  - name: PPCA
+    url: https://www.ppca.com.au/
+    type: Organization
+howto:
+  name: How to legally play music in your Australian business
+  description: The steps to get your venue licensed to play recorded music in public in Australia, and how to end up on the cheapest licence tier you are entitled to.
+  steps:
+    - name: Work out whether you need a licence
+      text: If you play recorded music where customers or staff can hear it, that is a public performance under Australian copyright law and you need a licence. This covers pubs, clubs, cafes, restaurants, gyms, shops, salons and waiting rooms.
+      url: /licensing.html
+    - name: Stop using a personal streaming account
+      text: Personal Spotify, Apple Music and Amazon Music accounts cannot legally be used in a business, because their own terms of service forbid commercial use. A licence does not fix this - the account itself is the problem.
+      url: /licensing.html
+    - name: Get a OneMusic Australia licence in your business name
+      text: OneMusic Australia bundles the two separate copyrights, the songwriters and composers represented by APRA AMCOS and the recording artists and labels represented by PPCA, into one licence and one fee. The licence is held by your business, not by your music supplier.
+      url: https://onemusic.com.au/
+    - name: Work out which tier you fall into
+      text: Your fee depends on how you play music and how big the space is. For hospitality it is a tiered package system based on how many TV screens and music systems you have; for retail and service providers it is based on floor area and how the music is played.
+      url: /licensing.html
+    - name: Use a commercial background music supplier to lower the tier
+      text: Because eJukebox is a commercial background music supplier, your venue sits on a cheaper OneMusic tier than a personal streaming account puts you on, and hospitality venues drop the Digital Copy and Delivery add-on. The licence stays in your name and is paid separately - the saving is in the tier, not in the licence being included.
+      url: /licensing.html
+    - name: For pubs and clubs, hand over the paperwork
+      text: For pubs and clubs, eJukebox can collect the OneMusic fee on your behalf and remit it directly to OneMusic, so there is no separate paperwork to chase.
+      url: /contact/
+faqs:
+  - q: What if I just play the radio?
+    a: You still need a licence, but it is the cheapest option. Retail shops pay as little as $100 a year on Bronze. For pubs it is $153 a year on Bronze for a single radio and TV. Using a commercial background music supplier like eJukebox is a separate, slightly higher tier, but you get much better music.
+  - q: What counts as a TV screen for OneMusic licensing?
+    a: Any screen showing free-to-air or pay TV, including Fox Sports, with sound. Screens that only show racing, betting or Keno silently do not count. A video wall counts as just one screen.
+  - q: What counts as a music system?
+    a: Any device used to play music, including background music supplier systems like eJukebox, audio jukeboxes, PCs, tablets, smartphones, CDs or record players. If you play a radio station through an app like TuneIn, that counts as a music system, not a radio.
+  - q: My dining area plays different music - do I pay extra?
+    a: Yes, but only if your dining area has its own separate music source playing different music to the rest of the venue, and it seats at least seven people. If the same music is heard throughout, there is no extra charge.
+  - q: Do I need a licence for telephone on-hold music?
+    a: Yes, on-hold music needs a licence too. For hospitality venues on the Gold package or above, up to two on-hold lines are included. For retail and service providers it is a separate fee starting from $283 a year for one to two lines.
+  - q: What about music on my business website?
+    a: "Background music on your business website is an extra $648 a year with OneMusic. There are restrictions: 10 to 15 different tracks, no more than one per artist, and visitors cannot choose tracks."
 ---
 
 <div class="hero-stat-banner licensing-hero">

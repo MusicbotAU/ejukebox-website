@@ -2,6 +2,8 @@
 layout: default
 title: Why Choose eJukebox | Best Music for Pubs, Clubs & Hospitality
 description: Why eJukebox beats competitors - 3% faster music tempo, AGC processing, Australian DJ curation. The music solution for pubs, clubs, cafes & retail.
+schema_service: Professionally programmed background music for Australian venues
+service_type: Human-curated commercial music programming and broadcast audio processing
 ---
 
 <div class="why-us2-hero">

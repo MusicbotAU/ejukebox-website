@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Music for Business Australia | Pubs, Clubs, Cafes & Retail Music Solutions
-description: Music for business - Australia's leading jukebox and background music solution for pubs, clubs, bars, cafes & retail. Licensed streaming from $49/mo. Free 30-day trial.
+description: Music for business - Australia's leading jukebox and background music solution for pubs, clubs, bars, cafes & retail. Licensed streaming from $49/mo. Free trial, no credit card.
 hero:
   image: /blobs/eJukebox_fun04.jpg
   eyebrow: Licensed music for Australian venues
@@ -237,8 +237,9 @@ hero:
   <div class="trial-glow"></div>
   <div class="trial-content">
     <span class="trial-badge"><i class="fas fa-gift"></i> Risk-Free Offer</span>
-    <h2>Free 7-Day Trial</h2>
-    <p>Get your own private streaming URL delivered instantly via SMS. No credit card required. Experience premium, ad-free background music for your venue.</p>
+    <h2>Two ways to try it free</h2>
+    <p><strong>7 days, streaming only.</strong> Pick a channel and get your own private ad-free stream URL by SMS in seconds. No credit card, nothing to install.</p>
+    <p class="trial-alt"><strong>30 days, the whole system.</strong> On Core and Complete we install the full eJukebox, hardware and setup covered, and you run it live in your venue with your own customers requesting songs. <a href="/contact/">Ask us about the 30-day trial &rarr;</a></p>
     <a href="./free-trial.html" class="trial-cta-button">
       <i class="fas fa-rocket"></i> Start Your Free Trial Now
     </a>

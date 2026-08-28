@@ -1,15 +1,41 @@
 ---
 layout: default
-title: Free 7-Day Music Trial | Try eJukebox for Pubs, Clubs & Cafes
-description: Free 7-day trial of eJukebox music for business. No credit card required. Premium background music for pubs, clubs, cafes & retail. Start streaming today.
+title: Free 7-Day Streaming Trial | Try eJukebox Music for Your Venue
+description: Free 7-day streaming trial of eJukebox. Pick a channel, get a private ad-free stream URL by SMS, no credit card. Streaming only - for song requests, ask about the 30-day in-venue trial.
+schema_service: Free 7-day eJukebox music trial for Australian venues
+service_type: Free trial of a commercial background music and jukebox service
+howto:
+  name: How to start your free 7-day eJukebox music trial
+  description: Get a private, ad-free music stream running in your Australian venue in about two minutes, with no credit card and nothing to install.
+  total_time: PT2M
+  cost: 0
+  supply:
+    - An Australian mobile number
+  tool:
+    - Any web browser, phone, tablet, computer or Sonos speaker
+  steps:
+    - name: Choose your channel
+      text: Pick the channel that suits your venue - Hits, Smooth, Rock or Country. Every channel is curated by Australian music directors, ad-free, and free of explicit lyrics.
+      url: /free-trial.html
+    - name: Fill in the trial form
+      text: Enter your full name, email address and Australian mobile number, then agree to receive your trial link by SMS. No credit card is required.
+      url: /free-trial.html
+    - name: Get your private stream URL by SMS
+      text: Your own private streaming URL is sent to your mobile within seconds of submitting the form.
+    - name: Play it through your existing sound system
+      text: Open the URL in any browser or streaming device and play it through the speakers you already have. You can stream on up to three devices at once for the seven days.
+    - name: Ask about the 30-day in-venue trial
+      text: On the Core and Complete plans, eJukebox can install the full system with hardware and setup covered and run it live in your venue free for 30 days.
+      url: /contact/
 ---
 
 <div class="trial-page-hero">
   <div class="trial-hero-glow"></div>
   <div class="trial-hero-content">
     <span class="trial-hero-badge"><i class="fas fa-gift"></i> Risk-Free Offer</span>
-    <h1>Free 7-Day Music Trial for Pubs, Clubs & Cafes</h1>
-    <p>Experience premium, ad-free background music for your venue. No credit card required.</p>
+    <h1>Free 7-Day Streaming Trial</h1>
+    <p>Pick a channel, get your own private ad-free stream, and hear exactly how eJukebox sounds in your room. No credit card, nothing to install.</p>
+    <p class="trial-hero-scope"><i class="fas fa-circle-info"></i> This trial is <strong>streaming only</strong>: unlimited listening on the channel you choose, with no song requests or interactive features. Want your customers requesting songs from their phones? That's the <a href="/contact/">free 30-day in-venue trial</a>.</p>
   </div>
 </div>
 
@@ -186,7 +212,7 @@ description: Free 7-day trial of eJukebox music for business. No credit card req
     </div>
     <div class="faq-item">
       <h4><i class="fas fa-clock"></i> How long does the trial last?</h4>
-      <p>Your trial lasts for 7 days from the moment you sign up. Your URL will automatically expire after this period.</p>
+      <p>Your trial lasts for 7 days from the moment you sign up, and your URL expires automatically after that. If you want longer, and the full interactive system rather than just the stream, ask us about the <a href="/contact/">free 30-day in-venue trial</a> on Core and Complete.</p>
     </div>
     <div class="faq-item">
       <h4><i class="fas fa-random"></i> Can I switch channels?</h4>

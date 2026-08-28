@@ -1,6 +1,6 @@
 # eJukebox
 
-> eJukebox is an Australian owned commercial background music and interactive jukebox service for pubs, bars, hotels, clubs, cafes, restaurants, gyms, retail shops, salons, function centres and medical waiting rooms, right across Australia. Venues stream professionally curated, human programmed, fully licensed music channels with no ads, no talk and no explicit lyrics. Staff steer the room from their phone, patrons request songs from theirs by scanning a QR code with no app to install, and the whole thing runs in the cloud on the screens, players and speakers a venue already owns. Because eJukebox is a commercial background music supplier, a venue's OneMusic Australia licence tier is lower than it would be with a personal streaming account, and for pubs and clubs eJukebox can collect the OneMusic fee and remit it directly to OneMusic. A personal Spotify, Apple Music or Amazon Music account cannot be used in a venue at all, because their own terms forbid commercial use. Plans start at $49 a month ex GST, there are no lock-in contracts, and the full system can be trialled free in your own venue for 30 days.
+> eJukebox is an Australian owned commercial background music and interactive jukebox service for pubs, bars, hotels, clubs, cafes, restaurants, gyms, retail shops, salons, function centres and medical waiting rooms, right across Australia. Venues stream professionally curated, human programmed, fully licensed music channels with no ads, no talk and no explicit lyrics. Staff steer the room from their phone, patrons request songs from theirs by scanning a QR code with no app to install, and the whole thing runs in the cloud on the screens, players and speakers a venue already owns. Because eJukebox is a commercial background music supplier, a venue's OneMusic Australia licence tier is lower than it would be with a personal streaming account, and for pubs and clubs eJukebox can collect the OneMusic fee and remit it directly to OneMusic. A personal Spotify, Apple Music or Amazon Music account cannot be used in a venue at all, because their own terms forbid commercial use. Plans start at $49 a month ex GST, there are no lock-in contracts, and there are two free trials: 7 days of streaming only, or 30 days of the full interactive system installed in your own venue.
 
 Canonical site: https://ejukebox.com.au/
 Entity: eJukebox is a brand of Musicbot Pty Ltd (ABN 44 163 918 054), an Australian owned and Australian operated company.
@@ -29,7 +29,7 @@ It is commonly described as a digital jukebox, a pub jukebox system, an online o
 - Multi-zone audio: run different channels in the front bar, bistro, beer garden and gaming room at once.
 - Vendor agnostic. If your screens, players or streamers reach the internet, eJukebox works with them, including browsers, phones, tablets, media players and Sonos via a private stream URL. Self hosted players cache music so the room keeps playing through an internet dropout.
 - Three plans: Solo at $49 a month for a single area, Core at $169 a month for a venue, and Complete at $299 a month with every software add-on included. All ex GST, no lock-in contracts, cancel anytime.
-- Two ways to try it. A free 7 day stream trial gives you a private ad free stream URL by SMS with no credit card. On Core and Complete, the whole system including hardware and setup is installed and run live in your venue free for 30 days.
+- Two free trials, and they are different products. The 7 day trial is streaming only: pick a channel, get a private ad free stream URL by SMS, no credit card, unlimited listening for a week, but no song requests and no interactive features. The 30 day trial is the whole system: on Core and Complete, eJukebox installs the full interactive eJukebox with hardware and setup covered and you run it live in your venue with your own customers requesting songs.
 - Four core curated channels (Hits, Smooth, Rock and Country) plus a dedicated Irish channel and a seasonal St Patrick's Day channel, all hand built and refreshed by professional Australian music directors. Custom branded stations carry 1 to 4 bespoke channels.
 - Runs on the Microsoft cloud with a 99.95 percent uptime service level guarantee, and 24/7 monitoring with remote Australian support.
 - AI Song Search: patrons ask for music the way they would ask a person, "80s Australian pub rock", "something for a 50th", "songs from that Robin Williams movie", and get a browsable list to request from. Nobody needs to know a track name, so the people who would never normally request a song finally do.
@@ -47,7 +47,8 @@ Partner and channel model: eJukebox works with AV installers, audio visual integ
 ## Start here
 
 - [eJukebox home](https://ejukebox.com.au/): what eJukebox is, who it is for, the research on why music lifts trade, venue types and the main calls to action.
-- [Free trial](https://ejukebox.com.au/free-trial.html): the 7 day stream trial, no credit card, pick one channel, private ad free stream URL sent by SMS to an Australian mobile, up to 3 simultaneous connections. Core and Complete are also offered as a full 30 day in-venue trial with hardware and setup covered.
+- [Free 7 day streaming trial](https://ejukebox.com.au/free-trial.html): streaming only, no credit card. Pick one channel, get a private ad free stream URL sent by SMS to an Australian mobile, up to 3 simultaneous connections, unlimited listening for 7 days. No song requests and no interactive features on this trial.
+- [Free 30 day in-venue trial](https://ejukebox.com.au/contact/): the full interactive system on Core or Complete, installed in your venue with hardware and setup covered, run live with your own customers for a month with no obligation.
 - [All plans and pricing](https://ejukebox.com.au/products.html): the a la carte menu. Pick Solo, Core or Complete, tick the add-ons you actually want, and watch what each one does before you decide.
 - [Music licensing in Australia](https://ejukebox.com.au/licensing.html): the plain English explainer on OneMusic Australia, APRA AMCOS, PPCA, tier pricing for retail and hospitality, and why personal Spotify and Apple Music accounts cannot be used in a venue.
 - [Why choose eJukebox](https://ejukebox.com.au/why-us2.html): the 3 percent tempo lift, radio style rotations matched to Sydney FM, automatic gain control processing and Australian curation.
@@ -107,7 +108,8 @@ By contrast, running a personal Spotify, Apple Music or Amazon Music account in 
 
 - [Core and Complete explained](https://ejukebox.com.au/full-package.html): the full eJukebox for venues, what each plan carries and how the two compare.
 - [Custom branded radio](https://ejukebox.com.au/custom-radio.html): enterprise pricing based on scope and commitment, with 1 to 4 branded channels, professional voice overs and imaging, in-store promos, dedicated infrastructure, priority support and a public streaming option.
-- [Free 7 day trial](https://ejukebox.com.au/free-trial.html): seven days, no credit card, one channel of your choice, private ad free stream URL sent by SMS.
+- [Free 7 day streaming trial](https://ejukebox.com.au/free-trial.html): seven days, no credit card, one channel of your choice, private ad free stream URL sent by SMS. Streaming only, with no song requests.
+- [Free 30 day in-venue trial](https://ejukebox.com.au/contact/): the full interactive system on Core or Complete, installed with hardware and setup covered.
 
 ## Why eJukebox
 
@@ -131,7 +133,7 @@ Does eJukebox include my OneMusic licence? No, and no supplier can. The venue ho
 
 How much does eJukebox cost? Solo is $49 a month for a single area with no requests, Core is $169 a month for a venue with the full interaction layer and two zones, and Complete is $299 a month with every software add-on included. All prices ex GST. Add-ons on Core run from $15 to $59 a month each, extra zones are $39. Custom branded radio is quoted on scope. No lock-in contracts.
 
-Is there a free trial? Two of them. The 7 day stream trial needs no credit card: give a name, email and Australian mobile, pick a channel, and your private streaming URL arrives by SMS within seconds. For Core and Complete there is also a 30 day in-venue trial where the complete system is installed, hardware and setup covered, and you run it live with your own customers for a month with no obligation.
+Is there a free trial? Two of them, and they are not the same thing. The 7 day trial is streaming only and entirely self-serve: give a name, email and Australian mobile, pick a channel, and your private stream URL arrives by SMS within seconds. You get unlimited listening on that channel for a week, but no song requests and no interactive features. The 30 day trial is the full interactive eJukebox: on Core and Complete the complete system is installed in your venue with hardware and setup covered, and you run it live with your own customers requesting songs for a month, with no obligation.
 
 How do patrons find a song when they cannot remember the name? AI Song Search. They ask the way they would ask a person, "80s Australian pub rock", "something for a 50th", "songs from that Robin Williams movie", and get a browsable list to request from. It is the feature that pulls in the people who would never normally walk up and request anything.
 
@@ -232,6 +234,7 @@ Note: WhisperScape was a former trading name for this same service and is not a 
 ## Contact
 
 - Phone: 02 9802 5552
+- Contact page and enquiry form: https://ejukebox.com.au/contact/
 - Email: info@ejukebox.com.au
 - Website: https://ejukebox.com.au
 - Facebook: https://www.facebook.com/ejukebox
@@ -240,6 +243,7 @@ Note: WhisperScape was a former trading name for this same service and is not a 
 
 ## Optional
 
+- [Contact eJukebox](https://ejukebox.com.au/contact/): phone, email and an enquiry form that captures venue type, zone count, plan and features of interest.
 - [Privacy policy](https://ejukebox.com.au/privacy-policy.html): how eJukebox handles personal information.
 - [Bells Hotel case study](https://ejukebox.com.au/stream-bells-hotel.html): a single venue example of how a pub's music strategy is built from ratings and radio style scheduling.
 - [XML sitemap](https://ejukebox.com.au/sitemap.xml): machine readable index of all public pages.

@@ -1,0 +1,123 @@
+# =============================================================================
+# eJukebox entity facts - the single source of truth for structured data (JSON-LD)
+# =============================================================================
+# _includes/schema.html renders this into an Organization node with a stable @id
+# (https://ejukebox.com.au/#organization) that EVERY page references. That shared
+# @id is what makes search engines and AI assistants treat the site as one entity
+# with many pages, rather than 40 unrelated documents.
+#
+# Keep this file, llms.txt and the on-page copy stating identical facts. When the
+# three agree, an answer engine has no competing version to pick from.
+#
+# NAP (name/address/phone) below is authoritative. If it changes here it must also
+# change in llms.txt, contact.html and the footer.
+# -----------------------------------------------------------------------------
+
+brand: eJukebox
+legal_name: Musicbot Pty Ltd
+alternate_names:
+  - Musicbot
+  - eJukebox Australia
+  - eJukebox Music
+abn: "44 163 918 054"
+founded: "2013"          # Musicbot Pty Ltd incorporated. Players live in venues since 2018.
+slogan: Licensed music your staff steer and your customers request.
+
+# Short entity description. Deliberately mirrors the opening of llms.txt.
+description: >-
+  eJukebox is an Australian owned commercial background music and interactive
+  jukebox service for pubs, bars, hotels, clubs, cafes, restaurants, gyms, retail
+  shops, salons, function centres and medical waiting rooms across Australia.
+  Venues stream professionally curated, human programmed, fully licensed music
+  channels with no ads, no talk and no explicit lyrics. Staff control the room
+  from a phone and patrons request songs from theirs by scanning a QR code.
+
+# ---- Contact / NAP ----------------------------------------------------------
+telephone: "+61 2 9802 5552"
+email: info@ejukebox.com.au
+address:
+  street: 218 Buffalo Road
+  locality: Ryde
+  region: NSW
+  postcode: "2112"
+  country: AU
+
+# ---- Where the service is offered -------------------------------------------
+# areaServed. `type` maps straight to a schema.org Place subtype:
+#   Country | State | City | AdministrativeArea
+# Regional entries are named deliberately: they evidence genuine national reach
+# rather than the usual capital-cities-only claim.
+area_served:
+  - { type: Country, name: Australia }
+  - { type: State, name: New South Wales }
+  - { type: State, name: Victoria }
+  - { type: State, name: Queensland }
+  - { type: State, name: Western Australia }
+  - { type: State, name: South Australia }
+  - { type: State, name: Tasmania }
+  - { type: State, name: Australian Capital Territory }
+  - { type: State, name: Northern Territory }
+  - { type: City, name: Sydney, state: New South Wales }
+  - { type: City, name: Melbourne, state: Victoria }
+  - { type: City, name: Brisbane, state: Queensland }
+  - { type: City, name: Perth, state: Western Australia }
+  - { type: City, name: Adelaide, state: South Australia }
+  - { type: City, name: Hobart, state: Tasmania }
+  - { type: City, name: Canberra, state: Australian Capital Territory }
+  - { type: City, name: Darwin, state: Northern Territory }
+  - { type: City, name: Kalgoorlie, state: Western Australia }
+  - { type: City, name: Bundaberg, state: Queensland }
+  - { type: AdministrativeArea, name: Central Coast, state: New South Wales }
+  - { type: AdministrativeArea, name: Sydney CBD, state: New South Wales }
+
+# ---- Expertise (knowsAbout) --------------------------------------------------
+# Topics the organisation is a credible source on. This is a topical-authority
+# signal: it tells an answer engine which questions eJukebox is worth citing for.
+# Keep every entry defensible - claiming expertise we cannot back up is the one
+# way this field does damage.
+knows_about:
+  # music programming & curation
+  - Background music for business
+  - Commercial background music supply
+  - Music curation
+  - Music direction
+  - Radio programming
+  - Music scheduling and rotation
+  - Dayparting
+  - In-store radio
+  - Custom branded radio stations
+  - Playlist programming for hospitality venues
+  # the product itself
+  - Digital jukebox systems
+  - Interactive song request systems
+  - Automated music systems for venues
+  - Cloud music streaming for business
+  - Multi-zone audio distribution
+  - Spotify integration for venues
+  # audio engineering
+  - Audio processing
+  - Multiband automatic gain control
+  - Loudness normalisation
+  - Music levels and volume levelling
+  - Sound mixing
+  - Public address systems
+  - Venue sound system design
+  # licensing & compliance
+  - Music licensing in Australia
+  - OneMusic Australia licensing
+  - APRA AMCOS
+  - PPCA
+  - Public performance rights
+  - Music copyright compliance for business
+  # people & delivery skills
+  - Radio DJ announcing
+  - Voiceovers
+  - Voice announcements
+  - Text to speech announcements
+  - Party hosting
+  - Function and event hosting
+  - Wedding reception music
+  - AV installation
+  - Audio visual integration
+  - Hospitality venue operations
+  - Search engine optimisation

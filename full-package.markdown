@@ -62,9 +62,9 @@ description: The full eJukebox for venues. Customer song requests from any phone
         <i class="fas fa-rocket"></i>
         <h3>Hear It In Your Own Venue</h3>
         <p>Try the whole thing free for 30 days - hardware and setup covered, no obligation. Not a demo: the real system, running live with your own customers.</p>
-        <a href="/free-trial.html" class="cta-button">
+        <a href="/contact/" class="cta-button">
           <i class="fas fa-gift"></i>
-          Start your free trial
+          Start your free 30-day trial
         </a>
       </div>
     </div>

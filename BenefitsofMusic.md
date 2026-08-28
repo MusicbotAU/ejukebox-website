@@ -2,6 +2,10 @@
 layout: default
 title: Benefits of Music in Business | Increase Sales with Background Music
 description: Music increases sales by 48% in hospitality venues. Research-backed benefits of background music for pubs, clubs, cafes & retail. Boost revenue with eJukebox.
+schema_article:
+  headline: The Benefits of Music in Business
+  section: Music and customer behaviour
+schema_page_type: WebPage
 ---
 
 <div class="benefits-hero">

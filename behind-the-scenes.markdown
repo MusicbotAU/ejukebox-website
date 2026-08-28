@@ -2,6 +2,8 @@
 layout: default
 title: Behind the Scenes | Jukebox Installation for Pubs & Venues
 description: See eJukebox installed at pubs, clubs & venues. Zero-touch cloud jukebox system with automatic music updates. Background music installation Australia.
+schema_service: Managed jukebox player installation for Australian venues
+service_type: Cloud-managed music player installation and maintenance
 ---
 
 <div class="bts-hero">

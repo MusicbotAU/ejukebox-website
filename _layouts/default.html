@@ -37,6 +37,15 @@
   {%- endcomment -%}
   {% if page.noindex %}<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">{% endif %}
 
+  {%- comment -%}
+    Structured data (JSON-LD). One @graph per page, generated from _data/org.yml
+    and the page's own front matter - see _includes/schema.html for what each
+    page type emits and which front-matter keys drive it.
+    jekyll-seo-tag also emits a thin WebSite/WebPage block above and has no
+    switch to turn that off; ours wins on specificity via its stable @ids.
+  {%- endcomment -%}
+  {% include schema.html %}
+
   {% include head-custom.html %}
 
   <!-- Full-width layout + column-row grid + engagement band (overrides theme two-column) -->
@@ -133,7 +142,7 @@
       </button>
     </div>
     <ul class="mobile-nav-links">
-      <li><a href="/free-trial.html" class="trial-link"><i class="fas fa-gift"></i> Free 7-Day Trial</a></li>
+      <li><a href="/free-trial.html" class="trial-link"><i class="fas fa-gift"></i> Free 7-Day Streaming Trial</a></li>
       <li class="mobile-nav-subheader">Music for Your Venue:</li>
       {% for v in site.data.venues %}
       <li><a href="/{{ v.slug }}/"><i class="fas {{ v.icon }}"></i> {{ v.label }}</a></li>
@@ -274,7 +283,7 @@
     <div class="inner engage-grid">
       <div class="engage-card engage-trial">
         <div class="engage-icon"><i class="fas fa-gift"></i></div>
-        <h3>Free 7-Day Trial</h3>
+        <h3>Free 7-Day Streaming Trial</h3>
         <p>Get your private streaming URL instantly via SMS. No credit card required.</p>
         <a href="/free-trial.html" class="engage-btn"><i class="fas fa-rocket"></i> Start Free Trial</a>
       </div>
@@ -342,7 +351,7 @@
             <li><a href="/products.html">Plans &amp; Pricing</a></li>
             <li><a href="/full-package.html">Core &amp; Complete</a></li>
             <li><a href="/licensing.html">Music Licensing</a></li>
-            <li><a href="/free-trial.html" class="ej-footer__trial">Free 7-Day Trial</a></li>
+            <li><a href="/free-trial.html" class="ej-footer__trial">Free 7-Day Streaming Trial</a></li>
           </ul>
         </div>
         <div class="ej-footer__col">

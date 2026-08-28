@@ -2,6 +2,29 @@
 layout: default
 title: Song Request Portal | Customer Music Requests for Pubs & Clubs
 description: Let customers request songs at your venue. eJukebox request portal for pubs, clubs & functions. Easy QR code access, staff-controlled approval system.
+schema_service: Song request portal for pubs, clubs and functions
+service_type: Interactive song request system for venues
+schema_app:
+  name: eJukebox Song Request Portal
+  description: A mobile website that lets patrons request songs, see what is playing now, view the request queue and browse the top requested tracks. It runs in any phone browser with no app to download.
+  category: BusinessApplication
+  os: Any
+howto:
+  name: How customers request a song in an eJukebox venue
+  description: Patrons request music from their own phone in a few taps, with no app to download, while the venue keeps full control of what actually plays.
+  total_time: PT1M
+  cost: 0
+  tool:
+    - Any smartphone with a web browser
+  steps:
+    - name: Scan the QR code
+      text: Scan the eJukebox QR code on the table, bar or wall with your phone camera. The request portal opens as a website sized for a small screen, so there is no app to download and it does not matter which phone you have.
+    - name: Find a song
+      text: Browse the popular lists, search for a specific track, or ask AI Song Search for music the way you would ask a person, such as 80s Australian pub rock or something for a 50th.
+    - name: Send the request
+      text: Tap the track to request it. Venue staff set the rules behind the scenes, including approvals, request limits and banned tracks, so nothing plays that the venue has not allowed.
+    - name: Watch the queue
+      text: The portal shows what is playing now, what is pending in the request queue, and the top requested songs, so you can see your track coming up.
 ---
 
 <div class="portal-hero">
