@@ -782,7 +782,7 @@ description: Music licensing made simple for Australian businesses. OneMusic, AP
 
 <div class="stats-cta">
   <p><strong>Ready to simplify your music licensing and save money?</strong></p>
-  <a href="mailto:info@ejukebox.com.au?subject=Free%20Trial%20Request" class="btn-glow">
+  <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website%20-%20Licensing%20Enquiry&body=Hi%20eJukebox%2C%0D%0A%0D%0AVenue%20name%3A%0D%0ASuburb%20and%20state%3A%0D%0AVenue%20type%20(pub%2C%20club%2C%20cafe%2C%20retail%2C%20etc)%3A%0D%0AAreas%20or%20zones%20needing%20music%3A%0D%0AWhat%20I%27m%20after%3A%0D%0A%0D%0AMy%20name%3A%0D%0ABest%20contact%20number%3A%0D%0A" class="btn-glow">
     <i class="fas fa-envelope"></i> Start Your Free Trial
   </a>
   <div style="margin-top: 15px;">

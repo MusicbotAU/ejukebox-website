@@ -124,7 +124,7 @@ description: Music increases sales by 48% in hospitality venues. Research-backed
     <i class="fas fa-lightbulb"></i>
     <h2>Ready to Harness the Power of Music?</h2>
     <p>Let eJukebox help you create the perfect atmosphere that drives sales and keeps customers coming back.</p>
-    <a href="mailto:info@ejukebox.com.au" class="cta-button">
+    <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website%20-%20Benefits%20of%20Music&body=Hi%20eJukebox%2C%0D%0A%0D%0AVenue%20name%3A%0D%0ASuburb%20and%20state%3A%0D%0AVenue%20type%20(pub%2C%20club%2C%20cafe%2C%20retail%2C%20etc)%3A%0D%0AAreas%20or%20zones%20needing%20music%3A%0D%0AWhat%20I%27m%20after%3A%0D%0A%0D%0AMy%20name%3A%0D%0ABest%20contact%20number%3A%0D%0A" class="cta-button">
       Get Started Today
       <i class="fas fa-arrow-right"></i>
     </a>

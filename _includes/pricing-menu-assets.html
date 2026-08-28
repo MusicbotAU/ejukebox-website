@@ -805,8 +805,9 @@
         ? 'Wholesale cost: ' + money(r.totalCost) + '/mo\nRRP: ' + money(r.totalRrp) + '/mo\nMargin: ' + money(r.totalRrp - r.totalCost) + '/mo'
         : 'Total: ' + money(r.totalCost) + '/mo ex GST');
       body += '\n\n(Excludes one-off hardware/install and the OneMusic licence.)\n\nVenue:\nContact:\n';
-      var subj = WHOLESALE ? 'Wholesale package build - ' + money(r.totalCost) + '/mo'
-                           : 'eJukebox package - ' + money(r.totalCost) + '/mo';
+      var subj = 'Sent from the eJukebox website - ' + (WHOLESALE
+        ? 'Wholesale package build - ' + money(r.totalCost) + '/mo'
+        : 'Package build - ' + money(r.totalCost) + '/mo');
       elCta.href = 'mailto:info@ejukebox.com.au?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
     }
   }

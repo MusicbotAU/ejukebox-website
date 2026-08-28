@@ -114,4 +114,4 @@ This Policy may change from time to time and is available on our website.
 If you have any queries or complaints about our Privacy Policy please contact us
 at:
 
-[info@ejukebox.com.au](mailto:info@ejukebox.com.au)
+[info@ejukebox.com.au](mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website%20-%20Privacy%20Enquiry)
