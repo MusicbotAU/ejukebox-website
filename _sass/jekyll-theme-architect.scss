@@ -1999,10 +1999,22 @@ aside#sidebar iframe {
   margin-bottom: 30px;
 }
 
+/* One white box, not two. The logo PNG (300x120) has an OPAQUE white background
+   and zero horizontal margin - the wordmark runs to the pixel edge, with only
+   ~22px of white above and below. The theme's global `#main-content img` rule
+   gives every image its own border-radius and drop shadow, which turned that
+   white rectangle into a second card nested inside this one, with the text hard
+   against its edge. The override below strips both so the image's white merges
+   into the card's white and it reads as a single box.
+
+   Padding is deliberately asymmetric. Scaled to 250px wide the PNG already
+   carries ~18px of its own white top and bottom but none at the sides, so
+   12px/30px lands at an even ~30px optical margin all round. If the logo file is
+   ever replaced, re-measure its internal margins before changing these numbers. */
 .onemusic-logo a {
   display: inline-block;
   background: #fff;
-  padding: 22px 28px;
+  padding: 12px 30px;
   border-radius: 10px;
   line-height: 0;
   transition: transform 0.3s ease;
@@ -2012,10 +2024,20 @@ aside#sidebar iframe {
   transform: scale(1.05);
 }
 
-.onemusic-logo img {
+/* ID selector needed: the theme's `#main-content img` (0,1,0,1) outranks a plain
+   class selector, so the radius and shadow would survive otherwise. */
+#main-content .onemusic-logo img {
   display: block;
   max-width: 250px;
   height: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* The wrapper <a> already scales on hover; without this the theme's
+   `#main-content img:hover` scale(1.02) compounds with it. */
+#main-content .onemusic-logo a:hover img {
+  transform: none;
 }
 
 .onemusic-section h2 {
