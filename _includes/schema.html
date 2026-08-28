@@ -307,7 +307,24 @@
 {"@type":"PropertyValue","name":"On-site hardware","value":"{% if t.hardware == 'none' %}None - streams to a device you already own{% else %}On-site player (one-off cost){% endif %}"}
 ],
 "isRelatedTo":{"@id":"{{ base }}/licensing.html#service"},
-"offers":{"@id":"{{ base }}/products.html#offer-{{ t.id }}"}
+{%- comment -%} The Offer is written out in full rather than referenced by @id.
+    It is the same node (same @id) that Organization.makesOffer declares, so a
+    JSON-LD processor merges the two - but Google's parser is more reliable when
+    a Product carries its offer inline, and an unresolved offers reference makes
+    the Product ineligible for a rich result entirely. {%- endcomment -%}
+"offers":{
+"@type":"Offer",
+"@id":"{{ base }}/products.html#offer-{{ t.id }}",
+"name":{{ "eJukebox " | append: t.name | jsonify }},
+"description":{{ t.blurb | strip_html | normalize_whitespace | jsonify }},
+"url":"{{ base }}/products.html",
+"price":"{{ t.retail }}",
+"priceCurrency":"AUD",
+"availability":"https://schema.org/InStock",
+"eligibleRegion":{"@type":"Country","name":"Australia"},
+"seller":{"@id":"{{ org_id }}"},
+"priceSpecification":{"@type":"UnitPriceSpecification","price":"{{ t.retail }}","priceCurrency":"AUD","valueAddedTaxIncluded":false,"referenceQuantity":{"@type":"QuantitativeValue","value":1,"unitCode":"MON"}}
+}
 }
 {%- endcapture -%}
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
