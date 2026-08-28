@@ -117,6 +117,12 @@ included:
     tiers: [core, complete]
     desc: Customers request from their own phone with no app. Staff keep full control - open the whole library or lock it to the current channel, and pause requests anytime.
     video: eJukebox-Feature-Song-Requests.mp4
+  - id: ai-song-search
+    name: AI Song Search
+    category: Discovery
+    tiers: [core, complete]
+    desc: Ask for music the way you'd ask a person. "80s Australian pub rock", "something for a 50th", "songs from that Robin Williams movie" - it comes back with a list to browse and request from. Nobody needs to know the track name, which means the people who'd never normally request a song finally do.
+    video:
   - id: song-previews
     name: Song Previews
     category: Discovery
@@ -211,7 +217,15 @@ addons:
     whl: 18
     desc: When requests go quiet your screen blooms into a branded slideshow - event nights, specials, your logo. A 24/7 billboard you already own.
     video: eJukebox-Feature-Photo-Display.mp4
-    hardware: Needs a screen (one-off hardware)
+    hardware: Works with a screen you already have - just needs a spare HDMI input
+  - id: guest-photos
+    name: Guest Photo Wall
+    category: Display
+    retail: 59
+    whl: 42
+    desc: Your customers send their own photos from their phone straight to your screen - screened automatically, branded with your logo, live in seconds. At the end of the night the whole lot is bundled with their handles and hashtags, ready for you to post.
+    video:
+    hardware: Works with a screen you already have - just needs a spare HDMI input
   - id: request-screen
     name: Interactive Request Screen
     category: Requests

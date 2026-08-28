@@ -1,6 +1,6 @@
 # eJukebox
 
-> eJukebox is an Australian owned commercial background music and interactive jukebox service for pubs, bars, hotels, clubs, cafes, restaurants, gyms, retail shops, salons, function centres and medical waiting rooms, right across Australia. Venues stream professionally curated, human programmed, fully licensed music channels with no ads, no talk and no explicit lyrics. Staff steer the room from their phone, patrons request songs from theirs by scanning a QR code with no app to install, and the whole thing runs in the cloud on the screens, players and speakers a venue already owns. Because eJukebox is a commercial background music supplier, a venue's OneMusic Australia licence tier is lower than it would be with a personal streaming account, and for pubs and clubs eJukebox can collect the OneMusic fee and remit it directly to OneMusic. A personal Spotify, Apple Music or Amazon Music account cannot be used in a venue at all, because their own terms forbid commercial use. Plans start at $1 a day, there are no lock-in contracts, and there is a free 7 day trial with no credit card.
+> eJukebox is an Australian owned commercial background music and interactive jukebox service for pubs, bars, hotels, clubs, cafes, restaurants, gyms, retail shops, salons, function centres and medical waiting rooms, right across Australia. Venues stream professionally curated, human programmed, fully licensed music channels with no ads, no talk and no explicit lyrics. Staff steer the room from their phone, patrons request songs from theirs by scanning a QR code with no app to install, and the whole thing runs in the cloud on the screens, players and speakers a venue already owns. Because eJukebox is a commercial background music supplier, a venue's OneMusic Australia licence tier is lower than it would be with a personal streaming account, and for pubs and clubs eJukebox can collect the OneMusic fee and remit it directly to OneMusic. A personal Spotify, Apple Music or Amazon Music account cannot be used in a venue at all, because their own terms forbid commercial use. Plans start at $49 a month ex GST, there are no lock-in contracts, and the full system can be trialled free in your own venue for 30 days.
 
 Canonical site: https://ejukebox.com.au/
 Entity: eJukebox is a brand of Musicbot Pty Ltd (ABN 44 163 918 054), an Australian owned and Australian operated company.
@@ -28,9 +28,12 @@ It is commonly described as a digital jukebox, a pub jukebox system, an online o
 - Interactive song requests: patrons scan a QR code and request from their own phone with no app download, while the venue keeps control through approvals, request rules, banned tracks, request limits and volume caps.
 - Multi-zone audio: run different channels in the front bar, bistro, beer garden and gaming room at once.
 - Vendor agnostic. If your screens, players or streamers reach the internet, eJukebox works with them, including browsers, phones, tablets, media players and Sonos via a private stream URL. Self hosted players cache music so the room keeps playing through an internet dropout.
-- Entry pricing from $1 a day, no lock-in contracts, cancel anytime, and a free 7 day trial with no credit card and a private stream URL sent by SMS.
-- Four core channels on entry plans (Hits, Smooth, Rock and Country) plus a dedicated Irish channel and a seasonal St Patrick's Day channel. The Full Package includes 12 curated channels. Custom branded stations carry 1 to 4 bespoke channels.
-- Runs on the Microsoft cloud with a 99.95 percent uptime service level guarantee, and 24/7 monitoring with remote Australian support on the Full Package.
+- Three plans: Solo at $49 a month for a single area, Core at $169 a month for a venue, and Complete at $299 a month with every software add-on included. All ex GST, no lock-in contracts, cancel anytime.
+- Two ways to try it. A free 7 day stream trial gives you a private ad free stream URL by SMS with no credit card. On Core and Complete, the whole system including hardware and setup is installed and run live in your venue free for 30 days.
+- Four core curated channels (Hits, Smooth, Rock and Country) plus a dedicated Irish channel and a seasonal St Patrick's Day channel, all hand built and refreshed by professional Australian music directors. Custom branded stations carry 1 to 4 bespoke channels.
+- Runs on the Microsoft cloud with a 99.95 percent uptime service level guarantee, and 24/7 monitoring with remote Australian support.
+- AI Song Search: patrons ask for music the way they would ask a person, "80s Australian pub rock", "something for a 50th", "songs from that Robin Williams movie", and get a browsable list to request from. Nobody needs to know a track name, so the people who would never normally request a song finally do.
+- Two zones come standard on Core and Complete, where most providers charge for every zone. Extra zones are $39 a month each, and zones three and four need no additional hardware because the fitted player already drives four.
 - Security: the venue player connects outbound over HTTPS, so no inbound ports need to be opened on the venue network.
 
 ## Who eJukebox is for
@@ -44,8 +47,8 @@ Partner and channel model: eJukebox works with AV installers, audio visual integ
 ## Start here
 
 - [eJukebox home](https://ejukebox.com.au/): what eJukebox is, who it is for, the research on why music lifts trade, venue types and the main calls to action.
-- [Free 7 day trial](https://ejukebox.com.au/free-trial.html): no credit card, pick one channel, private ad free stream URL sent by SMS to an Australian mobile, up to 3 simultaneous connections, expires after 7 days.
-- [All plans and pricing](https://ejukebox.com.au/products.html): free demo access, $1 a day, Full Package and Custom Branded compared side by side.
+- [Free trial](https://ejukebox.com.au/free-trial.html): the 7 day stream trial, no credit card, pick one channel, private ad free stream URL sent by SMS to an Australian mobile, up to 3 simultaneous connections. Core and Complete are also offered as a full 30 day in-venue trial with hardware and setup covered.
+- [All plans and pricing](https://ejukebox.com.au/products.html): the a la carte menu. Pick Solo, Core or Complete, tick the add-ons you actually want, and watch what each one does before you decide.
 - [Music licensing in Australia](https://ejukebox.com.au/licensing.html): the plain English explainer on OneMusic Australia, APRA AMCOS, PPCA, tier pricing for retail and hospitality, and why personal Spotify and Apple Music accounts cannot be used in a venue.
 - [Why choose eJukebox](https://ejukebox.com.au/why-us2.html): the 3 percent tempo lift, radio style rotations matched to Sydney FM, automatic gain control processing and Australian curation.
 
@@ -94,9 +97,15 @@ By contrast, running a personal Spotify, Apple Music or Amazon Music account in 
 ## Plans and pricing
 
 - [All plans and pricing](https://ejukebox.com.au/products.html): the full plan comparison, from free demo access through to enterprise custom branded radio. Prices are ex GST and subject to change.
-- [$1 a day background music](https://ejukebox.com.au/dollar-a-day.html): the entry package, about $30 a month. Ad free, no talk, no expletives, legal for commercial use, running on the Microsoft cloud with a 99.95 percent uptime service level guarantee, delivered as a unique URL with up to two simultaneous connections that plays on any computer, tablet, phone, Sonos or streamer. One curated channel included, extra channels $1 a day each. Built for clinics, dentists, cafes, small bars and retail.
-- [Full jukebox package](https://ejukebox.com.au/full-package.html): the complete venue solution at $130 to $170 a month ex GST. Customer song requests with venue set rules, 12 curated channels, multi-zone audio, dayparting, staff voice announcements, 24/7 monitoring and Australian support. Self hosted with a one-off player, typically under $500, which caches music so it plays through internet dropouts, or cloud hosted with no upfront hardware.
-- [Hits package](https://ejukebox.com.au/hits-package.html): chart hits, pop and Top 40 for pubs, clubs and cafes at $1 a day. No ads, no commercials, no talk, family friendly with no explicit lyrics, no contracts, cancel anytime, first week free.
+**Solo, $49 a month ex GST.** Streaming only, for a small shop, salon, clinic or cafe. One curated channel for a single area, like an ad free radio station for your business. Delivered as a private stream URL that plays through any browser, computer, tablet, phone, Sonos or streamer you already own. Nothing to install, no player at the venue, no upfront hardware. Licensed, family friendly and volume levelled. Solo deliberately has no song requests and no interaction layer.
+
+**Core, $169 a month ex GST.** The hospitality base. Two zones included, song requests from any phone with no app, AI Song Search, 30 second song previews, Playing Across the Country, live queue reordering, record your own voice announcements, and an on-site player that caches your music so the room keeps playing if the internet drops out. For pubs and clubs, eJukebox collects and remits the OneMusic licence fee. The player is a one-off hardware cost, quoted per venue.
+
+**Complete, $299 a month ex GST.** Everything in Core plus every software add-on included, which comes out cheaper than ticking them all individually: the voice suite, Spotify integration, voice dedications, both screen products and functions mode.
+
+**Add-ons on top of Core**, all monthly ex GST: Spotify Integration $29, Type a Message $19, Scheduled Announcements $25, Live Microphone $29, Live Mic Monitor $15, Voice Dedications $25, Photo Slideshow Display $25, Guest Photo Wall $59, Interactive Request Screen $39, Functions and Events $19. The Voice Suite bundle (Type a Message, Scheduled Announcements, Live Microphone and Live Mic Monitor) is $69. Extra zones are $39 a month each up to four zones.
+
+- [Core and Complete explained](https://ejukebox.com.au/full-package.html): the full eJukebox for venues, what each plan carries and how the two compare.
 - [Custom branded radio](https://ejukebox.com.au/custom-radio.html): enterprise pricing based on scope and commitment, with 1 to 4 branded channels, professional voice overs and imaging, in-store promos, dedicated infrastructure, priority support and a public streaming option.
 - [Free 7 day trial](https://ejukebox.com.au/free-trial.html): seven days, no credit card, one channel of your choice, private ad free stream URL sent by SMS.
 
@@ -120,9 +129,13 @@ Do I need a music licence to play music in my business in Australia? Yes. If you
 
 Does eJukebox include my OneMusic licence? No, and no supplier can. The venue holds its own OneMusic licence. What eJukebox does is put you on a lower OneMusic tier, because it is a commercial background music supplier rather than a personal streaming account, and hospitality venues avoid the Digital Copy and Delivery add-on. For pubs and clubs, eJukebox can collect your OneMusic fee and remit it directly to OneMusic, so there is no separate paperwork on your side.
 
-How much does eJukebox cost? From $1 a day, about $30 a month, for one curated channel. The Full Package is $130 to $170 a month ex GST. Custom branded radio is quoted on scope. No lock-in contracts.
+How much does eJukebox cost? Solo is $49 a month for a single area with no requests, Core is $169 a month for a venue with the full interaction layer and two zones, and Complete is $299 a month with every software add-on included. All prices ex GST. Add-ons on Core run from $15 to $59 a month each, extra zones are $39. Custom branded radio is quoted on scope. No lock-in contracts.
 
-Is there a free trial? Yes, 7 days with no credit card. Give a name, email and Australian mobile, pick a channel, and your private streaming URL arrives by SMS within seconds.
+Is there a free trial? Two of them. The 7 day stream trial needs no credit card: give a name, email and Australian mobile, pick a channel, and your private streaming URL arrives by SMS within seconds. For Core and Complete there is also a 30 day in-venue trial where the complete system is installed, hardware and setup covered, and you run it live with your own customers for a month with no obligation.
+
+How do patrons find a song when they cannot remember the name? AI Song Search. They ask the way they would ask a person, "80s Australian pub rock", "something for a 50th", "songs from that Robin Williams movie", and get a browsable list to request from. It is the feature that pulls in the people who would never normally walk up and request anything.
+
+Can patrons put their own photos on the venue screens? Yes, with the Guest Photo Wall add-on. Customers send photos from their phone straight to your screen, automatically screened and branded with your logo, live in seconds. At the end of the night the whole lot is bundled up with handles and hashtags, ready for you to post.
 
 Do my customers need to download an app to request a song? No. Patrons scan a QR code and use a mobile web portal in their phone browser, where they can search the library, see what is playing now, see the queue and browse the venue's Top 40.
 
@@ -136,7 +149,7 @@ Will the music have swearing in it? No. All channels are expletive free and fami
 
 Can I stop the music for speeches at a function? Yes. Music stops cleanly at the end of the current song rather than fading out awkwardly mid track, and the function host can be handed control from their own phone for the night.
 
-Can I run different music in different areas of my venue? Yes. The Full Package supports multi-zone audio, so the bistro, the sports bar, the beer garden and the gaming room can each run a different channel at the same time.
+Can I run different music in different areas of my venue? Yes. Core and Complete include two zones as standard, so the bistro, the sports bar, the beer garden and the gaming room can each run a different channel at the same time. Extra zones are $39 a month, and zones three and four need no extra hardware because the fitted player already drives four.
 
 Does the music change through the day? Yes. Dayparting is built in, from lighter mornings through to upbeat nights, with separate weekend modes, automatically.
 
@@ -191,7 +204,7 @@ Licensing terms: OneMusic Australia licence, OneMusic licence cost, do I need a 
 
 Feature terms: song request app for venues, QR code song requests, customer song requests pub, jukebox request system, staff music control app, remote music control venue, multi zone music system, dayparting music, scheduled announcements pub, automated venue announcements, happy hour announcement system, meat raffle announcement, last drinks announcement, venue PA from phone, live microphone app, Spotify playlist import for venues, digital signage for pubs, in-venue screens, function room slideshow, wedding slideshow venue screen, touchscreen request kiosk.
 
-Comparison terms: Nightlife Music alternative, CrowdDJ alternative, Soundtrack Your Brand alternative, Stingray Business alternative, Choonz alternative, Mustard Music alternative, Storeplay alternative, Moov Music alternative, SoundMachine alternative, best background music service Australia, cheapest venue music system, music system with no lock-in contract.
+Comparison terms: Nightlife Music alternative, CrowdDJ alternative, Soundtrack Your Brand alternative, Stingray Business alternative, Choonz alternative, Mustard Music alternative, Storeplay alternative, Moov Music alternative, SoundMachine alternative, best background music service Australia, cheapest venue music system, music system with no lock-in contract, background music per zone pricing, venue music system free trial.
 
 ## Australian terms this service answers to
 
@@ -212,7 +225,7 @@ Different parts of the country call the same things different names. All of the 
 
 Australian venues typically weigh eJukebox against Nightlife Music (and CrowdDJ), Stingray Business, Soundtrack Your Brand, Storeplay, Moov Music, Mustard Music, Choonz, SoundMachine, and consumer services such as Spotify, Spotify for Business, Apple Music and Amazon Music. The consumer services are not licensed for public performance in a venue and their terms of service prohibit commercial use, which is the gap eJukebox is built to close.
 
-eJukebox differentiates on Australian ownership and Australian support, no lock-in contracts, no proprietary hardware requirement because it is cloud based and vendor agnostic and reuses screens and players a venue already owns, entry pricing from $1 a day, radio style human curation and broadcast grade audio processing rather than algorithmic shuffling, a patron request experience that runs in a phone browser with no app install, and an interactive layer (requests, announcements, live mic, screens, function host handover) shipped as part of the platform rather than sold as separate products.
+eJukebox differentiates on Australian ownership and Australian support, no lock-in contracts, no proprietary hardware requirement because it is cloud based and vendor agnostic and reuses screens and players a venue already owns, entry pricing from $49 a month with two zones included where most providers charge per zone, radio style human curation and broadcast grade audio processing rather than algorithmic shuffling, a patron request experience that runs in a phone browser with no app install, and an interactive layer (requests, announcements, live mic, screens, function host handover) shipped as part of the platform rather than sold as separate products.
 
 Note: WhisperScape was a former trading name for this same service and is not a separate competitor. Some directories, including OneMusic's supplier roster, may still list the older name.
 

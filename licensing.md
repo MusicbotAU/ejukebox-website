@@ -394,6 +394,13 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <div class="lic-problem-content">
       <h4><i class="fas fa-ban"></i> Spotify Says No</h4>
       <p>Spotify's own terms and conditions <strong>explicitly forbid</strong> using a personal subscription for commercial or public use. Even if you pay for a OneMusic licence separately, Spotify still hasn't given <strong>you</strong> permission to use <strong>their service</strong> commercially. A OneMusic licence covers the music rights, but it <strong>cannot override</strong> Spotify's terms of service. You're breaching your contract with Spotify.</p>
+      <figure style="margin:18px 0 0; padding:0;">
+        <img src="blobs/spotify_license.png" alt="Screenshot of Spotify's terms of use stating the service is for personal, non-commercial use only" style="width:100%; max-width:560px; height:auto; border-radius:10px; border:1px solid rgba(255,255,255,.14); display:block;">
+        <figcaption style="margin-top:10px; font-size:.86rem; line-height:1.5; color:var(--ejm-mut, #8d97ab);">
+          Straight from Spotify's own terms - <strong style="color:var(--ejm-soft, #c3cad8);">"personal, non-commercial use"</strong>.
+          This isn't our rule and it isn't OneMusic's. It's Spotify's, and it applies no matter what else you pay for.
+        </figcaption>
+      </figure>
     </div>
   </div>
 
