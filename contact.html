@@ -37,7 +37,7 @@ schema_page_type: ContactPage
 
 <div class="ct-form-section">
   <div class="ct-form-head">
-    <h2>Or tell us about your room</h2>
+    <h2>Or just tell us what you need</h2>
     <p>Nothing here is compulsory beyond your name and how to reach you. The rest just means that when we call, we already understand your venue and can talk about what actually suits it, rather than starting from scratch.</p>
   </div>
 
@@ -179,6 +179,10 @@ schema_page_type: ContactPage
         <input type="checkbox" id="ctCallback" name="callback" checked>
         <span>Happy for us to give you a call back</span>
       </label>
+      <div class="ct-hp" aria-hidden="true">
+        <label for="ctWebsite">Leave this field empty</label>
+        <input type="text" id="ctWebsite" name="website" tabindex="-1" autocomplete="off">
+      </div>
     </fieldset>
 
     <div class="ct-submit-row">
@@ -342,6 +346,7 @@ schema_page_type: ContactPage
 .ct-consent { display:flex; align-items:center; gap:11px; margin-top:16px; cursor:pointer;
   color:rgba(255,255,255,.82); font-size:.95rem; }
 .ct-consent input { width:19px; height:19px; accent-color:#6366f1; cursor:pointer; }
+.ct-hp { position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
 
 .ct-submit-row { text-align:center; margin-top:30px; }
 .ct-submit { display:inline-flex; align-items:center; gap:11px; border:0; cursor:pointer;
@@ -417,7 +422,7 @@ schema_page_type: ContactPage
   // works today with no backend at all. When an endpoint is ready (an Azure
   // Function alongside the trial one is the obvious home), put its URL here and
   // the form starts posting silently instead. It should accept a JSON POST.
-  var CONTACT_ENDPOINT = '';
+  var CONTACT_ENDPOINT = 'https://ejukebox-contact-form.azurewebsites.net/api/ContactFormWebhook';
   // ---------------------------------------------------------------------------
 
   var form    = document.getElementById('ctForm');
@@ -445,6 +450,7 @@ schema_page_type: ContactPage
       features:  ticked('features'),
       message:   val('ctMessage'),
       callback:  document.getElementById('ctCallback').checked,
+      website:   val('ctWebsite'),
       source:    'Sent from the eJukebox website - Contact page'
     };
   }
