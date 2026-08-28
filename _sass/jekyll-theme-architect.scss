@@ -5636,13 +5636,20 @@ a.hero-image-badge:hover {
   margin-right: 8px;
 }
 
-a.test-drive-badge {
+/* The global `a { color: ... !important }` rule further up would otherwise turn
+   this pill's label indigo, and pink on hover - the same pink as the pill. */
+a.test-drive-badge,
+a.test-drive-badge:hover,
+a.test-drive-badge:focus {
+  color: #fff !important;
   text-decoration: none;
+}
+
+a.test-drive-badge {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 a.test-drive-badge:hover {
-  color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(236, 72, 153, 0.35);
 }
