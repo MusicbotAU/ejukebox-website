@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Song Request Portal | Customer Music Requests for Pubs & Clubs
+title: Song Request Portal for Pubs & Clubs
 description: Let customers request songs at your venue. eJukebox request portal for pubs, clubs & functions. Easy QR code access, staff-controlled approval system.
 schema_service: Song request portal for pubs, clubs and functions
 service_type: Interactive song request system for venues

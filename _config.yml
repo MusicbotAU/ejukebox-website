@@ -18,7 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: eJukebox | Premium Music Solutions for Venues
+# Appended by jekyll-seo-tag to EVERY page title as " | eJukebox". Keep it to the
+# bare brand: the plugin strips pipes from this value, so anything longer was
+# being welded onto all 35 page titles and pushing them past what Google shows.
+title: eJukebox
 email: info@ejukebox.com.au
 description: >-
   Australia's premier music solution for pubs, clubs, bars, venues, cafes & retail outlets. 

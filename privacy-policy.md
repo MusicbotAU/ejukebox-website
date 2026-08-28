@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Privacy Policy
+description: How eJukebox and Musicbot Pty Ltd collect, use and protect personal information, including contact form data and your rights under Australian law.
 ---
 
 # Privacy Policy 

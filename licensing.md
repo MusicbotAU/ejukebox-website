@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Music Licensing for Business | APRA AMCOS Compliance Australia
-description: Music licensing made simple for Australian businesses. OneMusic, APRA AMCOS and PPCA explained for pubs, clubs, cafes & retail, and how a commercial supplier puts you on a cheaper tier. Save hundreds vs Spotify.
+title: Music Licensing for Business, OneMusic & APRA
+description: OneMusic, APRA AMCOS and PPCA explained for Australian pubs, clubs, cafes and retail, and how a commercial supplier puts you on a cheaper tier.
 schema_service: Music licensing guidance for Australian businesses
 service_type: OneMusic Australia licensing guidance and fee administration
 last_reviewed: 2026-08-28

@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Bells Hotel
+title: Bells Hotel Custom Stream Case Study
+description: How we built a 1500-song custom stream for Bells Hotel, sorted by popularity from track metadata to match the venue brief. A worked example.
 ---
 
 ## The brief for Bells Hotel

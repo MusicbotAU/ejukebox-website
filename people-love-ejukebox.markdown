@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Why People Love eJukebox | Customer Testimonials & Reviews
-description: See why pubs, clubs & cafes love eJukebox. Customer testimonials and reviews. Australia's favourite music solution for hospitality venues. Start your free trial.
+title: Why People Love eJukebox, Reviews
+description: See why Australian pubs, clubs and cafes love eJukebox. Testimonials and reviews from venues running it every day. Start your free trial.
 ---
 
 <div class="love-hero">

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Core & Complete | Jukebox with Customer Song Requests for Pubs & Clubs
-description: The full eJukebox for venues. Customer song requests from any phone, AI song search, two zones, voice announcements and screens. Core $169/mo, Complete $299/mo ex GST. Free 30-day trial.
+title: Core & Complete, Jukebox with Song Requests
+description: Customer song requests from any phone, AI song search, two zones, voice announcements and screens. Core $169/mo, Complete $299/mo ex GST.
 ---
 
 <div class="love-hero">

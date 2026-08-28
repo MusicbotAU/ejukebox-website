@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Free 7-Day Streaming Trial | Try eJukebox Music for Your Venue
-description: Free 7-day streaming trial of eJukebox. Pick a channel, get a private ad-free stream URL by SMS, no credit card. Streaming only - for song requests, ask about the 30-day in-venue trial.
+title: Free 7-Day Music Trial for Your Venue
+description: Free 7-day streaming trial. Pick a channel and get a private ad-free stream URL by SMS, no credit card. Ask about the 30-day in-venue trial.
 schema_service: Free 7-day eJukebox music trial for Australian venues
 service_type: Free trial of a commercial background music and jukebox service
 howto:

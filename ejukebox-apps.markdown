@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Download eJukebox Apps | Android & iOS Jukebox Control
+title: eJukebox Apps for Android & iOS
 description: Download eJukebox apps for Android & iOS. Control your pub, club or cafe music from your phone. Song requests, channel management & remote control.
 schema_app:
   name: eJukebox Apps
