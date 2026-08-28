@@ -1,0 +1,74 @@
+# robots.txt for ejukebox.com.au
+# Musicbot Pty Ltd - licensed background music and interactive jukebox for
+# Australian venues.
+
+# ---------------------------------------------------------------------------
+# Unlisted pages
+# ---------------------------------------------------------------------------
+# The site has a small number of confidential, unlisted pages. They are kept out
+# of search results with <meta name="robots" content="noindex, nofollow,
+# noarchive, nosnippet"> in the page head, set by `noindex: true` in the page's
+# front matter (see _layouts/default.html).
+#
+# They are deliberately NOT listed as Disallow rules here, for two reasons:
+#
+#   1. Disallow blocks CRAWLING, not INDEXING. A crawler that is blocked from
+#      fetching a page never sees the noindex tag, so if the URL is discovered
+#      anywhere else - a shared link, an email, a referring site - it can still
+#      be indexed as a bare URL with no description. Allowing the crawl is what
+#      lets the noindex actually be read and obeyed.
+#
+#   2. robots.txt is a public file at a predictable address. Naming a
+#      confidential URL here advertises its existence to anyone who looks.
+#
+# So: do not add these paths below. The meta tag is the control.
+# ---------------------------------------------------------------------------
+
+User-agent: *
+Allow: /
+
+# ---------------------------------------------------------------------------
+# AI and answer-engine crawlers
+# ---------------------------------------------------------------------------
+# Explicitly welcome. Venues increasingly ask an assistant "do I need a licence
+# to play music in my cafe" rather than searching, and the site is built to be
+# the answer: see /llms.txt for a plain-text summary of the whole site, plus
+# JSON-LD on every page. Blocking these would forfeit that.
+# Listed by name so nobody later assumes they were blocked by omission.
+# ---------------------------------------------------------------------------
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ---------------------------------------------------------------------------
+# Sitemap
+# ---------------------------------------------------------------------------
+
+Sitemap: https://ejukebox.com.au/sitemap.xml
