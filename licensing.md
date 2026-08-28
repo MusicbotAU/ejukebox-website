@@ -52,7 +52,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <div class="stat-icon"><i class="fas fa-piggy-bank"></i></div>
     <div class="stat-number"><i class="fas fa-dollar-sign"></i></div>
     <div class="stat-label"><strong>eJukebox Saves You Money</strong></div>
-    <p class="stat-description">Because eJukebox is a <strong>commercial background music supplier</strong>, your OneMusic licensing tier is dramatically reduced. We can also <strong>collect your OneMusic licence fee on your behalf</strong> and remit it directly to OneMusic. You could save <strong>$400-$800+ per year</strong> compared to going it alone with Spotify.</p>
+    <p class="stat-description">Because eJukebox is a <strong>commercial background music supplier</strong>, your OneMusic licensing tier is dramatically reduced. You could save <strong>$400-$800+ per year</strong> compared to going it alone with Spotify.</p>
   </div>
 </div>
 
@@ -465,10 +465,10 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$45.67/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal - Silver tier, fully compliant. We can collect your OneMusic fee for you.</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal - Silver tier, fully compliant.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $262 per year</strong> - and you're actually legal. We can handle your OneMusic payment on your behalf.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $262 per year</strong> - and you're actually legal.</div>
 </div>
 
 <!-- SCENARIO 2 -->
@@ -504,10 +504,10 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$54.33/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Silver tier - fully compliant, professional sound. We can collect your OneMusic fee for you.</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Silver tier - fully compliant, professional sound.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $261 per year</strong> - plus broadcast-quality sound and no ads. We handle your OneMusic payment on your behalf.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $261 per year</strong> - plus broadcast-quality sound and no ads.</div>
 </div>
 
 <!-- SCENARIO 3 -->
@@ -546,7 +546,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">from $248/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, professional entertainment system. We can collect your OneMusic fee for you.</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, professional entertainment system.</div>
     </div>
   </div>
   <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
@@ -615,7 +615,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
           <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">from $376/mo</td></tr>
         </tbody>
       </table>
-      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, professional entertainment system. We can collect your OneMusic fee for you.</div>
+      <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal, professional entertainment system.</div>
     </div>
   </div>
   <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
@@ -683,8 +683,8 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
 
   <div class="lic-savings-card">
     <div class="lic-savings-icon"><i class="fas fa-handshake"></i></div>
-    <h4>We Collect Your OneMusic Fee For You</h4>
-    <p>Don't want the hassle of dealing with OneMusic directly? We can <strong>collect your OneMusic licence fee on your behalf</strong> and send it straight to OneMusic for you. One less thing to worry about - we take care of it so you can focus on running your business.</p>
+    <h4>We'll Help You Work Out What You Owe</h4>
+    <p>Your OneMusic licence stays in your name, but you don't have to guess at the tier. Tell us your venue type, floor area, screens and audio zones and we'll walk you through exactly which OneMusic package applies and what changes once you're on a commercial supplier.</p>
   </div>
 
 </div>
@@ -762,7 +762,7 @@ description: Music licensing made simple for Australian businesses. APRA AMCOS c
     <div class="stat-icon"><i class="fas fa-sliders-h"></i></div>
     <div class="stat-number"><i class="fas fa-broadcast-tower"></i></div>
     <div class="stat-label"><strong>Better Experience</strong></div>
-    <p class="stat-description">Professionally curated playlists, consistent broadcast-quality volume, dayparting, no ads, family-friendly content, and optional customer song requests. It just sounds better.</p>
+    <p class="stat-description">Professionally curated channels, consistent broadcast-quality volume, dayparting, no ads, family-friendly content, and optional customer song requests. It just sounds better.</p>
   </div>
   
   <div class="stat-card warning">

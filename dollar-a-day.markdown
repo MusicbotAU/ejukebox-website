@@ -81,9 +81,9 @@ description: Background music for business from just $1/day. Australia's most af
     <div class="reason-card">
       <div class="reason-number">1</div>
       <div class="reason-content">
-        <h3><i class="fas fa-list-music"></i> Professionally Curated Playlists</h3>
-        <p>Our playlists aren't random. We closely monitor what radio stations in Sydney are playing, logging every song and tracking how often and at what times they play.</p>
-        <p class="highlight">Every fortnight, we use this data to generate high-quality, radio-station-style playlists with professional radio station automation software. Each channel sounds just like its closest radio station match.</p>
+        <h3><i class="fas fa-list-music"></i> Professionally Curated Channels</h3>
+        <p>Our channels aren't random. We closely monitor what radio stations in Sydney are playing, logging every song and tracking how often and at what times they play.</p>
+        <p class="highlight">Every fortnight, we use this data to generate high-quality, radio-station-style channels with professional radio station automation software. Each channel sounds just like its closest radio station match.</p>
       </div>
     </div>
     

@@ -47,7 +47,7 @@ tiers:
       - 2 zones included
       - Song Requests and the full interaction layer
       - On-site player, keeps playing offline (one-off hardware cost)
-      - We collect and remit your OneMusic licence
+      - We collect and remit your OneMusic licence (pubs & clubs)
     allows_addons: true
   - id: complete
     name: Complete
@@ -151,7 +151,7 @@ included:
     name: OneMusic administration
     category: Licensing
     tiers: [core, complete]
-    desc: We can collect your OneMusic licence fee on your behalf and remit it straight to OneMusic, so the paperwork stops being your problem. The licence fee itself is separate - see the licensing section below.
+    desc: For pubs and clubs we can collect your OneMusic licence fee on your behalf and remit it straight to OneMusic, so the paperwork stops being your problem. The licence fee itself is separate - see the licensing section below.
     video:
 
 # ---- Paid add-ons (on top of Core) -----------------------------------------

@@ -34,9 +34,9 @@ description: Complete jukebox package for pubs, clubs & venues. Customer song re
     <div class="gallery-content">
       <div class="playlist-badge">
         <i class="fas fa-list-music"></i>
-        12 Curated Playlists
+        12 Curated Channels
       </div>
-      <p>With 12 curated playlists to choose from, your customers can use their smartphones to request any song they like from the currently selected playlist.</p>
+      <p>With 12 curated channels to choose from, your customers can use their smartphones to request any song they like from the currently selected channel.</p>
     </div>
   </div>
   

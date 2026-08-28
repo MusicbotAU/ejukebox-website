@@ -210,24 +210,22 @@ hero:
 
 <div class="test-drive-section">
   <div class="test-drive-content">
-    <span class="test-drive-badge"><i class="fas fa-headphones"></i> Listen Now</span>
     <h2>Test Drive eJukebox Before You Sign Up</h2>
-    <p><strong>eJukebox</strong> is now an online radio station and has signed with iHeart Radio. We are streaming across the planet, commercial-free music 24/7 showing exactly what <strong>eJukebox</strong> is all about.</p>
-    <a href="./stream-us.html" class="iheart-link">
-      <img src="blobs/iHeartRadio_logo.png" alt="Listen on iHeart Radio">
-    </a>
+    <p>Hear the real thing before you spend a cent. Our channels stream live, commercial free, 24 hours a day, exactly as they would sound in your venue.</p>
+    <a href="./stream-us.html" class="test-drive-badge"><i class="fas fa-headphones"></i> Listen Now</a>
+    <p class="test-drive-lead"><strong>With an eJukebox solution you:</strong></p>
     <div class="test-drive-features">
       <div class="test-feature">
         <i class="fas fa-check-circle"></i>
-        <span>The music played is exactly the same as what you hear on commercial radio so that you don't alienate your customers</span>
+        <span>Play the same music your customers already hear on commercial radio, so the room never feels alienated</span>
       </div>
       <div class="test-feature">
         <i class="fas fa-check-circle"></i>
-        <span>You won't be slapped with a law suit by playing music with swearing or explicit lyrics</span>
+        <span>Never get caught out by swearing or explicit lyrics, because every channel is filtered clean and family friendly</span>
       </div>
       <div class="test-feature">
         <i class="fas fa-check-circle"></i>
-        <span>You're not breaking the law by playing music without a licence e.g. Spotify can't be played in public</span>
+        <span>Stay on the right side of the law. A personal Spotify account cannot legally be played in public, under Spotify's own terms</span>
       </div>
     </div>
   </div>

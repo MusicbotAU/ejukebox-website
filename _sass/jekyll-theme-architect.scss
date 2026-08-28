@@ -5625,6 +5625,25 @@ a.hero-image-badge:hover {
   margin-right: 8px;
 }
 
+a.test-drive-badge {
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.test-drive-badge:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.35);
+}
+
+.test-drive-content > p.test-drive-lead {
+  color: #fff;
+  font-size: 1.05em;
+  max-width: 800px;
+  margin: 30px auto 15px;
+  text-align: left;
+}
+
 .test-drive-content h2 {
   font-size: 2em;
   color: #fff;

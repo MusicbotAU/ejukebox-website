@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Jukebox Controller App | Smartphone Music Control for Venues
-description: Control your venue's music from your smartphone. eJukebox controller app for pubs, clubs & cafes. Skip tracks, adjust volume, manage playlists remotely.
+description: Control your venue's music from your smartphone. eJukebox controller app for pubs, clubs & cafes. Skip tracks, adjust volume, manage channels remotely.
 ---
 
 <div class="controller-hero">
@@ -31,9 +31,9 @@ description: Control your venue's music from your smartphone. eJukebox controlle
       <div class="guardrail-item recommended">
         <span class="guardrail-number">2</span>
         <div>
-          <p>Allow punters to request <strong>any</strong> song from the currently selected playlist</p>
+          <p>Allow punters to request <strong>any</strong> song from the currently selected channel</p>
           <span class="recommended-badge"><i class="fas fa-star"></i> Recommended - Set & Forget</span>
-          <p class="guardrail-desc">You set your desired playlist, then customers are happy customers. They can choose their drink, their food and choose their favourite song.</p>
+          <p class="guardrail-desc">You set your desired channel, then customers are happy customers. They can choose their drink, their food and choose their favourite song.</p>
         </div>
       </div>
     </div>

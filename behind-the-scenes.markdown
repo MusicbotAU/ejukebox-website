@@ -30,14 +30,14 @@ description: See eJukebox installed at pubs, clubs & venues. Zero-touch cloud ju
       <i class="fas fa-microchip"></i>
       <div>
         <h4>Compact & Powerful</h4>
-        <p>Maybe small, but these little devices are state of the art running the latest <strong>Windows 10</strong> OS.</p>
+        <p>Small enough to hide behind a rack, and powerful enough to run the whole room. Centrally managed and remotely updated, so nobody at the venue ever has to touch one.</p>
       </div>
     </div>
     <div class="tech-item">
       <i class="fas fa-check-circle"></i>
       <div>
         <h4>Ultra Reliable</h4>
-        <p>These little <strong>Intel</strong> compute sticks have been installed since 2018 and haven't had any issues at all. Reliability is due to the solid state nature of the device with an Intel chipset.</p>
+        <p>Our players have been running in venues since 2018 without a single issue. Reliability comes down to the solid state nature of the hardware, with no moving parts to fail.</p>
       </div>
     </div>
     <div class="tech-item">

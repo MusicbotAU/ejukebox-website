@@ -20,7 +20,7 @@ benefits:
     text: Daypart from easy afternoon trad to high-energy singalong nights that keep the room full and the bar busy.
   - icon: fa-certificate
     title: Fully licensed
-    text: Your OneMusic licence is included, so every Irish track you play is legal, with no separate paperwork.
+    text: As a commercial background music supplier, eJukebox puts your bar on a lower OneMusic tier, and for pubs and clubs we can collect and remit the fee for you.
 spotlight_title: St Patrick's Day music, sorted
 spotlight_body: >-
   Every March, St Patrick's Day turns Irish bars into the busiest venues in the country. eJukebox gives you a ready-made St Patrick's Day channel of Irish anthems, drinking songs and crowd favourites, so you can pack the room without building a playlist from scratch. Switch it on for the week and let the requests roll in.
@@ -30,5 +30,5 @@ faqs:
   - q: Do you have a St Patrick's Day playlist?
     a: Yes. There is a dedicated St Patrick's Day channel you can switch on for the occasion, loaded with the anthems and singalongs that fill a room.
   - q: Do I need a licence to play Irish music in my pub?
-    a: Yes. Australian venues need a OneMusic licence to play recorded music in public, and it is included in your eJukebox subscription.
+    a: Yes. Australian venues need a OneMusic licence to play recorded music in public, and you hold that licence yourself. Because eJukebox is a commercial background music supplier your OneMusic tier is lower, and for pubs and clubs we can collect the fee and remit it directly.
 ---
