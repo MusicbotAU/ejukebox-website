@@ -61,6 +61,9 @@ defaults:
 # excluded here. Jekyll 4 replaces its default exclude list when this key is
 # set, so the usual defaults are repeated below.
 exclude:
+  # SEO working notes and the audit script. Underscore directories are ignored
+  # by Jekyll anyway; listed here so the intent is explicit.
+  - _seo/
   - form/
   - .sass-cache/
   - .jekyll-cache/
