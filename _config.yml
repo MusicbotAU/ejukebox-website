@@ -23,11 +23,17 @@
 # being welded onto all 35 page titles and pushing them past what Google shows.
 title: eJukebox
 email: info@ejukebox.com.au
+# Site-wide fallback title/description. jekyll-seo-tag uses these on any page
+# that sets no `title:`/`description:` of its own, and _includes/schema.html uses
+# `description` for the WebSite node on every page - so keep it factual and under
+# ~160 characters.
 description: >-
-  Australia's premier music solution for pubs, clubs, bars, venues, cafes & retail outlets. 
-  Cloud-powered jukebox with smartphone control, song requests, and professionally curated channels.
-  Licensed, automated, and affordable at $115/month.
+  Australia's licensed music solution for pubs, clubs, bars, cafes and retail. Cloud jukebox with phone control and customer song requests, from $49/month.
 baseurl: "" # the subpath of your site, e.g. /blog
+# Australian English. jekyll-seo-tag defaults og:locale to en_US when this is
+# unset, and _layouts/default.html reads it for <html lang>. Written with a
+# hyphen (BCP 47); seo-tag converts it to en_AU for Open Graph.
+lang: en-AU
 url: "https://ejukebox.com.au" # the base hostname & protocol for your site
 twitter_username: ejukeboxmusic
 github_username: ejukebox
