@@ -5,6 +5,47 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-08-31 - Homepage retargeted from "music for business" to "jukebox"
+
+**Homepage `title` and hero `h1` both led on "music for business".** Semrush AU
+volume for that phrase is 70/mo at KD 33, and `/licensing.html` already ranks for
+it at position 42, so the homepage was competing with our own page for a term
+neither ranks well for.
+
+The homepage's only real traction is the jukebox cluster: `jukebox` (2,400-3,600
+/mo) at position 42, `the jukebox` (170-320/mo) at 38, and `jukebox purchase
+australia` (70/mo) at 36. All three land on `/`. Every other ranking the domain
+holds is on `/licensing.html`.
+
+- `title`: "Music for Business Australia, Pubs to Retail" -> "Jukebox Music for
+  Pubs, Clubs, Cafes & Retail" (56 chars with the appended brand).
+- `h1`: "Music for Business: Pubs, Clubs, Cafes & Retail" -> "Jukebox &
+  Background Music for Pubs, Clubs, Cafes & Retail".
+
+"Background music" stays in the H1 because "jukebox" alone reads as
+interactive-only, when half the product is the curated daytime playlist. The
+venue list stays because it is the vocabulary AU operators use. "Licensed" and
+"Australian" are deliberately absent from both: the hero eyebrow directly above
+the H1 already says "Licensed music for Australian venues".
+
+Caveat to revisit: bare `jukebox` is tagged informational and a good share of it
+is people after physical machines, party hire and the Jukebox app. The venue
+qualifiers are what make the term worth holding.
+
+**Not yet verified visually.** The H1 is 58 characters against the old 47 and
+likely takes an extra wrapped line. Chrome headless could not screenshot the page
+to confirm (see the dead-CDN note below). If the wrap is poor, the fallback is
+"Jukebox & Background Music for Your Venue" (41 chars); the title tag and eyebrow
+carry the venue keywords regardless.
+
+**Open bug found while testing.** Every page loads
+`https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js`. MaxCDN's open-source
+CDN was retired years ago and the host does not resolve, so the request hangs
+until it times out and the window load event never fires. It also blocks headless
+rendering entirely. The shiv only ever mattered for IE8. It should be removed.
+
+---
+
 ## 2026-08-29 - Locale, metadata audit, SEO folder
 
 **Australian English locale.** `og:locale` was `en_US` and `<html lang>` was

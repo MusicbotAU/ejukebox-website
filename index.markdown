@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Music for Business Australia, Pubs to Retail
+title: Jukebox Music for Pubs, Clubs, Cafes & Retail
 description: Australia's jukebox and background music service for pubs, clubs, bars, cafes and retail. Licensed streaming from $49/mo. Free trial, no credit card.
 hero:
   image: /blobs/eJukebox_fun04.jpg
   eyebrow: Licensed music for Australian venues
-  h1: "Music for Business: Pubs, Clubs, Cafes & Retail"
+  h1: "Jukebox & Background Music for Pubs, Clubs, Cafes & Retail"
   sub: Professionally curated, fully licensed music your staff control from their phone and your customers request from theirs.
   form: true
 ---

@@ -2,28 +2,6 @@
 # Musicbot Pty Ltd - licensed background music and interactive jukebox for
 # Australian venues.
 
-# ---------------------------------------------------------------------------
-# Unlisted pages
-# ---------------------------------------------------------------------------
-# The site has a small number of confidential, unlisted pages. They are kept out
-# of search results with <meta name="robots" content="noindex, nofollow,
-# noarchive, nosnippet"> in the page head, set by `noindex: true` in the page's
-# front matter (see _layouts/default.html).
-#
-# They are deliberately NOT listed as Disallow rules here, for two reasons:
-#
-#   1. Disallow blocks CRAWLING, not INDEXING. A crawler that is blocked from
-#      fetching a page never sees the noindex tag, so if the URL is discovered
-#      anywhere else - a shared link, an email, a referring site - it can still
-#      be indexed as a bare URL with no description. Allowing the crawl is what
-#      lets the noindex actually be read and obeyed.
-#
-#   2. robots.txt is a public file at a predictable address. Naming a
-#      confidential URL here advertises its existence to anyone who looks.
-#
-# So: do not add these paths below. The meta tag is the control.
-# ---------------------------------------------------------------------------
-
 User-agent: *
 Allow: /
 
