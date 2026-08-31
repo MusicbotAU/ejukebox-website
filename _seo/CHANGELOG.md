@@ -33,16 +33,22 @@ is people after physical machines, party hire and the Jukebox app. The venue
 qualifiers are what make the term worth holding.
 
 **Not yet verified visually.** The H1 is 58 characters against the old 47 and
-likely takes an extra wrapped line. Chrome headless could not screenshot the page
-to confirm (see the dead-CDN note below). If the wrap is poor, the fallback is
-"Jukebox & Background Music for Your Venue" (41 chars); the title tag and eyebrow
-carry the venue keywords regardless.
+likely takes an extra wrapped line. Chrome headless would not screenshot the page
+locally, cause not established. If the wrap is poor, the fallback is "Jukebox &
+Background Music for Your Venue" (41 chars); the title tag and eyebrow carry the
+venue keywords regardless.
 
-**Open bug found while testing.** Every page loads
-`https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js`. MaxCDN's open-source
-CDN was retired years ago and the host does not resolve, so the request hangs
-until it times out and the window load event never fires. It also blocks headless
-rendering entirely. The shiv only ever mattered for IE8. It should be removed.
+**Removed the html5shiv.** `_layouts/default.html` loaded
+`https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js`, which taught IE8 to
+style HTML5 elements. Two reasons it is gone: IE8 is long dead, and MaxCDN's
+open-source CDN was retired years ago, so the URL would fail even for the
+browser it targeted.
+
+Worth recording precisely, because it was first written up here as a
+performance bug and it was not one: the tag sat inside
+`<!--[if lt IE 9]>...<![endif]-->`. Conditional comments are inert in every
+browser except old IE, so no modern browser ever requested it and no page load
+was ever delayed by it. It was dead weight in the markup, not a hanging request.
 
 ---
 
