@@ -225,11 +225,11 @@ faqs:
     <div class="lic-tier-header">
       <div class="lic-tier-icon"><i class="fas fa-medal"></i></div>
       <h3>Silver</h3>
-      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox $1/Day Plan</span>
+      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox - Multiple Devices</span>
     </div>
     <div class="lic-tier-desc">
       <p>For businesses using a <strong>commercial background music supplier</strong> (like eJukebox), CDs, internet radio, or terrestrial radio/TV. No personal streaming. Unlimited devices.</p>
-      <p><strong><i class="fas fa-star" style="color:#ffd700"></i> This is the licence tier you get with the eJukebox $1/Day plan.</strong></p>
+      <p><strong><i class="fas fa-star" style="color:#ffd700"></i> This is the licence tier you get with eJukebox if your venue plays through more than one device.</strong></p>
     </div>
     <table class="lic-rate-table">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
@@ -254,11 +254,11 @@ faqs:
     <div class="lic-tier-header">
       <div class="lic-tier-icon"><i class="fas fa-feather-alt"></i></div>
       <h3>Silver Lite</h3>
-      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox Full Package</span>
+      <span class="lic-tier-tag lic-tag-ejukebox"><i class="fas fa-check"></i> eJukebox - Single Device</span>
     </div>
     <div class="lic-tier-desc">
       <p>Same as Silver but limited to a <strong>single device</strong>. Perfect for small businesses with just one speaker or player.</p>
-      <p><strong><i class="fas fa-star" style="color:#ffd700"></i> This is the licence tier you get with the eJukebox Full Package.</strong></p>
+      <p><strong><i class="fas fa-star" style="color:#ffd700"></i> This is the licence tier you get with eJukebox if your venue plays through a single device.</strong></p>
     </div>
     <table class="lic-rate-table">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
@@ -305,7 +305,7 @@ faqs:
   <div class="lic-callout-icon"><i class="fas fa-lightbulb"></i></div>
   <div class="lic-callout-body">
     <h4>The Key Takeaway for Retail</h4>
-    <p>If you use a <strong>commercial background music supplier like eJukebox</strong>, you qualify for the cheaper <strong>Silver</strong> (eJukebox $1/Day plan) or <strong>Silver Lite</strong> (eJukebox Full Package) tier instead of the expensive Gold package. If you use Spotify or similar personal streaming, you're stuck with <strong>Gold</strong> - and you're still breaking Spotify's rules.</p>
+    <p>If you use a <strong>commercial background music supplier like eJukebox</strong>, you qualify for the cheaper <strong>Silver</strong> tier - or <strong>Silver Lite</strong> if you play through a single device - instead of the expensive Gold package. If you use Spotify or similar personal streaming, you're stuck with <strong>Gold</strong> - and you're still breaking Spotify's rules.</p>
   </div>
 </div>
 
@@ -517,16 +517,16 @@ faqs:
       <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Route</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>eJukebox $1/day plan (Silver licence tier)</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td><a href="./products.html">eJukebox Solo</a> (Silver licence tier), ex GST</td><td class="lic-vs-amount">from $588/yr</td></tr>
           <tr><td>OneMusic Silver (1-50 m²) - paid separately</td><td class="lic-vs-amount">from $183/yr</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $548/yr</strong></td></tr>
-          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$45.67/mo</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $771/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">from $64.25/mo</td></tr>
         </tbody>
       </table>
       <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> 100% legal - Silver tier, fully compliant.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $262 per year</strong> - and you're actually legal.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Your OneMusic licence drops from <strong>$642/yr on Gold to $183/yr on Silver - a $459/yr saving</strong> - and you're actually legal.</div>
 </div>
 
 <!-- SCENARIO 2 -->
@@ -556,16 +556,16 @@ faqs:
       <div class="lic-vs-label"><i class="fas fa-music"></i> eJukebox Route</div>
       <table class="lic-vs-table">
         <tbody>
-          <tr><td>eJukebox $1/day plan (Silver licence tier)</td><td class="lic-vs-amount">$365/yr</td></tr>
+          <tr><td><a href="./products.html">eJukebox Solo</a> (Silver licence tier), ex GST</td><td class="lic-vs-amount">from $588/yr</td></tr>
           <tr><td>OneMusic Silver (51-150 m²) - paid separately</td><td class="lic-vs-amount">from $287/yr</td></tr>
-          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $652/yr</strong></td></tr>
-          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">$54.33/mo</td></tr>
+          <tr class="lic-vs-total"><td><strong>Total per year</strong></td><td class="lic-vs-amount"><strong>from $875/yr</strong></td></tr>
+          <tr class="lic-vs-monthly"><td>Per month</td><td class="lic-vs-amount">from $72.92/mo</td></tr>
         </tbody>
       </table>
       <div class="lic-vs-verdict lic-verdict-good"><i class="fas fa-check-circle"></i> Silver tier - fully compliant, professional sound.</div>
     </div>
   </div>
-  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Potential saving: <strong>up to $261 per year</strong> - plus broadcast-quality sound and no ads.</div>
+  <div class="lic-saving-banner"><i class="fas fa-piggy-bank"></i> Your OneMusic licence drops from <strong>$745/yr on Gold to $287/yr on Silver - a $458/yr saving</strong> - plus broadcast-quality sound and no ads.</div>
 </div>
 
 <!-- SCENARIO 3 -->
@@ -628,8 +628,8 @@ faqs:
   <div class="lic-callout lic-callout-info" style="margin-top: 10px;">
     <div class="lic-callout-icon"><i class="fas fa-piggy-bank"></i></div>
     <div class="lic-callout-body">
-      <h4>On a Tight Budget? The $1/Day Plan Saves You Money</h4>
-      <p>Our <strong><a href="./dollar-a-day.html">$1/Day plan</a></strong> ($365/yr) brings your total to just <strong>$1,778/yr - saving $274/yr vs Spotify</strong> - with broadcast-quality, ad-free, fully licensed background music. No customer song requests, but still beats Spotify on sound quality, legality, and price. A great starting point before upgrading to the Full Package.</p>
+      <h4>On a Tight Budget? Start Smaller</h4>
+      <p>You don't have to start with everything. <strong><a href="./products.html">Solo</a></strong> gives you one curated, ad-free, fully licensed channel for a single area with no hardware to buy - broadcast-quality music without the interaction layer. It beats Spotify on sound quality, legality and licence tier, and you can move up to Core or Complete whenever the venue is ready.</p>
     </div>
   </div>
 </div>
@@ -698,8 +698,8 @@ faqs:
   <div class="lic-callout lic-callout-info" style="margin-top: 10px;">
     <div class="lic-callout-icon"><i class="fas fa-piggy-bank"></i></div>
     <div class="lic-callout-body">
-      <h4>On a Tight Budget? The $1/Day Plan Saves You Money</h4>
-      <p>Our <strong><a href="./dollar-a-day.html">$1/Day plan</a></strong> ($365/yr) brings your total to just <strong>$2,838/yr - saving $274/yr vs Spotify</strong> - with broadcast-quality, ad-free, fully licensed background music. A great starting point before upgrading to the Full Package when you're ready.</p>
+      <h4>On a Tight Budget? Start Smaller</h4>
+      <p>If the full system is more than you want to take on right now, <strong><a href="./products.html">Solo</a></strong> still gets you broadcast-quality, ad-free, fully licensed music in one area with nothing to install - and puts you on the same commercial-supplier footing with OneMusic. Move up to Core or Complete when you're ready for song requests and multi-zone.</p>
     </div>
   </div>
 </div>
@@ -715,7 +715,7 @@ faqs:
     <h4>We're a Commercial Background Music Supplier</h4>
     <p>This is the key difference. Because eJukebox is a <strong>licensed commercial background music supplier</strong> (listed on <a href="https://backgroundmusicguide.com.au/" target="_blank">backgroundmusicguide.com.au</a>), your OneMusic requirements change in your favour:</p>
     <ul>
-      <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Retail:</strong> You qualify for the cheaper <strong>Silver</strong> ($1/Day plan) or <strong>Silver Lite</strong> (Full Package) tier instead of Gold</li>
+      <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Retail:</strong> You qualify for the cheaper <strong>Silver</strong> tier - or <strong>Silver Lite</strong> on a single device - instead of Gold</li>
       <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Hospitality:</strong> You <strong>don't need Digital Copy/Delivery</strong> ($471/yr saved) because eJukebox is a commercial supplier</li>
       <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Everyone:</strong> No Spotify subscription needed ($168/yr saved)</li>
     </ul>
@@ -730,7 +730,7 @@ faqs:
   <div class="lic-savings-card">
     <div class="lic-savings-icon"><i class="fas fa-arrow-down"></i></div>
     <h4>Lower Licence Tier (Retail)</h4>
-    <p>For <strong>retail businesses</strong>, our <strong>$1/Day plan puts you on the Silver</strong> tier and our <strong>Full Package puts you on Silver Lite</strong> - both significantly cheaper than the Gold package you'd need with Spotify. That's a saving of <strong>$459 or more per year</strong> for a small shop alone. For <strong>pubs and hospitality</strong>, the same hospitality tier applies regardless of music source, but you save by not needing the Digital Copy/Delivery add-on.</p>
+    <p>For <strong>retail businesses</strong>, playing eJukebox instead of a personal streaming account puts you on the <strong>Silver</strong> tier - or <strong>Silver Lite</strong> if you play through a single device - both significantly cheaper than the Gold package you'd need with Spotify. That's a saving of <strong>$459 or more per year</strong> for a small shop alone. For <strong>pubs and hospitality</strong>, the same hospitality tier applies regardless of music source, but you save by not needing the Digital Copy/Delivery add-on.</p>
   </div>
 
   <div class="lic-savings-card">
@@ -825,9 +825,9 @@ faqs:
   
   <div class="stat-card warning">
     <div class="stat-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-    <div class="stat-number">$1</div>
-    <div class="stat-label"><strong>From Just $1/Day</strong></div>
-    <p class="stat-description">Our most affordable plan starts at just $1 per day - that's $365 per year for fully licensed, broadcast-quality background music. Less than a dollar a day for complete peace of mind.</p>
+    <div class="stat-number">$49</div>
+    <div class="stat-label"><strong>Plans From $49/mo</strong></div>
+    <p class="stat-description">Solo starts at $49 per month ex GST for fully licensed, broadcast-quality music in a single area, with nothing to install. Core and Complete add song requests, multiple zones and the full interaction layer.</p>
   </div>
 </div>
 

@@ -5,6 +5,72 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-09-04 - The $1/Day plan is gone from the site
+
+Marc spotted the retired `$1/Day` plan still being sold on `/licensing.html`.
+It is now removed everywhere. A sweep of the whole repo for `$1/day`, `$365`,
+`dollar a day` and `dollar-a-day` returns only the `permalink` in
+`dollar-a-day.markdown`, which stays so old inbound links keep redirecting.
+
+Twelve places changed, and two of them needed a decision rather than a
+find-and-replace:
+
+**The tier cards no longer map plans to OneMusic tiers.** They tagged Silver as
+"eJukebox $1/Day Plan" and Silver Lite as "eJukebox Full Package". By OneMusic's
+own definitions, quoted on the same page, the only difference between the two is
+device count: Silver is unlimited devices, Silver Lite is one. So the tags are now
+"eJukebox - Multiple Devices" and "eJukebox - Single Device". This is worth
+keeping: it is true straight from the source document, and it does not go stale
+the next time the plan line-up changes.
+
+**The retail scenarios lead on the licence saving, not the total.** They priced
+the eJukebox route at $365/yr and claimed "save up to $262/yr vs Spotify". Solo
+is $49/mo ex GST, so on the same arithmetic the total-cost saving collapses to
+about $39/yr and the old headline could not survive. Marc chose to price the
+scenarios honestly at Solo and move the headline onto the licence tier itself:
+a small shop's OneMusic bill drops from $642/yr on Gold to $183/yr on Silver, a
+$459/yr saving, and $745 to $287 on the 100 m² example. That is the page's actual
+thesis anyway, and it is the number the rest of the page already claims.
+
+The two "On a Tight Budget? The $1/Day Plan Saves You Money" callouts in the pub
+scenarios now point at Solo as the smaller starting point, with no price claim.
+The Bottom Line stat card went from "From Just $1/Day" to "Plans From $49/mo".
+
+Still open: the same two pub scenarios quote a "Full Package" at $130 and $170/mo
+that does not match `pricing.yml`. Logged in `open-items.md`.
+
+---
+
+## 2026-09-03 - Functions & events keyword research filed
+
+New `functions-events.md` in this folder: the keyword brief for the area of the
+business about to be built out. Distilled from the 1 Sep Keyword Planner drop
+(600 AU keywords, 8 clusters) plus the 28 Aug Search Console export. Raw files
+stay in OneDrive `Keywords/Data Drops/`, never in this repo, since this repo is
+the live public site.
+
+Three things worth carrying forward:
+
+**The cluster is greenfield.** Six months of Search Console holds nine
+impressions across every functions-shaped query the domain surfaced for, and
+`/functions-events/` and `/in-venue-screens/` have zero clicks between them.
+Nothing to protect, so no reason to be cautious about restructuring.
+
+**Photo booth is the target, attacked sideways.** `photo booths` is 22,200/mo at
+competition index 19 and grew 21% over the year. Intent is hire-a-booth for a
+night, so it will not convert on a product page; it converts on the comparison
+against a guest photo wall on the screen the venue already owns.
+
+**The wedding speech and toast clusters are dead, do not write for them.**
+539 keywords, down 45% and 36% in twelve months, near-uniformly. That decline
+shape is a cluster being absorbed by AI answers. It would have been the obvious
+content play and it is now a trap.
+
+Also logged in `open-items.md`: which of the three domains owns functions, events
+and screens. `ejukebox.tv/functions/` duplicates `/functions-events/`, all three
+domains are self-canonical, and the main site links to neither satellite. That
+decision blocks writing anything for this cluster.
+
 ## 2026-08-31 - Homepage retargeted from "music for business" to "jukebox"
 
 **Homepage `title` and hero `h1` both led on "music for business".** Semrush AU
