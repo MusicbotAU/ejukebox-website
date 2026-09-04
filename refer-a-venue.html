@@ -1,0 +1,472 @@
+---
+layout: default
+permalink: /refer-a-venue/
+title: Refer a Pub, Club or Cafe and Get Paid
+description: Know a venue that needs better music? Introduce them to eJukebox. If they stay three months, we pay you. No payroll, no sales experience, no cost to join.
+h1: Know a venue that deserves better music?
+
+# ---------------------------------------------------------------------------
+# HIDDEN UNTIL SIGNED OFF.
+# `noindex` below is driven by `referral.live` in _data/pricing.yml. While it is
+# false this page carries noindex/nofollow, emits no structured data at all
+# (schema.html bails on noindex), stays out of the nav and stays out of
+# sitemap.xml. Nothing here reaches Google or an AI assistant.
+#
+# TO GO LIVE, once the tax agent has signed off:
+#   1. _data/pricing.yml -> referral.live: true
+#   2. Add /refer-a-venue/ and /refer-a-venue-terms/ to sitemap.xml
+#   3. Add a nav or footer link if wanted (it is deliberately unlinked for now)
+# Everything else - title, description, FAQPage, HowTo - is already written and
+# switches on with it.
+# ---------------------------------------------------------------------------
+noindex: true
+sitemap: false
+hide_cta: true
+
+schema_page_type: WebPage
+
+# Rendered visibly further down AND turned into HowTo by _includes/schema.html,
+# from this one source, so the page and the structured data cannot disagree.
+howto:
+  name: How to refer a venue to eJukebox
+  steps:
+    - name: Put the venue up
+      text: Tell us the venue name and suburb through the form on this page. That registers it as yours. It takes about twenty seconds and you can do it standing in the place.
+    - name: Tell us if you have spoken to them
+      text: If you have already mentioned it to the publican or manager, say so and tell us who to ask for. A warm introduction goes to the top of our call list the same day.
+    - name: We do the rest
+      text: We call, we demonstrate it, we quote it, we install it. You are not selling anything and you never have to answer a question about music licensing.
+    - name: You get paid once they stay
+      text: We pay after the venue has actually paid its third invoice, and again at six months on a full venue install. If the venue never signs up, you owe us nothing and we owe you nothing.
+
+faqs:
+  - q: How much do I get paid for referring a venue to eJukebox?
+    a: A pub, club, hotel or restaurant that installs a full eJukebox system earns you $300, paid in two halves of $150. A streaming-only site such as a cafe, salon or shop earns you $75. If you are already an eJukebox customer yourself you can take 2 months credit on your own account instead.
+  - q: When do I get paid?
+    a: The first payment is made after the venue has paid its third monthly invoice, which is roughly three months after installation. On a full venue install the second half is paid after the sixth paid month. We pay on customers who stay, not on installations, because eJukebox has no lock-in contract and an install on its own is not yet a customer.
+  - q: Do I need an ABN to refer a venue?
+    a: No. If you have an ABN we can pay you by bank transfer against an invoice. If you do not, we pay you with a prepaid card instead, which avoids the withholding rules that apply to cash payments made to people without an ABN. You choose when the payment is due, not when you register the venue.
+  - q: Do I have to sell anything?
+    a: No. Your job is to get us twenty minutes in the venue. You do not quote prices, negotiate terms, explain music licensing or represent eJukebox in any way. We do all of that. If you have ever watched a room full of strangers argue over the next song, you already know how to describe this product.
+  - q: Is the referral payment taxable?
+    a: It may be. If you refer venues as part of a business it is assessable income and you should invoice us. For a genuine one-off the position depends on your circumstances, and a prepaid card is still income at face value if it is assessable. We do not give tax advice, so please ask your own accountant.
+  - q: Who can refer a venue?
+    a: Anyone aged 18 or over who is not an eJukebox employee or family member, and not already on a reseller or wholesale agreement. If you work at the venue you are referring, or you are involved in its decision, you must tell the owner or licensee about the payment before you register it.
+  - q: What if eJukebox is already talking to that venue?
+    a: Then it does not qualify, which is why registering it before we make contact is the rule the whole programme rests on. We check the date you registered against our own records. Register early and register often; it costs you nothing.
+  - q: What sort of venues are you looking for?
+    a: Pubs, bars, clubs and RSLs are the best fit because the song request feature earns its keep in a full room. Hotels, restaurants, function centres, cafes, gyms, retail shops, salons and medical waiting rooms all run eJukebox too. If a business plays music where the public can hear it, it is worth putting up.
+---
+
+{% assign ref = site.data.pricing.referral %}
+{% assign tiers = site.data.pricing.tiers %}
+
+<div class="rv-hero">
+  <div class="rv-hero-inner">
+    <span class="rv-eyebrow"><i class="fas fa-handshake"></i> Refer a venue</span>
+    <h1>{{ page.h1 }}</h1>
+    <p class="rv-hero-sub">You drink somewhere with three TVs on mute and a Bluetooth speaker behind the bar. Put the place up, get us twenty minutes in the room, and if they are still with us three months later, we pay you. You are not selling anything and it costs you nothing to try.</p>
+    <a class="rv-hero-cta" href="#rv-form"><i class="fas fa-plus"></i> Put a venue up</a>
+    <p class="rv-hero-note">Takes about twenty seconds. Venue name and your mobile is genuinely all we need to start.</p>
+  </div>
+</div>
+
+<div class="rv-section">
+  <h2 class="rv-h2">What a venue is worth to you</h2>
+  <p class="rv-lead">Flat amounts, so you never have to work out a percentage of anything. All paid after the venue has actually paid us, because that is the only kind of customer worth rewarding.</p>
+
+  <div class="rv-bands">
+    <div class="rv-band">
+      <div class="rv-band-strip"><span class="rv-band-who">Pub, club or hotel</span><span class="rv-band-tag">Most valuable</span></div>
+      <div class="rv-band-body">
+        <span class="rv-fee">${{ ref.venue }}</span>
+        <span class="rv-fee-note">${{ ref.venue_split }} at {{ ref.qualify_first }} months, ${{ ref.venue_split }} at {{ ref.qualify_second }}</span>
+        <p>A venue that installs a full eJukebox system with song requests and an on-site player. Pubs, bars, clubs, RSLs, hotels, restaurants and function centres.</p>
+      </div>
+    </div>
+    <div class="rv-band">
+      <div class="rv-band-strip"><span class="rv-band-who">Cafe, salon or shop</span></div>
+      <div class="rv-band-body">
+        <span class="rv-fee">${{ ref.solo }}</span>
+        <span class="rv-fee-note">Single payment at {{ ref.qualify_first }} months</span>
+        <p>A smaller site on our streaming-only plan. One curated channel for one area, nothing installed on site.</p>
+      </div>
+    </div>
+    <div class="rv-band">
+      <div class="rv-band-strip"><span class="rv-band-who">Already an eJukebox venue?</span></div>
+      <div class="rv-band-body">
+        <span class="rv-fee">{{ ref.credit_months }} months</span>
+        <span class="rv-fee-note">Credit on your own account</span>
+        <p>Publicans talk to publicans, and you are the best referral we could ask for. Take the credit instead of the cash, or take the cash if you would rather.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="rv-fine">Amounts are per venue and exclude GST. Refer {{ ref.bonus_after }} venues that stick in any twelve months and the third one pays an extra ${{ ref.bonus }}. Full conditions are in the <a href="/refer-a-venue-terms/">programme terms</a>.</p>
+</div>
+
+<div class="rv-section rv-section-alt">
+  <h2 class="rv-h2">How it works</h2>
+  <ol class="rv-steps">
+    {% for s in page.howto.steps %}
+    <li class="rv-step">
+      <span class="rv-step-n">{{ forloop.index }}</span>
+      <div class="rv-step-body">
+        <h3>{{ s.name }}</h3>
+        <p>{{ s.text }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+
+<div class="rv-section">
+  <div class="rv-reassure">
+    <h2 class="rv-h2">To be clear: you are not selling anything</h2>
+    <p>This is the bit that stops most people, so let us be blunt about it. You do not need sales experience. You do not need to know what a OneMusic licence tier is. You do not need to quote a price, answer an objection or follow anyone up. You are not on our payroll, you are not our agent, and you are not committing to anything at all.</p>
+    <p>All you are doing is telling us about a room that could sound better, and, if you are comfortable, mentioning it to whoever runs it first. That is the whole job. The system does the rest of the work the moment somebody picks up their phone and requests a song.</p>
+    <ul class="rv-ticks">
+      <li><i class="fas fa-check"></i> No cost to join and nothing to buy</li>
+      <li><i class="fas fa-check"></i> No targets, no quotas, no minimum</li>
+      <li><i class="fas fa-check"></i> Put up one venue or twenty, it is entirely up to you</li>
+      <li><i class="fas fa-check"></i> If the venue never signs up, that is the end of it. You owe nothing</li>
+    </ul>
+  </div>
+</div>
+
+<div class="rv-section" id="rv-form">
+  <h2 class="rv-h2">Put a venue up</h2>
+  <p class="rv-lead">Five things, and only the venue name, the suburb, your name and your mobile are compulsory. We ask about payment later, once there is actually money owing to you.</p>
+
+  <form id="rvForm" class="rv-form" novalidate>
+
+    <fieldset class="rv-block">
+      <legend><span class="rv-step-badge">1</span> Which venue?</legend>
+      <div class="rv-grid">
+        <label class="rv-field">
+          <span class="rv-label">Venue name <em>required</em></span>
+          <input type="text" id="rvVenue" name="venue" required autocomplete="off" placeholder="The Royal Hotel">
+        </label>
+        <label class="rv-field">
+          <span class="rv-label">Suburb and state <em>required</em></span>
+          <input type="text" id="rvLocation" name="location" required autocomplete="off" placeholder="Parramatta, NSW">
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="rv-block">
+      <legend><span class="rv-step-badge">2</span> Have you already spoken to them?</legend>
+      <p class="rv-hint">Either answer is fine and both are worth the same money. It just tells us what sort of phone call to make.</p>
+      <div class="rv-chips rv-chips-single">
+        <label class="rv-chip"><input type="radio" name="spoken" value="Yes, they are expecting a call" checked><span><i class="fas fa-comments"></i> Yes, they're expecting a call</span></label>
+        <label class="rv-chip"><input type="radio" name="spoken" value="Not yet, but I know the place"><span><i class="fas fa-lightbulb"></i> Not yet, but I know the place</span></label>
+      </div>
+      <label class="rv-field rv-field-wide rv-tuck">
+        <span class="rv-label">If you have spoken to them, who should we ask for, and when suits?</span>
+        <input type="text" id="rvWho" name="contactPerson" autocomplete="off" placeholder="Dave, the licensee. Best before 4pm weekdays.">
+      </label>
+    </fieldset>
+
+    <fieldset class="rv-block">
+      <legend><span class="rv-step-badge">3</span> Why them?</legend>
+      <p class="rv-hint">One line is plenty, and it genuinely helps. "Three TVs on mute and a Bluetooth speaker" tells us more than any dropdown could.</p>
+      <label class="rv-field rv-field-wide">
+        <span class="rv-label rv-sr">Why this venue</span>
+        <textarea id="rvWhy" name="why" rows="3" placeholder="Packed on Fridays but the music is whatever the bar staff feel like. The regulars would go mad for song requests."></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset class="rv-block">
+      <legend><span class="rv-step-badge">4</span> How do we reach you?</legend>
+      <div class="rv-grid">
+        <label class="rv-field">
+          <span class="rv-label">Your name <em>required</em></span>
+          <input type="text" id="rvName" name="name" required autocomplete="name" placeholder="Jane Citizen">
+        </label>
+        <label class="rv-field">
+          <span class="rv-label">Your mobile <em>required</em></span>
+          <input type="tel" id="rvPhone" name="phone" required autocomplete="tel" placeholder="0400 000 000">
+        </label>
+        <label class="rv-field rv-field-wide">
+          <span class="rv-label">Email <em>optional</em></span>
+          <input type="email" id="rvEmail" name="email" autocomplete="email" placeholder="jane@example.com">
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="rv-block rv-block-confirm">
+      <legend><span class="rv-step-badge">5</span> One confirmation</legend>
+      <label class="rv-confirm">
+        <input type="checkbox" id="rvConfirm" name="confirm" required>
+        <span>I am 18 or over, I have read the <a href="/refer-a-venue-terms/">programme terms</a>, and if I work for this venue or am involved in its decision, I have told the owner or licensee about this payment.</span>
+      </label>
+      <p class="rv-hint rv-hint-legal">That last part matters. Being paid to steer your employer's purchase without telling them is against the law in most states, and one honest conversation makes the whole thing above board.</p>
+    </fieldset>
+
+    <div class="rv-actions">
+      <button type="submit" class="rv-submit" id="rvSubmit"><i class="fas fa-paper-plane"></i> <span>Put this venue up</span></button>
+      <p class="rv-actions-note">We will text you when we have made contact, and again when they book a demo. You will not be left wondering.</p>
+    </div>
+  </form>
+
+  <div class="rv-panel" id="rvOk" hidden>
+    <div class="rv-panel-ico rv-panel-ok"><i class="fas fa-circle-check"></i></div>
+    <h3>Registered. That venue is yours.</h3>
+    <p id="rvOkBody">We have logged it against your name and the date. Someone will be in touch with them shortly, and we will text you when we have made contact.</p>
+  </div>
+
+  <div class="rv-panel" id="rvFallback" hidden>
+    <div class="rv-panel-ico rv-panel-warn"><i class="fas fa-triangle-exclamation"></i></div>
+    <h3>That did not send, so let's not lose it</h3>
+    <p>Our form had a problem at our end, not yours. Everything you typed is below and ready to email, which registers the venue to you just the same.</p>
+    <p><a class="rv-hero-cta" id="rvMailto" href="#"><i class="fas fa-envelope"></i> Email it to us instead</a></p>
+    <pre class="rv-dump" id="rvDump"></pre>
+  </div>
+</div>
+
+<div class="rv-section rv-section-alt">
+  <h2 class="rv-h2">Questions people actually ask</h2>
+  <div class="rv-faqs">
+    {% for f in page.faqs %}
+    <details class="rv-faq"{% if forloop.first %} open{% endif %}>
+      <summary>{{ f.q }}</summary>
+      <p>{{ f.a }}</p>
+    </details>
+    {% endfor %}
+  </div>
+  <p class="rv-fine">This page describes a referral arrangement, not employment and not an agency. Nothing here is tax advice. Full conditions, including what disqualifies a referral, are in the <a href="/refer-a-venue-terms/">programme terms</a>.</p>
+</div>
+
+<style>
+/* Refer a Venue. Everything is prefixed rv- so it cannot collide with anything else. */
+.rv-hero { text-align:center; padding:56px 22px 44px; }
+.rv-eyebrow { display:inline-flex; align-items:center; gap:9px; background:linear-gradient(135deg,var(--ejm-ind),#8b5cf6);
+  color:#fff; padding:9px 22px; border-radius:50px; font-size:.88rem; font-weight:650; margin-bottom:20px; }
+.rv-hero h1 { font-size:clamp(1.9rem,4.4vw,2.9rem); line-height:1.14; margin:0 0 16px; color:#fff; }
+.rv-hero-sub { max-width:64ch; margin:0 auto 26px; color:var(--ejm-soft); font-size:1.07rem; line-height:1.68; }
+.rv-hero-cta { display:inline-flex; align-items:center; gap:10px; padding:14px 30px; border-radius:50px;
+  background:linear-gradient(135deg,var(--ejm-ind),#8b5cf6); color:#fff !important; font-weight:700;
+  text-decoration:none !important; transition:transform .2s ease, box-shadow .2s ease; }
+.rv-hero-cta:hover { transform:translateY(-2px); box-shadow:0 12px 30px -12px rgba(99,102,241,.9); }
+.rv-hero-note { margin:14px 0 0; font-size:.9rem; color:var(--ejm-mut); }
+
+.rv-section { max-width:1000px; margin:0 auto; padding:44px 22px; }
+.rv-section-alt { border-top:1px solid var(--ejm-line); border-bottom:1px solid var(--ejm-line); }
+.rv-h2 { font-size:clamp(1.45rem,3vw,2rem); margin:0 0 14px; color:#fff; }
+.rv-lead { max-width:66ch; margin:0 0 30px; color:var(--ejm-soft); line-height:1.68; }
+.rv-fine { margin:24px 0 0; font-size:.9rem; color:var(--ejm-mut); line-height:1.6; max-width:70ch; }
+
+/* bands */
+.rv-bands { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+@media (max-width:860px){ .rv-bands { grid-template-columns:1fr; } }
+.rv-band { background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); overflow:hidden;
+  display:flex; flex-direction:column; }
+.rv-band:first-child { border-color:rgba(99,102,241,.5); }
+.rv-band-strip { display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:nowrap;
+  min-height:56px; padding:13px 18px; background:var(--ejm-card-2); border-bottom:1px solid var(--ejm-line); }
+.rv-band-who { font-weight:700; color:#fff; font-size:.98rem; }
+.rv-band-tag { font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; font-weight:750;
+  color:#fff; background:var(--ejm-ind); padding:3px 9px; border-radius:50px; }
+.rv-band-body { padding:20px 18px 22px; display:flex; flex-direction:column; gap:8px; }
+.rv-fee { font-size:2.5rem; font-weight:800; line-height:1; color:var(--ejm-ind-lt); }
+.rv-fee-note { font-size:.82rem; text-transform:uppercase; letter-spacing:.05em; font-weight:700; color:var(--ejm-mut); }
+.rv-band-body p { margin:6px 0 0; color:var(--ejm-soft); font-size:.95rem; line-height:1.6; }
+
+/* steps */
+.rv-steps { list-style:none; margin:0; padding:0; display:grid; gap:14px; }
+.rv-step { display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:start;
+  background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:20px 22px; }
+.rv-step-n { width:38px; height:38px; border-radius:50%; display:grid; place-items:center; font-weight:800;
+  background:linear-gradient(135deg,var(--ejm-ind),#8b5cf6); color:#fff; }
+.rv-step-body h3 { margin:4px 0 6px; font-size:1.1rem; color:#fff; }
+.rv-step-body p { margin:0; color:var(--ejm-soft); line-height:1.65; }
+
+/* reassurance */
+.rv-reassure { background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:28px 26px; }
+.rv-reassure p { color:var(--ejm-soft); line-height:1.7; max-width:70ch; margin:0 0 14px; }
+.rv-ticks { list-style:none; margin:18px 0 0; padding:0; display:grid; gap:10px; }
+@media (min-width:760px){ .rv-ticks { grid-template-columns:1fr 1fr; } }
+.rv-ticks li { display:flex; align-items:flex-start; gap:10px; color:var(--ejm-ink); font-size:.97rem; line-height:1.5; }
+.rv-ticks i { color:var(--ejm-green); margin-top:4px; }
+
+/* form */
+.rv-form { max-width:820px; }
+.rv-block { border:1.5px solid var(--ejm-line); background:rgba(255,255,255,.028);
+  border-radius:18px; padding:24px 24px 26px; margin:0 0 18px; }
+.rv-block legend { display:flex; align-items:center; gap:12px; font-size:1.08rem; font-weight:700; color:#fff; padding:0 6px; }
+.rv-step-badge { width:28px; height:28px; border-radius:50%; display:grid; place-items:center; font-size:.85rem;
+  background:linear-gradient(135deg,var(--ejm-ind),#8b5cf6); color:#fff; font-weight:800; }
+.rv-hint { margin:12px 0 14px; color:var(--ejm-mut); font-size:.92rem; line-height:1.6; }
+.rv-hint-legal { margin:12px 0 0; }
+.rv-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px; }
+@media (max-width:680px){ .rv-grid { grid-template-columns:1fr; } }
+.rv-field { display:flex; flex-direction:column; gap:7px; }
+.rv-field-wide { grid-column:1 / -1; }
+.rv-tuck { margin-top:16px; }
+.rv-label { font-size:.86rem; font-weight:650; color:var(--ejm-soft); display:flex; gap:8px; align-items:baseline; }
+.rv-label em { font-style:normal; font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ejm-mut); }
+.rv-sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.rv-form input[type=text], .rv-form input[type=tel], .rv-form input[type=email], .rv-form textarea {
+  width:100%; padding:12px 14px; border-radius:11px; border:1.5px solid var(--ejm-line-2);
+  background:rgba(0,0,0,.28); color:var(--ejm-ink); font:inherit; font-size:1rem; }
+.rv-form textarea { resize:vertical; line-height:1.6; }
+.rv-form input:focus-visible, .rv-form textarea:focus-visible { outline:2px solid var(--ejm-ind-lt); outline-offset:1px; border-color:var(--ejm-ind); }
+.rv-form input::placeholder, .rv-form textarea::placeholder { color:#6b7488; }
+.rv-invalid { border-color:var(--ejm-red) !important; }
+.rv-chips { display:flex; flex-wrap:wrap; gap:10px; }
+.rv-chip input { position:absolute; opacity:0; pointer-events:none; }
+.rv-chip span { display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:50px; cursor:pointer;
+  border:1.5px solid var(--ejm-line-2); color:var(--ejm-soft); font-size:.95rem; transition:all .18s ease; }
+.rv-chip span:hover { border-color:var(--ejm-ind-lt); color:#fff; }
+.rv-chip input:checked + span { background:rgba(99,102,241,.16); border-color:var(--ejm-ind); color:#fff; font-weight:650; }
+.rv-chip input:focus-visible + span { outline:2px solid var(--ejm-ind-lt); outline-offset:2px; }
+.rv-block-confirm { border-color:rgba(99,102,241,.34); }
+.rv-confirm { display:flex; align-items:flex-start; gap:13px; margin-top:16px; cursor:pointer; }
+.rv-confirm input { width:20px; height:20px; margin-top:3px; flex:none; accent-color:var(--ejm-ind); }
+.rv-confirm span { color:var(--ejm-soft); line-height:1.62; font-size:.97rem; }
+.rv-confirm.rv-invalid span { color:var(--ejm-red); }
+.rv-actions { display:flex; flex-direction:column; align-items:flex-start; gap:12px; margin-top:24px; }
+.rv-submit { display:inline-flex; align-items:center; gap:10px; padding:15px 34px; border:0; border-radius:50px;
+  background:linear-gradient(135deg,var(--ejm-ind),#8b5cf6); color:#fff; font:inherit; font-size:1.03rem; font-weight:750;
+  cursor:pointer; transition:transform .2s ease, box-shadow .2s ease, opacity .2s ease; }
+.rv-submit:hover { transform:translateY(-2px); box-shadow:0 12px 30px -12px rgba(99,102,241,.9); }
+.rv-submit[disabled] { opacity:.6; cursor:progress; transform:none; }
+.rv-actions-note { margin:0; font-size:.9rem; color:var(--ejm-mut); max-width:56ch; line-height:1.6; }
+
+.rv-panel { background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:28px 26px; max-width:820px; }
+.rv-panel h3 { margin:14px 0 10px; color:#fff; font-size:1.25rem; }
+.rv-panel p { margin:0 0 14px; color:var(--ejm-soft); line-height:1.68; }
+.rv-panel-ico { font-size:2.2rem; }
+.rv-panel-ok { color:var(--ejm-green); }
+.rv-panel-warn { color:var(--ejm-amber); }
+.rv-dump { margin:16px 0 0; padding:16px; border-radius:11px; background:rgba(0,0,0,.35); border:1px solid var(--ejm-line);
+  color:var(--ejm-soft); font-size:.86rem; line-height:1.6; white-space:pre-wrap; word-break:break-word; overflow-x:auto; }
+
+/* faqs */
+.rv-faqs { display:grid; gap:10px; max-width:860px; }
+.rv-faq { background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:2px 20px; }
+.rv-faq summary { cursor:pointer; padding:16px 0; font-weight:700; color:#fff; font-size:1.02rem; line-height:1.45; }
+.rv-faq summary:focus-visible { outline:2px solid var(--ejm-ind-lt); outline-offset:3px; }
+.rv-faq[open] summary { border-bottom:1px solid var(--ejm-line); }
+.rv-faq p { margin:0; padding:16px 0 18px; color:var(--ejm-soft); line-height:1.7; }
+@media (prefers-reduced-motion:reduce){ .rv-hero-cta, .rv-submit, .rv-chip span { transition:none; } }
+</style>
+
+<script>
+(function () {
+  var form = document.getElementById('rvForm');
+  if (!form) return;
+
+  // Same Azure endpoint the contact form uses. The payload keeps contact.html's
+  // field names so the backend needs no change, and adds `formType` so referrals
+  // can be routed and counted separately.
+  var ENDPOINT = 'https://ejukebox-contact-form.azurewebsites.net/api/ContactFormWebhook';
+
+  var btn = document.getElementById('rvSubmit');
+  var okPanel = document.getElementById('rvOk');
+  var fbPanel = document.getElementById('rvFallback');
+
+  function val(id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; }
+
+  function gather() {
+    var spoken = form.querySelector('input[name="spoken"]:checked');
+    var venue = val('rvVenue'), loc = val('rvLocation');
+    var lines = [
+      'REFERRAL - a venue has been put up.',
+      '',
+      'Venue: ' + venue,
+      'Where: ' + loc,
+      'Already spoken to them: ' + (spoken ? spoken.value : 'Not stated'),
+      'Who to ask for: ' + (val('rvWho') || 'Not given'),
+      'Why this venue: ' + (val('rvWhy') || 'Not given'),
+      '',
+      'Referred by: ' + val('rvName'),
+      'Mobile: ' + val('rvPhone'),
+      'Email: ' + (val('rvEmail') || 'Not given'),
+      '',
+      'Confirmed 18+, read the terms, and disclosed to the owner if employed there.',
+      'Registered: ' + new Date().toLocaleString('en-AU')
+    ];
+    return {
+      formType: 'Referral',
+      source: '/refer-a-venue/',
+      name: val('rvName'),
+      email: val('rvEmail'),
+      phone: val('rvPhone'),
+      venue: venue,
+      location: loc,
+      spokenToVenue: spoken ? spoken.value : '',
+      contactPerson: val('rvWho'),
+      why: val('rvWhy'),
+      confirmed: true,
+      registeredAt: new Date().toISOString(),
+      message: lines.join('\n')
+    };
+  }
+
+  function show(panel, data) {
+    form.hidden = true;
+    panel.hidden = false;
+    if (panel === fbPanel) {
+      document.getElementById('rvDump').textContent = data.message;
+      document.getElementById('rvMailto').href =
+        'mailto:info@ejukebox.com.au?subject=' + encodeURIComponent('Venue referral - ' + data.venue) +
+        '&body=' + encodeURIComponent(data.message);
+    } else {
+      document.getElementById('rvOkBody').textContent =
+        venuePhrase(data.venue) + ' is registered to you as of today. We will text ' + data.phone +
+        ' when we have made contact, and again when they book a demo.';
+    }
+    panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  function venuePhrase(v) { return v ? v : 'That venue'; }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var bad = false;
+    ['rvVenue', 'rvLocation', 'rvName', 'rvPhone'].forEach(function (id) {
+      var el = document.getElementById(id);
+      var empty = !el.value.trim();
+      el.classList.toggle('rv-invalid', empty);
+      if (empty && !bad) { el.focus(); bad = true; }
+    });
+
+    var confirmBox = document.getElementById('rvConfirm');
+    confirmBox.closest('.rv-confirm').classList.toggle('rv-invalid', !confirmBox.checked);
+    if (!confirmBox.checked && !bad) { confirmBox.focus(); bad = true; }
+    if (bad) return;
+
+    var data = gather();
+    btn.disabled = true;
+
+    fetch(ENDPOINT, {
+      method: 'POST',
+      mode: 'cors',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      show(okPanel, data);
+    }).catch(function () {
+      // Never lose a referral to a failed request: hand it back ready to send.
+      show(fbPanel, data);
+    }).then(function () {
+      btn.disabled = false;
+    });
+  });
+
+  // Tidy Australian phone formatting as they type. Same behaviour as /contact/.
+  var phone = document.getElementById('rvPhone');
+  phone.addEventListener('input', function () {
+    var v = phone.value.replace(/[^\d+]/g, '');
+    if (/^0[45]/.test(v) && v.length > 4) {
+      v = v.slice(0, 4) + ' ' + v.slice(4, 7) + (v.length > 7 ? ' ' + v.slice(7, 10) : '');
+    } else if (/^0[2378]/.test(v) && v.length > 2) {
+      v = v.slice(0, 2) + ' ' + v.slice(2, 6) + (v.length > 6 ? ' ' + v.slice(6, 10) : '');
+    }
+    phone.value = v.trim();
+  });
+})();
+</script>

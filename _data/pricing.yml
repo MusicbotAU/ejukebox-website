@@ -267,3 +267,26 @@ zones:
   extra_retail: 39
   extra_whl: 28
   note: Two zones come standard, and the player we fit already drives up to four - so zones three and four add no hardware cost at all, just the monthly charge. Each extra zone still costs less than a single Soundtrack zone.
+
+# ---- Referral programme ("Refer a Venue") ------------------------------------
+# Renders /refer-a-venue/ and /refer-a-venue-terms/. These are amounts we PAY a
+# referrer, not amounts a venue pays us. They live here for the same reason every
+# other price does: a figure typed into a page is a figure that drifts.
+# See _seo/README.md.
+#
+# `live: false` is the single switch that keeps the programme dark. While it is
+# false both pages carry `noindex` and stay out of the nav and the sitemap, which
+# also means schema.html emits nothing for them (see _includes/schema.html).
+# Flip it to true only after the tax agent has signed off, then add the two URLs
+# to sitemap.xml.
+referral:
+  live: false
+  solo: 75              # Band A: streaming-only site, single payment
+  venue: 300            # Band B: Core or Complete install, paid in two halves
+  venue_split: 150
+  credit_months: 2      # Band C: existing customer refers, credit on own account
+  qualify_first: 3      # paid months before the first payment
+  qualify_second: 6     # paid months before the second
+  bonus_after: 3        # nth qualifying referral in a rolling 12 months...
+  bonus: 150            # ...pays this on top
+  tip_window: 90        # days an unspoken-for tip stays claimable
