@@ -15,6 +15,7 @@ Nothing here reaches the live site, so notes can be blunt.
 | `structured-data.md` | How the JSON-LD layer works and how to extend it. |
 | `content-inventory.md` | **Generated.** Per-page titles, descriptions, H1s, schema. |
 | `open-items.md` | The backlog, with the reason each item is still open. |
+| `functions-events.md` | Keyword brief for the functions/events build-out. |
 | `audit.py` | Regenerates `content-inventory.md` from the built site. |
 
 ## Running the audit
