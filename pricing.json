@@ -1,0 +1,34 @@
+---
+# The pricing page as data, for the apps. Rendered from _data/pricing.yml - the ONE source of
+# truth for /pricing and /wholesale - so what the Admin app says a feature costs can never
+# drift from the page. Retail only; wholesale figures are stripped below. Unlisted, like /pricing.
+layout: null
+permalink: /pricing.json
+sitemap: false
+---
+{%- assign p = site.data.pricing -%}
+{
+  "generated": "{{ site.time | date_to_xmlschema }}",
+  "video_base": "{{ p.video_base }}",
+  "tiers": [
+    {%- for t in p.tiers %}
+    { "id": "{{ t.id }}", "name": "{{ t.name }}", "retail": {{ t.retail }}, "zones_included": {{ t.zones_included }}, "includes_all_addons": {{ t.includes_all_addons | default: false }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "included": [
+    {%- for f in p.included %}
+    { "id": "{{ f.id }}", "name": "{{ f.name | escape }}", "category": "{{ f.category }}", "tiers": {{ f.tiers | jsonify }}, "desc": {{ f.desc | jsonify }}, "video": "{{ f.video }}" }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "addons": [
+    {%- for a in p.addons %}
+    { "id": "{{ a.id }}", "name": "{{ a.name | escape }}", "category": "{{ a.category }}", "retail": {{ a.retail }}, "desc": {{ a.desc | jsonify }}, "video": "{{ a.video }}", "bundle": "{{ a.bundle }}", "requires": "{{ a.requires }}", "hardware": {{ a.hardware | default: "" | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "bundles": [
+    {%- for b in p.bundles %}
+    { "id": "{{ b.id }}", "name": "{{ b.name | escape }}", "retail": {{ b.retail }}, "members": {{ b.members | jsonify }}, "desc": {{ b.desc | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "zones": { "included": {{ p.zones.included }}, "max": {{ p.zones.max }}, "extra_retail": {{ p.zones.extra_retail }} }
+}
