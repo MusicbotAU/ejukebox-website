@@ -305,7 +305,7 @@ faqs:
   <div class="lic-callout-icon"><i class="fas fa-lightbulb"></i></div>
   <div class="lic-callout-body">
     <h4>The Key Takeaway for Retail</h4>
-    <p>If you use a <strong>commercial background music supplier like eJukebox</strong>, you qualify for the cheaper <strong>Silver</strong> tier - or <strong>Silver Lite</strong> if you play through a single device - instead of the expensive Gold package. If you use Spotify or similar personal streaming, you're stuck with <strong>Gold</strong> - and you're still breaking Spotify's rules.</p>
+    <p>If you use a <strong>commercial background music supplier like eJukebox</strong>, you qualify for the cheaper <strong>Silver</strong> tier - or <strong>Silver Lite</strong> if you play through a single device - instead of the expensive Gold package. If you use Spotify or similar personal streaming, you're stuck with <strong>Gold</strong> - and you're still breaking Spotify's rules. <a href="/background-music-for-business/">What to look for in a background music provider &rarr;</a></p>
   </div>
 </div>
 

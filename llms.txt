@@ -55,6 +55,7 @@ Partner and channel model: eJukebox works with AV installers, audio visual integ
 
 ## Music for your venue
 
+- [Background music for business](https://ejukebox.com.au/background-music-for-business/): what a commercial background music provider does, why a personal Spotify account cannot be used in a business, how a commercial supplier lowers your OneMusic licence tier, eJukebox plans, and the questions to ask when comparing background music providers in Australia.
 - [Music for pubs and bars](https://ejukebox.com.au/music-for-pubs-bars/): background music and an interactive jukebox for Australian pubs, bars, hotels, taverns and boozers. Patrons request songs from their phone, staff keep control, and a lower OneMusic licence tier applies.
 - [Irish pub music](https://ejukebox.com.au/irish-pub-music/): a dedicated channel of authentic Irish music, traditional ballads and Celtic favourites blended with today's Irish artists across the whole day rather than a novelty hour, plus a ready-made St Patrick's Day channel for March.
 - [Music for clubs and nightclubs](https://ejukebox.com.au/music-for-nightclubs/): licensed high energy music for Australian nightclubs and late trade venues, with curated channels, smartphone song requests and late night dayparting.

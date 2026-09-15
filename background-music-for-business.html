@@ -1,0 +1,249 @@
+---
+layout: default
+permalink: /background-music-for-business/
+title: Australian Background Music Provider for Business
+description: eJukebox is an Australian background music provider for pubs, cafes, shops, gyms and clinics. Licensed channels, a lower OneMusic tier, no lock-in.
+schema_service: Commercial background music provider for Australian businesses
+service_type: Commercial background music supplier for Australian businesses
+audience_name: Australian businesses
+h1: Licensed background music for Australian businesses
+last_reviewed: 2026-09-15
+mentions:
+  - name: OneMusic Australia
+    url: https://onemusic.com.au/
+    type: Organization
+faqs:
+  - q: What equipment do I need for background music?
+    a: On Solo, nothing new. Your private stream plays through a browser, computer, tablet, phone, Sonos or streamer you already own. Core and Complete add a compact on-site player that connects to your existing amplifier and speakers, a one-off cost quoted per venue. There is no jukebox cabinet or proprietary box to buy.
+  - q: Can I play different music in different areas?
+    a: Yes. Core and Complete include two zones as standard, so the front bar and the bistro, or the shop floor and the fitting rooms, can each run a different channel at the same time. You can add up to four zones on the same player.
+  - q: Am I locked into a contract?
+    a: No. There are no lock-in contracts and you can cancel anytime.
+  - q: Can I try eJukebox before I sign up?
+    a: Yes, in two ways. The 7-day trial is streaming only, set up yourself in a couple of minutes with no credit card. The 30-day trial is the full interactive system installed in your venue on Core or Complete, with hardware and setup covered.
+  - q: Do you supply music to businesses with more than one site?
+    a: Yes. Venue groups, hotel groups, clubs and franchises use eJukebox to run the same channels and announcements across every site. Talk to us about a rollout.
+  - q: Where is eJukebox based?
+    a: eJukebox is Australian owned and run by Musicbot Pty Ltd in Ryde, NSW, with support from Australia. We supply venues right across the country.
+---
+
+{% include hero.html
+   image="/assets/images/cafe-restaurant.jpg"
+   alt="Staff serving customers in a busy café"
+   eyebrow="Background music provider"
+   h1=page.h1
+   sub="Curated, licensed music channels for pubs, cafés, shops, gyms and clinics across Australia. Your staff run it from a phone, and it puts you on a cheaper OneMusic tier than a personal streaming account."
+   cta_text="See plans & pricing"
+   cta_url="/products.html" %}
+
+{% assign tiers = site.data.pricing.tiers %}
+{% assign zones = site.data.pricing.zones %}
+
+<article class="bm-page">
+
+  <section class="bm-block">
+    <h2>What does a background music provider do?</h2>
+    <p>A background music provider supplies the music a business plays to its customers, programmed for the room and cleared for public play. It is a different thing from a streaming app. You get channels built for trading hours rather than personal listening: no ads, no talk between songs, no explicit lyrics, and volume levelled so one track never jumps out over the last.</p>
+    <p>eJukebox is an Australian owned commercial background music supplier. Our players have been running in pubs, clubs, cafés and shops since 2018.</p>
+
+    <div class="bm-cards">
+      <div class="bm-card">
+        <span class="bm-card-icon"><i class="fas fa-headphones"></i></span>
+        <h3>Channels picked by people</h3>
+        <p>Every channel is built and refreshed by Australian music directors, never shuffled by an algorithm. Hits, Smooth, Rock and Country.</p>
+      </div>
+      <div class="bm-card">
+        <span class="bm-card-icon"><i class="fas fa-wifi"></i></span>
+        <h3>Keeps playing if the internet drops</h3>
+        <p>On Core and Complete, the on-site player caches your music, so a full room never goes quiet because the connection did.</p>
+      </div>
+      <div class="bm-card">
+        <span class="bm-card-icon"><i class="fas fa-mobile-screen"></i></span>
+        <h3>Staff steer, customers request</h3>
+        <p>Staff skip, approve and set the volume from their phone. Customers request songs from theirs, with no app to install. <a href="/ejukebox-request-portal.html">How requests work</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bm-block">
+    <h2>Can I just play Spotify in my business?</h2>
+    <p>No. Personal Spotify, Apple Music and Amazon Music accounts are for personal listening, and their own terms rule out playing them in a business. A OneMusic licence does not fix that, because the problem is the account, not the licence.</p>
+    <p>It also costs you more. OneMusic puts a business playing a personal streaming account on its most expensive package. A commercial provider is how you get off it.</p>
+  </section>
+
+  <section class="bm-block bm-licensing">
+    <h2>Do I still need a OneMusic licence?</h2>
+    <p>Yes. Any Australian business playing recorded music where customers can hear it needs a OneMusic Australia licence, held in your own business name, whichever provider you choose. What the provider changes is the <strong>price of that licence</strong>.</p>
+    <ul>
+      <li><strong>Shops, salons and clinics</strong> move from the Gold package to the cheaper Silver or Silver Lite tier. For a small shop up to 50&nbsp;m², that is about $642 a year down to $183.</li>
+      <li><strong>Pubs, cafés and restaurants</strong> no longer need the Digital Copy and Delivery add-on, which is $471 a year.</li>
+      <li><strong>Pubs and clubs</strong> can have eJukebox collect the OneMusic fee and pay it to OneMusic for them.</li>
+    </ul>
+    <p><a href="/licensing.html">Work out your OneMusic licence &rarr;</a></p>
+  </section>
+
+  <section class="bm-block">
+    <h2>How much does background music cost for a business?</h2>
+    <p>eJukebox has three plans. Prices are per month, ex GST, and your OneMusic licence is paid separately.</p>
+    <div class="bm-tiers">
+      {% for t in tiers %}
+      <div class="bm-tier{% if t.recommended %} bm-tier-rec{% endif %}">
+        <p class="bm-tier-tag">{{ t.tagline }}</p>
+        <h3>{{ t.name }}</h3>
+        <p class="bm-tier-price"><span>${{ t.retail }}</span>/mo</p>
+        <p>{{ t.blurb }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="bm-note">No lock-in contracts. Core and Complete use an on-site player, a one-off cost quoted per venue. <a href="/products.html">Compare plans and add-ons &rarr;</a></p>
+  </section>
+
+  <section class="bm-block">
+    <h2>What to compare between background music providers</h2>
+    <p>Most providers sound alike on a brochure. These are the questions that separate them, and how we answer each one.</p>
+    <div class="bm-table-wrap">
+      <table class="bm-table">
+        <thead>
+          <tr><th scope="col">Ask the provider</th><th scope="col">Why it matters</th><th scope="col">eJukebox</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Will you lower my OneMusic tier?</th>
+            <td>Personal streaming puts you on the most expensive package.</td>
+            <td>Yes. We are a commercial background music supplier.</td>
+          </tr>
+          <tr>
+            <th scope="row">How long is the contract?</th>
+            <td>A long contract is hard to leave if the music or support falls short.</td>
+            <td>No lock-in. Cancel anytime.</td>
+          </tr>
+          <tr>
+            <th scope="row">What hardware do I have to buy?</th>
+            <td>A proprietary box adds upfront cost and ties you to one supplier.</td>
+            <td>None on Solo. Core and Complete use one compact player on your existing amp and speakers.</td>
+          </tr>
+          <tr>
+            <th scope="row">How are zones priced?</th>
+            <td>Different music in the bar and the bistro can mean paying for every area.</td>
+            <td>{{ zones.included }} zones come standard on Core and Complete. Extra zones are ${{ zones.extra_retail }}/mo, up to {{ zones.max }}.</td>
+          </tr>
+          <tr>
+            <th scope="row">What happens when the internet drops?</th>
+            <td>Silence in a full room.</td>
+            <td>The Core player caches your music and keeps playing.</td>
+          </tr>
+          <tr>
+            <th scope="row">Who chooses the music?</th>
+            <td>Algorithms repeat songs and drift away from your crowd.</td>
+            <td>Australian music directors.</td>
+          </tr>
+          <tr>
+            <th scope="row">Can customers request songs?</th>
+            <td>A request is a reason to stay for another round.</td>
+            <td>Yes on Core, from their own phone. Staff keep control.</td>
+          </tr>
+          <tr>
+            <th scope="row">Can I try it first?</th>
+            <td>You should hear it in your own space before you commit.</td>
+            <td>7 days of streaming free, or 30 days of the full system in your venue.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="bm-block">
+    <h2>Background music for your type of business</h2>
+    <p>Each kind of venue needs something different from its music. Pick yours for channels, zones and licensing that fit.</p>
+    <ul class="bm-venues">
+      {% for v in site.data.venues %}
+      <li><a href="/{{ v.slug }}/"><i class="fas {{ v.icon }}"></i> {{ v.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="bm-block bm-cta">
+    <h2>Hear it in your business first</h2>
+    <p>Start a free 7-day stream in a couple of minutes, no credit card needed. Or have the full system installed for 30 days.</p>
+    <p class="bm-ctas">
+      <a href="/free-trial.html" class="bm-btn">Free 7-day streaming trial</a>
+      <a href="/contact/" class="bm-btn-outline">30 days of the full system</a>
+    </p>
+  </section>
+
+  <section class="bm-block bm-faq">
+    <h2>Frequently asked questions</h2>
+    {% for f in page.faqs %}
+    <h3>{{ f.q }}</h3>
+    <p>{{ f.a }}</p>
+    {% endfor %}
+  </section>
+
+</article>
+
+<style>
+/* Background music for business hub. Prefixed bm- so nothing collides with site styles.
+   Tokens (--ejm-*) come from _layouts/default.html. The theme forces p and h3 colours
+   with !important (see _layouts/venue.html), so overrides here need it too. */
+.bm-page{max-width:1000px;padding-top:52px}
+.bm-block{margin:0 0 40px}
+.bm-block p{max-width:72ch}
+
+.bm-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:22px 0 0}
+.bm-card{background:var(--ejm-card);border:1.5px solid var(--ejm-line);border-radius:var(--ejm-r);padding:20px 22px}
+.bm-card-icon{display:flex;align-items:center;justify-content:center;width:38px;height:38px;
+  border-radius:10px;background:rgba(99,102,241,.14);color:var(--ejm-ind-lt);font-size:1rem}
+#main-content .bm-card h3{margin:14px 0 7px !important;font-size:1.02rem !important;color:var(--ejm-ink) !important}
+.bm-card p{margin:0;color:var(--ejm-mut);font-size:.93rem;line-height:1.55}
+.bm-card a{font-weight:600}
+
+.bm-licensing{background:linear-gradient(100deg,rgba(245,166,35,.1),var(--ejm-card) 60%);
+  border:1px solid var(--ejm-line);border-left:3px solid var(--ejm-amber);border-radius:var(--ejm-r);padding:22px 26px}
+#main-content .bm-licensing h2{margin-top:0 !important;border-bottom:0;padding-bottom:0}
+.bm-licensing p,.bm-licensing li{color:var(--ejm-soft) !important}
+.bm-licensing ul{padding-left:20px;margin:12px 0}
+.bm-licensing li{margin:8px 0;line-height:1.55}
+.bm-licensing strong{color:var(--ejm-amber) !important}
+.bm-licensing a{font-weight:600}
+
+.bm-tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:20px 0 14px}
+.bm-tier{background:var(--ejm-card);border:1.5px solid var(--ejm-line);border-radius:var(--ejm-r);padding:22px 22px 18px}
+.bm-tier-rec{border-color:var(--ejm-ind-lt)}
+.bm-tier-tag{margin:0 0 4px;font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ejm-amber) !important}
+#main-content .bm-tier h3{margin:0 0 6px !important;font-size:1.3rem !important;color:var(--ejm-ink) !important}
+.bm-tier-price{margin:0 0 10px;color:var(--ejm-mut) !important}
+.bm-tier-price span{font-size:1.7rem;font-weight:800;color:var(--ejm-ink)}
+.bm-tier p:last-child{margin:0;font-size:.93rem;line-height:1.55;color:var(--ejm-mut)}
+.bm-note{font-size:.93rem}
+.bm-note a{font-weight:600}
+
+.bm-table-wrap{overflow-x:auto;margin:18px 0 0;border:1.5px solid var(--ejm-line);border-radius:var(--ejm-r)}
+.bm-table{width:100%;min-width:640px;border-collapse:collapse;font-size:.93rem;margin:0}
+.bm-table th,.bm-table td{padding:13px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--ejm-line);line-height:1.5}
+.bm-table tbody tr:last-child th,.bm-table tbody tr:last-child td{border-bottom:0}
+.bm-table thead th{background:var(--ejm-card);color:var(--ejm-mut);font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.bm-table tbody th{color:var(--ejm-ink);font-weight:700;width:30%}
+.bm-table td{color:var(--ejm-soft)}
+.bm-table td:last-child{color:var(--ejm-ink)}
+
+.bm-venues{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.bm-venues li a{display:flex;align-items:center;padding:12px 15px;background:var(--ejm-card);
+  border:1.5px solid var(--ejm-line);border-radius:10px;text-decoration:none;font-size:.93rem;font-weight:600;
+  transition:border-color .18s,transform .18s}
+.bm-venues li a:hover{border-color:var(--ejm-line-2);transform:translateY(-2px)}
+.bm-venues i{margin-right:10px;width:16px;text-align:center;opacity:.75}
+
+.bm-cta{background:linear-gradient(120deg,#4f46e5,#0e7490);border-radius:16px;padding:26px 30px}
+#main-content .bm-cta h2{margin-top:0 !important;color:#fff !important;border-bottom:0;padding-bottom:0}
+.bm-cta p{color:rgba(255,255,255,.92) !important}
+.bm-ctas{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 0}
+.bm-btn,.bm-btn-outline{display:inline-flex;align-items:center;border-radius:999px;padding:13px 24px;
+  font-weight:800;font-size:14px;text-decoration:none !important;transition:background .18s}
+.bm-btn{background:#fff;color:#4f46e5 !important}
+.bm-btn:hover{background:#f1f5f9}
+.bm-btn-outline{border:1.5px solid rgba(255,255,255,.5);color:#fff !important}
+.bm-btn-outline:hover{background:rgba(255,255,255,.12)}
+
+#main-content .bm-faq h3{font-size:1.02rem !important;margin:18px 0 5px !important;color:var(--ejm-ink) !important}
+.bm-faq p{margin:0;color:var(--ejm-mut)}
+</style>

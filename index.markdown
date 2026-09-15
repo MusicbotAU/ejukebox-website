@@ -166,7 +166,7 @@ hero:
   <div class="venue-content">
     <div class="venue-icon"><i class="fas fa-store"></i></div>
     <h2>Ensure Legal Compliance in your pub, bar or retail store</h2>
-    <p><strong>eJukebox</strong> is fully licensed for commercial use, unlike personal music services like Spotify or Amazon Music, which are illegal to play in public settings according to their terms and conditions. With <strong>eJukebox</strong>, you can confidently play music in your pub, bar or retail store without any legal concerns, ensuring compliance and peace of mind. Enjoy high-quality, professionally curated music channels that enhance your store's atmosphere while staying within the law.</p>
+    <p><strong>eJukebox</strong> is a <a href="/background-music-for-business/">background music provider</a> fully licensed for commercial use, unlike personal music services like Spotify or Amazon Music, which are illegal to play in public settings according to their terms and conditions. With <strong>eJukebox</strong>, you can confidently play music in your pub, bar or retail store without any legal concerns, ensuring compliance and peace of mind. Enjoy high-quality, professionally curated music channels that enhance your store's atmosphere while staying within the law.</p>
     <div class="venue-badges">
       <span class="venue-badge"><i class="fas fa-gavel"></i> Fully Licensed</span>
       <span class="venue-badge"><i class="fas fa-shield-alt"></i> Legal & Compliant</span>

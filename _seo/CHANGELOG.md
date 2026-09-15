@@ -5,6 +5,42 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-09-15 - New hub page for "background music provider"
+
+Marc flagged that we rank nowhere for "background music providers". No page was
+about it: the phrase appeared only in passing on `/licensing.html` and the venue
+pages, and the homepage was moved to "jukebox" on 31 Aug. Search Console showed
+Google testing us for the cluster anyway (`music for businesses` 125 impressions
+at position 51, `background music for business australia` at 29,
+`commercial background music supplier` at 8 via the licensing page).
+
+New page: `/background-music-for-business/`. Decisions worth keeping:
+
+**Slug on the head term, "provider" in the title.** Each exact phrase is ~10/mo;
+provider, supplier, service and "for business" together are a few hundred, and
+Google treats them as one intent. Title "Australian Background Music Provider
+for Business" (60 with the suffix).
+
+**Written to be chosen from, not to sell.** Page one for the query is OneMusic's
+supplier directory, APRA's supplier guide, Moov and Evolved Sound: comparison
+intent. So the centrepiece is a "what to compare between providers" table, with
+question-shaped H2s (Spotify, OneMusic, cost). No competitors are named.
+
+**It is now the parent of the venue pages.** The "Music for Your Venue" menu
+pointed at `#`; it now points here, with the page as the first dropdown item, in
+the mobile menu and at the top of the footer venue column. Contextual links
+added from the homepage licensing paragraph and the licensing Silver/Gold
+callout, both anchored on "background music provider".
+
+Prices and zone figures render from `pricing.yml`. Licence claims follow the
+rules: tier reduction only, collect-and-remit named for pubs and clubs only.
+Added to `sitemap.xml` and `llms.txt`.
+
+Biggest lever is still off-site: OneMusic's directory ranks #1 for this query and
+lists us as Whisperscape. Getting that listing renamed is still an open action.
+
+---
+
 ## 2026-09-04 - The $1/Day plan is gone from the site
 
 Marc spotted the retired `$1/Day` plan still being sold on `/licensing.html`.
