@@ -4,7 +4,7 @@ title: Music Licensing for Business, OneMusic & APRA
 description: OneMusic, APRA AMCOS and PPCA explained for Australian pubs, clubs, cafes and retail, and how a commercial supplier puts you on a cheaper tier.
 schema_service: Music licensing guidance for Australian businesses
 service_type: OneMusic Australia licensing guidance and fee administration
-last_reviewed: 2026-08-28
+last_reviewed: 2026-09-15
 schema_article:
   headline: Music Licensing for Australian Business - OneMusic, APRA AMCOS and PPCA Explained
   section: Music licensing
@@ -57,13 +57,13 @@ faqs:
 
 <div class="hero-stat-banner licensing-hero">
   <div class="hero-stat-content">
-    <div class="hero-stat-label">Licensing Made Simple</div>
+    <div class="hero-stat-label">OneMusic, APRA AMCOS and PPCA</div>
     <div class="hero-stat-main">
-      <h1 class="hero-stat-text">Music Licensing for Business - <span class="hero-stat-number license-red">Plain English Guide</span></h1>
+      <h1 class="hero-stat-text">Music licensing for <span class="hero-stat-number license-red">Australian businesses</span></h1>
     </div>
     <div class="hero-stat-cta">
       <span class="pulse-dot"></span>
-      Everything you need to know about playing music legally in your business
+      Who needs a licence, what OneMusic charges, and how to get on a cheaper tier
     </div>
     <div style="margin-top: 20px;">
       <a href="https://onemusic.com.au/" target="_blank" class="btn-glow">
@@ -75,7 +75,7 @@ faqs:
 
 ---
 
-## The Short Version: What You Need to Know
+## What you need to know about music licensing
 
 <div class="stats-showcase licensing-benefits">
   <div class="stat-card danger">
@@ -109,7 +109,7 @@ faqs:
 
 ---
 
-## Who Needs a Music Licence?
+## Who needs a music licence?
 
 <div class="lic-hero-image">
   <img src="assets/images/cafe-restaurant.jpg" alt="Café playing background music for customers" loading="lazy">
@@ -119,7 +119,7 @@ faqs:
   <div class="license-reason">
     <div class="reason-number"><i class="fas fa-store"></i></div>
     <div class="reason-content">
-      <h4>Retail Shops & Service Businesses</h4>
+      <h3 class="lic-h3">Shops and service businesses</h3>
       <p>Fashion stores, newsagents, homewares, hairdressers, physiotherapists, motor dealers, optometrists - basically any shop or service business that plays music where customers can hear it.</p>
     </div>
   </div>
@@ -127,7 +127,7 @@ faqs:
   <div class="license-reason">
     <div class="reason-number"><i class="fas fa-beer"></i></div>
     <div class="reason-content">
-      <h4>Pubs, Bars, Hotels & Casinos</h4>
+      <h3 class="lic-h3">Pubs, bars, hotels and casinos</h3>
       <p>If you've got a TV with sound, a speaker system, a jukebox, or even just a radio playing in your pub, bar, hotel or casino - you need a licence.</p>
     </div>
   </div>
@@ -135,7 +135,7 @@ faqs:
   <div class="license-reason">
     <div class="reason-number"><i class="fas fa-utensils"></i></div>
     <div class="reason-content">
-      <h4>Cafes & Restaurants</h4>
+      <h3 class="lic-h3">Cafes and restaurants</h3>
       <p>Playing background music in your dining area? Whether it's from a streaming service, radio, or background music supplier - you need permission.</p>
     </div>
   </div>
@@ -143,7 +143,7 @@ faqs:
   <div class="license-reason highlight">
     <div class="reason-number"><i class="fas fa-building"></i></div>
     <div class="reason-content">
-      <h4>Pretty Much Every Business</h4>
+      <h3 class="lic-h3">Any business where people can hear music</h3>
       <p><strong>The simple rule:</strong> if your customers or staff can hear music at your business, you almost certainly need a music licence. Even music on your telephone hold system or your website needs to be covered.</p>
     </div>
   </div>
@@ -151,24 +151,33 @@ faqs:
 
 ---
 
-## Understanding OneMusic Licensing - In Plain English
+## What is OneMusic Australia?
 
-<div class="onemusic-section">
-  <div class="onemusic-logo">
-    <a href="https://onemusic.com.au/" target="_blank">
-      <img src="blobs/onemusic-logo.png" alt="OneMusic Australia" width="250">
-    </a>
+<div class="onemusic-section onemusic-explainer">
+  <div class="onemusic-intro">
+    <div class="onemusic-logo">
+      <a href="https://onemusic.com.au/" target="_blank">
+        <img src="blobs/onemusic-logo.png" alt="OneMusic Australia" width="250">
+      </a>
+    </div>
+    <p>Every song you play in your business carries <strong>two separate copyrights</strong>, and each one is looked after by a different organisation.</p>
   </div>
-  
-  <h2>What is OneMusic Australia?</h2>
-  
-  <div class="onemusic-info">
-    <p>When you hear a song, there are actually <strong>two separate copyrights</strong> at play:</p>
-    <ul>
-      <li><strong>APRA AMCOS</strong> represents the <strong>songwriters and composers</strong> - the people who wrote the words and melody. Think of it as the "sheet music" copyright.</li>
-      <li><strong>PPCA</strong> represents the <strong>recording artists and record labels</strong> - the people who actually recorded the version you're listening to. Think of it as the "recording" copyright.</li>
-    </ul>
-    <p><strong>OneMusic Australia</strong> combines both of these into one single licence, so you only have to deal with one organisation instead of two. It's like a one-stop shop for music rights.</p>
+
+  <div class="onemusic-rights">
+    <div class="onemusic-right onemusic-right-song">
+      <span class="onemusic-right-kicker">The song</span>
+      <h3>APRA AMCOS</h3>
+      <p>Represents the <strong>songwriters and composers</strong>, the people who wrote the words and melody. Think of it as the "sheet music" copyright.</p>
+    </div>
+    <div class="onemusic-right onemusic-right-recording">
+      <span class="onemusic-right-kicker">The recording</span>
+      <h3>PPCA</h3>
+      <p>Represents the <strong>recording artists and record labels</strong>, the people who recorded the version you're hearing. Think of it as the "recording" copyright.</p>
+    </div>
+  </div>
+
+  <div class="onemusic-outro">
+    <p><strong>OneMusic Australia</strong> combines both into one licence, so you deal with one organisation and pay one fee instead of two.</p>
     <a href="https://onemusic.com.au/" target="_blank" class="btn-outline">
       <i class="fas fa-external-link-alt"></i> Visit OneMusic Australia
     </a>
@@ -177,7 +186,7 @@ faqs:
 
 ---
 
-## <i class="fas fa-store"></i> Retail & Service Providers - OneMusic Licence Rates
+## <i class="fas fa-store"></i> How much is a music licence for a shop or salon?
 
 <div class="lic-hero-image">
   <img src="assets/images/retail-store.jpg" alt="Retail store with background music" loading="lazy">
@@ -189,7 +198,7 @@ faqs:
 
 <!-- RETAIL PRICING TABLES -->
 
-<div class="lic-tier-grid">
+<div class="lic-tier-grid" data-collapse-group>
 
   <!-- GOLD -->
   <div class="lic-tier-card lic-gold">
@@ -202,7 +211,7 @@ faqs:
       <p>Required if you use a <strong>personal streaming service</strong> like Spotify, Apple Music, or YouTube Music. Unlimited devices. Includes Digital Copy/Delivery for up to 2,000 tracks.</p>
       <p><strong><i class="fas fa-exclamation-triangle"></i> Even with Gold, Spotify is still not legal for commercial use.</strong></p>
     </div>
-    <table class="lic-rate-table">
+    <table class="lic-rate-table" data-collapse-rows="3" data-collapse-label="floor areas">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
       <tbody>
         <tr><td>1 - 50 m²</td><td>$641.94</td></tr>
@@ -231,7 +240,7 @@ faqs:
       <p>For businesses using a <strong>commercial background music supplier</strong> (like eJukebox), CDs, internet radio, or terrestrial radio/TV. No personal streaming. Unlimited devices.</p>
       <p><strong><i class="fas fa-star" style="color:#ffd700"></i> This is the licence tier you get with eJukebox if your venue plays through more than one device.</strong></p>
     </div>
-    <table class="lic-rate-table">
+    <table class="lic-rate-table" data-collapse-rows="3" data-collapse-label="floor areas">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
       <tbody>
         <tr><td>1 - 50 m²</td><td>$183.41</td></tr>
@@ -260,7 +269,7 @@ faqs:
       <p>Same as Silver but limited to a <strong>single device</strong>. Perfect for small businesses with just one speaker or player.</p>
       <p><strong><i class="fas fa-star" style="color:#ffd700"></i> This is the licence tier you get with eJukebox if your venue plays through a single device.</strong></p>
     </div>
-    <table class="lic-rate-table">
+    <table class="lic-rate-table" data-collapse-rows="3" data-collapse-label="floor areas">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
       <tbody>
         <tr><td>1 - 50 m²</td><td>$171.94</td></tr>
@@ -284,7 +293,7 @@ faqs:
     <div class="lic-tier-desc">
       <p>Only covers music from <strong>free-to-air radio or TV</strong>. That's it - if you're only playing Triple J through a radio, this is all you need.</p>
     </div>
-    <table class="lic-rate-table">
+    <table class="lic-rate-table" data-collapse-rows="3" data-collapse-label="floor areas">
       <thead><tr><th>Retail Area</th><th>Annual Fee</th></tr></thead>
       <tbody>
         <tr><td>1 - 50 m²</td><td>$100.07</td></tr>
@@ -304,14 +313,14 @@ faqs:
 <div class="lic-callout lic-callout-tip">
   <div class="lic-callout-icon"><i class="fas fa-lightbulb"></i></div>
   <div class="lic-callout-body">
-    <h4>The Key Takeaway for Retail</h4>
+    <h3 class="lic-h3">Which tier does a shop pay with eJukebox?</h3>
     <p>If you use a <strong>commercial background music supplier like eJukebox</strong>, you qualify for the cheaper <strong>Silver</strong> tier - or <strong>Silver Lite</strong> if you play through a single device - instead of the expensive Gold package. If you use Spotify or similar personal streaming, you're stuck with <strong>Gold</strong> - and you're still breaking Spotify's rules. <a href="/background-music-for-business/">What to look for in a background music provider &rarr;</a></p>
   </div>
 </div>
 
 ---
 
-## <i class="fas fa-beer"></i> Hotels, Pubs, Bars & Casinos - OneMusic Licence Rates
+## <i class="fas fa-beer"></i> How much is a music licence for a pub, bar or hotel?
 
 <div class="lic-hero-image">
   <img src="assets/images/pub-bar.jpg" alt="Pub bar with music system and TVs" loading="lazy">
@@ -325,10 +334,10 @@ faqs:
 <div class="lic-tier-card lic-full-width">
   <div class="lic-tier-header">
     <div class="lic-tier-icon"><i class="fas fa-glass-cheers"></i></div>
-    <h3>Background Music for Location</h3>
+    <h3>Background music packages</h3>
   </div>
   <div class="lic-tier-desc">
-    <p>This is background music in general areas - including attached bottle shops. <strong>Not</strong> for DJs, live bands, featured music events, or separate dining areas.</p>
+    <p>OneMusic calls this "Background Music for Location": background music in general areas, including attached bottle shops. <strong>Not</strong> for DJs, live bands, featured music events, or separate dining areas.</p>
   </div>
   <table class="lic-rate-table lic-rate-table-wide">
     <thead>
@@ -378,7 +387,7 @@ faqs:
 <div class="lic-tier-card lic-full-width lic-addon-card">
   <div class="lic-tier-header">
     <div class="lic-tier-icon"><i class="fas fa-plus-circle"></i></div>
-    <h3>Additional Fees You Might Need to Pay</h3>
+    <h3>Extra fees for dining areas, DJs and live music</h3>
   </div>
   <div class="lic-tier-desc">
     <p>The background music packages above are <strong>just the starting point</strong>. Depending on how your venue uses music, you may also need the following on top:</p>
@@ -432,10 +441,10 @@ faqs:
 
 ---
 
-## <i class="fab fa-spotify" style="color: #1DB954;"></i> The Spotify Trap
+## <i class="fab fa-spotify" style="color: #1DB954;"></i> Do I need a licence to play Spotify at work?
 
 <div class="package-intro">
-  <p class="lead-text">Many business owners think: <em>"I'll just play my Spotify Premium in the shop - it's only $14 a month."</em> Here's why that's more expensive and risky than you think.</p>
+  <p class="lead-text">Yes, you need a OneMusic licence, but a licence doesn't make a personal Spotify account usable at work. Spotify's own terms allow personal, non-commercial use only, and streaming puts you on OneMusic's most expensive tier.</p>
 </div>
 
 <div class="lic-problems-grid">
@@ -443,7 +452,7 @@ faqs:
   <div class="lic-problem-card">
     <div class="lic-problem-number">1</div>
     <div class="lic-problem-content">
-      <h4><i class="fas fa-ban"></i> Spotify Says No</h4>
+      <h3 class="lic-h3"><i class="fas fa-ban"></i> Spotify's terms rule out business use</h3>
       <p>Spotify's own terms and conditions <strong>explicitly forbid</strong> using a personal subscription for commercial or public use. Even if you pay for a OneMusic licence separately, Spotify still hasn't given <strong>you</strong> permission to use <strong>their service</strong> commercially. A OneMusic licence covers the music rights, but it <strong>cannot override</strong> Spotify's terms of service. You're breaching your contract with Spotify.</p>
       <figure style="margin:18px 0 0; padding:0;">
         <img src="blobs/spotify_license.png" alt="Screenshot of Spotify's terms of use stating the service is for personal, non-commercial use only" style="width:100%; max-width:560px; height:auto; border-radius:10px; border:1px solid rgba(255,255,255,.14); display:block;">
@@ -458,7 +467,7 @@ faqs:
   <div class="lic-problem-card">
     <div class="lic-problem-number">2</div>
     <div class="lic-problem-content">
-      <h4><i class="fas fa-dollar-sign"></i> It Costs You More</h4>
+      <h3 class="lic-h3"><i class="fas fa-dollar-sign"></i> Streaming puts you on the most expensive tier</h3>
       <p>Because Spotify is a "personal digital music service" (not a commercial music supplier), OneMusic requires you to take their <strong>most expensive package</strong>. For retail, that's the Gold package. For hospitality, you also need the Digital Copy/Delivery add-on (+$471/yr). A commercial background music supplier like eJukebox puts you on a cheaper tier.</p>
     </div>
   </div>
@@ -466,7 +475,7 @@ faqs:
   <div class="lic-problem-card lic-problem-highlight">
     <div class="lic-problem-number">3</div>
     <div class="lic-problem-content">
-      <h4><i class="fas fa-shield-alt"></i> You're Still Not Legal</h4>
+      <h3 class="lic-h3"><i class="fas fa-shield-alt"></i> A OneMusic licence doesn't override Spotify's terms</h3>
       <p><strong>Even with a OneMusic licence, playing Spotify commercially is technically in breach of Spotify's terms.</strong> OneMusic's own documentation states:</p>
       <blockquote>"Even with our licence, the use of digital music (streaming) services by you in your business may be in breach of the terms and conditions of your end user agreement with that service."</blockquote>
       <p>You're paying more for a setup that still isn't properly legal.</p>
@@ -477,7 +486,7 @@ faqs:
 
 ---
 
-## <i class="fas fa-calculator"></i> Real Cost Comparisons
+## <i class="fas fa-calculator"></i> Spotify vs eJukebox: what a salon, shop or pub pays
 
 <div class="lic-hero-image">
   <img src="assets/images/music-speakers.jpg" alt="Music and sound equipment in a venue" loading="lazy">
@@ -495,8 +504,8 @@ faqs:
   <div class="lic-scenario-header">
     <div class="lic-scenario-badge"><i class="fas fa-cut"></i></div>
     <div>
-      <h3>Scenario 1: Hair Salon</h3>
-      <p>Small salon, 38 m² retail area</p>
+      <h3>Small hair salon</h3>
+      <p>38 m² retail area</p>
     </div>
   </div>
   <div class="lic-vs-grid">
@@ -534,8 +543,8 @@ faqs:
   <div class="lic-scenario-header">
     <div class="lic-scenario-badge"><i class="fas fa-store"></i></div>
     <div>
-      <h3>Scenario 2: Medium Retail Store</h3>
-      <p>Fashion or homewares shop, 100 m² retail area</p>
+      <h3>Fashion or homewares shop</h3>
+      <p>100 m² retail area</p>
     </div>
   </div>
   <div class="lic-vs-grid">
@@ -573,7 +582,7 @@ faqs:
   <div class="lic-scenario-header">
     <div class="lic-scenario-badge"><i class="fas fa-beer"></i></div>
     <div>
-      <h3>Scenario 3: Small Pub</h3>
+      <h3>Small pub</h3>
       <p>3 TV screens with sound, 1 music system, using Spotify</p>
     </div>
   </div>
@@ -610,17 +619,29 @@ faqs:
   <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
     <div class="lic-callout-icon"><i class="fas fa-balance-scale"></i></div>
     <div class="lic-callout-body">
-      <h4>It Costs More - Here's Why It's Worth Every Cent</h4>
+      <h4>What a small pub gets for the difference</h4>
       <p>Yes, the Full Package costs around <strong>$2.52 more per day</strong> than the Spotify route. But consider: you're currently paying $639/yr on Spotify fees + Digital Copy/Delivery for a setup that's <strong>still not legal</strong> under Spotify's own terms. For that $2.52/day, you upgrade from a consumer music app to a <strong>professional entertainment system</strong> built for venues:</p>
       <ul>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Customer song requests</strong> from their smartphones - keeps punters engaged and staying longer</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> - different music for bar, dining, and gaming areas</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Customer song requests</strong> from their own phones, with no app to install - keeps punters engaged and staying longer</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>AI Song Search</strong> - customers describe what they're after, like "80s Aussie pub rock", and pick from the results</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> - different music for bar, dining, and gaming areas, with two zones included</li>
         <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Dayparting</strong> - quieter mornings, upbeat nights, automatic scheduling</li>
         <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Broadcast-quality sound</strong> - consistent volume, no sudden loud or quiet tracks</li>
         <li><i class="fas fa-check" style="color:#10b981"></i> <strong>No ads, ever</strong> - uninterrupted music all day, every day</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Staff announcements</strong> - record on your phone, schedule between songs</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Voice announcements</strong> - record one on your phone and it plays between songs, never over them</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong><a href="/playing-across-the-country/">Playing Across the Country</a></strong> - see what venues nationwide are playing right now, and request it</li>
         <li><i class="fas fa-check" style="color:#10b981"></i> <strong>24/7 monitoring &amp; support</strong> - we keep it running so you don't have to</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>100% legal</strong> - no grey areas, no risk of your music being shut down</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Made for commercial use</strong> - with your OneMusic licence in place, your music is fully above board</li>
+      </ul>
+      <p>Add any of these when the pub wants them. Each is an add-on to Core, and all of them come included in Complete:</p>
+      <ul>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/in-venue-screens/">Photo displays</a></strong> - a branded slideshow of your specials and events on a TV you already have, or a Guest Photo Wall where customers send their own photos to the screen</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/voice-announcements/">Voice dedications</a></strong> - customers record a short shout-out that plays right before their song</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/live-microphone/">Live microphone</a></strong> - any staff phone becomes a PA mic, and the music drops back while you talk</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/voice-announcements/">Typed and scheduled announcements</a></strong> - type a message to be read out between songs, or set happy hour and last drinks to play themselves</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/in-venue-screens/">Interactive request screen</a></strong> - a touchscreen where customers pick songs without reaching for their phone</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/spotify-integration/">Spotify integration</a></strong> - guests request from their own Spotify playlists, matched to your licensed library</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/functions-events/">Functions and events mode</a></strong> - night-only controls for a function host, including stopping cleanly for the speeches</li>
       </ul>
       <p><em>If just one extra customer per week stays for one more drink because they're enjoying the music and requesting songs, that extra revenue more than covers the difference.</em></p>
     </div>
@@ -628,7 +649,7 @@ faqs:
   <div class="lic-callout lic-callout-info" style="margin-top: 10px;">
     <div class="lic-callout-icon"><i class="fas fa-piggy-bank"></i></div>
     <div class="lic-callout-body">
-      <h4>On a Tight Budget? Start Smaller</h4>
+      <h4>On a tight budget? Start with Solo</h4>
       <p>You don't have to start with everything. <strong><a href="./products.html">Solo</a></strong> gives you one curated, ad-free, fully licensed channel for a single area with no hardware to buy - broadcast-quality music without the interaction layer. It beats Spotify on sound quality, legality and licence tier, and you can move up to Core or Complete whenever the venue is ready.</p>
     </div>
   </div>
@@ -642,7 +663,7 @@ faqs:
   <div class="lic-scenario-header">
     <div class="lic-scenario-badge"><i class="fas fa-glass-cheers"></i></div>
     <div>
-      <h3>Scenario 4: Large Pub</h3>
+      <h3>Large pub</h3>
       <p>8 TV screens with sound, multiple music systems, using Spotify</p>
     </div>
   </div>
@@ -679,18 +700,30 @@ faqs:
   <div class="lic-callout lic-callout-tip" style="margin-top: 15px;">
     <div class="lic-callout-icon"><i class="fas fa-balance-scale"></i></div>
     <div class="lic-callout-body">
-      <h4>It Costs More - Here's Why It's Worth Every Cent</h4>
+      <h4>What a large pub gets for the difference</h4>
       <p>The Full Package costs around <strong>$3.84 more per day</strong> than the Spotify route. But remember: you're comparing an <strong>illegal, consumer-grade music app</strong> against a <strong>professional entertainment platform built for large venues</strong>. You're already wasting $639/yr on Spotify + DCD fees for a setup that shouldn't even be used commercially.</p>
       <p>For that $3.84/day, your venue gets:</p>
       <ul>
         <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Customer song requests</strong> - interactive entertainment that keeps punters at the bar longer</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> - different vibes for each area of your venue</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>AI Song Search</strong> - nobody needs the track name; "something for a 50th" brings back a list to request from</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Multi-zone audio</strong> - different vibes for each area of your venue, with two zones included</li>
         <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Dayparting</strong> - music adapts automatically throughout the day and week</li>
         <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Broadcast-quality sound</strong> - professionally mixed, consistent volume across every song</li>
         <li><i class="fas fa-check" style="color:#10b981"></i> <strong>No ads, ever</strong> - uninterrupted music, always</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Staff announcements</strong> - schedule messages between songs from your phone</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Voice announcements</strong> - record a message on your phone and it plays between songs</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong><a href="/playing-across-the-country/">Playing Across the Country</a></strong> - a live view of what venues nationwide are playing, ready to request</li>
         <li><i class="fas fa-check" style="color:#10b981"></i> <strong>24/7 monitoring &amp; support</strong> - we manage it, you run your pub</li>
-        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>100% legal</strong> - complete peace of mind, zero compliance risk</li>
+        <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Made for commercial use</strong> - with your OneMusic licence in place, your music is fully above board</li>
+      </ul>
+      <p>Add any of these as the venue needs them. Each is an add-on to Core, and all of them come included in Complete:</p>
+      <ul>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/in-venue-screens/">Photo displays</a></strong> - turn your screens into a branded slideshow between requests, or a Guest Photo Wall of customers' own photos on big nights</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/voice-announcements/">Voice dedications</a></strong> - an 8-second shout-out recorded by the customer, played right before their song and screened for language</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/live-microphone/">Live microphone</a></strong> - call raffles, trivia and last drinks from any staff phone, with the music dropping back while you talk</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/voice-announcements/">Typed and scheduled announcements</a></strong> - messages read out between songs, or booked to play themselves every happy hour</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/in-venue-screens/">Interactive request screen</a></strong> - a wall-mounted touchscreen so customers can pick songs at the bar without a phone</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/spotify-integration/">Spotify integration</a></strong> - guests request straight from their own Spotify playlists, matched to your licensed library</li>
+        <li><i class="fas fa-plus" style="color:#818cf8"></i> <strong><a href="/functions-events/">Functions and events mode</a></strong> - give a function host their own controls for the night without pulling staff off the floor</li>
       </ul>
       <p><em>A venue this size could easily recoup the difference with just 2-3 extra drinks per week from customers staying longer to enjoy the music and request their favourites.</em></p>
     </div>
@@ -698,7 +731,7 @@ faqs:
   <div class="lic-callout lic-callout-info" style="margin-top: 10px;">
     <div class="lic-callout-icon"><i class="fas fa-piggy-bank"></i></div>
     <div class="lic-callout-body">
-      <h4>On a Tight Budget? Start Smaller</h4>
+      <h4>Not ready for the full system? Start with Solo</h4>
       <p>If the full system is more than you want to take on right now, <strong><a href="./products.html">Solo</a></strong> still gets you broadcast-quality, ad-free, fully licensed music in one area with nothing to install - and puts you on the same commercial-supplier footing with OneMusic. Move up to Core or Complete when you're ready for song requests and multi-zone.</p>
     </div>
   </div>
@@ -706,13 +739,13 @@ faqs:
 
 ---
 
-## <i class="fas fa-lightbulb"></i> Why eJukebox Saves You Money on Licensing
+## <i class="fas fa-lightbulb"></i> How eJukebox lowers your OneMusic fee
 
 <div class="lic-savings-grid">
   
   <div class="lic-savings-card lic-savings-highlight">
     <div class="lic-savings-icon"><i class="fas fa-briefcase"></i></div>
-    <h4>We're a Commercial Background Music Supplier</h4>
+    <h3 class="lic-h3">eJukebox is a commercial background music supplier</h3>
     <p>This is the key difference. Because eJukebox is a <strong>licensed commercial background music supplier</strong> (listed on <a href="https://backgroundmusicguide.com.au/" target="_blank">backgroundmusicguide.com.au</a>), your OneMusic requirements change in your favour:</p>
     <ul>
       <li><i class="fas fa-check" style="color:#10b981"></i> <strong>Retail:</strong> You qualify for the cheaper <strong>Silver</strong> tier - or <strong>Silver Lite</strong> on a single device - instead of Gold</li>
@@ -723,25 +756,25 @@ faqs:
 
   <div class="lic-savings-card">
     <div class="lic-savings-icon"><i class="fas fa-file-alt"></i></div>
-    <h4>No Digital Copy/Delivery Fees</h4>
+    <h3 class="lic-h3">No Digital Copy/Delivery fee</h3>
     <p>OneMusic's own guides say: <em>"You do not need to include Digital Copy/Delivery in your licence if you are only playing music from a commercial background music supplier."</em> That's eJukebox. That's <strong>$471 per year</strong> you don't have to pay.</p>
   </div>
 
   <div class="lic-savings-card">
     <div class="lic-savings-icon"><i class="fas fa-arrow-down"></i></div>
-    <h4>Lower Licence Tier (Retail)</h4>
+    <h3 class="lic-h3">A lower tier for shops and service businesses</h3>
     <p>For <strong>retail businesses</strong>, playing eJukebox instead of a personal streaming account puts you on the <strong>Silver</strong> tier - or <strong>Silver Lite</strong> if you play through a single device - both significantly cheaper than the Gold package you'd need with Spotify. That's a saving of <strong>$459 or more per year</strong> for a small shop alone. For <strong>pubs and hospitality</strong>, the same hospitality tier applies regardless of music source, but you save by not needing the Digital Copy/Delivery add-on.</p>
   </div>
 
   <div class="lic-savings-card">
     <div class="lic-savings-icon"><i class="fas fa-ban"></i></div>
-    <h4>No Spotify Subscription Needed</h4>
+    <h3 class="lic-h3">No streaming subscription on top</h3>
     <p>You don't need to pay for Spotify Premium ($168/yr) on top of everything else. eJukebox replaces it entirely - and unlike Spotify, we're <strong>actually designed</strong> for commercial use.</p>
   </div>
 
   <div class="lic-savings-card">
     <div class="lic-savings-icon"><i class="fas fa-handshake"></i></div>
-    <h4>We'll Help You Work Out What You Owe</h4>
+    <h3 class="lic-h3">Not sure which OneMusic tier applies?</h3>
     <p>Your OneMusic licence stays in your name, but you don't have to guess at the tier. Tell us your venue type, floor area, screens and audio zones and we'll walk you through exactly which OneMusic package applies and what changes once you're on a commercial supplier.</p>
   </div>
 
@@ -749,47 +782,47 @@ faqs:
 
 ---
 
-## <i class="fas fa-question-circle"></i> Common Questions in Plain English
+## <i class="fas fa-question-circle"></i> Common questions about music licences
 
 <div class="lic-faq-grid">
 
   <details class="lic-faq-item">
-    <summary><i class="fas fa-radio"></i> What if I just play the radio?</summary>
+    <summary><i class="fas fa-radio"></i><h3>What if I just play the radio?</h3></summary>
     <div class="lic-faq-answer">
       <p>You still need a licence, but it's the cheapest option. Retail shops pay as little as $100/yr (Bronze). For pubs, it's $153/yr (Bronze) for a single radio and TV. Using a commercial background music supplier like eJukebox is a separate, slightly higher tier, but you get much better music.</p>
     </div>
   </details>
 
   <details class="lic-faq-item">
-    <summary><i class="fas fa-tv"></i> What counts as a "TV Screen"?</summary>
+    <summary><i class="fas fa-tv"></i><h3>What counts as a TV screen for OneMusic licensing?</h3></summary>
     <div class="lic-faq-answer">
       <p>Any screen showing free-to-air or pay TV (including Fox Sports) <strong>with sound</strong>. Screens that only show racing, betting, or Keno silently don't count. A video wall counts as just one screen.</p>
     </div>
   </details>
 
   <details class="lic-faq-item">
-    <summary><i class="fas fa-compact-disc"></i> What's a "Music System"?</summary>
+    <summary><i class="fas fa-compact-disc"></i><h3>What counts as a music system?</h3></summary>
     <div class="lic-faq-answer">
       <p>Any device used to play music - including background music supplier systems (like eJukebox), audio jukeboxes, PCs, tablets, smartphones, CDs, or record players. If you play a radio station through an app like TuneIn, that counts as a Music System, not a radio.</p>
     </div>
   </details>
 
   <details class="lic-faq-item">
-    <summary><i class="fas fa-utensils"></i> My dining area plays different music - do I pay extra?</summary>
+    <summary><i class="fas fa-utensils"></i><h3>My dining area plays different music - do I pay extra?</h3></summary>
     <div class="lic-faq-answer">
       <p>Yes, but only if your dining area has its own separate music source playing different music to the rest of the venue, and it seats at least 7 people. If the same music is heard throughout, there's no extra charge.</p>
     </div>
   </details>
 
   <details class="lic-faq-item">
-    <summary><i class="fas fa-phone"></i> What about telephone on-hold music?</summary>
+    <summary><i class="fas fa-phone"></i><h3>Do I need a licence for telephone on-hold music?</h3></summary>
     <div class="lic-faq-answer">
       <p>Yes, that needs a licence too. For hospitality venues with Gold package or above, up to 2 on-hold lines are included. For retail and service providers, it's a separate fee starting from $283/yr for 1-2 lines.</p>
     </div>
   </details>
 
   <details class="lic-faq-item">
-    <summary><i class="fas fa-globe"></i> What about music on my website?</summary>
+    <summary><i class="fas fa-globe"></i><h3>What about music on my business website?</h3></summary>
     <div class="lic-faq-answer">
       <p>If you have background music on your business website, that's an extra $648/yr with OneMusic. There are restrictions: 10-15 different tracks, no more than one per artist, and visitors can't choose tracks.</p>
     </div>
@@ -799,7 +832,7 @@ faqs:
 
 ---
 
-## <i class="fas fa-check-double"></i> The Bottom Line
+## <i class="fas fa-check-double"></i> Why businesses switch from Spotify to eJukebox
 
 <div class="stats-showcase licensing-benefits">
   <div class="stat-card success">
@@ -845,7 +878,7 @@ faqs:
 
 ---
 
-## <i class="fas fa-book-open"></i> Official OneMusic Pricing Guides
+## <i class="fas fa-book-open"></i> OneMusic's official pricing guides
 
 <div class="onemusic-section">
   <div class="onemusic-info">
@@ -864,8 +897,9 @@ faqs:
 
 ---
 
+## <i class="fas fa-heart"></i> Where your licence fee goes
+
 <div class="onemusic-section">
-  <h2><i class="fas fa-heart"></i> Supporting Music Creators</h2>
   <div class="onemusic-info">
     <p>Music licensing isn't just about ticking a legal box. Last year, the organisations behind OneMusic paid royalties across more than <strong>1.8 million songs</strong> and to more than <strong>89,000 local Australian songwriters and recording artists</strong>. When you play licensed music in your business, you're directly supporting the people who created the soundtrack to your customers' experience. They've earned it.</p>
     <a href="https://onemusic.com.au/" target="_blank" class="btn-outline">
@@ -873,3 +907,53 @@ faqs:
     </a>
   </div>
 </div>
+
+<script>
+/* Long rate tables show their first rows, with a button for the rest. Every row
+   stays in the HTML, so search engines and visitors without JavaScript get the
+   whole table. A table is only collapsed if at least two rows would be hidden.
+   Tables inside one [data-collapse-group] open and close together while the cards
+   sit side by side, so the same floor area stays level and can be compared. On a
+   phone the cards stack, so each table opens on its own. */
+(function () {
+  var controls = [];
+  function sideBySide(group) {
+    return !!group && getComputedStyle(group).gridTemplateColumns.split(' ').length > 1;
+  }
+  var tables = document.querySelectorAll('table[data-collapse-rows]');
+  Array.prototype.forEach.call(tables, function (table, i) {
+    var body = table.tBodies[0];
+    if (!body) return;
+    var rows = body.rows;
+    var keep = parseInt(table.getAttribute('data-collapse-rows'), 10) || 3;
+    if (rows.length - keep < 2) return;
+    if (!table.id) table.id = 'lic-rates-' + (i + 1);
+    var more = 'Show all ' + rows.length + ' ' + (table.getAttribute('data-collapse-label') || 'rows');
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'lic-rate-toggle';
+    button.setAttribute('aria-controls', table.id);
+    button.innerHTML = '<span></span><i class="fas fa-chevron-down" aria-hidden="true"></i>';
+    table.parentNode.insertBefore(button, table.nextSibling);
+    var control = {
+      group: table.closest('[data-collapse-group]'),
+      show: function (open) {
+        for (var r = keep; r < rows.length; r++) rows[r].hidden = !open;
+        button.setAttribute('aria-expanded', open ? 'true' : 'false');
+        button.firstChild.textContent = open ? 'Show fewer' : more;
+      }
+    };
+    button.addEventListener('click', function () {
+      var open = button.getAttribute('aria-expanded') !== 'true';
+      var together = sideBySide(control.group);
+      controls.forEach(function (c) {
+        if (c === control || (together && c.group === control.group)) c.show(open);
+      });
+      // Closing a long table can leave the reader below it; bring the button back.
+      if (!open && button.getBoundingClientRect().top < 0) button.scrollIntoView({ block: 'center' });
+    });
+    control.show(false);
+    controls.push(control);
+  });
+})();
+</script>

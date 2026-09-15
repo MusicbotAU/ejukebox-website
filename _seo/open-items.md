@@ -15,6 +15,10 @@ Same ex-GST vs inc-GST question applies: `pricing.yml` is ex GST, the OneMusic
 figures on the page are inc GST. The retail scenarios now label the eJukebox line
 "ex GST" to make the mixed basis visible, rather than silently adding the two.
 
+On 15 Sep 2026 both pub scenarios gained the current feature list (Core features
+plus add-ons, labelled "included in Complete"), but the price they sit under is
+still the stale Full Package figure.
+
 **Venue FAQs.** Only `music-for-pubs-bars` and `irish-pub-music` have a `faqs:`
 block. Missing on cafes, gyms, hotels, medical, nightclubs, restaurants, retail
 and salons-spas. The `venue` layout renders `faqs:` visibly *and* `schema.html`
@@ -53,6 +57,12 @@ only works if `org.yml`, `llms.txt` and the on-page copy state identical facts.
 **NAP elsewhere.** Marc is updating the address in the footer and contact page.
 
 ## Housekeeping
+
+**The `/music-for-gyms/` hero image is not a gym.** It shows a performer with a
+microphone and a raised hand at a concert. Raised 15 Sep 2026: find a gym or
+fitness-class photo. The venue layout loads `assets/images/venues/<slug>.jpg`, so
+either replace `assets/images/venues/music-for-gyms.jpg` or set `hero_image:` in
+`music-for-gyms.md`.
 
 **Git remote still points at the old repo URL.** Pushes work on GitHub's
 redirect, which will not last forever:

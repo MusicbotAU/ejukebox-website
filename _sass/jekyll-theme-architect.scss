@@ -2120,7 +2120,7 @@ aside#sidebar iframe {
 }
 
 .onemusic-info {
-  text-align: center;
+  text-align: left;
   padding: 25px;
   background: rgba(15, 15, 26, 0.5);
   border-radius: 12px;
@@ -3837,14 +3837,14 @@ b {
 }
 
 .package-intro {
-  text-align: center;
+  text-align: left;
   margin-bottom: 50px;
 }
 
 .package-intro .lead-text {
   font-size: 1.2em;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .options-section {
@@ -8333,4 +8333,170 @@ a.test-drive-badge:hover {
   font-size: 0.92em;
   line-height: 1.6;
   margin: 0;
+}
+
+/* FAQ questions are h3s inside <summary>, styled by the summary itself. */
+#main-content .lic-faq-item summary h3 {
+  margin: 0;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+  line-height: 1.4;
+}
+
+/* Card and callout headings directly under an h2 are h3s, so the outline runs
+   h2 > h3 with no level skipped, but they keep the look the theme gives an h4.
+   The global `#main-content h3` rule is !important, hence the ID here. */
+#main-content .lic-h3 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 1.15em !important;
+  color: #f8fafc !important;
+}
+
+/* ===================================
+   LICENSING - COLLAPSIBLE RATE TABLES
+   =================================== */
+
+/* The toggle is added by the script at the foot of licensing.md. */
+.lic-rate-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #a5b4fc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lic-rate-toggle:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: #c4b5fd;
+}
+
+.lic-rate-toggle:focus-visible {
+  outline: 2px solid #818cf8;
+  outline-offset: -2px;
+}
+
+.lic-rate-toggle i {
+  font-size: 0.85em;
+  transition: transform 0.2s ease;
+}
+
+.lic-rate-toggle[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+
+@media print {
+  .lic-rate-table tr[hidden] {
+    display: table-row !important;
+  }
+
+  .lic-rate-toggle {
+    display: none;
+  }
+}
+
+/* ===================================
+   LICENSING - WHAT IS ONEMUSIC
+   =================================== */
+
+.onemusic-intro {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.onemusic-intro .onemusic-logo {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.onemusic-intro p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+.onemusic-rights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.onemusic-right {
+  padding: 22px 24px;
+  background: rgba(15, 15, 26, 0.5);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-top: 3px solid #6366f1;
+  border-radius: 12px;
+}
+
+.onemusic-right-recording {
+  border-top-color: #10b981;
+}
+
+.onemusic-right-kicker {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #a5b4fc;
+}
+
+.onemusic-right-recording .onemusic-right-kicker {
+  color: #34d399;
+}
+
+#main-content .onemusic-right h3 {
+  margin: 0 0 10px;
+  font-size: 1.3em !important;
+  color: #f8fafc !important;
+}
+
+.onemusic-right p {
+  margin: 0;
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.onemusic-outro {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-top: 24px;
+}
+
+.onemusic-outro p {
+  flex: 1 1 320px;
+  margin: 0;
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  .onemusic-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .onemusic-rights {
+    grid-template-columns: 1fr;
+  }
 }

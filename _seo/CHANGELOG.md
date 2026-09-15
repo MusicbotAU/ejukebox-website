@@ -5,6 +5,58 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-09-15 - Licensing page: headings, outline, OneMusic box, rate tables
+
+A review of `/licensing.html`, the page behind more than half of the site's
+search impressions. Five changes, all on that page.
+
+**Every heading now says the thing.** The old ones were brochure style: "The
+Short Version: What You Need to Know", "Understanding OneMusic Licensing - In
+Plain English", "The Spotify Trap", "The Bottom Line", "It Costs More - Here's
+Why It's Worth Every Cent". They now use the words people search with, several
+as questions from Search Console: "How much is a music licence for a shop or
+salon?", and "Do I need a licence to play Spotify at work?", which already ranked
+6.5 for that query. The Spotify H2 is now followed by a one-sentence answer.
+Sentence case throughout, matching the hub page. H1 is "Music licensing for
+Australian businesses"; the title tag is unchanged.
+
+**Outline fixed.** Card, callout and FAQ headings sat as H4s straight under H2s,
+and the OneMusic box nested a second H2 under a near-empty one. It now runs
+H1 > H2 > H3 > H4 with no level skipped, and the FAQ questions are H3s inside
+`<summary>`. Demoted headings keep their old look through `#main-content .lic-h3`,
+because the theme's global `#main-content h3` rule is `!important`. The visible
+FAQ questions now match the `faqs:` front matter word for word, so the FAQPage
+schema and the page agree.
+
+**"What is OneMusic Australia?"** was a centred block with a bullet list. Now left
+aligned: logo and intro, APRA AMCOS and PPCA as two cards side by side (stacked
+on mobile), then the one-licence line and the button. `.onemusic-info` and
+`.package-intro` are left aligned as well; both are used only on this page.
+
+**Retail rate tables collapse to three rows** (1 to 500 m²) with a "Show all N
+floor areas" button. Every row stays in the HTML, so crawlers, AI answer engines
+and visitors without JavaScript get the full table, and print shows it all. While
+the cards sit side by side the four open together, which keeps the same floor
+area level for comparison; on a phone each opens alone. Two tables deliberately
+stay open: the pub packages (listed Sapphire first, so three rows would hide Gold,
+Silver and Bronze, the tiers small venues need) and the add-on fees (hiding a row
+could hide a fee a venue owes).
+
+**Pub scenarios list the current features.** Both callouts add AI Song Search,
+voice announcements and Playing Across the Country (all in Core), plus a second
+list of add-ons: photo displays and Guest Photo Wall, voice dedications, live
+microphone, typed and scheduled announcements, request screen, Spotify
+integration and functions mode. They are labelled as add-ons to Core that come
+included in Complete, worded from `_data/pricing.yml`, and link to their feature
+pages. "100% legal - zero compliance risk" became "Made for commercial use - with
+your OneMusic licence in place, your music is fully above board", since the venue
+always holds its own licence.
+
+Still open: the same scenarios price a "Full Package" at $130 and $170/mo that
+matches no current plan (see `open-items.md`).
+
+---
+
 ## 2026-09-15 - New hub page for "background music provider"
 
 Marc flagged that we rank nowhere for "background music providers". No page was
