@@ -177,7 +177,7 @@ last_reviewed: 2026-10-13
       <li><i class="fas fa-location-dot"></i><div><b>Walk in and you are connected</b><span>The app finds the room. Scan the venue's QR code or type its short code and you are in.</span></div></li>
       <li><i class="fas fa-music"></i><div><b>See what is playing</b><span>The song on now, how long is left, and what is coming up next, live.</span></div></li>
       <li><i class="fas fa-magnifying-glass"></i><div><b>Pick the next song</b><span>Search the venue's library, hear a preview and queue it. Not sure? Tap "Help me pick" and describe the mood.</span></div></li>
-      <li><i class="fas fa-microphone"></i><div><b>Add your voice</b><span>Where the venue allows it, record a short dedication that plays right before your song.</span></div></li>
+      <li><i class="fas fa-microphone"></i><div><b>Add your voice</b><span>Where the venue allows it, record a short dedication that plays right before your song and blends into the intro, like a radio DJ.</span></div></li>
       <li><i class="fas fa-image"></i><div><b>Your photo on the big screen</b><span>Where the venue has switched it on, send a photo from your phone to the venue's screens.</span></div></li>
     </ul>
   </div>

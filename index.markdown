@@ -148,13 +148,13 @@ hero:
 
 <div class="hp-req">
   <div>
-    <span class="hp-kick"><i class="fas fa-hand-pointer"></i> Song requests</span>
-    <h2>Your customers pick the next song</h2>
-    <p>On Core and Complete, customers request songs from their own phone - by scanning your QR code, or in the free eJukebox Request app. You set the rules, and your staff steer the queue from the bar.</p>
+    <span class="hp-kick"><i class="fas fa-hand-pointer"></i> Song requests - your choice</span>
+    <h2>Want the room picking the next song?</h2>
+    <p>Not every venue does, so requests are entirely up to you. Choose Core or Complete and your customers can request songs from their own phone - by scanning your QR code, or in the free eJukebox Request app. You set the rules, and you can switch requests off any time while the music carries on by itself.</p>
     <ul>
       <li><i class="fas fa-wand-magic-sparkles"></i><span><strong>Help me pick</strong> - describe the mood, get songs to choose from</span></li>
-      <li><i class="fas fa-headphones"></i><span>30-second previews before they request</span></li>
-      <li><i class="fas fa-microphone-lines"></i><span>Voice dedications that play right before their song, as an add-on</span></li>
+      <li><i class="fas fa-headphones"></i><span>30-second previews before anyone requests</span></li>
+      <li><i class="fas fa-microphone-lines"></i><span>Voice dedications that play right before their song and blend into the intro (add-on)</span></li>
     </ul>
     <a class="hp-btn" href="/ejukebox-request-portal.html"><i class="fas fa-music"></i> How song requests work</a>
   </div>

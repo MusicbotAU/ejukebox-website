@@ -5,7 +5,7 @@ be revisited without re-deriving it.
 
 ---
 
-## 2026-10-13 - Real app screens on eight pages
+## 2026-10-13 - Real app screens on nine pages
 
 Marc's own grabs of eJukebox Request and of the Admin app's Voice menu, taken at Club
 Buffalo (our demo venue), now illustrate the pages they belong to.
@@ -14,14 +14,18 @@ Buffalo (our demo venue), now illustrate the pages they belong to.
   one in front, two tilted and dimmed behind - so customers get the feel of the apps without
   a full-size blueprint. Files in `assets/images/apps/` (WebP, 500px wide, 23-45 KB); keys,
   paths and alt text in `_data/app_screens.yml`.
-- **Where:** Song Requests (hero), the homepage (a new song requests section - the feature
-  grid never mentioned requests), Download the Apps (a fan for each app), Voice &
-  Announcements, Live Microphone, Admin app, Why Choose Us, Spotify Integration.
+- **Where:** Song Requests (hero), the homepage (a new, clearly optional song requests
+  section), Download the Apps (a fan for each app), Voice & Announcements, Live
+  Microphone, Admin app, Why Choose Us, Spotify Integration, Functions & Events.
 - **Cleaned before use:** stray window edges, a staff member's name, the build stamp and
   some technical audio detail removed. The live-mic screen joins two grabs of the same page.
-- **Copy matched to the apps:** a dedication plays right before the song, not over its
-  intro; the type-a-message button is "Hear it first"; Live Microphone starts from Voice,
-  then Talk to the room now.
+- **Copy matched to the apps:** a dedication plays right before the song and blends into
+  its intro, like a radio DJ (Marc: both, not one or the other); the type-a-message button
+  is "Hear it first"; Live Microphone starts from Voice, then Talk to the room now.
+- **Song requests are optional.** The homepage section says so - requests come with Core
+  and Complete, and not every venue wants them.
+- **Functions & Events** shows the Request screens too: guests use the same screens,
+  opened with the function's own code.
 
 ---
 

@@ -15,7 +15,7 @@ request-ai-picks:
   alt: "Help me pick in the eJukebox Request app suggesting songs for a girls' night out, each with a reason it fits"
 request-voice:
   src: "/assets/images/apps/song-request-app-voice-dedication.webp"
-  alt: "Adding a voice dedication to a song request in the eJukebox Request app - up to 8 seconds, played before the song"
+  alt: "Adding a voice dedication to a song request in the eJukebox Request app - up to 8 seconds, played right before the song and over its intro"
 
 admin-voice:
   src: "/assets/images/apps/ejukebox-admin-app-voice-menu.webp"

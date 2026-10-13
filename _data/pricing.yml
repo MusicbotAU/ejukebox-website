@@ -208,7 +208,7 @@ addons:
     category: Interaction
     retail: 25
     whl: 18
-    desc: Customers record an 8-second shout-out that plays right before their song. Transcribed and profanity-scanned in real time, so it's safe to hand to a full room.
+    desc: Customers record an 8-second shout-out that plays right before their song and blends into the intro, like a radio DJ. Transcribed and profanity-scanned in real time, so it's safe to hand to a full room.
     video: eJukebox-Feature-Voice-Dedications.mp4
   - id: photo-screen
     name: Photo Slideshow Display
