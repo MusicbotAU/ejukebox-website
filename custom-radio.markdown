@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Custom Branded In-Store Radio for Retail
-description: Your own branded in-store radio station, with one to four channels, professional voice-overs and timed promos. Built for retail groups, shopping centres and clubs.
+description: Your own branded in-store radio station - one to four channels, professional voice-overs and timed promos, for retail groups, shopping centres and clubs.
 schema_service: Custom branded in-store radio for retail and shopping centres
 service_type: Custom branded radio station production and delivery
 last_reviewed: 2026-10-13
