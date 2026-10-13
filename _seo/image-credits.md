@@ -31,3 +31,11 @@ its licence allows that.
 | `waiting-lounge.jpg` | Yellow chairs (Unsplash).jpg | CC0 | Benjamin Child bchild311 | [Commons](https://commons.wikimedia.org/wiki/File:Yellow_chairs_(Unsplash).jpg) |
 | `pilates-studio.jpg` | Pilates reformer.jpg | CC0 | Maddi Bazzocco | [Commons](https://commons.wikimedia.org/wiki/File:Pilates_reformer.jpg) |
 | `lodge-lounge.jpg` | Lake St Clair (Unsplash).jpg | CC0 | Simon Rae simonrae | [Commons](https://commons.wikimedia.org/wiki/File:Lake_St_Clair_(Unsplash).jpg) |
+
+## Our own app screens
+
+`assets/images/apps/` holds real screens from the eJukebox Request and eJukebox Admin apps,
+captured at Club Buffalo (our demo venue) on Tue 13 October 2026. They are ours - no
+credit needed. Cleaned and re-framed before use; the full-size masters and the original
+grabs are in Marketing\App Screenshots. Shown through `_includes/app-fan.html`, with alt
+text in `_data/app_screens.yml`.

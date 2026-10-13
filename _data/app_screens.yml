@@ -1,0 +1,31 @@
+# Real eJukebox app screens, captured on Tue 13 October 2026 at Club Buffalo - our demo
+# venue at the Ryde office. Cleaned and re-framed (stray window edges, a staff name, the
+# build stamp and technical audio lines removed). Full-size masters and the original grabs
+# are in Marketing\App Screenshots. Shown by _includes/app-fan.html - all 500 x 1055.
+# Keep every value quoted: a ": " inside a plain YAML value breaks the whole file.
+
+request-home:
+  src: "/assets/images/apps/song-request-app-home.webp"
+  alt: "eJukebox Request song request app at a club, showing the song on air, songs coming up and tracks trending nationwide"
+request-ai-search:
+  src: "/assets/images/apps/song-request-app-ai-search.webp"
+  alt: "AI song search in the eJukebox Request app - a guest types girls night out mix and taps Help me pick"
+request-ai-picks:
+  src: "/assets/images/apps/song-request-app-ai-picks.webp"
+  alt: "Help me pick in the eJukebox Request app suggesting songs for a girls' night out, each with a reason it fits"
+request-voice:
+  src: "/assets/images/apps/song-request-app-voice-dedication.webp"
+  alt: "Adding a voice dedication to a song request in the eJukebox Request app - up to 8 seconds, played before the song"
+
+admin-voice:
+  src: "/assets/images/apps/ejukebox-admin-app-voice-menu.webp"
+  alt: "Voice menu in the eJukebox Admin app - talk to the room live, record a message, type one, or schedule it for later"
+admin-live-mic:
+  src: "/assets/images/apps/ejukebox-admin-app-live-microphone.webp"
+  alt: "Live microphone in the eJukebox Admin app - a staff phone becomes the PA, with announcement level and music ducking"
+admin-type:
+  src: "/assets/images/apps/ejukebox-admin-app-type-a-message.webp"
+  alt: "Type a Message in the eJukebox Admin app - type last drinks in fifteen minutes and a professional voice reads it out"
+admin-schedule:
+  src: "/assets/images/apps/ejukebox-admin-app-scheduled-announcements.webp"
+  alt: "Scheduled announcements in the eJukebox Admin app - happy hour booked for 6:30pm every day, playing itself"

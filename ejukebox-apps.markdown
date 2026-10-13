@@ -177,7 +177,7 @@ last_reviewed: 2026-10-13
       <li><i class="fas fa-location-dot"></i><div><b>Walk in and you are connected</b><span>The app finds the room. Scan the venue's QR code or type its short code and you are in.</span></div></li>
       <li><i class="fas fa-music"></i><div><b>See what is playing</b><span>The song on now, how long is left, and what is coming up next, live.</span></div></li>
       <li><i class="fas fa-magnifying-glass"></i><div><b>Pick the next song</b><span>Search the venue's library, hear a preview and queue it. Not sure? Tap "Help me pick" and describe the mood.</span></div></li>
-      <li><i class="fas fa-microphone"></i><div><b>Add your voice</b><span>Where the venue allows it, record a short dedication that plays over the intro of your song.</span></div></li>
+      <li><i class="fas fa-microphone"></i><div><b>Add your voice</b><span>Where the venue allows it, record a short dedication that plays right before your song.</span></div></li>
       <li><i class="fas fa-image"></i><div><b>Your photo on the big screen</b><span>Where the venue has switched it on, send a photo from your phone to the venue's screens.</span></div></li>
     </ul>
   </div>
@@ -192,6 +192,8 @@ last_reviewed: 2026-10-13
     <p class="dl-fine">Rather not download anything? Customers can scan the venue's code and request from their phone's browser instead.</p>
   </div>
 </div>
+
+{% include app-fan.html left="request-ai-picks" center="request-home" right="request-voice" caption="eJukebox Request. Real screens from Club Buffalo, our demo venue." %}
 
 <div class="dl-app staff" id="admin">
   <div>
@@ -230,6 +232,8 @@ last_reviewed: 2026-10-13
     <a class="dl-gp" href="https://play.google.com/store/apps/details?id=au.com.ejukebox.music" target="_blank" rel="noopener"><img src="/blobs/GooglePlayStoreLogo.png" alt="Get eJukebox Music on Google Play"></a>
   </div>
 </div>
+
+{% include app-fan.html left="admin-type" center="admin-voice" right="admin-live-mic" caption="The Voice menu in eJukebox Admin. Real screens from Club Buffalo, our demo venue." %}
 
 <div class="dl-sec-head">
   <h2>Which app do I need?</h2>

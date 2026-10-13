@@ -129,6 +129,38 @@ hero:
 </div>
 
 
+<style>
+  /* song requests on the homepage, prefixed hp- */
+  .hp-req { display:grid; grid-template-columns:1.05fr .95fr; gap:34px; align-items:center; margin:60px 0 50px; padding:46px 42px 40px; border-radius:22px; overflow:hidden;
+    background:linear-gradient(140deg, rgba(99,102,241,.16), rgba(20,184,166,.07)), var(--ejm-card); border:1.5px solid var(--ejm-line); }
+  .hp-kick { display:block; margin-bottom:10px; font-size:.78rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:var(--ejm-teal); }
+  #main-content .hp-req h2 { margin:0 0 14px !important; padding:0; border:0; font-size:clamp(1.6rem,3vw,2.2rem) !important; line-height:1.15; color:var(--ejm-ink) !important; }
+  #main-content .hp-req p { margin:0 0 16px; font-size:1.05rem; line-height:1.65; color:var(--ejm-soft) !important; }
+  #main-content .hp-req strong { color:var(--ejm-ink); }
+  #main-content .hp-req ul { list-style:none; margin:0 0 24px; padding:0; display:grid; gap:9px; }
+  #main-content .hp-req li { display:flex; gap:10px; align-items:baseline; margin:0; padding:0; font-size:.97rem; line-height:1.5; color:var(--ejm-soft); }
+  #main-content .hp-req li::before { content:none; }
+  #main-content .hp-req li i { width:18px; flex:none; text-align:center; color:var(--ejm-green); }
+  #main-content .hp-req .hp-btn { display:inline-flex; align-items:center; gap:10px; padding:13px 22px; border-radius:12px; font-weight:700; text-decoration:none; color:#fff !important;
+    background:linear-gradient(135deg, var(--ejm-pink), var(--ejm-ind)); box-shadow:0 12px 30px rgba(236,72,153,.3); }
+  @media (max-width:860px) { .hp-req { grid-template-columns:1fr; padding:32px 20px 26px; } }
+</style>
+
+<div class="hp-req">
+  <div>
+    <span class="hp-kick"><i class="fas fa-hand-pointer"></i> Song requests</span>
+    <h2>Your customers pick the next song</h2>
+    <p>On Core and Complete, customers request songs from their own phone - by scanning your QR code, or in the free eJukebox Request app. You set the rules, and your staff steer the queue from the bar.</p>
+    <ul>
+      <li><i class="fas fa-wand-magic-sparkles"></i><span><strong>Help me pick</strong> - describe the mood, get songs to choose from</span></li>
+      <li><i class="fas fa-headphones"></i><span>30-second previews before they request</span></li>
+      <li><i class="fas fa-microphone-lines"></i><span>Voice dedications that play right before their song, as an add-on</span></li>
+    </ul>
+    <a class="hp-btn" href="/ejukebox-request-portal.html"><i class="fas fa-music"></i> How song requests work</a>
+  </div>
+  {% include app-fan.html left="request-ai-search" center="request-home" right="request-voice" size="tight" %}
+</div>
+
 <div class="venue-showcase pub-cafe">
   <div class="venue-content">
     <div class="venue-icon"><i class="fas fa-beer"></i></div>

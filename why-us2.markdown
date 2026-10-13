@@ -44,6 +44,8 @@ last_reviewed: 2026-10-13
   <div class="ft-card"><span class="ft-ico c"><i class="fas fa-file-signature"></i></span><h3>Licensing made simpler</h3><p>We are a commercial background music supplier, so you are not relying on a personal account. For pubs and clubs we collect and pay your OneMusic licence for you, at cost. <a href="/licensing.html">How licensing works</a>.</p></div>
 </div>
 
+{% include app-fan.html left="request-ai-search" center="request-home" right="request-ai-picks" caption="eJukebox Request, the app your customers use. Real screens from Club Buffalo, our demo venue." %}
+
 <div class="ft-sec-head">
   <span class="ft-kick">For the audio nerds</span>
   <h2>Why it sounds better</h2>

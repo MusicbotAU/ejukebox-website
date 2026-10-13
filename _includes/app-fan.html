@@ -1,0 +1,69 @@
+{% comment %}
+  Real eJukebox app screens, fanned like a hand of cards: one phone in front, two tilted
+  and dimmed behind it. Customers get the feel of the apps at a glance, without the page
+  being a full-size blueprint for anyone copying them.
+
+    {% include app-fan.html left="request-ai-search" center="request-home" right="request-voice" %}
+
+  Screen keys, files and alt text are in _data/app_screens.yml. Optional: size="tight" for
+  a half-width column such as a hero, caption="...", eager="1" when it is above the fold.
+  Styles are af- prefixed and emitted once per page. The theme gives every content image a
+  radius, a shadow, a phone margin and a hover zoom, hence the #main-content rules.
+{% endcomment %}
+{%- unless af_styles_done -%}
+{%- assign af_styles_done = true %}
+<style>
+.af-fan{position:relative;width:100%;max-width:660px;margin:44px auto 36px;padding:0}
+.af-stage{position:relative;aspect-ratio:100/86;
+  -webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,#000 82%,transparent 100%)}
+.af-stage::before{content:"";position:absolute;left:14%;right:14%;top:10%;bottom:4%;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(99,102,241,.42),rgba(20,184,166,.14) 62%,transparent);filter:blur(28px)}
+#main-content .af-fan .af-ph{position:absolute;top:2%;left:32%;width:36%;height:auto;max-width:none;margin:0 !important;
+  border-radius:0 !important;box-shadow:none !important;transform-origin:50% 100%;
+  filter:drop-shadow(0 22px 28px rgba(0,0,0,.55));transition:transform .6s cubic-bezier(.2,.8,.2,1),filter .6s ease}
+#main-content .af-fan .af-c{z-index:3;transform:none}
+#main-content .af-fan .af-l,#main-content .af-fan .af-r{z-index:2;filter:brightness(.58) saturate(.8) drop-shadow(0 18px 24px rgba(0,0,0,.5))}
+#main-content .af-fan .af-l{transform:translate(-56%,4%) rotate(-10deg) scale(.9)}
+#main-content .af-fan .af-r{transform:translate(56%,4%) rotate(10deg) scale(.9)}
+@media (hover:hover){
+  #main-content .af-fan:hover .af-l,#main-content .af-fan:hover .af-r{filter:brightness(.74) saturate(.9) drop-shadow(0 18px 24px rgba(0,0,0,.5))}
+  #main-content .af-fan:hover .af-l{transform:translate(-62%,3%) rotate(-12deg) scale(.9)}
+  #main-content .af-fan:hover .af-r{transform:translate(62%,3%) rotate(12deg) scale(.9)}
+  #main-content .af-fan:hover .af-c{transform:translateY(-2%)}
+}
+.af-tight{max-width:480px;margin:0 auto}
+.af-tight .af-stage{aspect-ratio:100/112}
+#main-content .af-tight .af-ph{top:0;left:25%;width:50%}
+#main-content .af-tight .af-l{transform:translate(-40%,3%) rotate(-9deg) scale(.86)}
+#main-content .af-tight .af-r{transform:translate(40%,3%) rotate(9deg) scale(.86)}
+@media (hover:hover){
+  #main-content .af-tight:hover .af-l{transform:translate(-44%,2%) rotate(-10deg) scale(.86)}
+  #main-content .af-tight:hover .af-r{transform:translate(44%,2%) rotate(10deg) scale(.86)}
+}
+.af-cap{display:flex;justify-content:center;align-items:baseline;gap:8px;max-width:62ch;margin:6px auto 0;text-align:center;
+  font-size:.9rem;line-height:1.5;color:var(--ejm-mut)}
+.af-cap i{color:var(--ejm-teal)}
+@media (max-width:640px){
+  .af-fan:not(.af-tight) .af-stage{aspect-ratio:100/104}
+  #main-content .af-fan:not(.af-tight) .af-ph{left:28%;width:44%}
+  #main-content .af-fan:not(.af-tight) .af-l{transform:translate(-42%,4%) rotate(-8deg) scale(.86)}
+  #main-content .af-fan:not(.af-tight) .af-r{transform:translate(42%,4%) rotate(8deg) scale(.86)}
+}
+@media (prefers-reduced-motion:reduce){#main-content .af-fan .af-ph{transition:none}}
+</style>
+{%- endunless %}
+{%- assign af = site.data.app_screens -%}
+{%- assign af_l = af[include.left] -%}
+{%- assign af_c = af[include.center] -%}
+{%- assign af_r = af[include.right] -%}
+{%- if include.eager %}{% assign af_load = '' %}{% else %}{% assign af_load = ' loading="lazy"' %}{% endif %}
+<figure class="af-fan{% if include.size == 'tight' %} af-tight{% endif %}">
+  <div class="af-stage">
+    <img class="af-ph af-l" src="{{ af_l.src }}" alt="{{ af_l.alt | escape }}" width="500" height="1055"{{ af_load }} decoding="async">
+    <img class="af-ph af-r" src="{{ af_r.src }}" alt="{{ af_r.alt | escape }}" width="500" height="1055"{{ af_load }} decoding="async">
+    <img class="af-ph af-c" src="{{ af_c.src }}" alt="{{ af_c.alt | escape }}" width="500" height="1055"{{ af_load }}{% if include.eager %} fetchpriority="high"{% endif %} decoding="async">
+  </div>
+  {%- if include.caption %}
+  <figcaption class="af-cap"><i class="fas fa-mobile-screen-button"></i><span>{{ include.caption }}</span></figcaption>
+  {%- endif %}
+</figure>

@@ -151,7 +151,7 @@ howto:
         <li><i class="fas fa-circle-check"></i> Licensed, family-friendly library with no explicit lyrics</li>
       </ul>
     </div>
-    <div>{% include request-phone.html %}</div>
+    <div>{% include app-fan.html left="request-ai-search" center="request-home" right="request-voice" size="tight" eager="1" %}</div>
   </div>
 </div>
 

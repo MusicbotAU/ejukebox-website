@@ -5,6 +5,56 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-13 - Real app screens on eight pages
+
+Marc's own grabs of eJukebox Request and of the Admin app's Voice menu, taken at Club
+Buffalo (our demo venue), now illustrate the pages they belong to.
+
+- **Fanned, not flat:** `_includes/app-fan.html` shows three phones like a hand of cards -
+  one in front, two tilted and dimmed behind - so customers get the feel of the apps without
+  a full-size blueprint. Files in `assets/images/apps/` (WebP, 500px wide, 23-45 KB); keys,
+  paths and alt text in `_data/app_screens.yml`.
+- **Where:** Song Requests (hero), the homepage (a new song requests section - the feature
+  grid never mentioned requests), Download the Apps (a fan for each app), Voice &
+  Announcements, Live Microphone, Admin app, Why Choose Us, Spotify Integration.
+- **Cleaned before use:** stray window edges, a staff member's name, the build stamp and
+  some technical audio detail removed. The live-mic screen joins two grabs of the same page.
+- **Copy matched to the apps:** a dedication plays right before the song, not over its
+  intro; the type-a-message button is "Hear it first"; Live Microphone starts from Voice,
+  then Talk to the room now.
+
+---
+
+## 2026-10-13 - Site-wide sweep: rebuilds, photos, licensing, menu clean-up
+
+Driven by a page-by-page audit. Each change is its own commit on gh-pages.
+
+- **Rebuilt on the house pattern:** Download the Apps (both apps, own links), Licensing,
+  Behind the Scenes, Song Requests (URL kept, retitled for "song requests" searches),
+  Voice & Announcements, Live Microphone, Spotify Integration, Why Choose Us, Automated
+  Jukebox System, Custom Branded Radio, 404. Shared pieces: `_includes/feature-styles.html`,
+  `feature-video.html`, `photo-band.html`, `request-phone.html`, `admin-phone.html`.
+- **OneMusic:** no OneMusic dollar figures, rate tables or calculators anywhere; their PDFs
+  are excluded from the build; "cheaper OneMusic tier" only where true (shops and service
+  businesses) - hospitality loses the Digital Copy/Delivery fee instead; clubs pay per
+  member.
+- **Photos:** 20 CC0 photos in `assets/images/stock/` (credits in `image-credits.md`);
+  new venue headers for seven venue pages.
+- **Menus:** Core & Complete, Benefits of Music and Playing Across the Country out of the
+  menus; Custom Radio under Plans only; one dropdown arrow. `controller-app`, `why-us`,
+  `stream-bells-hotel` and `full-package` are noindex and out of the sitemap - not deleted.
+- **Retired copy:** music sped up 3%, Kiis FM / Kyle Sandilands, dedicated Irish and St
+  Patrick's Day channels, "approvals, banned tracks, volume caps", soundscapes, cuisine and
+  training channels, "every voice feature is built in", undated Soundtrack prices.
+- **Incident:** a "word: word" colon in front matter took /music-for-pubs-bars/ down for
+  about ten minutes; `build-website.sh` now refuses to build if any front matter fails.
+- **Privacy Policy:** rewritten on the Australian Privacy Principles - it still carried a
+  template note, an old NPP reference and a broken OAIC link. Awaiting Marc's review.
+- **Open:** the Hits and Rock demo streams (listen2 /one and /three) return 404 - hidden
+  on Listen to Demos until fixed.
+
+---
+
 ## 2026-10-09 - eJukebox Admin app page, and the dead Controller app links replaced
 
 **New page: `/admin-app/`** (`admin-app.html`, `ap-` prefix, built on the
