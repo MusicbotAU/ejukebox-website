@@ -4,12 +4,23 @@ title: Why People Love eJukebox, Reviews
 description: See why Australian pubs, clubs and cafes love eJukebox. Testimonials and reviews from venues running it every day. Start your free trial.
 ---
 
+<style>
+  /* five-star row above the heading, prefixed lv- - static and even, so it reads as part
+     of the design rather than a rating someone picked */
+  .lv-stars { display:flex; justify-content:center; gap:4px; margin:0 0 18px; font-size:1.45rem; line-height:1; color:var(--ejm-amber); }
+  .lv-stars i { filter:drop-shadow(0 2px 6px rgba(245,166,35,.28)); }
+  /* the theme's accent bar sits at the left; centre it under the stars on this centred hero */
+  #main-content .love-hero h1:before { margin-left:auto; margin-right:auto; }
+</style>
+
 <div class="love-hero">
   <div class="hero-content">
-    <div class="hero-hearts">
-      <i class="fas fa-heart"></i>
+    <div class="lv-stars" aria-hidden="true">
       <i class="fas fa-star"></i>
-      <i class="fas fa-heart"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
     </div>
     <h1>What Our Venues <span class="gradient-text">Say About Us</span></h1>
     <p class="hero-subtitle">Real words from real eJukebox venues</p>
