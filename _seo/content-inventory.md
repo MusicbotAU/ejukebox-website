@@ -7,7 +7,12 @@ re-run the script instead.
 
 ## Issues
 
-None. Every indexable page has a unique title within 60 chars, a unique description within 160, an H1, structured data, a canonical and Open Graph tags.
+- `/music-for-pubs-bars.html` - Description missing
+- `/music-for-pubs-bars.html` - No H1
+- `/music-for-pubs-bars.html` - No Open Graph
+- `/music-for-pubs-bars.html` - No canonical
+- `/music-for-pubs-bars.html` - No structured data
+- `/music-for-pubs-bars.html` - Title missing
 
 ## Pages
 
@@ -31,7 +36,7 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 | `/functions-events/` | Functions & Events Music Your Guests Steer | | 53 | 132 | y | Service, WebPage |
 | `/hits-package.html` | _noindex_ | | | | |
 | `/in-venue-screens/` | In-Venue Screens, Guest Photos & Requests |  | 52 | 138 | y | Service, WebPage |
-| `/irish-pub-music/` | Irish Pub Music for Bars & Pubs Australia |  | 52 | 149 | y | FAQPage, Service, WebPage |
+| `/irish-pub-music/` | Irish Pub Music for Bars & Pubs Australia |  | 52 | 153 | y | FAQPage, Service, WebPage |
 | `/licensing.html` | Music Licensing for Business, OneMusic & APR | 56 | 150 | y | Article, FAQPage, HowTo, Service, WebPage |
 | `/live-microphone/` | Live Microphone, Turn a Phone Into a PA Mic  | 54 | 147 | y | Service, WebPage |
 | `/music-for-cafes/` | Music for Cafés & Coffee Shops Australia | e | 51 | 150 | y | Service, WebPage |
@@ -39,7 +44,7 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 | `/music-for-hotels/` | Music for Hotels & Accommodation Australia | | 53 | 153 | y | Service, WebPage |
 | `/music-for-medical/` | Music for Medical & Waiting Rooms Australia  | 54 | 146 | y | Service, WebPage |
 | `/music-for-nightclubs/` | Nightclub Music Australia, Licensed Channels | 55 | 152 | y | Service, WebPage |
-| `/music-for-pubs-bars/` | Music for Pubs & Bars Australia, Jukebox | e | 51 | 150 | y | FAQPage, Service, WebPage |
+| `/music-for-pubs-bars.html` |  | 0 | 0 | NO |  |
 | `/music-for-restaurants/` | Music for Restaurants Australia, Dining Musi | 56 | 150 | y | Service, WebPage |
 | `/music-for-retail/` | Music for Retail & Shops Australia, In-Store | 55 | 147 | y | Service, WebPage |
 | `/music-for-salons-spas/` | Music for Salons & Spas Australia | eJukebox | 44 | 145 | y | Service, WebPage |

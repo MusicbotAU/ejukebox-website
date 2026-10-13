@@ -11,14 +11,14 @@ h1: Music for Pubs & Bars
 intro: The right music keeps patrons in the room and ordering at the bar. eJukebox gives your pub or bar a professionally curated, fully licensed soundtrack your staff steer from a phone, and lets customers request the songs they want to hear, no DJ and no jukebox box bolted to the wall.
 spotlight_title: Running an Irish bar?
 spotlight_body: >-
-  We have a dedicated channel of authentic Irish music, traditional and modern, plus a ready-made St Patrick's Day channel. [See Irish pub music &rarr;](/irish-pub-music/)
+  We weave authentic Irish music, traditional and modern, through your music all day, and turn it up for St Patrick's Day. [See Irish pub music &rarr;](/irish-pub-music/)
 benefits:
   - icon: fa-beer-mug-empty
     title: Keep the bar buzzing
     text: Curated channels tuned to the time of day, from quiet afternoon trade to a packed Friday night.
   - icon: fa-mobile-screen
     title: Song requests from any phone
-    text: Patrons scan a QR code and request tracks. You stay in control with approvals, banned tracks and volume caps.
+    text: Patrons scan a QR code and request tracks. You stay in control: choose what can be requested, set per-person limits, and hold or remove any request.
   - icon: fa-certificate
     title: Simpler licensing
     text: A personal Spotify account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.

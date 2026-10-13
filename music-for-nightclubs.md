@@ -12,7 +12,7 @@ intro: A club lives and dies by its sound. eJukebox delivers a licensed, high-en
 benefits:
   - icon: fa-record-vinyl
     title: Programme the whole night
-    text: Daypart your sound from early warm-up to peak-hour energy, all professionally curated and mixed.
+    text: Daypart your sound from early warm-up to peak-hour energy, all professionally curated.
   - icon: fa-mobile-screen
     title: Crowd requests, your control
     text: Let the floor request tracks from their phones while you keep final say over the vibe.

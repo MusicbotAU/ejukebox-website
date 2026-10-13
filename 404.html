@@ -1,7 +1,7 @@
 ---
 permalink: /404.html
 layout: default
-title: Page Not Found | eJukebox
+title: Page Not Found
 description: That page does not exist. Browse eJukebox music solutions for Australian pubs, clubs, bars, cafes and retail, or get in touch with our team.
 # A 404 should never be indexed, and an error page has nothing to describe in
 # structured data - `noindex` also suppresses the JSON-LD graph (see schema.html).
@@ -9,23 +9,35 @@ noindex: true
 sitemap: false
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+<style>
+  /* ---------- 404. Prefixed nf- to avoid collisions with site styles. ---------- */
+  .nf-wrap { max-width:860px; margin:20px auto 40px; text-align:center; }
+  .nf-code { display:block; font-family:'Poppins',sans-serif; font-size:clamp(4rem,12vw,7rem); font-weight:800; line-height:1;
+    background:linear-gradient(95deg, var(--ejm-amber), var(--ejm-pink) 55%, var(--ejm-ind-lt));
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  #main-content .nf-wrap h1 { margin:10px 0 12px !important; font-size:clamp(1.6rem,3vw,2.2rem) !important; }
+  #main-content .nf-wrap h1:before { margin-left:auto; margin-right:auto; }
+  #main-content .nf-wrap p { color:var(--ejm-soft) !important; font-size:1.08rem; line-height:1.6; margin:0 auto 28px; max-width:56ch; }
+  .nf-links { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; text-align:left; }
+  #main-content .nf-links a { display:flex; align-items:center; gap:12px; padding:18px 18px; border-radius:16px; text-decoration:none;
+    background:var(--ejm-card); border:1.5px solid var(--ejm-line); color:var(--ejm-ink) !important; font-weight:600;
+    transition:border-color .2s ease, transform .2s ease; }
+  #main-content .nf-links a:hover { border-color:rgba(236,72,153,.45); transform:translateY(-2px); text-shadow:none; }
+  .nf-links i { display:grid; place-items:center; width:40px; height:40px; flex:none; border-radius:11px; color:#fff;
+    background:linear-gradient(135deg, var(--ejm-pink), var(--ejm-ind)); }
+  @media (max-width:720px){ .nf-links { grid-template-columns:1fr; } }
 </style>
 
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="nf-wrap">
+  <span class="nf-code">404</span>
+  <h1>This page has moved on</h1>
+  <p>The page you were after does not exist any more, or the link has a typo. Here are the places most people are looking for.</p>
+  <div class="nf-links">
+    <a href="/"><i class="fas fa-house"></i> Home</a>
+    <a href="/ejukebox-request-portal.html"><i class="fas fa-hand-pointer"></i> Song requests</a>
+    <a href="/products.html"><i class="fas fa-box"></i> Plans &amp; pricing</a>
+    <a href="/ejukebox-apps.html"><i class="fas fa-mobile-screen-button"></i> Download the apps</a>
+    <a href="/background-music-for-business/"><i class="fas fa-music"></i> Music for your venue</a>
+    <a href="/contact/"><i class="fas fa-comments"></i> Contact us</a>
+  </div>
 </div>
