@@ -41,6 +41,8 @@ last_reviewed: 2026-10-13
   <div class="ft-step"><span class="ft-num">3</span><h3>Everyone joins in</h3><p>Customers request the next song from their phones, and your staff steer the night from the <a href="/admin-app/">eJukebox Admin app</a>.</p></div>
 </div>
 
+{% include app-fan.html left="admin-whats-queued" center="admin-music-remote" right="admin-news" caption="Running the music from eJukebox Admin. Real screens from Club Buffalo, our demo venue." %}
+
 <div class="ft-sec-head">
   <span class="ft-kick">Why venues swap the DJ and the playlist</span>
   <h2>Everything a good DJ does, every hour you are open</h2>

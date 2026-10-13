@@ -233,7 +233,7 @@ last_reviewed: 2026-10-13
   </div>
 </div>
 
-{% include app-fan.html left="admin-type" center="admin-voice" right="admin-live-mic" caption="The Voice menu in eJukebox Admin. Real screens from Club Buffalo, our demo venue." %}
+{% include app-fan.html left="admin-music-menu" center="admin-voice" right="admin-slides" caption="The Music, Voice and Screen menus in eJukebox Admin. Real screens from Club Buffalo, our demo venue." %}
 
 <div class="dl-sec-head">
   <h2>Which app do I need?</h2>

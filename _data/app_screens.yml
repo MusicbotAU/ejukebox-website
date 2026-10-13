@@ -43,3 +43,22 @@ admin-guest-photo:
 admin-slides:
   src: "/assets/images/apps/ejukebox-admin-app-instant-slides.webp"
   alt: "Instant slides in the eJukebox Admin app - type what the screen should say and a slide is designed for you to check first"
+
+admin-music-menu:
+  src: "/assets/images/apps/ejukebox-admin-app-music-menu.webp"
+  alt: "Music menu in the eJukebox Admin app - the music remote, what's playing, the queue, the plan for tonight and the news"
+admin-music-remote:
+  src: "/assets/images/apps/ejukebox-admin-app-music-remote.webp"
+  alt: "Music remote in the eJukebox Admin app - play, pause, skip, change channel, hush the room for a quick word, or go live"
+admin-music-right-now:
+  src: "/assets/images/apps/ejukebox-admin-app-music-right-now.webp"
+  alt: "The music right now in the eJukebox Admin app - skip a song, listen to the room from anywhere, and schedule the channels"
+admin-whats-queued:
+  src: "/assets/images/apps/ejukebox-admin-app-whats-queued.webp"
+  alt: "What's queued in the eJukebox Admin app - the coming-up list with request slots between the venue's own songs"
+admin-plan:
+  src: "/assets/images/apps/ejukebox-admin-app-plan-for-tonight.webp"
+  alt: "The plan for tonight in the eJukebox Admin app - speeches, songs and messages laid out in order, with requests in between"
+admin-news:
+  src: "/assets/images/apps/ejukebox-admin-app-news-on-the-hour.webp"
+  alt: "The news on the hour in the eJukebox Admin app - pick the hours and days, and the latest bulletin plays by itself"

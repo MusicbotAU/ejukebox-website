@@ -187,6 +187,8 @@ howto:
   <div class="sr-card"><span class="sr-ico"><i class="fas fa-pause"></i></span><h3>Pause any time</h3><p>Switch requests off for speeches, a band or a quiet dinner service, and back on when you are ready.</p></div>
 </div>
 
+{% include app-fan.html left="admin-music-right-now" center="admin-whats-queued" right="admin-plan" caption="Requests on your terms, from eJukebox Admin. Real screens from Club Buffalo, our demo venue." %}
+
 <div class="sr-sec-head">
   <span class="sr-kick">Discovery</span>
   <h2>Nobody needs to know the song name</h2>
