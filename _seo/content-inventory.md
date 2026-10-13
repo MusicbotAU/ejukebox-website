@@ -25,7 +25,7 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 | `/custom-radio.html` | Custom Branded In-Store Radio for Retail | e | 51 | 145 | y | Service, WebPage |
 | `/dollar-a-day.html` | _noindex_ | | | | |
 | `/ejukebox-apps.html` | eJukebox Apps for Android & iOS | eJukebox | 42 | 146 | y | SoftwareApplication, WebPage |
-| `/ejukebox-request-portal.html` | Song Request Portal for Pubs & Clubs | eJuke | 47 | 150 | y | HowTo, Service, SoftwareApplication, WebPage |
+| `/ejukebox-request-portal.html` | Song Requests for Pubs, Clubs & Venues | eJu | 49 | 151 | y | HowTo, Service, SoftwareApplication, WebPage |
 | `/free-trial.html` | Free 7-Day Music Trial for Your Venue | eJuk | 48 | 140 | y | HowTo, Service, WebPage |
 | `/full-package.html` | _noindex_ | | | | |
 | `/functions-events/` | Functions & Events Music Your Guests Steer | | 53 | 132 | y | Service, WebPage |
