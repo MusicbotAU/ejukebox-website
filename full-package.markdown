@@ -115,6 +115,6 @@ description: Customer song requests from any phone, AI song search, two zones, v
   </div>
   <div class="feature-pill">
     <i class="fas fa-certificate"></i>
-    Lower OneMusic Tier
+    Simpler Licensing
   </div>
 </div>
