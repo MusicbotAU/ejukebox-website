@@ -1,0 +1,75 @@
+{% comment %}
+  The eJukebox Request phone: an illustration built in CSS, not a screenshot. It shows the
+  customer app, beside the staff app's phone in _includes/admin-phone.html.
+
+    {% include request-phone.html %}
+
+  Everything on it is in the app's public store listing (now playing with time left,
+  search, preview, queue, "Help me pick", add your voice, photo to the big screen).
+  Styles are rqp- prefixed, use the --ejm-* tokens from _layouts/default.html, and are
+  emitted once per page. Built from divs and spans, never p or h*, because the theme forces
+  p colour and #main-content h* sizes with !important.
+{% endcomment %}
+{%- unless rqp_styles_done -%}
+{%- assign rqp_styles_done = true %}
+<style>
+.rqp-phone{width:min(100%,300px);margin:0 auto;padding:11px;border-radius:44px;
+  background:linear-gradient(160deg,#3a2a52,#100c1c);border:1.5px solid rgba(236,72,153,.35);
+  box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 50px rgba(236,72,153,.16)}
+.rqp-screen{border-radius:34px;background:#0e0b18;padding:0 15px 16px;overflow:hidden}
+.rqp-notch{width:92px;height:22px;margin:0 auto 14px;border-radius:0 0 14px 14px;background:#100c1c}
+.rqp-venue{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-size:.72rem;font-weight:700;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--ejm-mut)}
+.rqp-venue i{color:var(--ejm-pink)}
+.rqp-venue b{color:var(--ejm-ink);font-weight:700}
+.rqp-now{padding:13px 14px 12px;margin-bottom:12px;border-radius:16px;
+  background:linear-gradient(150deg,rgba(236,72,153,.30),rgba(245,166,35,.12));border:1px solid rgba(236,72,153,.35)}
+.rqp-lbl{margin:0 0 6px;font-size:.64rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#f9a8d4}
+.rqp-track{font-size:1rem;font-weight:700;line-height:1.3;color:var(--ejm-ink)}
+.rqp-artist{margin:2px 0 10px;font-size:.77rem;color:var(--ejm-soft)}
+.rqp-prog{display:flex;align-items:center;gap:8px;font-size:.66rem;color:var(--ejm-mut)}
+.rqp-bar{flex:1;height:4px;border-radius:4px;background:rgba(255,255,255,.12);overflow:hidden}
+.rqp-bar span{display:block;width:58%;height:100%;background:linear-gradient(90deg,var(--ejm-amber),var(--ejm-pink))}
+.rqp-search{display:flex;align-items:center;gap:9px;padding:10px 12px;border-radius:12px;margin-bottom:8px;
+  background:var(--ejm-card-2);border:1px solid var(--ejm-line-2);font-size:.78rem;color:var(--ejm-mut)}
+.rqp-help{display:flex;align-items:center;justify-content:center;gap:8px;padding:9px 12px;border-radius:12px;margin-bottom:10px;
+  font-size:.76rem;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--ejm-pink),var(--ejm-ind))}
+.rqp-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:9px 2px;
+  border-bottom:1px solid rgba(255,255,255,.06);animation:rqpIn .6s ease-out both}
+.rqp-row.rqp-d2{animation-delay:.3s}
+@keyframes rqpIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.rqp-song{font-size:.82rem;font-weight:600;line-height:1.3;color:var(--ejm-ink)}
+.rqp-by{font-size:.71rem;color:var(--ejm-mut)}
+.rqp-btns{display:flex;gap:6px;align-items:center}
+.rqp-play{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;font-size:.6rem;
+  color:var(--ejm-ink);background:rgba(255,255,255,.08);border:1px solid var(--ejm-line-2)}
+.rqp-req{padding:5px 10px;border-radius:999px;font-size:.62rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+  color:#fff;background:linear-gradient(135deg,var(--ejm-pink),var(--ejm-ind))}
+.rqp-done{padding:5px 10px;border-radius:999px;font-size:.62rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--ejm-green);background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.32)}
+.rqp-acts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.rqp-act{display:flex;align-items:center;justify-content:center;gap:7px;padding:10px 6px;border-radius:12px;
+  background:var(--ejm-card);border:1px solid var(--ejm-line);font-size:.68rem;font-weight:700;color:var(--ejm-soft)}
+.rqp-act i{color:var(--ejm-amber)}
+</style>
+{%- endunless %}
+<div class="rqp-phone" role="img" aria-label="Illustration of the eJukebox Request app: what is playing at the venue, a song search, Help me pick, and buttons to add your voice or send a photo to the screen">
+  <div class="rqp-screen">
+    <div class="rqp-notch"></div>
+    <div class="rqp-venue"><i class="fas fa-location-dot"></i> You're at <b>The Local</b></div>
+    <div class="rqp-now">
+      <div class="rqp-lbl">Playing now</div>
+      <div class="rqp-track">Khe Sanh</div>
+      <div class="rqp-artist">Cold Chisel</div>
+      <div class="rqp-prog"><div class="rqp-bar"><span></span></div>1:42 left</div>
+    </div>
+    <div class="rqp-search"><i class="fas fa-magnifying-glass"></i> Search artists or songs</div>
+    <div class="rqp-help"><i class="fas fa-wand-magic-sparkles"></i> Help me pick</div>
+    <div class="rqp-row"><div><div class="rqp-song">You're the Voice</div><div class="rqp-by">John Farnham</div></div><div class="rqp-btns"><span class="rqp-play"><i class="fas fa-play"></i></span><span class="rqp-done"><i class="fas fa-check"></i> Queued</span></div></div>
+    <div class="rqp-row rqp-d2"><div><div class="rqp-song">Am I Ever Gonna See Your Face Again</div><div class="rqp-by">The Angels</div></div><div class="rqp-btns"><span class="rqp-play"><i class="fas fa-play"></i></span><span class="rqp-req">Request</span></div></div>
+    <div class="rqp-acts">
+      <span class="rqp-act"><i class="fas fa-microphone"></i> Add your voice</span>
+      <span class="rqp-act"><i class="fas fa-image"></i> Photo to screen</span>
+    </div>
+  </div>
+</div>
