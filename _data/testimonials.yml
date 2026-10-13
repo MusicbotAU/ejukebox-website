@@ -1,0 +1,62 @@
+# Customer testimonials. Edit the wording here once and every page that shows it
+# updates. Rendered by _includes/testimonial.html:
+#   - short card:  {% include testimonial.html id="<id>" %}  (homepage, and any
+#     venue page that sets `testimonial: <id>` in its front matter)
+#   - full story:  {% include testimonial.html id="<id>" full=true %}
+#     (/people-love-ejukebox.html - the "Read the story" links point at #<id>)
+#
+# Rules:
+#   - The customer's own words. Trim to whole sentences and fix typos only - never
+#     reword. Australian Consumer Law expects a testimonial to be genuine.
+#   - Get the customer's OK before their words go on the site.
+#   - Plain hyphens only, never long dashes (house style).
+#   - No Review / AggregateRating schema for these (see _seo/structured-data.md).
+#
+# `headline` and `intro` are our words, not the customer's. Keep them factual.
+
+- id: peak-health-fitness
+  name: Samantha Morton
+  role: Owner
+  business: Peak Health & Fitness
+  location: Walkerston QLD
+  venue_slug: music-for-gyms   # badge, icon and closing link come from _data/venues.yml
+  # Email to Marc, Tue 6 October 2026. OK for the website given the same day.
+  headline: How a family-owned gym switched to eJukebox
+  intro: >-
+    Peak Health & Fitness is a family-owned gym in Walkerston, Queensland. After a
+    number of years with another provider, they moved their music and visuals to
+    eJukebox.
+  quote: >-
+    We're getting the music and visuals we want for our gym, our members are
+    happy with the music selection, and we're saving money on an ongoing expense -
+    which was ultimately the reason we decided to make the move.
+  story:
+    - icon: fa-piggy-bank
+      title: Why they switched
+      text: >-
+        Our decision to change providers was purely a financial one. As a small,
+        family-owned gym, we regularly review our ongoing expenses and felt we needed
+        to look at ways we could reduce our costs without compromising the experience
+        we provide to our members. eJukebox offered us a more affordable option while
+        still providing the music and visuals we wanted in our gym, so it made sense
+        for us to make the change.
+    - icon: fa-list-check
+      title: How the changeover went
+      text: >-
+        The changeover was much easier than I had expected. Marc made the process
+        really simple and sent us clear images and step-by-step instructions showing
+        us exactly what we needed to do to change the music computer over. I was able
+        to complete the changeover myself. The instructions were easy to follow, and
+        there was very little disruption to the gym's music service.
+    - icon: fa-users
+      title: What the members think
+      text: >-
+        We've had really good feedback from our members since making the change. The
+        range of music has been well received, and we've had members comment
+        positively on the music since changing over, which has been reassuring because
+        that was one of our biggest considerations when looking at a new provider.
+
+# Moved here from the foot of index.markdown so both homepage cards share one style.
+- id: diana-f
+  name: Diana F.
+  quote: Much better music than the other music solution

@@ -248,13 +248,7 @@ hero:
 
 ---
 
-<div class="testimonial-home-section">
-  <div class="testimonial-card-home">
-    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-    <blockquote>"Much better music than the other music solution"</blockquote>
-    <div class="testimonial-author">
-      <div class="author-avatar"><i class="fas fa-user"></i></div>
-      <span>- Diana F.</span>
-    </div>
-  </div>
+<div class="tm-row tm-row-lead">
+{% include testimonial.html id="peak-health-fitness" %}
+{% include testimonial.html id="diana-f" %}
 </div>

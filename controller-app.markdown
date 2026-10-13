@@ -117,11 +117,11 @@ schema_app:
 
 <div class="download-cta">
   <div class="cta-content">
-    <h2><i class="fas fa-download"></i> Get the Controller App</h2>
-    <p>The <strong>eJukebox Controller App</strong> is available for both iOS and Android</p>
-    <a href="/ejukebox-apps.html" class="cta-button">
+    <h2><i class="fas fa-download"></i> Get the eJukebox Admin App</h2>
+    <p>Staff control now comes in <strong>eJukebox Admin</strong>, the free staff app for iPhone and Android</p>
+    <a href="/admin-app/" class="cta-button">
       <i class="fas fa-mobile-alt"></i>
-      Download Now
+      Meet eJukebox Admin
     </a>
   </div>
 </div>

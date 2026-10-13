@@ -1,0 +1,74 @@
+{% comment %}
+  The eJukebox Admin phone: an illustration built in CSS, not a screenshot. Shown in the
+  hero of /admin-app/ and /ejukebox-apps.html.
+
+    {% include admin-phone.html %}
+
+  Everything on it is something the app really does (player health, now playing, up
+  next, requests, Ask eJukebox, skip / hold / speak / screens). Styles are aph- prefixed,
+  use the --ejm-* tokens from _layouts/default.html, and are emitted once per page. It is
+  built from divs and spans, never p or h*, because the theme forces p colour and
+  #main-content h* sizes with !important.
+{% endcomment %}
+{%- unless aph_styles_done -%}
+{%- assign aph_styles_done = true %}
+<style>
+.aph-phone{width:min(100%,320px);margin:0 auto;padding:11px;border-radius:44px;
+  background:linear-gradient(160deg,#2c2c48,#0b0b16);border:1.5px solid var(--ejm-line-2);box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.aph-screen{border-radius:34px;background:#0d0d1a;padding:0 15px 16px;overflow:hidden}
+.aph-notch{width:92px;height:22px;margin:0 auto 14px;border-radius:0 0 14px 14px;background:#0b0b16}
+.aph-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;
+  font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ejm-mut)}
+.aph-ok{display:inline-flex;align-items:center;gap:6px;color:var(--ejm-green)}
+.aph-ok::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ejm-green);
+  box-shadow:0 0 0 0 rgba(52,211,153,.7);animation:aphPulse 2s infinite}
+@keyframes aphPulse{70%{box-shadow:0 0 0 9px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+.aph-now{padding:14px 14px 13px;margin-bottom:14px;border-radius:16px;
+  background:linear-gradient(150deg,rgba(99,102,241,.30),rgba(236,72,153,.14));border:1px solid rgba(129,140,248,.35)}
+.aph-lbl{margin:0 0 6px;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ejm-ind-lt)}
+.aph-track{font-size:1.04rem;font-weight:700;line-height:1.3;color:var(--ejm-ink)}
+.aph-artist{margin:2px 0 11px;font-size:.79rem;color:var(--ejm-soft)}
+.aph-prog{height:4px;border-radius:4px;background:rgba(255,255,255,.12);overflow:hidden}
+.aph-prog span{display:block;width:62%;height:100%;background:linear-gradient(90deg,var(--ejm-cyan),var(--ejm-ind-lt))}
+.aph-q{display:grid;grid-template-columns:16px 1fr auto;gap:10px;align-items:center;padding:9px 2px;
+  border-bottom:1px solid rgba(255,255,255,.06);animation:aphIn .6s ease-out both}
+.aph-q.aph-d2{animation-delay:.25s}
+.aph-q.aph-d3{animation-delay:.5s}
+@keyframes aphIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.aph-q i{font-size:.78rem;color:var(--ejm-mut)}
+.aph-song{font-size:.84rem;font-weight:600;line-height:1.3;color:var(--ejm-ink)}
+.aph-by{font-size:.73rem;line-height:1.4;color:var(--ejm-mut)}
+.aph-tag{padding:3px 8px;border-radius:999px;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ejm-amber);background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.3)}
+.aph-ask{display:flex;align-items:center;gap:9px;margin:14px 0 12px;padding:11px 13px;border-radius:14px;
+  background:var(--ejm-card-2);border:1px solid var(--ejm-line-2);font-size:.79rem;color:var(--ejm-mut)}
+.aph-ask i{color:var(--ejm-cyan)}
+.aph-acts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.aph-act{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;border-radius:12px;
+  background:var(--ejm-card);border:1px solid var(--ejm-line);font-size:.64rem;font-weight:700;color:var(--ejm-soft)}
+.aph-act i{font-size:.95rem;color:var(--ejm-ind-lt)}
+</style>
+{%- endunless %}
+<div class="aph-phone" role="img" aria-label="Illustration of the eJukebox Admin app: the player is healthy, a song is playing, requests are lined up next, and the quick controls sit underneath">
+  <div class="aph-screen">
+    <div class="aph-notch"></div>
+    <div class="aph-top"><span>Front Bar</span><span class="aph-ok">Player healthy</span></div>
+    <div class="aph-now">
+      <div class="aph-lbl">Now playing</div>
+      <div class="aph-track">Flame Trees</div>
+      <div class="aph-artist">Cold Chisel &middot; Rock channel</div>
+      <div class="aph-prog"><span></span></div>
+    </div>
+    <div class="aph-lbl">Up next</div>
+    <div class="aph-q"><i class="fas fa-grip-lines"></i><div><div class="aph-song">Need You Tonight</div><div class="aph-by">INXS</div></div><span class="aph-tag">Request</span></div>
+    <div class="aph-q aph-d2"><i class="fas fa-grip-lines"></i><div><div class="aph-song">The Horses</div><div class="aph-by">Daryl Braithwaite</div></div><span></span></div>
+    <div class="aph-q aph-d3"><i class="fas fa-grip-lines"></i><div><div class="aph-song">Throw Your Arms Around Me</div><div class="aph-by">Hunters &amp; Collectors</div></div><span class="aph-tag">Request</span></div>
+    <div class="aph-ask"><i class="fas fa-wand-magic-sparkles"></i> Ask or tell me something...</div>
+    <div class="aph-acts">
+      <span class="aph-act"><i class="fas fa-forward-step"></i>Skip</span>
+      <span class="aph-act"><i class="fas fa-hand"></i>Hold</span>
+      <span class="aph-act"><i class="fas fa-microphone"></i>Speak</span>
+      <span class="aph-act"><i class="fas fa-tv"></i>Screens</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,290 @@
+---
+layout: default
+permalink: /admin-app/
+title: "eJukebox Admin App: Run the Room From Your Phone"
+description: The free eJukebox Admin app puts your venue's music, requests, announcements, screens and team in your pocket. Run the night without leaving the floor.
+schema_app:
+  name: eJukebox Admin
+  description: The staff app for venues running eJukebox, on iPhone and Android. See what is playing, what is next and whether the player is healthy; skip, hold and reorder requests; switch channels; ask in plain English; talk to the room; run the screens; and look after the team.
+  category: BusinessApplication
+  os: [Android, iOS]
+last_reviewed: 2026-10-09
+---
+
+<style>
+  /* ---------- eJukebox Admin app. Prefixed ap- to avoid collisions with site styles. ---------- */
+  .ap-hero { position:relative; overflow:hidden; border-radius:var(--ejm-r);
+    background: radial-gradient(120% 130% at 85% 0%, #1d2a52 0%, #1a1a2e 46%, #14142a 100%);
+    border:1.5px solid var(--ejm-line-2); padding:54px 38px 46px; margin:8px 0 34px; }
+  .ap-hero::after { content:""; position:absolute; inset:auto -10% -55% -10%; height:60%;
+    background: radial-gradient(60% 100% at 50% 0%, rgba(34,211,238,.16), transparent 70%); pointer-events:none; }
+  .ap-hero-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; position:relative; z-index:1; }
+  .ap-eyebrow { display:inline-flex; align-items:center; gap:8px; font-size:.78rem; font-weight:800;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--ejm-cyan);
+    background:rgba(34,211,238,.10); border:1px solid rgba(34,211,238,.28);
+    padding:7px 14px; border-radius:999px; margin-bottom:18px; }
+  .ap-hero h1 { font-size:clamp(2rem,4.2vw,3.1rem); line-height:1.08; margin:0 0 16px; color:var(--ejm-ink); }
+  .ap-grad { background:linear-gradient(95deg, var(--ejm-cyan), var(--ejm-ind-lt) 55%, var(--ejm-pink));
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  .ap-hero p { color:var(--ejm-soft); font-size:1.12rem; line-height:1.6; margin:0 0 12px; max-width:52ch; }
+  .ap-hero p.ap-mut { color:var(--ejm-mut); font-size:1rem; }
+
+  /* ---- store badges (official Apple and Google artwork) ---- */
+  .ap-badges { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin:24px 0 0; }
+  .ap-badges a { display:inline-block; line-height:0; border-radius:10px; transition:transform .2s ease, box-shadow .2s ease; }
+  .ap-badges a:hover { transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.45); }
+  .ap-badges img { display:block; width:auto; height:50px; }
+  /* The App Store PNG's lettering and outline are transparent cut-outs, so on a dark page
+     they show the background. A white backing clipped to the badge's corners restores them. */
+  .ap-badges a.ap-as { background:#fff; border-radius:6px; }
+  .ap-badges a.ap-gp img { height:54px; }
+  /* On phones the theme gives every image a 15px top and bottom margin, which would
+     show as a white frame round the App Store badge. */
+  #main-content .ap-badges img { margin:0 !important; }
+
+  /* ---- story band ---- */
+  .ap-story { background:linear-gradient(180deg,#17172c,#14142a); border:1.5px solid var(--ejm-line);
+    border-radius:var(--ejm-r); padding:40px 38px; margin:34px 0; }
+  .ap-story .ap-time { font-size:.8rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--ejm-cyan); margin:0 0 14px; }
+  .ap-story p { color:var(--ejm-soft); font-size:1.06rem; line-height:1.72; margin:0 0 14px; max-width:70ch; }
+  .ap-story p:last-child { margin-bottom:0; }
+  .ap-story strong { color:var(--ejm-ink); }
+  .ap-story em { font-style:normal; color:var(--ejm-amber); }
+  .ap-kicker { font-size:1.24rem !important; font-weight:700; color:var(--ejm-ink) !important; line-height:1.45 !important; }
+
+  /* ---- section heads ---- */
+  .ap-sec-head { margin:44px 0 24px; max-width:74ch; }
+  .ap-sec-head h2 { font-size:clamp(1.5rem,2.9vw,2.1rem); line-height:1.16; margin:0 0 12px; color:var(--ejm-ink); }
+  .ap-sec-head p { color:var(--ejm-soft); font-size:1.04rem; line-height:1.65; margin:0; }
+
+  /* ---- pillar cards ---- */
+  .ap-pillars { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .ap-pillar { display:flex; flex-direction:column; background:var(--ejm-card); border:1.5px solid var(--ejm-line);
+    border-radius:var(--ejm-r); padding:28px 24px 24px; transition:border-color .2s ease, transform .2s ease; }
+  .ap-pillar:hover { border-color:var(--ejm-line-2); transform:translateY(-3px); }
+  .ap-pillar .ap-ico { font-size:1.5rem; color:var(--ejm-ind-lt); margin-bottom:14px; display:block; }
+  .ap-pillar h3 { font-size:1.18rem; margin:0 0 11px; color:var(--ejm-ink); line-height:1.28; }
+  .ap-pillar p { color:var(--ejm-soft); font-size:.96rem; line-height:1.62; margin:0 0 12px; }
+  .ap-pillar strong { color:var(--ejm-ink); }
+  .ap-list { list-style:none; margin:2px 0 14px; padding:0; display:grid; gap:9px; }
+  .ap-list li { display:grid; grid-template-columns:16px 1fr; gap:10px; align-items:start; margin:0;
+    color:var(--ejm-soft); font-size:.94rem; line-height:1.5; }
+  .ap-list li i { margin-top:4px; color:var(--ejm-cyan); font-size:.85rem; }
+  .ap-list .ap-add { margin-left:6px; padding:2px 8px; font-size:.62rem; vertical-align:1px; }
+  .ap-chips { display:flex; flex-wrap:wrap; gap:8px; margin:2px 0 14px; }
+  .ap-chip { background:var(--ejm-card-2); border:1px solid var(--ejm-line-2); border-radius:999px;
+    padding:7px 13px; font-size:.86rem; color:var(--ejm-ink); }
+  .ap-add { display:inline-flex; align-items:center; gap:6px; align-self:flex-start; font-size:.68rem; font-weight:800;
+    letter-spacing:.07em; text-transform:uppercase; color:var(--ejm-amber); white-space:nowrap;
+    background:rgba(245,166,35,.11); border:1px solid rgba(245,166,35,.32); padding:4px 10px; border-radius:999px; }
+  .ap-more { margin-top:auto; padding-top:12px; font-size:.92rem; font-weight:600; }
+  .ap-foot { color:var(--ejm-mut); font-size:.94rem; line-height:1.6; margin:18px 0 0; }
+
+  /* ---- payoff ---- */
+  .ap-pay { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  .ap-p { background:var(--ejm-card-2); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:24px 22px; }
+  .ap-p h3 { font-size:1.03rem; margin:0 0 9px; color:var(--ejm-ind-lt); }
+  .ap-p p { color:var(--ejm-soft); font-size:.94rem; line-height:1.6; margin:0; }
+
+  /* ---- faq ---- */
+  .ap-faq { display:grid; gap:13px; }
+  .ap-qa { background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:22px 24px; }
+  .ap-qa h3 { font-size:1.02rem; margin:0 0 8px; color:var(--ejm-ink); }
+  .ap-qa p { color:var(--ejm-soft); font-size:.94rem; line-height:1.62; margin:0; }
+
+  /* ---- download band ---- */
+  .ap-get { position:relative; overflow:hidden; text-align:center; margin:44px 0 38px; scroll-margin-top:90px;
+    background:linear-gradient(155deg, rgba(34,211,238,.16), rgba(99,102,241,.14)), var(--ejm-card);
+    border:1.5px solid rgba(34,211,238,.32); border-radius:var(--ejm-r); padding:44px 32px 38px; }
+  .ap-get h2 { font-size:clamp(1.6rem,3.2vw,2.3rem); line-height:1.14; margin:0 0 12px; color:var(--ejm-ink); border:0; padding:0; }
+  .ap-get p { color:var(--ejm-soft); font-size:1.06rem; line-height:1.65; max-width:60ch; margin:0 auto; }
+  .ap-get .ap-badges { justify-content:center; margin:24px 0 18px; }
+  .ap-get p.ap-fine { color:var(--ejm-mut); font-size:.88rem; }
+
+  /* The theme sets #main-content h2/h3 size, colour and margins with !important and an
+     id selector, so headings inside cards and bands have to answer in kind. */
+  #main-content .ap-sec-head h2 { margin:0 0 12px !important; }
+  #main-content .ap-pillar h3 { margin:0 0 11px !important; font-size:1.16rem !important; line-height:1.3; }
+  #main-content .ap-p h3 { margin:0 0 9px !important; font-size:1.05rem !important; }
+  #main-content .ap-qa h3 { margin:0 0 8px !important; font-size:1.04rem !important; }
+  #main-content .ap-get h2 { margin:0 0 12px !important; }
+
+  @media (max-width:980px){
+    .ap-pillars { grid-template-columns:repeat(2,1fr); }
+  }
+  @media (max-width:820px){
+    .ap-hero { padding:38px 24px 34px; }
+    .ap-hero-grid { grid-template-columns:1fr; gap:34px; }
+    .ap-story { padding:30px 24px; }
+    .ap-get { padding:34px 22px 30px; }
+    .ap-pillars, .ap-pay { grid-template-columns:1fr; }
+  }
+</style>
+
+<div class="ap-hero">
+  <div class="ap-hero-grid">
+    <div>
+      <span class="ap-eyebrow"><i class="fas fa-mobile-screen-button"></i> eJukebox Admin</span>
+      <h1>Run the Room From <span class="ap-grad">Your Phone</span></h1>
+      <p><strong>eJukebox Admin</strong> puts your whole venue's sound in your pocket. See what is playing and what is coming up, steer the music, talk to the room, light up the screens and look after your team, without ever leaving the floor.</p>
+      <p class="ap-mut">The free staff app for eJukebox venues, on iPhone and Android.</p>
+      <div class="ap-badges">
+        <a class="ap-as" href="https://apps.apple.com/au/app/ejukebox-admin/id6804389405" target="_blank" rel="noopener"><img src="/blobs/AppleAppStoreLogo.png" alt="Download eJukebox Admin on the App Store"></a>
+        <a class="ap-gp" href="https://play.google.com/store/apps/details?id=au.com.ejukebox.media" target="_blank" rel="noopener"><img src="/blobs/GooglePlayStoreLogo.png" alt="Get eJukebox Admin on Google Play"></a>
+      </div>
+    </div>
+    <div>
+      {% include admin-phone.html %}
+    </div>
+  </div>
+</div>
+
+<div class="ap-story">
+  <div class="ap-time"><i class="fas fa-beer-mug-empty"></i> &nbsp;Friday, 8:40pm, three deep at the bar</div>
+  <p>The room is full, the kitchen closes in twenty minutes, and you have not stopped pouring since six. You glance at your phone.</p>
+  <p><strong>The player is healthy. You can see what is on and what is coming next.</strong> A request that has been waiting patiently goes straight to the top. One that does not suit the room gets held back. The crowd wants more energy, so you switch from Smooth to Hits.</p>
+  <p>You type <em>"Last orders for the kitchen, it closes at nine"</em> and a broadcast-quality voice reads it to the room between songs. Trivia kicks off at half past, so the trivia slide goes up on the screens.</p>
+  <p>Your new bartender starts tonight. They sign in with their own Google account, you approve them from your phone, and they are in.</p>
+  <p class="ap-kicker">You never left the bar. Nobody noticed a thing, except that the night kept getting better.</p>
+  <p><strong>That is what it feels like to run the room, instead of the room running you.</strong></p>
+</div>
+
+<div class="ap-sec-head">
+  <h2>Everything the night needs, in one app</h2>
+  <p>The things you used to walk out the back for, or wait for a quiet moment to fix, now live on the phone in your pocket.</p>
+</div>
+<div class="ap-pillars">
+
+  <div class="ap-pillar">
+    <i class="fas fa-gauge-high ap-ico"></i>
+    <h3>The room at a glance</h3>
+    <p>Open the app and you know exactly where the night is at: <strong>what is playing, what is coming up next, and whether everything on the player is healthy</strong>.</p>
+    <p>No walking out the back to check a computer. No wondering.</p>
+  </div>
+
+  <div class="ap-pillar">
+    <i class="fas fa-sliders ap-ico"></i>
+    <h3>Steer the music</h3>
+    <p>Skip a track. Hold a request, or bump it to the top. Reorder what is coming up next, and <strong>switch channels when the room needs a lift</strong>.</p>
+    <p>Live band or speeches? Turn automation off, then back on when they are done.</p>
+  </div>
+
+  <div class="ap-pillar">
+    <i class="fas fa-wand-magic-sparkles ap-ico"></i>
+    <h3>Or just ask</h3>
+    <p>Do not go hunting for the right button. <strong>Tell eJukebox what you want in plain English</strong> and it does it.</p>
+    <div class="ap-chips">
+      <span class="ap-chip">"Skip this song"</span>
+      <span class="ap-chip">"Switch to the Rock channel"</span>
+      <span class="ap-chip">"What's on next?"</span>
+      <span class="ap-chip">"Turn automation back on"</span>
+    </div>
+  </div>
+
+  <div class="ap-pillar">
+    <i class="fas fa-microphone-lines ap-ico"></i>
+    <h3>Your voice, on the system</h3>
+    <p>Four ways to talk to the whole room, and every one of them starts on your phone.</p>
+    <ul class="ap-list">
+      <li><i class="fas fa-circle-dot"></i><span>Record an announcement in your own voice</span></li>
+      <li><i class="fas fa-keyboard"></i><span>Type it, and the announcer voice reads it out <span class="ap-add">Add-on</span></span></li>
+      <li><i class="fas fa-tower-broadcast"></i><span>Go live on the venue's speakers <span class="ap-add">Add-on</span></span></li>
+      <li><i class="fas fa-calendar-check"></i><span>Schedule it to play later <span class="ap-add">Add-on</span></span></li>
+    </ul>
+    <a class="ap-more" href="/voice-announcements/">More on voice &amp; announcements &rarr;</a>
+  </div>
+
+  <div class="ap-pillar">
+    <i class="fas fa-tv ap-ico"></i>
+    <h3>The screens</h3>
+    <p>Put photos and instant slides up on your venue's screens, straight from your phone. Tonight's special, trivia at half past, the meat tray winner grinning with their prize.</p>
+    <p>Running a guest photo wall? <strong>Approve patron photos</strong>, and open or close uploads whenever you like.</p>
+    <span class="ap-add">Add-on</span>
+    <a class="ap-more" href="/in-venue-screens/">More on in-venue screens &rarr;</a>
+  </div>
+
+  <div class="ap-pillar">
+    <i class="fas fa-user-group ap-ico"></i>
+    <h3>Your team</h3>
+    <p>Invite colleagues, approve access requests, and <strong>choose who can manage the team</strong>.</p>
+    <p>Staff sign in with the venue password, or with their own Google, Microsoft or Apple account once you have approved them. New starter tonight? They ask to be added, you approve, and they are in.</p>
+  </div>
+
+</div>
+<p class="ap-foot">Features tagged <span class="ap-add">Add-on</span> are switched on per venue, or all included in Complete. Everything else comes with Core. <a href="/products.html">See plans &amp; pricing</a>.</p>
+
+<div class="ap-sec-head">
+  <h2>What changes when the room is in your pocket</h2>
+  <p>It is not about the app. It is about the night you can run with it.</p>
+</div>
+<div class="ap-pay">
+  <div class="ap-p">
+    <h3>You stay where the action is</h3>
+    <p>Nobody gets pulled off the bar, the floor or the pass to sort out the music. It comes to you, wherever you are standing.</p>
+  </div>
+  <div class="ap-p">
+    <h3>The night sounds deliberate</h3>
+    <p>Lift the energy as the room fills, settle it down for dinner, and line up the right song for the right moment. It feels run, not left to chance.</p>
+  </div>
+  <div class="ap-p">
+    <h3>Everyone has the right keys</h3>
+    <p>Staff can sign in as themselves, and you decide who manages the team. Access stays in your hands, not on a sticky note behind the till.</p>
+  </div>
+  <div class="ap-p">
+    <h3>You know it is all running</h3>
+    <p>Player health is the first thing you see, so you are never left wondering whether the music is OK.</p>
+  </div>
+</div>
+
+<div class="ap-sec-head">
+  <h2>The questions everyone asks first</h2>
+</div>
+<div class="ap-faq">
+  <div class="ap-qa">
+    <h3>Who is eJukebox Admin for?</h3>
+    <p>Managers and staff at venues running eJukebox. It needs an eJukebox venue and a staff sign-in from that venue, so it is a tool for your team, not your customers.</p>
+  </div>
+  <div class="ap-qa">
+    <h3>Do our customers need an app to request songs?</h3>
+    <p>No. Customers scan the code and request from their phone's browser, with nothing to download. eJukebox Admin is the other side of that: the controls for your team.</p>
+  </div>
+  <div class="ap-qa">
+    <h3>What does it cost?</h3>
+    <p>The app itself is free. What it can do follows your eJukebox plan: song requests, reordering and recorded announcements come with Core, while the extra voice and screen features are add-ons, or all included in Complete. <a href="/products.html">See plans &amp; pricing</a>.</p>
+  </div>
+  <div class="ap-qa">
+    <h3>Which phones does it run on?</h3>
+    <p>iPhone, on iOS 15.1 or later, and Android phones.</p>
+  </div>
+  <div class="ap-qa">
+    <h3>Why can't I find it by searching the App Store?</h3>
+    <p>The iPhone app is distributed straight to eJukebox venues rather than listed in App Store search. Use the App Store button on this page and it opens directly. On Android it is on Google Play as normal.</p>
+  </div>
+  <div class="ap-qa">
+    <h3>Can everyone on the team have their own login?</h3>
+    <p>Yes. Staff can sign in with the venue password, or with their own Google, Microsoft or Apple account once the venue has approved them. You choose who is allowed to manage the team.</p>
+  </div>
+</div>
+
+<div class="ap-get" id="download">
+  <h2>Get eJukebox Admin</h2>
+  <p>Free for eJukebox venues. Download it, sign in, and the room is in your pocket.</p>
+  <div class="ap-badges">
+    <a class="ap-as" href="https://apps.apple.com/au/app/ejukebox-admin/id6804389405" target="_blank" rel="noopener"><img src="/blobs/AppleAppStoreLogo.png" alt="Download eJukebox Admin on the App Store"></a>
+    <a class="ap-gp" href="https://play.google.com/store/apps/details?id=au.com.ejukebox.media" target="_blank" rel="noopener"><img src="/blobs/GooglePlayStoreLogo.png" alt="Get eJukebox Admin on Google Play"></a>
+  </div>
+  <p class="ap-fine">iPhone needs iOS 15.1 or later. The iPhone app is not listed in App Store search, so use the button above.</p>
+</div>
+
+<div class="try-demo">
+  <div class="demo-content">
+    <h2><i class="fas fa-mobile-screen-button"></i> Not on eJukebox yet?</h2>
+    <p>Picture your busiest night, run from the phone in your pocket. Tell us about your venue and we will show you what eJukebox would do for your room.</p>
+    <a href="/contact/" class="demo-link">
+      <i class="fas fa-comments"></i>
+      Tell us about your venue
+    </a>
+    <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for your venue.</p>
+  </div>
+</div>

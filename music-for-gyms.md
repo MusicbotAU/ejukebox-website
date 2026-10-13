@@ -18,4 +18,5 @@ benefits:
   - icon: fa-certificate
     title: Commercially licensed
     text: Personal streaming apps are not licensed for gyms. eJukebox is a commercial background music supplier, so you train legally on a lower OneMusic tier.
+testimonial: peak-health-fitness
 ---

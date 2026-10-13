@@ -5,6 +5,106 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-09 - eJukebox Admin app page, and the dead Controller app links replaced
+
+**New page: `/admin-app/`** (`admin-app.html`, `ap-` prefix, built on the
+`functions-events.html` pattern). A customer-facing page selling the new staff
+app, with both store links in the hero and again in a download band.
+
+**The old eJukebox Controller app is gone from both stores** (checked Fri 9
+October 2026: the Play listing for `au.com.ejukebox.ejukeboxcontrollerv2` 404s and
+an App Store lookup of id978645792 returns nothing). So:
+
+- `/ejukebox-apps.html` is rebuilt from scratch around eJukebox Admin (`dl-`
+  prefix): phone hero with both store badges, "Up and running in three steps"
+  (download, find your venue, sign in), what the team can do, a note that
+  customers need no app, and a "Trouble getting in?" FAQ. The steps use the app's
+  own screen wording ("Search venues", "Venue code", "Continue with Google",
+  "Ask to be added"). The old promo photo showed the retired app and the old
+  logo, so it went.
+- The nav, mobile menu and footer now link "eJukebox Admin App" where they
+  linked "Controller App". `_layouts/venue.html` does the same on every venue page.
+- `/controller-app.html` stays live, but its closing panel no longer claims the
+  app is available and points to `/admin-app/` instead. Whether to retire that
+  page into the new one (with a redirect) is Marc's call.
+- `llms.txt`: the app lines and the staff-control answer now name eJukebox Admin.
+
+**Store links.** iPhone: `apps.apple.com/au/app/ejukebox-admin/id6804389405`.
+Android: `play.google.com/store/apps/details?id=au.com.ejukebox.media`. The iPhone
+app is **unlisted** - App Store search for "ejukebox" does not return it - so both
+pages say so and tell people to use the button. Never write "search the App Store".
+
+**What the page claims, and where it comes from.** Every feature is from the two
+public store listings (identical wording), so nothing here is news to a
+competitor. The listing's "Platform tools" line is for eJukebox operators and is
+left off. The plain-English examples ("Skip this song", "Switch to the Rock
+channel", "What's on next?", "Turn automation back on") map to what Ask eJukebox
+can actually do; the last one is the app's own help text.
+
+**Add-ons are tagged, not priced.** Type a Message, Live Microphone, Scheduled
+Announcements and both screen features carry an "Add-on" tag, per
+`_data/pricing.yml`; recorded announcements, requests and reordering come with
+Core. No prices on the page, so nothing can drift.
+
+**The phone in both heroes is an illustration**, built in CSS like the live feed
+on `/functions-events/`, not a screenshot. It lives once in
+`_includes/admin-phone.html` (`aph-` prefix, styles emitted once per page) and
+both pages include it. Swap in real App Store screenshots if wanted.
+
+**App Store badge.** `blobs/AppleAppStoreLogo.png` has its lettering and outline
+as transparent cut-outs, so on a dark page they show the background and the
+badge looks dim. Both new pages put a white backing behind it, clipped to the
+badge's corners.
+
+**Theme gotchas, again.** `#main-content h1/h2/h3` set size, colour and margins
+with `!important` and an id selector, and `p` colour is `!important`. The page's
+heading overrides are written as `#main-content .ap-... h3 {... !important}`,
+and the phone illustration uses `div`s, not `p`s. On phones the theme also gives
+every `img` a 15px top and bottom margin, which framed the App Store badge in
+white until `#main-content .ap-badges img { margin:0 !important }` (and `dl-`).
+
+**Built and checked locally for the first time.** Marc's PC already had Ruby 3.3
+and the `github-pages` gem (232), the same one GitHub's legacy Pages builder
+uses. `Tools/jekyll-pages/` (outside this repo) holds a Gemfile pinned to it and
+`build-website.sh`, so a local build matches production: Jekyll 3.10, not the
+Jekyll 4 this repo's own Gemfile asks for, which GitHub ignores. Every changed
+page was checked in a browser at desktop and phone sizes.
+`content-inventory.md` was regenerated from a build that left out the parked
+`tv-on-your-screens.html`: 37 indexable pages, 0 issues.
+
+---
+
+## 2026-10-06 - First named customer testimonial: Peak Health & Fitness
+
+Samantha Morton, owner of Peak Health & Fitness (a family-owned gym in Walkerston
+QLD), emailed Marc about moving to eJukebox and said yes to it going on the site
+(Tue 6 October 2026). The Testimonials page had no customer quotes at all; this is
+the first named one.
+
+**Where it shows.** In full at the top of `/people-love-ejukebox.html` (why they
+switched, how the changeover went, what the members think). As a short card on
+`/music-for-gyms/`, under the benefits, and at the foot of the homepage. Both cards
+link to the full story at `#peak-health-fitness`, and the story links back to the
+gyms page.
+
+**One source.** The wording lives in `_data/testimonials.yml` and renders through
+`_includes/testimonial.html`, whose `tm-` styles are emitted once per page. A venue
+page gets a card by adding `testimonial: <id>` to its front matter. The homepage's
+existing "Diana F." quote moved into the same file so the two cards match; the old
+`.testimonial-card-home` styles went with it.
+
+**Her words, trimmed only.** Excerpts are whole sentences as she wrote them. The
+only edits are her long dash set as a hyphen and one misplaced comma. Australian
+Consumer Law expects a testimonial to be genuine, so never reword one.
+
+**Nightlife is not named.** She spoke well of them and moved purely on cost, so the
+sentences about Nightlife are left out and our intro says "another provider".
+Naming them is Marc's call, and worth checking with her first.
+
+**No `Review` markup,** as before (see `structured-data.md`).
+
+---
+
 ## 2026-09-15 - Licensing page: headings, outline, OneMusic box, rate tables
 
 A review of `/licensing.html`, the page behind more than half of the site's

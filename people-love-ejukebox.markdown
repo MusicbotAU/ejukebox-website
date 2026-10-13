@@ -16,6 +16,12 @@ description: See why Australian pubs, clubs and cafes love eJukebox. Testimonial
   </div>
 </div>
 
+{% include testimonial.html id="peak-health-fitness" full=true %}
+
+<div class="tm-row">
+{% include testimonial.html id="diana-f" %}
+</div>
+
 <div class="love-intro">
   <div class="intro-content">
     <p><strong>eJukebox</strong> is not your average jukebox. We are a technologically advanced and cloud driven music solution with access to thousands of songs direct from the record companies. We are fully licensed and competitive to supply all the latest, safe and non-explicit music that can be used as the music source to play throughout your venue.</p>
