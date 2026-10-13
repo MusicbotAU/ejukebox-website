@@ -1,5 +1,6 @@
 ---
 layout: venue
+hero_alt: A packed dance club under coloured lights
 permalink: /music-for-nightclubs/
 slug: music-for-nightclubs
 label: Clubs & Nightclubs

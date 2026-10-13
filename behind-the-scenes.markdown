@@ -160,7 +160,7 @@ last_reviewed: 2026-10-13
   <p>Out of sight in your rack, cupboard or office, and nothing your staff ever need to touch.</p>
 </div>
 <div class="bt-venue">
-  <div class="bt-photo"><img src="/assets/images/music-speakers.jpg" alt="A crowd enjoying live music at a venue" loading="lazy"><span>Big sound from a small box</span></div>
+  <div class="bt-photo"><img src="/assets/images/stock/dj-at-work.jpg" alt="Hands on a turntable under purple light" loading="lazy"><span>Big sound from a small box</span></div>
   <div class="bt-grid2">
     <div class="bt-card"><span class="bt-ico"><i class="fas fa-microchip"></i></span><h3>Compact and solid state</h3><p>Small enough to tuck away, with no moving parts to wear out. Built to run all day, every day.</p></div>
     <div class="bt-card"><span class="bt-ico"><i class="fas fa-plug"></i></span><h3>Plugs into what you have</h3><p>It connects to your existing amplifier and speakers, on a wired network connection for rock-solid streaming.</p></div>

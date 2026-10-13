@@ -1,5 +1,6 @@
 ---
 layout: venue
+hero_alt: People chatting in a busy coffee shop
 permalink: /music-for-cafes/
 slug: music-for-cafes
 label: Cafés & Coffee Shops

@@ -101,13 +101,13 @@ howto:
 
 <div class="try-demo">
   <div class="demo-content">
-    <h2><i class="fas fa-play"></i> Try It Yourself!</h2>
-    <p>Feel free to give the eJukebox request portal a spin for yourself:</p>
-    <a href="https://one.ejukebox.net" class="demo-link" target="_blank">
-      <i class="fas fa-external-link-alt"></i>
-      https://one.ejukebox.net
+    <h2><i class="fas fa-mobile-screen-button"></i> Put it in your customers' hands</h2>
+    <p>Customers request from the venue's QR code in their phone's browser, or with the free eJukebox Request app.</p>
+    <a href="/ejukebox-apps.html#request" class="demo-link">
+      <i class="fas fa-music"></i>
+      Get the eJukebox Request app
     </a>
-    <p class="demo-note">This is our online demo system <strong>eJukebox One</strong>. You can listen to it yourself in glistening high quality audio.</p>
+    <p class="demo-note">Want it in your venue? <a href="/contact/">Tell us about your venue</a> or <a href="/products.html">see plans &amp; pricing</a>.</p>
   </div>
 </div>
 

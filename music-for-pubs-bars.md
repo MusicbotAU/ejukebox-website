@@ -1,5 +1,6 @@
 ---
 layout: venue
+hero_alt: Bartenders serving drinks at a busy bar
 permalink: /music-for-pubs-bars/
 slug: music-for-pubs-bars
 label: Pubs & Bars

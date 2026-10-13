@@ -1,5 +1,6 @@
 ---
 layout: venue
+hero_alt: A restaurant at dusk with warm lights
 permalink: /music-for-restaurants/
 slug: music-for-restaurants
 label: Restaurants & Dining

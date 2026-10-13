@@ -1,5 +1,6 @@
 ---
 layout: venue
+hero_alt: A hair salon with music playing
 permalink: /music-for-salons-spas/
 slug: music-for-salons-spas
 label: Salons & Spas

@@ -1,5 +1,6 @@
 ---
 layout: venue
+hero_alt: A warm, wood-lined lodge lounge
 permalink: /music-for-hotels/
 slug: music-for-hotels
 label: Hotels & Accommodation

@@ -1,5 +1,6 @@
 ---
 layout: default
+noindex: true   # hidden 13 Oct 2026 pending Marc's review - see _seo/CHANGELOG.md
 title: Core & Complete, Jukebox with Song Requests
 description: Customer song requests from any phone, AI song search, two zones, voice announcements and screens. Core $169/mo, Complete $299/mo ex GST.
 ---
@@ -33,7 +34,7 @@ description: Customer song requests from any phone, AI song search, two zones, v
     </div>
     <div class="gallery-content">
       <div class="playlist-badge">
-        <i class="fas fa-list-music"></i>
+        <i class="fas fa-compact-disc"></i>
         Ask For It In Plain English
       </div>
       <p>Your customers request songs straight from their own phones - no app, no sign-up. And with <strong>AI Song Search</strong> they can ask the way they'd ask a person: "80s Australian pub rock", "something for a 50th", "songs from that Robin Williams movie". Nobody needs to know the track name, which means the people who'd never normally request a song finally do.</p>

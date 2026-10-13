@@ -73,7 +73,7 @@ howto:
           </div>
         </div>
         <div class="trial-benefit">
-          <div class="benefit-icon"><i class="fas fa-devices"></i></div>
+          <div class="benefit-icon"><i class="fas fa-display"></i></div>
           <div class="benefit-content">
             <h4>Up to 3 Connections</h4>
             <p>Stream on multiple devices simultaneously during your trial</p>

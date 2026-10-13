@@ -1,5 +1,6 @@
 ---
 layout: venue
+hero_alt: A bright fitness studio with a Pilates reformer
 permalink: /music-for-gyms/
 slug: music-for-gyms
 label: Gyms & Fitness

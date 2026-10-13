@@ -152,7 +152,6 @@
       <li><a href="/ejukebox-request-portal.html"><i class="fas fa-hand-pointer"></i> Song Request Portal</a></li>
       <li><a href="/admin-app/"><i class="fas fa-mobile-screen"></i> eJukebox Admin App</a></li>
       <li><a href="/ejukebox-apps.html"><i class="fas fa-download"></i> Download the Apps</a></li>
-      <li><a href="/custom-radio.html"><i class="fas fa-broadcast-tower"></i> Custom Branded Radio</a></li>
       <li><a href="/behind-the-scenes.html"><i class="fas fa-screwdriver-wrench"></i> Behind the Scenes</a></li>
       <li class="mobile-nav-subheader">Features:</li>
       {% for f in site.data.features %}
@@ -161,10 +160,9 @@
       <li class="mobile-nav-subheader">Licensing &amp; Pricing:</li>
       <li><a href="/licensing.html"><i class="fas fa-certificate"></i> Music Licensing</a></li>
       <li><a href="/products.html"><i class="fas fa-box"></i> All Plans &amp; Pricing</a></li>
-      <li><a href="/full-package.html"><i class="fas fa-crown"></i> Core &amp; Complete</a></li>
+      <li><a href="/custom-radio.html"><i class="fas fa-broadcast-tower"></i> Custom Branded Radio</a></li>
       <li class="mobile-nav-subheader">Why eJukebox:</li>
       <li><a href="/why-us2.html"><i class="fas fa-star"></i> Why Choose Us</a></li>
-      <li><a href="/BenefitsofMusic.html"><i class="fas fa-music"></i> Benefits of Music</a></li>
       <li><a href="/people-love-ejukebox.html"><i class="fas fa-heart"></i> Testimonials</a></li>
       <li><a href="/stream-us.html"><i class="fas fa-play-circle"></i> Listen to Demos</a></li>
       <li><a href="/contact/"><i class="fas fa-comments"></i> Contact Us</a></li>
@@ -220,8 +218,6 @@
                     class="dropdown-text">eJukebox Admin App</span></a></li>
               <li><a href="/ejukebox-apps.html"><span class="dropdown-icon"><i class="fas fa-download"></i></span><span
                     class="dropdown-text">Download the Apps</span></a></li>
-              <li><a href="/custom-radio.html"><span class="dropdown-icon"><i class="fas fa-broadcast-tower"></i></span><span
-                    class="dropdown-text">Custom Branded Radio</span></a></li>
               <li><a href="/behind-the-scenes.html"><span class="dropdown-icon"><i class="fas fa-screwdriver-wrench"></i></span><span
                     class="dropdown-text">Behind the Scenes</span></a></li>
             </ul>
@@ -242,8 +238,6 @@
               <li><a href="/products.html"><span class="dropdown-icon"><i class="fas fa-box"></i></span><span
                     class="dropdown-text">All Plans &amp; Pricing</span></a></li>
               <li class="dropdown-divider"></li>
-              <li><a href="/full-package.html"><span class="dropdown-icon"><i class="fas fa-crown"></i></span><span
-                    class="dropdown-text">Core &amp; Complete</span></a></li>
               <li><a href="/custom-radio.html"><span class="dropdown-icon"><i class="fas fa-broadcast-tower"></i></span><span
                     class="dropdown-text">Custom Radio</span></a></li>
             </ul>
@@ -253,8 +247,6 @@
             <ul class="dropdown-menu">
               <li><a href="/why-us2.html"><span class="dropdown-icon"><i class="fas fa-star"></i></span><span
                     class="dropdown-text">Why Choose Us</span></a></li>
-              <li><a href="/BenefitsofMusic.html"><span class="dropdown-icon"><i class="fas fa-music"></i></span><span
-                    class="dropdown-text">Benefits of Music</span></a></li>
               <li><a href="/people-love-ejukebox.html"><span class="dropdown-icon"><i class="fas fa-heart"></i></span><span
                     class="dropdown-text">Testimonials</span></a></li>
               <li><a href="/stream-us.html"><span class="dropdown-icon"><i class="fas fa-play-circle"></i></span><span
@@ -288,14 +280,11 @@
         <a href="/free-trial.html" class="engage-btn"><i class="fas fa-rocket"></i> Start Free Trial</a>
       </div>
       <div class="engage-card engage-video">
-        <h3><i class="fas fa-video"></i> See eJukebox in Action</h3>
+        <h3><i class="fas fa-gears"></i> See How It Works</h3>
         <div class="video-container">
-          <div class="video-facade" data-video-id="LkLWbcs0YSI" role="button" tabindex="0"
-            aria-label="Play eJukebox video" onclick="loadYouTube(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();loadYouTube(this);}">
-            <img class="video-facade-thumb" src="https://i.ytimg.com/vi/LkLWbcs0YSI/maxresdefault.jpg"
-              onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/LkLWbcs0YSI/hqdefault.jpg';" alt="" loading="lazy">
-            <span class="video-facade-play"><i class="fas fa-play"></i></span>
-          </div>
+          <a class="video-facade" href="/behind-the-scenes.html" aria-label="See how eJukebox works behind the scenes">
+            <img class="video-facade-thumb" src="/assets/images/stock/bartenders.jpg" alt="" loading="lazy">
+          </a>
         </div>
       </div>
       <div class="engage-card engage-contact">
@@ -340,7 +329,6 @@
             <li><a href="/ejukebox-request-portal.html">Song Requests</a></li>
             <li><a href="/admin-app/">eJukebox Admin App</a></li>
             <li><a href="/ejukebox-apps.html">Download the Apps</a></li>
-            <li><a href="/custom-radio.html">Custom Branded Radio</a></li>
             {% for f in site.data.features %}
             <li><a href="/{{ f.slug }}/">{{ f.label }}</a></li>
             {% endfor %}
@@ -350,7 +338,7 @@
           <h3>Plans &amp; licensing</h3>
           <ul>
             <li><a href="/products.html">Plans &amp; Pricing</a></li>
-            <li><a href="/full-package.html">Core &amp; Complete</a></li>
+            <li><a href="/custom-radio.html">Custom Branded Radio</a></li>
             <li><a href="/licensing.html">Music Licensing</a></li>
             <li><a href="/free-trial.html" class="ej-footer__trial">Free 7-Day Streaming Trial</a></li>
           </ul>
@@ -359,7 +347,6 @@
           <h3>Why eJukebox</h3>
           <ul>
             <li><a href="/why-us2.html">Why Choose Us</a></li>
-            <li><a href="/BenefitsofMusic.html">Benefits of Music</a></li>
             <li><a href="/people-love-ejukebox.html">Testimonials</a></li>
             <li><a href="/stream-us.html">Listen to Demos</a></li>
             <li><a href="/contact/">Contact Us</a></li>

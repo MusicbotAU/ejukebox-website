@@ -26,7 +26,7 @@ hero:
     </div>
     <div class="hero-stat-cta">
       <span class="pulse-dot"></span>
-      Is your venue maximizing its potential?
+      Is your venue maximising its potential?
     </div>
   </div>
   <div class="hero-stat-visual">
@@ -99,7 +99,7 @@ hero:
   </div>
   
   <div class="feature-card-home">
-    <div class="feature-icon-home playlist"><i class="fas fa-list-music"></i></div>
+    <div class="feature-icon-home playlist"><i class="fas fa-compact-disc"></i></div>
     <h3>Professionally Curated Channels</h3>
     <p>Our channels are crafted by real people, not algorithms. This means each song is carefully selected and positioned for a perfect flow, so you'll never need to skip a track.</p>
   </div>
@@ -147,7 +147,7 @@ hero:
 <div class="venue-showcase medical reverse">
   <div class="venue-content">
     <div class="venue-icon"><i class="fas fa-hospital"></i></div>
-    <h2>Elevate Your Medical Center's Ambiance</h2>
+    <h2>Elevate Your Medical Centre's Ambiance</h2>
     <p>At <strong>eJukebox</strong>, every track undergoes state-of-the-art broadcast-quality audio processing to ensure impeccable sound. Unlike other online music services where volume levels can fluctuate, our songs are perfectly mixed for consistent volume throughout. This professional-grade sound quality provides a seamless listening experience akin to top radio stations, creating a calming and flawless ambiance in your medical center. Patients will appreciate the serene and consistent audio environment, enhancing their overall experience and comfort during their visit.</p>
     <div class="venue-badges">
       <span class="venue-badge"><i class="fas fa-volume-down"></i> Calming Audio</span>
@@ -166,7 +166,7 @@ hero:
   <div class="venue-content">
     <div class="venue-icon"><i class="fas fa-store"></i></div>
     <h2>Ensure Legal Compliance in your pub, bar or retail store</h2>
-    <p><strong>eJukebox</strong> is a <a href="/background-music-for-business/">background music provider</a> fully licensed for commercial use, unlike personal music services like Spotify or Amazon Music, which are illegal to play in public settings according to their terms and conditions. With <strong>eJukebox</strong>, you can confidently play music in your pub, bar or retail store without any legal concerns, ensuring compliance and peace of mind. Enjoy high-quality, professionally curated music channels that enhance your store's atmosphere while staying within the law.</p>
+    <p><strong>eJukebox</strong> is a <a href="/background-music-for-business/">background music provider</a> fully licensed for commercial use, unlike personal music services such as Spotify or Amazon Music, whose own terms rule out playing them in a business. With <strong>eJukebox</strong> you are not relying on a personal account. Your venue still holds its own OneMusic licence, and for pubs and clubs we can collect and pay it for you, at cost. Enjoy high-quality, professionally curated music channels that enhance your store's atmosphere while staying within the law.</p>
     <div class="venue-badges">
       <span class="venue-badge"><i class="fas fa-gavel"></i> Fully Licensed</span>
       <span class="venue-badge"><i class="fas fa-shield-alt"></i> Legal & Compliant</span>

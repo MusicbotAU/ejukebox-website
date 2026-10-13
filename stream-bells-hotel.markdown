@@ -1,5 +1,6 @@
 ---
 layout: default
+noindex: true   # hidden 13 Oct 2026 pending Marc's review - see _seo/CHANGELOG.md
 title: Bells Hotel Custom Stream Case Study
 description: How we built a 1500-song custom stream for Bells Hotel, sorted by popularity from track metadata to match the venue brief. A worked example.
 ---

@@ -1,5 +1,6 @@
 ---
 layout: venue
+hero_alt: A retail store with music playing
 permalink: /music-for-retail/
 slug: music-for-retail
 label: Retail & Shops

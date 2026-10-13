@@ -1,0 +1,41 @@
+{% comment %}
+  A wide photo band to break up a long page, with an optional caption over it. Give it
+  two more photos and it becomes a mosaic: the first large, the other two stacked.
+
+    {% include photo-band.html src="/assets/images/stock/x.jpg" alt="..." caption="..." %}
+    {% include photo-band.html src="..." alt="..." src2="..." alt2="..." src3="..." alt3="..." caption="..." %}
+
+  Optional: pos="center 30%" sets the first photo's focal point. Stock photos live in
+  assets/images/stock/ and are credited in _seo/image-credits.md. Styles are phb- prefixed
+  and emitted once per page. The theme gives every img a margin on phones, hence margin:0.
+{% endcomment %}
+{%- unless phb_styles_done -%}
+{%- assign phb_styles_done = true %}
+<style>
+.phb-band{position:relative;margin:40px 0;border-radius:20px;overflow:hidden;border:1.5px solid var(--ejm-line);box-shadow:0 30px 70px rgba(0,0,0,.4)}
+.phb-one{height:clamp(220px,34vw,420px)}
+.phb-mosaic{display:grid;grid-template-columns:1.6fr 1fr;grid-template-rows:1fr 1fr;gap:6px;height:clamp(300px,40vw,480px);background:var(--ejm-card)}
+.phb-cell{position:relative;overflow:hidden}
+.phb-mosaic .phb-cell:first-child{grid-row:1 / span 2}
+.phb-band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;margin:0 !important;transition:transform .6s ease}
+.phb-band:hover img{transform:scale(1.03)}
+.phb-cap{position:absolute;left:0;right:0;bottom:0;z-index:1;margin:0;padding:60px 28px 22px;
+  background:linear-gradient(0deg,rgba(10,10,22,.85),rgba(10,10,22,0));
+  font-family:'Poppins',sans-serif;font-size:clamp(1.05rem,2vw,1.45rem);font-weight:700;line-height:1.3;color:#fff}
+@media (max-width:640px){
+  .phb-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:auto auto;height:auto}
+  .phb-mosaic .phb-cell{height:150px}
+  .phb-mosaic .phb-cell:first-child{grid-column:1 / span 2;grid-row:auto;height:220px}
+  .phb-cap{padding:40px 18px 16px}
+}
+</style>
+{%- endunless %}
+{%- if include.src2 %}
+<figure class="phb-band phb-mosaic">
+  <div class="phb-cell"><img src="{{ include.src }}" alt="{{ include.alt }}" loading="lazy"{% if include.pos %} style="object-position:{{ include.pos }}"{% endif %}>{% if include.caption %}<figcaption class="phb-cap">{{ include.caption }}</figcaption>{% endif %}</div>
+  <div class="phb-cell"><img src="{{ include.src2 }}" alt="{{ include.alt2 }}" loading="lazy"></div>
+  <div class="phb-cell"><img src="{{ include.src3 }}" alt="{{ include.alt3 }}" loading="lazy"></div>
+</figure>
+{%- else %}
+<figure class="phb-band phb-one"><img src="{{ include.src }}" alt="{{ include.alt }}" loading="lazy"{% if include.pos %} style="object-position:{{ include.pos }}"{% endif %}>{% if include.caption %}<figcaption class="phb-cap">{{ include.caption }}</figcaption>{% endif %}</figure>
+{%- endif %}

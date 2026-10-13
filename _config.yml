@@ -28,7 +28,7 @@ email: info@ejukebox.com.au
 # `description` for the WebSite node on every page - so keep it factual and under
 # ~160 characters.
 description: >-
-  Australia's licensed music solution for pubs, clubs, bars, cafes and retail. Cloud jukebox with phone control and customer song requests, from $49/month.
+  Licensed background music and interactive jukebox for Australian pubs, clubs, bars, cafes and retail. Curated channels, phone control and customer song requests.
 baseurl: "" # the subpath of your site, e.g. /blog
 # Australian English. jekyll-seo-tag defaults og:locale to en_US when this is
 # unset, and _layouts/default.html reads it for <html lang>. Written with a
@@ -75,6 +75,11 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  # OneMusic's own rate guides (theirs to publish, not ours) and stray working files.
+  - assets/Retail.pdf
+  - assets/Hotels-Pubs-Taverns-Bars-Casinos.pdf
+  - SpotifyURLs.txt
+  - README.md
 
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

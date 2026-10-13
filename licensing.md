@@ -126,13 +126,13 @@ faqs:
   /* ---- OneMusic explainer ---- */
   .lc-om { display:grid; grid-template-columns:auto 1fr 1fr; gap:20px; align-items:stretch; }
   .lc-om-logo { display:grid; place-items:center; padding:24px 26px; border-radius:18px; background:#fff; }
-  .lc-om-logo img { width:190px; height:auto; margin:0 !important; }
+  .lc-om-logo img { width:190px; height:auto; margin:0 !important; box-shadow:none !important; border-radius:0 !important; }
   .lc-right { padding:24px 24px; border-radius:18px; background:var(--ejm-card); border:1.5px solid var(--ejm-line); }
   .lc-right .lc-kick { margin-bottom:6px; }
   #main-content .lc-page .lc-right p { margin:0; font-size:.95rem; line-height:1.6; }
 
   /* ---- how the fee is set ---- */
-  .lc-fee { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .lc-fee { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
   .lc-card { padding:26px 24px; border-radius:18px; background:linear-gradient(165deg, var(--ejm-card-2), var(--ejm-card)); border:1.5px solid var(--ejm-line); }
   .lc-card .lc-ico { margin-bottom:16px; }
   #main-content .lc-page .lc-card p { margin:0; font-size:.95rem; line-height:1.62; }
@@ -223,7 +223,7 @@ faqs:
       </div>
       <p class="lc-note"><i class="fas fa-circle-info"></i>We explain it, OneMusic sets it. OneMusic Australia decides licence types and fees and confirms what applies to your business.</p>
     </div>
-    <div class="lc-hero-img"><img src="/assets/images/pub-bar.jpg" alt="A busy Australian pub bar with music playing" loading="eager"></div>
+    <div class="lc-hero-img"><img src="/assets/images/pub-bar.jpg" alt="A pub bar ready for the night" loading="eager"></div>
   </div>
 </div>
 
@@ -295,8 +295,13 @@ faqs:
   </div>
   <div class="lc-card">
     <span class="lc-ico"><i class="fas fa-beer-mug-empty"></i></span>
-    <h3>Pubs, bars, clubs and hotels</h3>
+    <h3>Pubs, bars and hotels</h3>
     <p>A package set mainly by <strong>how many TV screens</strong> you have and whether you run a music system. Extras can apply for things like separate dining areas, DJs, live music and dance floors.</p>
+  </div>
+  <div class="lc-card">
+    <span class="lc-ico"><i class="fas fa-people-group"></i></span>
+    <h3>Registered clubs</h3>
+    <p>Clubs are generally charged <strong>per member</strong>, not by screens, so changing music supplier does not change the club's licence fee. For a club, the reasons to switch are compliance and the product.</p>
   </div>
   <div class="lc-card">
     <span class="lc-ico"><i class="fas fa-file-signature"></i></span>
@@ -353,7 +358,7 @@ faqs:
     </div>
   </div>
   <div class="lc-case">
-    <div class="lc-case-img"><img src="/assets/images/large-pub.jpg" alt="A large Australian pub with TV screens" loading="lazy"><span>Pub with TV screens</span></div>
+    <div class="lc-case-img"><img src="/assets/images/large-pub.jpg" alt="A large pub dining room" loading="lazy"><span>Pub with TV screens</span></div>
     <div class="lc-case-body">
       <div class="lc-ba before"><b>Before</b><p>Spotify through the bar PC, a TV-based OneMusic package and the Digital Copy/Delivery fee on top.</p></div>
       <div class="lc-ba after"><b>With eJukebox</b><p>The TV-based package stays, because your screens set it, but the Digital Copy/Delivery fee goes. Two zones are included, customers request songs, and we can collect and pay your OneMusic fee at cost.</p></div>

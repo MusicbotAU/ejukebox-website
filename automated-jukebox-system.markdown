@@ -41,7 +41,7 @@ service_type: Automated music programming and playout for venues
     <img src="blobs/totally_automated_jukebox_music_solution.jpg" alt="Totally automated jukebox music solution">
   </div>
   <div class="showcase-content">
-    <div class="showcase-badge"><i class="fas fa-sparkles"></i> New & Hip</div>
+    <div class="showcase-badge"><i class="fas fa-wand-magic-sparkles"></i> New & Hip</div>
     <h2>The Modern Jukebox Experience</h2>
     <p><strong>eJukebox</strong> is new and hip. While all other music solutions are static, eJukebox is the only totally automated shared music solution which is totally dynamic.</p>
     <p><strong>eJukebox</strong> is exactly like a conventional jukebox, except much newer - conventional jukeboxes are old school. An old school jukebox is a static device that sits on a wall or in the corner of a room, whereas <strong>eJukebox</strong> is today's technology in a jukebox eliminating the need to be anti-social lining up or standing in front of a jukebox for ages browsing through songs.</p>

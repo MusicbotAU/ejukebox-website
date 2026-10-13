@@ -1,5 +1,6 @@
 ---
 layout: default
+noindex: true   # hidden 13 Oct 2026 pending Marc's review - see _seo/CHANGELOG.md
 title: About Musicbot, the Makers of eJukebox
 description: Australian-owned music solution for pubs, clubs & cafes. Musicbot - the creators of eJukebox. Cloud-powered jukebox technology made in Australia.
 schema_page_type: AboutPage
