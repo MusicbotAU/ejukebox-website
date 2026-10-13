@@ -5,7 +5,7 @@ slug: music-for-nightclubs
 label: Clubs & Nightclubs
 venue_name: clubs & nightclubs
 title: Nightclub Music Australia, Licensed Channels
-description: Licensed, high-energy music for Australian nightclubs. Curated channels, smartphone song requests and dayparting. Cheaper OneMusic licence tier. Free trial.
+description: Licensed, high-energy music for Australian nightclubs. Curated channels, smartphone song requests and dayparting. Licensed for business use. Free trial.
 h1: Music for Clubs & Nightclubs
 intro: A club lives and dies by its sound. eJukebox delivers a licensed, high-energy stream you can programme across the whole night, from warm-up to peak, with optional crowd requests to keep the floor moving and the bar busy.
 benefits:
@@ -17,5 +17,5 @@ benefits:
     text: Let the floor request tracks from their phones while you keep final say over the vibe.
   - icon: fa-certificate
     title: Always licensed
-    text: As a commercial background music supplier, eJukebox puts your club on a lower OneMusic tier, and we can collect your OneMusic fee and remit it directly.
+    text: A personal Spotify account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
 ---
