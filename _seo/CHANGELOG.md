@@ -5,7 +5,7 @@ be revisited without re-deriving it.
 
 ---
 
-## 2026-10-13 - Real app screens on nine pages
+## 2026-10-13 - Real app screens on ten pages
 
 Marc's own grabs of eJukebox Request and of the Admin app's Voice menu, taken at Club
 Buffalo (our demo venue), now illustrate the pages they belong to.
@@ -22,6 +22,11 @@ Buffalo (our demo venue), now illustrate the pages they belong to.
 - **Copy matched to the apps:** a dedication plays right before the song and blends into
   its intro, like a radio DJ (Marc: both, not one or the other); the type-a-message button
   is "Hear it first"; Live Microphone starts from Voice, then Talk to the room now.
+- **Screen menu, added the same evening:** guest photo uploads, a branded guest photo with
+  its show, schedule, hide and delete controls, instant slides and message on the screen - on
+  In-Venue Screens and the Admin app page. Guests' own photos are swapped for CC0 stock,
+  another customer's slide is blurred and QR codes are scrambled. Other Screen menu grabs
+  are held back for now.
 - **Song requests are optional.** The homepage section says so - requests come with Core
   and Complete, and not every venue wants them.
 - **Functions & Events** shows the Request screens too: guests use the same screens,

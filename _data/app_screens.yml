@@ -1,6 +1,7 @@
 # Real eJukebox app screens, captured on Tue 13 October 2026 at Club Buffalo - our demo
 # venue at the Ryde office. Cleaned and re-framed (stray window edges, a staff name, the
-# build stamp and technical audio lines removed). Full-size masters and the original grabs
+# build stamp and technical audio lines removed; guests' own photos swapped for CC0 stock,
+# another customer's slide blurred, QR codes scrambled). Full-size masters and the original grabs
 # are in Marketing\App Screenshots. Shown by _includes/app-fan.html - all 500 x 1055.
 # Keep every value quoted: a ": " inside a plain YAML value breaks the whole file.
 
@@ -29,3 +30,16 @@ admin-type:
 admin-schedule:
   src: "/assets/images/apps/ejukebox-admin-app-scheduled-announcements.webp"
   alt: "Scheduled announcements in the eJukebox Admin app - happy hour booked for 6:30pm every day, playing itself"
+
+admin-message:
+  src: "/assets/images/apps/ejukebox-admin-app-message-on-screen.webp"
+  alt: "Message on the screen in the eJukebox Admin app - a notice on the venue TV for 5 seconds to a minute, with ready-made messages"
+admin-patron-photos:
+  src: "/assets/images/apps/ejukebox-admin-app-patron-photos.webp"
+  alt: "Patron photo uploads in the eJukebox Admin app - guests' photos and short videos waiting for the venue's screen"
+admin-guest-photo:
+  src: "/assets/images/apps/ejukebox-admin-app-guest-photo.webp"
+  alt: "A guest's photo branded with the venue's logo in the eJukebox Admin app, with show now, schedule, hide and delete"
+admin-slides:
+  src: "/assets/images/apps/ejukebox-admin-app-instant-slides.webp"
+  alt: "Instant slides in the eJukebox Admin app - type what the screen should say and a slide is designed for you to check first"

@@ -37,5 +37,6 @@ its licence allows that.
 `assets/images/apps/` holds real screens from the eJukebox Request and eJukebox Admin apps,
 captured at Club Buffalo (our demo venue) on Tue 13 October 2026. They are ours - no
 credit needed. Cleaned and re-framed before use; the full-size masters and the original
-grabs are in Marketing\App Screenshots. Shown through `_includes/app-fan.html`, with alt
+grabs are in Marketing\App Screenshots. Where a screen showed guests' own photos, they are swapped for the CC0 photos above, so
+no real guest appears. Shown through `_includes/app-fan.html`, with alt
 text in `_data/app_screens.yml`.
