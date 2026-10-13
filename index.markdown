@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Jukebox Music for Pubs, Clubs, Cafes & Retail
-description: Australia's jukebox and background music service for pubs, clubs, bars, cafes and retail. Licensed streaming from $49/mo. Free trial, no credit card.
+description: Australia's jukebox and background music service for pubs, clubs, bars, cafes and retail. Curated licensed channels, song requests, and a free trial.
 hero:
-  image: /blobs/eJukebox_fun04.jpg
+  image: /assets/images/stock/bartenders.jpg
+  alt: Bartenders serving drinks at a busy bar
   eyebrow: Licensed music for Australian venues
   h1: "Jukebox & Background Music for Pubs, Clubs, Cafes & Retail"
   sub: Professionally curated, fully licensed music your staff control from their phone and your customers request from theirs.
@@ -43,7 +44,6 @@ hero:
   </div>
 </div>
 
----
 
 <div class="section-header-fancy">
   <span class="section-icon"><i class="fas fa-users"></i></span>
@@ -84,7 +84,6 @@ hero:
   <a href="/products.html" class="btn-glow">See Our Packages <i class="fas fa-arrow-right"></i></a>
 </div>
 
----
 
 <div class="section-header-fancy">
   <span class="section-icon"><i class="fas fa-music"></i></span>
@@ -94,8 +93,8 @@ hero:
 <div class="features-grid-home">
   <div class="feature-card-home">
     <div class="feature-icon-home radio"><i class="fas fa-broadcast-tower"></i></div>
-    <h3>Live-Streamed Like a Radio Station</h3>
-    <p>Unlike other services that play songs one by one, <strong>eJukebox</strong> streams music live from Australia, creating a seamless and cohesive listening experience similar to popular in-store radio stations like Coles Radio or Woolworths Radio.</p>
+    <h3>Programmed Like a Great Radio Station</h3>
+    <p>Each <strong>eJukebox</strong> channel flows from song to song, levelled for volume and timed for the hour, with no ads and no talk - the polish of a radio station, made for your room.</p>
   </div>
   
   <div class="feature-card-home">
@@ -121,9 +120,14 @@ hero:
     <h3>Custom Radio Stations</h3>
     <p>We can create a custom radio station tailored specifically for your business, just like the supermarkets, enhancing your brand and customer experience.</p>
   </div>
+
+  <div class="feature-card-home">
+    <div class="feature-icon-home radio"><i class="fas fa-wifi"></i></div>
+    <h3>Plays On If the Internet Drops</h3>
+    <p>Core venues play from a compact on-site player that carries the music on board, so a full room never goes quiet because the connection did.</p>
+  </div>
 </div>
 
----
 
 <div class="venue-showcase pub-cafe">
   <div class="venue-content">
@@ -142,7 +146,6 @@ hero:
   </div>
 </div>
 
----
 
 <div class="venue-showcase medical reverse">
   <div class="venue-content">
@@ -156,11 +159,10 @@ hero:
     </div>
   </div>
   <div class="venue-image">
-    <img src="blobs/pexels-photo-6809658-1920w.webp" alt="Medical center ambiance">
+    <img src="/assets/images/stock/waiting-lounge.jpg" alt="A calm, bright waiting area" loading="lazy">
   </div>
 </div>
 
----
 
 <div class="venue-showcase retail">
   <div class="venue-content">
@@ -174,11 +176,10 @@ hero:
     </div>
   </div>
   <div class="venue-image">
-    <img src="blobs/pexels-photo-3851422-1920w.webp" alt="Retail store ambiance">
+    <img src="/assets/images/retail-store.jpg" alt="A retail store with music playing" loading="lazy">
   </div>
 </div>
 
----
 
 <div class="dayparting-section">
   <div class="dayparting-header">
@@ -203,10 +204,9 @@ hero:
       <p>Upbeat vibes for the night crowd</p>
     </div>
   </div>
-  <p class="dayparting-description">Our live-streamed service provides a dynamic and engaging atmosphere tailored to your customers' moods throughout the day.</p>
+  <p class="dayparting-description">Your channel changes with the time of day on its own, so the mood always matches the room.</p>
 </div>
 
----
 
 <div class="test-drive-section">
   <div class="test-drive-content">
@@ -231,7 +231,6 @@ hero:
   </div>
 </div>
 
----
 
 <div class="trial-cta-section">
   <div class="trial-glow"></div>
@@ -246,7 +245,6 @@ hero:
   </div>
 </div>
 
----
 
 <div class="tm-row tm-row-lead">
 {% include testimonial.html id="peak-health-fitness" %}
