@@ -7,12 +7,7 @@ re-run the script instead.
 
 ## Issues
 
-- `/music-for-pubs-bars.html` - Description missing
-- `/music-for-pubs-bars.html` - No H1
-- `/music-for-pubs-bars.html` - No Open Graph
-- `/music-for-pubs-bars.html` - No canonical
-- `/music-for-pubs-bars.html` - No structured data
-- `/music-for-pubs-bars.html` - Title missing
+None. Every indexable page has a unique title within 60 chars, a unique description within 160, an H1, structured data, a canonical and Open Graph tags.
 
 ## Pages
 
@@ -44,7 +39,7 @@ re-run the script instead.
 | `/music-for-hotels/` | Music for Hotels & Accommodation Australia | | 53 | 153 | y | Service, WebPage |
 | `/music-for-medical/` | Music for Medical & Waiting Rooms Australia  | 54 | 146 | y | Service, WebPage |
 | `/music-for-nightclubs/` | Nightclub Music Australia, Licensed Channels | 55 | 152 | y | Service, WebPage |
-| `/music-for-pubs-bars.html` |  | 0 | 0 | NO |  |
+| `/music-for-pubs-bars/` | Music for Pubs & Bars Australia, Jukebox | e | 51 | 150 | y | FAQPage, Service, WebPage |
 | `/music-for-restaurants/` | Music for Restaurants Australia, Dining Musi | 56 | 150 | y | Service, WebPage |
 | `/music-for-retail/` | Music for Retail & Shops Australia, In-Store | 55 | 147 | y | Service, WebPage |
 | `/music-for-salons-spas/` | Music for Salons & Spas Australia | eJukebox | 44 | 145 | y | Service, WebPage |
