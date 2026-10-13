@@ -1,0 +1,14 @@
+{% comment %}
+  One feature video, looked up by id in _data/pricing.yml (addons first, then included),
+  so the file name lives in one place. Nothing downloads until the visitor presses play.
+
+    {% include feature-video.html id="tts" poster="/assets/images/stock/x.jpg" caption="Type a Message" %}
+{% endcomment %}
+{%- assign fv = site.data.pricing.addons | where: "id", include.id | first -%}
+{%- unless fv -%}{%- assign fv = site.data.pricing.included | where: "id", include.id | first -%}{%- endunless -%}
+{%- if fv and fv.video != "" and fv.video -%}
+<figure class="ft-vid">
+  <video controls preload="none" playsinline poster="{{ include.poster }}"><source src="{{ site.data.pricing.video_base }}{{ fv.video }}" type="video/mp4"></video>
+  {%- if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>
+{%- endif -%}

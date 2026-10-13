@@ -33,7 +33,7 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 | `/in-venue-screens/` | In-Venue Screens, Guest Photos & Requests |  | 52 | 138 | y | Service, WebPage |
 | `/irish-pub-music/` | Irish Pub Music for Bars & Pubs Australia |  | 52 | 149 | y | FAQPage, Service, WebPage |
 | `/licensing.html` | Music Licensing for Business, OneMusic & APR | 56 | 150 | y | Article, FAQPage, HowTo, Service, WebPage |
-| `/live-microphone/` | Live Microphone, Turn a Phone Into a PA Mic  | 54 | 136 | y | Service, WebPage |
+| `/live-microphone/` | Live Microphone, Turn a Phone Into a PA Mic  | 54 | 147 | y | Service, WebPage |
 | `/music-for-cafes/` | Music for Cafés & Coffee Shops Australia | e | 51 | 150 | y | Service, WebPage |
 | `/music-for-gyms/` | Music for Gyms & Fitness Studios Australia | | 53 | 143 | y | Service, WebPage |
 | `/music-for-hotels/` | Music for Hotels & Accommodation Australia | | 53 | 153 | y | Service, WebPage |
@@ -50,10 +50,10 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 | `/products.html` | Plans & Pricing for Venue Music | eJukebox | 42 | 144 | y | CollectionPage, Product, WebPage |
 | `/refer-a-venue-terms/` | _noindex_ | | | | |
 | `/refer-a-venue/` | _noindex_ | | | | |
-| `/spotify-integration/` | Spotify Integration for Your Venue | eJukebo | 45 | 143 | y | Service, WebPage |
+| `/spotify-integration/` | Spotify Integration for Your Venue | eJukebo | 45 | 144 | y | Service, WebPage |
 | `/stream-bells-hotel.html` | _noindex_ | | | | |
 | `/stream-us.html` | Listen to Free eJukebox Demo Streams | eJuke | 47 | 134 | y | Service, WebPage |
-| `/voice-announcements/` | Voice & Announcements for Pubs & Clubs | eJu | 49 | 142 | y | Service, WebPage |
+| `/voice-announcements/` | Voice & Announcements for Pubs & Clubs | eJu | 49 | 145 | y | Service, WebPage |
 | `/wholesale/` | _noindex_ | | | | |
 | `/why-us.html` | _noindex_ | | | | |
 | `/why-us2.html` | Why Choose eJukebox for Your Venue | eJukebo | 45 | 147 | y | Service, WebPage |
