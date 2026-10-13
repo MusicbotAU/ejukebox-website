@@ -15,17 +15,17 @@ schema_page_type: ContactPage
 </div>
 
 <div class="ct-quick">
-  <a class="ct-quick-card" href="tel:+61298025552">
-    <span class="ct-quick-ico"><i class="fas fa-phone"></i></span>
-    <span class="ct-quick-label">Call us</span>
-    <span class="ct-quick-value">02 9802 5552</span>
-    <span class="ct-quick-note">Straight through to the team</span>
-  </a>
   <a class="ct-quick-card" href="mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website%20-%20Contact%20page&body=Hi%20eJukebox%2C%0D%0A%0D%0AVenue%20name%3A%0D%0ASuburb%20and%20state%3A%0D%0AVenue%20type%20(pub%2C%20club%2C%20cafe%2C%20retail%2C%20etc)%3A%0D%0AAreas%20or%20zones%20needing%20music%3A%0D%0AWhat%20I%27m%20after%3A%0D%0A%0D%0AMy%20name%3A%0D%0ABest%20contact%20number%3A%0D%0A">
     <span class="ct-quick-ico"><i class="fas fa-envelope"></i></span>
     <span class="ct-quick-label">Email us</span>
     <span class="ct-quick-value">info@ejukebox.com.au</span>
     <span class="ct-quick-note">We'll come back to you</span>
+  </a>
+  <a class="ct-quick-card" href="tel:+61298025552">
+    <span class="ct-quick-ico"><i class="fas fa-phone"></i></span>
+    <span class="ct-quick-label">Call us</span>
+    <span class="ct-quick-value">02 9802 5552</span>
+    <span class="ct-quick-note">Straight through to the team</span>
   </a>
   <a class="ct-quick-card ct-quick-urgent" href="tel:+61401777223">
     <span class="ct-quick-ico"><i class="fas fa-phone-volume"></i></span>
@@ -110,7 +110,7 @@ schema_page_type: ContactPage
           <input type="radio" name="plan" value="Solo">
           <span class="ct-plan-inner">
             <span class="ct-plan-name">Solo</span>
-            <span class="ct-plan-price">$49/mo</span>
+            {% assign ct_solo = site.data.pricing.tiers | where: "id", "solo" | first %}<span class="ct-plan-price">${{ ct_solo.retail }}/mo ex GST</span>
             <span class="ct-plan-desc">Streaming only, one channel, one area. No song requests.</span>
           </span>
         </label>
@@ -118,7 +118,7 @@ schema_page_type: ContactPage
           <input type="radio" name="plan" value="Core">
           <span class="ct-plan-inner">
             <span class="ct-plan-name">Core</span>
-            <span class="ct-plan-price">$169/mo</span>
+            {% assign ct_core = site.data.pricing.tiers | where: "id", "core" | first %}<span class="ct-plan-price">${{ ct_core.retail }}/mo ex GST</span>
             <span class="ct-plan-desc">The hospitality base. Two zones, song requests, AI search, on-site player.</span>
           </span>
         </label>
@@ -126,7 +126,7 @@ schema_page_type: ContactPage
           <input type="radio" name="plan" value="Complete">
           <span class="ct-plan-inner">
             <span class="ct-plan-name">Complete</span>
-            <span class="ct-plan-price">$299/mo</span>
+            {% assign ct_comp = site.data.pricing.tiers | where: "id", "complete" | first %}<span class="ct-plan-price">${{ ct_comp.retail }}/mo ex GST</span>
             <span class="ct-plan-desc">Core with every software add-on already included.</span>
           </span>
         </label>
@@ -208,7 +208,7 @@ schema_page_type: ContactPage
     <div class="ct-manual-actions">
       <a href="#" class="ct-manual-btn ct-manual-primary" id="ctMailLink"><i class="fas fa-envelope"></i> Open in my email</a>
       <button type="button" class="ct-manual-btn" id="ctCopyBtn"><i class="fas fa-copy"></i> Copy my enquiry</button>
-      <a href="tel:+61298025552" class="ct-manual-btn"><i class="fas fa-phone"></i> Just call instead</a>
+      <a href="tel:+61298025552" class="ct-manual-btn"><i class="fas fa-phone"></i> Prefer to talk? Call us</a>
     </div>
     <p class="ct-manual-hint">Using webmail? Hit <strong>Copy my enquiry</strong>, then paste it into a new message to <strong>info@ejukebox.com.au</strong>.</p>
     <pre class="ct-manual-preview" id="ctPreview"></pre>
@@ -234,12 +234,12 @@ schema_page_type: ContactPage
     <div class="ct-why-card">
       <i class="fas fa-map-location-dot"></i>
       <h3>Wherever your venue is</h3>
-      <p>We run in venues in every state and territory, city rooftops to outback pubs, with no metro-only restriction. Solo streams to anything with a connection. Core and Complete add an on-site player, which we set up so it configures itself, and we always put it on wired ethernet rather than WiFi. That one decision is what keeps a room playing all night.</p>
+      <p>We supply venues right across Australia, from city rooftops to outback pubs, with no metro-only restriction. Solo streams to anything with a connection. Core and Complete add an on-site player, which we set up so it configures itself, and we always put it on wired ethernet rather than WiFi. That one decision is what keeps a room playing all night.</p>
     </div>
     <div class="ct-why-card">
       <i class="fas fa-headset"></i>
       <h3>Monitored around the clock</h3>
-      <p>Core and Complete venues are monitored 24/7 with remote support, so more often than not we are already onto something before anyone at the venue picks up the phone. Outside office hours you can still reach a person on 0401 777 223.</p>
+      <p>Core and Complete players are monitored around the clock, with an alert to our team if the music stops, and remote support - so more often than not we are already onto something before anyone at the venue picks up the phone. Outside office hours you can still reach a person on 0401 777 223.</p>
     </div>
     <div class="ct-why-card">
       <i class="fas fa-plug-circle-check"></i>

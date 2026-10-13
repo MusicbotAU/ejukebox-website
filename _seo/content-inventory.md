@@ -56,4 +56,4 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 | `/voice-announcements/` | Voice & Announcements for Pubs & Clubs | eJu | 49 | 145 | y | Service, WebPage |
 | `/wholesale/` | _noindex_ | | | | |
 | `/why-us.html` | _noindex_ | | | | |
-| `/why-us2.html` | Why Choose eJukebox for Your Venue | eJukebo | 45 | 147 | y | Service, WebPage |
+| `/why-us2.html` | Why Choose eJukebox for Your Venue | eJukebo | 45 | 154 | y | Service, WebPage |

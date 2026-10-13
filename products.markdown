@@ -39,7 +39,7 @@ schema_page_type: CollectionPage
     <div class="pb-card">
       <i class="fas fa-headphones pb-ico"></i>
       <h3>Have a listen first - free</h3>
-      <p>Before you decide anything, hear what our music directors actually build. Four channels, streaming right now, no sign-up and no card.</p>
+      <p>Before you decide anything, hear what our music directors actually build. Our channels, streaming right now, no sign-up and no card.</p>
       <ul>
         <li><strong>Hits</strong> - current chart and recent favourites</li>
         <li><strong>Smooth</strong> - relaxed, easy, good for daytime</li>

@@ -1,119 +1,88 @@
 ---
 layout: default
 title: Why Choose eJukebox for Your Venue
-description: Why eJukebox beats competitors - 3% faster music tempo, AGC processing, Australian DJ curation. The music solution for pubs, clubs, cafes & retail.
+description: Why venues choose eJukebox - Australian-curated channels, song requests from any phone, two zones included, radio-quality sound and licence admin handled.
 schema_service: Professionally programmed background music for Australian venues
 service_type: Human-curated commercial music programming and broadcast audio processing
+last_reviewed: 2026-10-13
 ---
 
-<div class="why-us2-hero">
-  <div class="hero-content">
-    <i class="fas fa-award"></i>
-    <h1>Best Music for <span class="gradient-text">Pubs, Clubs & Hospitality</span></h1>
-    <p class="hero-subtitle">Why eJukebox beats the competition - the music solution for pubs, clubs, cafes & retail</p>
+{% include feature-styles.html %}
+
+<div class="ft-page">
+
+<div class="ft-hero">
+  <div class="ft-hero-grid">
+    <div class="ft-hero-copy">
+      <span class="ft-eyebrow"><i class="fas fa-award"></i> Why eJukebox</span>
+      <h1>Music That Makes Them <span class="ft-grad">Part of the Night</span></h1>
+      <p class="ft-lead">Most background music plays <em>at</em> your customers. eJukebox lets them join in - request a song, hear their shout-out, see their photo on the screen - with channels picked by Australian music directors, and the licence admin handled for you.</p>
+      <div class="ft-ctas">
+        <a class="ft-btn" href="/contact/"><i class="fas fa-comments"></i> Tell us about your venue</a>
+        <a class="ft-btn-ghost" href="/products.html">See plans &amp; pricing</a>
+      </div>
+      <ul class="ft-ticks">
+        <li><i class="fas fa-circle-check"></i> Australian owned and operated</li>
+        <li><i class="fas fa-circle-check"></i> Two zones included as standard</li>
+        <li><i class="fas fa-circle-check"></i> No lock-in contracts</li>
+      </ul>
+    </div>
+    <div class="ft-hero-img"><img src="/assets/images/stock/party-crowd-sunset.jpg" alt="A crowd enjoying a night out at sunset" loading="eager"></div>
   </div>
 </div>
 
-<div class="dna-intro">
-  <p class="lead-text">At <strong>eJukebox</strong>, it's in our DNA that we think outside of the box. It's the smaller things that set us in front of the others. It's our attention to detail.</p>
+<div class="ft-sec-head">
+  <span class="ft-kick">Six reasons</span>
+  <h2>Why venues choose eJukebox</h2>
+</div>
+<div class="ft-grid3">
+  <div class="ft-card"><span class="ft-ico"><i class="fas fa-headphones"></i></span><h3>Music picked by people</h3><p>Every channel - Hits, Smooth, Rock and Country - is built and refreshed by Australian music directors, never shuffled by an algorithm. It changes through the day on its own, so lunch and Saturday night each sound right.</p></div>
+  <div class="ft-card"><span class="ft-ico c"><i class="fas fa-users"></i></span><h3>Your customers join in</h3><p>Song requests from any phone, "Help me pick" for when they cannot name the song, and add-ons for dedications and photos on the big screen. <a href="/ejukebox-request-portal.html">How requests work</a>.</p></div>
+  <div class="ft-card"><span class="ft-ico b"><i class="fas fa-layer-group"></i></span><h3>Two zones included</h3><p>Different music in the bar and the bistro, out of the box. Most providers charge for every zone. One player drives up to four.</p></div>
+  <div class="ft-card"><span class="ft-ico d"><i class="fas fa-wave-square"></i></span><h3>Sounds like the radio, minus the ads</h3><p>Broadcast-style processing keeps every song at a consistent volume, with no ads and no talk between tracks. Nothing jumps out, nothing disappears.</p></div>
+  <div class="ft-card"><span class="ft-ico"><i class="fas fa-heart-pulse"></i></span><h3>It never stops</h3><p>The player keeps playing if the internet drops, checks in with us every minute, and alerts our team if the music stops for 30 seconds. <a href="/behind-the-scenes.html">Behind the scenes</a>.</p></div>
+  <div class="ft-card"><span class="ft-ico c"><i class="fas fa-file-signature"></i></span><h3>Licensing made simpler</h3><p>We are a commercial background music supplier, so you are not relying on a personal account. For pubs and clubs we collect and pay your OneMusic licence for you, at cost. <a href="/licensing.html">How licensing works</a>.</p></div>
 </div>
 
-<div class="differentiator-section">
-  <div class="diff-card featured">
-    <div class="diff-header">
-      <div class="diff-icon">
-        <i class="fas fa-tachometer-alt"></i>
-      </div>
-      <div class="diff-badge">Secret Weapon</div>
-      <h2>Music is Sped Up by 3%</h2>
-    </div>
-    <div class="diff-content">
-      <p>Not by much, but music on <strong>eJukebox</strong> is sped up by about 3 percent. At this small percentage, your customers won't notice this <strong>consciously</strong>, but it's enough that they will notice this <strong>subconsciously</strong>.</p>
-      
-      <div class="insight-box">
-        <i class="fas fa-brain"></i>
-        <p>This same subtle trick is used by radio stations around the globe to influence listeners' choice of their favourite radio station. This trick is also used by some live DJs. If done properly, music that is sped up at a faster pace portrays the perception of energy and excitement.</p>
-      </div>
-      
-      <p>This is super powerful, as when <strong>subconsciously energized</strong>, your customers will be more exhilarated, engaged and activated.</p>
-      
-      <div class="stat-callout">
-        <div class="stat-number">95%</div>
-        <div class="stat-text">
-          <p>According to <a href="http://hbswk.hbs.edu/item/the-subconscious-mind-of-the-consumer-and-how-to-reach-it">research</a> by Harvard Business School professor Gerald Zaltman, up to 95% of our <a href="https://cxl.com/blog/9-things-to-know-about-influencing-purchasing-decisions/">purchase decisions</a> are directed by subconscious mental processes</p>
-        </div>
-      </div>
-      
-      <p class="highlight-text"><i class="fas fa-chart-line"></i> Using subconscious influences is an extremely powerful sales tool which will drive your customers to spend more money.</p>
-    </div>
-  </div>
+<div class="ft-sec-head">
+  <span class="ft-kick">For the audio nerds</span>
+  <h2>Why it sounds better</h2>
+  <p>Most systems use a single-band limiter, so when a heavy bass line hits, the whole song gets turned down. eJukebox processes each frequency band separately, the way FM radio stations do, so songs stay full and even from the quietest ballad to the loudest anthem.</p>
+</div>
 
-  <div class="diff-card">
-    <div class="diff-header">
-      <div class="diff-icon">
-        <i class="fas fa-users"></i>
-      </div>
-      <h2>We Do Not Alienate Your Customers</h2>
-    </div>
-    <div class="diff-content">
-      <p>Songs played on <strong>eJukebox</strong> are familiar to your customers. Based on findings from our existing customers, we find that patrons are normally relaxed and complaisant in the first 30 minutes of being at a venue that plays music which they can relate to.</p>
-      
-      <div class="benefit-highlight">
-        <i class="fas fa-heart"></i>
-        <div>
-          <strong>Music that is familiar to your customers, makes them feel warm and grounded.</strong>
-          <p>This then creates stickiness, it means your customers stay longer and end up spending more money.</p>
-        </div>
-      </div>
-      
-      <p>It's commercial radio's business to attract listeners to their stations. This is how they make money, so it's fundamental that they play the right kind of music to suit their target demographic.</p>
-      
-      <div class="data-box">
-        <i class="fas fa-database"></i>
-        <p>At <strong>eJukebox</strong>, we capture each and every song that commercial radio stations play, how many times a particular song is played and when exactly the song is played. We take this data and use it to create our channels.</p>
-      </div>
-      
-      <div class="example-box">
-        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400" alt="Radio station" class="example-img">
-        <div class="example-content">
-          <p><strong>Kyle Sandilands</strong> is the highest paid media personality in Australia, he attracts listeners to <strong>Kiis FM</strong> Sydney. Being the number one FM radio station in Sydney, <strong>Kiis FM</strong> listeners are all too familiar with music on <strong>Kiis FM</strong>.</p>
-          <p>With <strong>eJukebox</strong>, our <strong>CHR/Pop</strong> channel is a direct match to that of Kiis FM. As an example, if an <strong>Ed Sheeran</strong> song is played 100 times in a week on Kiis FM in comparison to a <strong>Dua Lipa</strong> song played 50 times in this same week, with <strong>eJukebox</strong> you'd hear exactly the same rotation of songs.</p>
-          <p class="tagline">So you can say that with the <strong>Top 40/Pop</strong> channel we sound exactly like <strong>Kiis FM</strong>, without the commercials and talking.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="ft-band">
+  <i class="fas fa-flag"></i>
+  <p><strong>Australian owned and operated.</strong> eJukebox is run by Musicbot Pty Ltd in Ryde, NSW. Our players have been running in pubs, clubs, cafes and shops since 2018, and when you need help you get people who know your venue.</p>
+  <a class="ft-btn-ghost" href="/contact/">Talk to us</a>
+</div>
 
-  <div class="diff-card">
-    <div class="diff-header">
-      <div class="diff-icon">
-        <i class="fas fa-volume-up"></i>
-      </div>
-      <h2>Quality of Music</h2>
-    </div>
-    <div class="diff-content">
-      <p>The quality of music is everything. Customers expect to hear their favourite songs in all its glory. <strong>eJukebox</strong> is renowned for having the best audio quality.</p>
-      
-      <div class="tech-feature">
-        <div class="tech-icon">
-          <i class="fas fa-sliders-h"></i>
-        </div>
-        <div class="tech-content">
-          <h4>Professional Audio Processing</h4>
-          <p>All songs are played at exactly the same volume accommodating for high and low inflections in the song, but it doesn't stop there. At eJukebox, we use audio AGCs (automatic gain controls) and limiters, similar to that of FM radio stations.</p>
-        </div>
-      </div>
-      
-      <div class="comparison-tech">
-        <div class="tech-type single">
-          <h4><i class="fas fa-times-circle"></i> Single-Band Limiters</h4>
-          <p>When heavy bass is played in the songs, single-band limiters have trouble separating this bass from the other frequencies, the bass is perceived at a very high volume and as a result the single-band limiter incorrectly turns down the overall volume of the song.</p>
-        </div>
-        <div class="tech-type multi">
-          <h4><i class="fas fa-check-circle"></i> Multi-Band Limiters (eJukebox)</h4>
-          <p>At <strong>eJukebox</strong> we use multi-band limiters. The big difference is that multi-band limiters process the entire frequency spectrum, not just a single frequency. The result is a more natural and authentic volume normalisation output which can withstand loud bass lines in songs.</p>
-        </div>
-      </div>
-    </div>
+<div class="ft-sec-head">
+  <span class="ft-kick">In their words</span>
+  <h2>What a venue told us</h2>
+</div>
+{% include testimonial.html id="peak-health-fitness" %}
+
+<div class="ft-sec-head">
+  <span class="ft-kick">Questions</span>
+  <h2>What venues ask first</h2>
+</div>
+<div class="ft-faq">
+  <div class="ft-qa"><h3>Do customers need an app?</h3><p>No. They request from the venue's QR code in any phone's browser, or with the free <a href="/ejukebox-apps.html#request">eJukebox Request</a> app if they prefer.</p></div>
+  <div class="ft-qa"><h3>What if the internet goes down?</h3><p>The music keeps playing. The player carries the venue's music on board and catches up when the connection is back.</p></div>
+  <div class="ft-qa"><h3>Does eJukebox include my OneMusic licence?</h3><p>No music supplier can - it is held in your business name and paid separately. For pubs and clubs we can collect and pay it for you, at cost.</p></div>
+  <div class="ft-qa"><h3>Am I locked into a contract?</h3><p>No. There are no lock-in contracts. <a href="/products.html">See plans &amp; pricing</a>.</p></div>
+</div>
+
+<div class="try-demo">
+  <div class="demo-content">
+    <h2><i class="fas fa-music"></i> Hear the difference in your venue</h2>
+    <p>Tell us about your venue and we will show you exactly how eJukebox would sound and run in your room.</p>
+    <a href="/contact/" class="demo-link">
+      <i class="fas fa-comments"></i>
+      Tell us about your venue
+    </a>
+    <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for your venue.</p>
   </div>
+</div>
+
 </div>

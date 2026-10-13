@@ -203,6 +203,8 @@ howto:
   </div>
 </div>
 
+{% include photo-band.html src="/assets/images/stock/phone-laptop.jpg" alt="Someone setting up on a phone and laptop" caption="Your private stream, on a device you already own." %}
+
 <div class="trial-faq-section">
   <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
   <div class="faq-grid">
