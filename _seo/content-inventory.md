@@ -7,7 +7,7 @@ re-run the script instead.
 
 ## Issues
 
-None. Every indexable page has a unique title within 60 chars, a unique description within 160, an H1, structured data, a canonical and Open Graph tags.
+- `/custom-radio.html` - Description 163 chars (max 160)
 
 ## Pages
 
@@ -17,12 +17,12 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 | `/404.html` | _noindex_ | | | | |
 | `/BenefitsofMusic.html` | Benefits of Music in Business, Backed by Dat | 56 | 143 | y | Article, WebPage |
 | `/admin-app/` | eJukebox Admin App: Run the Room From Your P | 59 | 151 | y | SoftwareApplication, WebPage |
-| `/automated-jukebox-system.html` | Automated Jukebox System for Pubs & Clubs |  | 52 | 154 | y | Service, WebPage |
+| `/automated-jukebox-system.html` | Automated Jukebox System for Pubs & Clubs |  | 52 | 156 | y | Service, WebPage |
 | `/background-music-for-business/` | Australian Background Music Provider for Bus | 60 | 143 | y | FAQPage, Service, WebPage |
 | `/behind-the-scenes.html` | Behind the Scenes of a Jukebox Installation  | 54 | 147 | y | Service, WebPage |
 | `/contact/` | Contact eJukebox, Australian Venue Music Tea | 56 | 142 | y | ContactPage, WebPage |
 | `/controller-app.html` | _noindex_ | | | | |
-| `/custom-radio.html` | Custom Branded In-Store Radio for Retail | e | 51 | 145 | y | Service, WebPage |
+| `/custom-radio.html` | Custom Branded In-Store Radio for Retail | e | 51 | 163 | y | Service, WebPage |
 | `/dollar-a-day.html` | _noindex_ | | | | |
 | `/ejukebox-apps.html` | eJukebox Apps for Android & iOS | eJukebox | 42 | 146 | y | SoftwareApplication, WebPage |
 | `/ejukebox-request-portal.html` | Song Requests for Pubs, Clubs & Venues | eJu | 49 | 151 | y | HowTo, Service, SoftwareApplication, WebPage |

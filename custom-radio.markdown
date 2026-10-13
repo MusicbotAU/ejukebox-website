@@ -1,142 +1,90 @@
 ---
 layout: default
 title: Custom Branded In-Store Radio for Retail
-description: Your own branded in-store radio station, like Coles Radio. Built for retail chains, shopping centres and RSL clubs, with professional voiceovers.
+description: Your own branded in-store radio station, with one to four channels, professional voice-overs and timed promos. Built for retail groups, shopping centres and clubs.
 schema_service: Custom branded in-store radio for retail and shopping centres
 service_type: Custom branded radio station production and delivery
+last_reviewed: 2026-10-13
 ---
 
-<div class="hero-stat-banner custom-radio-hero">
-  <div class="hero-stat-content">
-    <div class="hero-stat-label"><i class="fas fa-broadcast-tower"></i> Custom Branded Radio</div>
-    <div class="hero-stat-main">
-      <h1 class="hero-stat-number custom-gradient">In-Store Radio for Retail & Shopping Centres</h1>
+{% include feature-styles.html %}
+
+<style>
+  /* demo player, prefixed cr- */
+  .cr-demo { display:grid; grid-template-columns:auto 1fr; gap:22px; align-items:center; padding:28px 30px; border-radius:18px; scroll-margin-top:90px;
+    background:linear-gradient(120deg, rgba(99,102,241,.16), rgba(236,72,153,.08)), var(--ejm-card); border:1.5px solid rgba(129,140,248,.35); }
+  .cr-demo > i { display:grid; place-items:center; width:64px; height:64px; border-radius:18px; font-size:1.6rem; color:#fff;
+    background:linear-gradient(135deg, var(--ejm-ind), var(--ejm-pink)); }
+  #main-content .ft-page .cr-demo p { margin:0 0 12px; font-size:1rem; line-height:1.6; }
+  .cr-demo audio { width:100%; max-width:560px; }
+  @media (max-width:640px){ .cr-demo { grid-template-columns:1fr; text-align:center; justify-items:center; } }
+</style>
+
+<div class="ft-page">
+
+<div class="ft-hero">
+  <div class="ft-hero-grid">
+    <div class="ft-hero-copy">
+      <span class="ft-eyebrow"><i class="fas fa-tower-broadcast"></i> Custom branded radio</span>
+      <h1>Your Own <span class="ft-grad">In-Store Radio Station</span></h1>
+      <p class="ft-lead">The big supermarket chains run their own radio. Now you can too: one to four channels of your own, professional voice-overs and imaging, and promos timed nationally, by region or by venue. Built for retail groups, shopping centres and clubs.</p>
+      <div class="ft-ctas">
+        <a class="ft-btn" href="/contact/"><i class="fas fa-comments"></i> Talk to us about your station</a>
+        <a class="ft-btn-ghost" href="#demo"><i class="fas fa-play"></i> Hear a demo</a>
+      </div>
+      <ul class="ft-ticks">
+        <li><i class="fas fa-circle-check"></i> One to four channels: Hits, Smooth, Rock, Country</li>
+        <li><i class="fas fa-circle-check"></i> Your promos, timed to the minute</li>
+        <li><i class="fas fa-circle-check"></i> Option to stream it publicly</li>
+      </ul>
     </div>
-    <div class="hero-stat-cta">
-      <span class="pulse-dot"></span>
-      Create your own branded radio station experience - like Coles Radio
-    </div>
-    <div style="margin-top: 20px;">
-      <a href="https://onemusic.com.au/news/how-to-get-customers-to-spend-more-in-your-shop-through-music/" target="_blank" class="btn-glow">
-        <i class="fas fa-book-open"></i> Learn More
-      </a>
-    </div>
+    <div class="ft-hero-img"><img src="/assets/images/retail-store.jpg" alt="A retail store with music playing" loading="eager"></div>
   </div>
 </div>
 
-<div class="feature-image-showcase">
-  <img src="blobs/eJukebox_fun05.jpg" alt="People enjoying music" class="showcase-image">
-</div>
-
----
-
-<div class="audio-demo-section">
-  <div class="audio-demo-content">
-    <div class="audio-demo-icon">
-      <i class="fas fa-headphones"></i>
-    </div>
-    <h2>Hear What Custom Radio Sounds Like</h2>
-    <p>Listen to this demo from an RSL club - this is what your own branded radio station could sound like:</p>
-    <div class="audio-player-wrapper">
-      <audio controls style="width: 100%; max-width: 500px;">
-        <source src="/blobs/RSL_club_radio_-_demo.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+<div class="cr-demo" id="demo">
+  <i class="fas fa-radio"></i>
+  <div>
+    <p><strong>Hear what it sounds like.</strong> A demo from an RSL club's own branded station - this is what yours could sound like.</p>
+    <audio controls preload="none"><source src="/blobs/RSL_club_radio_-_demo.mp3" type="audio/mpeg">Your browser does not support audio playback.</audio>
   </div>
 </div>
 
----
-
-<div class="feature-section">
-  <div class="feature-content">
-    <div class="feature-badge"><i class="fas fa-sliders-h"></i> Customisation</div>
-    <h2>Customised Radio for Your Brand</h2>
-    <p><strong>Have up to Four Custom Channels:</strong> With <strong>eJukebox</strong>, you can choose to have one, two, three or four unique radio channels, each tailored to your business's needs. Channel One features Top 40/Pop hits, Channel Two offers smooth relaxing music, Channel Three rocks out with classic and contemporary rock music, Channel Four brings you country tunes. All channels are fully customisable with your branding, creating a consistent audio experience that reflects your brand's identity.</p>
-    <div class="channel-badges">
-      <span class="channel-badge hits"><i class="fas fa-fire"></i> Hits</span>
-      <span class="channel-badge smooth"><i class="fas fa-spa"></i> Smooth</span>
-      <span class="channel-badge rock"><i class="fas fa-guitar"></i> Rock</span>
-      <span class="channel-badge country"><i class="fas fa-hat-cowboy"></i> Country</span>
-    </div>
-  </div>
-  <div class="feature-image">
-    <img src="blobs/custom radio.jpeg" alt="Custom Radio" class="showcase-image">
-  </div>
+<div class="ft-sec-head">
+  <span class="ft-kick">What you get</span>
+  <h2>A real radio station, built around your brand</h2>
+  <p>Not another playlist service. A station with its own voice, its own promos and its own sound, running in every store you have.</p>
+</div>
+<div class="ft-grid3">
+  <div class="ft-card"><span class="ft-ico"><i class="fas fa-layer-group"></i></span><h3>Your channels</h3><p>One, two, three or four channels - Hits, Smooth, Rock and Country - each tuned to your brand and your customers.</p></div>
+  <div class="ft-card"><span class="ft-ico c"><i class="fas fa-microphone-lines"></i></span><h3>Voice-overs and imaging</h3><p>Professional voice-overs and station imaging, so it sounds like your station, not anyone else's.</p></div>
+  <div class="ft-card"><span class="ft-ico b"><i class="fas fa-calendar-check"></i></span><h3>Promos on a timetable</h3><p>In-store promos and timed messages, national, regional or venue by venue, playing exactly when you want them.</p></div>
+  <div class="ft-card"><span class="ft-ico d"><i class="fas fa-comment-dots"></i></span><h3>Talk and local content</h3><p>Talk segments, time calls, local content and staff announcements - the things that make a station feel real.</p></div>
+  <div class="ft-card"><span class="ft-ico"><i class="fas fa-globe"></i></span><h3>Beyond the store</h3><p>Option to stream your station publicly - on your website, in your app, or on iHeartRadio - so your brand travels with your customers.</p></div>
+  <div class="ft-card"><span class="ft-ico c"><i class="fas fa-building"></i></span><h3>Built for groups</h3><p>Dedicated infrastructure and priority support for retail chains, shopping centres and RSL clubs, including the automated 6pm Ode and silence.</p></div>
 </div>
 
----
-
-<div class="feature-section reverse">
-  <div class="feature-content">
-    <div class="feature-badge globe"><i class="fas fa-globe"></i> Global Reach</div>
-    <h2>Global Reach, Effortless Integration</h2>
-    <p><strong>Stream Your Stations Worldwide:</strong> Take your branded radio station global with <strong>eJukebox</strong>. We make it easy to stream your custom channels online, accessible to listeners anywhere on the planet. Promote your unique station directly on your website and enhance your brand's visibility by featuring your custom stations on platforms like iHeartRadio.</p>
-    <div class="integration-logos">
-      <span class="integration-item"><i class="fas fa-globe-americas"></i> Worldwide Access</span>
-      <span class="integration-item"><i class="fas fa-code"></i> Website Embed</span>
-      <span class="integration-item"><i class="fas fa-heart"></i> iHeartRadio</span>
-    </div>
-  </div>
-  <div class="feature-image">
-    <img src="blobs/global reach.jpg" alt="Global Reach" class="showcase-image">
-  </div>
+<div class="ft-sec-head">
+  <span class="ft-kick">Questions</span>
+  <h2>What groups ask first</h2>
+</div>
+<div class="ft-faq">
+  <div class="ft-qa"><h3>How many channels can we have?</h3><p>One to four. A common setup is one main channel, with a second for a different area or brand.</p></div>
+  <div class="ft-qa"><h3>Can promos differ by store?</h3><p>Yes. Messages can run nationally, by region, or venue by venue.</p></div>
+  <div class="ft-qa"><h3>Can we stream it to the public?</h3><p>Yes, as an option - on your website, in your app, or on iHeartRadio.</p></div>
+  <div class="ft-qa"><h3>How is it priced?</h3><p>Every station is different, so we put together a custom proposal based on the scope and the commitment. <a href="/contact/">Tell us what you have in mind</a>.</p></div>
 </div>
 
----
-
-<div class="feature-section">
-  <div class="feature-content">
-    <div class="feature-badge radio"><i class="fas fa-microphone-alt"></i> Real Radio</div>
-    <h2>A True Radio Station Experience</h2>
-    <p><strong>Not Just Another Music Service:</strong> Unlike Spotify or Amazon Music, <strong>eJukebox</strong> offers a real radio station experience tailored to your business. Enjoy unlimited opportunities for talk segments, automated time calls, and timed events. Include locally produced content, such as recordings of a recent band or DJ performance, or even snippets of stand-up comedy. You can also empower your staff to record announcements on the go, playing them seamlessly between songs.</p>
-    <div class="radio-features">
-      <span class="radio-feature"><i class="fas fa-clock"></i> Timed Events</span>
-      <span class="radio-feature"><i class="fas fa-comment"></i> Talk Segments</span>
-      <span class="radio-feature"><i class="fas fa-music"></i> Local Content</span>
-      <span class="radio-feature"><i class="fas fa-bullhorn"></i> Staff Announcements</span>
-    </div>
-  </div>
-  <div class="feature-image">
-    <img src="blobs/true radio.jpg" alt="True Radio Experience" class="showcase-image">
-  </div>
-</div>
-
----
-
-<div class="features-summary">
-  <h2><i class="fas fa-star"></i> Custom Branded Radio Features</h2>
-  <div class="features-grid">
-    <div class="feature-item">
-      <div class="feature-item-icon"><i class="fas fa-broadcast-tower"></i></div>
-      <p>Your <strong>own branded radio station</strong> (think Coles Radio), with 1-4 channels: Hits, Smooth, Rock, Country.</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-item-icon"><i class="fas fa-microphone"></i></div>
-      <p><strong>Professional voice-overs & imaging</strong>, plus in-store promos and timed messages (national, regional or venue-specific).</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-item-icon"><i class="fas fa-server"></i></div>
-      <p><strong>Dedicated infrastructure</strong> and priority support for rock-solid reliability.</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-item-icon"><i class="fas fa-globe"></i></div>
-      <p>Option to <strong>stream publicly online</strong> (e.g. iHeartRadio or your website/app) to extend your brand.</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-item-icon"><i class="fas fa-building"></i></div>
-      <p>Perfect for <strong>groups, shopping centres and RSL clubs</strong> (incl. automated 6pm ode/silence).</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-item-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-      <p><strong>Custom proposal & pricing</strong> based on scope and commitment.</p>
-    </div>
-  </div>
-  
-  <div class="cta-section">
-    <p>Ready to create your own branded radio experience?</p>
-    <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website%20-%20Custom%20Radio%20Enquiry&body=Hi%20eJukebox%2C%0D%0A%0D%0AVenue%20name%3A%0D%0ASuburb%20and%20state%3A%0D%0AVenue%20type%20(pub%2C%20club%2C%20cafe%2C%20retail%2C%20etc)%3A%0D%0AAreas%20or%20zones%20needing%20music%3A%0D%0AWhat%20I%27m%20after%3A%0D%0A%0D%0AMy%20name%3A%0D%0ABest%20contact%20number%3A%0D%0A" class="btn-glow">
-      <i class="fas fa-envelope"></i> Contact Us
+<div class="try-demo">
+  <div class="demo-content">
+    <h2><i class="fas fa-tower-broadcast"></i> Ready to launch your own station?</h2>
+    <p>Tell us about your stores or venues and what you want your station to do, and we will come back with a proposal.</p>
+    <a href="/contact/" class="demo-link">
+      <i class="fas fa-comments"></i>
+      Talk to us about your station
     </a>
+    <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for single venues.</p>
   </div>
+</div>
+
 </div>
