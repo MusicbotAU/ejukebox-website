@@ -21,9 +21,9 @@ benefits:
     text: As a commercial background music supplier, eJukebox puts your shop on a lower OneMusic tier than a personal streaming account would.
 faqs:
   - q: >-
-      Can a shop play Spotify?
+      Can a shop play Spotify or Apple Music?
     a: >-
-      No. Spotify is licensed for personal use only, and its terms rule out playing it in a store. Personal streaming also puts a shop on OneMusic's top retail tier; with a commercial supplier like eJukebox, your shop sits on a lower one. <a href="/licensing.html">How music licensing works</a>.
+      No. Personal streaming accounts like Spotify and Apple Music are licensed for personal use only, and their terms rule out playing them in a store. Personal streaming also puts a shop on OneMusic's top retail tier; with a commercial supplier like eJukebox, your shop sits on a lower one. <a href="/licensing.html">How music licensing works</a>.
   - q: >-
       How much does in-store music cost?
     a: >-

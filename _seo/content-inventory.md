@@ -32,7 +32,7 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 | `/hits-package.html` | _noindex_ | | | | |
 | `/in-venue-screens/` | In-Venue Screens, Guest Photos & Requests |  | 52 | 138 | y | Audience, Brand, FAQPage, HowTo, MobileApplication, Service, WebPage |
 | `/irish-pub-music/` | Irish Pub Music for Bars & Pubs Australia |  | 52 | 153 | y | Brand, FAQPage, Service, WebPage |
-| `/licensing.html` | Music Licensing for Business, OneMusic & APR | 56 | 150 | y | Article, Brand, FAQPage, HowTo, Service, WebPage |
+| `/licensing.html` | Music Licensing for Business, OneMusic & APR | 56 | 160 | y | Article, Brand, FAQPage, HowTo, Service, WebPage |
 | `/live-microphone/` | Live Microphone, Turn a Phone Into a PA Mic  | 54 | 147 | y | Audience, Brand, FAQPage, HowTo, MobileApplication, Service, WebPage |
 | `/music-for-cafes/` | Music for Cafés & Coffee Shops Australia | e | 51 | 150 | y | Brand, FAQPage, Service, WebPage |
 | `/music-for-gyms/` | Music for Gyms & Fitness Studios Australia | | 53 | 143 | y | Brand, FAQPage, Service, WebPage |

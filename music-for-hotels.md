@@ -18,7 +18,7 @@ benefits:
     text: Calm mornings, warmer evenings. Dayparting handles the transitions so your team does not have to.
   - icon: fa-certificate
     title: Simpler licensing
-    text: A personal Spotify account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
+    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
 faqs:
   - q: >-
       Can different areas of the hotel play different music?

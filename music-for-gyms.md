@@ -8,7 +8,7 @@ venue_name: gyms & fitness studios
 title: Music for Gyms & Fitness Studios Australia
 description: Licensed, motivating music for Australian gyms and fitness studios. High-energy channels and dayparting. Licensed for business use. Free trial.
 h1: Music for Gyms & Fitness
-intro: Energy on the floor starts with the music. eJukebox delivers motivating, licensed channels that keep the floor moving, from early-morning sessions to peak evening classes, without the copyright risk of running a personal Spotify account in a commercial space.
+intro: Energy on the floor starts with the music. eJukebox delivers motivating, licensed channels that keep the floor moving, from early-morning sessions to peak evening classes, without the copyright risk of running a personal streaming account in a commercial space.
 benefits:
   - icon: fa-dumbbell
     title: Built to move members
@@ -22,9 +22,9 @@ benefits:
 testimonial: peak-health-fitness
 faqs:
   - q: >-
-      Can a gym use Spotify for background music?
+      Can a gym use Spotify or Apple Music for background music?
     a: >-
-      No. Personal streaming apps like Spotify are licensed for personal use only, so they cannot be played in a gym. eJukebox is a commercial background music supplier, so the music is licensed for business use. Your gym still holds its own OneMusic licence, in your name.
+      No. Personal streaming apps like Spotify and Apple Music are licensed for personal use only, so they cannot be played in a gym. eJukebox is a commercial background music supplier, so the music is licensed for business use. Your gym still holds its own OneMusic licence, in your name.
   - q: >-
       Can the gym floor and a class studio play different music?
     a: >-

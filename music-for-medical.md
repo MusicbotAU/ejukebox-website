@@ -25,9 +25,9 @@ faqs:
     a: >-
       Yes. Any business playing music where patients or staff can hear it needs its own OneMusic licence, held in the practice's name and paid separately from your music supplier. <a href="/licensing.html">How music licensing works</a>.
   - q: >-
-      Can we just play Spotify or the radio?
+      Can we just play Spotify, Apple Music or the radio?
     a: >-
-      A personal Spotify account cannot be used - it is licensed for personal use only. Commercial radio brings ads and talk into your waiting room; eJukebox channels have neither, and nothing with explicit lyrics.
+      A personal streaming account like Spotify or Apple Music can't be used - it is licensed for personal use only. Commercial radio brings ads and talk into your waiting room; eJukebox channels have neither, and nothing with explicit lyrics.
   - q: >-
       Is the music suitable for a waiting room?
     a: >-

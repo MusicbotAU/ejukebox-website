@@ -5,6 +5,32 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-15 - Spotify no longer singled out; clubs licensing made exact
+
+Marc wasn't comfortable with copy that singles Spotify out ("why personal Spotify costs a
+business twice"). Search Console backs the change: 32 Spotify queries in six months gave
+about 200 impressions and no clicks.
+
+- **The rule now:** a warning about personal streaming names the category - "a personal
+  streaming account". Where a question mirrors what people search, Spotify sits alongside
+  Apple Music ("Can I play Spotify or Apple Music in my business?"), never alone. The Spotify
+  Integration feature is untouched.
+- **Licensing page:** new description; the lead; "The Spotify question" section is now
+  "Can a business use a personal streaming account?"; "It breaks Spotify's own terms" is now
+  "It breaks the service's own terms"; the before/after examples. The FAQ and HowTo name
+  Spotify, Apple Music and Amazon Music together.
+- **Pricing menu** (/products.html, /pricing/, /wholesale/): the licensing table and notes
+  say "personal streaming" throughout, and "Soundtrack Your Brand - Spotify's commercial arm"
+  lost its unverified tail. OneMusic's quoted line already talks about streaming services in
+  general, so it stays word for word.
+- **Homepage, venue pages, the business page and llms.txt** follow the same rule.
+- **Accuracy:** registered clubs pay OneMusic per member with Digital Copy/Delivery included,
+  so switching supplier saves a club nothing. llms.txt now says so where it describes the
+  saving, the homepage answer says the saving applies to "most shops, pubs and cafes", and the
+  nightclub FAQ asks about "a nightclub" so it can't be read as covering registered clubs.
+
+---
+
 ## 2026-10-15 - llms.txt named in robots.txt; the three-companions rule
 
 - **robots.txt** now gives the full address of `llms.txt` in its own labelled section and

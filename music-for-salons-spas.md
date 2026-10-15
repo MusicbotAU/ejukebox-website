@@ -21,9 +21,9 @@ benefits:
     text: As a commercial background music supplier, eJukebox puts your salon on a lower OneMusic tier than a personal streaming account would.
 faqs:
   - q: >-
-      Can a salon play Spotify?
+      Can a salon play Spotify or Apple Music?
     a: >-
-      No. A personal Spotify account is licensed for personal use only, and its terms rule out playing it in a business. eJukebox is licensed for business use. Your salon still holds its own OneMusic licence, in your name.
+      No. Personal streaming accounts like Spotify and Apple Music are licensed for personal use only, and their terms rule out playing them in a business. eJukebox is licensed for business use. Your salon still holds its own OneMusic licence, in your name.
   - q: >-
       What does music cost for a small salon?
     a: >-

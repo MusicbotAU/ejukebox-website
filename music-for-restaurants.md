@@ -18,7 +18,7 @@ benefits:
     text: Schedule the mood to change automatically across lunch, afternoon and dinner service.
   - icon: fa-certificate
     title: Fully licensed
-    text: A personal Spotify account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence.
+    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence.
 faqs:
   - q: >-
       Can the music change between lunch and dinner service?

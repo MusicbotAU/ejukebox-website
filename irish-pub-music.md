@@ -20,7 +20,7 @@ benefits:
     text: Daypart from easy afternoon trad to high-energy singalong nights that keep the room full and the bar busy.
   - icon: fa-certificate
     title: Fully licensed
-    text: A personal Spotify account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
+    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
 spotlight_title: St Patrick's Day music, sorted
 spotlight_body: >-
   Every March, St Patrick's Day turns Irish bars into the busiest venues in the country. eJukebox turns the Irish up for the occasion - more anthems, drinking songs and crowd favourites woven through the night - so you can pack the room without building a playlist from scratch, then settle back to your usual mix afterwards.

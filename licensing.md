@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Music Licensing for Business, OneMusic & APRA
-description: OneMusic, APRA AMCOS and PPCA explained in plain English for Australian pubs, clubs, cafes and shops, and why personal Spotify costs a business twice.
+description: OneMusic, APRA AMCOS and PPCA in plain English for Australian pubs, clubs, cafes and shops, and why your personal streaming account isn't licensed for business.
 schema_service: Music licensing guidance for Australian businesses
 service_type: OneMusic Australia licensing guidance and fee administration
 last_reviewed: 2026-10-13
@@ -26,7 +26,7 @@ howto:
       text: If you play recorded music where customers or staff can hear it, that is a public performance under Australian copyright law and you need a licence. This covers pubs, clubs, cafes, restaurants, gyms, shops, salons and waiting rooms.
       url: /licensing.html
     - name: Stop using a personal streaming account
-      text: Personal Spotify, Apple Music and Amazon Music accounts cannot legally be used in a business, because their own terms of service forbid commercial use. A licence does not fix this - the account itself is the problem.
+      text: Personal streaming accounts on Spotify, Apple Music, Amazon Music and the like can't be used in a business, because their own terms of service rule out commercial use. A licence does not fix this - the account itself is the problem.
       url: /licensing.html
     - name: Get a OneMusic Australia licence in your business name
       text: OneMusic Australia bundles the two separate copyrights, the songwriters and composers represented by APRA AMCOS and the recording artists and labels represented by PPCA, into one licence. The licence is held by your business, not by your music supplier.
@@ -43,7 +43,7 @@ howto:
 faqs:
   - q: Does eJukebox include my OneMusic licence?
     a: No, and no music supplier can. Your OneMusic licence is held by your business and paid separately. What eJukebox includes is our own licence to supply the music. For pubs and clubs we can collect the OneMusic fee and pay it on your behalf, at cost, with no margin.
-  - q: Can I play Spotify in my business if I have a OneMusic licence?
+  - q: Can I play Spotify or Apple Music in my business if I have a OneMusic licence?
     a: No. Spotify, Apple Music and Amazon Music are licensed for personal use only, and their terms rule out playing them in a business. A OneMusic licence covers the public performance, but it does not override the streaming service's own terms.
   - q: What if I just play the radio?
     a: You still need a licence, but radio only is usually OneMusic's cheapest option. Moving from radio to any music supplier, eJukebox included, can raise your OneMusic fee, so check what applies before you switch. What you get in return is curated, ad-free music your venue controls.
@@ -217,7 +217,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
     <div class="lc-hero-copy">
       <span class="lc-eyebrow"><i class="fas fa-scale-balanced"></i> Music licensing, explained</span>
       <h1>Music Licensing Without the <span class="lc-grad">Headache</span></h1>
-      <p class="lc-lead">Every Australian business that plays music needs a licence. Here is how it works in plain English, why a personal Spotify account costs a business twice, and how eJukebox makes the whole thing simpler.</p>
+      <p class="lc-lead">Every Australian business that plays music needs a licence. Here is how it works in plain English, why a personal streaming account is the wrong tool for a business, and how eJukebox makes the whole thing simpler.</p>
       <div class="lc-ctas">
         <a class="lc-btn" href="https://onemusic.com.au/" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Check your licence with OneMusic</a>
         <a class="lc-btn-ghost" href="/contact/"><i class="fas fa-comments"></i> Ask us a question</a>
@@ -238,7 +238,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
     <span class="lc-lic-tag">Ours</span>
     <h3>The right to supply the music</h3>
     <p>eJukebox is licensed to supply music to businesses - the same curated channels to many venues at once. That licence is ours, and it is part of what you pay us.</p>
-    <p>It is exactly what a personal Spotify account does not have. Spotify is licensed for one person at home, not a room full of customers.</p>
+    <p>It is exactly what a personal streaming account does not have. Those are licensed for one person at home, not a room full of customers.</p>
   </div>
   <div class="lc-lic yours">
     <span class="lc-lic-tag">Yours</span>
@@ -316,15 +316,15 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
 </div>
 
 <div class="lc-sec-head">
-  <span class="lc-kick">The Spotify question</span>
-  <h2>Why personal Spotify costs a business twice</h2>
+  <span class="lc-kick">Personal streaming</span>
+  <h2>Can a business use a personal streaming account?</h2>
   <p>It looks like the cheap option. It is not, and it is not allowed.</p>
 </div>
 <div class="lc-spot">
   <div class="lc-x">
     <span class="lc-ico"><i class="fas fa-ban"></i></span>
-    <h3>It breaks Spotify's own terms</h3>
-    <p>Spotify, Apple Music and Amazon Music are licensed for personal use only. Their terms rule out playing them in a business, and a OneMusic licence does not override that.</p>
+    <h3>It breaks the service's own terms</h3>
+    <p>Personal accounts on Spotify, Apple Music, Amazon Music and the like are licensed for personal use only. Their terms rule out playing them in a business, and a OneMusic licence does not override that.</p>
   </div>
   <div class="lc-x">
     <span class="lc-ico"><i class="fas fa-arrow-trend-up"></i></span>
@@ -347,7 +347,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
   <div class="lc-case">
     <div class="lc-case-img"><img src="/assets/images/salon.jpg" alt="A hair salon playing background music" loading="lazy"><span>Small hair salon</span></div>
     <div class="lc-case-body">
-      <div class="lc-ba before"><b>Before</b><p>Spotify on the owner's phone - against Spotify's terms, and on OneMusic's top retail tier.</p></div>
+      <div class="lc-ba before"><b>Before</b><p>A personal streaming account on the owner's phone - against the service's terms, and on OneMusic's top retail tier.</p></div>
       <div class="lc-ba after"><b>With eJukebox</b><p>Licensed, family-friendly channels that play themselves, and a lower OneMusic tier. For a small shop, the drop in that fee covers a good part of what eJukebox costs.</p></div>
     </div>
   </div>
@@ -361,7 +361,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
   <div class="lc-case">
     <div class="lc-case-img"><img src="/assets/images/large-pub.jpg" alt="A large pub dining room" loading="lazy"><span>Pub with TV screens</span></div>
     <div class="lc-case-body">
-      <div class="lc-ba before"><b>Before</b><p>Spotify through the bar PC, a TV-based OneMusic package and the Digital Copy/Delivery fee on top.</p></div>
+      <div class="lc-ba before"><b>Before</b><p>A personal streaming account through the bar PC, a TV-based OneMusic package and the Digital Copy/Delivery fee on top.</p></div>
       <div class="lc-ba after"><b>With eJukebox</b><p>The TV-based package stays, because your screens set it, but the Digital Copy/Delivery fee goes. Two zones are included, customers request songs, and we can collect and pay your OneMusic fee at cost.</p></div>
     </div>
   </div>

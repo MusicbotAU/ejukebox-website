@@ -18,12 +18,12 @@ benefits:
     text: Set it once and let it run, or adjust the vibe from your phone whenever you like.
   - icon: fa-certificate
     title: Licensed for business
-    text: A personal Spotify account is not legal for business. eJukebox is a commercial background music supplier, which can lower what you pay OneMusic compared with personal streaming.
+    text: A personal streaming account is not licensed for business. eJukebox is a commercial background music supplier, which can lower what you pay OneMusic compared with personal streaming.
 faqs:
   - q: >-
-      Can I play Spotify in my café?
+      Can I play Spotify or Apple Music in my café?
     a: >-
-      Not legally. A personal Spotify account is for personal use only, and its terms rule out playing it in a business. eJukebox is licensed for business use, and moving off personal streaming removes the Digital Copy/Delivery fee that personal streaming adds to a café's OneMusic licence.
+      No. Personal streaming accounts like Spotify and Apple Music are for personal use only, and their terms rule out playing them in a business. eJukebox is licensed for business use, and moving off personal streaming removes the Digital Copy/Delivery fee that personal streaming adds to a café's OneMusic licence.
   - q: >-
       What does café music cost?
     a: >-

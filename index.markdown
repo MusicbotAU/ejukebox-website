@@ -19,9 +19,9 @@ faqs:
     a: >-
       Solo is ${solo} a month ex GST - one curated channel for a single area, streamed to a device you already own. Core, the hospitality base with two zones, song requests and an on-site player, is ${core} a month ex GST, and Complete adds every software add-on for ${complete} a month ex GST. <a href="/products.html">See plans &amp; pricing</a>.
   - q: >-
-      Can I play Spotify in my business?
+      Can I play Spotify or Apple Music in my business?
     a: >-
-      No. A personal Spotify account is licensed for personal use only, and Spotify's own terms rule out playing it in a business. eJukebox is licensed for business use, and leaving personal streaming also removes the extra charge it adds to your OneMusic licence.
+      No. Personal streaming accounts like Spotify and Apple Music are licensed for personal use only, and their own terms rule out playing them in a business. eJukebox is licensed for business use, and for most shops, pubs and cafes, moving off personal streaming also lowers what they pay OneMusic.
   - q: >-
       Do I still need a OneMusic licence?
     a: >-
@@ -378,7 +378,7 @@ service_type: Commercial background music and digital jukebox service
       </div>
       <div class="test-feature">
         <i class="fas fa-check-circle"></i>
-        <span>Stay on the right side of the law. A personal Spotify account cannot legally be played in public, under Spotify's own terms</span>
+        <span>Stay on the right side of the law. A personal streaming account can't be played in public, under the service's own terms</span>
       </div>
     </div>
   </div>
