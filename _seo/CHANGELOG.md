@@ -5,6 +5,20 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-15 - Homepage photos; forms on the shared contact function
+
+- **Research banner is now a full-width photo band** - Marc's own pub image behind a dark
+  fade, with the 48.2% message as a heading over it. The bar chart and pulse dot are gone.
+- **The four statistic boxes carry Marc's four photos** behind white text, with contextual
+  headings that match the image names. Their icons and exclamation badges are gone, as is
+  the icon above "Music for your business".
+- **Images:** WebP in two or three widths so phones download the small one, lazy-loaded,
+  12-153KB each; descriptive file names and alt text; listed in the sitemap for Google Images.
+- **Contact and refer-a-venue forms** now post to the shared contact function used by
+  ejukebox.tv and ejukebox.music (ejukebox-contact-fn), which emails info@ejukebox.com.au.
+
+---
+
 ## 2026-10-13 - Real app screens across the site
 
 Marc's own grabs of eJukebox Request and of the Admin app's Voice menu, taken at Club

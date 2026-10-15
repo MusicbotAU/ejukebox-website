@@ -13,70 +13,92 @@ hero:
 
 {% include hero.html %}
 
-<div class="hero-stat-banner">
-  <div class="hero-stat-content">
-    <div class="hero-stat-label">Research Shows</div>
-    <div class="hero-stat-main">
-      <span class="hero-stat-text">Venues with music have</span>
-      <span class="hero-stat-number">48.2%</span>
-      <span class="hero-stat-text">more sales</span>
-    </div>
-    <div class="hero-stat-source">
-      <i class="fas fa-chart-bar"></i>
-      Source: OneMusic <a href="https://onemusic.com.au/presto/" target="_blank">Hospitality Presto Report</a>
-    </div>
-    <div class="hero-stat-cta">
-      <span class="pulse-dot"></span>
-      Is your venue maximising its potential?
-    </div>
-  </div>
-  <div class="hero-stat-visual">
-    <div class="comparison-bars">
-      <div class="bar-group">
-        <div class="bar bar-without"></div>
-        <span class="bar-label">Without Music</span>
-      </div>
-      <div class="bar-group">
-        <div class="bar bar-with"></div>
-        <span class="bar-label">With Music</span>
-      </div>
-    </div>
-  </div>
-</div>
+<style>
+  /* homepage: the music-and-sales band and the four reasons, prefixed hs- */
+  html { overflow-x:clip; } /* the band runs edge to edge - never let it cause a sideways scroll */
+  .hs-band { position:relative; width:100vw; margin:56px 0 70px calc(50% - 50vw); min-height:clamp(400px, 44vw, 580px);
+    display:flex; align-items:center; overflow:hidden; isolation:isolate; background:#0b0b14; }
+  #main-content .hs-band > img, #main-content .hs-card > img { position:absolute; inset:0; z-index:0; width:100%; height:100%; max-width:none;
+    object-fit:cover; margin:0 !important; border-radius:0 !important; box-shadow:none !important; transform:none; transition:transform .8s ease; }
+  #main-content .hs-band > img { object-position:center 45%; }
+  .hs-band::after { content:""; position:absolute; inset:0; z-index:1;
+    background:linear-gradient(90deg, rgba(8,8,16,.94) 0%, rgba(8,8,16,.82) 34%, rgba(8,8,16,.45) 64%, rgba(8,8,16,.18) 100%),
+               linear-gradient(0deg, rgba(8,8,16,.6) 0%, rgba(8,8,16,0) 45%); }
+  .hs-copy { position:relative; z-index:2; width:100%; max-width:1200px; margin:0 auto; padding:70px 28px; }
+  .hs-copy-in { max-width:590px; }
+  .hs-kick { display:block; margin-bottom:14px; font-size:.78rem; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--ejm-amber); }
+  #main-content .hs-band h2 { margin:0 0 18px !important; padding:0 !important; border:0 !important; text-align:left !important;
+    font-size:clamp(1.9rem, 4.2vw, 3.1rem) !important; line-height:1.1 !important; letter-spacing:-.5px; color:#fff !important; }
+  .hs-band h2 em { font-style:normal; color:var(--ejm-amber); }
+  #main-content .hs-band p { margin:0 0 22px; max-width:46ch; font-size:1.08rem; line-height:1.65; color:rgba(255,255,255,.84) !important; }
+  #main-content .hs-band p.hs-src { margin:0; font-size:.85rem; color:rgba(255,255,255,.6) !important; }
+  #main-content .hs-band .hs-src a { color:rgba(255,255,255,.9) !important; text-decoration:underline; text-underline-offset:3px; }
 
+  #main-content .hs-head { margin:0 0 10px !important; padding:0 !important; border:0 !important; text-align:center !important;
+    font-size:clamp(1.6rem, 3vw, 2.2rem) !important; line-height:1.2 !important; color:var(--ejm-ink) !important; }
+  #main-content .hs-sub { margin:0 auto 30px; max-width:60ch; text-align:center; font-size:1.05rem; color:var(--ejm-soft) !important; }
+  .hs-cards { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin:0 0 30px; }
+  .hs-card { position:relative; min-height:clamp(300px, 30vw, 360px); display:flex; align-items:flex-end; overflow:hidden; isolation:isolate;
+    border-radius:18px; border:1px solid var(--ejm-line); background:#0b0b14; }
+  .hs-card::after { content:""; position:absolute; inset:0; z-index:1;
+    background:linear-gradient(0deg, rgba(5,5,12,.95) 0%, rgba(5,5,12,.8) 32%, rgba(5,5,12,.28) 64%, rgba(5,5,12,.05) 100%); }
+  #main-content .hs-card:hover > img { transform:scale(1.04); }
+  .hs-card-copy { position:relative; z-index:2; padding:26px 26px 24px; }
+  #main-content .hs-card h3 { margin:0 0 8px !important; font-size:1.3rem !important; line-height:1.25 !important; color:#fff !important; }
+  #main-content .hs-card h3::before { content:none !important; }
+  #main-content .hs-card p { margin:0; font-size:1rem; line-height:1.55; color:rgba(255,255,255,.86) !important; }
+  .hs-card p b { color:#fff; font-size:1.12em; }
+  @media (max-width:760px) {
+    .hs-band { min-height:0; }
+    .hs-band::after { background:linear-gradient(0deg, rgba(8,8,16,.95) 0%, rgba(8,8,16,.82) 55%, rgba(8,8,16,.5) 100%); }
+    .hs-copy { padding:150px 20px 44px; }
+    .hs-cards { grid-template-columns:1fr; }
+  }
+  @media (prefers-reduced-motion:reduce) { #main-content .hs-card > img { transition:none; } }
+</style>
 
-<div class="section-header-fancy">
-  <span class="section-icon"><i class="fas fa-users"></i></span>
-  <h2>Music Matters to Customers</h2>
-</div>
+<section class="hs-band" aria-labelledby="hs-band-title">
+  <img src="/assets/images/home/music-for-venues-increase-sales-ejukebox-1280.webp" srcset="/assets/images/home/music-for-venues-increase-sales-ejukebox-768.webp 768w, /assets/images/home/music-for-venues-increase-sales-ejukebox-1280.webp 1280w, /assets/images/home/music-for-venues-increase-sales-ejukebox-1920.webp 1920w" sizes="100vw" width="1920" height="1080" loading="lazy" decoding="async" alt="Music for venues that increases sales - a pub bar with stools, screens and speakers ready for eJukebox background music">
+  <div class="hs-copy"><div class="hs-copy-in">
+    <span class="hs-kick">Research shows</span>
+    <h2 id="hs-band-title">Venues with background music have <em>48.2% more sales</em></h2>
+    <p>The right music keeps a room lively, and a lively room sells more. eJukebox looks after it all day, every day.</p>
+    <p class="hs-src">Source: OneMusic, <a href="https://onemusic.com.au/presto/" target="_blank" rel="noopener">Hospitality Presto Report</a></p>
+  </div></div>
+</section>
 
-<div class="stats-showcase">
-  <div class="stat-card">
-    <div class="stat-icon"><i class="fas fa-building"></i></div>
-    <div class="stat-number" data-target="97">97%</div>
-    <div class="stat-label">of venues recognise their customers want to hear music</div>
-  </div>
-  
-  <div class="stat-card warning">
-    <div class="stat-icon"><i class="fas fa-frown"></i></div>
-    <div class="stat-number" data-target="27">27%</div>
-    <div class="stat-label">of customers said the music chosen by a venue actually created a nice atmosphere</div>
-    <div class="stat-badge">Room for improvement!</div>
-  </div>
-  
-  <div class="stat-card danger">
-    <div class="stat-icon"><i class="fas fa-door-open"></i></div>
-    <div class="stat-number" data-target="90">90%</div>
-    <div class="stat-label">said bad music made them leave or vow never to return</div>
-    <div class="stat-badge">Don't lose customers!</div>
-  </div>
-  
-  <div class="stat-card success">
-    <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
-    <div class="stat-number" data-target="21">+21%</div>
-    <div class="stat-label">more sales on weekdays in pubs with music vs no music</div>
-    <div class="stat-badge">Boost your revenue!</div>
-  </div>
+<h2 class="hs-head">Why background music matters to your customers</h2>
+<p class="hs-sub">Customers notice the music in a venue - when it is right, and when it is wrong.</p>
+
+<div class="hs-cards">
+  <article class="hs-card">
+    <img src="/assets/images/home/customers-want-background-music-ejukebox-640.webp" srcset="/assets/images/home/customers-want-background-music-ejukebox-640.webp 640w, /assets/images/home/customers-want-background-music-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Customers want background music - a florist serving a customer in a shop with eJukebox music playing">
+    <div class="hs-card-copy">
+      <h3>Customers want background music</h3>
+      <p><b>97%</b> of venues recognise their customers want to hear music.</p>
+    </div>
+  </article>
+  <article class="hs-card">
+    <img src="/assets/images/home/music-creates-atmosphere-ejukebox-640.webp" srcset="/assets/images/home/music-creates-atmosphere-ejukebox-640.webp 640w, /assets/images/home/music-creates-atmosphere-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Music creates atmosphere - an outdoor dining terrace under festoon lights, set for eJukebox background music">
+    <div class="hs-card-copy">
+      <h3>Music creates the atmosphere</h3>
+      <p>Yet only <b>27%</b> of customers said a venue's choice of music actually created a nice atmosphere.</p>
+    </div>
+  </article>
+  <article class="hs-card">
+    <img src="/assets/images/home/bad-music-hurts-business-ejukebox-640.webp" srcset="/assets/images/home/bad-music-hurts-business-ejukebox-640.webp 640w, /assets/images/home/bad-music-hurts-business-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Bad music hurts business - an empty beach bar with its bar stools and no customers">
+    <div class="hs-card-copy">
+      <h3>Bad music hurts business</h3>
+      <p><b>90%</b> said bad music made them leave a venue or vow never to return.</p>
+    </div>
+  </article>
+  <article class="hs-card">
+    <img src="/assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-640.webp" srcset="/assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-640.webp 640w, /assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Good music in your pub can increase sales - friends raising beers in a busy pub with eJukebox music">
+    <div class="hs-card-copy">
+      <h3>Good music in your pub can increase sales</h3>
+      <p>Pubs with music make <b>21% more sales</b> on weekdays than pubs without.</p>
+    </div>
+  </article>
 </div>
 
 <div class="stats-cta">
@@ -86,7 +108,6 @@ hero:
 
 
 <div class="section-header-fancy">
-  <span class="section-icon"><i class="fas fa-music"></i></span>
   <h2>Music for your business</h2>
 </div>
 

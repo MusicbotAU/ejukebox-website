@@ -40,3 +40,9 @@ credit needed. Cleaned and re-framed before use; the full-size masters and the o
 grabs are in Marketing\App Screenshots. Where a screen showed guests' own photos, they are swapped for the CC0 photos above, so
 no real guest appears. Shown through `_includes/app-fan.html`, with alt
 text in `_data/app_screens.yml`.
+
+## Homepage photos
+
+`assets/images/home/` holds Marc's own images (Website/Images in the eJukebox library),
+added Tue 15 October 2026 and carrying the eJukebox watermark. No credit needed. Each is
+WebP in two or three widths; the 1920px originals stay in the library.

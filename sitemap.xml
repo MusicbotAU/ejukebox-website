@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ejukebox.com.au/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/home/music-for-venues-increase-sales-ejukebox-1920.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/home/customers-want-background-music-ejukebox-1100.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/home/music-creates-atmosphere-ejukebox-1100.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/home/bad-music-hurts-business-ejukebox-1100.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-1100.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ejukebox.com.au/products.html</loc>
