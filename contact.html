@@ -417,12 +417,12 @@ schema_page_type: ContactPage
   'use strict';
 
   // ---------------------------------------------------------------------------
-  // Where the form posts. Leave this EMPTY until a contact endpoint exists, and
-  // the form falls back to composing the enquiry for the visitor to send - which
-  // works today with no backend at all. When an endpoint is ready (an Azure
-  // Function alongside the trial one is the obvious home), put its URL here and
-  // the form starts posting silently instead. It should accept a JSON POST.
-  var CONTACT_ENDPOINT = 'https://ejukebox-contact-form.azurewebsites.net/api/ContactFormWebhook';
+  // The shared eJukebox contact function - the same one behind ejukebox.tv and
+  // ejukebox.music (Azure, resource group eJukebox-Web-Contact). It emails the
+  // enquiry to info@ejukebox.com.au through Microsoft Graph. If it ever fails, the
+  // form hands the enquiry back to the visitor ready to send, so nothing is lost.
+  // Set this EMPTY to skip posting and always hand it back.
+  var CONTACT_ENDPOINT = 'https://ejukebox-contact-fn.azurewebsites.net/api/contact';
   // ---------------------------------------------------------------------------
 
   var form    = document.getElementById('ctForm');
@@ -452,6 +452,21 @@ schema_page_type: ContactPage
       callback:  document.getElementById('ctCallback').checked,
       website:   val('ctWebsite'),
       source:    'Sent from the eJukebox website - Contact page'
+    };
+  }
+
+  // The shared function takes the core fields, and the rest as labelled rows.
+  function toFunction(d) {
+    var rows = [];
+    if (d.venueType.length) rows.push(['Venue type', d.venueType.join(', ')]);
+    if (d.zones)            rows.push(['Zones', d.zones]);
+    if (d.plan)             rows.push(['Plan of interest', d.plan]);
+    if (d.features.length)  rows.push(['Interested in', d.features.join(', ')]);
+    rows.push(['Happy to be called back', d.callback ? 'Yes' : 'No']);
+    return {
+      site: 'ejukebox.com.au', kind: 'enquiry',
+      name: d.name, email: d.email, phone: d.phone, venue: d.venue, town: d.location,
+      message: d.message, details: rows, company_website: d.website
     };
   }
 
@@ -523,7 +538,7 @@ schema_page_type: ContactPage
       method: 'POST',
       mode: 'cors',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(data)
+      body: JSON.stringify(toFunction(data))
     }).then(function (res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       show(okPanel, data);

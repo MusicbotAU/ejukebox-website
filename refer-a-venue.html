@@ -203,6 +203,11 @@ faqs:
       <p class="rv-hint rv-hint-legal">That last part matters. Being paid to steer your employer's purchase without telling them is against the law in most states, and one honest conversation makes the whole thing above board.</p>
     </fieldset>
 
+    <div class="rv-hp" aria-hidden="true">
+      <label for="rvWebsite">Leave this field empty</label>
+      <input type="text" id="rvWebsite" name="company_website" tabindex="-1" autocomplete="off">
+    </div>
+
     <div class="rv-actions">
       <button type="submit" class="rv-submit" id="rvSubmit"><i class="fas fa-paper-plane"></i> <span>Put this venue up</span></button>
       <p class="rv-actions-note">We will text you when we have made contact, and again when they book a demo. You will not be left wondering.</p>
@@ -349,6 +354,7 @@ faqs:
 .rv-faq summary:focus-visible { outline:2px solid var(--ejm-ind-lt); outline-offset:3px; }
 .rv-faq[open] summary { border-bottom:1px solid var(--ejm-line); }
 .rv-faq p { margin:0; padding:16px 0 18px; color:var(--ejm-soft); line-height:1.7; }
+.rv-hp { position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
 @media (prefers-reduced-motion:reduce){ .rv-hero-cta, .rv-submit, .rv-chip span { transition:none; } }
 </style>
 
@@ -357,10 +363,10 @@ faqs:
   var form = document.getElementById('rvForm');
   if (!form) return;
 
-  // Same Azure endpoint the contact form uses. The payload keeps contact.html's
-  // field names so the backend needs no change, and adds `formType` so referrals
-  // can be routed and counted separately.
-  var ENDPOINT = 'https://ejukebox-contact-form.azurewebsites.net/api/ContactFormWebhook';
+  // The shared eJukebox contact function, as on /contact/ (and ejukebox.tv and
+  // ejukebox.music). kind: 'referral' gives the email a referral subject and labels;
+  // email is optional here because the referrer's mobile is required instead.
+  var ENDPOINT = 'https://ejukebox-contact-fn.azurewebsites.net/api/contact';
 
   var btn = document.getElementById('rvSubmit');
   var okPanel = document.getElementById('rvOk');
@@ -420,6 +426,20 @@ faqs:
     panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
+  function toFunction(d) {
+    return {
+      site: 'ejukebox.com.au', kind: 'referral',
+      name: d.name, email: d.email, phone: d.phone, venue: d.venue, town: d.location,
+      message: d.why,
+      details: [
+        ['Already spoken to them', d.spokenToVenue || 'Not stated'],
+        ['Who to ask for', d.contactPerson || 'Not given'],
+        ['Confirmed', '18 or over, read the terms, and told the owner if they work there']
+      ],
+      company_website: val('rvWebsite')
+    };
+  }
+
   function venuePhrase(v) { return v ? v : 'That venue'; }
 
   form.addEventListener('submit', function (e) {
@@ -445,7 +465,7 @@ faqs:
       method: 'POST',
       mode: 'cors',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(data)
+      body: JSON.stringify(toFunction(data))
     }).then(function (res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       show(okPanel, data);
