@@ -280,13 +280,13 @@ zones:
   extra_whl: 28
   note: Two zones come standard, and the player we fit already drives up to four - so zones three and four add no hardware cost at all, just the monthly charge. Each extra zone still costs less than a single Soundtrack zone.
 
-# ---- Referral programme ("Refer a Venue") ------------------------------------
+# ---- Referral program ("Refer a Venue") ------------------------------------
 # Renders /refer-a-venue/ and /refer-a-venue-terms/. These are amounts we PAY a
 # referrer, not amounts a venue pays us. They live here for the same reason every
 # other price does: a figure typed into a page is a figure that drifts.
 # See _seo/README.md.
 #
-# `live: false` is the single switch that keeps the programme dark. While it is
+# `live: false` is the single switch that keeps the program dark. While it is
 # false both pages carry `noindex` and stay out of the nav and the sitemap, which
 # also means schema.html emits nothing for them (see _includes/schema.html).
 # Flip it to true only after the tax agent has signed off, then add the two URLs

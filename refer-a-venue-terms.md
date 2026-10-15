@@ -1,8 +1,8 @@
 ---
 layout: default
 permalink: /refer-a-venue-terms/
-title: Refer a Venue Programme Terms
-description: "The conditions of the eJukebox venue referral programme: who can take part, what qualifies, when a payment is made, and what disqualifies a referral."
+title: Refer a Venue Program Terms
+description: "The conditions of the eJukebox venue referral program: who can take part, what qualifies, when a payment is made, and what disqualifies a referral."
 noindex: true
 sitemap: false
 hide_cta: true
@@ -10,11 +10,11 @@ hide_cta: true
 
 {% assign ref = site.data.pricing.referral %}
 
-# Refer a Venue: programme terms
+# Refer a Venue: program terms
 
-These terms govern the eJukebox "Refer a Venue" programme operated by Musicbot
+These terms govern the eJukebox "Refer a Venue" program operated by Musicbot
 Pty Ltd (ABN 44 163 918 054), trading as eJukebox. Registering a venue means you
-accept them. We may change or withdraw the programme at any time, and any venue
+accept them. We may change or withdraw the program at any time, and any venue
 you registered before we do will still be honoured on the terms that applied
 when you registered it.
 
@@ -106,7 +106,7 @@ You choose when the first payment falls due, not when you register:
 - **Account credit**, if you are an existing eJukebox customer.
 
 We will never ask you for a payment, a deposit, or a fee of any kind to take
-part in this programme.
+part in this program.
 
 ## 6. What you are, and what you are not
 
@@ -134,10 +134,10 @@ Your information is handled in accordance with our
 
 ## 8. General
 
-We may vary or end the programme, or decline any individual referral, at our
+We may vary or end the program, or decline any individual referral, at our
 discretion. Where we decline one we will tell you why. These terms are governed
 by the law of New South Wales.
 
-Questions about the programme: **info@ejukebox.com.au** or **02 9802 5552**.
+Questions about the program: **info@ejukebox.com.au** or **02 9802 5552**.
 
 [&larr; Back to Refer a Venue](/refer-a-venue/)
