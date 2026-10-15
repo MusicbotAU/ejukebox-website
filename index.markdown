@@ -108,7 +108,7 @@ hero:
 
 
 <div class="section-header-fancy">
-  <h2>Music for your business</h2>
+  <h2>Background music for your business</h2>
 </div>
 
 <div class="features-grid-home">
@@ -185,7 +185,7 @@ hero:
 <div class="venue-showcase pub-cafe">
   <div class="venue-content">
     <div class="venue-icon"><i class="fas fa-beer"></i></div>
-    <h2>Enhance Your Pub or Café Atmosphere</h2>
+    <h2>Background music for pubs and cafes</h2>
     <p>At <strong>eJukebox</strong>, our music channels are meticulously curated to mirror the familiar feel of top radio stations, ensuring each song resonates with your customers. This familiarity creates a warm and inviting atmosphere in your pub or café, encouraging patrons to stay longer and spend more. Studies show that customers who feel comfortable in familiar surroundings are more likely to make purchases, boosting your business's revenue.</p>
     <p>Additionally, all our songs are free from swearing, making them safe for families and suitable for all age groups. Choose <strong>eJukebox</strong> for a seamless, family-friendly music experience that enhances your customers' visit.</p>
     <div class="venue-badges">
@@ -203,7 +203,7 @@ hero:
 <div class="venue-showcase medical reverse">
   <div class="venue-content">
     <div class="venue-icon"><i class="fas fa-hospital"></i></div>
-    <h2>Elevate Your Medical Centre's Ambiance</h2>
+    <h2>Background music for medical centres and waiting rooms</h2>
     <p>At <strong>eJukebox</strong>, every track undergoes state-of-the-art broadcast-quality audio processing to ensure impeccable sound. Unlike other online music services where volume levels can fluctuate, our songs are perfectly mixed for consistent volume throughout. This professional-grade sound quality provides a seamless listening experience akin to top radio stations, creating a calming and flawless ambiance in your medical center. Patients will appreciate the serene and consistent audio environment, enhancing their overall experience and comfort during their visit.</p>
     <div class="venue-badges">
       <span class="venue-badge"><i class="fas fa-volume-down"></i> Calming Audio</span>
@@ -220,7 +220,7 @@ hero:
 <div class="venue-showcase retail">
   <div class="venue-content">
     <div class="venue-icon"><i class="fas fa-store"></i></div>
-    <h2>Ensure Legal Compliance in your pub, bar or retail store</h2>
+    <h2>Licensed music for pubs, bars and retail stores</h2>
     <p><strong>eJukebox</strong> is a <a href="/background-music-for-business/">background music provider</a> fully licensed for commercial use, unlike personal music services such as Spotify or Amazon Music, whose own terms rule out playing them in a business. With <strong>eJukebox</strong> you are not relying on a personal account. Your venue still holds its own OneMusic licence, and for pubs and clubs we can collect and pay it for you, at cost. Enjoy high-quality, professionally curated music channels that enhance your store's atmosphere while staying within the law.</p>
     <div class="venue-badges">
       <span class="venue-badge"><i class="fas fa-gavel"></i> Fully Licensed</span>
@@ -237,7 +237,7 @@ hero:
 <div class="dayparting-section">
   <div class="dayparting-header">
     <span class="dayparting-icon"><i class="fas fa-clock"></i></span>
-    <h2>Perfectly Timed Music for Every Part of the Day</h2>
+    <h2>Music that changes with the time of day</h2>
     <p class="dayparting-subtitle"><strong>eJukebox</strong> uses time-of-day music scheduling, or 'dayparting,' to ensure the right songs play at the right times.</p>
   </div>
   <div class="dayparting-timeline">
@@ -263,7 +263,7 @@ hero:
 
 <div class="test-drive-section">
   <div class="test-drive-content">
-    <h2>Test Drive eJukebox Before You Sign Up</h2>
+    <h2>Hear eJukebox music live before you sign up</h2>
     <p>Hear the real thing before you spend a cent. Our channels stream live, commercial free, 24 hours a day, exactly as they would sound in your venue.</p>
     <a href="./stream-us.html" class="test-drive-badge"><i class="fas fa-headphones"></i> Listen Now</a>
     <p class="test-drive-lead"><strong>With an eJukebox solution you:</strong></p>
