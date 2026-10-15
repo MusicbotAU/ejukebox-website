@@ -44,5 +44,14 @@ text in `_data/app_screens.yml`.
 ## Homepage photos
 
 `assets/images/home/` holds Marc's own images (Website/Images in the eJukebox library),
-added Tue 15 October 2026 and carrying the eJukebox watermark. No credit needed. Each is
+added Thu 15 October 2026 and carrying the eJukebox watermark. No credit needed. Each is
 WebP in two or three widths; the 1920px originals stay in the library.
+
+## Clubs page photos
+
+`assets/images/venues/music-for-rsl-clubs.jpg` (and its `.avif` twin) and the three
+`assets/images/venues/club-*-ejukebox.webp` strip photos come from the eJukebox photo set
+Alysia added on Thu 15 October 2026 (Website/Images/eJukeboxImages - files 20, 18, 10 and
+22). The originals carry the eJukebox watermark; every crop here leaves it out. If any of
+the set came from a stock library, record its licence here. File 17 (a slouch hat with the
+Rising Sun badge) is deliberately unused: the badge is a protected Defence emblem.

@@ -43,6 +43,39 @@ Digital Jukebox page.
 
 ---
 
+## 2026-10-15 - New venue page: RSL and community clubs
+
+/music-for-rsl-clubs/ - RSL, leagues, bowling, golf, tennis, sailing, surf and workers clubs.
+Search volume is small ("music for rsl club" registers nothing), so the page earns its keep as
+the place club customers' own write-ups and AV partners link to, and as the answer AI
+assistants give for club music. Two clubs signed in Sep-Oct 2026, both multi-zone.
+
+- **Not "music for clubs".** That 210/mo term is dance-club intent and stays with
+  /music-for-nightclubs/, which now carries a spotlight pointing registered clubs here. Title,
+  H1 and slug lead with RSL; leagues and bowling are in the title, the rest in the copy.
+- **Zones and the AV contractor up front:** bistro, bar, gaming room, function room, deck
+  and greens; one player drives up to four zones; the club's AV contractor runs one audio lead
+  per zone. "Gaming room", never "pokies", and no gaming machines in any photo.
+- **Licensing is exact.** Registered clubs pay OneMusic per member with Digital Copy/Delivery
+  already included, so switching saves a club nothing - and a club on ClubMUSIC or radio only
+  is on a reduced rate a full commercial service would end (strategy doc 3.6, verified against
+  OneMusic's clubs card 2 Sep 2026; no OneMusic figures published). The venue layout gained a
+  `licensing_note:` override so the pub-and-shop saving paragraph never shows on this page.
+- **Linked from:** the venue menus, footer and every venue page's list (via venues.yml), the
+  nightclubs spotlight, the custom radio card on /products.html, the Registered clubs card on
+  /licensing.html, llms.txt (venue list and the RSL answer) and the sitemap.
+- **Schema:** Service + FAQPage (8 questions) from the venue layout; about RSL, lawn bowls,
+  community clubs and the Ode of Remembrance (new topics.yml entries, each checked).
+- **The 6pm Ode, two ways** (confirmed Thu 15 Oct): scheduled every evening with Scheduled
+  Announcements, or built into the club's own custom station with the minute's silence.
+- **Photos** from Alysia's set (Website/Images/eJukeboxImages): 20, the glass-walled bistro, as
+  the banner (AVIF 81KB, JPG fallback); 18, 10 and 22 - the greens, a function table, the
+  bistro buffet - as a photo strip, which the venue layout now offers as `photo_band:`. Every
+  crop clears the eJukebox watermark in the originals. 17 (slouch hat with the Rising Sun
+  badge) was left out: it is a protected Defence emblem and advertising use needs permission.
+
+---
+
 ## 2026-10-15 - Spotify no longer singled out; clubs licensing made exact
 
 Marc wasn't comfortable with copy that singles Spotify out ("why personal Spotify costs a

@@ -44,6 +44,11 @@ layout: default
   </section>
   {% endif %}
 
+  {% if page.photo_band %}{% assign pb = page.photo_band %}
+  {%- comment -%} Optional three-photo mosaic: photo_band: {src, alt, src2, alt2, src3, alt3, caption, pos} {%- endcomment %}
+  {% include photo-band.html src=pb.src alt=pb.alt src2=pb.src2 alt2=pb.alt2 src3=pb.src3 alt3=pb.alt3 caption=pb.caption pos=pb.pos %}
+  {% endif %}
+
   <section class="venue-block">
     <h2>How the eJukebox jukebox works in your venue</h2>
     <p>eJukebox is a managed music system: a compact player at your venue (or a private stream on Solo), run by your staff from their phones, with customers requesting songs from theirs. No jukebox cabinet required.</p>
@@ -56,7 +61,12 @@ layout: default
 
   <section class="venue-block venue-licensing">
     <h2>Music licensing for {{ page.venue_name | default: page.label }}</h2>
+    {%- comment -%} `licensing_note:` (markdown) replaces the paragraph below for venue types
+        OneMusic treats differently - registered clubs pay per member, so the pub and shop
+        saving described here does not apply to them. {%- endcomment %}
+    {% if page.licensing_note %}{{ page.licensing_note | markdownify }}{% else %}
     <p>Australian venues need a OneMusic Australia licence to play recorded music in public, and that licence stays in your name. Because eJukebox is a <strong>commercial background music supplier</strong>, it changes what OneMusic charges you compared with a personal streaming account: shops and service businesses come off the top tier, and hospitality venues drop the Digital Copy and Delivery add-on. OneMusic sets and publishes its own fees, and for pubs and clubs we can collect and pay yours for you, at cost. <a href="/licensing.html">Read more about music licensing for business &rarr;</a></p>
+    {% endif %}
   </section>
 
   <section class="venue-block venue-pricing">

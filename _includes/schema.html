@@ -219,7 +219,14 @@
 
 {%- comment -%} ---------- 3. WebPage ----------
      about = the Organization, plus any topics the page declares in schema_about. {%- endcomment -%}
-{%- assign page_img = page.image | default: page.hero.image -%}
+{%- comment -%} The page's own photo, not the site-wide default (_config.yml gives every page
+    the logo as `image`): a venue page's banner, else a hero photo, else `image`. {%- endcomment -%}
+{%- if page.layout == 'venue' -%}
+  {%- capture venue_img -%}/assets/images/venues/{{ page.slug }}.jpg{%- endcapture -%}
+  {%- assign page_img = page.hero_image | default: venue_img -%}
+{%- else -%}
+  {%- assign page_img = page.hero_image | default: page.hero.image | default: page.image -%}
+{%- endif -%}
 {%- if page.schema_main -%}
   {%- assign main_key = page.schema_main | slice: 0, 4 -%}
   {%- if main_key == 'app-' -%}{%- assign main_id = base | append: '/#' | append: page.schema_main -%}

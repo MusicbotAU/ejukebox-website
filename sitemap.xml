@@ -135,6 +135,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ejukebox.com.au/music-for-rsl-clubs/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/venues/music-for-rsl-clubs.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/venues/club-members-on-the-bowling-green-ejukebox.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/venues/club-function-room-table-ejukebox.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/venues/club-bistro-buffet-ejukebox.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://ejukebox.com.au/music-for-nightclubs/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>

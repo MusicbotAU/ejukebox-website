@@ -82,6 +82,10 @@ ppca:               { name: PPCA, same_as: "https://en.wikipedia.org/wiki/Phonog
 onemusic:           { name: OneMusic Australia, same_as: "https://onemusic.com.au/" }
 
 # ---- venues and hospitality
+rsl:                { name: Returned and Services League (RSL), same_as: "https://en.wikipedia.org/wiki/Returned_and_Services_League_of_Australia" }
+bowls:              { name: Lawn bowls, same_as: "https://en.wikipedia.org/wiki/Bowls" }
+social-club:        { name: Community and social clubs, same_as: "https://en.wikipedia.org/wiki/Social_club" }
+ode-of-remembrance: { name: Ode of Remembrance, same_as: "https://en.wikipedia.org/wiki/For_the_Fallen" }
 hospitality:        { name: Hospitality industry, same_as: "https://en.wikipedia.org/wiki/Hospitality_industry" }
 pub:                { name: Pubs, same_as: "https://en.wikipedia.org/wiki/Pub" }
 bar:                { name: Bars, same_as: "https://en.wikipedia.org/wiki/Bar_(establishment)" }

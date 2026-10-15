@@ -302,7 +302,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
   <div class="lc-card">
     <span class="lc-ico"><i class="fas fa-people-group"></i></span>
     <h3>Registered clubs</h3>
-    <p>Clubs are generally charged <strong>per member</strong>, not by screens, so changing music supplier does not change the club's licence fee. For a club, the reasons to switch are compliance and the product.</p>
+    <p>Clubs are generally charged <strong>per member</strong>, not by screens, so changing music supplier does not change the club's licence fee. For a club, the reasons to switch are compliance and the product. <a href="/music-for-rsl-clubs/">Music for RSL and community clubs</a>.</p>
   </div>
   <div class="lc-card">
     <span class="lc-ico"><i class="fas fa-file-signature"></i></span>

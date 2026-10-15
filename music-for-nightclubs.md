@@ -19,6 +19,11 @@ benefits:
   - icon: fa-certificate
     title: Always licensed
     text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
+spotlight_title: Running an RSL, leagues or bowling club?
+spotlight_body: >-
+  Registered clubs have their own page - a different channel for the bistro, the bar, the gaming
+  room and the function room, the members' draw over the music, and how OneMusic licenses clubs
+  differently. [See music for RSL and community clubs &rarr;](/music-for-rsl-clubs/)
 faqs:
   - q: >-
       Can the crowd request songs?

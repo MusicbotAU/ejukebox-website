@@ -91,7 +91,7 @@ schema_about: [background-music, jukebox]
         <li><strong>Professional voice-overs and imaging</strong>, plus national, regional or venue-specific promos</li>
         <li><strong>Dedicated infrastructure</strong> and priority support</li>
         <li>Option to <strong>stream publicly</strong> on iHeartRadio, your website or your app</li>
-        <li>Built for multi-site groups and RSL clubs, including the automated 6pm ode and silence</li>
+        <li>Built for multi-site groups and <a href="/music-for-rsl-clubs/">RSL clubs</a>, including the automated 6pm ode and silence</li>
       </ul>
       <p>Scoped and quoted per project rather than priced off a menu.</p>
       <a class="pb-link" href="/custom-radio.html"><i class="fas fa-arrow-right"></i> See Custom Branded Radio</a>
