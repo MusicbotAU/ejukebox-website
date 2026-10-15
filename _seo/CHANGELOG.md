@@ -5,6 +5,17 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-15 - Demo streams: show the two that play
+
+Tested Thu 15 Oct: `listen2.ejukebox.net/one` (Hits) and `/four` (Country) stream;
+`/two` (Smooth) and `/three` (Rock) return 404. /stream-us.html showed Smooth as a dead
+player and hid Hits, which is streaming again. It now shows Hits and Country; Smooth joins
+Rock behind a comment, with a note on how to bring each back. The description no longer
+names channels, and llms.txt lists only the two live streams. Marc to fix `/two` and
+`/three` on the stream server (A-List).
+
+---
+
 ## 2026-10-15 - Top menu: Jukebox Features, and the buttons beside the logo
 
 Marc's call. The menu now reads **Music for Your Venue · Jukebox Features · Pricing · Music
@@ -17,9 +28,11 @@ Digital Jukebox page.
   Behind the Scenes. The footer column follows ("Jukebox features").
 - **Why eJukebox** left the top row. Why Choose Us, Testimonials, Listen to Demos and Contact
   keep their links in the footer and the mobile menu.
-- **Download Apps, Contact and Free Trial** sit right-aligned on the logo row. Once the page
-  scrolls past the logo, Contact and Free Trial ride in the sticky bar (all three plus the
-  menu would wrap it); Free Trial alone below 1200px, none below 1100px.
+- **Contact and Free Trial close the menu row**, where Free Trial always sat. A first try put
+  them, with a Download Apps button, on the logo row; Marc preferred them in line with the
+  menu, and Download Apps went - the eJukebox Apps menu already covers it. Below 1240px the
+  menu tightens so it stays on one line on small laptops, and the eJukebox Apps dropdown
+  opens leftwards so it never hangs off the edge of the screen.
 - **The functions page is "Jukebox Your Event"** - new title, H1 and lead; the photo wall,
   logo branding and sharing to Instagram and Facebook in the first lines.
 - **"Jukebox hire" is not in the menu.** ~1,300/mo search it, but they want a machine

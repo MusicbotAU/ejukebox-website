@@ -121,7 +121,7 @@ By contrast, running a personal Spotify, Apple Music or Amazon Music account in 
 
 ## Listen and demos
 
-- [Listen to demo streams](https://ejukebox.com.au/stream-us.html): hear the four public channels live before you buy, eJukebox Hits (pop and Top 40), Smooth (easy listening), Rock (rock classics) and Country (country vibes). Direct stream URLs work in Sonos and custom players: https://listen2.ejukebox.net/one (Hits), /two (Smooth), /three (Rock), /four (Country).
+- [Listen to demo streams](https://ejukebox.com.au/stream-us.html): hear eJukebox channels live before you buy - eJukebox Hits (pop and Top 40) and Country (country vibes) are streaming now. Direct stream URLs work in Sonos and custom players: https://listen2.ejukebox.net/one (Hits) and https://listen2.ejukebox.net/four (Country).
 
 ## Questions people ask, with short answers
 

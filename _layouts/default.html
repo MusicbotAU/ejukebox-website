@@ -117,29 +117,18 @@
       .engage-col { padding: 0 4px; border-left: 0; }
       .engage-trial { padding: 24px 22px; }
     }
-      /* ---- Header buttons (Marc, 15 Oct 2026). Download Apps, Contact and Free Trial sit
-       right-aligned on the logo row. Once the page scrolls past the logo, Contact and Free
-       Trial ride in the sticky bar - all three plus the menu would wrap the 1140px bar.
-       The theme forces link colours, so these answer with !important. */
-    .logo-section .inner { position: relative; }
-    .head-ctas { display: flex; align-items: center; gap: 10px; }
-    .logo-section .head-ctas { position: absolute; right: 30px; top: 50%; transform: translateY(-50%); }
-    .head-cta { display: inline-flex; align-items: center; padding: 9px 18px; border-radius: 999px; font-size: 14px;
-      font-weight: 600; line-height: 1; white-space: nowrap; text-decoration: none !important; color: #e2e8f0 !important;
-      transition: background-color .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
-    .head-cta-ghost { border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.03); }
-    .head-cta-ghost:hover { border-color: rgba(129,140,248,.6); background: rgba(99,102,241,.15); color: #fff !important; }
-    .head-cta-trial { color: #fff !important; background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-      animation: trial-btn-pulse 2s ease-in-out infinite; }
-    .head-cta-trial:hover { animation: none; transform: translateY(-1px); box-shadow: 0 4px 20px rgba(16,185,129,.5); }
-    header#sticky-nav .head-ctas-compact { display: none; flex-shrink: 0; }
-    header#sticky-nav.scrolled .head-ctas-compact { display: flex; }
+      /* ---- Contact and Free Trial close the menu row (Marc, 15 Oct 2026). Free Trial keeps the
+       theme's green trial button; Contact is its quieter outline twin. */
+    .desktop-nav .nav-cta-ghost { border: 1px solid rgba(255,255,255,.22); color: #e2e8f0 !important; }
+    .desktop-nav .nav-cta-ghost:hover { border-color: rgba(129,140,248,.6); background: rgba(99,102,241,.15); color: #fff !important; }
     /* Jukebox Features is wider than the theme's 240px dropdown: keep every label on one line */
     .desktop-nav .dropdown-menu.dropdown-menu-wide { min-width: 300px; }
-    @media (max-width: 1199px) { header#sticky-nav .head-ctas-compact .head-cta-ghost { display: none; } }
-    @media (max-width: 1199px) { .logo-section .head-cta-ghost { display: none; } }
-    @media (max-width: 1100px) { header#sticky-nav.scrolled .head-ctas-compact { display: none; } }
-    @media (max-width: 767px) { .logo-section .head-ctas { display: none; } }
+    /* Narrow laptops (1366px screens at 125% scaling are ~1090px wide): tighten the menu so the
+       row, and the scrolled bar with its small logo, stay on one line. */
+    /* The last dropdown in the row opens leftwards, so it never hangs off the screen edge. */
+    .desktop-nav li.dropdown-right .dropdown-menu { left: auto; right: 0; }
+    @media (max-width: 1240px) { .desktop-nav a { padding: 10px 12px; } }
+    @media (max-width: 1060px) { .desktop-nav a { padding: 9px 8px; font-size: 13px; } }
   </style>
 </head>
 
@@ -203,11 +192,6 @@
       <a href="/index.html" class="logo-link">
         <img width="280" src="/blobs/ejukebox-logo.png" alt="eJukebox Logo" />
       </a>
-      <div class="head-ctas" aria-label="Get started">
-        <a href="/ejukebox-apps.html" class="head-cta head-cta-ghost">Download Apps</a>
-        <a href="/contact/" class="head-cta head-cta-ghost">Contact</a>
-        <a href="/free-trial.html" class="head-cta head-cta-trial">Free Trial</a>
-      </div>
     </div>
   </div>
 
@@ -263,7 +247,7 @@
             </ul>
           </li>
           <li><a href="/licensing.html">Music Licensing</a></li>
-          <li class="dropdown">
+          <li class="dropdown dropdown-right">
             <a href="/ejukebox-apps.html" class="dropdown-toggle">eJukebox Apps</a>
             <ul class="dropdown-menu">
               <li><a href="/ejukebox-apps.html"><span class="dropdown-icon"><i class="fas fa-download"></i></span><span
@@ -275,12 +259,10 @@
                     class="dropdown-text">eJukebox Admin app</span></a></li>
             </ul>
           </li>
+          <li><a href="/contact/" class="nav-cta-ghost">Contact</a></li>
+          <li><a href="/free-trial.html" class="nav-cta trial-nav-btn">Free Trial</a></li>
         </ul>
       </nav>
-      <div class="head-ctas head-ctas-compact">
-        <a href="/contact/" class="head-cta head-cta-ghost">Contact</a>
-        <a href="/free-trial.html" class="head-cta head-cta-trial">Free Trial</a>
-      </div>
     </div>
   </header>
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Listen to Free eJukebox Demo Streams
-description: Listen to eJukebox demo streams free. Hear the Hits, Smooth, Rock and Country channels for pubs, clubs and cafes. Test before you buy.
+description: Listen to eJukebox demo streams free - curated channels for pubs, clubs and cafes, streamed live from Australia. Test before you buy.
 schema_service: Demo music streams for Australian venues
 service_type: Demonstration streams of curated commercial music channels
 schema_about: [internet-radio, streaming-media]
@@ -22,8 +22,6 @@ schema_about: [internet-radio, streaming-media]
 </div>
 
 <div class="streams-grid">
-{% comment %} Hidden 13 Oct 2026: listen2.ejukebox.net/one returns 404. Remove this comment block when the stream is back. {% endcomment %}
-  {% comment %}
   <div class="stream-card hits">
     <div class="stream-card-header">
       <div class="stream-icon">
@@ -41,7 +39,8 @@ schema_about: [internet-radio, streaming-media]
     </div>
   </div>
 
-  {% endcomment %}
+{% comment %} Hidden 15 Oct 2026: listen2.ejukebox.net/two returns 404. Remove this comment block when the stream is back. {% endcomment %}
+  {% comment %}
   <div class="stream-card smooth">
     <div class="stream-card-header">
       <div class="stream-icon">
@@ -58,8 +57,9 @@ schema_about: [internet-radio, streaming-media]
       Streaming Live from Australia
     </div>
   </div>
+  {% endcomment %}
 
-{% comment %} Hidden 13 Oct 2026: listen2.ejukebox.net/three returns 404. Remove this comment block when the stream is back. {% endcomment %}
+{% comment %} Hidden 13 Oct 2026, still 404 on 15 Oct: listen2.ejukebox.net/three. Remove this comment block when the stream is back. {% endcomment %}
   {% comment %}
   <div class="stream-card rock">
     <div class="stream-card-header">
@@ -105,16 +105,16 @@ schema_about: [internet-radio, streaming-media]
   <p class="section-intro">Still having trouble, or if you manually want to add this to a custom app or Sonos for example? Here's a direct link to the stream:</p>
   
   <div class="links-grid">
-    {% comment %}
     <a href="https://listen2.ejukebox.net/one" class="direct-link hits" target="_blank">
       <i class="fas fa-external-link-alt"></i>
       <span>eJukebox Hits</span>
     </a>
-    {% endcomment %}
+    {% comment %}
     <a href="https://listen2.ejukebox.net/two" class="direct-link smooth" target="_blank">
       <i class="fas fa-external-link-alt"></i>
       <span>eJukebox Smooth</span>
     </a>
+    {% endcomment %}
     {% comment %}
     <a href="https://listen2.ejukebox.net/three" class="direct-link rock" target="_blank">
       <i class="fas fa-external-link-alt"></i>
