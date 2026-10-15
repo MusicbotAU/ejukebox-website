@@ -92,30 +92,30 @@
       .ej-col--2 { grid-column: auto; }
     }
 
-    /* Full-width engagement band replacing the tall right sidebar */
-    .engage-band { border-top: 1px solid var(--ejm-line); background: #12121f; padding: 46px 0; }
-    .engage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: start; }
-    .engage-card { background: var(--ejm-card); border: 1.5px solid var(--ejm-line); border-radius: var(--ejm-r); padding: 22px; transition: border-color .18s, transform .18s; }
-    .engage-card:hover { border-color: var(--ejm-line-2); transform: translateY(-2px); }
-    .engage-card h3 { margin: 0 0 8px; font-size: 1.1rem; color: var(--ejm-ink); }
-    .engage-card p { margin: 0 0 14px; color: var(--ejm-mut); font-size: .95rem; }
-    .engage-icon { width: 42px; height: 42px; border-radius: 10px; background: rgba(99,102,241,.14); color: var(--ejm-ind-lt); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 12px; }
-    /* Trial card is the primary action: indigo->cyan gradient, as on /pricing/ */
-    .engage-trial { background: linear-gradient(120deg,#4f46e5,#0e7490); border-color: transparent; }
-    .engage-trial h3 { color: #fff; } .engage-trial p { color: rgba(255,255,255,.9); }
-    .engage-trial .engage-icon { background: rgba(255,255,255,.16); color: #fff; }
-    .engage-btn { display: inline-flex; align-items: center; gap: 9px; background: #fff; color: #4f46e5; font-weight: 800; font-size: 14px; padding: 12px 22px; border-radius: 999px; text-decoration: none; transition: background .18s; }
-    .engage-btn:hover { background: #f1f5f9; }
-    .engage-link { color: var(--ejm-cyan); font-weight: 700; text-decoration: none; }
-    /* The theme's .video-container reserves a 16:9 box with padding-bottom:56.25% for
-       the lazy-loaded iframe, but .video-facade is itself aspect-ratio:16/9 and flows
-       normally - so the card renders at double height with dead space underneath.
-       The facade already sets the height; drop the reserved padding here. */
-    .engage-video .video-container { margin: 0; padding-bottom: 0; }
-    .engage-video .video-facade { border-radius: 10px; }
+    /* Full-width engagement band before the footer, on every page. Typographic - no
+       icons - with the trial as the one highlighted panel (Marc, 15 Oct 2026). */
+    .engage-band { position: relative; overflow: hidden; border-top: 1px solid var(--ejm-line); padding: 58px 0 54px;
+      background: radial-gradient(ellipse 60% 120% at 0% 0%, rgba(99,102,241,.2), transparent 60%),
+                  radial-gradient(ellipse 60% 120% at 100% 100%, rgba(20,184,166,.14), transparent 60%), #0f0f1c; }
+    .engage-kick { margin: 0 0 26px; text-align: center; font-size: .78rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--ejm-amber) !important; }
+    .engage-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; align-items: stretch; }
+    .engage-col { display: flex; flex-direction: column; align-items: flex-start; padding: 6px 34px; border-left: 1px solid rgba(255,255,255,.08); }
+    .engage-col:first-child, .engage-trial + .engage-col { border-left: 0; }
+    .engage-band .engage-col h3 { margin: 0 0 10px; font-family: 'Poppins', sans-serif; font-size: 1.25rem; font-weight: 700; line-height: 1.3; color: var(--ejm-ink); }
+    .engage-band .engage-col p { flex: 1; margin: 0 0 18px; font-size: .97rem; line-height: 1.6; color: var(--ejm-soft) !important; }
+    .engage-trial { padding: 26px 30px; border-radius: 18px; border: 1px solid rgba(129,140,248,.35);
+      background: linear-gradient(140deg, rgba(99,102,241,.26), rgba(14,116,144,.2)); }
+    .engage-btn { display: inline-block; padding: 13px 26px; border-radius: 999px; font-weight: 800; font-size: 15px; color: #fff !important; text-decoration: none;
+      background: linear-gradient(135deg, var(--ejm-pink), var(--ejm-ind)); box-shadow: 0 12px 30px rgba(236,72,153,.3); transition: transform .2s ease, box-shadow .2s ease; }
+    .engage-btn:hover { color: #fff !important; transform: translateY(-2px); box-shadow: 0 16px 36px rgba(236,72,153,.42); }
+    .engage-link { padding-bottom: 3px; font-weight: 700; color: #fff !important; text-decoration: none;
+      background: linear-gradient(90deg, var(--ejm-teal), var(--ejm-cyan)) no-repeat 0 100% / 100% 2px; transition: background-size .25s ease; }
+    .engage-link:hover { color: #fff !important; background-size: 40% 2px; }
 
     @media (max-width: 900px) {
-      .engage-grid { grid-template-columns: 1fr; }
+      .engage-grid { grid-template-columns: 1fr; gap: 26px; }
+      .engage-col { padding: 0 4px; border-left: 0; }
+      .engage-trial { padding: 24px 22px; }
     }
   </style>
 </head>
@@ -277,26 +277,24 @@
 
   {% unless page.hide_cta %}
   <section class="engage-band">
-    <div class="inner engage-grid">
-      <div class="engage-card engage-trial">
-        <div class="engage-icon"><i class="fas fa-gift"></i></div>
-        <h3>Free 7-Day Streaming Trial</h3>
-        <p>Get your private streaming URL instantly via SMS. No credit card required.</p>
-        <a href="/free-trial.html" class="engage-btn"><i class="fas fa-rocket"></i> Start Free Trial</a>
-      </div>
-      <div class="engage-card engage-video">
-        <h3><i class="fas fa-gears"></i> See How It Works</h3>
-        <div class="video-container">
-          <a class="video-facade" href="/behind-the-scenes.html" aria-label="See how eJukebox works behind the scenes">
-            <img class="video-facade-thumb" src="/assets/images/stock/bartenders.jpg" alt="" loading="lazy">
-          </a>
+    <div class="inner">
+      <p class="engage-kick">Ready when you are</p>
+      <div class="engage-grid">
+        <div class="engage-col engage-trial">
+          <h3>Free 7-day streaming trial</h3>
+          <p>Your own private stream link by SMS in seconds. No credit card, nothing to install.</p>
+          <a href="/free-trial.html" class="engage-btn">Start your free trial</a>
         </div>
-      </div>
-      <div class="engage-card engage-contact">
-        <div class="engage-icon"><i class="fas fa-envelope"></i></div>
-        <h3>Talk to us</h3>
-        <p>Questions about music for your venue? We're happy to help.</p>
-        <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website" class="engage-link">info@ejukebox.com.au</a>
+        <div class="engage-col">
+          <h3>See how it works</h3>
+          <p>The player in your venue, the apps on your phone and the people behind them.</p>
+          <a href="/behind-the-scenes.html" class="engage-link">Behind the scenes</a>
+        </div>
+        <div class="engage-col">
+          <h3>Talk to us</h3>
+          <p>Questions about music for your venue? We're happy to help.</p>
+          <a href="mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website" class="engage-link">info@ejukebox.com.au</a>
+        </div>
       </div>
     </div>
   </section>

@@ -5,6 +5,21 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-15 - Homepage icons out; setup section; a new trial offer and pre-footer band
+
+- **Icons removed** from the three venue sections and the time-of-day section (Marc will
+  supply photos for Morning, Afternoon and Evening).
+- **New homepage section: "Works with your speakers, your screens and your AV team"** -
+  existing amplifier and speakers, the TVs already on the wall, working with their AV
+  installer, and illustrated step-by-step install instructions with one-on-one video call
+  support. Behind the Scenes step 2 now says the same.
+- **"Two ways to try eJukebox free"** redesigned: two side-by-side options in a gradient-edged
+  panel, no gift or rocket icons.
+- **The band before the footer (every page)** is typographic now - no icons, no stock-photo
+  "video" tile: the trial as one highlighted panel, then "See how it works" and "Talk to us".
+
+---
+
 ## 2026-10-15 - Navigation tidy-up and an app strip on the homepage
 
 - **Top navigation, six items instead of seven:** "How It Works" and "Features" overlapped

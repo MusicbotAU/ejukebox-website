@@ -68,6 +68,47 @@ hero:
   .hs-apps-badges a.hs-as { background:#fff; border-radius:6px; } /* the badge PNG's lettering is transparent */
   #main-content .hs-apps-badges img { display:block; width:auto; height:40px; margin:0 !important; border-radius:0 !important; box-shadow:none !important; transform:none !important; }
   #main-content .hs-apps-badges a.hs-gp img { height:44px; } /* Google's PNG carries its own padding */
+  /* works-with-what-you-have: numbered, no icons */
+  .hs-setup { display:grid; grid-template-columns:.9fr 1.1fr; gap:40px; align-items:start; margin:70px 0; }
+  #main-content .hs-setup h2 { margin:0 0 16px !important; padding:0 !important; border:0 !important; text-align:left !important;
+    font-size:clamp(1.6rem, 3vw, 2.2rem) !important; line-height:1.15 !important; color:var(--ejm-ink) !important; }
+  #main-content .hs-setup-copy p { margin:0; font-size:1.05rem; line-height:1.7; color:var(--ejm-soft) !important; }
+  #main-content .hs-setup-list { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:14px; counter-reset:hs; }
+  #main-content .hs-setup-list li { margin:0; padding:20px 20px 22px; border-radius:16px; counter-increment:hs;
+    background:rgba(255,255,255,.035); border:1px solid rgba(255,255,255,.08); border-top:2px solid var(--ejm-teal); }
+  #main-content .hs-setup-list li::before { content:counter(hs, decimal-leading-zero); display:block; margin-bottom:8px;
+    font-size:.78rem; font-weight:800; letter-spacing:.14em; color:var(--ejm-amber); }
+  #main-content .hs-setup-list b { display:block; margin-bottom:6px; font-size:1.08rem; color:#fff; }
+  #main-content .hs-setup-list span { display:block; font-size:.96rem; line-height:1.55; color:var(--ejm-soft); }
+
+  /* the trial offer: two ways in, no icons */
+  .hs-trial { position:relative; margin:70px 0; padding:52px 44px 48px; border-radius:26px; overflow:hidden; isolation:isolate; text-align:center;
+    border:1px solid transparent;
+    background:radial-gradient(ellipse 70% 90% at 0% 0%, rgba(20,184,166,.18), transparent 60%) padding-box,
+               radial-gradient(ellipse 70% 90% at 100% 100%, rgba(236,72,153,.16), transparent 60%) padding-box,
+               linear-gradient(#11111d, #11111d) padding-box,
+               linear-gradient(135deg, rgba(236,72,153,.7), rgba(99,102,241,.55), rgba(20,184,166,.7)) border-box; }
+  #main-content .hs-trial h2 { margin:0 0 30px !important; padding:0 !important; border:0 !important; text-align:center !important;
+    font-size:clamp(1.7rem, 3.4vw, 2.4rem) !important; line-height:1.15 !important; color:#fff !important; }
+  .hs-trial-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; text-align:left; }
+  .hs-trial-card { display:flex; flex-direction:column; align-items:flex-start; padding:28px 28px 30px; border-radius:18px;
+    background:rgba(255,255,255,.045); border:1px solid rgba(255,255,255,.1); backdrop-filter:blur(6px); }
+  .hs-trial-len { font-family:'Poppins',sans-serif; font-size:1.5rem; font-weight:800; line-height:1; margin-bottom:10px;
+    background:linear-gradient(90deg, var(--ejm-pink), var(--ejm-ind-lt)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  #main-content .hs-trial h3 { margin:0 0 10px !important; font-size:1.25rem !important; line-height:1.3 !important; color:#fff !important; }
+  #main-content .hs-trial h3::before { content:none !important; }
+  #main-content .hs-trial-card p { margin:0 0 22px; flex:1; font-size:1rem; line-height:1.65; color:var(--ejm-soft) !important; }
+  #main-content .hs-trial-btn { display:inline-block; padding:13px 26px; border-radius:999px; font-weight:800; text-decoration:none; color:#fff !important;
+    background:linear-gradient(135deg, var(--ejm-pink), var(--ejm-ind)); box-shadow:0 12px 30px rgba(236,72,153,.3); transition:transform .2s ease, box-shadow .2s ease; }
+  #main-content .hs-trial-btn:hover { transform:translateY(-2px); box-shadow:0 16px 36px rgba(236,72,153,.42); }
+  #main-content .hs-trial-ghost { background:transparent; box-shadow:none; border:1.5px solid rgba(255,255,255,.28); }
+  #main-content .hs-trial-ghost:hover { border-color:rgba(255,255,255,.55); box-shadow:none; }
+  @media (max-width:760px) {
+    .hs-setup { grid-template-columns:1fr; gap:24px; margin:56px 0; }
+    #main-content .hs-setup-list { grid-template-columns:1fr; }
+    .hs-trial { padding:38px 18px 30px; }
+    .hs-trial-grid { grid-template-columns:1fr; }
+  }
 </style>
 
 <div class="hs-apps">
@@ -207,7 +248,6 @@ hero:
 
 <div class="venue-showcase pub-cafe">
   <div class="venue-content">
-    <div class="venue-icon"><i class="fas fa-beer"></i></div>
     <h2>Background music for pubs and cafes</h2>
     <p>At <strong>eJukebox</strong>, our music channels are meticulously curated to mirror the familiar feel of top radio stations, ensuring each song resonates with your customers. This familiarity creates a warm and inviting atmosphere in your pub or café, encouraging patrons to stay longer and spend more. Studies show that customers who feel comfortable in familiar surroundings are more likely to make purchases, boosting your business's revenue.</p>
     <p>Additionally, all our songs are free from swearing, making them safe for families and suitable for all age groups. Choose <strong>eJukebox</strong> for a seamless, family-friendly music experience that enhances your customers' visit.</p>
@@ -225,7 +265,6 @@ hero:
 
 <div class="venue-showcase medical reverse">
   <div class="venue-content">
-    <div class="venue-icon"><i class="fas fa-hospital"></i></div>
     <h2>Background music for medical centres and waiting rooms</h2>
     <p>At <strong>eJukebox</strong>, every track undergoes state-of-the-art broadcast-quality audio processing to ensure impeccable sound. Unlike other online music services where volume levels can fluctuate, our songs are perfectly mixed for consistent volume throughout. This professional-grade sound quality provides a seamless listening experience akin to top radio stations, creating a calming and flawless ambiance in your medical center. Patients will appreciate the serene and consistent audio environment, enhancing their overall experience and comfort during their visit.</p>
     <div class="venue-badges">
@@ -242,7 +281,6 @@ hero:
 
 <div class="venue-showcase retail">
   <div class="venue-content">
-    <div class="venue-icon"><i class="fas fa-store"></i></div>
     <h2>Licensed music for pubs, bars and retail stores</h2>
     <p><strong>eJukebox</strong> is a <a href="/background-music-for-business/">background music provider</a> fully licensed for commercial use, unlike personal music services such as Spotify or Amazon Music, whose own terms rule out playing them in a business. With <strong>eJukebox</strong> you are not relying on a personal account. Your venue still holds its own OneMusic licence, and for pubs and clubs we can collect and pay it for you, at cost. Enjoy high-quality, professionally curated music channels that enhance your store's atmosphere while staying within the law.</p>
     <div class="venue-badges">
@@ -259,23 +297,19 @@ hero:
 
 <div class="dayparting-section">
   <div class="dayparting-header">
-    <span class="dayparting-icon"><i class="fas fa-clock"></i></span>
     <h2>Music that changes with the time of day</h2>
     <p class="dayparting-subtitle"><strong>eJukebox</strong> uses time-of-day music scheduling, or 'dayparting,' to ensure the right songs play at the right times.</p>
   </div>
   <div class="dayparting-timeline">
     <div class="time-block morning">
-      <div class="time-icon"><i class="fas fa-sun"></i></div>
       <h4>Morning</h4>
       <p>Light, uplifting tunes to start the day</p>
     </div>
     <div class="time-block afternoon">
-      <div class="time-icon"><i class="fas fa-cloud-sun"></i></div>
       <h4>Afternoon</h4>
       <p>Energetic tracks for the midday rush</p>
     </div>
     <div class="time-block evening">
-      <div class="time-icon"><i class="fas fa-moon"></i></div>
       <h4>Evening</h4>
       <p>Upbeat vibes for the night crowd</p>
     </div>
@@ -308,18 +342,40 @@ hero:
 </div>
 
 
-<div class="trial-cta-section">
-  <div class="trial-glow"></div>
-  <div class="trial-content">
-    <span class="trial-badge"><i class="fas fa-gift"></i> Risk-Free Offer</span>
-    <h2>Two ways to try it free</h2>
-    <p><strong>7 days, streaming only.</strong> Pick a channel and get your own private ad-free stream URL by SMS in seconds. No credit card, nothing to install.</p>
-    <p class="trial-alt"><strong>30 days, the whole system.</strong> On Core and Complete we install the full eJukebox, hardware and setup covered, and you run it live in your venue with your own customers requesting songs. <a href="/contact/">Ask us about the 30-day trial &rarr;</a></p>
-    <a href="./free-trial.html" class="trial-cta-button">
-      <i class="fas fa-rocket"></i> Start Your Free Trial Now
-    </a>
+<section class="hs-setup" aria-labelledby="hs-setup-title">
+  <div class="hs-setup-copy">
+    <span class="hs-kick">Easy to set up</span>
+    <h2 id="hs-setup-title">Works with your speakers, your screens and your AV team</h2>
+    <p>eJukebox plugs into the sound system you already have. If you have an AV installer, we work with them directly - and if you would rather do it yourself, we walk you through it.</p>
   </div>
-</div>
+  <ol class="hs-setup-list">
+    <li><b>Your speakers</b><span>A compact player connects to your existing amplifier and speakers.</span></li>
+    <li><b>Your TVs</b><span>Screen features use the TVs already on your walls - a spare HDMI socket is all it takes.</span></li>
+    <li><b>Your AV team</b><span>Got an installer? We work with them, so eJukebox slots straight into your setup.</span></li>
+    <li><b>Help at every step</b><span>Illustrated, step-by-step installation instructions, plus one-on-one video call support if you need it.</span></li>
+  </ol>
+</section>
+
+<section class="hs-trial" aria-labelledby="hs-trial-title">
+  <div class="hs-trial-head">
+    <span class="hs-kick">Risk free</span>
+    <h2 id="hs-trial-title">Two ways to try eJukebox free</h2>
+  </div>
+  <div class="hs-trial-grid">
+    <div class="hs-trial-card">
+      <span class="hs-trial-len">7 days</span>
+      <h3>Streaming trial</h3>
+      <p>Pick a channel and get your own private, ad-free stream link by SMS in seconds. No credit card, nothing to install.</p>
+      <a class="hs-trial-btn" href="/free-trial.html">Start the 7-day trial</a>
+    </div>
+    <div class="hs-trial-card">
+      <span class="hs-trial-len">30 days</span>
+      <h3>The whole system, in your venue</h3>
+      <p>On Core and Complete we install the full eJukebox, hardware and setup covered, and you run it live with your own customers requesting songs.</p>
+      <a class="hs-trial-btn hs-trial-ghost" href="/contact/">Ask about the 30-day trial</a>
+    </div>
+  </div>
+</section>
 
 
 <div class="tm-row tm-row-lead">

@@ -198,7 +198,7 @@ last_reviewed: 2026-10-13
 </div>
 <div class="bt-steps">
   <div class="bt-step"><span class="bt-num">1</span><h3>We set it up first</h3><p>Your player is configured for your venue, your zones and your music before it ever leaves us.</p></div>
-  <div class="bt-step"><span class="bt-num">2</span><h3>Plug it in</h3><p>Power, network and audio. We install it, or send clear step-by-step instructions so you can do it yourself.</p></div>
+  <div class="bt-step"><span class="bt-num">2</span><h3>Plug it in</h3><p>Power, network and audio. We install it, work with your AV installer if you have one, or send illustrated step-by-step instructions so you can do it yourself - with one-on-one video call support if you need it.</p></div>
   <div class="bt-step"><span class="bt-num">3</span><h3>Music, and the apps</h3><p>The music starts, your staff sign in to <a href="/admin-app/">eJukebox Admin</a>, and your customers start requesting.</p></div>
 </div>
 
