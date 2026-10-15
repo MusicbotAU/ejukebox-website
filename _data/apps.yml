@@ -7,7 +7,7 @@
 # The homepage carries all three.
 #
 # Facts here are only what the store listings and our own app pages say. Store
-# links checked Wed 15 Oct 2026; all three need iOS 15.1 or later on iPhone.
+# links checked Thu 15 Oct 2026; all three need iOS 15.1 or later on iPhone.
 # The iPhone Admin app is unlisted in App Store search - the direct link works.
 # The old eJukebox Controller app is gone from both stores. Never list it.
 # `screens` are keys in _data/app_screens.yml (the cleaned, privacy-safe grabs).

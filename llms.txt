@@ -145,6 +145,10 @@ Can staff control the music without standing at a computer? Yes. The eJukebox Ad
 
 Do I need to buy a jukebox cabinet or special hardware? No. eJukebox is cloud based and vendor agnostic. If your screens, players or streamers reach the internet, eJukebox works with them, including Sonos via a private stream URL. A self hosted option is available where a venue wants a small on-site player with an offline backup library, connected to the existing amplifier through a USB audio adapter and wired ethernet.
 
+Does eJukebox work with my existing speakers, TVs and AV installer? Yes. A compact player connects to the venue's existing amplifier and speakers, screen features use the TVs already on the walls through a spare HDMI socket, and eJukebox works directly with the venue's AV installer if it has one.
+
+Who installs eJukebox, and who looks after it? The venue chooses: eJukebox installs it, works with the venue's AV installer, or sends illustrated step-by-step instructions with one-on-one video call support. The player arrives already set up for the venue, its zones and its music. Every player checks in every minute, the eJukebox team is alerted if the music stops for 30 seconds, updates run overnight while the venue is closed, and almost anything can be fixed remotely.
+
 What happens if the internet drops out? Self hosted eJukebox players cache a backup music library on solid state storage and keep playing, then resync automatically when the connection returns.
 
 Will the music have swearing in it? No. All channels are expletive free and family friendly. Patron voice dedications are transcribed and screened for bad language in real time and rejected on the spot if they are not clean.

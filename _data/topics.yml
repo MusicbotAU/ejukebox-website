@@ -10,7 +10,7 @@
 #   _data/org.yml  knows_about:   a key here becomes {"@type":"Thing","name","sameAs"}
 #   page front matter  schema_about: [key, key]   -> the WebPage's "about"
 #
-# Every same_as below was checked to resolve to the article named, Wed 15 Oct 2026,
+# Every same_as below was checked to resolve to the article named, Thu 15 Oct 2026,
 # using the canonical title (redirects followed). Check any new one the same way -
 # a sameAs pointing at the wrong article is worse than none at all.
 # OneMusic has no Wikipedia article, so it points at its own site.

@@ -4,6 +4,7 @@
 
 User-agent: *
 Allow: /
+Allow: /llms.txt
 
 # ---------------------------------------------------------------------------
 # AI and answer-engine crawlers
@@ -44,6 +45,16 @@ Allow: /
 
 User-agent: Bingbot
 Allow: /
+
+# ---------------------------------------------------------------------------
+# llms.txt - the plain-text guide to eJukebox for AI assistants (llmstxt.org)
+# ---------------------------------------------------------------------------
+# LLMs.txt: https://ejukebox.com.au/llms.txt
+#
+# What eJukebox is, who it is for, plans and pricing, music licensing, the apps,
+# coverage across Australia and short answers to the questions venues ask.
+# robots.txt has no official llms.txt record (unlike Sitemap below), so the
+# address sits here as a comment, and the file is allowed for every crawler above.
 
 # ---------------------------------------------------------------------------
 # Sitemap
