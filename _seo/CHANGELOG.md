@@ -5,6 +5,21 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-15 - Navigation tidy-up and an app strip on the homepage
+
+- **Top navigation, six items instead of seven:** "How It Works" and "Features" overlapped
+  (both were lists of product pages), so they are one **Features** menu - Song Requests and
+  Automated Jukebox first, Behind the Scenes last. The apps get their own **eJukebox Apps**
+  menu (Download the Apps, the Request app, the Admin app), and "Plans & Pricing" is now
+  **Pricing**. Every page is still in the menus; the mobile menu matches.
+- **App strip on the homepage**, between the hero and the photo band: the official App Store
+  and Google Play badges for eJukebox Request, with links to both apps. On a 900px-tall
+  desktop screen it sits inside the first screen. It also separates the two photos.
+- **Homepage headings** are now plain search phrases ("Background music for pubs and
+  cafes", "Licensed music for pubs, bars and retail stores" and so on).
+
+---
+
 ## 2026-10-15 - Homepage photos; forms on the shared contact function
 
 - **Research banner is now a full-width photo band** - Marc's own pub image behind a dark

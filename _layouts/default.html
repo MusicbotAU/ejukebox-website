@@ -147,16 +147,17 @@
       <li class="mobile-nav-child"><a href="/irish-pub-music/"><i class="fas fa-guitar"></i> Irish Pub Music</a></li>
       {% endif %}
       {% endfor %}
-      <li class="mobile-nav-subheader">How It Works:</li>
-      <li><a href="/automated-jukebox-system.html"><i class="fas fa-cogs"></i> Automated Jukebox System</a></li>
-      <li><a href="/ejukebox-request-portal.html"><i class="fas fa-hand-pointer"></i> Song Requests</a></li>
-      <li><a href="/admin-app/"><i class="fas fa-mobile-screen"></i> eJukebox Admin App</a></li>
-      <li><a href="/ejukebox-apps.html"><i class="fas fa-download"></i> Download the Apps</a></li>
-      <li><a href="/behind-the-scenes.html"><i class="fas fa-screwdriver-wrench"></i> Behind the Scenes</a></li>
       <li class="mobile-nav-subheader">Features:</li>
+      <li><a href="/ejukebox-request-portal.html"><i class="fas fa-hand-pointer"></i> Song Requests</a></li>
+      <li><a href="/automated-jukebox-system.html"><i class="fas fa-cogs"></i> Automated Jukebox System</a></li>
       {% for f in site.data.features %}
       <li><a href="/{{ f.slug }}/"><i class="{% if f.brand %}fab{% else %}fas{% endif %} {{ f.icon }}"></i> {{ f.label }}</a></li>
       {% endfor %}
+      <li><a href="/behind-the-scenes.html"><i class="fas fa-screwdriver-wrench"></i> Behind the Scenes</a></li>
+      <li class="mobile-nav-subheader">eJukebox Apps:</li>
+      <li><a href="/ejukebox-apps.html"><i class="fas fa-download"></i> Download the Apps</a></li>
+      <li><a href="/ejukebox-apps.html#request"><i class="fas fa-music"></i> eJukebox Request app</a></li>
+      <li><a href="/admin-app/"><i class="fas fa-mobile-screen"></i> eJukebox Admin app</a></li>
       <li class="mobile-nav-subheader">Licensing &amp; Pricing:</li>
       <li><a href="/licensing.html"><i class="fas fa-certificate"></i> Music Licensing</a></li>
       <li><a href="/products.html"><i class="fas fa-box"></i> All Plans &amp; Pricing</a></li>
@@ -208,32 +209,36 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle">How It Works</a>
+            <a href="#" class="dropdown-toggle">Features</a>
             <ul class="dropdown-menu">
-              <li><a href="/automated-jukebox-system.html"><span class="dropdown-icon"><i class="fas fa-cogs"></i></span><span
-                    class="dropdown-text">Automated Jukebox System</span></a></li>
               <li><a href="/ejukebox-request-portal.html"><span class="dropdown-icon"><i class="fas fa-hand-pointer"></i></span><span
                     class="dropdown-text">Song Requests</span></a></li>
-              <li><a href="/admin-app/"><span class="dropdown-icon"><i class="fas fa-mobile-screen"></i></span><span
-                    class="dropdown-text">eJukebox Admin App</span></a></li>
-              <li><a href="/ejukebox-apps.html"><span class="dropdown-icon"><i class="fas fa-download"></i></span><span
-                    class="dropdown-text">Download the Apps</span></a></li>
+              <li><a href="/automated-jukebox-system.html"><span class="dropdown-icon"><i class="fas fa-cogs"></i></span><span
+                    class="dropdown-text">Automated Jukebox System</span></a></li>
+              {% for f in site.data.features %}
+              <li><a href="/{{ f.slug }}/"><span class="dropdown-icon"><i class="{% if f.brand %}fab{% else %}fas{% endif %} {{ f.icon }}"></i></span><span
+                    class="dropdown-text">{{ f.label }}</span></a></li>
+              {% endfor %}
+              <li class="dropdown-divider"></li>
               <li><a href="/behind-the-scenes.html"><span class="dropdown-icon"><i class="fas fa-screwdriver-wrench"></i></span><span
                     class="dropdown-text">Behind the Scenes</span></a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Features</a>
+            <a href="/ejukebox-apps.html" class="dropdown-toggle">eJukebox Apps</a>
             <ul class="dropdown-menu">
-              {% for f in site.data.features %}
-              <li><a href="/{{ f.slug }}/"><span class="dropdown-icon"><i class="{% if f.brand %}fab{% else %}fas{% endif %} {{ f.icon }}"></i></span><span
-                    class="dropdown-text">{{ f.label }}</span></a></li>
-              {% endfor %}
+              <li><a href="/ejukebox-apps.html"><span class="dropdown-icon"><i class="fas fa-download"></i></span><span
+                    class="dropdown-text">Download the Apps</span></a></li>
+              <li class="dropdown-divider"></li>
+              <li><a href="/ejukebox-apps.html#request"><span class="dropdown-icon"><i class="fas fa-music"></i></span><span
+                    class="dropdown-text">eJukebox Request app</span></a></li>
+              <li><a href="/admin-app/"><span class="dropdown-icon"><i class="fas fa-mobile-screen"></i></span><span
+                    class="dropdown-text">eJukebox Admin app</span></a></li>
             </ul>
           </li>
           <li><a href="/licensing.html">Music Licensing</a></li>
           <li class="dropdown">
-            <a href="/products.html" class="dropdown-toggle">Plans &amp; Pricing</a>
+            <a href="/products.html" class="dropdown-toggle">Pricing</a>
             <ul class="dropdown-menu">
               <li><a href="/products.html"><span class="dropdown-icon"><i class="fas fa-box"></i></span><span
                     class="dropdown-text">All Plans &amp; Pricing</span></a></li>

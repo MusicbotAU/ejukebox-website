@@ -16,7 +16,7 @@ hero:
 <style>
   /* homepage: the music-and-sales band and the four reasons, prefixed hs- */
   html { overflow-x:clip; } /* the band runs edge to edge - never let it cause a sideways scroll */
-  .hs-band { position:relative; width:100vw; margin:56px 0 70px calc(50% - 50vw); min-height:clamp(400px, 44vw, 580px);
+  .hs-band { position:relative; width:100vw; margin:0 0 70px calc(50% - 50vw); min-height:clamp(400px, 44vw, 580px);
     display:flex; align-items:center; overflow:hidden; isolation:isolate; background:#0b0b14; }
   #main-content .hs-band > img, #main-content .hs-card > img { position:absolute; inset:0; z-index:0; width:100%; height:100%; max-width:none;
     object-fit:cover; margin:0 !important; border-radius:0 !important; box-shadow:none !important; transform:none; transition:transform .8s ease; }
@@ -55,7 +55,30 @@ hero:
     .hs-cards { grid-template-columns:1fr; }
   }
   @media (prefers-reduced-motion:reduce) { #main-content .hs-card > img { transition:none; } }
+  /* the app strip between the hero and the band: real store badges as a trust signal */
+  .hs-apps { position:relative; width:100vw; margin:0 0 0 calc(50% - 50vw); padding:16px 0;
+    background:linear-gradient(90deg, #0d0d1a, #17172d 50%, #0d0d1a); border-top:1px solid rgba(255,255,255,.07); border-bottom:1px solid rgba(255,255,255,.07); }
+  .hs-apps-in { max-width:1200px; margin:0 auto; padding:0 24px; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px 28px; }
+  #main-content .hs-apps p { margin:0; font-size:.98rem; line-height:1.5; text-align:center; color:var(--ejm-soft) !important; }
+  #main-content .hs-apps p strong { color:#fff; }
+  #main-content .hs-apps p a { color:var(--ejm-ink) !important; text-decoration:underline; text-underline-offset:3px; text-decoration-color:rgba(255,255,255,.35); }
+  .hs-apps-badges { display:flex; align-items:center; gap:12px; }
+  .hs-apps-badges a { display:inline-block; line-height:0; border-radius:8px; transition:transform .2s ease, box-shadow .2s ease; }
+  .hs-apps-badges a:hover { transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.45); }
+  .hs-apps-badges a.hs-as { background:#fff; border-radius:6px; } /* the badge PNG's lettering is transparent */
+  #main-content .hs-apps-badges img { display:block; width:auto; height:40px; margin:0 !important; border-radius:0 !important; box-shadow:none !important; transform:none !important; }
+  #main-content .hs-apps-badges a.hs-gp img { height:44px; } /* Google's PNG carries its own padding */
 </style>
+
+<div class="hs-apps">
+  <div class="hs-apps-in">
+    <p><strong>Free apps for iPhone and Android</strong> - <a href="/ejukebox-apps.html#request">eJukebox Request</a> for customers, <a href="/admin-app/">eJukebox Admin</a> for staff.</p>
+    <div class="hs-apps-badges">
+      <a class="hs-as" href="https://apps.apple.com/au/app/ejukebox-request/id6804389497" target="_blank" rel="noopener"><img src="/blobs/AppleAppStoreLogo.png" alt="Download eJukebox Request on the App Store" width="132" height="40"></a>
+      <a class="hs-gp" href="https://play.google.com/store/apps/details?id=au.com.ejukebox.request" target="_blank" rel="noopener"><img src="/blobs/GooglePlayStoreLogo.png" alt="Get eJukebox Request on Google Play" width="140" height="44"></a>
+    </div>
+  </div>
+</div>
 
 <section class="hs-band" aria-labelledby="hs-band-title">
   <img src="/assets/images/home/music-for-venues-increase-sales-ejukebox-1280.webp" srcset="/assets/images/home/music-for-venues-increase-sales-ejukebox-768.webp 768w, /assets/images/home/music-for-venues-increase-sales-ejukebox-1280.webp 1280w, /assets/images/home/music-for-venues-increase-sales-ejukebox-1920.webp 1920w" sizes="100vw" width="1920" height="1080" loading="lazy" decoding="async" alt="Music for venues that increases sales - a pub bar with stools, screens and speakers ready for eJukebox background music">
