@@ -19,36 +19,23 @@ On 15 Sep 2026 both pub scenarios gained the current feature list (Core features
 plus add-ons, labelled "included in Complete"), but the price they sit under is
 still the stale Full Package figure.
 
-**Venue FAQs.** Only `music-for-pubs-bars` and `irish-pub-music` have a `faqs:`
-block. Missing on cafes, gyms, hotels, medical, nightclubs, restaurants, retail
-and salons-spas. The `venue` layout renders `faqs:` visibly *and* `schema.html`
-turns it into `FAQPage`, so writing them improves the page and the structured
-data at once. Needs sign-off on wording; must respect the OneMusic claim rules.
+**Venue FAQs - done Thu 15 Oct 2026.** Every venue page now has a `faqs:` block, rendered
+visibly and as `FAQPage`, within the OneMusic claim rules. They went live without a separate
+wording sign-off; Marc is reading them over (A-List).
 
-**Which domain owns functions, events and screens.** `ejukebox.tv/functions/`
-and `/functions-events/` sell the same product to the same audience with the same
-guest-photo-wall pitch; `ejukebox.tv/` and `/in-venue-screens/` duplicate each
-other too. All three domains are self-canonical and the main site links to
-neither satellite, so none of its authority reaches the sites meant to carry
-these keywords. Two workable shapes, pick one and apply it consistently:
-
-- **Satellites as landing pages.** They stay 3-4 pages, sales-led, and
-  cross-canonical to the `.com.au` equivalent wherever a page duplicates it.
-  Consolidates authority on one domain. Safest for rankings.
-- **Satellites as their own properties.** `.tv` owns every screen and photo-wall
-  query, `.music` owns every channel and licensing query, and `.com.au` cuts
-  those pages back to a short overview that links out. Cleanest topically, but it
-  means deliberately weakening pages on `.com.au` that already rank.
-
-What cannot hold is the current state. This blocks the functions/events content
-in `functions-events.md`, which is otherwise ready to brief. The interlinking fix
-(`/in-venue-screens/` and `/functions-events/` -> the `.tv` equivalents) is worth
-doing either way and does not need the decision.
+**Which domain owns functions, events and screens - decided Thu 15 Oct 2026: ejukebox.com.au**
+(Marc). That is the "satellites as landing pages" shape: authority consolidates here, and
+`/functions-events/` and `/in-venue-screens/` are now in the main menu as Jukebox for
+Functions & Events and Photo Wall & Screens. Left to do, on the satellite (Marc looks after
+it): point `ejukebox.tv/functions/` at `/functions-events/` and `ejukebox.tv/` at
+`/in-venue-screens/`, by 301 or cross-domain canonical. That unblocks the content plan in
+`functions-events.md`.
 
 ## Waiting on information
 
-**`same_as:` is empty** in `_data/org.yml`. It picks up Facebook and Twitter from
-`_config.yml` automatically. Needs LinkedIn, YouTube, Instagram etc.
+**`same_as:` has the App Store and Google Play developer pages and the ABN record** (Thu 15 Oct
+2026), plus Facebook and X from `_config.yml`. Still needs LinkedIn, YouTube, Instagram and the
+Google Business Profile - waiting on Marc's links (A-List, question 1).
 
 **`llms.txt` is missing the NAP.** It has the phone but not the address
 (218 Buffalo Road, Ryde NSW 2112) or the founding year (2013). The entity layer

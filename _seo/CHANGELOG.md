@@ -5,6 +5,31 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-15 - Top menu: Jukebox Features, and the buttons beside the logo
+
+Marc's call. The menu now reads **Music for Your Venue · Jukebox Features · Pricing · Music
+Licensing · eJukebox Apps**. "Jukebox" is the product's identity and the big search term
+(~3,600/mo); it now heads the features menu on every page, and the label links to the
+Digital Jukebox page.
+
+- **Jukebox Features** lists Digital Jukebox, Song Requests, Jukebox for Functions & Events,
+  Photo Wall & Screens, Voice & Announcements, Live Microphone, Spotify Integration and
+  Behind the Scenes. The footer column follows ("Jukebox features").
+- **Why eJukebox** left the top row. Why Choose Us, Testimonials, Listen to Demos and Contact
+  keep their links in the footer and the mobile menu.
+- **Download Apps, Contact and Free Trial** sit right-aligned on the logo row. Once the page
+  scrolls past the logo, Contact and Free Trial ride in the sticky bar (all three plus the
+  menu would wrap it); Free Trial alone below 1200px, none below 1100px.
+- **The functions page is "Jukebox Your Event"** - new title, H1 and lead; the photo wall,
+  logo branding and sharing to Instagram and Facebook in the first lines.
+- **"Jukebox hire" is not in the menu.** ~1,300/mo search it, but they want a machine
+  delivered to a party. Marc wants a one-off hire service; it gets a page once its price and
+  inclusions are decided, not before.
+- **ejukebox.com.au owns functions and the photo wall** (Marc's decision, closing the open
+  question in open-items.md). ejukebox.tv's matching pages should point here.
+
+---
+
 ## 2026-10-15 - Spotify no longer singled out; clubs licensing made exact
 
 Marc wasn't comfortable with copy that singles Spotify out ("why personal Spotify costs a

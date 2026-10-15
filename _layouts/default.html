@@ -117,6 +117,29 @@
       .engage-col { padding: 0 4px; border-left: 0; }
       .engage-trial { padding: 24px 22px; }
     }
+      /* ---- Header buttons (Marc, 15 Oct 2026). Download Apps, Contact and Free Trial sit
+       right-aligned on the logo row. Once the page scrolls past the logo, Contact and Free
+       Trial ride in the sticky bar - all three plus the menu would wrap the 1140px bar.
+       The theme forces link colours, so these answer with !important. */
+    .logo-section .inner { position: relative; }
+    .head-ctas { display: flex; align-items: center; gap: 10px; }
+    .logo-section .head-ctas { position: absolute; right: 30px; top: 50%; transform: translateY(-50%); }
+    .head-cta { display: inline-flex; align-items: center; padding: 9px 18px; border-radius: 999px; font-size: 14px;
+      font-weight: 600; line-height: 1; white-space: nowrap; text-decoration: none !important; color: #e2e8f0 !important;
+      transition: background-color .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+    .head-cta-ghost { border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.03); }
+    .head-cta-ghost:hover { border-color: rgba(129,140,248,.6); background: rgba(99,102,241,.15); color: #fff !important; }
+    .head-cta-trial { color: #fff !important; background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      animation: trial-btn-pulse 2s ease-in-out infinite; }
+    .head-cta-trial:hover { animation: none; transform: translateY(-1px); box-shadow: 0 4px 20px rgba(16,185,129,.5); }
+    header#sticky-nav .head-ctas-compact { display: none; flex-shrink: 0; }
+    header#sticky-nav.scrolled .head-ctas-compact { display: flex; }
+    /* Jukebox Features is wider than the theme's 240px dropdown: keep every label on one line */
+    .desktop-nav .dropdown-menu.dropdown-menu-wide { min-width: 300px; }
+    @media (max-width: 1199px) { header#sticky-nav .head-ctas-compact .head-cta-ghost { display: none; } }
+    @media (max-width: 1199px) { .logo-section .head-cta-ghost { display: none; } }
+    @media (max-width: 1100px) { header#sticky-nav.scrolled .head-ctas-compact { display: none; } }
+    @media (max-width: 767px) { .logo-section .head-ctas { display: none; } }
   </style>
 </head>
 
@@ -147,21 +170,21 @@
       <li class="mobile-nav-child"><a href="/irish-pub-music/"><i class="fas fa-guitar"></i> Irish Pub Music</a></li>
       {% endif %}
       {% endfor %}
-      <li class="mobile-nav-subheader">Features:</li>
-      <li><a href="/ejukebox-request-portal.html"><i class="fas fa-hand-pointer"></i> Song Requests</a></li>
+      <li class="mobile-nav-subheader">Jukebox Features:</li>
       <li><a href="/automated-jukebox-system.html"><i class="fas fa-cogs"></i> Digital Jukebox</a></li>
+      <li><a href="/ejukebox-request-portal.html"><i class="fas fa-hand-pointer"></i> Song Requests</a></li>
       {% for f in site.data.features %}
       <li><a href="/{{ f.slug }}/"><i class="{% if f.brand %}fab{% else %}fas{% endif %} {{ f.icon }}"></i> {{ f.label }}</a></li>
       {% endfor %}
       <li><a href="/behind-the-scenes.html"><i class="fas fa-screwdriver-wrench"></i> Behind the Scenes</a></li>
+      <li class="mobile-nav-subheader">Pricing &amp; Licensing:</li>
+      <li><a href="/products.html"><i class="fas fa-box"></i> All Plans &amp; Pricing</a></li>
+      <li><a href="/custom-radio.html"><i class="fas fa-broadcast-tower"></i> Custom Branded Radio</a></li>
+      <li><a href="/licensing.html"><i class="fas fa-certificate"></i> Music Licensing</a></li>
       <li class="mobile-nav-subheader">eJukebox Apps:</li>
       <li><a href="/ejukebox-apps.html"><i class="fas fa-download"></i> Download the Apps</a></li>
       <li><a href="/ejukebox-apps.html#request"><i class="fas fa-music"></i> eJukebox Request app</a></li>
       <li><a href="/admin-app/"><i class="fas fa-mobile-screen"></i> eJukebox Admin app</a></li>
-      <li class="mobile-nav-subheader">Licensing &amp; Pricing:</li>
-      <li><a href="/licensing.html"><i class="fas fa-certificate"></i> Music Licensing</a></li>
-      <li><a href="/products.html"><i class="fas fa-box"></i> All Plans &amp; Pricing</a></li>
-      <li><a href="/custom-radio.html"><i class="fas fa-broadcast-tower"></i> Custom Branded Radio</a></li>
       <li class="mobile-nav-subheader">Why eJukebox:</li>
       <li><a href="/why-us2.html"><i class="fas fa-star"></i> Why Choose Us</a></li>
       <li><a href="/people-love-ejukebox.html"><i class="fas fa-heart"></i> Testimonials</a></li>
@@ -180,6 +203,11 @@
       <a href="/index.html" class="logo-link">
         <img width="280" src="/blobs/ejukebox-logo.png" alt="eJukebox Logo" />
       </a>
+      <div class="head-ctas" aria-label="Get started">
+        <a href="/ejukebox-apps.html" class="head-cta head-cta-ghost">Download Apps</a>
+        <a href="/contact/" class="head-cta head-cta-ghost">Contact</a>
+        <a href="/free-trial.html" class="head-cta head-cta-trial">Free Trial</a>
+      </div>
     </div>
   </div>
 
@@ -209,12 +237,12 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Features</a>
-            <ul class="dropdown-menu">
-              <li><a href="/ejukebox-request-portal.html"><span class="dropdown-icon"><i class="fas fa-hand-pointer"></i></span><span
-                    class="dropdown-text">Song Requests</span></a></li>
+            <a href="/automated-jukebox-system.html" class="dropdown-toggle">Jukebox Features</a>
+            <ul class="dropdown-menu dropdown-menu-wide">
               <li><a href="/automated-jukebox-system.html"><span class="dropdown-icon"><i class="fas fa-cogs"></i></span><span
                     class="dropdown-text">Digital Jukebox</span></a></li>
+              <li><a href="/ejukebox-request-portal.html"><span class="dropdown-icon"><i class="fas fa-hand-pointer"></i></span><span
+                    class="dropdown-text">Song Requests</span></a></li>
               {% for f in site.data.features %}
               <li><a href="/{{ f.slug }}/"><span class="dropdown-icon"><i class="{% if f.brand %}fab{% else %}fas{% endif %} {{ f.icon }}"></i></span><span
                     class="dropdown-text">{{ f.label }}</span></a></li>
@@ -224,6 +252,17 @@
                     class="dropdown-text">Behind the Scenes</span></a></li>
             </ul>
           </li>
+          <li class="dropdown">
+            <a href="/products.html" class="dropdown-toggle">Pricing</a>
+            <ul class="dropdown-menu">
+              <li><a href="/products.html"><span class="dropdown-icon"><i class="fas fa-box"></i></span><span
+                    class="dropdown-text">All Plans &amp; Pricing</span></a></li>
+              <li class="dropdown-divider"></li>
+              <li><a href="/custom-radio.html"><span class="dropdown-icon"><i class="fas fa-broadcast-tower"></i></span><span
+                    class="dropdown-text">Custom Radio</span></a></li>
+            </ul>
+          </li>
+          <li><a href="/licensing.html">Music Licensing</a></li>
           <li class="dropdown">
             <a href="/ejukebox-apps.html" class="dropdown-toggle">eJukebox Apps</a>
             <ul class="dropdown-menu">
@@ -236,34 +275,12 @@
                     class="dropdown-text">eJukebox Admin app</span></a></li>
             </ul>
           </li>
-          <li><a href="/licensing.html">Music Licensing</a></li>
-          <li class="dropdown">
-            <a href="/products.html" class="dropdown-toggle">Pricing</a>
-            <ul class="dropdown-menu">
-              <li><a href="/products.html"><span class="dropdown-icon"><i class="fas fa-box"></i></span><span
-                    class="dropdown-text">All Plans &amp; Pricing</span></a></li>
-              <li class="dropdown-divider"></li>
-              <li><a href="/custom-radio.html"><span class="dropdown-icon"><i class="fas fa-broadcast-tower"></i></span><span
-                    class="dropdown-text">Custom Radio</span></a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="/why-us2.html" class="dropdown-toggle">Why eJukebox</a>
-            <ul class="dropdown-menu">
-              <li><a href="/why-us2.html"><span class="dropdown-icon"><i class="fas fa-star"></i></span><span
-                    class="dropdown-text">Why Choose Us</span></a></li>
-              <li><a href="/people-love-ejukebox.html"><span class="dropdown-icon"><i class="fas fa-heart"></i></span><span
-                    class="dropdown-text">Testimonials</span></a></li>
-              <li><a href="/stream-us.html"><span class="dropdown-icon"><i class="fas fa-play-circle"></i></span><span
-                    class="dropdown-text">Listen to Demos</span></a></li>
-              <li class="dropdown-divider"></li>
-              <li><a href="/contact/"><span class="dropdown-icon"><i class="fas fa-comments"></i></span><span
-                    class="dropdown-text">Contact Us</span></a></li>
-            </ul>
-          </li>
-          <li><a href="/free-trial.html" class="nav-cta trial-nav-btn">Free Trial</a></li>
         </ul>
       </nav>
+      <div class="head-ctas head-ctas-compact">
+        <a href="/contact/" class="head-cta head-cta-ghost">Contact</a>
+        <a href="/free-trial.html" class="head-cta head-cta-trial">Free Trial</a>
+      </div>
     </div>
   </header>
 
@@ -326,7 +343,7 @@
           </ul>
         </div>
         <div class="ej-footer__col">
-          <h3>How it works &amp; features</h3>
+          <h3>Jukebox features</h3>
           <ul>
             <li><a href="/automated-jukebox-system.html">Digital Jukebox</a></li>
             <li><a href="/ejukebox-request-portal.html">Song Requests</a></li>

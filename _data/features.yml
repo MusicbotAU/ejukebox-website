@@ -1,5 +1,12 @@
-# Master list of feature landing pages. Feeds the header "Features" dropdown,
+# Master list of feature landing pages. Feeds the header "Jukebox Features" dropdown,
 # the mobile menu, and the footer. Edit here once and every menu updates.
+# Order matters: it is the dropdown order after Digital Jukebox and Song Requests.
+- slug: functions-events
+  label: Jukebox for Functions & Events
+  icon: fa-champagne-glasses
+- slug: in-venue-screens
+  label: Photo Wall & Screens
+  icon: fa-images
 - slug: voice-announcements
   label: Voice & Announcements
   icon: fa-bullhorn
@@ -10,9 +17,3 @@
   label: Spotify Integration
   icon: fa-spotify
   brand: true
-- slug: in-venue-screens
-  label: In-Venue Screens
-  icon: fa-tv
-- slug: functions-events
-  label: Functions & Events
-  icon: fa-champagne-glasses
