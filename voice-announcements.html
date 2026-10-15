@@ -6,6 +6,25 @@ description: Typed, recorded and scheduled announcements and customer dedication
 schema_service: Voice and typed announcements for pubs and clubs
 service_type: In-venue voice announcement and text to speech service
 last_reviewed: 2026-10-13
+faqs:
+  - q: >-
+      Does it talk over the music?
+    a: >-
+      No. Announcements and dedications drop in cleanly between songs. The one exception is <a href="/live-microphone/">Live Microphone</a>, where the music ducks while you speak.
+  - q: >-
+      What stops a customer saying something rude?
+    a: >-
+      Every dedication is transcribed and checked for bad language in real time, and anything that is not clean is rejected on the spot.
+  - q: >-
+      Do we need special equipment?
+    a: >-
+      No. Staff use their own phones through the eJukebox Admin app, and everything plays through the speakers you already have.
+  - q: >-
+      What is included?
+    a: >-
+      Recording your own announcements comes with Core. Type a Message, Scheduled Announcements and Voice Dedications are add-ons, and Complete includes them all. <a href="/products.html">See plans &amp; pricing</a>.
+schema_apps: [admin]
+schema_about: [public-address, speech-synthesis, voice-over]
 ---
 
 {% include feature-styles.html %}
@@ -105,10 +124,7 @@ last_reviewed: 2026-10-13
   <h2>What venues ask first</h2>
 </div>
 <div class="ft-faq">
-  <div class="ft-qa"><h3>Does it talk over the music?</h3><p>No. Announcements and dedications drop in cleanly between songs. The one exception is <a href="/live-microphone/">Live Microphone</a>, where the music ducks while you speak.</p></div>
-  <div class="ft-qa"><h3>What stops a customer saying something rude?</h3><p>Every dedication is transcribed and checked for bad language in real time, and anything that is not clean is rejected on the spot.</p></div>
-  <div class="ft-qa"><h3>Do we need special equipment?</h3><p>No. Staff use their own phones through the eJukebox Admin app, and everything plays through the speakers you already have.</p></div>
-  <div class="ft-qa"><h3>What is included?</h3><p>Recording your own announcements comes with Core. Type a Message, Scheduled Announcements and Voice Dedications are add-ons, and Complete includes them all. <a href="/products.html">See plans &amp; pricing</a>.</p></div>
+  {% include faq-list.html prefix="ft" %}
 </div>
 
 <div class="try-demo">

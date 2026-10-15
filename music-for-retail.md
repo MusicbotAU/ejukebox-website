@@ -19,4 +19,24 @@ benefits:
   - icon: fa-certificate
     title: Fully licensed
     text: As a commercial background music supplier, eJukebox puts your shop on a lower OneMusic tier than a personal streaming account would.
+faqs:
+  - q: >-
+      Can a shop play Spotify?
+    a: >-
+      No. Spotify is licensed for personal use only, and its terms rule out playing it in a store. Personal streaming also puts a shop on OneMusic's top retail tier; with a commercial supplier like eJukebox, your shop sits on a lower one. <a href="/licensing.html">How music licensing works</a>.
+  - q: >-
+      How much does in-store music cost?
+    a: >-
+      Solo is ${solo} a month ex GST for one curated channel in one area, streamed to a device you already own - nothing to install. Chains and shopping centres can have their own custom branded radio station, quoted to suit. <a href="/products.html">See plans &amp; pricing</a>.
+  - q: >-
+      Can we add our own promotions?
+    a: >-
+      Yes. Custom branded radio puts your own voice announcements and promotions into a station built around your store, and they can run nationally, by region or store by store. <a href="/custom-radio.html">See custom radio</a>.
+  - q: >-
+      Can every store play the same music?
+    a: >-
+      Yes. A custom station plays the same programming in every store, so your brand sounds the same wherever a customer walks in.
+last_reviewed: 2026-10-15
+faq_title: In-store music questions, answered
+schema_about: [retail, retail-design, background-music, sensory-branding]
 ---

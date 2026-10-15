@@ -4,6 +4,7 @@ title: Listen to Free eJukebox Demo Streams
 description: Listen to eJukebox demo streams free. Hear the Hits, Smooth, Rock and Country channels for pubs, clubs and cafes. Test before you buy.
 schema_service: Demo music streams for Australian venues
 service_type: Demonstration streams of curated commercial music channels
+schema_about: [internet-radio, streaming-media]
 ---
 
 <div class="stream-hero">

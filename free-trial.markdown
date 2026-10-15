@@ -27,6 +27,7 @@ howto:
     - name: Ask about the 30-day in-venue trial
       text: On the Core and Complete plans, eJukebox can install the full system with hardware and setup covered and run it live in your venue free for 30 days.
       url: /contact/
+schema_about: [streaming-media, background-music]
 ---
 
 <div class="trial-page-hero">

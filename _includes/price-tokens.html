@@ -1,0 +1,23 @@
+{%- comment -%}
+  Fills price tokens in a piece of front-matter copy from _data/pricing.yml, so an
+  FAQ answer quotes the live price and can never drift from the pricing page.
+
+    {solo} {core} {complete}   the monthly plan prices, ex GST
+    {zone}                     each extra zone, monthly ex GST
+    {voice_suite}              the Voice Suite bundle, monthly ex GST
+
+  Write the dollar sign in the copy:  "Core is ${core} a month ex GST"
+  Usage:  {% include price-tokens.html text=f.a %}
+  Used by faq-list.html, _layouts/venue.html and the FAQPage node in schema.html.
+{%- endcomment -%}
+{%- assign pt_tiers = site.data.pricing.tiers -%}
+{%- assign pt_solo = pt_tiers | where: "id", "solo" | first -%}
+{%- assign pt_core = pt_tiers | where: "id", "core" | first -%}
+{%- assign pt_complete = pt_tiers | where: "id", "complete" | first -%}
+{%- assign pt_suite = site.data.pricing.bundles | where: "id", "voice-suite" | first -%}
+{%- comment -%} The replaces live in assign tags, not in an output tag: Liquid ends a
+    {{ }} output tag at the first "}" it sees, even inside a quoted string. {%- endcomment -%}
+{%- assign pt_out = include.text | replace: '{solo}', pt_solo.retail | replace: '{core}', pt_core.retail -%}
+{%- assign pt_out = pt_out | replace: '{complete}', pt_complete.retail | replace: '{zone}', site.data.pricing.zones.extra_retail -%}
+{%- assign pt_out = pt_out | replace: '{voice_suite}', pt_suite.retail -%}
+{{- pt_out -}}

@@ -19,4 +19,24 @@ benefits:
   - icon: fa-certificate
     title: A lower licence tier
     text: As a commercial background music supplier, eJukebox puts your salon on a lower OneMusic tier than a personal streaming account would.
+faqs:
+  - q: >-
+      Can a salon play Spotify?
+    a: >-
+      No. A personal Spotify account is licensed for personal use only, and its terms rule out playing it in a business. eJukebox is licensed for business use. Your salon still holds its own OneMusic licence, in your name.
+  - q: >-
+      What does music cost for a small salon?
+    a: >-
+      Solo is ${solo} a month ex GST: one curated channel for one area, streamed to a device you already own, with nothing to install. <a href="/products.html">See plans &amp; pricing</a>.
+  - q: >-
+      Is the music relaxing enough for treatments?
+    a: >-
+      Choose the channel that suits the room. Every channel is professionally curated, ad-free and talk-free, with no explicit lyrics, and volume-levelled so nothing jumps out mid-treatment.
+  - q: >-
+      Can we change the music between treatments?
+    a: >-
+      Yes. Set it once and let it flow, or switch from your phone whenever the mood needs to change.
+last_reviewed: 2026-10-15
+faq_title: Salon and spa music questions, answered
+schema_about: [beauty-salon, day-spa, background-music]
 ---

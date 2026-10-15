@@ -51,6 +51,7 @@ faqs:
     a: That is OneMusic's call, not ours. Fees depend on your type of business and how you use music, and OneMusic publishes and updates its rates every year. Check onemusic.com.au or ask OneMusic directly, and we are happy to help you work out what to ask.
   - q: Do on-hold music and music on my website need a licence too?
     a: Yes. Both are separate uses of music that OneMusic licenses. Check with OneMusic what applies to your business.
+schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, copyright-au]
 ---
 
 <style>

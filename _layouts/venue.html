@@ -71,10 +71,12 @@ layout: default
 
   {% if page.faqs %}
   <section class="venue-block venue-faq">
-    <h2>Frequently asked questions</h2>
+    <h2>{{ page.faq_title | default: 'Frequently asked questions' }}</h2>
+    {%- comment -%} The same `faqs:` list feeds the FAQPage JSON-LD in schema.html, and
+        both run answers through price-tokens.html, so ${core} etc. stay live. {%- endcomment %}
     {% for f in page.faqs %}
     <h3>{{ f.q }}</h3>
-    <p>{{ f.a }}</p>
+    <p>{% include price-tokens.html text=f.a %}</p>
     {% endfor %}
   </section>
   {% endif %}

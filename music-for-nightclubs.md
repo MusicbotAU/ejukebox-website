@@ -19,4 +19,24 @@ benefits:
   - icon: fa-certificate
     title: Always licensed
     text: A personal Spotify account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
+faqs:
+  - q: >-
+      Can the crowd request songs?
+    a: >-
+      Yes, if you want them to. Guests scan a QR code and request from their phone or the free eJukebox Request app, and you keep final say - choose what can be requested, set per-person limits, and hold or remove anything.
+  - q: >-
+      Can we turn requests off for a DJ or a band?
+    a: >-
+      Any time, and back on when they finish. Staff can also skip, hold or reorder songs and switch channels from the <a href="/admin-app/">eJukebox Admin app</a> on their own phones.
+  - q: >-
+      Can we talk over the music?
+    a: >-
+      Yes. Live Microphone turns any staff phone into a PA mic and ducks the music the moment you speak, and Voice Dedications let guests record a shout-out that plays right before their song and blends into the intro.
+  - q: >-
+      Is the music licensed for a club?
+    a: >-
+      The music is licensed for business use, and with eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, as there would be with a personal streaming account. Your venue still holds its own OneMusic licence.
+last_reviewed: 2026-10-15
+faq_title: Club and nightclub music questions, answered
+schema_about: [nightclub, disc-jockey, dj-mix]
 ---

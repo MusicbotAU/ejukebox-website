@@ -3,12 +3,35 @@ layout: default
 permalink: /admin-app/
 title: "eJukebox Admin App: Run the Room From Your Phone"
 description: The free eJukebox Admin app puts your venue's music, requests, announcements, screens and team in your pocket. Run the night without leaving the floor.
-schema_app:
-  name: eJukebox Admin
-  description: The staff app for venues running eJukebox, on iPhone and Android. See what is playing, what is next and whether the player is healthy; skip, hold and reorder requests; switch channels; ask in plain English; talk to the room; run the screens; and look after the team.
-  category: BusinessApplication
-  os: [Android, iOS]
 last_reviewed: 2026-10-09
+faqs:
+  - q: >-
+      Who is eJukebox Admin for?
+    a: >-
+      Managers and staff at venues running eJukebox. It needs an eJukebox venue and a staff sign-in from that venue, so it is a tool for your team, not your customers.
+  - q: >-
+      Do our customers need an app to request songs?
+    a: >-
+      No. Customers can scan the code and request from their phone's browser, with nothing to download, or use the free <a href="/ejukebox-apps.html#request">eJukebox Request</a> app if they prefer. eJukebox Admin is the other side of that: the controls for your team.
+  - q: >-
+      What does it cost?
+    a: >-
+      The app itself is free. What it can do follows your eJukebox plan: song requests, reordering and recorded announcements come with Core, while the extra voice and screen features are add-ons, or all included in Complete. <a href="/products.html">See plans &amp; pricing</a>.
+  - q: >-
+      Which phones does it run on?
+    a: >-
+      iPhone, on iOS 15.1 or later, and Android phones.
+  - q: >-
+      Why can't I find it by searching the App Store?
+    a: >-
+      The iPhone app is distributed straight to eJukebox venues rather than listed in App Store search. Use the App Store button on this page and it opens directly. On Android it is on Google Play as normal.
+  - q: >-
+      Can everyone on the team have their own login?
+    a: >-
+      Yes. Staff can sign in with the venue password, or with their own Google, Microsoft or Apple account once the venue has approved them. You choose who is allowed to manage the team.
+schema_apps: [admin, request]
+schema_about: [mobile-app]
+schema_main: app-admin
 ---
 
 <style>
@@ -245,30 +268,7 @@ last_reviewed: 2026-10-09
   <h2>The questions everyone asks first</h2>
 </div>
 <div class="ap-faq">
-  <div class="ap-qa">
-    <h3>Who is eJukebox Admin for?</h3>
-    <p>Managers and staff at venues running eJukebox. It needs an eJukebox venue and a staff sign-in from that venue, so it is a tool for your team, not your customers.</p>
-  </div>
-  <div class="ap-qa">
-    <h3>Do our customers need an app to request songs?</h3>
-    <p>No. Customers can scan the code and request from their phone's browser, with nothing to download, or use the free <a href="/ejukebox-apps.html#request">eJukebox Request</a> app if they prefer. eJukebox Admin is the other side of that: the controls for your team.</p>
-  </div>
-  <div class="ap-qa">
-    <h3>What does it cost?</h3>
-    <p>The app itself is free. What it can do follows your eJukebox plan: song requests, reordering and recorded announcements come with Core, while the extra voice and screen features are add-ons, or all included in Complete. <a href="/products.html">See plans &amp; pricing</a>.</p>
-  </div>
-  <div class="ap-qa">
-    <h3>Which phones does it run on?</h3>
-    <p>iPhone, on iOS 15.1 or later, and Android phones.</p>
-  </div>
-  <div class="ap-qa">
-    <h3>Why can't I find it by searching the App Store?</h3>
-    <p>The iPhone app is distributed straight to eJukebox venues rather than listed in App Store search. Use the App Store button on this page and it opens directly. On Android it is on Google Play as normal.</p>
-  </div>
-  <div class="ap-qa">
-    <h3>Can everyone on the team have their own login?</h3>
-    <p>Yes. Staff can sign in with the venue password, or with their own Google, Microsoft or Apple account once the venue has approved them. You choose who is allowed to manage the team.</p>
-  </div>
+  {% include faq-list.html prefix="ap" %}
 </div>
 
 <div class="ap-get" id="download">

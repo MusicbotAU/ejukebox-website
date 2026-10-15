@@ -6,7 +6,8 @@ schema_service: Song request portal for pubs, clubs and functions
 service_type: Interactive song request system for venues
 last_reviewed: 2026-10-13
 schema_app:
-  name: eJukebox Song Requests
+  type: WebApplication
+  name: eJukebox song requests in the browser
   description: Customers request songs at an eJukebox venue from their own phone, through the venue's QR code in any phone browser or the free eJukebox Request app. They see what is playing and what is coming up, search, preview and request songs, while the venue decides what can be requested and how often.
   category: BusinessApplication
   os: Any
@@ -26,6 +27,29 @@ howto:
       text: Tap Request. The venue sets the rules behind the scenes - which songs can be requested and how many each person can request every hour.
     - name: Watch it come up
       text: The coming-up list shows the real playing order, so you can see where your song sits.
+faqs:
+  - q: >-
+      Do customers need to download an app?
+    a: >-
+      No. The QR code opens your venue's request page in any phone's browser. Customers who like apps can use the free <a href="/ejukebox-apps.html#request">eJukebox Request</a> app instead.
+  - q: >-
+      Can someone request something inappropriate?
+    a: >-
+      The library is licensed and family-friendly, with no explicit lyrics. You also choose whether requests come from the whole library or just the current channel, and you can remove anything from the queue.
+  - q: >-
+      Can one table hog the music?
+    a: >-
+      Not if you do not want them to. Set how many songs each person can request every hour.
+  - q: >-
+      Can people request from home?
+    a: >-
+      In the eJukebox Request app, requests are only accepted while the customer is at the venue. From anywhere else they can see what is playing, but not request.
+  - q: >-
+      What does it cost?
+    a: >-
+      Song requests, previews and Help me pick come with Core and Complete. The extras above are add-ons. <a href="/products.html">See plans &amp; pricing</a>.
+schema_apps: [request, admin]
+schema_about: [jukebox, qr-code]
 ---
 
 <style>
@@ -216,11 +240,7 @@ howto:
   <h2>What venues ask first</h2>
 </div>
 <div class="sr-faq">
-  <div class="sr-qa"><h3>Do customers need to download an app?</h3><p>No. The QR code opens your venue's request page in any phone's browser. Customers who like apps can use the free <a href="/ejukebox-apps.html#request">eJukebox Request</a> app instead.</p></div>
-  <div class="sr-qa"><h3>Can someone request something inappropriate?</h3><p>The library is licensed and family-friendly, with no explicit lyrics. You also choose whether requests come from the whole library or just the current channel, and you can remove anything from the queue.</p></div>
-  <div class="sr-qa"><h3>Can one table hog the music?</h3><p>Not if you do not want them to. Set how many songs each person can request every hour.</p></div>
-  <div class="sr-qa"><h3>Can people request from home?</h3><p>In the eJukebox Request app, requests are only accepted while the customer is at the venue. From anywhere else they can see what is playing, but not request.</p></div>
-  <div class="sr-qa"><h3>What does it cost?</h3><p>Song requests, previews and Help me pick come with Core and Complete. The extras above are add-ons. <a href="/products.html">See plans &amp; pricing</a>.</p></div>
+  {% include faq-list.html prefix="sr" %}
 </div>
 
 <div class="try-demo">

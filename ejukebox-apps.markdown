@@ -2,12 +2,31 @@
 layout: default
 title: eJukebox Apps for Android & iOS
 description: The eJukebox apps for iPhone and Android - Request puts the jukebox in your customers' hands, Admin lets your staff run the room from their phone.
-schema_app:
-  name: eJukebox Apps
-  description: The eJukebox apps for iPhone and Android. eJukebox Request lets customers see what is playing and request songs at the venue; eJukebox Admin lets staff run the music, announcements, screens and team.
-  category: BusinessApplication
-  os: [Android, iOS]
 last_reviewed: 2026-10-13
+faqs:
+  - q: >-
+      I'm a customer at an eJukebox venue
+    a: >-
+      Get <strong>eJukebox Request</strong>. Open it at the venue, scan the code or type the venue's short code, and start picking songs. You can also skip the app and request from your phone's browser.
+  - q: >-
+      I work at an eJukebox venue
+    a: >-
+      Get <strong>eJukebox Admin</strong>. Find your venue, sign in, and if it is your first time with your own account, tap <strong>Ask to be added</strong> so a manager can approve you.
+  - q: >-
+      I can't find eJukebox Admin in the App Store
+    a: >-
+      The staff app goes straight to eJukebox venues, so App Store search will not show it. Use the App Store button on this page and it opens directly.
+  - q: >-
+      Which phones do they work on?
+    a: >-
+      iPhone, on iOS 15.1 or later, and Android phones.
+  - q: >-
+      Do they cost anything?
+    a: >-
+      No. Both apps are free to download. Request is free for customers, and what Admin can do follows the venue's eJukebox plan. <a href="/admin-app/">See what is included</a>.
+schema_apps: [request, admin, music]
+schema_about: [mobile-app]
+schema_main: apps
 ---
 
 <style>
@@ -239,26 +258,7 @@ last_reviewed: 2026-10-13
   <h2>Which app do I need?</h2>
 </div>
 <div class="dl-faq">
-  <div class="dl-qa">
-    <h3>I'm a customer at an eJukebox venue</h3>
-    <p>Get <strong>eJukebox Request</strong>. Open it at the venue, scan the code or type the venue's short code, and start picking songs. You can also skip the app and request from your phone's browser.</p>
-  </div>
-  <div class="dl-qa">
-    <h3>I work at an eJukebox venue</h3>
-    <p>Get <strong>eJukebox Admin</strong>. Find your venue, sign in, and if it is your first time with your own account, tap <strong>Ask to be added</strong> so a manager can approve you.</p>
-  </div>
-  <div class="dl-qa">
-    <h3>I can't find eJukebox Admin in the App Store</h3>
-    <p>The staff app goes straight to eJukebox venues, so App Store search will not show it. Use the App Store button on this page and it opens directly.</p>
-  </div>
-  <div class="dl-qa">
-    <h3>Which phones do they work on?</h3>
-    <p>iPhone, on iOS 15.1 or later, and Android phones.</p>
-  </div>
-  <div class="dl-qa">
-    <h3>Do they cost anything?</h3>
-    <p>No. Both apps are free to download. Request is free for customers, and what Admin can do follows the venue's eJukebox plan. <a href="/admin-app/">See what is included</a>.</p>
-  </div>
+  {% include faq-list.html prefix="dl" %}
 </div>
 
 <div class="try-demo">

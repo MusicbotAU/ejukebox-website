@@ -5,6 +5,53 @@ title: In-Venue Screens, Guest Photos & Requests
 description: Guests put their own photos on your venue screens, branded with your logo and checked automatically, plus a touchscreen for song requests.
 schema_service: In-venue screens, guest photo walls and branded slideshows
 service_type: In-venue digital display and guest photo screening
+howto:
+  name: "How guests put their photos on your venue's screen"
+  description: >-
+    Fifteen seconds and no staff involved: a guest scans a code, picks a photo and sends it, it is checked automatically, and it goes up on your screen with your logo on it.
+  tool:
+    - "Any smartphone with a camera"
+  steps:
+    - name: "They scan and send"
+      icon: fa-qrcode
+      text: >-
+        A code on the table, the wall, or the back of the cubicle door opens your venue's upload page. They pick a photo, add a caption if they feel like it, and send.
+    - name: "It gets checked"
+      icon: fa-shield-halved
+      text: >-
+        Every photo is screened automatically before it can appear, so nudity and anything tasteless never reaches your wall. Your staff keep a live feed with a one-tap remove.
+    - name: "Your brand goes on it"
+      icon: fa-stamp
+      text: >-
+        Your logo lands on every photo the moment it is accepted. So every picture that ends up in a group chat or on someone's story carries your venue's name with it.
+faqs:
+  - q: >-
+      Do we need to buy a new TV?
+    a: >-
+      Usually not. Any modern TV or commercial display with a spare HDMI socket will do - we plug in a small player and your screen gets a new input. If you would rather we supplied a screen as well, we can, quoted for your venue.
+  - q: >-
+      Can we still show the sport?
+    a: >-
+      Yes. The sport stays on the input it always uses. Flick across to the photo wall with the remote you already have when the game finishes, and back at kickoff - or run the photos on a quieter screen and leave the front bar alone.
+  - q: >-
+      What stops someone posting something inappropriate?
+    a: >-
+      Every photo is screened automatically before it can appear, and your staff keep a live feed with a one-tap remove. You can also hold everything for approval, and guests tick a plain-English permission box before anything is sent.
+  - q: >-
+      Do guests need an app?
+    a: >-
+      No. They scan a code and send a photo from their phone's browser - no app, no sign-up, no account - and it works on any phone in the room.
+  - q: >-
+      What is the Interactive Request Screen?
+    a: >-
+      A wall-mounted touchscreen request booth. Anyone can walk up, browse your library and pick a song without a phone, and it runs the same request engine as the phone experience. The touchscreen is quoted for your venue.
+  - q: >-
+      What does it cost?
+    a: >-
+      Photo Slideshow Display, Guest Photo Wall and the Interactive Request Screen are add-ons to Core, and all three are included in Complete. <a href="/products.html">See plans &amp; pricing</a>.
+last_reviewed: 2026-10-15
+schema_apps: [admin]
+schema_about: [digital-signage, slide-show, interactive-kiosk]
 ---
 
 <style>
@@ -182,21 +229,7 @@ service_type: In-venue digital display and guest photo screening
   <p>No app, no sign-up, no account. Someone scans a code, picks a photo, and it is on your screen. It works on any phone in the room.</p>
 </div>
 <div class="bs-steps">
-  <div class="bs-step">
-    <i class="fas fa-qrcode bs-ico"></i>
-    <h3>They scan and send</h3>
-    <p>A code on the table, the wall, or the back of the cubicle door opens your venue's upload page. They pick a photo, add a caption if they feel like it, and send.</p>
-  </div>
-  <div class="bs-step">
-    <i class="fas fa-shield-halved bs-ico"></i>
-    <h3>It gets checked</h3>
-    <p>Every photo is screened automatically before it can appear, so nudity and anything tasteless never reaches your wall. Your staff keep a live feed with a one-tap remove.</p>
-  </div>
-  <div class="bs-step">
-    <i class="fas fa-stamp bs-ico"></i>
-    <h3>Your brand goes on it</h3>
-    <p>Your logo lands on every photo the moment it is accepted. So every picture that ends up in a group chat or on someone's story carries your venue's name with it.</p>
-  </div>
+  {% include howto-steps.html prefix="bs" icon_class="bs-ico" %}
 </div>
 
 {% include app-fan.html left="admin-patron-photos" center="admin-guest-photo" right="admin-slides" caption="Guest photos and slides, run from eJukebox Admin. Real screens from Club Buffalo, our demo venue - guests' photos swapped for stock to protect their privacy." %}
@@ -335,6 +368,13 @@ service_type: In-venue digital display and guest photo screening
       <p>It makes your venue feel modern and interactive from the second someone walks in, a genuine point of difference that gets the whole room talking and keeps people drifting back to see what is on the screen.</p>
     </div>
   </div>
+</div>
+
+<div class="bs-sec-head">
+  <h2>In-venue screens questions, answered</h2>
+</div>
+<div class="fq-list">
+{% include faq-list.html mode="details" %}
 </div>
 
 <div class="try-demo">

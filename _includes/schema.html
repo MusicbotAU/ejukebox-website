@@ -5,19 +5,21 @@
  Emits ONE @graph per page. Every page carries the same Organization and WebSite
  nodes under stable @ids, so search engines and AI assistants resolve eJukebox as
  a single entity with many pages rather than 40 loose documents. Page-specific
- nodes (Service, FAQPage, HowTo, Product) are generated automatically from front
- matter and _data, so there is no hand-written JSON to drift out of date.
+ nodes (Service, FAQPage, HowTo, Product, apps) are generated from front matter
+ and _data, so there is no hand-written JSON to drift out of date.
 
- Entity facts live in _data/org.yml. Prices live in _data/pricing.yml. Nothing is
- hard-coded here.
+ Data lives in _data, never here:
+   org.yml      the entity: NAP, identifiers, profiles, areaServed, knowsAbout
+   topics.yml   the topic dictionary - each topic pinned to its Wikipedia article
+   apps.yml     the three apps, with store links and screenshots
+   pricing.yml  plans and add-ons (prices ex GST, monthly)
 
  ---------------------------------------------------------------------------
  WHAT GENERATES AUTOMATICALLY (no per-page work)
  ---------------------------------------------------------------------------
-   layout: venue          -> Service + audience + areaServed, and FAQPage if the
-                             page has `faqs:` (which every venue page already has)
-   /products.html         -> Product + Offer per tier, straight from pricing.yml
-   every page             -> WebPage + BreadcrumbList + Organization + WebSite
+   every page             -> Organization + WebSite + WebPage + BreadcrumbList
+   layout: venue          -> Service + audience, and FAQPage if the page has `faqs:`
+   /products.html         -> Product + Offer per tier, and every add-on as an Offer
    noindex: true          -> nothing at all is emitted
 
  ---------------------------------------------------------------------------
@@ -25,14 +27,20 @@
  ---------------------------------------------------------------------------
    schema_page_type: ContactPage     # AboutPage, FAQPage, CollectionPage...
    schema_service: Voice announcements for venues   # adds a Service node
-   last_reviewed: 2026-08-28         # emits dateModified; omit rather than fake it
-   faqs:                             # -> FAQPage
-     - q: ...
-       a: ...
-   howto:                            # -> HowTo
-     name: How to start a free trial
+   service_type: ...                 # the Service's serviceType, if not generic
+   schema_about: [jukebox, pub]      # topics.yml keys -> WebPage "about"
+   schema_apps: [request, admin]     # apps.yml ids -> MobileApplication nodes
+   schema_main: app-admin            # WebPage mainEntity: app-<id>, apps (the
+                                     # app list), faq, service or howto
+   last_reviewed: 2026-08-28         # dateModified + lastReviewed; never fake it
+   faqs:                             # -> FAQPage. Render the visible copy with
+     - q: ...                        #    _includes/faq-list.html - same list, so
+       a: ...                        #    they cannot drift. ${core} etc. = prices
+   howto:                            # -> HowTo. Render visible steps with
+     name: How to start a free trial #    _includes/howto-steps.html
      description: ...
      total_time: PT2M                # ISO 8601 duration
+     cost: 0                         # AUD - only when that is genuinely the cost
      supply: [An Australian mobile number]
      tool: [Any web browser]
      steps:
@@ -43,10 +51,11 @@
      - name: OneMusic Australia
        url: https://onemusic.com.au/
        type: Organization
-   schema_app:                       # -> SoftwareApplication
-     name: eJukebox Controller
+   schema_app:                       # -> one SoftwareApplication or WebApplication
+     type: WebApplication            #    (for the browser request page; the real
+     name: ...                       #    store apps come from schema_apps)
      description: ...
-     os: [Android, iOS]
+     os: Any
    schema_article:                   # -> Article (explainer/research pages only)
      headline: ...
      section: ...
@@ -59,26 +68,44 @@
 
 {%- unless page.noindex -%}
 {%- assign org = site.data.org -%}
+{%- assign topics = site.data.topics -%}
 {%- assign base = site.url | append: site.baseurl -%}
 {%- assign purl = page.url | replace: 'index.html', '' | absolute_url -%}
 {%- assign org_id = base | append: '/#organization' -%}
 {%- assign site_id = base | append: '/#website' -%}
 {%- assign page_id = purl | append: '#webpage' -%}
 {%- assign logo_id = base | append: '/#logo' -%}
+{%- assign au_id = base | append: '/#area-au' -%}
 {%- assign ptitle = page.h1 | default: page.title | default: site.title -%}
 {%- assign pdesc = page.description | default: site.description | strip_html | normalize_whitespace -%}
 
 {%- comment -%} --- reusable fragments ------------------------------------- {%- endcomment -%}
+
+{%- comment -%} areaServed, in full: Country > State > City/region. Defined once, on the
+    Organization, with @ids - every Service points at the Country (#area-au). {%- endcomment -%}
 {%- capture area_served -%}
-[{% for a in org.area_served %}{"@type":"{{ a.type }}","name":{{ a.name | jsonify }}{% if a.state %},"containedInPlace":{"@type":"State","name":{{ a.state | jsonify }},"containedInPlace":{"@type":"Country","name":"Australia"}}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}]
+[{"@type":"Country","@id":"{{ au_id }}","name":"Australia","alternateName":"AU","sameAs":"https://en.wikipedia.org/wiki/Australia"}
+{%- for s in org.area_served.states -%}
+{%- assign st_id = s.code | downcase | prepend: '/#area-' | prepend: base -%}
+,{"@type":"State","@id":"{{ st_id }}","name":{{ s.name | jsonify }},"alternateName":{{ s.code | jsonify }},"containedInPlace":{"@id":"{{ au_id }}"}}
+{%- for c in s.cities -%},{"@type":"City","name":{{ c | jsonify }},"containedInPlace":{"@id":"{{ st_id }}"}}{%- endfor -%}
+{%- for r in s.regions -%},{"@type":"AdministrativeArea","name":{{ r | jsonify }},"containedInPlace":{"@id":"{{ st_id }}"}}{%- endfor -%}
+{%- endfor -%}]
+{%- endcapture -%}
+
+{%- comment -%} knowsAbout: a topics.yml key becomes a Thing pinned to its reference
+    article; anything else is plain text. {%- endcomment -%}
+{%- capture knows_about -%}
+[{% for k in org.knows_about %}{% assign tp = topics[k] %}{% if tp %}{"@type":"Thing","name":{{ tp.name | jsonify }},"sameAs":{{ tp.same_as | jsonify }}}{% else %}{{ k | jsonify }}{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}]
 {%- endcapture -%}
 
 {%- capture same_as -%}
 [{% assign sep = '' %}{% if site.social.facebook %}{{ sep }}{{ site.social.facebook | jsonify }}{% assign sep = ',' %}{% endif %}{% if site.social.twitter %}{{ sep }}{{ site.social.twitter | jsonify }}{% assign sep = ',' %}{% endif %}{% for s in org.same_as %}{{ sep }}{{ s | jsonify }}{% assign sep = ',' %}{% endfor %}]
 {%- endcapture -%}
 
-{%- comment -%} Tier offers, from pricing.yml. Used by Organization.makesOffer
-    and by the Product nodes on /products.html. Prices are ex GST, monthly. {%- endcomment -%}
+{%- comment -%} Tier offers, from pricing.yml. Declared in full by Organization.makesOffer
+    (every page) and by the Product nodes on /products.html; everything else
+    points at them by @id. Prices are ex GST, monthly. {%- endcomment -%}
 {%- capture tier_offers -%}
 [{% for t in site.data.pricing.tiers %}{
 "@type":"Offer",
@@ -89,7 +116,7 @@
 "price":"{{ t.retail }}",
 "priceCurrency":"AUD",
 "availability":"https://schema.org/InStock",
-"eligibleRegion":{"@type":"Country","name":"Australia"},
+"eligibleRegion":{"@id":"{{ au_id }}"},
 "seller":{"@id":"{{ org_id }}"},
 "priceSpecification":{
   "@type":"UnitPriceSpecification",
@@ -98,6 +125,27 @@
   "valueAddedTaxIncluded":false,
   "referenceQuantity":{"@type":"QuantitativeValue","value":1,"unitCode":"MON"}
 }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+{%- endcapture -%}
+{%- capture tier_refs -%}
+[{% for t in site.data.pricing.tiers %}{"@id":"{{ base }}/products.html#offer-{{ t.id }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]
+{%- endcapture -%}
+
+{%- comment -%} Every service the site describes - venue pages and feature pages - as one
+    catalogue on the Organization, each pointing at its own page's Service node.
+    Built from the pages themselves, so a new page joins it automatically. {%- endcomment -%}
+{%- assign svc_pages = site.pages | sort: 'url' -%}
+{%- capture services_catalog -%}
+{"@type":"OfferCatalog","@id":"{{ base }}/#services","name":"eJukebox services","itemListElement":[
+{%- assign sep = '' -%}
+{%- for p in svc_pages -%}
+{%- if p.noindex -%}{%- continue -%}{%- endif -%}
+{%- if p.layout == 'venue' or p.schema_service -%}
+{%- assign p_url = p.url | replace: 'index.html', '' | absolute_url -%}
+{{ sep }}{"@type":"Offer","itemOffered":{"@type":"Service","@id":"{{ p_url }}#service","name":{{ p.schema_service | default: p.h1 | default: p.title | strip_html | normalize_whitespace | jsonify }},"url":"{{ p_url }}"}}
+{%- assign sep = ',' -%}
+{%- endif -%}
+{%- endfor -%}
+]}
 {%- endcapture -%}
 
 {%- comment -%} =========================================================
@@ -118,11 +166,16 @@
 "url":"{{ base }}/",
 "logo":{"@type":"ImageObject","@id":"{{ logo_id }}","url":"{{ base }}/blobs/ejukebox-logo.png","caption":{{ org.brand | jsonify }}},
 "image":{"@id":"{{ logo_id }}"},
+"brand":{"@type":"Brand","@id":"{{ base }}/#brand","name":{{ org.brand | jsonify }},"logo":{"@id":"{{ logo_id }}"},"slogan":{{ org.slogan | jsonify }}},
 "description":{{ org.description | strip_html | normalize_whitespace | jsonify }},
 "slogan":{{ org.slogan | jsonify }},
 "foundingDate":"{{ org.founded }}",
 "foundingLocation":{"@type":"Place","name":"Ryde, New South Wales, Australia"},
-"identifier":{"@type":"PropertyValue","propertyID":"ABN","name":"Australian Business Number","value":{{ org.abn | jsonify }}},
+"taxID":{{ org.abn | jsonify }},
+"identifier":[
+  {"@type":"PropertyValue","propertyID":"ABN","name":"Australian Business Number","value":{{ org.abn | jsonify }},"url":"https://abr.business.gov.au/ABN/View?abn={{ org.abn | remove: ' ' }}"}{% if org.acn %},
+  {"@type":"PropertyValue","propertyID":"ACN","name":"Australian Company Number","value":{{ org.acn | jsonify }}}{% endif %}
+],
 "address":{
   "@type":"PostalAddress",
   "streetAddress":{{ org.address.street | jsonify }},
@@ -134,33 +187,44 @@
 "telephone":{{ org.telephone | jsonify }},
 "email":{{ org.email | jsonify }},
 "areaServed":{{ area_served }},
-"knowsAbout":{{ org.knows_about | jsonify }},
+"knowsAbout":{{ knows_about }},
 "knowsLanguage":{"@type":"Language","name":"English","alternateName":"en-AU"},
 "contactPoint":[
-  {"@type":"ContactPoint","contactType":"sales","telephone":{{ org.telephone | jsonify }},"email":{{ org.email | jsonify }},"areaServed":"AU","availableLanguage":"English"},
-  {"@type":"ContactPoint","contactType":"technical support","telephone":{{ org.telephone | jsonify }},"email":{{ org.email | jsonify }},"areaServed":"AU","availableLanguage":"English"}
+  {"@type":"ContactPoint","contactType":"sales","telephone":{{ org.telephone | jsonify }},"email":{{ org.email | jsonify }},"areaServed":{"@id":"{{ au_id }}"},"availableLanguage":"English"},
+  {"@type":"ContactPoint","contactType":"technical support","telephone":{{ org.telephone | jsonify }},"email":{{ org.email | jsonify }},"areaServed":{"@id":"{{ au_id }}"},"availableLanguage":"English"}
 ],
 "sameAs":{{ same_as }},
-"makesOffer":{{ tier_offers }}
+"makesOffer":{{ tier_offers }},
+"hasOfferCatalog":{{ services_catalog }}
 }
 {%- endcapture -%}
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
 
-{%- comment -%} ---------- 2. WebSite ---------- {%- endcomment -%}
+{%- comment -%} ---------- 2. WebSite ----------
+     alternateName feeds the site name Google shows above a result. {%- endcomment -%}
 {%- capture n -%}
 {
 "@type":"WebSite",
 "@id":"{{ site_id }}",
 "url":"{{ base }}/",
 "name":{{ site.title | jsonify }},
+"alternateName":["eJukebox Australia","ejukebox.com.au"],
 "description":{{ site.description | strip_html | normalize_whitespace | jsonify }},
 "publisher":{"@id":"{{ org_id }}"},
+"copyrightHolder":{"@id":"{{ org_id }}"},
 "inLanguage":"en-AU"
 }
 {%- endcapture -%}
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
 
-{%- comment -%} ---------- 3. WebPage ---------- {%- endcomment -%}
+{%- comment -%} ---------- 3. WebPage ----------
+     about = the Organization, plus any topics the page declares in schema_about. {%- endcomment -%}
+{%- assign page_img = page.image | default: page.hero.image -%}
+{%- if page.schema_main -%}
+  {%- assign main_key = page.schema_main | slice: 0, 4 -%}
+  {%- if main_key == 'app-' -%}{%- assign main_id = base | append: '/#' | append: page.schema_main -%}
+  {%- else -%}{%- assign main_id = purl | append: '#' | append: page.schema_main -%}{%- endif -%}
+{%- endif -%}
 {%- capture n -%}
 {
 "@type":"{{ page.schema_page_type | default: 'WebPage' }}",
@@ -169,12 +233,14 @@
 "name":{{ ptitle | strip_html | normalize_whitespace | jsonify }},
 "description":{{ pdesc | jsonify }},
 "isPartOf":{"@id":"{{ site_id }}"},
-"about":{"@id":"{{ org_id }}"},
+"about":[{"@id":"{{ org_id }}"}{% for k in page.schema_about %}{% assign tp = topics[k] %}{% if tp %},{"@type":"Thing","name":{{ tp.name | jsonify }},"sameAs":{{ tp.same_as | jsonify }}}{% endif %}{% endfor %}],
 "publisher":{"@id":"{{ org_id }}"},
 "inLanguage":"en-AU",
-"breadcrumb":{"@id":"{{ purl }}#breadcrumb"}{% if page.image %},
-"primaryImageOfPage":{"@type":"ImageObject","url":"{{ page.image | absolute_url }}"}{% endif %}{% if page.last_reviewed %},
-"dateModified":"{{ page.last_reviewed | date: '%Y-%m-%d' }}"{% endif %}{% if page.mentions %},
+"breadcrumb":{"@id":"{{ purl }}#breadcrumb"}{% if main_id %},
+"mainEntity":{"@id":"{{ main_id }}"}{% endif %}{% if page_img %},
+"primaryImageOfPage":{"@type":"ImageObject","url":"{{ page_img | absolute_url }}"}{% endif %}{% if page.last_reviewed %},
+"dateModified":"{{ page.last_reviewed | date: '%Y-%m-%d' }}",
+"lastReviewed":"{{ page.last_reviewed | date: '%Y-%m-%d' }}"{% endif %}{% if page.mentions %},
 "mentions":[{% for m in page.mentions %}{"@type":"{{ m.type | default: 'Thing' }}","name":{{ m.name | jsonify }}{% if m.url %},"url":{{ m.url | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %}
 }
 {%- endcapture -%}
@@ -202,8 +268,6 @@
 {%- if page.layout == 'venue' or page.schema_service -%}
 {%- assign svc_name = page.schema_service | default: ptitle -%}
 {%- assign svc_desc = page.intro | default: pdesc | strip_html | normalize_whitespace -%}
-{%- comment -%} Venue pages get a serviceType naming the venue category, so the node
-    answers "who supplies music to gyms in Australia" rather than a generic claim. {%- endcomment -%}
 {%- assign svc_audience = page.audience_name | default: page.venue_name | default: page.label -%}
 {%- if svc_audience -%}
   {%- capture svc_type -%}Background music and interactive jukebox service for {{ svc_audience }}{%- endcapture -%}
@@ -219,17 +283,14 @@
 "description":{{ svc_desc | jsonify }},
 "serviceType":{{ svc_type | jsonify }},
 "category":"Background music service",
+"url":"{{ purl }}",
 "provider":{"@id":"{{ org_id }}"},
-"brand":{"@id":"{{ org_id }}"},
-"areaServed":{{ area_served }},
-"availableChannel":{"@type":"ServiceChannel","serviceUrl":"{{ base }}/free-trial.html","name":"Free trial","availableLanguage":"English"},
+"brand":{"@id":"{{ base }}/#brand"},
+"areaServed":{"@id":"{{ au_id }}"},
+"availableChannel":{"@type":"ServiceChannel","serviceUrl":"{{ base }}/contact/","name":"Talk to eJukebox","availableLanguage":"English"},
 "mainEntityOfPage":{"@id":"{{ page_id }}"}{% if svc_audience %},
-"audience":{"@type":"BusinessAudience","name":{{ svc_audience | jsonify }},"geographicArea":{"@type":"Country","name":"Australia"}}{% endif %},
-"hasOfferCatalog":{
-  "@type":"OfferCatalog",
-  "name":"eJukebox plans",
-  "itemListElement":{{ tier_offers }}
-}
+"audience":{"@type":"BusinessAudience","name":{{ svc_audience | jsonify }},"geographicArea":{"@id":"{{ au_id }}"}}{% endif %},
+"hasOfferCatalog":{"@type":"OfferCatalog","name":"eJukebox plans","itemListElement":{{ tier_refs }}}
 }
 {%- endcapture -%}
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
@@ -237,26 +298,30 @@
 
 {%- comment -%} ---------- 6. FAQPage ----------
      Google restricted FAQ rich results to government/health sites in Aug 2023, so
-     do not expect SERP accordions. The markup is still parsed by LLM crawlers and
-     Bing, and it states the answer in machine-readable form - which is the point. {%- endcomment -%}
+     do not expect SERP accordions. The markup is still parsed by Bing and by AI
+     assistants, and states each answer in machine-readable form - which is the point.
+     Answers pass through price-tokens.html exactly as the visible copy does. {%- endcomment -%}
 {%- if page.faqs -%}
 {%- capture n -%}
 {
 "@type":"FAQPage",
 "@id":"{{ purl }}#faq",
+"url":"{{ purl }}",
 "mainEntityOfPage":{"@id":"{{ page_id }}"},
 "inLanguage":"en-AU",
-"mainEntity":[{% for f in page.faqs %}{
+"mainEntity":[{% for f in page.faqs %}{% capture fa %}{% include price-tokens.html text=f.a %}{% endcapture %}{
 "@type":"Question",
 "name":{{ f.q | strip_html | normalize_whitespace | jsonify }},
-"acceptedAnswer":{"@type":"Answer","text":{{ f.a | strip_html | normalize_whitespace | jsonify }}}
+"acceptedAnswer":{"@type":"Answer","text":{{ fa | strip_html | normalize_whitespace | jsonify }}}
 }{% unless forloop.last %},{% endunless %}{% endfor %}]
 }
 {%- endcapture -%}
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
 {%- endif -%}
 
-{%- comment -%} ---------- 7. HowTo ---------- {%- endcomment -%}
+{%- comment -%} ---------- 7. HowTo ----------
+     Google retired HowTo rich results in Sept 2023; Bing and AI assistants still
+     read the steps. estimatedCost appears only when the page says what it is. {%- endcomment -%}
 {%- if page.howto -%}
 {%- capture n -%}
 {
@@ -266,8 +331,8 @@
 "description":{{ page.howto.description | strip_html | normalize_whitespace | jsonify }},
 "inLanguage":"en-AU",
 "mainEntityOfPage":{"@id":"{{ page_id }}"}{% if page.howto.total_time %},
-"totalTime":"{{ page.howto.total_time }}"{% endif %},
-"estimatedCost":{"@type":"MonetaryAmount","currency":"AUD","value":"{{ page.howto.cost | default: 0 }}"}{% if page.howto.supply %},
+"totalTime":"{{ page.howto.total_time }}"{% endif %}{% if page.howto.cost != nil %},
+"estimatedCost":{"@type":"MonetaryAmount","currency":"AUD","value":"{{ page.howto.cost }}"}{% endif %}{% if page.howto.supply %},
 "supply":[{% for s in page.howto.supply %}{"@type":"HowToSupply","name":{{ s | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %}{% if page.howto.tool %},
 "tool":[{% for t in page.howto.tool %}{"@type":"HowToTool","name":{{ t | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %},
 "step":[{% for s in page.howto.steps %}{
@@ -284,11 +349,15 @@
 
 {%- comment -%} ---------- 8. Products (/products.html only) ----------
      One Product per tier, generated from pricing.yml, so schema prices can never
-     drift from the prices on the page. Add-ons ride along as an OfferCatalog.
+     drift from the prices on the page. Every add-on rides along as an Offer whose
+     itemOffered Service links to the feature page that explains it. All of these
+     prices are shown on /products.html itself.
 
      The offer descriptions deliberately never imply the OneMusic licence is
-     included - it is not. eJukebox lowers the venue's licence TIER, and for pubs
-     and clubs can collect and remit the fee. See _data/org.yml and llms.txt. {%- endcomment -%}
+     included - it is not. Moving off personal streaming removes an extra OneMusic
+     charge (the Digital Copy/Delivery add-on for hospitality, a lower tier for
+     retail), and for pubs and clubs eJukebox can collect and remit the fee.
+     See _data/org.yml and llms.txt. {%- endcomment -%}
 {%- if page.schema_products or page.url contains '/products' -%}
 {%- for t in site.data.pricing.tiers -%}
 {%- capture n -%}
@@ -298,13 +367,15 @@
 "name":{{ "eJukebox " | append: t.name | jsonify }},
 "description":{{ t.blurb | strip_html | normalize_whitespace | jsonify }},
 "category":"Commercial background music service",
-"brand":{"@id":"{{ org_id }}"},
+"brand":{"@id":"{{ base }}/#brand"},
+"manufacturer":{"@id":"{{ org_id }}"},
 "image":{"@id":"{{ logo_id }}"},
 "url":"{{ base }}/products.html",
-"audience":{"@type":"BusinessAudience","name":{{ t.tagline | jsonify }},"geographicArea":{"@type":"Country","name":"Australia"}},
+"audience":{"@type":"BusinessAudience","name":{{ t.tagline | jsonify }},"geographicArea":{"@id":"{{ au_id }}"}},
 "additionalProperty":[
 {"@type":"PropertyValue","name":"Zones included","value":"{{ t.zones_included }}"},
-{"@type":"PropertyValue","name":"On-site hardware","value":"{% if t.hardware == 'none' %}None - streams to a device you already own{% else %}On-site player (one-off cost){% endif %}"}
+{"@type":"PropertyValue","name":"On-site hardware","value":"{% if t.hardware == 'none' %}None - streams to a device you already own{% else %}On-site player (one-off cost){% endif %}"},
+{"@type":"PropertyValue","name":"Song requests","value":"{% if t.allows_addons %}Included{% else %}Not included{% endif %}"}
 ],
 "isRelatedTo":{"@id":"{{ base }}/licensing.html#service"},
 {%- comment -%} The Offer is written out in full rather than referenced by @id.
@@ -321,7 +392,7 @@
 "price":"{{ t.retail }}",
 "priceCurrency":"AUD",
 "availability":"https://schema.org/InStock",
-"eligibleRegion":{"@type":"Country","name":"Australia"},
+"eligibleRegion":{"@id":"{{ au_id }}"},
 "seller":{"@id":"{{ org_id }}"},
 "priceSpecification":{"@type":"UnitPriceSpecification","price":"{{ t.retail }}","priceCurrency":"AUD","valueAddedTaxIncluded":false,"referenceQuantity":{"@type":"QuantitativeValue","value":1,"unitCode":"MON"}}
 }
@@ -337,13 +408,15 @@
 "description":"Optional add-ons available on the Core plan, and all included with Complete.",
 "itemListElement":[{% for a in site.data.pricing.addons %}{
 "@type":"Offer",
+"@id":"{{ base }}/products.html#addon-{{ a.id }}",
 "name":{{ a.name | jsonify }},
 "description":{{ a.desc | strip_html | normalize_whitespace | jsonify }},
 "category":{{ a.category | jsonify }},
 "price":"{{ a.retail }}",
 "priceCurrency":"AUD",
-"eligibleRegion":{"@type":"Country","name":"Australia"},
+"eligibleRegion":{"@id":"{{ au_id }}"},
 "seller":{"@id":"{{ org_id }}"},
+"itemOffered":{"@type":"Service","name":{{ a.name | jsonify }},"provider":{"@id":"{{ org_id }}"}{% if a.page %},"url":"{{ a.page | absolute_url }}"{% endif %}},
 "priceSpecification":{"@type":"UnitPriceSpecification","price":"{{ a.retail }}","priceCurrency":"AUD","valueAddedTaxIncluded":false,"referenceQuantity":{"@type":"QuantitativeValue","value":1,"unitCode":"MON"}}
 }{% unless forloop.last %},{% endunless %}{% endfor %}]
 }
@@ -351,32 +424,80 @@
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
 {%- endif -%}
 
-{%- comment -%} ---------- 9. SoftwareApplication ----------
-     For the app/portal pages. offers with price 0 is deliberate: the apps
-     themselves cost nothing, the eJukebox subscription is what is paid for. {%- endcomment -%}
+{%- comment -%} ---------- 9. The apps (schema_apps) ----------
+     One MobileApplication per app the page shows, from _data/apps.yml, under a
+     stable site-wide @id. Free to download, so price 0 - the eJukebox plan is what
+     a venue pays for. No ratings: Google does not allow ratings copied from the
+     app stores, and there are not yet enough to mean anything. {%- endcomment -%}
+{%- for aid in page.schema_apps -%}
+{%- assign app = site.data.apps | where: "id", aid | first -%}
+{%- if app -%}
+{%- capture n -%}
+{
+"@type":"MobileApplication",
+"@id":"{{ base }}/#app-{{ app.id }}",
+"name":{{ app.name | jsonify }},
+"description":{{ app.description | strip_html | normalize_whitespace | jsonify }},
+"applicationCategory":{{ app.category | jsonify }},
+"applicationSubCategory":{{ app.sub_category | jsonify }},
+"operatingSystem":{{ app.os | jsonify }},
+"url":"{{ app.page | absolute_url }}",
+"downloadUrl":[{{ app.ios | jsonify }},{{ app.android | jsonify }}],
+"installUrl":[{{ app.ios | jsonify }},{{ app.android | jsonify }}],
+"sameAs":[{{ app.ios | jsonify }},{{ app.android | jsonify }}],
+"publisher":{"@id":"{{ org_id }}"},
+"author":{"@id":"{{ org_id }}"},
+"inLanguage":"en-AU",
+"isAccessibleForFree":true,
+"audience":{"@type":"Audience","audienceType":{{ app.for | jsonify }}},
+"offers":{"@type":"Offer","price":"0","priceCurrency":"AUD","description":{{ app.price_note | jsonify }}},
+"featureList":{{ app.features | jsonify }}{% if app.screens %},
+"screenshot":[{% for k in app.screens %}{% assign sc = site.data.app_screens[k] %}{"@type":"ImageObject","url":"{{ sc.src | absolute_url }}","caption":{{ sc.alt | jsonify }},"width":500,"height":1055}{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %}
+}
+{%- endcapture -%}
+{%- assign nodes = nodes | append: n | append: '~~~' -%}
+{%- endif -%}
+{%- endfor -%}
+{%- if page.schema_main == 'apps' and page.schema_apps -%}
+{%- capture n -%}
+{
+"@type":"ItemList",
+"@id":"{{ purl }}#apps",
+"name":"The eJukebox apps",
+"numberOfItems":{{ page.schema_apps | size }},
+"itemListElement":[{% for aid in page.schema_apps %}{"@type":"ListItem","position":{{ forloop.index }},"item":{"@id":"{{ base }}/#app-{{ aid }}"}}{% unless forloop.last %},{% endunless %}{% endfor %}]
+}
+{%- endcapture -%}
+{%- assign nodes = nodes | append: n | append: '~~~' -%}
+{%- endif -%}
+
+{%- comment -%} ---------- 10. One web app (schema_app) ----------
+     For the browser request page - customers request songs with no app at all.
+     The store apps come from schema_apps above. {%- endcomment -%}
 {%- if page.schema_app -%}
 {%- capture n -%}
 {
-"@type":"SoftwareApplication",
+"@type":{{ page.schema_app.type | default: 'SoftwareApplication' | jsonify }},
 "@id":"{{ purl }}#app",
 "name":{{ page.schema_app.name | jsonify }},
 "description":{{ page.schema_app.description | strip_html | normalize_whitespace | jsonify }},
 "applicationCategory":{{ page.schema_app.category | default: 'BusinessApplication' | jsonify }},
 "applicationSubCategory":"Music",
-"operatingSystem":{{ page.schema_app.os | default: 'Any' | jsonify }},
+"operatingSystem":{{ page.schema_app.os | default: 'Any' | jsonify }}{% if page.schema_app.type == 'WebApplication' %},
+"browserRequirements":"Any modern phone browser"{% endif %},
 "url":"{{ purl }}",
 "publisher":{"@id":"{{ org_id }}"},
 "author":{"@id":"{{ org_id }}"},
 "inLanguage":"en-AU",
 "isAccessibleForFree":true,
-"offers":{"@type":"Offer","price":"0","priceCurrency":"AUD","eligibleRegion":{"@type":"Country","name":"Australia"},"description":"Free to use; requires an active eJukebox subscription at the venue."},
+"offers":{"@type":"Offer","price":"0","priceCurrency":"AUD","eligibleRegion":{"@id":"{{ au_id }}"},"description":"Free to use; requires an active eJukebox subscription at the venue."},
 "mainEntityOfPage":{"@id":"{{ page_id }}"}
 }
 {%- endcapture -%}
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
 {%- endif -%}
 
-{%- comment -%} ---------- 10. Article ----------
+{%- comment -%} ---------- 11. Article ----------
      For explainer/research pages. Only emitted where the page is genuinely
      editorial - marketing pages stay as WebPage. {%- endcomment -%}
 {%- if page.schema_article -%}
@@ -391,7 +512,8 @@
 "publisher":{"@id":"{{ org_id }}"},
 "inLanguage":"en-AU",
 "isPartOf":{"@id":"{{ site_id }}"},
-"mainEntityOfPage":{"@id":"{{ page_id }}"}{% if page.last_reviewed %},
+"mainEntityOfPage":{"@id":"{{ page_id }}"}{% if page_img %},
+"image":"{{ page_img | absolute_url }}"{% endif %}{% if page.last_reviewed %},
 "dateModified":"{{ page.last_reviewed | date: '%Y-%m-%d' }}"{% endif %}{% if page.schema_article.published %},
 "datePublished":"{{ page.schema_article.published | date: '%Y-%m-%d' }}"{% endif %}
 }
@@ -399,7 +521,7 @@
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
 {%- endif -%}
 
-{%- comment -%} ---------- 11. Raw escape hatch ---------- {%- endcomment -%}
+{%- comment -%} ---------- 12. Raw escape hatch ---------- {%- endcomment -%}
 {%- if page.extra_schema -%}
 {%- assign nodes = nodes | append: page.extra_schema | append: '~~~' -%}
 {%- endif -%}

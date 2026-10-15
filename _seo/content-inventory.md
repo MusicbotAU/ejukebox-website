@@ -13,47 +13,47 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 
 | URL | Title | T | D | H1 | Schema |
 |---|---|---|---|---|---|
-| `/` | Jukebox Music for Pubs, Clubs, Cafes & Retai | 56 | 149 | y | WebPage |
+| `/` | Jukebox Music for Pubs, Clubs, Cafes & Retai | 56 | 149 | y | Audience, Brand, FAQPage, MobileApplication, Service, WebPage |
 | `/404.html` | _noindex_ | | | | |
-| `/BenefitsofMusic.html` | Benefits of Music in Business, Backed by Dat | 56 | 143 | y | Article, WebPage |
-| `/admin-app/` | eJukebox Admin App: Run the Room From Your P | 59 | 151 | y | SoftwareApplication, WebPage |
-| `/automated-jukebox-system.html` | Digital Jukebox for Pubs, Clubs & Bars | eJu | 49 | 148 | y | FAQPage, Service, WebPage |
-| `/background-music-for-business/` | Australian Background Music Provider for Bus | 60 | 143 | y | FAQPage, Service, WebPage |
-| `/behind-the-scenes.html` | Behind the Scenes of a Jukebox Installation  | 54 | 147 | y | Service, WebPage |
-| `/contact/` | Contact eJukebox, Australian Venue Music Tea | 56 | 142 | y | ContactPage, WebPage |
+| `/BenefitsofMusic.html` | Benefits of Music in Business, Backed by Dat | 56 | 143 | y | Article, Brand, Service, WebPage |
+| `/admin-app/` | eJukebox Admin App: Run the Room From Your P | 59 | 151 | y | Audience, Brand, FAQPage, MobileApplication, Service, WebPage |
+| `/automated-jukebox-system.html` | Digital Jukebox for Pubs, Clubs & Bars | eJu | 49 | 148 | y | Audience, Brand, FAQPage, HowTo, MobileApplication, Service, WebPage |
+| `/background-music-for-business/` | Australian Background Music Provider for Bus | 60 | 143 | y | Brand, FAQPage, Service, WebPage |
+| `/behind-the-scenes.html` | Behind the Scenes of a Jukebox Installation  | 54 | 147 | y | Audience, Brand, FAQPage, HowTo, MobileApplication, Service, WebPage |
+| `/contact/` | Contact eJukebox, Australian Venue Music Tea | 56 | 142 | y | Brand, ContactPage, Service, WebPage |
 | `/controller-app.html` | _noindex_ | | | | |
-| `/custom-radio.html` | Custom Branded In-Store Radio for Retail | e | 51 | 153 | y | Service, WebPage |
+| `/custom-radio.html` | Custom Branded In-Store Radio for Retail | e | 51 | 153 | y | Brand, FAQPage, Service, WebPage |
 | `/dollar-a-day.html` | _noindex_ | | | | |
-| `/ejukebox-apps.html` | eJukebox Apps for Android & iOS | eJukebox | 42 | 146 | y | SoftwareApplication, WebPage |
-| `/ejukebox-request-portal.html` | Song Requests for Pubs, Clubs & Venues | eJu | 49 | 151 | y | HowTo, Service, SoftwareApplication, WebPage |
-| `/free-trial.html` | Free 7-Day Music Trial for Your Venue | eJuk | 48 | 140 | y | HowTo, Service, WebPage |
+| `/ejukebox-apps.html` | eJukebox Apps for Android & iOS | eJukebox | 42 | 146 | y | Audience, Brand, FAQPage, ItemList, MobileApplication, Service, WebPage |
+| `/ejukebox-request-portal.html` | Song Requests for Pubs, Clubs & Venues | eJu | 49 | 151 | y | Audience, Brand, FAQPage, HowTo, MobileApplication, Service, WebApplication, WebPage |
+| `/free-trial.html` | Free 7-Day Music Trial for Your Venue | eJuk | 48 | 140 | y | Brand, HowTo, Service, WebPage |
 | `/full-package.html` | _noindex_ | | | | |
-| `/functions-events/` | Functions & Events Music Your Guests Steer | | 53 | 132 | y | Service, WebPage |
+| `/functions-events/` | Functions & Events Music Your Guests Steer | | 53 | 132 | y | Audience, Brand, FAQPage, HowTo, MobileApplication, Service, WebPage |
 | `/hits-package.html` | _noindex_ | | | | |
-| `/in-venue-screens/` | In-Venue Screens, Guest Photos & Requests |  | 52 | 138 | y | Service, WebPage |
-| `/irish-pub-music/` | Irish Pub Music for Bars & Pubs Australia |  | 52 | 153 | y | FAQPage, Service, WebPage |
-| `/licensing.html` | Music Licensing for Business, OneMusic & APR | 56 | 150 | y | Article, FAQPage, HowTo, Service, WebPage |
-| `/live-microphone/` | Live Microphone, Turn a Phone Into a PA Mic  | 54 | 147 | y | Service, WebPage |
-| `/music-for-cafes/` | Music for Cafés & Coffee Shops Australia | e | 51 | 150 | y | Service, WebPage |
-| `/music-for-gyms/` | Music for Gyms & Fitness Studios Australia | | 53 | 143 | y | Service, WebPage |
-| `/music-for-hotels/` | Music for Hotels & Accommodation Australia | | 53 | 153 | y | Service, WebPage |
-| `/music-for-medical/` | Music for Medical & Waiting Rooms Australia  | 54 | 146 | y | Service, WebPage |
-| `/music-for-nightclubs/` | Nightclub Music Australia, Licensed Channels | 55 | 152 | y | Service, WebPage |
-| `/music-for-pubs-bars/` | Music for Pubs & Bars Australia, Jukebox | e | 51 | 150 | y | FAQPage, Service, WebPage |
-| `/music-for-restaurants/` | Music for Restaurants Australia, Dining Musi | 56 | 150 | y | Service, WebPage |
-| `/music-for-retail/` | Music for Retail & Shops Australia, In-Store | 55 | 147 | y | Service, WebPage |
-| `/music-for-salons-spas/` | Music for Salons & Spas Australia | eJukebox | 44 | 145 | y | Service, WebPage |
-| `/people-love-ejukebox.html` | Why People Love eJukebox, Reviews | eJukebox | 44 | 137 | y | WebPage |
-| `/playing-across-the-country/` | Playing Across the Country, Live Trends | eJ | 50 | 138 | y | Service, WebPage |
+| `/in-venue-screens/` | In-Venue Screens, Guest Photos & Requests |  | 52 | 138 | y | Audience, Brand, FAQPage, HowTo, MobileApplication, Service, WebPage |
+| `/irish-pub-music/` | Irish Pub Music for Bars & Pubs Australia |  | 52 | 153 | y | Brand, FAQPage, Service, WebPage |
+| `/licensing.html` | Music Licensing for Business, OneMusic & APR | 56 | 150 | y | Article, Brand, FAQPage, HowTo, Service, WebPage |
+| `/live-microphone/` | Live Microphone, Turn a Phone Into a PA Mic  | 54 | 147 | y | Audience, Brand, FAQPage, HowTo, MobileApplication, Service, WebPage |
+| `/music-for-cafes/` | Music for Cafés & Coffee Shops Australia | e | 51 | 150 | y | Brand, FAQPage, Service, WebPage |
+| `/music-for-gyms/` | Music for Gyms & Fitness Studios Australia | | 53 | 143 | y | Brand, FAQPage, Service, WebPage |
+| `/music-for-hotels/` | Music for Hotels & Accommodation Australia | | 53 | 153 | y | Brand, FAQPage, Service, WebPage |
+| `/music-for-medical/` | Music for Medical & Waiting Rooms Australia  | 54 | 146 | y | Brand, FAQPage, Service, WebPage |
+| `/music-for-nightclubs/` | Nightclub Music Australia, Licensed Channels | 55 | 152 | y | Brand, FAQPage, Service, WebPage |
+| `/music-for-pubs-bars/` | Music for Pubs & Bars Australia, Jukebox | e | 51 | 150 | y | Brand, FAQPage, Service, WebPage |
+| `/music-for-restaurants/` | Music for Restaurants Australia, Dining Musi | 56 | 150 | y | Brand, FAQPage, Service, WebPage |
+| `/music-for-retail/` | Music for Retail & Shops Australia, In-Store | 55 | 147 | y | Brand, FAQPage, Service, WebPage |
+| `/music-for-salons-spas/` | Music for Salons & Spas Australia | eJukebox | 44 | 145 | y | Brand, FAQPage, Service, WebPage |
+| `/people-love-ejukebox.html` | Why People Love eJukebox, Reviews | eJukebox | 44 | 137 | y | Brand, Service, WebPage |
+| `/playing-across-the-country/` | Playing Across the Country, Live Trends | eJ | 50 | 138 | y | Brand, Service, WebPage |
 | `/pricing/` | _noindex_ | | | | |
-| `/privacy-policy.html` | Privacy Policy | eJukebox | 25 | 146 | y | WebPage |
-| `/products.html` | Plans & Pricing for Venue Music | eJukebox | 42 | 144 | y | CollectionPage, Product, WebPage |
+| `/privacy-policy.html` | Privacy Policy | eJukebox | 25 | 146 | y | Brand, Service, WebPage |
+| `/products.html` | Plans & Pricing for Venue Music | eJukebox | 42 | 144 | y | Brand, CollectionPage, FAQPage, Product, Service, WebPage |
 | `/refer-a-venue-terms/` | _noindex_ | | | | |
 | `/refer-a-venue/` | _noindex_ | | | | |
-| `/spotify-integration/` | Spotify Integration for Your Venue | eJukebo | 45 | 144 | y | Service, WebPage |
+| `/spotify-integration/` | Spotify Integration for Your Venue | eJukebo | 45 | 144 | y | Audience, Brand, FAQPage, HowTo, MobileApplication, Service, WebPage |
 | `/stream-bells-hotel.html` | _noindex_ | | | | |
-| `/stream-us.html` | Listen to Free eJukebox Demo Streams | eJuke | 47 | 134 | y | Service, WebPage |
-| `/voice-announcements/` | Voice & Announcements for Pubs & Clubs | eJu | 49 | 145 | y | Service, WebPage |
+| `/stream-us.html` | Listen to Free eJukebox Demo Streams | eJuke | 47 | 134 | y | Brand, Service, WebPage |
+| `/voice-announcements/` | Voice & Announcements for Pubs & Clubs | eJu | 49 | 145 | y | Audience, Brand, FAQPage, MobileApplication, Service, WebPage |
 | `/wholesale/` | _noindex_ | | | | |
 | `/why-us.html` | _noindex_ | | | | |
-| `/why-us2.html` | Why Choose eJukebox for Your Venue | eJukebo | 45 | 154 | y | Service, WebPage |
+| `/why-us2.html` | Why Choose eJukebox for Your Venue | eJukebo | 45 | 154 | y | Audience, Brand, FAQPage, MobileApplication, Service, WebPage |

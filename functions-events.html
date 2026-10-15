@@ -5,6 +5,48 @@ title: Functions & Events Music Your Guests Steer
 description: Guests add photos to your screen, pick the music and record an eight-second dedication that plays to the room, all from their phone.
 schema_service: Music, screens and dedications for functions and events
 service_type: Function and event music, screen and interaction service
+faqs:
+  - q: >-
+      What stops someone putting something awful on the screen?
+    a: >-
+      Every photo is screened automatically before it can appear, and every voice dedication is transcribed and checked before it airs. On top of that your staff keep a live feed with a one-tap remove. Nothing reaches the wall unseen, and nobody has to stand there watching it all night.
+  - q: >-
+      Do guests need to download an app?
+    a: >-
+      No. They scan the code and it opens in their phone's browser. No app, no sign-up, no account, no password. That is deliberate, because anything more and half the room will not bother.
+  - q: >-
+      Do we need to buy a screen?
+    a: >-
+      Usually not. A TV or commercial display with a spare HDMI socket is all it takes. If you would rather have a dedicated screen or a wall-mounted touchscreen we can supply one, quoted for your venue, with no margin loaded onto the hardware.
+  - q: >-
+      What if the host wants the music left alone?
+    a: >-
+      Then it is. Photos, requests and dedications can each be switched on or off for the night. Some hosts want the whole room running it, others just want the controls and a good channel. Both work.
+  - q: >-
+      Does this only work for functions?
+    a: >-
+      No, and that is rather the point. The same system runs every night you are open. The function features simply hand the room over for one evening.
+howto:
+  name: "How to run a function with eJukebox"
+  description: >-
+    You almost certainly have everything already: a screen with a spare HDMI socket, a code on the tables, and one person holding the reins for the night.
+  supply:
+    - "A TV or commercial display with a spare HDMI socket"
+  steps:
+    - name: "One spare HDMI socket"
+      icon: fa-tv
+      text: >-
+        It runs on a screen you already own. Venues with several screens can put the photos on one and leave the sport running untouched on the rest.
+    - name: "One code on the tables"
+      icon: fa-qrcode
+      text: >-
+        Guests scan it and they are in. Nothing to download, no account to create, no queue at a booth, no password read out over a microphone.
+    - name: "One person holding the reins"
+      icon: fa-hand-pointer
+      text: >-
+        The host gets night-only access from their own phone, and it switches itself off when the function ends. Your staff stay exactly where they are needed.
+schema_apps: [request, admin]
+schema_about: [event-management, wedding-reception, party]
 ---
 
 <style>
@@ -324,21 +366,7 @@ service_type: Function and event music, screen and interaction service
   <p>No rebuild, no rewiring, no new room. If there is a TV on the wall with a spare socket, you are ready.</p>
 </div>
 <div class="fx-steps">
-  <div class="fx-step">
-    <span class="fx-num">1</span><i class="fas fa-tv fx-step-ico"></i>
-    <h3>One spare HDMI socket</h3>
-    <p>It runs on a screen you already own. Venues with several screens can put the photos on one and leave the sport running untouched on the rest.</p>
-  </div>
-  <div class="fx-step">
-    <span class="fx-num">2</span><i class="fas fa-qrcode fx-step-ico"></i>
-    <h3>One code on the tables</h3>
-    <p>Guests scan it and they are in. Nothing to download, no account to create, no queue at a booth, no password read out over a microphone.</p>
-  </div>
-  <div class="fx-step">
-    <span class="fx-num">3</span><i class="fas fa-hand-pointer fx-step-ico"></i>
-    <h3>One person holding the reins</h3>
-    <p>The host gets night-only access from their own phone, and it switches itself off when the function ends. Your staff stay exactly where they are needed.</p>
-  </div>
+  {% include howto-steps.html prefix="fx" num="1" icon_class="fx-step-ico" %}
 </div>
 
 <div class="fx-sec-head">
@@ -391,26 +419,7 @@ service_type: Function and event music, screen and interaction service
   <h2>The questions everyone asks first</h2>
 </div>
 <div class="fx-faq">
-  <div class="fx-qa">
-    <h3>What stops someone putting something awful on the screen?</h3>
-    <p>Every photo is screened automatically before it can appear, and every voice dedication is transcribed and checked before it airs. On top of that your staff keep a live feed with a one-tap remove. Nothing reaches the wall unseen, and nobody has to stand there watching it all night.</p>
-  </div>
-  <div class="fx-qa">
-    <h3>Do guests need to download an app?</h3>
-    <p>No. They scan the code and it opens in their phone's browser. No app, no sign-up, no account, no password. That is deliberate, because anything more and half the room will not bother.</p>
-  </div>
-  <div class="fx-qa">
-    <h3>Do we need to buy a screen?</h3>
-    <p>Usually not. A TV or commercial display with a spare HDMI socket is all it takes. If you would rather have a dedicated screen or a wall-mounted touchscreen we can supply one, quoted for your venue, with no margin loaded onto the hardware.</p>
-  </div>
-  <div class="fx-qa">
-    <h3>What if the host wants the music left alone?</h3>
-    <p>Then it is. Photos, requests and dedications can each be switched on or off for the night. Some hosts want the whole room running it, others just want the controls and a good channel. Both work.</p>
-  </div>
-  <div class="fx-qa">
-    <h3>Does this only work for functions?</h3>
-    <p>No, and that is rather the point. The same system runs every night you are open. The function features simply hand the room over for one evening.</p>
-  </div>
+  {% include faq-list.html prefix="fx" %}
 </div>
 
 <div class="try-demo">

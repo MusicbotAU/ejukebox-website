@@ -7,7 +7,7 @@ schema_service: Commercial background music provider for Australian businesses
 service_type: Commercial background music supplier for Australian businesses
 audience_name: Australian businesses
 h1: Licensed background music for Australian businesses
-last_reviewed: 2026-09-15
+last_reviewed: 2026-10-15
 mentions:
   - name: OneMusic Australia
     url: https://onemusic.com.au/
@@ -25,6 +25,7 @@ faqs:
     a: Yes. eJukebox can run the same channels and announcements across every site in a group, managed centrally. Talk to us about a rollout.
   - q: Where is eJukebox based?
     a: eJukebox is Australian owned and run by Musicbot Pty Ltd in Ryde, NSW, with support from Australia. We supply venues right across the country.
+schema_about: [background-music, music-licensing, retail, hospitality]
 ---
 
 {% include hero.html
@@ -172,10 +173,10 @@ faqs:
   </section>
 
   <section class="bm-block bm-faq">
-    <h2>Frequently asked questions</h2>
+    <h2>Background music questions, answered</h2>
     {% for f in page.faqs %}
     <h3>{{ f.q }}</h3>
-    <p>{{ f.a }}</p>
+    <p>{% include price-tokens.html text=f.a %}</p>
     {% endfor %}
   </section>
 

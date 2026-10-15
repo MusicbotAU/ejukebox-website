@@ -9,6 +9,44 @@ hero:
   h1: "Jukebox & Background Music for Pubs, Clubs, Cafes & Retail"
   sub: Professionally curated, fully licensed music your staff control from their phone and your customers request from theirs.
   form: true
+faqs:
+  - q: >-
+      What is eJukebox?
+    a: >-
+      eJukebox is an Australian owned background music and digital jukebox service for pubs, clubs, bars, cafes, restaurants, gyms, shops and more. Professionally curated, licensed channels play all day on their own, your staff steer the music from their phones, and customers can request songs from theirs whenever you want them to.
+  - q: >-
+      How much does background music for a business cost?
+    a: >-
+      Solo is ${solo} a month ex GST - one curated channel for a single area, streamed to a device you already own. Core, the hospitality base with two zones, song requests and an on-site player, is ${core} a month ex GST, and Complete adds every software add-on for ${complete} a month ex GST. <a href="/products.html">See plans &amp; pricing</a>.
+  - q: >-
+      Can I play Spotify in my business?
+    a: >-
+      No. A personal Spotify account is licensed for personal use only, and Spotify's own terms rule out playing it in a business. eJukebox is licensed for business use, and leaving personal streaming also removes the extra charge it adds to your OneMusic licence.
+  - q: >-
+      Do I still need a OneMusic licence?
+    a: >-
+      Yes. Every business that plays music where customers or staff can hear it holds its own OneMusic licence, whoever supplies the music, and our monthly fee does not include it. For pubs and clubs we can collect it and pay it to OneMusic for you, at cost. <a href="/licensing.html">How music licensing works</a>.
+  - q: >-
+      Does it work with our existing speakers and TVs?
+    a: >-
+      Yes. A compact player connects to your existing amplifier and speakers, screen features use the TVs already on your walls through a spare HDMI socket, and if you have an AV installer we work with them directly.
+  - q: >-
+      Do customers need an app to request songs?
+    a: >-
+      No. They scan a QR code and request from their phone's browser, or use the free <a href="/ejukebox-apps.html#request">eJukebox Request</a> app. Song requests are your choice - switch them on or off, decide what can be requested, and set how many songs each person can request every hour.
+  - q: >-
+      What happens if the internet drops out?
+    a: >-
+      On Core and Complete the music keeps playing - the on-site player carries your music on board and catches up when the connection is back. Every player is watched, and our team is alerted if the music ever stops.
+  - q: >-
+      Where in Australia does eJukebox work?
+    a: >-
+      Everywhere. eJukebox runs over an ordinary internet connection, so venues in every state and territory - capital cities, regional centres and country towns - get the same music, apps and support. Your player arrives set up, and you plug it in with illustrated instructions and video call support, or with your own AV installer.
+last_reviewed: 2026-10-15
+schema_apps: [request, admin, music]
+schema_about: [background-music, jukebox, pub, hospitality]
+schema_service: Jukebox and background music for Australian venues
+service_type: Commercial background music and digital jukebox service
 ---
 
 {% include hero.html %}
@@ -109,6 +147,11 @@ hero:
     .hs-trial { padding:38px 18px 30px; }
     .hs-trial-grid { grid-template-columns:1fr; }
   }
+  /* the questions venues ask - an accordion; the fq- styles come with faq-list.html */
+  .hs-faq { margin:64px 0 24px; }
+  .hs-faq-head { text-align:center; }
+  #main-content .hs-faq h2 { margin:0 !important; padding:0 !important; border:0 !important; text-align:center !important;
+    font-size:clamp(1.6rem, 3vw, 2.2rem) !important; line-height:1.15 !important; color:var(--ejm-ink) !important; }
 </style>
 
 <div class="hs-apps">
@@ -382,3 +425,13 @@ hero:
 {% include testimonial.html id="peak-health-fitness" %}
 {% include testimonial.html id="diana-f" %}
 </div>
+
+<section class="hs-faq" aria-labelledby="hs-faq-title">
+  <div class="hs-faq-head">
+    <span class="hs-kick">Questions</span>
+    <h2 id="hs-faq-title">Background music and jukebox questions, answered</h2>
+  </div>
+  <div class="fq-list">
+  {% include faq-list.html mode="details" %}
+  </div>
+</section>

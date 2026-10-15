@@ -4,6 +4,37 @@ permalink: /products.html
 title: Plans & Pricing for Venue Music
 description: Solo from $49/mo for a single-area shop, Core from $169/mo for a venue, or Complete with every add-on included. Pick only the features you want.
 schema_page_type: CollectionPage
+faqs:
+  - q: >-
+      How much does eJukebox cost?
+    a: >-
+      Solo is ${solo} a month, Core is ${core} a month and Complete is ${complete} a month, all ex GST. Core and Complete also have a one-off cost for the on-site player, quoted for your venue.
+  - q: >-
+      What is the difference between Solo and Core?
+    a: >-
+      Solo is streaming only: one channel, one area, no song requests and nothing to install. Core is the full venue system: two zones, song requests and the interaction layer, voice announcements you record yourself, and an on-site player that keeps playing if the internet drops.
+  - q: >-
+      Are there lock-in contracts?
+    a: >-
+      No. There are no lock-in contracts on any plan.
+  - q: >-
+      Is the OneMusic licence included?
+    a: >-
+      No - no music supplier can include it. Your OneMusic licence is held in your business name and paid separately. For pubs and clubs we can collect it and pay it to OneMusic for you, at cost, with no margin. <a href="/licensing.html">How music licensing works</a>.
+  - q: >-
+      What is a zone, and how many do I need?
+    a: >-
+      A zone is any area that plays its own music - the front bar, the bistro, the beer garden, the gaming room. Core and Complete include two, and the player we fit drives up to four, so zones three and four are just ${zone} a month each ex GST, with no extra hardware.
+  - q: >-
+      What hardware do I need?
+    a: >-
+      On Solo, none - it streams to a computer, tablet, phone, Sonos or streamer you already own. Core and Complete use a compact on-site player that connects to your existing amplifier and speakers, a one-off cost quoted for your venue. Screen features use a TV with a spare HDMI socket, and a touchscreen, if you want one, is quoted per venue.
+  - q: >-
+      Can I add features later?
+    a: >-
+      Yes. Start on Core and add any add-on when you are ready - each one is monthly, per venue. Or take Complete and have every software add-on from day one.
+last_reviewed: 2026-10-15
+schema_about: [background-music, jukebox]
 ---
 
 {% include pricing-menu.html mode="public" %}
@@ -27,6 +58,7 @@ schema_page_type: CollectionPage
   .pb-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: .95rem;
     color: var(--ejm-cyan); text-decoration: none; }
   .pb-link:hover { text-decoration: underline; }
+  .pb-faq .pb-more-head { margin-bottom:6px; }
 </style>
 
 <div class="pb-more">
@@ -65,5 +97,15 @@ schema_page_type: CollectionPage
       <a class="pb-link" href="/custom-radio.html"><i class="fas fa-arrow-right"></i> See Custom Branded Radio</a>
     </div>
 
+  </div>
+</div>
+
+<div class="pb-more pb-faq">
+  <div class="pb-more-head">
+    <h2>Plans and pricing questions</h2>
+    <p>Straight answers on cost, contracts, hardware and your OneMusic licence.</p>
+  </div>
+  <div class="fq-list">
+  {% include faq-list.html mode="details" %}
   </div>
 </div>

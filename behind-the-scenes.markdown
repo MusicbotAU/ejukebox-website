@@ -4,7 +4,51 @@ title: Behind the Scenes of a Jukebox Installation
 description: How eJukebox runs in your venue - a compact player that plays on if the internet drops, updates itself overnight, and alerts us if the music stops.
 schema_service: Managed jukebox player installation for Australian venues
 service_type: Cloud-managed music player installation and maintenance
-last_reviewed: 2026-10-13
+last_reviewed: 2026-10-15
+howto:
+  name: "How eJukebox is set up in your venue"
+  description: >-
+    From box to music without the fuss: your player arrives set up for your venue, it plugs into your sound system, and the music and the apps take over.
+  supply:
+    - "Your existing amplifier and speakers"
+    - "Power and a wired network connection"
+  steps:
+    - name: "We set it up first"
+      text: >-
+        Your player is configured for your venue, your zones and your music before it ever leaves us.
+    - name: "Plug it in"
+      text: >-
+        Power, network and audio. We install it, work with your AV installer if you have one, or send illustrated step-by-step instructions so you can do it yourself - with one-on-one video call support if you need it.
+    - name: "Music, and the apps"
+      text: >-
+        The music starts, your staff sign in to <a href="/admin-app/">eJukebox Admin</a>, and your customers start requesting.
+faqs:
+  - q: >-
+      What equipment do we need?
+    a: >-
+      Your existing amplifier and speakers, power, and a wired network connection. The compact eJukebox player connects to your sound system and tucks away in a rack, cupboard or office.
+  - q: >-
+      Who installs it?
+    a: >-
+      Your choice. We install it, work with your AV installer if you have one, or send illustrated step-by-step instructions so you can do it yourself - with one-on-one video call support if you need it. Either way, your player arrives already set up for your venue, your zones and your music.
+  - q: >-
+      What happens if the internet goes down?
+    a: >-
+      The music keeps going. Every player carries the venue's music on board and keeps playing until the connection comes back.
+  - q: >-
+      How do you know if something goes wrong?
+    a: >-
+      Every player checks in with us every minute. If the music stops for 30 seconds, our team is alerted on their phones - usually before anyone in the room notices - and almost anything can be fixed remotely.
+  - q: >-
+      Does the player need maintenance?
+    a: >-
+      No. Updates and a fresh restart happen overnight while you are closed, and our team sets up, watches and updates every player, so nobody at the venue ever has to manage a computer.
+  - q: >-
+      Can one player run different music in different areas?
+    a: >-
+      Yes. One player drives up to four zones - different music in the bar, the bistro and the beer garden.
+schema_apps: [admin]
+schema_about: [broadcast-automation, audio-processing, sound-reinforcement]
 ---
 
 <style>
@@ -197,9 +241,15 @@ last_reviewed: 2026-10-13
   <h2>From box to music, without the fuss</h2>
 </div>
 <div class="bt-steps">
-  <div class="bt-step"><span class="bt-num">1</span><h3>We set it up first</h3><p>Your player is configured for your venue, your zones and your music before it ever leaves us.</p></div>
-  <div class="bt-step"><span class="bt-num">2</span><h3>Plug it in</h3><p>Power, network and audio. We install it, work with your AV installer if you have one, or send illustrated step-by-step instructions so you can do it yourself - with one-on-one video call support if you need it.</p></div>
-  <div class="bt-step"><span class="bt-num">3</span><h3>Music, and the apps</h3><p>The music starts, your staff sign in to <a href="/admin-app/">eJukebox Admin</a>, and your customers start requesting.</p></div>
+  {% include howto-steps.html prefix="bt" num="1" %}
+</div>
+
+<div class="bt-sec-head">
+  <span class="bt-kick">Questions</span>
+  <h2>Installation and support questions, answered</h2>
+</div>
+<div class="fq-list">
+{% include faq-list.html mode="details" %}
 </div>
 
 <div class="try-demo">

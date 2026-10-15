@@ -2,6 +2,7 @@
 layout: default
 title: Why People Love eJukebox, Reviews
 description: See why Australian pubs, clubs and cafes love eJukebox. Testimonials and reviews from venues running it every day. Start your free trial.
+schema_about: [background-music, customer-experience]
 ---
 
 <style>

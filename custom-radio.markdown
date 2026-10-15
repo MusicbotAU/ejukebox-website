@@ -5,6 +5,24 @@ description: Your own branded in-store radio station - one to four channels, pro
 schema_service: Custom branded in-store radio for retail and shopping centres
 service_type: Custom branded radio station production and delivery
 last_reviewed: 2026-10-13
+faqs:
+  - q: >-
+      How many channels can we have?
+    a: >-
+      One to four. A common setup is one main channel, with a second for a different area or brand.
+  - q: >-
+      Can promos differ by store?
+    a: >-
+      Yes. Messages can run nationally, by region, or venue by venue.
+  - q: >-
+      Can we stream it to the public?
+    a: >-
+      Yes, as an option - on your website, in your app, or on iHeartRadio.
+  - q: >-
+      How is it priced?
+    a: >-
+      Every station is different, so we put together a custom proposal based on the scope and the commitment. <a href="/contact/">Tell us what you have in mind</a>.
+schema_about: [internet-radio, radio-programming, sensory-branding]
 ---
 
 {% include feature-styles.html %}
@@ -69,10 +87,7 @@ last_reviewed: 2026-10-13
   <h2>What groups ask first</h2>
 </div>
 <div class="ft-faq">
-  <div class="ft-qa"><h3>How many channels can we have?</h3><p>One to four. A common setup is one main channel, with a second for a different area or brand.</p></div>
-  <div class="ft-qa"><h3>Can promos differ by store?</h3><p>Yes. Messages can run nationally, by region, or venue by venue.</p></div>
-  <div class="ft-qa"><h3>Can we stream it to the public?</h3><p>Yes, as an option - on your website, in your app, or on iHeartRadio.</p></div>
-  <div class="ft-qa"><h3>How is it priced?</h3><p>Every station is different, so we put together a custom proposal based on the scope and the commitment. <a href="/contact/">Tell us what you have in mind</a>.</p></div>
+  {% include faq-list.html prefix="ft" %}
 </div>
 
 <div class="try-demo">

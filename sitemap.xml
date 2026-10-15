@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/products.html</loc>
-    <lastmod>2026-01-19</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -49,25 +49,46 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/admin-app/</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-whats-queued.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-music-menu.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-music-remote.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-scheduled-announcements.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-voice-menu.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-live-microphone.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-message-on-screen.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-instant-slides.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-guest-photo.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ejukebox.com.au/ejukebox-apps.html</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/song-request-app-ai-picks.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/song-request-app-home.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/song-request-app-voice-dedication.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-music-menu.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-voice-menu.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-instant-slides.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ejukebox.com.au/ejukebox-request-portal.html</loc>
-    <lastmod>2026-01-19</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/song-request-app-ai-search.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/song-request-app-home.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/song-request-app-voice-dedication.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-music-right-now.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-whats-queued.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/ejukebox-admin-app-plan-for-tonight.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ejukebox.com.au/behind-the-scenes.html</loc>
-    <lastmod>2026-01-19</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -103,67 +124,67 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/background-music-for-business/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-pubs-bars/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-nightclubs/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-cafes/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-restaurants/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-gyms/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-hotels/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-retail/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-salons-spas/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-medical/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/irish-pub-music/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -187,7 +208,7 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/in-venue-screens/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

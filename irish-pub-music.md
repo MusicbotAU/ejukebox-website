@@ -31,4 +31,7 @@ faqs:
     a: Yes. For the occasion we weave more of the anthems and singalongs that fill a room through your music, then go back to your usual mix afterwards.
   - q: Do I need a licence to play Irish music in my pub?
     a: Yes. Australian venues need a OneMusic licence to play recorded music in public, and you hold that licence yourself. Because eJukebox is a commercial background music supplier there is no Digital Copy/Delivery fee on your licence, and we can collect the fee and pay it to OneMusic for you, at cost.
+faq_title: Irish pub music questions, answered
+schema_about: [irish-pub, irish-music, st-patricks-day]
+last_reviewed: 2026-10-15
 ---

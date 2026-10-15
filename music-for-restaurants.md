@@ -19,4 +19,24 @@ benefits:
   - icon: fa-certificate
     title: Fully licensed
     text: A personal Spotify account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence.
+faqs:
+  - q: >-
+      Can the music change between lunch and dinner service?
+    a: >-
+      Yes. Schedule the mood to change on its own across lunch, afternoon and dinner, so the room is relaxed at midday and livelier at night without anyone touching it.
+  - q: >-
+      Will the music get in the way of conversation?
+    a: >-
+      It should not. Every track is professionally processed for consistent volume, so nothing jumps out between songs, and the channels are curated to sit under a dining room rather than over it.
+  - q: >-
+      Can we keep song requests switched off?
+    a: >-
+      Yes. Requests are entirely your choice - run music only, and switch requests on for a function or a private booking if you like.
+  - q: >-
+      Do restaurants need a music licence?
+    a: >-
+      Yes. Your restaurant holds its own OneMusic licence, whoever supplies the music. With eJukebox there is no Digital Copy/Delivery fee on it, as there would be with a personal streaming account. <a href="/licensing.html">How music licensing works</a>.
+last_reviewed: 2026-10-15
+faq_title: Restaurant music questions, answered
+schema_about: [restaurant, background-music, dayparting]
 ---

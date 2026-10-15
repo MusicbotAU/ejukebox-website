@@ -42,82 +42,175 @@ address:
   postcode: "2112"
   country: AU
 
+# ---- Profiles that identify this organisation (sameAs) -----------------------
+# Only URLs that unambiguously ARE eJukebox / Musicbot. Facebook and X come from
+# site.social in _config.yml; everything else goes here. Add LinkedIn, Instagram,
+# YouTube and the Google Business Profile here as soon as they exist.
+same_as:
+  - https://apps.apple.com/au/developer/ejukebox/id978645791        # App Store developer page
+  - https://play.google.com/store/apps/developer?id=Musicbot        # Google Play developer page
+  - https://abr.business.gov.au/ABN/View?abn=44163918054            # ABN Lookup, the public register
+acn: "163 918 054"       # the last nine digits of the ABN, as for every Australian company
+
 # ---- Where the service is offered -------------------------------------------
-# areaServed. `type` maps straight to a schema.org Place subtype:
-#   Country | State | City | AdministrativeArea
-# Regional entries are named deliberately: they evidence genuine national reach
-# rather than the usual capital-cities-only claim.
+# areaServed. Rendered as Country > State > City/region, each place pinned to its
+# state with an @id, so "Newcastle" is never mistaken for the one in England.
+# Service nodes on every page point at the Country (#area-au); the full list lives
+# on the Organization. eJukebox runs over an ordinary internet connection, so the
+# service genuinely covers all of it - metro, regional and remote. Regional names
+# are deliberate: they evidence national reach rather than capitals-only.
+# Several are towns where eJukebox venues already trade (Central Coast, Wheatbelt,
+# Mackay, Kalgoorlie, Bundaberg).
 area_served:
-  - { type: Country, name: Australia }
-  - { type: State, name: New South Wales }
-  - { type: State, name: Victoria }
-  - { type: State, name: Queensland }
-  - { type: State, name: Western Australia }
-  - { type: State, name: South Australia }
-  - { type: State, name: Tasmania }
-  - { type: State, name: Australian Capital Territory }
-  - { type: State, name: Northern Territory }
-  - { type: City, name: Sydney, state: New South Wales }
-  - { type: City, name: Melbourne, state: Victoria }
-  - { type: City, name: Brisbane, state: Queensland }
-  - { type: City, name: Perth, state: Western Australia }
-  - { type: City, name: Adelaide, state: South Australia }
-  - { type: City, name: Hobart, state: Tasmania }
-  - { type: City, name: Canberra, state: Australian Capital Territory }
-  - { type: City, name: Darwin, state: Northern Territory }
-  - { type: City, name: Kalgoorlie, state: Western Australia }
-  - { type: City, name: Bundaberg, state: Queensland }
-  - { type: AdministrativeArea, name: Central Coast, state: New South Wales }
-  - { type: AdministrativeArea, name: Sydney CBD, state: New South Wales }
+  states:
+    - name: New South Wales
+      code: NSW
+      cities: [Sydney, Newcastle, Wollongong, Coffs Harbour, Port Macquarie, Tamworth, Wagga Wagga, Albury, Orange, Dubbo, Bathurst, Lismore, Byron Bay]
+      regions: [Sydney CBD, Central Coast, Hunter Valley]
+    - name: Victoria
+      code: VIC
+      cities: [Melbourne, Geelong, Ballarat, Bendigo, Shepparton, Mildura, Warrnambool, Traralgon, Wodonga]
+    - name: Queensland
+      code: QLD
+      cities: [Brisbane, Gold Coast, Sunshine Coast, Townsville, Cairns, Toowoomba, Mackay, Rockhampton, Bundaberg, Hervey Bay, Gladstone, Mount Isa]
+    - name: Western Australia
+      code: WA
+      cities: [Perth, Mandurah, Bunbury, Busselton, Geraldton, Kalgoorlie, Albany, Broome, Karratha, Port Hedland]
+      regions: [Wheatbelt]
+    - name: South Australia
+      code: SA
+      cities: [Adelaide, Mount Gambier, Whyalla, Port Augusta, Port Lincoln, Murray Bridge]
+      regions: [Barossa Valley]
+    - name: Tasmania
+      code: TAS
+      cities: [Hobart, Launceston, Devonport, Burnie]
+    - name: Australian Capital Territory
+      code: ACT
+      cities: [Canberra]
+    - name: Northern Territory
+      code: NT
+      cities: [Darwin, Palmerston, Alice Springs, Katherine]
 
 # ---- Expertise (knowsAbout) --------------------------------------------------
-# Topics the organisation is a credible source on. This is a topical-authority
-# signal: it tells an answer engine which questions eJukebox is worth citing for.
-# Keep every entry defensible - claiming expertise we cannot back up is the one
-# way this field does damage.
+# Topics the organisation is a credible source on - the topical-authority signal
+# that tells an answer engine which questions eJukebox is worth citing for.
+# A key from _data/topics.yml renders as a Thing pinned to its Wikipedia article;
+# plain text renders as text. Keep every entry defensible - claiming expertise we
+# cannot back up is the one way this field does damage.
 knows_about:
-  # music programming & curation
+  # music, playlists and programming
+  - background-music
   - Background music for business
   - Commercial background music supply
+  - In-store music
+  - Pub music
+  - pub-rock-au
+  - music-of-australia
+  - pop-music
+  - rock-music
+  - country-music
+  - irish-music
   - Music curation
   - Music direction
-  - Radio programming
+  - playlist
+  - Playlist programming for hospitality venues
+  - radio-programming
   - Music scheduling and rotation
-  - Dayparting
+  - dayparting
   - In-store radio
   - Custom branded radio stations
-  - Playlist programming for hospitality venues
-  # the product itself
-  - Digital jukebox systems
+  - internet-radio
+  - music-streaming
+  - Commercial music streaming for business
+  - music-charts
+  # jukeboxes, DJs and song requests
+  - jukebox
+  - Digital jukeboxes
+  - Jukebox hire
+  - Touchscreen jukeboxes
   - Interactive song request systems
+  - QR code song requests
+  - AI song search
+  - Voice dedications and shout-outs
+  - disc-jockey
+  - DJ replacement for venues
+  - dj-mix
+  - gapless-playback
+  - broadcast-automation
   - Automated music systems for venues
-  - Cloud music streaming for business
-  - Multi-zone audio distribution
-  - Spotify integration for venues
-  # audio engineering
-  - Audio processing
+  # audio and AV
+  - pro-audio
+  - audio-engineering
+  - audio-processing
+  - compression
   - Multiband automatic gain control
-  - Loudness normalisation
-  - Music levels and volume levelling
-  - Sound mixing
-  - Public address systems
+  - loudness
+  - Volume levelling for venues
+  - sound-reinforcement
+  - public-address
+  - loudspeaker
+  - amplifier
+  - microphone
+  - Multi-zone audio
   - Venue sound system design
-  # licensing & compliance
-  - Music licensing in Australia
-  - OneMusic Australia licensing
-  - APRA AMCOS
-  - PPCA
-  - Public performance rights
-  - Music copyright compliance for business
-  # people & delivery skills
-  - Radio DJ announcing
-  - Voiceovers
-  - Voice announcements
-  - Text to speech announcements
-  - Party hosting
-  - Function and event hosting
-  - Wedding reception music
+  - audiovisual
   - AV installation
-  - Audio visual integration
+  - AV integration for hospitality venues
+  - streaming-media
+  - Cloud-managed media players
+  # screens and photo walls
+  - digital-signage
+  - In-venue screens
+  - Photo walls
+  - Guest photo walls for venues
+  - slide-show
+  - interactive-kiosk
+  - touchscreen
+  # voice and announcements
+  - Voice announcements
+  - Scheduled announcements
+  - speech-synthesis
+  - voice-over
+  - Radio DJ announcing
+  - Live microphone and venue PA
+  # functions and events
+  - Functions and events
+  - Function room music
+  - event-management
+  - wedding-reception
+  - Wedding reception music
+  - party
+  - Party hosting
+  # licensing and compliance
+  - music-licensing
+  - Music licensing in Australia
+  - onemusic
+  - apra-amcos
+  - ppca
+  - performing-rights
+  - copyright-au
+  - Music copyright compliance for business
+  - spotify
+  # venues and hospitality
+  - hospitality
   - Hospitality venue operations
-  - Search engine optimisation
+  - pub
+  - bar
+  - irish-pub
+  - RSL and community clubs
+  - nightclub
+  - restaurant
+  - cafe
+  - hotel
+  - gym
+  - retail
+  - beauty-salon
+  - day-spa
+  - waiting-room
+  - customer-experience
+  - sensory-branding
+  - music-psychology
+  # apps and technology
+  - mobile-app
+  - Staff music control apps
+  - qr-code

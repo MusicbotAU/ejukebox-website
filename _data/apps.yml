@@ -1,0 +1,84 @@
+# =============================================================================
+# The eJukebox apps - single source of truth for their structured data
+# =============================================================================
+# _includes/schema.html renders each entry as a MobileApplication node with a
+# stable @id (https://ejukebox.com.au/#app-<id>), published by the Organization.
+# A page lists the apps it shows in front matter:  schema_apps: [request, admin]
+# The homepage carries all three.
+#
+# Facts here are only what the store listings and our own app pages say. Store
+# links checked Wed 15 Oct 2026; all three need iOS 15.1 or later on iPhone.
+# The iPhone Admin app is unlisted in App Store search - the direct link works.
+# The old eJukebox Controller app is gone from both stores. Never list it.
+# `screens` are keys in _data/app_screens.yml (the cleaned, privacy-safe grabs).
+# -----------------------------------------------------------------------------
+
+- id: request
+  name: eJukebox Request
+  for: Customers and guests at eJukebox venues
+  description: >-
+    The free app for customers at an eJukebox venue. See what is playing and what is coming up,
+    search the venue's library, hear a 30-second preview and request a song, ask Help me pick in plain
+    English, record a voice dedication that plays right before their song and blends into its intro, and
+    send a photo to the venue's screen. Requests are accepted
+    while the customer is at the venue. Customers can also request from their phone's browser with no app.
+  category: EntertainmentApplication
+  sub_category: Song requests
+  os: iOS 15.1 or later, Android
+  page: /ejukebox-apps.html#request
+  ios: https://apps.apple.com/au/app/ejukebox-request/id6804389497
+  android: https://play.google.com/store/apps/details?id=au.com.ejukebox.request
+  price_note: Free to download and use. Requests work at eJukebox venues.
+  screens: [request-home, request-ai-search, request-ai-picks, request-voice]
+  features:
+    - See what is playing now and the real coming-up order
+    - Search the venue's library and hear 30-second previews
+    - Request songs from your own phone
+    - AI song search - describe what you want and pick from the list
+    - Record a voice dedication that plays right before your song and blends into its intro
+    - Send a photo to the venue's screen
+    - Bring your Spotify playlists
+
+- id: admin
+  name: eJukebox Admin
+  for: Managers and staff at eJukebox venues
+  description: >-
+    The free staff app for eJukebox venues, on iPhone and Android. See what is playing, what is next and
+    whether the player is healthy; skip, hold or reorder songs, move a request to the top, switch channels
+    or ask in plain English; record, type, schedule or go live with announcements; put photos and slides on
+    the venue's screens and approve guests' photos; and invite staff and approve their access. What it can
+    do follows the venue's eJukebox plan - some voice and screen features are paid add-ons.
+  category: BusinessApplication
+  sub_category: Venue music control
+  os: iOS 15.1 or later, Android
+  page: /admin-app/
+  ios: https://apps.apple.com/au/app/ejukebox-admin/id6804389405
+  android: https://play.google.com/store/apps/details?id=au.com.ejukebox.media
+  price_note: Free for eJukebox venues. Features follow the venue's eJukebox plan.
+  screens: [admin-music-remote, admin-whats-queued, admin-voice, admin-live-mic, admin-patron-photos, admin-slides]
+  features:
+    - Now playing, coming up and player health at a glance
+    - Skip, hold, reorder and move requests to the top
+    - Switch channels, or ask for music in plain English
+    - Record, type and schedule announcements
+    - Live microphone - talk to the room from a phone
+    - Photos and slides on the venue's screens, with guest photo approval
+    - Staff sign-in with approval by a manager
+
+- id: music
+  name: eJukebox Music
+  for: Radio listeners in Australia and New Zealand
+  description: >-
+    Every radio station in Australia and New Zealand in one free app, each at the best sound it broadcasts.
+    More than 800 stations, with eJukebox's own channels at the top.
+  category: MultimediaApplication
+  sub_category: Radio
+  os: iOS 15.1 or later, Android
+  page: /ejukebox-apps.html
+  ios: https://apps.apple.com/au/app/ejukebox-music/id6809090284
+  android: https://play.google.com/store/apps/details?id=au.com.ejukebox.music
+  price_note: Free.
+  features:
+    - More than 800 Australian and New Zealand radio stations
+    - Each station at the best sound it broadcasts
+    - eJukebox's own channels at the top

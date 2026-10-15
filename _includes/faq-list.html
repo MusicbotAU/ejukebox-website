@@ -1,0 +1,65 @@
+{%- comment -%}
+===============================================================================
+ faq-list.html - the visible FAQ, rendered from the page's `faqs:` front matter
+===============================================================================
+ _includes/schema.html turns the same `faqs:` list into FAQPage JSON-LD, so the
+ questions readers see and the ones search engines and AI assistants read are
+ always identical. Never hand-write FAQ HTML on a page - add to `faqs:` instead.
+
+ Two looks:
+   {% include faq-list.html prefix="ft" %}
+       Cards, in the page's own classes: <div class="ft-qa"><h3>Q</h3><p>A</p></div>
+       Wrap in the page's container (<div class="ft-faq">). Prefixes in use:
+       ft feature pages, sr song requests, ap admin app, fx functions, dl apps.
+
+   <div class="fq-list">{% include faq-list.html mode="details" %}</div>
+       A two-column accordion with its own styles (fq-), emitted once per page.
+       Used where a long page needs the FAQ compact: home, plans & pricing,
+       in-venue screens, behind the scenes.
+
+ Front matter - use block scalars, so a colon or a {token} can never break YAML:
+   faqs:
+     - q: >-
+         Do customers need an app?
+       a: >-
+         No. They scan the code ... <a href="/ejukebox-apps.html">the free app</a>.
+ Answers may hold HTML links and price tokens like ${core} - see price-tokens.html.
+{%- endcomment -%}
+{%- if include.mode == 'details' -%}
+{%- unless fq_styles_done -%}{%- assign fq_styles_done = true %}
+<style>
+  /* FAQ accordion, prefixed fq-. The theme forces #main-content h3 and p styles with
+     !important, so these answer in kind. No icon font - the chevron is two borders. */
+  #main-content .fq-list { display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:start; margin:0; }
+  #main-content .fq-qa { margin:0; border-radius:16px; background:rgba(255,255,255,.035);
+    border:1px solid rgba(255,255,255,.09); transition:border-color .2s ease, background-color .2s ease; }
+  #main-content .fq-qa:hover { border-color:rgba(255,255,255,.18); }
+  #main-content .fq-qa[open] { border-color:rgba(129,140,248,.45); background:rgba(99,102,241,.08); }
+  #main-content .fq-qa summary { display:flex; align-items:flex-start; gap:16px; padding:18px 20px; cursor:pointer; list-style:none; }
+  #main-content .fq-qa summary::-webkit-details-marker { display:none; }
+  #main-content .fq-qa summary::after { content:""; flex:none; width:9px; height:9px; margin:6px 4px 0 auto;
+    border-right:2px solid var(--ejm-amber); border-bottom:2px solid var(--ejm-amber); transform:rotate(45deg);
+    transition:transform .2s ease, margin .2s ease; }
+  #main-content .fq-qa[open] summary::after { transform:rotate(-135deg); margin-top:10px; }
+  #main-content .fq-qa summary:focus-visible { outline:2px solid var(--ejm-ind-lt); outline-offset:2px; border-radius:16px; }
+  #main-content .fq-qa h3 { margin:0 !important; padding:0 !important; border:0 !important; font-size:1.04rem !important;
+    line-height:1.4 !important; font-weight:700; color:#fff !important; text-align:left !important; }
+  #main-content .fq-qa h3::before, #main-content .fq-qa h3::after { content:none !important; display:none !important; }
+  #main-content .fq-qa p { margin:0 !important; padding:0 20px 20px; font-size:.98rem; line-height:1.68; color:var(--ejm-soft) !important; }
+  #main-content .fq-qa a { color:var(--ejm-cyan) !important; text-decoration:underline; text-underline-offset:3px; }
+  @media (max-width:760px) {
+    #main-content .fq-list { grid-template-columns:1fr; }
+    #main-content .fq-qa summary { padding:16px 16px; }
+    #main-content .fq-qa p { padding:0 16px 18px; }
+  }
+</style>
+{%- endunless -%}
+{%- for f in page.faqs %}
+  <details class="fq-qa"><summary><h3>{{ f.q }}</h3></summary><p>{% include price-tokens.html text=f.a %}</p></details>
+{%- endfor %}
+{%- else -%}
+{%- assign fq_prefix = include.prefix | default: 'ft' -%}
+{%- for f in page.faqs %}
+  <div class="{{ fq_prefix }}-qa"><h3>{{ f.q }}</h3><p>{% include price-tokens.html text=f.a %}</p></div>
+{%- endfor %}
+{%- endif -%}

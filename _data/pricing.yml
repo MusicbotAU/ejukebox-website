@@ -161,9 +161,12 @@ included:
     video:
 
 # ---- Paid add-ons (on top of Core) -----------------------------------------
+# `page` is the feature page that explains the add-on; the /products.html schema
+# links each add-on's Offer to it.
 addons:
   - id: spotify
     name: Spotify Integration
+    page: /spotify-integration/
     category: Music
     retail: 29
     whl: 21
@@ -171,6 +174,7 @@ addons:
     video: eJukebox-Feature-Spotify-Integration.mp4
   - id: tts
     name: Type a Message
+    page: /voice-announcements/
     category: Voice
     retail: 19
     whl: 14
@@ -179,6 +183,7 @@ addons:
     bundle: voice-suite
   - id: scheduled
     name: Scheduled Announcements
+    page: /voice-announcements/
     category: Automation
     retail: 25
     whl: 18
@@ -187,6 +192,7 @@ addons:
     bundle: voice-suite
   - id: livemic
     name: Live Microphone
+    page: /live-microphone/
     category: Live
     retail: 29
     whl: 21
@@ -195,6 +201,7 @@ addons:
     bundle: voice-suite
   - id: livemic-monitor
     name: Live Mic Monitor
+    page: /live-microphone/
     category: Live
     retail: 15
     whl: 11
@@ -205,6 +212,7 @@ addons:
     bundle: voice-suite
   - id: dedications
     name: Voice Dedications
+    page: /voice-announcements/
     category: Interaction
     retail: 25
     whl: 18
@@ -212,6 +220,7 @@ addons:
     video: eJukebox-Feature-Voice-Dedications.mp4
   - id: photo-screen
     name: Photo Slideshow Display
+    page: /in-venue-screens/
     category: Display
     retail: 25
     whl: 18
@@ -220,6 +229,7 @@ addons:
     hardware: Works with a screen you already have - just needs a spare HDMI input
   - id: guest-photos
     name: Guest Photo Wall
+    page: /in-venue-screens/
     category: Display
     retail: 59
     whl: 42
@@ -228,6 +238,7 @@ addons:
     hardware: Works with a screen you already have - just needs a spare HDMI input
   - id: request-screen
     name: Interactive Request Screen
+    page: /in-venue-screens/
     category: Requests
     retail: 39
     whl: 28
@@ -236,6 +247,7 @@ addons:
     hardware: Needs a touchscreen (one-off hardware)
   - id: functions
     name: Functions & Events
+    page: /functions-events/
     category: Events
     retail: 19
     whl: 14

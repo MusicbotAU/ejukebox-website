@@ -6,6 +6,7 @@ schema_article:
   headline: The Benefits of Music in Business
   section: Music and customer behaviour
 schema_page_type: WebPage
+schema_about: [background-music, music-psychology, consumer-behaviour]
 ---
 
 <div class="benefits-hero">

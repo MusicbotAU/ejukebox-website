@@ -1,0 +1,100 @@
+# =============================================================================
+# Topic dictionary for structured data (JSON-LD)
+# =============================================================================
+# Each key is a subject eJukebox pages are about, or that the organisation knows
+# about, pinned to the reference page that defines it. That pin is what lets a
+# search engine or an AI assistant resolve "jukebox" to THE jukebox rather than
+# guess - it is the strongest topical signal schema can send.
+#
+# Used by:
+#   _data/org.yml  knows_about:   a key here becomes {"@type":"Thing","name","sameAs"}
+#   page front matter  schema_about: [key, key]   -> the WebPage's "about"
+#
+# Every same_as below was checked to resolve to the article named, Wed 15 Oct 2026,
+# using the canonical title (redirects followed). Check any new one the same way -
+# a sameAs pointing at the wrong article is worse than none at all.
+# OneMusic has no Wikipedia article, so it points at its own site.
+# -----------------------------------------------------------------------------
+
+# ---- music and programming
+background-music:   { name: Background music, same_as: "https://en.wikipedia.org/wiki/Background_music" }
+playlist:           { name: Music playlists, same_as: "https://en.wikipedia.org/wiki/Playlist" }
+radio-programming:  { name: Radio programming, same_as: "https://en.wikipedia.org/wiki/Radio_programming" }
+dayparting:         { name: Dayparting, same_as: "https://en.wikipedia.org/wiki/Dayparting" }
+internet-radio:     { name: Internet radio, same_as: "https://en.wikipedia.org/wiki/Internet_radio" }
+music-streaming:    { name: Music streaming services, same_as: "https://en.wikipedia.org/wiki/Music_streaming_service" }
+streaming-media:    { name: Audio streaming, same_as: "https://en.wikipedia.org/wiki/Streaming_media" }
+broadcast-automation: { name: Broadcast automation, same_as: "https://en.wikipedia.org/wiki/Broadcast_automation" }
+music-of-australia: { name: Australian music, same_as: "https://en.wikipedia.org/wiki/Music_of_Australia" }
+pub-rock-au:        { name: Australian pub rock, same_as: "https://en.wikipedia.org/wiki/Pub_rock_(Australia)" }
+pop-music:          { name: Pop music, same_as: "https://en.wikipedia.org/wiki/Pop_music" }
+rock-music:         { name: Rock music, same_as: "https://en.wikipedia.org/wiki/Rock_music" }
+country-music:      { name: Country music, same_as: "https://en.wikipedia.org/wiki/Country_music" }
+irish-music:        { name: Irish music, same_as: "https://en.wikipedia.org/wiki/Music_of_Ireland" }
+st-patricks-day:    { name: "Saint Patrick's Day", same_as: "https://en.wikipedia.org/wiki/Saint_Patrick%27s_Day" }
+music-charts:       { name: Music charts, same_as: "https://en.wikipedia.org/wiki/Record_chart" }
+music-psychology:   { name: Psychology of music, same_as: "https://en.wikipedia.org/wiki/Psychology_of_music" }
+consumer-behaviour: { name: Consumer behaviour, same_as: "https://en.wikipedia.org/wiki/Consumer_behaviour" }
+
+# ---- jukeboxes, DJs and requests
+jukebox:            { name: Jukeboxes, same_as: "https://en.wikipedia.org/wiki/Jukebox" }
+disc-jockey:        { name: Disc jockeys, same_as: "https://en.wikipedia.org/wiki/Disc_jockey" }
+dj-mix:             { name: DJ mixing, same_as: "https://en.wikipedia.org/wiki/DJ_mix" }
+gapless-playback:   { name: Gapless playback, same_as: "https://en.wikipedia.org/wiki/Gapless_playback" }
+qr-code:            { name: QR codes, same_as: "https://en.wikipedia.org/wiki/QR_code" }
+mobile-app:         { name: Mobile apps, same_as: "https://en.wikipedia.org/wiki/Mobile_app" }
+spotify:            { name: Spotify, same_as: "https://en.wikipedia.org/wiki/Spotify" }
+
+# ---- audio and AV
+pro-audio:          { name: Professional audio, same_as: "https://en.wikipedia.org/wiki/Professional_audio" }
+audio-engineering:  { name: Audio engineering, same_as: "https://en.wikipedia.org/wiki/Audio_engineer" }
+audio-processing:   { name: Audio signal processing, same_as: "https://en.wikipedia.org/wiki/Audio_signal_processing" }
+compression:        { name: Dynamic range compression, same_as: "https://en.wikipedia.org/wiki/Dynamic_range_compression" }
+loudness:           { name: Loudness normalisation, same_as: "https://en.wikipedia.org/wiki/Audio_normalization" }
+sound-reinforcement: { name: Sound reinforcement systems, same_as: "https://en.wikipedia.org/wiki/Sound_reinforcement_system" }
+public-address:     { name: Public address systems, same_as: "https://en.wikipedia.org/wiki/Public_address_system" }
+loudspeaker:        { name: Loudspeakers, same_as: "https://en.wikipedia.org/wiki/Loudspeaker" }
+amplifier:          { name: Audio amplifiers, same_as: "https://en.wikipedia.org/wiki/Audio_power_amplifier" }
+microphone:         { name: Microphones, same_as: "https://en.wikipedia.org/wiki/Microphone" }
+audiovisual:        { name: Audiovisual (AV) technology, same_as: "https://en.wikipedia.org/wiki/Audiovisual" }
+
+# ---- screens and photo walls
+digital-signage:    { name: Digital signage, same_as: "https://en.wikipedia.org/wiki/Digital_signage" }
+slide-show:         { name: Photo slideshows, same_as: "https://en.wikipedia.org/wiki/Slide_show" }
+interactive-kiosk:  { name: Touchscreen kiosks, same_as: "https://en.wikipedia.org/wiki/Interactive_kiosk" }
+touchscreen:        { name: Touchscreens, same_as: "https://en.wikipedia.org/wiki/Touchscreen" }
+
+# ---- voice
+speech-synthesis:   { name: Text-to-speech, same_as: "https://en.wikipedia.org/wiki/Speech_synthesis" }
+voice-over:         { name: Voice-overs, same_as: "https://en.wikipedia.org/wiki/Voice-over" }
+
+# ---- functions and events
+event-management:   { name: Event management, same_as: "https://en.wikipedia.org/wiki/Event_management" }
+wedding-reception:  { name: Wedding receptions, same_as: "https://en.wikipedia.org/wiki/Wedding_reception" }
+party:              { name: Parties and celebrations, same_as: "https://en.wikipedia.org/wiki/Party" }
+
+# ---- licensing
+music-licensing:    { name: Music licensing, same_as: "https://en.wikipedia.org/wiki/Music_licensing" }
+performing-rights:  { name: Public performance rights, same_as: "https://en.wikipedia.org/wiki/Performing_rights" }
+copyright-au:       { name: Australian copyright law, same_as: "https://en.wikipedia.org/wiki/Copyright_law_of_Australia" }
+apra-amcos:         { name: APRA AMCOS, same_as: "https://en.wikipedia.org/wiki/APRA_AMCOS" }
+ppca:               { name: PPCA, same_as: "https://en.wikipedia.org/wiki/Phonographic_Performance_Company_of_Australia" }
+onemusic:           { name: OneMusic Australia, same_as: "https://onemusic.com.au/" }
+
+# ---- venues and hospitality
+hospitality:        { name: Hospitality industry, same_as: "https://en.wikipedia.org/wiki/Hospitality_industry" }
+pub:                { name: Pubs, same_as: "https://en.wikipedia.org/wiki/Pub" }
+bar:                { name: Bars, same_as: "https://en.wikipedia.org/wiki/Bar_(establishment)" }
+irish-pub:          { name: Irish pubs, same_as: "https://en.wikipedia.org/wiki/Irish_pub" }
+nightclub:          { name: Nightclubs, same_as: "https://en.wikipedia.org/wiki/Nightclub" }
+restaurant:         { name: Restaurants, same_as: "https://en.wikipedia.org/wiki/Restaurant" }
+cafe:               { name: Cafés, same_as: "https://en.wikipedia.org/wiki/Coffeehouse" }
+hotel:              { name: Hotels, same_as: "https://en.wikipedia.org/wiki/Hotel" }
+gym:                { name: Gyms and fitness studios, same_as: "https://en.wikipedia.org/wiki/Gym" }
+retail:             { name: Retail stores, same_as: "https://en.wikipedia.org/wiki/Retail" }
+retail-design:      { name: Retail design, same_as: "https://en.wikipedia.org/wiki/Retail_design" }
+beauty-salon:       { name: Hair and beauty salons, same_as: "https://en.wikipedia.org/wiki/Beauty_salon" }
+day-spa:            { name: Day spas, same_as: "https://en.wikipedia.org/wiki/Day_spa" }
+waiting-room:       { name: Medical waiting rooms, same_as: "https://en.wikipedia.org/wiki/Waiting_room" }
+customer-experience: { name: Customer experience, same_as: "https://en.wikipedia.org/wiki/Customer_experience" }
+sensory-branding:   { name: Sensory branding, same_as: "https://en.wikipedia.org/wiki/Sensory_branding" }

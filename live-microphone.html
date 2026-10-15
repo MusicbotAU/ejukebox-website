@@ -6,6 +6,41 @@ description: Turn any staff phone into a PA microphone in seconds. The music duc
 schema_service: Live microphone and phone PA for venues
 service_type: Smartphone public address microphone for venues
 last_reviewed: 2026-10-13
+faqs:
+  - q: >-
+      How much delay is there?
+    a: >-
+      About a second - close enough that it feels live to the room and to the person talking.
+  - q: >-
+      What happens to the music?
+    a: >-
+      It ducks automatically the moment you start talking and comes back up when you stop. Nobody has to touch a volume control.
+  - q: >-
+      Do we need new equipment?
+    a: >-
+      No. It runs on a staff phone and plays through your existing speakers. For the monitor, add any pair of headphones.
+  - q: >-
+      What does it cost?
+    a: >-
+      Live Microphone and the Live Mic Monitor are add-ons, bundled in the Voice Suite and included in Complete. <a href="/products.html">See plans &amp; pricing</a>.
+howto:
+  name: "How to make a live announcement from a phone with eJukebox"
+  description: >-
+    Three taps to the whole room: open Voice in the eJukebox Admin app, pick your microphone and tap Go Live. The music ducks underneath you while you talk.
+  tool:
+    - "The eJukebox Admin app on a staff phone"
+  steps:
+    - name: "Open Voice"
+      text: >-
+        In the eJukebox Admin app, a trusted staff member or MC taps Voice, then Talk to the room now.
+    - name: "Pick your microphone"
+      text: >-
+        Use the phone's own mic or a headset - whatever is in your hand.
+    - name: "Tap Go Live"
+      text: >-
+        Your voice streams straight to the venue's sound system, and the music ducks underneath you.
+schema_apps: [admin]
+schema_about: [public-address, microphone]
 ---
 
 {% include feature-styles.html %}
@@ -38,9 +73,7 @@ last_reviewed: 2026-10-13
   <p>Some moments cannot wait: the meat-tray winner is about to be called, the band is ready, the birthday cake is coming out.</p>
 </div>
 <div class="ft-steps">
-  <div class="ft-step"><span class="ft-num">1</span><h3>Open Voice</h3><p>In the eJukebox Admin app, a trusted staff member or MC taps Voice, then Talk to the room now.</p></div>
-  <div class="ft-step"><span class="ft-num">2</span><h3>Pick your microphone</h3><p>Use the phone's own mic or a headset - whatever is in your hand.</p></div>
-  <div class="ft-step"><span class="ft-num">3</span><h3>Tap Go Live</h3><p>Your voice streams straight to the venue's sound system, and the music ducks underneath you.</p></div>
+  {% include howto-steps.html prefix="ft" num="1" %}
 </div>
 
 {% include app-fan.html left="admin-voice" center="admin-live-mic" right="admin-type" caption="Going live from the eJukebox Admin app. Real screens from Club Buffalo, our demo venue." %}
@@ -91,10 +124,7 @@ last_reviewed: 2026-10-13
   <h2>What venues ask first</h2>
 </div>
 <div class="ft-faq">
-  <div class="ft-qa"><h3>How much delay is there?</h3><p>About a second - close enough that it feels live to the room and to the person talking.</p></div>
-  <div class="ft-qa"><h3>What happens to the music?</h3><p>It ducks automatically the moment you start talking and comes back up when you stop. Nobody has to touch a volume control.</p></div>
-  <div class="ft-qa"><h3>Do we need new equipment?</h3><p>No. It runs on a staff phone and plays through your existing speakers. For the monitor, add any pair of headphones.</p></div>
-  <div class="ft-qa"><h3>What does it cost?</h3><p>Live Microphone and the Live Mic Monitor are add-ons, bundled in the Voice Suite and included in Complete. <a href="/products.html">See plans &amp; pricing</a>.</p></div>
+  {% include faq-list.html prefix="ft" %}
 </div>
 
 <div class="try-demo">

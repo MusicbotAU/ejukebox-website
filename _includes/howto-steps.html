@@ -1,0 +1,30 @@
+{%- comment -%}
+===============================================================================
+ howto-steps.html - visible numbered steps, rendered from `howto.steps`
+===============================================================================
+ _includes/schema.html turns the same `howto:` front matter into HowTo JSON-LD,
+ so the steps on the page and the structured steps can never drift apart.
+ Wrap in the page's own container (<div class="ft-steps">).
+
+   {% include howto-steps.html prefix="ft" num="1" %}
+       <div class="ft-step"><span class="ft-num">1</span><h3>..</h3><p>..</p></div>
+   {% include howto-steps.html prefix="fx" num="1" icon_class="fx-step-ico" %}
+       adds <i class="fas {step.icon} fx-step-ico"></i> for steps that carry `icon:`
+
+ Front matter:
+   howto:
+     name: How to ...            # the HowTo's name, written as the task
+     description: >-
+       ...
+     steps:
+       - name: Pick your channels
+         icon: fa-tv             # optional
+         text: >-
+           Step text. May hold an <a href="/admin-app/">HTML link</a>; the schema strips it.
+ Optional: total_time (ISO 8601, PT2M), cost (AUD, only when it is genuinely that),
+ supply and tool lists - see schema.html.
+{%- endcomment -%}
+{%- assign hw_prefix = include.prefix | default: 'ft' -%}
+{%- for s in page.howto.steps %}
+  <div class="{{ hw_prefix }}-step">{% if include.num %}<span class="{{ hw_prefix }}-num">{{ forloop.index }}</span>{% endif %}{% if s.icon %}<i class="fas {{ s.icon }}{% if include.icon_class %} {{ include.icon_class }}{% endif %}"></i>{% endif %}<h3>{{ s.name }}</h3><p>{{ s.text }}</p></div>
+{%- endfor %}

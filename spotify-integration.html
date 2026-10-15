@@ -6,6 +6,41 @@ description: Guests sign in with Spotify and their favourite songs flow into you
 schema_service: Spotify integration for venue song requests
 service_type: Guest playlist integration for venue music systems
 last_reviewed: 2026-10-13
+faqs:
+  - q: >-
+      Does the music play from Spotify?
+    a: >-
+      No. Spotify is only where the playlist comes from. Every song plays from your venue's licensed eJukebox library, which is what keeps it legal for business use.
+  - q: >-
+      What if a song is not in our library?
+    a: >-
+      It is simply not offered. Guests only see the songs that match your library, so nobody is promised a song you cannot play.
+  - q: >-
+      Do guests need anything special?
+    a: >-
+      Just their own Spotify account. They sign in on your venue's request page - there is nothing extra to install.
+  - q: >-
+      What does it cost?
+    a: >-
+      Spotify integration is an add-on to Core, and it is included in Complete. <a href="/products.html">See plans &amp; pricing</a>.
+howto:
+  name: "How guests request songs from their own Spotify playlists"
+  description: >-
+    From their playlist to your room: a guest signs in with Spotify on your venue's request page, their songs are matched to your licensed library, and they request in a tap.
+  supply:
+    - "The guest's own Spotify account"
+  steps:
+    - name: "Guests sign in"
+      text: >-
+        On your venue's request page a guest taps "Sign in with Spotify" and chooses one of their own playlists, right there on their phone.
+    - name: "Smart matching"
+      text: >-
+        Every track is matched against your venue's library, so "the song they want" becomes "a song you can play".
+    - name: "Request in a tap"
+      text: >-
+        Matched songs are ready to request straight away. Only songs that match your library are offered, so nobody hits a dead end.
+schema_apps: [request]
+schema_about: [spotify, playlist]
 ---
 
 {% include feature-styles.html %}
@@ -37,9 +72,7 @@ last_reviewed: 2026-10-13
   <h2>From their playlist to your room</h2>
 </div>
 <div class="ft-steps">
-  <div class="ft-step"><span class="ft-num">1</span><h3>Guests sign in</h3><p>On your venue's request page a guest taps "Sign in with Spotify" and chooses one of their own playlists, right there on their phone.</p></div>
-  <div class="ft-step"><span class="ft-num">2</span><h3>Smart matching</h3><p>Every track is matched against your venue's library, so "the song they want" becomes "a song you can play".</p></div>
-  <div class="ft-step"><span class="ft-num">3</span><h3>Request in a tap</h3><p>Matched songs are ready to request straight away. Only songs that match your library are offered, so nobody hits a dead end.</p></div>
+  {% include howto-steps.html prefix="ft" num="1" %}
 </div>
 
 {% include app-fan.html left="request-ai-search" center="request-home" right="request-ai-picks" caption="'Bring your Spotify playlists' sits right on the venue's home screen in eJukebox Request. Real screens from Club Buffalo, our demo venue." %}
@@ -78,10 +111,7 @@ last_reviewed: 2026-10-13
   <h2>What venues ask first</h2>
 </div>
 <div class="ft-faq">
-  <div class="ft-qa"><h3>Does the music play from Spotify?</h3><p>No. Spotify is only where the playlist comes from. Every song plays from your venue's licensed eJukebox library, which is what keeps it legal for business use.</p></div>
-  <div class="ft-qa"><h3>What if a song is not in our library?</h3><p>It is simply not offered. Guests only see the songs that match your library, so nobody is promised a song you cannot play.</p></div>
-  <div class="ft-qa"><h3>Do guests need anything special?</h3><p>Just their own Spotify account. They sign in on your venue's request page - there is nothing extra to install.</p></div>
-  <div class="ft-qa"><h3>What does it cost?</h3><p>Spotify integration is an add-on to Core, and it is included in Complete. <a href="/products.html">See plans &amp; pricing</a>.</p></div>
+  {% include faq-list.html prefix="ft" %}
 </div>
 
 <div class="try-demo">

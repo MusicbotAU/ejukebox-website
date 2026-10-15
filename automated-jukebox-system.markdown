@@ -32,6 +32,22 @@ faqs:
     a: >-
       The music is licensed for business use. Your venue still holds its own OneMusic licence, and for pubs
       and clubs we can collect and pay it for you, at cost. <a href="/licensing.html">How licensing works</a>.
+howto:
+  name: "How the eJukebox digital jukebox runs your venue's music"
+  description: >-
+    Set it once and the room takes care of itself: pick your channels, let the music play itself through the day, and let customers and staff join in from their phones.
+  steps:
+    - name: "Pick your channels"
+      text: >-
+        Hits, Smooth, Rock and Country, each built and refreshed by Australian music directors. Different areas can play different channels.
+    - name: "It plays itself"
+      text: >-
+        The music changes with the time of day on its own, flows from song to song without gaps, and stays at a consistent volume.
+    - name: "Everyone joins in"
+      text: >-
+        Customers request the next song from their phones, and your staff steer the night from the <a href="/admin-app/">eJukebox Admin app</a>.
+schema_apps: [admin]
+schema_about: [jukebox, disc-jockey, dayparting, gapless-playback]
 ---
 
 {% include feature-styles.html %}
@@ -70,9 +86,7 @@ faqs:
   <h2>Set it once. The room takes care of itself.</h2>
 </div>
 <div class="ft-steps">
-  <div class="ft-step"><span class="ft-num">1</span><h3>Pick your channels</h3><p>Hits, Smooth, Rock and Country, each built and refreshed by Australian music directors. Different areas can play different channels.</p></div>
-  <div class="ft-step"><span class="ft-num">2</span><h3>It plays itself</h3><p>The music changes with the time of day on its own, flows from song to song without gaps, and stays at a consistent volume.</p></div>
-  <div class="ft-step"><span class="ft-num">3</span><h3>Everyone joins in</h3><p>Customers request the next song from their phones, and your staff steer the night from the <a href="/admin-app/">eJukebox Admin app</a>.</p></div>
+  {% include howto-steps.html prefix="ft" num="1" %}
 </div>
 
 {% include app-fan.html left="admin-whats-queued" center="admin-music-remote" right="admin-news" caption="Running the music from eJukebox Admin. Real screens from Club Buffalo, our demo venue." %}
@@ -108,8 +122,8 @@ faqs:
   <h2>What venues ask about a digital jukebox</h2>
 </div>
 <div class="ft-faq">
-{% for f in page.faqs %}  <div class="ft-qa"><h3>{{ f.q }}</h3><p>{{ f.a }}</p></div>
-{% endfor %}</div>
+{% include faq-list.html prefix="ft" %}
+</div>
 
 <div class="try-demo">
   <div class="demo-content">

@@ -5,6 +5,25 @@ description: Why venues choose eJukebox - Australian-curated channels, song requ
 schema_service: Professionally programmed background music for Australian venues
 service_type: Human-curated commercial music programming and broadcast audio processing
 last_reviewed: 2026-10-13
+faqs:
+  - q: >-
+      Do customers need an app?
+    a: >-
+      No. They request from the venue's QR code in any phone's browser, or with the free <a href="/ejukebox-apps.html#request">eJukebox Request</a> app if they prefer.
+  - q: >-
+      What if the internet goes down?
+    a: >-
+      The music keeps playing. The player carries the venue's music on board and catches up when the connection is back.
+  - q: >-
+      Does eJukebox include my OneMusic licence?
+    a: >-
+      No music supplier can - it is held in your business name and paid separately. For pubs and clubs we can collect and pay it for you, at cost.
+  - q: >-
+      Am I locked into a contract?
+    a: >-
+      No. There are no lock-in contracts. <a href="/products.html">See plans &amp; pricing</a>.
+schema_apps: [request]
+schema_about: [background-music, radio-programming, audio-processing]
 ---
 
 {% include feature-styles.html %}
@@ -69,10 +88,7 @@ last_reviewed: 2026-10-13
   <h2>What venues ask first</h2>
 </div>
 <div class="ft-faq">
-  <div class="ft-qa"><h3>Do customers need an app?</h3><p>No. They request from the venue's QR code in any phone's browser, or with the free <a href="/ejukebox-apps.html#request">eJukebox Request</a> app if they prefer.</p></div>
-  <div class="ft-qa"><h3>What if the internet goes down?</h3><p>The music keeps playing. The player carries the venue's music on board and catches up when the connection is back.</p></div>
-  <div class="ft-qa"><h3>Does eJukebox include my OneMusic licence?</h3><p>No music supplier can - it is held in your business name and paid separately. For pubs and clubs we can collect and pay it for you, at cost.</p></div>
-  <div class="ft-qa"><h3>Am I locked into a contract?</h3><p>No. There are no lock-in contracts. <a href="/products.html">See plans &amp; pricing</a>.</p></div>
+  {% include faq-list.html prefix="ft" %}
 </div>
 
 <div class="try-demo">
