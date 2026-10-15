@@ -5,6 +5,25 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-15 - Automated Jukebox page retuned for "jukebox" and "digital jukebox"
+
+Keyword file (Website/Corporate Website/Keywords): "jukebox" 3,600/mo with us at #42,
+"digital jukebox" 70, "jukebox purchase australia" 70 (us #36, KD 5), plus small tails -
+"pub jukebox", "jukebox system", "touchscreen jukebox", "jukebox app".
+
+- **Title** "Digital Jukebox for Pubs, Clubs & Bars", **H1** "The Digital Jukebox That Runs
+  Itself", new description; the URL stays `/automated-jukebox-system.html`.
+- **New section "What is a digital jukebox?"** - a jukebox machine vs a playlist on a phone
+  vs eJukebox, written in generic terms (no competitor names or prices).
+- **FAQ** adds "What is a digital jukebox?" and "Do we need to buy or hire a jukebox
+  machine?". The visible FAQ is now rendered from the `faqs:` front matter, so the page and
+  its FAQPage schema can never drift apart.
+- **Link text** pointing at the page now says "Digital Jukebox" - desktop and mobile menus,
+  footer, every venue page, `llms.txt`.
+- Images unchanged - Marc is replacing the body photos.
+
+---
+
 ## 2026-10-15 - Homepage icons out; setup section; a new trial offer and pre-footer band
 
 - **Icons removed** from the three venue sections and the time-of-day section (Marc will

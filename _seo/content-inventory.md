@@ -17,7 +17,7 @@ None. Every indexable page has a unique title within 60 chars, a unique descript
 | `/404.html` | _noindex_ | | | | |
 | `/BenefitsofMusic.html` | Benefits of Music in Business, Backed by Dat | 56 | 143 | y | Article, WebPage |
 | `/admin-app/` | eJukebox Admin App: Run the Room From Your P | 59 | 151 | y | SoftwareApplication, WebPage |
-| `/automated-jukebox-system.html` | Automated Jukebox System for Pubs & Clubs |  | 52 | 156 | y | Service, WebPage |
+| `/automated-jukebox-system.html` | Digital Jukebox for Pubs, Clubs & Bars | eJu | 49 | 148 | y | FAQPage, Service, WebPage |
 | `/background-music-for-business/` | Australian Background Music Provider for Bus | 60 | 143 | y | FAQPage, Service, WebPage |
 | `/behind-the-scenes.html` | Behind the Scenes of a Jukebox Installation  | 54 | 147 | y | Service, WebPage |
 | `/contact/` | Contact eJukebox, Australian Venue Music Tea | 56 | 142 | y | ContactPage, WebPage |

@@ -1,22 +1,56 @@
 ---
 layout: default
-title: Automated Jukebox System for Pubs & Clubs
-description: An automated jukebox for pubs, clubs and bars - curated channels that play themselves, change with the time of day, and let customers request the next song.
-schema_service: Automated jukebox system and DJ replacement for pubs and clubs
-service_type: Automated music programming and playout for venues
-last_reviewed: 2026-10-13
+title: Digital Jukebox for Pubs, Clubs & Bars
+description: A digital jukebox for pubs, clubs and bars - curated channels that run themselves, song requests from phones, and no jukebox cabinet to buy or hire.
+schema_service: Digital jukebox for pubs, clubs and bars
+service_type: Digital jukebox and automated venue music
+last_reviewed: 2026-10-15
+faqs:
+  - q: >-
+      What is a digital jukebox?
+    a: >-
+      A digital jukebox plays music from a licensed online library instead of records or CDs, and lets
+      people choose songs on a screen or their own phone. eJukebox is a digital jukebox built for venues -
+      curated channels play all day on their own, and customers can request songs whenever you want them to.
+  - q: >-
+      Do we need to buy or hire a jukebox machine?
+    a: >-
+      No. A compact on-site player connects to your existing amplifier and speakers - there is no jukebox
+      cabinet - and customers request from their own phones. Want a walk-up screen as well? Add the
+      <a href="/in-venue-screens/">touchscreen request booth</a>. <a href="/behind-the-scenes.html">See what sits in your venue</a>.
+  - q: >-
+      What plays when nobody requests anything?
+    a: >-
+      Your channel, all day, changing with the time of day. Requests slot in on top, so the room is never
+      waiting on a customer.
+  - q: >-
+      Can we turn requests off?
+    a: >-
+      Any time - for speeches, a band, or a quiet dinner service - and back on when you are ready.
+  - q: >-
+      Is it licensed?
+    a: >-
+      The music is licensed for business use. Your venue still holds its own OneMusic licence, and for pubs
+      and clubs we can collect and pay it for you, at cost. <a href="/licensing.html">How licensing works</a>.
 ---
 
 {% include feature-styles.html %}
+
+<style>
+  /* digital jukebox comparison, prefixed aj- */
+  #main-content .ft-page .aj-us { border-color:rgba(129,140,248,.55); background:linear-gradient(150deg, rgba(99,102,241,.2), rgba(20,184,166,.1)), var(--ejm-card); }
+  .aj-label { display:block; margin-bottom:10px; font-size:.74rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:var(--ejm-mut); }
+  .aj-us .aj-label { color:var(--ejm-amber); }
+</style>
 
 <div class="ft-page">
 
 <div class="ft-hero">
   <div class="ft-hero-grid">
     <div class="ft-hero-copy">
-      <span class="ft-eyebrow"><i class="fas fa-robot"></i> Automated jukebox</span>
-      <h1>The Jukebox That <span class="ft-grad">Runs Itself</span></h1>
-      <p class="ft-lead">eJukebox plays curated channels all day on its own, changes the mood with the time of day, and flows from song to song like a radio station. Your customers request the next song from their phones, and your staff steer it from theirs. No DJ, no laptop, no playlist to babysit.</p>
+      <span class="ft-eyebrow"><i class="fas fa-robot"></i> Digital jukebox</span>
+      <h1>The Digital Jukebox That <span class="ft-grad">Runs Itself</span></h1>
+      <p class="ft-lead">eJukebox is a digital jukebox for pubs, clubs and bars. It plays curated channels all day on its own, changes the mood with the time of day, and flows from song to song like a radio station. Customers request the next song from their phones, and your staff steer it from theirs. No DJ, no jukebox cabinet, no playlist to babysit.</p>
       <div class="ft-ctas">
         <a class="ft-btn" href="/contact/"><i class="fas fa-comments"></i> Tell us about your venue</a>
         <a class="ft-btn-ghost" href="/products.html">See plans &amp; pricing</a>
@@ -44,6 +78,17 @@ last_reviewed: 2026-10-13
 {% include app-fan.html left="admin-whats-queued" center="admin-music-remote" right="admin-news" caption="Running the music from eJukebox Admin. Real screens from Club Buffalo, our demo venue." %}
 
 <div class="ft-sec-head">
+  <span class="ft-kick">Digital jukebox, explained</span>
+  <h2>What is a digital jukebox?</h2>
+  <p>A digital jukebox plays music from a licensed online library instead of records or CDs, and lets people choose songs on a screen or their own phone. Most venues weighing one up are choosing between three things.</p>
+</div>
+<div class="ft-grid3">
+  <div class="ft-card"><span class="aj-label">Option one</span><h3>A jukebox machine</h3><p>A cabinet you buy or hire. It needs floor space, and the music usually depends on someone paying for the next song.</p></div>
+  <div class="ft-card"><span class="aj-label">Option two</span><h3>A playlist on a phone</h3><p>Easy to start, but a personal streaming account is not licensed for business use, and someone has to keep choosing the music.</p></div>
+  <div class="ft-card aj-us"><span class="aj-label">The eJukebox way</span><h3>A digital jukebox that runs itself</h3><p>No jukebox cabinet - just a compact player on your sound system. Curated, licensed channels play all day on their own, customers request from their phones when you want them to, and your staff stay in control.</p></div>
+</div>
+
+<div class="ft-sec-head">
   <span class="ft-kick">Why venues swap the DJ and the playlist</span>
   <h2>Everything a good DJ does, every hour you are open</h2>
 </div>
@@ -60,14 +105,11 @@ last_reviewed: 2026-10-13
 
 <div class="ft-sec-head">
   <span class="ft-kick">Questions</span>
-  <h2>What venues ask first</h2>
+  <h2>What venues ask about a digital jukebox</h2>
 </div>
 <div class="ft-faq">
-  <div class="ft-qa"><h3>What plays when nobody requests anything?</h3><p>Your channel, all day, changing with the time of day. Requests slot in on top, so the room is never waiting on a customer.</p></div>
-  <div class="ft-qa"><h3>Can we turn requests off?</h3><p>Any time - for speeches, a band, or a quiet dinner service - and back on when you are ready.</p></div>
-  <div class="ft-qa"><h3>What equipment do we need?</h3><p>A compact on-site player that connects to your existing amplifier and speakers. No jukebox cabinet. <a href="/behind-the-scenes.html">See what sits in your venue</a>.</p></div>
-  <div class="ft-qa"><h3>Is it licensed?</h3><p>The music is licensed for business use. Your venue still holds its own OneMusic licence, and for pubs and clubs we can collect and pay it for you, at cost. <a href="/licensing.html">How licensing works</a>.</p></div>
-</div>
+{% for f in page.faqs %}  <div class="ft-qa"><h3>{{ f.q }}</h3><p>{{ f.a }}</p></div>
+{% endfor %}</div>
 
 <div class="try-demo">
   <div class="demo-content">
