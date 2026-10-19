@@ -5,6 +5,26 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-10-19 - llms.txt rebuilt; YouTube and the agile line on the site
+
+`llms.txt` replaced with the version built on 19 Oct (`Claude Project/llms.txt` in the eJukebox
+library): checked edits of the live file - 49 questions in four groups, a Channels section
+(Channels with a capital C), banned tracks and volume caps, OneMusic's supplier listing, the
+Ryde location and brand variants, and the OneMusic collection wording cut back to OneMusic's
+Mar 2026 terms (authorised representative for pubs; nothing for clubs).
+
+- **Diffed first.** The repo matched the live file, so nothing unpublished was at risk. Every
+  15 Oct edit carried over; only two repo lines went, both deliberately - the full-package.html
+  link (back once that page sells Core and Complete) and the old WhisperScape note (now the
+  supplier listing). All 40 ejukebox.com.au links in the file resolve.
+- **The site now says what llms.txt says:** /licensing.html names YouTube with Spotify, Apple
+  Music and Amazon Music, and /why-us.html carries the agile-and-Australian line.
+- **Still to align** (tracker): the site's "collect and pay for pubs and clubs" wording against
+  the file's narrower OneMusic terms, and /why-us.html's "Why Not Spotify?" section. That page
+  is still noindex pending Marc's review.
+
+---
+
 ## 2026-10-15 - Demo streams: show the two that play
 
 Tested Thu 15 Oct: `listen2.ejukebox.net/one` (Hits) and `/four` (Country) stream;

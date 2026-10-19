@@ -4,7 +4,7 @@ title: Music Licensing for Business, OneMusic & APRA
 description: OneMusic, APRA AMCOS and PPCA in plain English for Australian pubs, clubs, cafes and shops, and why your personal streaming account isn't licensed for business.
 schema_service: Music licensing guidance for Australian businesses
 service_type: OneMusic Australia licensing guidance and fee administration
-last_reviewed: 2026-10-13
+last_reviewed: 2026-10-19
 schema_article:
   headline: Music Licensing for Australian Business - OneMusic, APRA AMCOS and PPCA Explained
   section: Music licensing
@@ -26,7 +26,7 @@ howto:
       text: If you play recorded music where customers or staff can hear it, that is a public performance under Australian copyright law and you need a licence. This covers pubs, clubs, cafes, restaurants, gyms, shops, salons and waiting rooms.
       url: /licensing.html
     - name: Stop using a personal streaming account
-      text: Personal streaming accounts on Spotify, Apple Music, Amazon Music and the like can't be used in a business, because their own terms of service rule out commercial use. A licence does not fix this - the account itself is the problem.
+      text: Personal streaming accounts on Spotify, Apple Music, Amazon Music, YouTube and the like can't be used in a business, because their own terms of service rule out commercial use. A licence does not fix this - the account itself is the problem.
       url: /licensing.html
     - name: Get a OneMusic Australia licence in your business name
       text: OneMusic Australia bundles the two separate copyrights, the songwriters and composers represented by APRA AMCOS and the recording artists and labels represented by PPCA, into one licence. The licence is held by your business, not by your music supplier.
@@ -44,7 +44,7 @@ faqs:
   - q: Does eJukebox include my OneMusic licence?
     a: No, and no music supplier can. Your OneMusic licence is held by your business and paid separately. What eJukebox includes is our own licence to supply the music. For pubs and clubs we can collect the OneMusic fee and pay it on your behalf, at cost, with no margin.
   - q: Can I play Spotify or Apple Music in my business if I have a OneMusic licence?
-    a: No. Spotify, Apple Music and Amazon Music are licensed for personal use only, and their terms rule out playing them in a business. A OneMusic licence covers the public performance, but it does not override the streaming service's own terms.
+    a: No. Spotify, Apple Music, Amazon Music and YouTube are licensed for personal use only, and their terms rule out playing them in a business. A OneMusic licence covers the public performance, but it does not override the streaming service's own terms.
   - q: What if I just play the radio?
     a: You still need a licence, but radio only is usually OneMusic's cheapest option. Moving from radio to any music supplier, eJukebox included, can raise your OneMusic fee, so check what applies before you switch. What you get in return is curated, ad-free music your venue controls.
   - q: How much will my OneMusic licence cost?
@@ -289,7 +289,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
     <h3>Shops, salons and service businesses</h3>
     <p>Mainly your floor area and <strong>how you play the music</strong>:</p>
     <ul class="lc-ladder">
-      <li class="up"><i class="fas fa-circle"></i>Personal streaming (Spotify, Apple Music) sits on the top tier</li>
+      <li class="up"><i class="fas fa-circle"></i>Personal streaming (Spotify, Apple Music, YouTube) sits on the top tier</li>
       <li class="mid"><i class="fas fa-circle"></i>A commercial background music supplier qualifies for a lower one</li>
       <li class="down"><i class="fas fa-circle"></i>Plain radio only is the lowest</li>
     </ul>
@@ -324,7 +324,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
   <div class="lc-x">
     <span class="lc-ico"><i class="fas fa-ban"></i></span>
     <h3>It breaks the service's own terms</h3>
-    <p>Personal accounts on Spotify, Apple Music, Amazon Music and the like are licensed for personal use only. Their terms rule out playing them in a business, and a OneMusic licence does not override that.</p>
+    <p>Personal accounts on Spotify, Apple Music, Amazon Music, YouTube and the like are licensed for personal use only. Their terms rule out playing them in a business, and a OneMusic licence does not override that.</p>
   </div>
   <div class="lc-x">
     <span class="lc-ico"><i class="fas fa-arrow-trend-up"></i></span>

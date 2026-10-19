@@ -95,6 +95,7 @@ schema_page_type: AboutPage
     <div class="aus-text">
       <h2>Australian Made and Owned</h2>
       <p>Musicbot Pty Ltd is proudly Australian made and owned. Our dedication to supporting local businesses and providing top-notch service is at the core of what we do. We are committed to delivering an exceptional music experience that enhances the ambiance of your establishment and delights your customers.</p>
+      <p><strong>Agile and Australian.</strong> eJukebox adapts quickly and rolls out new solutions and Channels fast, with decisions made here in Australia.</p>
       <p class="cta-text">Join us at <strong>eJukebox</strong> and let us transform your business with the perfect soundtrack.</p>
     </div>
   </div>
