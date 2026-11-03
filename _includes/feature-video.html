@@ -1,14 +1,58 @@
-{% comment %}
-  One feature video, looked up by id in _data/pricing.yml (addons first, then included),
-  so the file name lives in one place. Nothing downloads until the visitor presses play.
+{%- comment -%}
+===============================================================================
+ feature-video.html - one eJukebox feature video, by id
+===============================================================================
+ Looks the video up in _data/pricing.yml (addons first, then included), so the
+ file name lives in one place. id="overview" is the base-product overview
+ (base_video in pricing.yml). Nothing downloads until the visitor presses play.
 
-    {% include feature-video.html id="tts" poster="/assets/images/stock/x.jpg" caption="Type a Message" %}
-{% endcomment %}
-{%- assign fv = site.data.pricing.addons | where: "id", include.id | first -%}
-{%- unless fv -%}{%- assign fv = site.data.pricing.included | where: "id", include.id | first -%}{%- endunless -%}
-{%- if fv and fv.video != "" and fv.video -%}
-<figure class="ft-vid">
-  <video controls preload="none" playsinline poster="{{ include.poster }}"><source src="{{ site.data.pricing.video_base }}{{ fv.video }}" type="video/mp4"></video>
-  {%- if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+   {% include feature-video.html id="song-previews" %}
+   {% include feature-video.html id="tts" caption="Type a Message" poster="/assets/images/stock/x.jpg" %}
+
+ Wrap one or more in <div class="ft-videos"> (two across, one on a phone), or
+ <div class="ft-videos one"> for a single wide video. The styles are emitted
+ once per page, so it works on any page, whatever its own prefix.
+
+ The poster defaults to the video's own title slide,
+ /assets/images/videos/<id>-video-ejukebox.webp (1280x720 WebP grabbed from the
+ video - see _seo/README.md). A new video needs its poster made as well.
+
+ data-vid on the figure is how _includes/schema.html finds every video on the
+ page and describes it as a VideoObject. Do not remove it.
+{%- endcomment -%}
+{%- assign fv_P = site.data.pricing -%}
+{%- assign fv = nil -%}{%- assign fv_src = nil -%}{%- assign fv_secs = nil -%}
+{%- if include.id == 'overview' -%}
+  {%- assign fv_src = fv_P.base_video -%}
+  {%- assign fv_name = fv_P.base_video_name -%}
+  {%- assign fv_secs = fv_P.base_video_secs -%}
+{%- else -%}
+  {%- assign fv = fv_P.addons | where: "id", include.id | first -%}
+  {%- unless fv -%}{%- assign fv = fv_P.included | where: "id", include.id | first -%}{%- endunless -%}
+  {%- if fv.video and fv.video != "" -%}
+    {%- assign fv_src = fv_P.video_base | append: fv.video -%}
+    {%- assign fv_name = fv.name -%}
+    {%- assign fv_secs = fv.video_secs -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if fv_src -%}
+{%- capture fv_poster -%}/assets/images/videos/{{ include.id }}-video-ejukebox.webp{%- endcapture -%}
+{%- unless fv_styles_done -%}{%- assign fv_styles_done = true %}
+<style>
+  /* Feature videos, prefixed ft-vid - see _includes/feature-video.html. */
+  .ft-videos { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+  .ft-videos.one { grid-template-columns:1fr; max-width:900px; }
+  .ft-vid { margin:0; border-radius:18px; overflow:hidden; background:#000; border:1.5px solid var(--ejm-line-2); box-shadow:0 24px 60px rgba(0,0,0,.4); }
+  .ft-vid video { display:block; width:100%; aspect-ratio:16/9; background:#000; object-fit:cover; }
+  .ft-vid figcaption { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 16px;
+    font-size:.9rem; font-weight:600; line-height:1.4; color:var(--ejm-ink); background:var(--ejm-card); }
+  .ft-vid-len { flex:none; font-size:.8rem; font-weight:700; color:var(--ejm-mut); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .ft-vid-len i { margin-right:6px; color:var(--ejm-cyan); }
+  @media (max-width:820px) { .ft-videos { grid-template-columns:1fr; } }
+</style>
+{%- endunless %}
+<figure class="ft-vid" data-vid="{{ include.id }}">
+  <video controls preload="none" playsinline poster="{{ include.poster | default: fv_poster }}"><source src="{{ fv_src }}" type="video/mp4"></video>
+  <figcaption><span>{{ include.caption | default: fv_name }}</span>{% if fv_secs %}<span class="ft-vid-len"><i class="fas fa-play" aria-hidden="true"></i>{{ fv_secs | divided_by: 60 }}:{{ fv_secs | modulo: 60 | prepend: '00' | slice: -2, 2 }}</span>{% endif %}</figcaption>
 </figure>
 {%- endif -%}

@@ -4,7 +4,7 @@ title: Music Licensing for Business, OneMusic & APRA
 description: OneMusic, APRA AMCOS and PPCA in plain English for Australian pubs, clubs, cafes and shops, and why your personal streaming account isn't licensed for business.
 schema_service: Music licensing guidance for Australian businesses
 service_type: OneMusic Australia licensing guidance and fee administration
-last_reviewed: 2026-10-19
+last_reviewed: 2026-11-03
 schema_article:
   headline: Music Licensing for Australian Business - OneMusic, APRA AMCOS and PPCA Explained
   section: Music licensing
@@ -180,6 +180,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
   .lc-qa summary::after { content:"+"; font-size:1.4rem; line-height:1; color:var(--ejm-cyan); }
   .lc-qa[open] summary::after { content:"-"; }
   #main-content .lc-page .lc-qa p { margin:0; padding:0 24px 22px; font-size:.95rem; line-height:1.65; }
+  .lc-vid { margin:26px 0 0; }
   #main-content .lc-page .lc-disclaimer { margin:22px 0 0; font-size:.86rem; line-height:1.6; color:var(--ejm-mut) !important; }
 
   /* ---- closing call to action (site-standard try-demo block, dressed for this page) ---- */
@@ -376,6 +377,10 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
   <div class="lc-item"><span class="lc-ico"><i class="fas fa-store"></i></span><div><h3>A lower tier for shops and service businesses</h3><p>Moving off personal streaming takes you off OneMusic's top retail tier.</p></div></div>
   <div class="lc-item"><span class="lc-ico"><i class="fas fa-beer-mug-empty"></i></span><div><h3>No Digital Copy/Delivery fee for venues</h3><p>Hospitality venues stop paying the extra fee that comes with personal streaming.</p></div></div>
   <div class="lc-item"><span class="lc-ico"><i class="fas fa-handshake"></i></span><div><h3>We handle the paperwork for pubs and clubs</h3><p>We collect your OneMusic fee and pay it on your behalf, at cost, with no margin.</p></div></div>
+</div>
+
+<div class="ft-videos one lc-vid">
+  {% include feature-video.html id="onemusic-admin" %}
 </div>
 
 <div class="lc-sec-head">

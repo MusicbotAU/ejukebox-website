@@ -45,6 +45,7 @@ documents. Do not invent new `@id` patterns without a reason.
 | `schema_article:` | `Article` |
 | `mentions:` | entity links (authority signal) |
 | `extra_schema:` | raw JSON appended verbatim (escape hatch) |
+| a `feature-video.html` on the page | a `VideoObject` per video (name, description, poster, length, upload date and file from `pricing.yml`), listed on the `WebPage` as `video`. Found by its `data-vid` marker, so nothing to tag by hand. Off switch: `video_schema: false` in `pricing.yml` |
 
 The front-matter keys are documented in full at the top of
 `_includes/schema.html`. Read that before adding a new page type.

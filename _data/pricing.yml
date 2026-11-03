@@ -11,9 +11,27 @@
 # 15 July 2026), slides 34-36. The deck lists these as Marc's recommended locks.
 # -----------------------------------------------------------------------------
 
+# ---- Feature videos ---------------------------------------------------------
+# Every feature's `video:` is a file name under video_base (Azure storage account
+# ejukebox01, container websiteblobs). Spaces are written %20, because the Admin app
+# opens video_base + video as a link (src/components/UpsellSheet.tsx in ejukebox-app).
+# video_secs and video_date (when the file went up, Sydney time) feed the VideoObject
+# that _includes/schema.html writes for every page embedding the video with
+# _includes/feature-video.html. Each video also needs a poster:
+# /assets/images/videos/<id>-video-ejukebox.webp, 1280x720, its own title slide.
+# Voiceover scripts are the speaker notes in Marketing/eJukebox/2026/v3 and v4.
 video_base: https://ejukebox01.blob.core.windows.net/websiteblobs/features/
 # Overview video for the base product (full URL - it lives in a different blob folder).
 base_video: https://ejukebox01.blob.core.windows.net/websiteblobs/base/eJukebox-Main-Deck.mp4
+base_video_name: The eJukebox overview
+base_video_secs: 572
+base_video_date: "2026-07-20T10:50:17+10:00"
+# true  = describe embedded videos to search engines (VideoObject), so they can show in
+#         Google's video results.
+# false = keep the videos on the pages but out of video search. Ben (ITV Systems) asked
+#         on 25 Jun 2026 to keep how-to videos unindexed so competitors cannot find them;
+#         these feature guides already play on public pages, so it is on - flip it here.
+video_schema: true
 
 tiers:
   # Solo is a STREAMING-ONLY product: a private URL, no on-site player, no upfront
@@ -76,19 +94,25 @@ included:
     category: Music
     tiers: [solo, core, complete]
     desc: Every channel is hand-built and refreshed by professional Australian music directors, never guessed at by an algorithm. Hits, Smooth, Rock and Country.
-    video:
+    video: eJukebox-Feature-Human-Curated-Channels%20v2.mp4
+    video_secs: 66
+    video_date: "2026-11-03T20:56:27+11:00"
   - id: licensed-clean
     name: Licensed and family-friendly
     category: Compliance
     tiers: [solo, core, complete]
     desc: Fully licensed for public play, and free of swearing and explicit lyrics. Playing eJukebox is what makes you a venue on a commercial background music supplier, which is what changes your OneMusic position - see the licensing section below.
-    video:
+    video: eJukebox-Feature-Licensed-And-Family-Friendly%20v2.mp4
+    video_secs: 70
+    video_date: "2026-11-03T20:56:40+11:00"
   - id: broadcast-quality
     name: Ad-free, broadcast-quality sound
     category: Music
     tiers: [solo, core, complete]
     desc: Professionally processed for consistent volume, so nothing jumps between songs. No ads and no talk over the music - it simply plays.
-    video:
+    video: eJukebox-Feature-Ad-Free-Broadcast-Quality-Sound%20v2.mp4
+    video_secs: 65
+    video_date: "2026-11-03T20:51:49+11:00"
 
   # -- Solo only
   - id: stream-url
@@ -96,13 +120,17 @@ included:
     category: Delivery
     tiers: [solo]
     desc: Solo is a streaming service, not an installation. You get your own private URL that plays through any browser, computer, tablet, phone, Sonos or streamer you already have. Nothing to install, no player at the venue, and no upfront hardware cost.
-    video:
+    video: eJukebox-Feature-Solo-Streams-To-Your-Device%20v3.mp4
+    video_secs: 71
+    video_date: "2026-11-03T20:58:52+11:00"
   - id: single-area
     name: One channel, one area
     category: Capacity
     tiers: [solo]
     desc: Solo covers a single area with one channel at a time. For different music in different areas, or for anything your customers or staff can interact with, you need Core.
-    video:
+    video: eJukebox-Feature-Solo-One-Channel-One-Area%20v3.mp4
+    video_secs: 70
+    video_date: "2026-11-03T20:58:34+11:00"
 
   # -- Core and Complete only
   - id: onsite-player
@@ -110,55 +138,73 @@ included:
     category: Delivery
     tiers: [core, complete]
     desc: A compact solid-state player is installed at your venue and caches your music, so it keeps playing even if the internet drops out. This is the one-off hardware cost noted further down, and it is what makes the interactive features possible.
-    video:
+    video: eJukebox-Feature-On-Site-Player%20v3.mp4
+    video_secs: 67
+    video_date: "2026-11-03T20:57:14+11:00"
   - id: song-requests
     name: Song Requests
     category: Requests
     tiers: [core, complete]
     desc: Customers request from their own phone with no app. Staff keep full control - open the whole library or lock it to the current channel, and pause requests anytime.
     video: eJukebox-Feature-Song-Requests.mp4
+    video_secs: 55
+    video_date: "2026-07-15T21:56:25+10:00"
   - id: ai-song-search
     name: AI Song Search
     category: Discovery
     tiers: [core, complete]
     desc: Ask for music the way you'd ask a person. "80s Australian pub rock", "something for a 50th", "songs from that Robin Williams movie" - it comes back with a list to browse and request from. Nobody needs to know the track name, which means the people who'd never normally request a song finally do.
-    video:
+    video: eJukebox-Feature-AI-Song-Search%20v2.mp4
+    video_secs: 71
+    video_date: "2026-11-03T20:52:09+11:00"
   - id: song-previews
     name: Song Previews
     category: Discovery
     tiers: [core, complete]
     desc: Tap any track for an official 30-second preview before requesting it. Try before you queue.
-    video:
+    video: eJukebox-Feature-Song-Previews%20v3.mp4
+    video_secs: 65
+    video_date: "2026-11-03T20:59:10+11:00"
   - id: playing-across-country
     name: Playing Across the Country
     category: Discovery
     tiers: [core, complete]
     desc: A live grid of what venues nationwide are playing right now, filtered to your venue's style. Tap any track to request it.
-    video:
+    video: eJukebox-Feature-Playing-Across-The-Country%20v3.mp4
+    video_secs: 67
+    video_date: "2026-11-03T20:57:50+11:00"
   - id: next-songs
     name: Next Songs Reordering
     category: Control
     tiers: [core, complete]
     desc: See what's coming up and drag it into the order you want, live from the admin panel. Takes effect on the player straight away.
     video: eJukebox-Feature-Next-Songs-Reordering.mp4
+    video_secs: 72
+    video_date: "2026-07-15T21:56:25+10:00"
   - id: record-voice
     name: Record Voice Announcement
     category: Voice
     tiers: [core, complete]
     desc: Record your own voice on any phone; it plays neatly between songs, never over the music. Profanity-moderated.
     video: eJukebox-Feature-Record-Voice-Announcement.mp4
+    video_secs: 80
+    video_date: "2026-07-15T21:56:25+10:00"
   - id: two-zones
     name: 2 zones included
     category: Capacity
     tiers: [core, complete]
     desc: Play different music in different areas - the bar, the bistro, the beer garden. Two zones come standard where most providers charge for every single one.
-    video:
+    video: eJukebox-Feature-Two-Zones-Included%20v2.mp4
+    video_secs: 68
+    video_date: "2026-11-03T20:59:31+11:00"
   - id: onemusic-admin
     name: OneMusic administration
     category: Licensing
     tiers: [core, complete]
     desc: For pubs and clubs we can collect your OneMusic licence fee on your behalf and remit it straight to OneMusic, so the paperwork stops being your problem. The licence fee itself is separate - see the licensing section below.
-    video:
+    video: eJukebox-Feature-OneMusic-Administration%20v3.mp4
+    video_secs: 64
+    video_date: "2026-11-03T20:56:53+11:00"
 
 # ---- Paid add-ons (on top of Core) -----------------------------------------
 # `page` is the feature page that explains the add-on; the /products.html schema
@@ -172,6 +218,8 @@ addons:
     whl: 21
     desc: Guests sign in with Spotify and pick one of their own playlists; every track is fuzzy-matched to your library so they can request it in a tap. Staff can load a whole curated playlist into the queue in one move.
     video: eJukebox-Feature-Spotify-Integration.mp4
+    video_secs: 76
+    video_date: "2026-07-15T21:55:45+10:00"
   - id: tts
     name: Type a Message
     page: /voice-announcements/
@@ -180,6 +228,8 @@ addons:
     whl: 14
     desc: Type a line and a warm, broadcast-quality voice reads it across the room between songs. No microphone, no staff member put on the spot.
     video: eJukebox-Feature-Type-A-Message.mp4
+    video_secs: 75
+    video_date: "2026-07-15T21:55:33+10:00"
     bundle: voice-suite
   - id: scheduled
     name: Scheduled Announcements
@@ -189,6 +239,8 @@ addons:
     whl: 18
     desc: Book a typed or recorded message to play itself - daily, on chosen nights, or once. Happy hour, last drinks, trivia night, on flawless autopilot.
     video: eJukebox-Feature-Scheduled-Announcements.mp4
+    video_secs: 72
+    video_date: "2026-07-15T21:56:30+10:00"
     bundle: voice-suite
   - id: livemic
     name: Live Microphone
@@ -198,6 +250,8 @@ addons:
     whl: 21
     desc: Any staff phone becomes a professional PA mic in seconds. The music ducks the instant you speak and swells back when you stop.
     video: eJukebox-Feature-Live-Microphone.mp4
+    video_secs: 73
+    video_date: "2026-07-15T21:56:10+10:00"
     bundle: voice-suite
   - id: livemic-monitor
     name: Live Mic Monitor
@@ -207,6 +261,8 @@ addons:
     whl: 11
     desc: The venue's program audio - with your own voice stripped out - streamed back to your headphones, so you can talk up to the vocal like a radio DJ.
     video: eJukebox-Feature-Live-Mic-Monitor.mp4
+    video_secs: 67
+    video_date: "2026-07-15T21:56:13+10:00"
     requires: livemic
     requires_label: Requires Live Microphone
     bundle: voice-suite
@@ -218,6 +274,8 @@ addons:
     whl: 18
     desc: Customers record an 8-second shout-out that plays right before their song and blends into the intro, like a radio DJ. Transcribed and profanity-scanned in real time, so it's safe to hand to a full room.
     video: eJukebox-Feature-Voice-Dedications.mp4
+    video_secs: 91
+    video_date: "2026-07-15T21:55:44+10:00"
   - id: photo-screen
     name: Photo Slideshow Display
     page: /in-venue-screens/
@@ -226,6 +284,8 @@ addons:
     whl: 18
     desc: When requests go quiet your screen blooms into a branded slideshow - event nights, specials, your logo. A 24/7 billboard you already own.
     video: eJukebox-Feature-Photo-Display.mp4
+    video_secs: 69
+    video_date: "2026-07-15T21:56:07+10:00"
     hardware: Works with a screen you already have - just needs a spare HDMI input
   - id: guest-photos
     name: Guest Photo Wall
@@ -234,7 +294,9 @@ addons:
     retail: 59
     whl: 42
     desc: Your customers send their own photos from their phone straight to your screen - screened automatically, branded with your logo, live in seconds. At the end of the night the whole lot is bundled with their handles and hashtags, ready for you to post.
-    video:
+    video: eJukebox-Feature-Guest-Photo-Wall%20v2.mp4
+    video_secs: 69
+    video_date: "2026-11-03T20:52:46+11:00"
     hardware: Works with a screen you already have - just needs a spare HDMI input
   - id: request-screen
     name: Interactive Request Screen
@@ -244,6 +306,8 @@ addons:
     whl: 28
     desc: A wall-mounted touchscreen request booth. Customers walk up, browse the library and pick a song - no phone needed. Same request engine, big-screen sized.
     video: eJukebox-Feature-Interactive-Request-Screen.mp4
+    video_secs: 63
+    video_date: "2026-07-15T21:55:28+10:00"
     hardware: Needs a touchscreen (one-off hardware)
   - id: functions
     name: Functions & Events
@@ -253,6 +317,8 @@ addons:
     whl: 14
     desc: Give a function host their own night-only controls - skip, cue the right track, and stop cleanly for the speeches - without pulling staff off the floor.
     video: eJukebox-Feature-Functions-and-Events.mp4
+    video_secs: 69
+    video_date: "2026-07-15T21:55:46+10:00"
 
 # ---- Bundles ---------------------------------------------------------------
 bundles:

@@ -31,6 +31,21 @@ it): point `ejukebox.tv/functions/` at `/functions-events/` and `ejukebox.tv/` a
 `/in-venue-screens/`, by 301 or cross-domain canonical. That unblocks the content plan in
 `functions-events.md`.
 
+**Two feature videos say something the site does not (3 Nov 2026).**
+- *Licensed and Family-Friendly* - the slide 2 voiceover puts the Digital Copy and Delivery
+  add-on at "roughly four hundred and seventy one dollars a year". OneMusic's current card
+  (1 Sep 2026 - 31 Aug 2027) has it at $488.88 incl GST, and the figure moves every
+  September. Re-voice that line without a dollar figure and upload it under the same name -
+  every page picks it up. Until then the video is on the pricing tiles and /music-channels/
+  only, not on /licensing.html, which deliberately quotes no OneMusic fees.
+- *Guest Photo Wall* - slide 1 says the display "doubles as the Interactive Request Screen".
+  That screen needs a touchscreen (`pricing.yml`), so a guest-photo TV is not one. Worth a
+  tweak next time the deck is open.
+
+**Should the feature videos be in Google's video index?** `video_schema` in `pricing.yml` is
+on, because the videos already play on public pages. Ben (ITV Systems) asked on 25 Jun 2026 to
+keep how-to videos unindexed so competitors cannot find them. One line turns it off.
+
 ## Waiting on information
 
 **`same_as:` has the App Store and Google Play developer pages and the ABN record** (Thu 15 Oct
@@ -65,6 +80,15 @@ plan is ready.
 hardware installed; the hero, venue pages and `free-trial.markdown` say 7 days
 for a stream URL. `index.markdown` carries both. They may be two genuine offers,
 but a visitor sees both numbers.
+
+**The twelve older feature videos are heavy.** 53-98MB each (6-11 Mbit/s) for about a
+minute of slides; the twelve uploaded on 3 Nov are 13-15MB at 1.7 Mbit/s and look the same.
+Re-exporting the old ones at the new settings and uploading under the same names would make
+them start faster on a phone, with nothing to change on the site.
+
+**The `websiteblobs` container can be listed by anyone** (public access level "Container"),
+which also lists `pitch/eJukebox-Kyle-Sandilands-Live.mp4`. Setting it to "Blob" keeps every
+video on the site playing and stops the listing. Marc's call - it is an Azure security setting.
 
 ## Deliberately not doing
 

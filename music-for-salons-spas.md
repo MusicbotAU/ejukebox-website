@@ -36,7 +36,12 @@ faqs:
       Can we change the music between treatments?
     a: >-
       Yes. Set it once and let it flow, or switch from your phone whenever the mood needs to change.
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 faq_title: Salon and spa music questions, answered
 schema_about: [beauty-salon, day-spa, background-music]
+feature_video: stream-url
+feature_video_title: >-
+  Salon music from a private link, with nothing to install
+feature_video_text: >-
+  One calm channel streamed to a device you already own - no box, no technician and no upfront cost on Solo.
 ---

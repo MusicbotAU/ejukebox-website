@@ -41,7 +41,12 @@ faqs:
       Is the music licensed for a nightclub?
     a: >-
       The music is licensed for business use, and with eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, as there would be with a personal streaming account. Your venue still holds its own OneMusic licence.
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 faq_title: Club and nightclub music questions, answered
 schema_about: [nightclub, disc-jockey, dj-mix]
+feature_video: playing-across-country
+feature_video_title: >-
+  Show the room what the whole country is playing
+feature_video_text: >-
+  With requests on, your request page becomes a live feed of what is trending in venues nationwide, filtered to your style. <a href="/playing-across-the-country/">More on Playing Across the Country</a>.
 ---

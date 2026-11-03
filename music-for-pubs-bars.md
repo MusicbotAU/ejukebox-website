@@ -39,7 +39,12 @@ faqs:
       Can different bars play different music?
     a: >-
       Yes. Core includes two zones - the front bar and the bistro, say - and one player drives up to four, so the beer garden and the gaming room can have their own channels too.
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 faq_title: Pub and bar music questions, answered
 schema_about: [pub, bar, jukebox, background-music]
+feature_video: two-zones
+feature_video_title: >-
+  Different music in the bar, the bistro and the beer garden
+feature_video_text: >-
+  Core includes two zones, so the bistro stays calm while the sports bar goes up - and zones three and four need no extra hardware.
 ---

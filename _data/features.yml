@@ -1,6 +1,14 @@
 # Master list of feature landing pages. Feeds the header "Jukebox Features" dropdown,
 # the mobile menu, and the footer. Edit here once and every menu updates.
 # Order matters: it is the dropdown order after Digital Jukebox and Song Requests.
+# Song Previews and Playing Across the Country sit first because they are part of
+# song requests - what a guest sees before they pick.
+- slug: song-previews
+  label: Song Previews
+  icon: fa-headphones
+- slug: playing-across-the-country
+  label: Playing Across the Country
+  icon: fa-map-location-dot
 - slug: functions-events
   label: Jukebox for Functions & Events
   icon: fa-champagne-glasses

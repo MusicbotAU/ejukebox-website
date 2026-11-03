@@ -502,7 +502,11 @@
 }
 @media (max-width:680px) {
   .ejm-base-pillars { grid-template-columns:1fr; }
-  .ejm-grid { grid-template-columns:1fr; }
+  /* minmax(0,1fr), and tags that wrap: the long hardware tag ("Works with a screen you
+     already have - just needs a spare HDMI input") was holding the column 61px wider than a
+     375px phone, so the whole page scrolled sideways. */
+  .ejm-grid { grid-template-columns:minmax(0,1fr); }
+  .ejm-req { white-space:normal; }
   .ejm-total { bottom:0; border-radius:14px 14px 0 0; margin-bottom:34px; }
   .ejm-total-inner { padding:13px 15px; gap:12px; }
   .ejm-total-right { width:100%; justify-content:space-between; gap:12px; }

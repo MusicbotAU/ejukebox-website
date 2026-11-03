@@ -36,7 +36,12 @@ faqs:
       Can every store play the same music?
     a: >-
       Yes. A custom station plays the same programming in every store, so your brand sounds the same wherever a customer walks in.
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 faq_title: In-store music questions, answered
 schema_about: [retail, retail-design, background-music, sensory-branding]
+feature_video: stream-url
+feature_video_title: >-
+  In-store music from a private link, playing today
+feature_video_text: >-
+  Solo streams one curated channel to a device you already own, with nothing to install. Running a chain? Ask about <a href="/custom-radio.html">custom branded radio</a>.
 ---

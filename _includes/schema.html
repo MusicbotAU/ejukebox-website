@@ -20,6 +20,9 @@
    every page             -> Organization + WebSite + WebPage + BreadcrumbList
    layout: venue          -> Service + audience, and FAQPage if the page has `faqs:`
    /products.html         -> Product + Offer per tier, and every add-on as an Offer
+   feature-video.html     -> a VideoObject for every video embedded on the page,
+                             found by its data-vid marker (switch: video_schema in
+                             pricing.yml), and the WebPage lists them as "video"
    noindex: true          -> nothing at all is emitted
 
  ---------------------------------------------------------------------------
@@ -78,6 +81,20 @@
 {%- assign au_id = base | append: '/#area-au' -%}
 {%- assign ptitle = page.h1 | default: page.title | default: site.title -%}
 {%- assign pdesc = page.description | default: site.description | strip_html | normalize_whitespace -%}
+
+{%- comment -%} The videos on this page. Every _includes/feature-video.html marks its figure
+    data-vid="<id>", so the rendered page (`content`, which the layout already holds when this
+    runs in <head>) is the list - nothing to tag by hand, and nothing to drift. Each id once. {%- endcomment -%}
+{%- assign vid_list = '|' -%}
+{%- if site.data.pricing.video_schema -%}
+  {%- assign vid_parts = content | split: 'data-vid="' -%}
+  {%- for vid_part in vid_parts offset: 1 -%}
+    {%- assign vid_one = vid_part | split: '"' | first -%}
+    {%- capture vid_key -%}|{{ vid_one }}|{%- endcapture -%}
+    {%- unless vid_list contains vid_key -%}{%- assign vid_list = vid_list | append: vid_one | append: '|' -%}{%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- assign vid_ids = vid_list | remove_first: '|' | split: '|' -%}
 
 {%- comment -%} --- reusable fragments ------------------------------------- {%- endcomment -%}
 
@@ -248,7 +265,8 @@
 "primaryImageOfPage":{"@type":"ImageObject","url":"{{ page_img | absolute_url }}"}{% endif %}{% if page.last_reviewed %},
 "dateModified":"{{ page.last_reviewed | date: '%Y-%m-%d' }}",
 "lastReviewed":"{{ page.last_reviewed | date: '%Y-%m-%d' }}"{% endif %}{% if page.mentions %},
-"mentions":[{% for m in page.mentions %}{"@type":"{{ m.type | default: 'Thing' }}","name":{{ m.name | jsonify }}{% if m.url %},"url":{{ m.url | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %}
+"mentions":[{% for m in page.mentions %}{"@type":"{{ m.type | default: 'Thing' }}","name":{{ m.name | jsonify }}{% if m.url %},"url":{{ m.url | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %}{% if vid_ids.size > 0 %},
+"video":[{% for vid in vid_ids %}{"@id":"{{ purl }}#video-{{ vid }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %}
 }
 {%- endcapture -%}
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
@@ -528,7 +546,53 @@
 {%- assign nodes = nodes | append: n | append: '~~~' -%}
 {%- endif -%}
 
-{%- comment -%} ---------- 12. Raw escape hatch ---------- {%- endcomment -%}
+{%- comment -%} ---------- 12. Videos ----------
+     One VideoObject per feature video embedded on the page (vid_ids, collected at the
+     top from the data-vid markers). Name, description, length, upload date and file come
+     from pricing.yml; the thumbnail is the video's own title slide. Google needs name,
+     thumbnailUrl and uploadDate, so a video missing its date is skipped, not guessed. {%- endcomment -%}
+{%- for vid in vid_ids -%}
+{%- if vid == 'overview' -%}
+  {%- assign vo_name = site.data.pricing.base_video_name -%}
+  {%- assign vo_desc = 'eJukebox for Australian venues, start to finish: licensed music channels curated by Australian music directors, song requests from any phone, voice announcements and screens, run from a compact on-site player that keeps playing if the internet drops.' -%}
+  {%- assign vo_url = site.data.pricing.base_video -%}
+  {%- assign vo_secs = site.data.pricing.base_video_secs -%}
+  {%- assign vo_date = site.data.pricing.base_video_date -%}
+{%- else -%}
+  {%- assign vo = site.data.pricing.addons | where: "id", vid | first -%}
+  {%- unless vo -%}{%- assign vo = site.data.pricing.included | where: "id", vid | first -%}{%- endunless -%}
+  {%- assign vo_name = vo.name | append: ' - eJukebox feature guide' -%}
+  {%- assign vo_desc = vo.desc -%}
+  {%- assign vo_url = site.data.pricing.video_base | append: vo.video -%}
+  {%- assign vo_secs = vo.video_secs -%}
+  {%- assign vo_date = vo.video_date -%}
+{%- endif -%}
+{%- if vo_date and vo_secs -%}
+{%- capture n -%}
+{
+"@type":"VideoObject",
+"@id":"{{ purl }}#video-{{ vid }}",
+"name":{{ vo_name | jsonify }},
+"description":{{ vo_desc | strip_html | normalize_whitespace | jsonify }},
+"thumbnailUrl":"{{ base }}/assets/images/videos/{{ vid }}-video-ejukebox.webp",
+"uploadDate":"{{ vo_date }}",
+"duration":"PT{{ vo_secs | divided_by: 60 }}M{{ vo_secs | modulo: 60 }}S",
+"contentUrl":"{{ vo_url }}",
+"encodingFormat":"video/mp4",
+"width":1920,
+"height":1080,
+"inLanguage":"en-AU",
+"isFamilyFriendly":true,
+"creator":{"@id":"{{ org_id }}"},
+"publisher":{"@id":"{{ org_id }}"},
+"isPartOf":{"@id":"{{ page_id }}"}
+}
+{%- endcapture -%}
+{%- assign nodes = nodes | append: n | append: '~~~' -%}
+{%- endif -%}
+{%- endfor -%}
+
+{%- comment -%} ---------- 13. Raw escape hatch ---------- {%- endcomment -%}
 {%- if page.extra_schema -%}
 {%- assign nodes = nodes | append: page.extra_schema | append: '~~~' -%}
 {%- endif -%}

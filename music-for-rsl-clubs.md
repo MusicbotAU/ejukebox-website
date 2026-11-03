@@ -118,5 +118,10 @@ faqs:
       The on-site player is a one-off cost, quoted for your club.
       <a href="/products.html">See plans &amp; pricing</a>.
 schema_about: [rsl, bowls, social-club, ode-of-remembrance, background-music]
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
+feature_video: two-zones
+feature_video_title: >-
+  Two zones included, and up to four from one player
+feature_video_text: >-
+  The bistro, the bar, the gaming room and the function room can each run their own channel, volume and schedule from one player.
 ---

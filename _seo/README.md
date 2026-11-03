@@ -49,3 +49,12 @@ any push that touches page metadata.
   Copy/Delivery add-on. Collect-and-remit is pubs and clubs only. Every claim,
   on-page or in schema, has to respect that.
 - **Titles <= 60 characters, descriptions <= 160.** Enforced by `audit.py`.
+- **Feature videos live in Azure, not the repo** - storage account `ejukebox01`, container
+  `websiteblobs`, folder `features/`. To add one: upload it there, put its file name in the
+  feature's `video:` in `pricing.yml` (spaces as `%20`) with `video_secs` and `video_date`,
+  and grab its poster from the title slide -
+  `ffmpeg -ss 10 -i <video> -frames:v 1 -vf scale=1280:720 x.png`, saved as
+  `assets/images/videos/<id>-video-ejukebox.webp` (WebP, quality 80). Then
+  `{% include feature-video.html id="<id>" %}` anywhere; the pricing tiles and the schema
+  pick it up on their own. The voiceover scripts are the decks' speaker notes in
+  `Marketing/eJukebox/2026/v3` and `v4` - read them before writing copy around a video.

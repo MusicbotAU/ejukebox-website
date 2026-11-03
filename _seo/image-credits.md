@@ -47,6 +47,17 @@ text in `_data/app_screens.yml`.
 added Thu 15 October 2026 and carrying the eJukebox watermark. No credit needed. Each is
 WebP in two or three widths; the 1920px originals stay in the library.
 
+## Feature page photos
+
+The hero photos on /music-channels/, /song-previews/ and /playing-across-the-country/
+(`assets/images/features/`) come from the same eJukebox photo set - files 16, 33 and 27 -
+cropped on Mon 3 November 2026 to leave the watermark out. Same licence note as below.
+
+## Video posters
+
+`assets/images/videos/*-video-ejukebox.webp` are frames grabbed from eJukebox's own feature
+videos (the title slide of each). Our own work, no credit needed.
+
 ## Clubs page photos
 
 `assets/images/venues/music-for-rsl-clubs.jpg` (and its `.avif` twin) and the three

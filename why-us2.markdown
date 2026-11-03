@@ -55,7 +55,7 @@ schema_about: [background-music, radio-programming, audio-processing]
   <h2>Why venues choose eJukebox</h2>
 </div>
 <div class="ft-grid3">
-  <div class="ft-card"><span class="ft-ico"><i class="fas fa-headphones"></i></span><h3>Music picked by people</h3><p>Every channel - Hits, Smooth, Rock and Country - is built and refreshed by Australian music directors, never shuffled by an algorithm. It changes through the day on its own, so lunch and Saturday night each sound right.</p></div>
+  <div class="ft-card"><span class="ft-ico"><i class="fas fa-headphones"></i></span><h3>Music picked by people</h3><p>Every channel - Hits, Smooth, Rock and Country - is built and refreshed by Australian music directors, never shuffled by an algorithm. It changes through the day on its own, so lunch and Saturday night each sound right. <a href="/music-channels/">How the channels are built</a>.</p></div>
   <div class="ft-card"><span class="ft-ico c"><i class="fas fa-users"></i></span><h3>Your customers join in</h3><p>Song requests from any phone, "Help me pick" for when they cannot name the song, and add-ons for dedications and photos on the big screen. <a href="/ejukebox-request-portal.html">How requests work</a>.</p></div>
   <div class="ft-card"><span class="ft-ico b"><i class="fas fa-layer-group"></i></span><h3>Two zones included</h3><p>Different music in the bar and the bistro, out of the box. Most providers charge for every zone. One player drives up to four.</p></div>
   <div class="ft-card"><span class="ft-ico d"><i class="fas fa-wave-square"></i></span><h3>Sounds like the radio, minus the ads</h3><p>Broadcast-style processing keeps every song at a consistent volume, with no ads and no talk between tracks. Nothing jumps out, nothing disappears.</p></div>

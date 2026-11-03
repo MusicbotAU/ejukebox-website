@@ -4,7 +4,7 @@ title: Behind the Scenes of a Jukebox Installation
 description: How eJukebox runs in your venue - a compact player that plays on if the internet drops, updates itself overnight, and alerts us if the music stops.
 schema_service: Managed jukebox player installation for Australian venues
 service_type: Cloud-managed music player installation and maintenance
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 howto:
   name: "How eJukebox is set up in your venue"
   description: >-
@@ -139,6 +139,7 @@ schema_about: [broadcast-automation, audio-processing, sound-reinforcement]
   .bt-by a { font-weight:600; }
 
   /* ---- steps ---- */
+  .bt-vids { margin:24px 0 0; }
   .bt-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
   .bt-step { padding:28px 24px; border-radius:18px; background:var(--ejm-card); border:1.5px solid var(--ejm-line); }
   .bt-num { display:grid; place-items:center; width:44px; height:44px; margin-bottom:16px; border-radius:50%;
@@ -211,6 +212,11 @@ schema_about: [broadcast-automation, audio-processing, sound-reinforcement]
     <div class="bt-card"><span class="bt-ico"><i class="fas fa-layer-group"></i></span><h3>One player, up to four zones</h3><p>Different music in the bar, the bistro and the beer garden, all from the one player.</p></div>
     <div class="bt-card"><span class="bt-ico"><i class="fas fa-tv"></i></span><h3>Your screens, too</h3><p>A spare HDMI output can put photos and slides up on a TV. <a href="/in-venue-screens/">More on in-venue screens</a>.</p></div>
   </div>
+</div>
+
+<div class="ft-videos bt-vids">
+  {% include feature-video.html id="onsite-player" %}
+  {% include feature-video.html id="two-zones" %}
 </div>
 
 <div class="bt-band">

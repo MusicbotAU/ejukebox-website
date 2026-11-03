@@ -4,7 +4,7 @@ title: Digital Jukebox for Pubs, Clubs & Bars
 description: A digital jukebox for pubs, clubs and bars - curated channels that run themselves, song requests from phones, and no jukebox cabinet to buy or hire.
 schema_service: Digital jukebox for pubs, clubs and bars
 service_type: Digital jukebox and automated venue music
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 faqs:
   - q: >-
       What is a digital jukebox?
@@ -107,12 +107,22 @@ schema_about: [jukebox, disc-jockey, dayparting, gapless-playback]
   <h2>Everything a good DJ does, every hour you are open</h2>
 </div>
 <div class="ft-grid3">
-  <div class="ft-card"><span class="ft-ico"><i class="fas fa-clock"></i></span><h3>Right for the hour</h3><p>Quiet lunch, lively dinner, a packed Friday night. The channel moves with the day on its own, so nobody has to remember to change it.</p></div>
+  <div class="ft-card"><span class="ft-ico"><i class="fas fa-clock"></i></span><h3>Right for the hour</h3><p>Quiet lunch, lively dinner, a packed Friday night. The channel moves with the day on its own, so nobody has to remember to change it. <a href="/music-channels/">How the channels work</a>.</p></div>
   <div class="ft-card"><span class="ft-ico c"><i class="fas fa-shuffle"></i></span><h3>Seamless, like radio</h3><p>The same kind of automation radio stations use, so songs flow into each other whether they end cold or fade out. No gaps, no dead air.</p></div>
   <div class="ft-card"><span class="ft-ico b"><i class="fas fa-wave-square"></i></span><h3>Broadcast-quality sound</h3><p>Every track is processed in real time with multi-band levelling, so nothing jumps out and nothing disappears.</p></div>
   <div class="ft-card"><span class="ft-ico d"><i class="fas fa-users"></i></span><h3>Everyone's the DJ</h3><p>Customers browse, preview and request songs from their own phone - and you choose what can be requested and how often. <a href="/ejukebox-request-portal.html">How requests work</a>.</p></div>
   <div class="ft-card"><span class="ft-ico"><i class="fas fa-sliders"></i></span><h3>Staff stay in charge</h3><p>Skip, hold or reorder, switch channels, or make an announcement - from any staff phone, without leaving the bar.</p></div>
   <div class="ft-card"><span class="ft-ico c"><i class="fas fa-wifi"></i></span><h3>It never goes quiet</h3><p>The on-site player carries the music on board and keeps playing if the internet drops. <a href="/behind-the-scenes.html">Behind the scenes</a>.</p></div>
+</div>
+
+<div class="ft-sec-head">
+  <span class="ft-kick">Watch</span>
+  <h2>See the digital jukebox at work</h2>
+  <p>Two short feature guides: how the channels carry the room through the day on their own, and how staff reshape the night from a phone.</p>
+</div>
+<div class="ft-videos">
+  {% include feature-video.html id="curated-channels" %}
+  {% include feature-video.html id="next-songs" %}
 </div>
 
 {% include photo-band.html src="/assets/images/stock/dance-club.jpg" alt="A packed dance floor under coloured lights" src2="/assets/images/stock/bartenders.jpg" alt2="Bartenders serving a busy bar" src3="/assets/images/stock/party-crowd-sunset.jpg" alt3="Friends celebrating at sunset" caption="A room with music in it, or a night people talk about." %}

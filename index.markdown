@@ -42,7 +42,7 @@ faqs:
       Where in Australia does eJukebox work?
     a: >-
       Everywhere. eJukebox runs over an ordinary internet connection, so venues in every state and territory - capital cities, regional centres and country towns - get the same music, apps and support. Your player arrives set up, and you plug it in with illustrated instructions and video call support, or with your own AV installer.
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 schema_apps: [request, admin, music]
 schema_about: [background-music, jukebox, pub, hospitality]
 schema_service: Jukebox and background music for Australian venues
@@ -271,6 +271,7 @@ service_type: Commercial background music and digital jukebox service
   #main-content .hp-req li i { width:18px; flex:none; text-align:center; color:var(--ejm-green); }
   #main-content .hp-req .hp-btn { display:inline-flex; align-items:center; gap:10px; padding:13px 22px; border-radius:12px; font-weight:700; text-decoration:none; color:#fff !important;
     background:linear-gradient(135deg, var(--ejm-pink), var(--ejm-ind)); box-shadow:0 12px 30px rgba(236,72,153,.3); }
+  .hp-vid { margin:26px auto 0; text-align:left; }
   @media (max-width:860px) { .hp-req { grid-template-columns:1fr; padding:32px 20px 26px; } }
 </style>
 
@@ -281,7 +282,7 @@ service_type: Commercial background music and digital jukebox service
     <p>Not every venue does, so requests are entirely up to you. Choose Core or Complete and your customers can request songs from their own phone - by scanning your QR code, or in the free eJukebox Request app. You set the rules, and you can switch requests off any time while the music carries on by itself.</p>
     <ul>
       <li><i class="fas fa-wand-magic-sparkles"></i><span><strong>Help me pick</strong> - describe the mood, get songs to choose from</span></li>
-      <li><i class="fas fa-headphones"></i><span>30-second previews before anyone requests</span></li>
+      <li><i class="fas fa-headphones"></i><span><a href="/song-previews/">30-second previews</a> before anyone requests</span></li>
       <li><i class="fas fa-microphone-lines"></i><span>Voice dedications that play right before their song and blend into the intro (add-on)</span></li>
     </ul>
     <a class="hp-btn" href="/ejukebox-request-portal.html"><i class="fas fa-music"></i> How song requests work</a>
@@ -357,7 +358,10 @@ service_type: Commercial background music and digital jukebox service
       <p>Upbeat vibes for the night crowd</p>
     </div>
   </div>
-  <p class="dayparting-description">Your channel changes with the time of day on its own, so the mood always matches the room.</p>
+  <p class="dayparting-description">Your channel changes with the time of day on its own, so the mood always matches the room. <a href="/music-channels/">How the channels are programmed &rarr;</a></p>
+  <div class="ft-videos one hp-vid">
+    {% include feature-video.html id="curated-channels" %}
+  </div>
 </div>
 
 

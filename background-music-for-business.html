@@ -7,7 +7,7 @@ schema_service: Commercial background music provider for Australian businesses
 service_type: Commercial background music supplier for Australian businesses
 audience_name: Australian businesses
 h1: Licensed background music for Australian businesses
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 mentions:
   - name: OneMusic Australia
     url: https://onemusic.com.au/
@@ -51,7 +51,7 @@ schema_about: [background-music, music-licensing, retail, hospitality]
       <div class="bm-card">
         <span class="bm-card-icon"><i class="fas fa-headphones"></i></span>
         <h3>Channels picked by people</h3>
-        <p>Every channel is built and refreshed by Australian music directors, never shuffled by an algorithm. Hits, Smooth, Rock and Country.</p>
+        <p>Every channel is built and refreshed by Australian music directors, never shuffled by an algorithm. Hits, Smooth, Rock and Country. <a href="/music-channels/">About the channels</a>.</p>
       </div>
       <div class="bm-card">
         <span class="bm-card-icon"><i class="fas fa-wifi"></i></span>
@@ -63,6 +63,9 @@ schema_about: [background-music, music-licensing, retail, hospitality]
         <h3>Staff steer, customers request</h3>
         <p>Staff run the room from the <a href="/admin-app/">eJukebox Admin</a> app. Customers request songs from their phone's browser or the <a href="/ejukebox-apps.html#request">eJukebox Request</a> app.</p>
       </div>
+    </div>
+    <div class="ft-videos one bm-vids">
+      {% include feature-video.html id="curated-channels" %}
     </div>
   </section>
 
@@ -97,6 +100,11 @@ schema_about: [background-music, music-licensing, retail, hospitality]
       {% endfor %}
     </div>
     <p class="bm-note">No lock-in contracts. Core and Complete use an on-site player, a one-off cost quoted per venue. <a href="/products.html">Compare plans and add-ons &rarr;</a></p>
+    <p class="bm-vid-lead"><strong>Solo in two minutes:</strong> how the private link works, and exactly where Solo stops and Core starts.</p>
+    <div class="ft-videos bm-vids">
+      {% include feature-video.html id="stream-url" %}
+      {% include feature-video.html id="single-area" %}
+    </div>
   </section>
 
   <section class="bm-block">
@@ -216,6 +224,8 @@ schema_about: [background-music, music-licensing, retail, hospitality]
 .bm-tier-price span{font-size:1.7rem;font-weight:800;color:var(--ejm-ink)}
 .bm-tier p:last-child{margin:0;font-size:.93rem;line-height:1.55;color:var(--ejm-mut)}
 .bm-note{font-size:.93rem}
+.bm-vids{margin:22px 0 0}
+.bm-vid-lead{margin:26px 0 0}
 .bm-note a{font-weight:600}
 
 .bm-table-wrap{overflow-x:auto;margin:18px 0 0;border:1.5px solid var(--ejm-line);border-radius:var(--ejm-r)}

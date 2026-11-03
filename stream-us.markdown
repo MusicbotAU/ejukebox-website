@@ -19,6 +19,7 @@ schema_about: [internet-radio, streaming-media]
 
 <div class="stream-intro">
   <p>Enjoy one of the following demo feeds, all streamed live from Australia just like a real radio station and in glistening high quality audio.</p>
+  <p>Want to know how the channels are made, and what each one is for? <a href="/music-channels/">Read about our music channels</a>.</p>
 </div>
 
 <div class="streams-grid">

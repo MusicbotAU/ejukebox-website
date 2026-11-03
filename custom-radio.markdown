@@ -74,7 +74,7 @@ schema_about: [internet-radio, radio-programming, sensory-branding]
   <p>Not another playlist service. A station with its own voice, its own promos and its own sound, running in every store you have.</p>
 </div>
 <div class="ft-grid3">
-  <div class="ft-card"><span class="ft-ico"><i class="fas fa-layer-group"></i></span><h3>Your channels</h3><p>One, two, three or four channels - Hits, Smooth, Rock and Country - each tuned to your brand and your customers.</p></div>
+  <div class="ft-card"><span class="ft-ico"><i class="fas fa-layer-group"></i></span><h3>Your channels</h3><p>One, two, three or four channels - <a href="/music-channels/">Hits, Smooth, Rock and Country</a> - each tuned to your brand and your customers.</p></div>
   <div class="ft-card"><span class="ft-ico c"><i class="fas fa-microphone-lines"></i></span><h3>Voice-overs and imaging</h3><p>Professional voice-overs and station imaging, so it sounds like your station, not anyone else's.</p></div>
   <div class="ft-card"><span class="ft-ico b"><i class="fas fa-calendar-check"></i></span><h3>Promos on a timetable</h3><p>In-store promos and timed messages, national, regional or venue by venue, playing exactly when you want them.</p></div>
   <div class="ft-card"><span class="ft-ico d"><i class="fas fa-comment-dots"></i></span><h3>Talk and local content</h3><p>Talk segments, time calls, local content and staff announcements - the things that make a station feel real.</p></div>

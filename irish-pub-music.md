@@ -33,5 +33,10 @@ faqs:
     a: Yes. Australian venues need a OneMusic licence to play recorded music in public, and you hold that licence yourself. Because eJukebox is a commercial background music supplier there is no Digital Copy/Delivery fee on your licence, and we can collect the fee and pay it to OneMusic for you, at cost.
 faq_title: Irish pub music questions, answered
 schema_about: [irish-pub, irish-music, st-patricks-day]
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
+feature_video: curated-channels
+feature_video_title: >-
+  Programmed by people, not an algorithm
+feature_video_text: >-
+  The same Australian music directors who build every eJukebox channel program the Irish channel, so the Irish tracks sit naturally through the day. <a href="/music-channels/">More about the channels</a>.
 ---

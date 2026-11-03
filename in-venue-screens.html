@@ -49,7 +49,7 @@ faqs:
       What does it cost?
     a: >-
       Photo Slideshow Display, Guest Photo Wall and the Interactive Request Screen are add-ons to Core, and all three are included in Complete. <a href="/products.html">See plans &amp; pricing</a>.
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 schema_apps: [admin]
 schema_about: [digital-signage, slide-show, interactive-kiosk]
 ---
@@ -133,6 +133,7 @@ schema_about: [digital-signage, slide-show, interactive-kiosk]
   /* ---- Social bundle mock ---- */
   .bs-split { display:grid; grid-template-columns:1fr 1fr; gap:34px; align-items:center; margin:30px 0; }
   .bs-split p { color:var(--ejm-soft); font-size:1.06rem; line-height:1.72; }
+  .bs-vid { margin:22px 0 0; }
   .bs-bundle { background:var(--ejm-card); border:1.5px solid var(--ejm-line); border-radius:var(--ejm-r); padding:22px; }
   .bs-bundle-head { display:flex; justify-content:space-between; align-items:center;
     font-size:.8rem; color:var(--ejm-mut); margin-bottom:14px; padding-bottom:12px;
@@ -235,6 +236,14 @@ schema_about: [digital-signage, slide-show, interactive-kiosk]
 {% include app-fan.html left="admin-patron-photos" center="admin-guest-photo" right="admin-slides" caption="Guest photos and slides, run from eJukebox Admin. Real screens from Club Buffalo, our demo venue - guests' photos swapped for stock to protect their privacy." %}
 
 <div class="bs-sec-head">
+  <h2>The Guest Photo Wall in a minute</h2>
+  <p>Your customers are your photographer. The code on the table, the photo on the wall, your logo on every one.</p>
+</div>
+<div class="ft-videos one bs-vid">
+  {% include feature-video.html id="guest-photos" %}
+</div>
+
+<div class="bs-sec-head">
   <h2>You almost certainly already have the screen</h2>
   <p>This is not a "buy our display" product. If there is a TV on your wall with a spare HDMI socket, you are ready. We plug in a small player, and your screen has a new input like any other.</p>
 </div>
@@ -316,57 +325,29 @@ schema_about: [digital-signage, slide-show, interactive-kiosk]
   </div>
 </div>
 
-<div class="portal-features">
-  <div class="section-header">
-    <i class="fas fa-images"></i>
-    <h2>Photo Slideshow Display</h2>
+<div class="bs-sec-head">
+  <h2>Photo Slideshow Display</h2>
+  <p><strong style="color:var(--ejm-ink);">Every idle screen, working for your brand.</strong> When the room is quiet, your display does not fall dark. It blooms into a branded slideshow that keeps the room feeling alive and quietly sells for you around the clock.</p>
+</div>
+<div class="bs-split">
+  <div>
+    <p><strong style="color:var(--ejm-ink);">How it works.</strong> The slideshow takes over whenever requests go quiet, like a screensaver built for marketing. From the Photos tab in the <a href="/admin-app/">eJukebox Admin app</a> you upload, arrange and reorder images in seconds, and put a live preview on the screen whenever you like.</p>
+    <p><strong style="color:var(--ejm-ink);">Where it shines.</strong> Event nights and live acts, drink and food specials, your logo and social handles, photos from past parties, sponsor shout-outs and function bookings.</p>
+    <p style="color:var(--ejm-mut);">Printed posters are out of date the day you hang them. A living slideshow updates in seconds and turns dead screen time into a billboard you already own.</p>
   </div>
-  <div class="works-content">
-    <p><strong>Every idle screen, working for your brand.</strong> When the room is quiet, your display does not fall dark and lifeless. It blooms into a beautiful, branded slideshow that keeps things feeling alive and quietly sells for you around the clock.</p>
-  </div>
-  <div class="features-grid">
-    <div class="portal-feature">
-      <div class="feature-icon"><i class="fas fa-photo-film"></i></div>
-      <h3>How it works</h3>
-      <p>Your slideshow runs automatically whenever activity dips, like a screensaver built for marketing. From the Photos tab you upload, arrange and reorder images in seconds, and can trigger a live preview on the screen on demand.</p>
-    </div>
-    <div class="portal-feature">
-      <div class="feature-icon"><i class="fas fa-bullhorn"></i></div>
-      <h3>Where it shines</h3>
-      <p>Upcoming event nights and live acts. Drink and food specials. Your logo, branding and social handles. Photos from past parties, sponsor shout-outs, function bookings and follow-us calls to action.</p>
-    </div>
-    <div class="portal-feature">
-      <div class="feature-icon"><i class="fas fa-rectangle-ad"></i></div>
-      <h3>Why it lands</h3>
-      <p>Printed posters are out of date the day you hang them. A living slideshow updates in seconds, looks premium, and turns dead screen-time into a 24/7 advertising channel you already own.</p>
-    </div>
-  </div>
+  {% include feature-video.html id="photo-screen" %}
 </div>
 
-<div class="portal-features">
-  <div class="section-header">
-    <i class="fas fa-hand-pointer"></i>
-    <h2>Interactive Request Screen</h2>
-  </div>
-  <div class="works-content">
-    <p><strong>The request booth on your wall.</strong> Not everyone wants to pull out their phone, so give the room a screen. A sleek, wall-mounted touchscreen lets anyone walk straight up, browse your library and pick their own song in seconds. Think of the self-order screens at McDonald's, but for music.</p>
-  </div>
-  <div class="features-grid">
-    <div class="portal-feature">
-      <div class="feature-icon"><i class="fas fa-hand-point-up"></i></div>
-      <h3>How it works</h3>
-      <p>The screen mounts on your wall and connects to your player. Customers tap to browse the library and send a request, and it slots straight into the queue and plays, running the very same request engine as the phone experience.</p>
-    </div>
-    <div class="portal-feature">
-      <div class="feature-icon"><i class="fas fa-people-group"></i></div>
-      <h3>Where it shines</h3>
-      <p>Busy floors where phones come and go, family venues where not everyone has an app open, gaming rooms, bowling clubs, and anywhere you want a fun, hands-on way for guests to shape the music.</p>
-    </div>
-    <div class="portal-feature">
-      <div class="feature-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
-      <h3>Why it lands</h3>
-      <p>It makes your venue feel modern and interactive from the second someone walks in, a genuine point of difference that gets the whole room talking and keeps people drifting back to see what is on the screen.</p>
-    </div>
+<div class="bs-sec-head">
+  <h2>Interactive Request Screen</h2>
+  <p><strong style="color:var(--ejm-ink);">The request booth on your wall.</strong> Not everyone wants to pull out their phone, so give the room a screen. A wall-mounted touchscreen lets anyone walk straight up, browse your library and pick their own song in seconds.</p>
+</div>
+<div class="bs-split">
+  {% include feature-video.html id="request-screen" %}
+  <div>
+    <p><strong style="color:var(--ejm-ink);">How it works.</strong> The touchscreen mounts on your wall and connects to your player. Customers tap to browse the library and send a request, and it slots straight into the queue, through the same request engine as the phone experience and with the same rules.</p>
+    <p><strong style="color:var(--ejm-ink);">Where it shines.</strong> Busy floors where phones come and go, family venues, gaming rooms and bowling clubs, and anywhere you want a hands-on way for guests to shape the music.</p>
+    <p style="color:var(--ejm-mut);">It makes the venue feel modern from the second someone walks in, and keeps people drifting back to see what is on the screen. The touchscreen is a one-off hardware cost, quoted for your venue.</p>
   </div>
 </div>
 

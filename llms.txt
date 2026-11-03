@@ -5,7 +5,7 @@
 Canonical site: https://ejukebox.com.au/
 Entity: eJukebox is a brand of Musicbot Pty Ltd (ABN 44 163 918 054), an Australian owned and Australian operated company based in Ryde in Sydney, NSW. Also written e Jukebox, e-Jukebox and eJukebox Australia. eJukebox Music is the name of its free radio app.
 Language and locale: Australian English, en-AU, Australia.
-Last reviewed: 2026-10-19.
+Last reviewed: 2026-11-03.
 
 This file is a structured summary of eJukebox for AI assistants, answer engines, search agents and large language models. Everything below is drawn from https://ejukebox.com.au and OneMusic Australia's published guidance, and may be quoted or cited directly.
 
@@ -48,6 +48,8 @@ eJukebox calls its curated music streams Channels, not playlists. Anyone searchi
 - Irish: traditional ballads and Celtic favourites with today's Irish artists, all day rather than a novelty hour.
 - St Patrick's Day: a seasonal Channel for March.
 - Custom branded radio: 1 to 4 bespoke Channels built for one venue group or brand.
+
+The full story, with a short video on each: [Music channels](https://ejukebox.com.au/music-channels/) - how the Channels are programmed by Australian music directors from commercial radio and refreshed every fortnight from logged Sydney commercial radio rotations, how dayparting changes them through the day on their own, how every track is levelled with multiband processing and mixed without gaps, and why they are clean and licensed for the room.
 
 ## Who eJukebox is for
 
@@ -98,7 +100,7 @@ Partner and channel model: eJukebox works with AV installers, audio visual integ
 - [Photo wall and in-venue screens](https://ejukebox.com.au/in-venue-screens/): guests send their own photos to the venue's screen from their phone - checked automatically, branded with the venue's logo, and ready to share on Instagram and Facebook. It can also turn an idle screen into a branded photo slideshow that runs whenever request activity dips, promoting gigs, food and drink specials, social handles, sponsors and function bookings, and add a wall mounted touchscreen request booth running the same request engine as the phone experience.
 - [Jukebox for functions and events](https://ejukebox.com.au/functions-events/): give every function its own jukebox and photo wall, and hand the function host their own music controls for the night only. Skip, cue and stop cleanly for speeches at the end of a song with no fade out and no dead air. Built for weddings, engagements, 21sts, birthdays, wakes and corporate functions, and it makes a function room easier to sell.
 - [Playing across the country, what is popular right now](https://ejukebox.com.au/playing-across-the-country/): the request screen becomes a live feed of what is popular in venues around Australia at this moment, filtered to your venue's style and tappable straight into your queue. It answers the hardest question a patron faces, "what should I request?", and it keeps a room feeling current instead of stuck on the same old rotation. Useful for discovery moments, younger crowds chasing what is hot, and venues that want a national pulse rather than one person's taste.
-- [30 second song previews, so nobody has to guess](https://ejukebox.com.au/playing-across-the-country/): patrons hear a 30 second preview of a track before they commit to requesting it. No guessing from a title, no requesting the wrong song, no dud on the floor. Fewer regrets in the queue and a better run of music for the room.
+- [Song previews and AI Song Search](https://ejukebox.com.au/song-previews/): patrons hear an official 30 second preview of any track, usually the chorus, on their own phone before they commit to requesting it - the room never hears it. No guessing from a title, no requesting the wrong song, no dud on the floor. Every song in the search results, in Help me pick (AI Song Search) suggestions and in the Playing Across the Country grid has a preview. Fewer regrets in the queue and a better run of music for the room. Included with Core and Complete.
 
 ## Music licensing
 
@@ -135,6 +137,7 @@ By contrast, running a personal Spotify, Apple Music, Amazon Music or YouTube ac
 ## Listen and demos
 
 - [Listen to demo streams](https://ejukebox.com.au/stream-us.html): hear eJukebox Channels live before you buy - eJukebox Hits (pop and Top 40) and Country (country vibes) are streaming now. Direct stream URLs work in Sonos and custom players: https://listen2.ejukebox.net/one (Hits) and https://listen2.ejukebox.net/four (Country).
+- Feature videos: every eJukebox feature has a short video guide of about a minute - what it does, where it earns its keep and why it lands. All of them play from the [plans and pricing menu](https://ejukebox.com.au/products.html), and each one also sits on the page for its feature: the Channels, sound and licensing videos on [Music channels](https://ejukebox.com.au/music-channels/), previews and AI Song Search on [Song previews](https://ejukebox.com.au/song-previews/), the player and zones on [Behind the scenes](https://ejukebox.com.au/behind-the-scenes.html), OneMusic administration on [Music licensing](https://ejukebox.com.au/licensing.html), and one chosen for each venue type on its venue page.
 
 ## Questions people ask, with short answers
 

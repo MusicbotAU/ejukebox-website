@@ -56,8 +56,22 @@ layout: default
       <li><a href="/automated-jukebox-system.html">Digital jukebox</a> - set it and forget it, no DJ needed.</li>
       <li><a href="/ejukebox-request-portal.html">Song requests</a> - customers request songs from their phone, by QR code or the eJukebox Request app.</li>
       <li><a href="/admin-app/">eJukebox Admin app</a> - skip, hold and reorder requests, and switch channels from behind the bar.</li>
+      <li><a href="/music-channels/">The music channels</a> - Hits, Smooth, Rock and Country, programmed by Australian music directors.</li>
     </ul>
   </section>
+
+  {% if page.feature_video %}
+  {%- comment -%} One short feature video chosen for this kind of venue:
+        feature_video: <an id from _data/pricing.yml>
+        feature_video_title: a heading in this venue's own words
+        feature_video_text: one line under it (HTML allowed)
+      schema.html finds it on the page and adds the VideoObject. {%- endcomment %}
+  <section class="venue-block venue-video">
+    <h2>{{ page.feature_video_title | default: 'See it in under a minute' }}</h2>
+    {% if page.feature_video_text %}<p>{{ page.feature_video_text }}</p>{% endif %}
+    <div class="ft-videos one">{% include feature-video.html id=page.feature_video %}</div>
+  </section>
+  {% endif %}
 
   <section class="venue-block venue-licensing">
     <h2>Music licensing for {{ page.venue_name | default: page.label }}</h2>
@@ -128,6 +142,8 @@ layout: default
 .venue-testimonial{margin:0 0 40px}
 
 .venue-block{margin:0 0 34px}
+.venue-video p{margin:0 0 16px;color:var(--ejm-soft)}
+.venue-video p a{font-weight:600}
 .venue-links{padding-left:20px}
 .venue-links li{margin:8px 0;color:var(--ejm-soft)}
 .venue-links a{font-weight:600}

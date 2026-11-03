@@ -40,7 +40,12 @@ faqs:
       Can we play our own messages?
     a: >-
       Yes, on Core. Record your own announcements, or add Scheduled Announcements to play reminders automatically at the times you choose.
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 faq_title: Waiting room music questions, answered
 schema_about: [waiting-room, background-music]
+feature_video: broadcast-quality
+feature_video_title: >-
+  Calm waiting room music with no ads, no talk and nothing that jumps
+feature_video_text: >-
+  Set the volume once. Every track is levelled, and nothing plays between songs unless you put it there.
 ---

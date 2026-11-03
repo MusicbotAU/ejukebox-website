@@ -5,6 +5,44 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-03 - Every feature video on the site; music channels and song previews pages
+
+Marc uploaded twelve new feature videos to the `ejukebox01` storage account
+(`websiteblobs/features/`, 3 Nov). They are the twelve features that had no video, so every
+tile on /products.html, /pricing and /wholesale now plays one - no more "Video coming soon".
+`pricing.yml` holds each file name (spaces as `%20`, because the Admin app opens
+`video_base + video` as a link), plus `video_secs` and `video_date` for the schema.
+
+- **Videos across the site, not just the pricing menu.** `_includes/feature-video.html` now
+  defaults to a poster grabbed from the video's own title slide (`assets/images/videos/`,
+  1280x720 WebP, 30-70KB), shows the running time, and carries its own styles, so it works on
+  any page. Videos went onto the feature pages they explain (song requests, admin app,
+  screens, functions, licensing, behind the scenes, digital jukebox, background music for
+  business, home), and every venue page gets one chosen for that kind of room
+  (`feature_video:` in front matter, rendered by `venue.html`).
+- **Two new pages, as Marc asked.** /music-channels/ - the music itself: the four channels,
+  how they are programmed and refreshed, dayparting, the sound, clean and licensed, staff
+  control - with the channels, sound and licensing videos. /song-previews/ - hear it before
+  you request it, with AI Song Search alongside, because guests use the two together.
+- **/playing-across-the-country/ rebuilt** in the house style around its video. Its song
+  previews half moved to /song-previews/.
+- **/in-venue-screens/** lost its last two old-style sections (Photo Slideshow Display,
+  Interactive Request Screen); both now sit beside their videos.
+- **VideoObject schema, generated.** `schema.html` finds every `data-vid` marker in the page
+  and writes a VideoObject from `pricing.yml`, and the WebPage lists them. Switch:
+  `video_schema` in `pricing.yml` - on, because the videos already play on public pages; Ben
+  (ITV Systems) asked in June to keep how-to videos unindexed, so it is one line to turn off.
+- **Menus:** Our Music Channels under Music for Your Venue; Song Previews and Playing Across
+  the Country under Jukebox Features (`features.yml`), so the footer and phone menu follow.
+- **Fixed on the way:** /products.html scrolled sideways on a 375px phone - the long hardware
+  tag on the add-on cards would not wrap and held the column 61px too wide. That bug was
+  already live; it had nothing to do with the videos.
+- **Videos checked against their scripts** (speaker notes in `Marketing/eJukebox/2026/v4`).
+  Two need Marc - see `open-items.md`: the Licensed and Family-Friendly voiceover's stale
+  OneMusic figure, and the Guest Photo Wall slide's request screen line.
+
+---
+
 ## 2026-10-19 - llms.txt rebuilt; YouTube and the agile line on the site
 
 `llms.txt` replaced with the version built on 19 Oct (`Claude Project/llms.txt` in the eJukebox

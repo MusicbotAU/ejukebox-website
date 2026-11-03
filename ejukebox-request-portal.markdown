@@ -4,7 +4,7 @@ title: Song Requests for Pubs, Clubs & Venues
 description: QR code song requests for pubs, clubs and venues. Customers request from their phone or the free eJukebox Request app while your staff stay in control.
 schema_service: Song request portal for pubs, clubs and functions
 service_type: Interactive song request system for venues
-last_reviewed: 2026-10-13
+last_reviewed: 2026-11-03
 schema_app:
   type: WebApplication
   name: eJukebox song requests in the browser
@@ -125,6 +125,7 @@ schema_about: [jukebox, qr-code]
     background:rgba(245,166,35,.11); border:1px solid rgba(245,166,35,.32); }
   .sr-inc { color:var(--ejm-green); background:rgba(52,211,153,.11); border-color:rgba(52,211,153,.32); }
   .sr-more { margin-top:10px; font-weight:600; font-size:.92rem; }
+  .sr-vid { margin:24px 0 0; }
 
   /* ---- faq ---- */
   .sr-faq { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
@@ -196,6 +197,9 @@ schema_about: [jukebox, qr-code]
   <div class="sr-step"><span class="sr-num">2</span><i class="fas fa-magnifying-glass sr-step-ico"></i><h3>Find a song</h3><p>Search by artist or title, hear a 30-second preview, or tap <strong>Help me pick</strong> and describe it: "80s Aussie pub rock", "something for a 50th".</p></div>
   <div class="sr-step"><span class="sr-num">3</span><i class="fas fa-list-ol sr-step-ico"></i><h3>Watch it come up</h3><p>The coming-up list shows the real playing order, so everyone can see exactly where their song sits.</p></div>
 </div>
+<div class="ft-videos one sr-vid">
+  {% include feature-video.html id="song-requests" %}
+</div>
 
 {% include photo-band.html src="/assets/images/stock/smartphone-photo.jpg" alt="A phone held up in a crowded, glowing room" src2="/assets/images/stock/party-crowd-sunset.jpg" alt2="Friends celebrating at sunset" src3="/assets/images/stock/concert-phone.jpg" alt3="A phone filming a night out" caption="The people who never ask for a song finally do." %}
 
@@ -218,9 +222,13 @@ schema_about: [jukebox, qr-code]
   <h2>Nobody needs to know the song name</h2>
 </div>
 <div class="sr-grid3">
-  <div class="sr-card"><span class="sr-ico"><i class="fas fa-wand-magic-sparkles"></i></span><h3>Help me pick</h3><p>Ask for music the way you would ask a person. It comes back with songs from your venue's library to browse and request.</p><span class="sr-add sr-inc"><i class="fas fa-check"></i> Core and Complete</span></div>
-  <div class="sr-card"><span class="sr-ico b"><i class="fas fa-headphones"></i></span><h3>30-second previews</h3><p>Tap any track for a quick preview before requesting it. Try before you queue.</p><span class="sr-add sr-inc"><i class="fas fa-check"></i> Core and Complete</span></div>
-  <div class="sr-card"><span class="sr-ico c"><i class="fas fa-map-location-dot"></i></span><h3>Playing across the country</h3><p>A live grid of what is playing in eJukebox venues around Australia, filtered to your venue's style. Tap a track to request it.</p><span class="sr-add sr-inc"><i class="fas fa-check"></i> Core and Complete</span></div>
+  <div class="sr-card"><span class="sr-ico"><i class="fas fa-wand-magic-sparkles"></i></span><h3>Help me pick</h3><p>AI Song Search: ask for music the way you would ask a person. It comes back with songs from your venue's library to browse and request.</p><span class="sr-add sr-inc"><i class="fas fa-check"></i> Core and Complete</span><a class="sr-more" href="/song-previews/#ai-song-search">More on AI Song Search &rarr;</a></div>
+  <div class="sr-card"><span class="sr-ico b"><i class="fas fa-headphones"></i></span><h3>30-second previews</h3><p>Tap any track for a quick preview before requesting it. Try before you queue.</p><span class="sr-add sr-inc"><i class="fas fa-check"></i> Core and Complete</span><a class="sr-more" href="/song-previews/">More on song previews &rarr;</a></div>
+  <div class="sr-card"><span class="sr-ico c"><i class="fas fa-map-location-dot"></i></span><h3>Playing across the country</h3><p>A live grid of what is playing in eJukebox venues around Australia, filtered to your venue's style. Tap a track to request it.</p><span class="sr-add sr-inc"><i class="fas fa-check"></i> Core and Complete</span><a class="sr-more" href="/playing-across-the-country/">More on the trending grid &rarr;</a></div>
+</div>
+<div class="ft-videos sr-vid">
+  {% include feature-video.html id="ai-song-search" %}
+  {% include feature-video.html id="song-previews" %}
 </div>
 
 <div class="sr-sec-head">

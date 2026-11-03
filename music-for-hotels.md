@@ -36,7 +36,12 @@ faqs:
       Is the music suitable for every guest?
     a: >-
       Yes. Every channel is family-friendly, with no explicit lyrics, no ads and no talk.
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-03
 faq_title: Hotel music questions, answered
 schema_about: [hotel, hospitality, background-music]
+feature_video: two-zones
+feature_video_title: >-
+  Different music from the lobby to the pool bar
+feature_video_text: >-
+  Two zones come with Core and the same player drives up to four, each with its own channel, volume and schedule.
 ---
