@@ -4,7 +4,7 @@ title: Digital Jukebox for Pubs, Clubs & Bars
 description: A digital jukebox for pubs, clubs and bars - curated channels that run themselves, song requests from phones, and no jukebox cabinet to buy or hire.
 schema_service: Digital jukebox for pubs, clubs and bars
 service_type: Digital jukebox and automated venue music
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 faqs:
   - q: >-
       What is a digital jukebox?
@@ -31,7 +31,7 @@ faqs:
       Is it licensed?
     a: >-
       The music is licensed for business use. Your venue still holds its own OneMusic licence, and for pubs
-      and clubs we can collect and pay it for you, at cost. <a href="/licensing.html">How licensing works</a>.
+      we can act as the authorised representative on it, passing the OneMusic invoice on at cost. <a href="/licensing.html">How licensing works</a>.
 howto:
   name: "How the eJukebox digital jukebox runs your venue's music"
   description: >-

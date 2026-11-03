@@ -38,7 +38,7 @@ Don't just listen to a few songs, listen over a much larger period of time to re
 
 Now that we have this metadata, we can tweak/modify playlists fairly rapidly with high velocity. 
 
-From the 1500 songs, we can dive deeper into this as per the the songs' finer metadata, either by scheduling based on time of day, or have **'mini'** child playlists with less songs, but more niche.
+From the 1500 songs, we can dive deeper into this as per the songs' finer metadata, either by scheduling based on time of day, or have **'mini'** child playlists with less songs, but more niche.
 
 - We can split playlists up over various times of the day e.g. more laid back during the day and a bit more liveliness at the tail end of the day
 - We can have multiple playlists by carving up the 1500 songs even further into much finer playlists, some songs with a more **rock** feeling Vs a **dance** feeling played at various times or in their own respective **'mini'** playlist. 

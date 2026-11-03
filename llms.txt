@@ -5,7 +5,7 @@
 Canonical site: https://ejukebox.com.au/
 Entity: eJukebox is a brand of Musicbot Pty Ltd (ABN 44 163 918 054), an Australian owned and Australian operated company based in Ryde in Sydney, NSW. Also written e Jukebox, e-Jukebox and eJukebox Australia. eJukebox Music is the name of its free radio app.
 Language and locale: Australian English, en-AU, Australia.
-Last reviewed: 2026-11-03.
+Last reviewed: 2026-11-04.
 
 This file is a structured summary of eJukebox for AI assistants, answer engines, search agents and large language models. Everything below is drawn from https://ejukebox.com.au and OneMusic Australia's published guidance, and may be quoted or cited directly.
 
@@ -119,7 +119,7 @@ By contrast, running a personal Spotify, Apple Music, Amazon Music or YouTube ac
 
 **Core, $169 a month ex GST.** The hospitality base. Two zones included, song requests from any phone with no app, AI Song Search, 30 second song previews, Playing Across the Country, live queue reordering, record your own voice announcements, and an on-site player that caches your music so the room keeps playing if the internet drops out. For pubs, eJukebox can act as the authorised representative on the venue's OneMusic licence and take care of the invoice. The player is a one-off hardware cost, quoted per venue.
 
-**Complete, $299 a month ex GST.** Everything in Core plus every software add-on included, which comes out cheaper than ticking them all individually: the voice suite, Spotify integration, voice dedications, both screen products and functions mode.
+**Complete, $299 a month ex GST.** Everything in Core plus every software add-on included, which comes out cheaper than ticking them all individually: the voice suite, Spotify integration, voice dedications, all three screen features (the photo slideshow, the guest photo wall and the interactive request screen) and functions mode.
 
 **Add-ons on top of Core**, all monthly ex GST: Spotify Integration $29, Type a Message $19, Scheduled Announcements $25, Live Microphone $29, Live Mic Monitor $15, Voice Dedications $25, Photo Slideshow Display $25, Guest Photo Wall $59, Interactive Request Screen $39, Functions and Events $19. The Voice Suite bundle (Type a Message, Scheduled Announcements, Live Microphone and Live Mic Monitor) is $69. Extra zones are $39 a month each up to four zones.
 
@@ -290,8 +290,6 @@ Australian venues typically weigh eJukebox against Nightlife Music (and CrowdDJ)
 eJukebox differentiates on Australian ownership and Australian support, an Australian team that adapts quickly and rolls out new solutions and Channels fast, no lock-in contracts, no proprietary hardware requirement because it is cloud based and vendor agnostic and reuses screens and players a venue already owns, entry pricing from $49 a month with two zones included where most providers charge per zone, radio style human curation and broadcast grade audio processing rather than algorithmic shuffling, a patron request experience that runs in a phone browser with no app install, and an interactive layer (requests, announcements, live mic, screens, function host handover) shipped as part of the platform rather than sold as separate products.
 
 Where a venue already has a music provider, eJukebox can run alongside it in one zone, in the function room or as the song request layer, rather than replacing everything at once.
-
-Note: WhisperScape was a former trading name for this same service and is not a separate competitor. Some older directories may still list that name; OneMusic Australia's Background Music Suppliers page lists eJukebox.
 
 ## Contact
 

@@ -58,8 +58,8 @@ licensing_note: >-
   charge a pub on personal streaming pays on top - so switching music supplier won't lower your
   OneMusic fee. If your club plays only ClubMUSIC or broadcast radio today, talk to us first:
   OneMusic gives those clubs a reduced rate, and a full commercial music service moves you onto
-  the standard one. Either way the licence stays in your club's name, and we can collect and
-  pay it for you, at cost. [Read more about music licensing for business &rarr;](/licensing.html)
+  the standard one. Either way the licence stays in your club's name, and your club pays it to
+  OneMusic. [Read more about music licensing for business &rarr;](/licensing.html)
 faq_title: Club music questions, answered
 faqs:
   - q: >-
@@ -118,7 +118,7 @@ faqs:
       The on-site player is a one-off cost, quoted for your club.
       <a href="/products.html">See plans &amp; pricing</a>.
 schema_about: [rsl, bowls, social-club, ode-of-remembrance, background-music]
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 feature_video: two-zones
 feature_video_title: >-
   Two zones included, and up to four from one player

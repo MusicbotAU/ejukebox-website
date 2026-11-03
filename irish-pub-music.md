@@ -20,7 +20,7 @@ benefits:
     text: Daypart from easy afternoon trad to high-energy singalong nights that keep the room full and the bar busy.
   - icon: fa-certificate
     title: Fully licensed
-    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
+    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and we can manage that licence for you as your authorised representative, at cost.
 spotlight_title: St Patrick's Day music, sorted
 spotlight_body: >-
   Every March, St Patrick's Day turns Irish bars into the busiest venues in the country. eJukebox turns the Irish up for the occasion - more anthems, drinking songs and crowd favourites woven through the night - so you can pack the room without building a playlist from scratch, then settle back to your usual mix afterwards.
@@ -30,10 +30,10 @@ faqs:
   - q: Can you turn it up for St Patrick's Day?
     a: Yes. For the occasion we weave more of the anthems and singalongs that fill a room through your music, then go back to your usual mix afterwards.
   - q: Do I need a licence to play Irish music in my pub?
-    a: Yes. Australian venues need a OneMusic licence to play recorded music in public, and you hold that licence yourself. Because eJukebox is a commercial background music supplier there is no Digital Copy/Delivery fee on your licence, and we can collect the fee and pay it to OneMusic for you, at cost.
+    a: Yes. Australian venues need a OneMusic licence to play recorded music in public, and you hold that licence yourself. Because eJukebox is a commercial background music supplier there is no Digital Copy/Delivery fee on your licence, and we can act as the authorised representative on it, passing the OneMusic invoice on at cost.
 faq_title: Irish pub music questions, answered
 schema_about: [irish-pub, irish-music, st-patricks-day]
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 feature_video: curated-channels
 feature_video_title: >-
   Programmed by people, not an algorithm

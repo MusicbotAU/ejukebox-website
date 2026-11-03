@@ -5,6 +5,40 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-04 - Tidy-up pass: tags that wrap, phone and tablet layouts, OneMusic wording
+
+Marc spotted the orange hardware tag running off the edge of the add-on cards on /products.html
+(and /pricing, /wholesale). It was `white-space:nowrap`; it now wraps inside the card at every
+width. Then a check of every page at eleven widths, 340px to 1440px, for any text outside its box
+and any page that scrolls sideways. It found and fixed:
+
+- **The Voice Suite saving line** ("Saves $19/mo compared with...") on the pricing pages, on a
+  small phone - its column could not shrink.
+- **/free-trial.html** scrolled sideways on a 360px phone - the form grid was sizing to its content.
+- **Venue page headlines on phones.** The theme pins every `#main-content h1` at 40px with
+  `!important`, so the hero's own sizing never applied, and "Accommodation" was clipped on
+  /music-for-hotels/. Phones now get 32px (28px under 380px); desktop is unchanged.
+- **The top menu between 768px and 880px** broke onto two rows. The phone menu takes over there now.
+
+Copy that read wrong:
+
+- **OneMusic licence admin is pubs only.** The site said "for pubs and clubs we can collect and
+  pay it" in 27 places. Per the tracker (Shane Carroll, Mar 2026) and llms.txt, we act as the
+  authorised representative on a pub's licence; clubs are not covered. Aligned everywhere,
+  including the pricing data, the comparison table and the venue layout. The clubs page now says
+  the club pays OneMusic itself.
+- **The pricing menu:** the videos are about a minute, not 30 seconds; they are feature guides, not
+  "the real system"; Complete has every screen feature, not "both screens"; the touchscreen is
+  for the request screen only (the slideshow and photo wall use a TV you have); and the base
+  product no longer says "not streamed down from the cloud", which contradicted llms.txt.
+- `/controller-app.html` now redirects to /admin-app/ (the Controller app is gone from the stores).
+- Home page: "medical center" and "ambiance" (US spelling) rewritten; a doubled word on the
+  hidden Bells Hotel page.
+- llms.txt: the Complete line names all three screen features, and the old trading-name note is
+  gone (Marc, 29 Oct: do not mention it).
+
+---
+
 ## 2026-11-03 - Every feature video on the site; music channels and song previews pages
 
 Marc uploaded twelve new feature videos to the `ejukebox01` storage account

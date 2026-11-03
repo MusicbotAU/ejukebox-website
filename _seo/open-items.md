@@ -4,21 +4,6 @@ Each entry says why it is still open, so nothing gets silently dropped.
 
 ## Needs a decision from Marc
 
-**Scenarios 3 and 4 on `/licensing.html` still price the "Full Package".**
-Cleared of `$1/Day` on 4 Sep 2026, but the two pub scenarios still quote an
-`eJukebox Full Package` at `from $130/mo` and `from $170/mo` ex GST. `pricing.yml`
-has Core at $169 and Complete at $299, and `/full-package.html` is now titled
-"Core & Complete". Needs Marc to say which plan each pub scenario should quote
-before the totals ($2,973/yr and $4,513/yr) can be recomputed.
-
-Same ex-GST vs inc-GST question applies: `pricing.yml` is ex GST, the OneMusic
-figures on the page are inc GST. The retail scenarios now label the eJukebox line
-"ex GST" to make the mixed basis visible, rather than silently adding the two.
-
-On 15 Sep 2026 both pub scenarios gained the current feature list (Core features
-plus add-ons, labelled "included in Complete"), but the price they sit under is
-still the stale Full Package figure.
-
 **Venue FAQs - done Thu 15 Oct 2026.** Every venue page now has a `faqs:` block, rendered
 visibly and as `FAQPage`, within the OneMusic claim rules. They went live without a separate
 wording sign-off; Marc is reading them over (A-List).
@@ -31,13 +16,16 @@ it): point `ejukebox.tv/functions/` at `/functions-events/` and `ejukebox.tv/` a
 `/in-venue-screens/`, by 301 or cross-domain canonical. That unblocks the content plan in
 `functions-events.md`.
 
-**Two feature videos say something the site does not (3 Nov 2026).**
+**Three feature videos say something the site does not (3-4 Nov 2026).**
 - *Licensed and Family-Friendly* - the slide 2 voiceover puts the Digital Copy and Delivery
   add-on at "roughly four hundred and seventy one dollars a year". OneMusic's current card
   (1 Sep 2026 - 31 Aug 2027) has it at $488.88 incl GST, and the figure moves every
   September. Re-voice that line without a dollar figure and upload it under the same name -
   every page picks it up. Until then the video is on the pricing tiles and /music-channels/
   only, not on /licensing.html, which deliberately quotes no OneMusic fees.
+- *OneMusic Administration* - its slides say "We can collect your OneMusic licence fee" with no
+  venue type. Since 4 Nov the site says pubs only (authorised representative, OneMusic Mar 2026),
+  so "for pubs" on the slide would match it.
 - *Guest Photo Wall* - slide 1 says the display "doubles as the Interactive Request Screen".
   That screen needs a touchscreen (`pricing.yml`), so a guest-photo TV is not one. Worth a
   tweak next time the deck is open.

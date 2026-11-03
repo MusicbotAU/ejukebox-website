@@ -36,7 +36,7 @@ faqs:
       Do restaurants need a music licence?
     a: >-
       Yes. Your restaurant holds its own OneMusic licence, whoever supplies the music. With eJukebox there is no Digital Copy/Delivery fee on it, as there would be with a personal streaming account. <a href="/licensing.html">How music licensing works</a>.
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 faq_title: Restaurant music questions, answered
 schema_about: [restaurant, background-music, dayparting]
 feature_video: broadcast-quality

@@ -40,7 +40,7 @@ faqs:
       Do I still need a OneMusic licence?
     a: >-
       Yes. Every café playing music in public holds its own OneMusic licence, whoever supplies the music, and eJukebox's fee does not include it. <a href="/licensing.html">How music licensing works</a>.
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 faq_title: Café music questions, answered
 schema_about: [cafe, background-music]
 feature_video: stream-url

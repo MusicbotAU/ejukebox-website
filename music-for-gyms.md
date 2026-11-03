@@ -41,7 +41,7 @@ faqs:
       Can we make announcements over the music?
     a: >-
       Yes. Record your own announcements on Core, add Live Microphone to talk to the floor from any staff phone while the music ducks underneath you, or let Scheduled Announcements remind members about classes automatically.
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 faq_title: Gym music questions, answered
 schema_about: [gym, background-music]
 feature_video: curated-channels

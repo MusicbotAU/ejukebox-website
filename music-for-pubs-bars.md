@@ -21,10 +21,10 @@ benefits:
     text: Patrons scan a QR code and request tracks. You stay in control - choose what can be requested, set per-person limits, and hold or remove any request.
   - icon: fa-certificate
     title: Simpler licensing
-    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
+    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and as your authorised representative we can manage that licence for you, at cost.
 faqs:
   - q: Do I need a music licence to play music in my pub?
-    a: Yes. Australian venues need a OneMusic Australia licence to play recorded music in public, and you hold that licence yourself. Because eJukebox is a commercial background music supplier there is no Digital Copy/Delivery fee on your licence, as there would be with a personal streaming account, and we can collect the fee and pay it to OneMusic for you, at cost.
+    a: Yes. Australian venues need a OneMusic Australia licence to play recorded music in public, and you hold that licence yourself. Because eJukebox is a commercial background music supplier there is no Digital Copy/Delivery fee on your licence, as there would be with a personal streaming account, and we can act as the authorised representative on it, so the OneMusic invoice comes to us and we pass it on at cost.
   - q: Can customers really request songs?
     a: Yes, interactive song requests are at the heart of eJukebox. Patrons request from their own phone and you keep full control over what actually plays.
   - q: >-
@@ -39,7 +39,7 @@ faqs:
       Can different bars play different music?
     a: >-
       Yes. Core includes two zones - the front bar and the bistro, say - and one player drives up to four, so the beer garden and the gaming room can have their own channels too.
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 faq_title: Pub and bar music questions, answered
 schema_about: [pub, bar, jukebox, background-music]
 feature_video: two-zones

@@ -18,7 +18,7 @@ benefits:
     text: Calm mornings, warmer evenings. Dayparting handles the transitions so your team does not have to.
   - icon: fa-certificate
     title: Simpler licensing
-    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
+    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs, including pubs with rooms, we can manage that licence for you as your authorised representative, at cost.
 faqs:
   - q: >-
       Can different areas of the hotel play different music?
@@ -31,12 +31,12 @@ faqs:
   - q: >-
       Do hotels need a OneMusic licence?
     a: >-
-      Yes. Your venue holds its own OneMusic licence, whoever supplies the music. With eJukebox there is no Digital Copy/Delivery fee on it, as there would be with a personal streaming account, and for pubs and clubs we can collect and pay the licence for you, at cost.
+      Yes. Your venue holds its own OneMusic licence, whoever supplies the music. With eJukebox there is no Digital Copy/Delivery fee on it, as there would be with a personal streaming account, and for pubs, including pubs with rooms, we can manage the licence for you as your authorised representative, at cost.
   - q: >-
       Is the music suitable for every guest?
     a: >-
       Yes. Every channel is family-friendly, with no explicit lyrics, no ads and no talk.
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 faq_title: Hotel music questions, answered
 schema_about: [hotel, hospitality, background-music]
 feature_video: two-zones

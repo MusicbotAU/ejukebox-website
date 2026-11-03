@@ -46,7 +46,9 @@ any push that touches page metadata.
 - **OneMusic claims are constrained.** The licence is never "included". Moving off
   personal streaming lowers the venue's OneMusic bill: a lower *tier* for retail,
   and for hospitality - whose tier is set by its TV screens - no Digital
-  Copy/Delivery add-on. Collect-and-remit is pubs and clubs only. Every claim,
+  Copy/Delivery add-on. Licence admin is pubs only: we act as the authorised
+  representative on a pub's OneMusic licence (OneMusic, Mar 2026). Clubs are not covered,
+  so never promise a club collection. Every claim,
   on-page or in schema, has to respect that.
 - **Titles <= 60 characters, descriptions <= 160.** Enforced by `audit.py`.
 - **Feature videos live in Azure, not the repo** - storage account `ejukebox01`, container

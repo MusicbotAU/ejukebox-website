@@ -4,7 +4,7 @@ title: Music Licensing for Business, OneMusic & APRA
 description: OneMusic, APRA AMCOS and PPCA in plain English for Australian pubs, clubs, cafes and shops, and why your personal streaming account isn't licensed for business.
 schema_service: Music licensing guidance for Australian businesses
 service_type: OneMusic Australia licensing guidance and fee administration
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 schema_article:
   headline: Music Licensing for Australian Business - OneMusic, APRA AMCOS and PPCA Explained
   section: Music licensing
@@ -37,12 +37,12 @@ howto:
     - name: Use a commercial background music supplier
       text: A commercial background music supplier like eJukebox changes what OneMusic charges compared with personal streaming. Shops and service businesses come off the top tier, and hospitality venues no longer pay the Digital Copy and Delivery add-on. The licence stays in your name and is paid separately.
       url: /licensing.html
-    - name: For pubs and clubs, hand over the paperwork
-      text: For pubs and clubs, eJukebox can collect the OneMusic fee on your behalf and pay it to OneMusic at cost, so there is no separate paperwork to chase.
+    - name: For pubs, hand over the paperwork
+      text: For pubs, eJukebox can act as the authorised representative on your OneMusic licence, so the invoice comes to us and we pass it on at cost - no separate paperwork to chase.
       url: /contact/
 faqs:
   - q: Does eJukebox include my OneMusic licence?
-    a: No, and no music supplier can. Your OneMusic licence is held by your business and paid separately. What eJukebox includes is our own licence to supply the music. For pubs and clubs we can collect the OneMusic fee and pay it on your behalf, at cost, with no margin.
+    a: No, and no music supplier can. Your OneMusic licence is held by your business and paid separately. What eJukebox includes is our own licence to supply the music. For pubs, we can act as the authorised representative on your OneMusic licence, so the invoice comes to us and we pass it on at cost, with no margin.
   - q: Can I play Spotify or Apple Music in my business if I have a OneMusic licence?
     a: No. Spotify, Apple Music, Amazon Music and YouTube are licensed for personal use only, and their terms rule out playing them in a business. A OneMusic licence covers the public performance, but it does not override the streaming service's own terms.
   - q: What if I just play the radio?
@@ -245,7 +245,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
     <span class="lc-lic-tag">Yours</span>
     <h3>The right to play it in public</h3>
     <p>Every business where customers or staff can hear music needs its own public performance licence from <strong>OneMusic Australia</strong>, for each premises, whoever supplies the music.</p>
-    <p>It is held in your business name and paid separately. For pubs and clubs we can collect it and pay it for you, <strong>at cost, with no margin</strong>.</p>
+    <p>It is held in your business name and paid separately. For pubs, we can manage it as your authorised representative and pass the invoice on <strong>at cost, with no margin</strong>.</p>
   </div>
 </div>
 <div class="lc-callout">
@@ -363,7 +363,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
     <div class="lc-case-img"><img src="/assets/images/large-pub.jpg" alt="A large pub dining room" loading="lazy"><span>Pub with TV screens</span></div>
     <div class="lc-case-body">
       <div class="lc-ba before"><b>Before</b><p>A personal streaming account through the bar PC, a TV-based OneMusic package and the Digital Copy/Delivery fee on top.</p></div>
-      <div class="lc-ba after"><b>With eJukebox</b><p>The TV-based package stays, because your screens set it, but the Digital Copy/Delivery fee goes. Two zones are included, customers request songs, and we can collect and pay your OneMusic fee at cost.</p></div>
+      <div class="lc-ba after"><b>With eJukebox</b><p>The TV-based package stays, because your screens set it, but the Digital Copy/Delivery fee goes. Two zones are included, customers request songs, and we can manage your OneMusic licence as your authorised representative, at cost.</p></div>
     </div>
   </div>
 </div>
@@ -376,7 +376,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
   <div class="lc-item"><span class="lc-ico"><i class="fas fa-certificate"></i></span><div><h3>A commercial background music supplier</h3><p>Properly licensed to supply your music, so you are not relying on a personal account.</p></div></div>
   <div class="lc-item"><span class="lc-ico"><i class="fas fa-store"></i></span><div><h3>A lower tier for shops and service businesses</h3><p>Moving off personal streaming takes you off OneMusic's top retail tier.</p></div></div>
   <div class="lc-item"><span class="lc-ico"><i class="fas fa-beer-mug-empty"></i></span><div><h3>No Digital Copy/Delivery fee for venues</h3><p>Hospitality venues stop paying the extra fee that comes with personal streaming.</p></div></div>
-  <div class="lc-item"><span class="lc-ico"><i class="fas fa-handshake"></i></span><div><h3>We handle the paperwork for pubs and clubs</h3><p>We collect your OneMusic fee and pay it on your behalf, at cost, with no margin.</p></div></div>
+  <div class="lc-item"><span class="lc-ico"><i class="fas fa-handshake"></i></span><div><h3>We handle the paperwork for pubs</h3><p>As the authorised representative on your OneMusic licence, we take the invoice and pass it on at cost, with no margin.</p></div></div>
 </div>
 
 <div class="ft-videos one lc-vid">

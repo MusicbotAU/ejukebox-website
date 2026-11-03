@@ -20,7 +20,7 @@ faqs:
   - q: >-
       Is the OneMusic licence included?
     a: >-
-      No - no music supplier can include it. Your OneMusic licence is held in your business name and paid separately. For pubs and clubs we can collect it and pay it to OneMusic for you, at cost, with no margin. <a href="/licensing.html">How music licensing works</a>.
+      No - no music supplier can include it. Your OneMusic licence is held in your business name and paid separately. For pubs, we can act as the authorised representative on it, so the OneMusic invoice comes to us and we pass it on at cost, with no margin. <a href="/licensing.html">How music licensing works</a>.
   - q: >-
       What is a zone, and how many do I need?
     a: >-
@@ -33,7 +33,7 @@ faqs:
       Can I add features later?
     a: >-
       Yes. Start on Core and add any add-on when you are ready - each one is monthly, per venue. Or take Complete and have every software add-on from day one.
-last_reviewed: 2026-10-15
+last_reviewed: 2026-11-04
 schema_about: [background-music, jukebox]
 ---
 

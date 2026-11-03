@@ -189,11 +189,16 @@
        above, and the hero stayed two-column on phones - the form card overhung the
        viewport by ~176px and was silently clipped by .ej-hero{overflow:hidden}. */
     .ej-hero__inner,
-    .ej-hero__inner:has(.ej-hero__card){grid-template-columns:1fr;gap:28px;padding:44px 22px 52px}
+    .ej-hero__inner:has(.ej-hero__card){grid-template-columns:minmax(0,1fr);gap:28px;padding:44px 22px 52px}
     .ej-hero::after{background:linear-gradient(180deg,rgba(15,15,26,.86) 0%,rgba(15,15,26,.78) 100%)}
     .ej-hero__sub{max-width:none}
     .ej-hero__trust{gap:8px 18px}
   }
+  /* The theme pins every #main-content h1 at 2.5em (40px) with !important, so the clamp above
+     never applies - and on a phone "Accommodation" at 40px is wider than the column, so it was
+     clipped. Step the venue headline down on phones only; desktop keeps 40px. */
+  @media (max-width:480px){ #main-content .ej-hero__title{font-size:32px !important} }
+  @media (max-width:380px){ #main-content .ej-hero__title{font-size:28px !important} }
   @media (prefers-reduced-motion:reduce){
     .ej-hero__cta,.ej-hero__submit{transition:none}
     .ej-hero__bg{transform:none}

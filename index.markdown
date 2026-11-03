@@ -25,7 +25,7 @@ faqs:
   - q: >-
       Do I still need a OneMusic licence?
     a: >-
-      Yes. Every business that plays music where customers or staff can hear it holds its own OneMusic licence, whoever supplies the music, and our monthly fee does not include it. For pubs and clubs we can collect it and pay it to OneMusic for you, at cost. <a href="/licensing.html">How music licensing works</a>.
+      Yes. Every business that plays music where customers or staff can hear it holds its own OneMusic licence, whoever supplies the music, and our monthly fee does not include it. For pubs, we can act as the authorised representative on it, so the OneMusic invoice comes to us and we pass it on at cost. <a href="/licensing.html">How music licensing works</a>.
   - q: >-
       Does it work with our existing speakers and TVs?
     a: >-
@@ -42,7 +42,7 @@ faqs:
       Where in Australia does eJukebox work?
     a: >-
       Everywhere. eJukebox runs over an ordinary internet connection, so venues in every state and territory - capital cities, regional centres and country towns - get the same music, apps and support. Your player arrives set up, and you plug it in with illustrated instructions and video call support, or with your own AV installer.
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 schema_apps: [request, admin, music]
 schema_about: [background-music, jukebox, pub, hospitality]
 schema_service: Jukebox and background music for Australian venues
@@ -234,7 +234,7 @@ service_type: Commercial background music and digital jukebox service
   <div class="feature-card-home">
     <div class="feature-icon-home setup"><i class="fas fa-magic"></i></div>
     <h3>Stress-Free Setup</h3>
-    <p>With <strong>eJukebox</strong>, there's no need to worry about creating or managing music. Our tried and tested selection is designed to provide a stress-free, enjoyable ambiance for your customers.</p>
+    <p>With <strong>eJukebox</strong>, there's no need to worry about creating or managing music. Our tried and tested selection is designed to give your customers a relaxed, enjoyable ambience.</p>
   </div>
   
   <div class="feature-card-home">
@@ -310,7 +310,7 @@ service_type: Commercial background music and digital jukebox service
 <div class="venue-showcase medical reverse">
   <div class="venue-content">
     <h2>Background music for medical centres and waiting rooms</h2>
-    <p>At <strong>eJukebox</strong>, every track undergoes state-of-the-art broadcast-quality audio processing to ensure impeccable sound. Unlike other online music services where volume levels can fluctuate, our songs are perfectly mixed for consistent volume throughout. This professional-grade sound quality provides a seamless listening experience akin to top radio stations, creating a calming and flawless ambiance in your medical center. Patients will appreciate the serene and consistent audio environment, enhancing their overall experience and comfort during their visit.</p>
+    <p>Every <strong>eJukebox</strong> track goes through broadcast-quality audio processing, so the volume stays even from one song to the next - nothing jumps out and nothing fades away, the way it can on other online music services. It sounds like a good radio station with no ads and no talk, and it gives your medical centre or waiting room a calm, settled feel that patients notice, even if they never mention it.</p>
     <div class="venue-badges">
       <span class="venue-badge"><i class="fas fa-volume-down"></i> Calming Audio</span>
       <span class="venue-badge"><i class="fas fa-heart"></i> Patient Comfort</span>
@@ -326,7 +326,7 @@ service_type: Commercial background music and digital jukebox service
 <div class="venue-showcase retail">
   <div class="venue-content">
     <h2>Licensed music for pubs, bars and retail stores</h2>
-    <p><strong>eJukebox</strong> is a <a href="/background-music-for-business/">background music provider</a> fully licensed for commercial use, unlike personal music services such as Spotify or Amazon Music, whose own terms rule out playing them in a business. With <strong>eJukebox</strong> you are not relying on a personal account. Your venue still holds its own OneMusic licence, and for pubs and clubs we can collect and pay it for you, at cost. Enjoy high-quality, professionally curated music channels that enhance your store's atmosphere while staying within the law.</p>
+    <p><strong>eJukebox</strong> is a <a href="/background-music-for-business/">background music provider</a> fully licensed for commercial use, unlike personal music services such as Spotify or Amazon Music, whose own terms rule out playing them in a business. With <strong>eJukebox</strong> you are not relying on a personal account. Your venue still holds its own OneMusic licence, and for pubs we can act as the authorised representative on it, at cost. Enjoy high-quality, professionally curated music channels that enhance your store's atmosphere while staying within the law.</p>
     <div class="venue-badges">
       <span class="venue-badge"><i class="fas fa-gavel"></i> Fully Licensed</span>
       <span class="venue-badge"><i class="fas fa-shield-alt"></i> Legal & Compliant</span>

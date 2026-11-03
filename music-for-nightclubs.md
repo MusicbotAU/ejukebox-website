@@ -18,7 +18,7 @@ benefits:
     text: Let the floor request tracks from their phones while you keep final say over the vibe.
   - icon: fa-certificate
     title: Always licensed
-    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, and for pubs and clubs we can collect and pay that licence for you, at cost.
+    text: A personal streaming account is not licensed for business. With eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence.
 spotlight_title: Running an RSL, leagues or bowling club?
 spotlight_body: >-
   Registered clubs have their own page - a different channel for the bistro, the bar, the gaming
@@ -41,7 +41,7 @@ faqs:
       Is the music licensed for a nightclub?
     a: >-
       The music is licensed for business use, and with eJukebox there is no Digital Copy/Delivery fee on your OneMusic licence, as there would be with a personal streaming account. Your venue still holds its own OneMusic licence.
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-04
 faq_title: Club and nightclub music questions, answered
 schema_about: [nightclub, disc-jockey, dj-mix]
 feature_video: playing-across-country

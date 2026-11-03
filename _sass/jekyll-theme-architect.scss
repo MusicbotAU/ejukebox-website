@@ -7390,7 +7390,9 @@ a.test-drive-badge:hover {
 /* Trial Form Mobile Responsive */
 @media (max-width: 992px) {
   .trial-form-container {
-    grid-template-columns: 1fr;
+    /* minmax(0,1fr), not 1fr: the column was sizing to its content and ran 16px past a
+       360px phone, so the page scrolled sideways (4 Nov 2026). */
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px;
   }
 

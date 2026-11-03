@@ -4,7 +4,7 @@ title: Why Choose eJukebox for Your Venue
 description: Why venues choose eJukebox - Australian-curated channels, song requests from any phone, two zones included, radio-quality sound and licence admin handled.
 schema_service: Professionally programmed background music for Australian venues
 service_type: Human-curated commercial music programming and broadcast audio processing
-last_reviewed: 2026-10-13
+last_reviewed: 2026-11-04
 faqs:
   - q: >-
       Do customers need an app?
@@ -17,7 +17,7 @@ faqs:
   - q: >-
       Does eJukebox include my OneMusic licence?
     a: >-
-      No music supplier can - it is held in your business name and paid separately. For pubs and clubs we can collect and pay it for you, at cost.
+      No music supplier can - it is held in your business name and paid separately. For pubs, we can manage it for you as your authorised representative, at cost.
   - q: >-
       Am I locked into a contract?
     a: >-
@@ -60,7 +60,7 @@ schema_about: [background-music, radio-programming, audio-processing]
   <div class="ft-card"><span class="ft-ico b"><i class="fas fa-layer-group"></i></span><h3>Two zones included</h3><p>Different music in the bar and the bistro, out of the box. Most providers charge for every zone. One player drives up to four.</p></div>
   <div class="ft-card"><span class="ft-ico d"><i class="fas fa-wave-square"></i></span><h3>Sounds like the radio, minus the ads</h3><p>Broadcast-style processing keeps every song at a consistent volume, with no ads and no talk between tracks. Nothing jumps out, nothing disappears.</p></div>
   <div class="ft-card"><span class="ft-ico"><i class="fas fa-heart-pulse"></i></span><h3>It never stops</h3><p>The player keeps playing if the internet drops, checks in with us every minute, and alerts our team if the music stops for 30 seconds. <a href="/behind-the-scenes.html">Behind the scenes</a>.</p></div>
-  <div class="ft-card"><span class="ft-ico c"><i class="fas fa-file-signature"></i></span><h3>Licensing made simpler</h3><p>We are a commercial background music supplier, so you are not relying on a personal account. For pubs and clubs we collect and pay your OneMusic licence for you, at cost. <a href="/licensing.html">How licensing works</a>.</p></div>
+  <div class="ft-card"><span class="ft-ico c"><i class="fas fa-file-signature"></i></span><h3>Licensing made simpler</h3><p>We are a commercial background music supplier, so you are not relying on a personal account. For pubs, we manage your OneMusic licence as your authorised representative, at cost. <a href="/licensing.html">How licensing works</a>.</p></div>
 </div>
 
 {% include app-fan.html left="request-ai-search" center="request-home" right="request-ai-picks" caption="eJukebox Request, the app your customers use. Real screens from Club Buffalo, our demo venue." %}

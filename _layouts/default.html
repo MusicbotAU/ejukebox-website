@@ -129,6 +129,12 @@
     .desktop-nav li.dropdown-right .dropdown-menu { left: auto; right: 0; }
     @media (max-width: 1240px) { .desktop-nav a { padding: 10px 12px; } }
     @media (max-width: 1060px) { .desktop-nav a { padding: 9px 8px; font-size: 13px; } }
+    /* The full menu row needs about 865px. Between 768px (where the theme already switches to
+       the phone menu) and 880px it broke onto two rows, so the phone menu takes over there too. */
+    @media (min-width: 768px) and (max-width: 879px) {
+      .mobile-nav-toggle { display: flex; }
+      .desktop-nav { display: none; }
+    }
   </style>
 </head>
 
