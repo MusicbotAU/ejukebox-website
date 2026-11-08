@@ -269,7 +269,7 @@ schema_main: apps
       <i class="fas fa-comments"></i>
       Tell us about your venue
     </a>
-    <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for your venue.</p>
+    <p class="demo-note">Or <a href="/products.html">see the plans</a> for your venue.</p>
   </div>
 </div>
 

@@ -5,6 +5,48 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-08 - No prices on the public plans page; a video for every feature
+
+Marc, Sun 8 Nov: take /pricing and /wholesale out of every menu but keep them live and
+unindexed, and don't change them. Keep /products.html with all its plans and products, but no
+prices - wherever a price was, a "Contact us" that goes to the contact form. And every page under
+the Jukebox Features menu should carry the plans-page video for each feature it covers.
+
+- **/pricing and /wholesale are untouched.** Neither was in any menu (the only link to one was
+  the unshipped TV draft); both are noindex and out of the sitemap. Their page text is word for
+  word what it was - only the site menu around them changed (below). They share the plans-page
+  code, so they also pick up the two phone fixes at the end of this entry.
+- **One switch: `public_prices: false` in `_data/pricing.yml`.** It drives the public mode of
+  `_includes/pricing-menu.html`, the plans-page script, the contact form's plan cards and the
+  structured data. `true` puts every price back. /pricing, /wholesale and /pricing.json (the
+  Admin app) ignore it.
+- **/products.html with the switch off.** Each plan says "Contact us for pricing", each add-on
+  "Contact us", the player and touchscreen "quoted for your venue - contact us", and the package
+  bar's button "Contact us for pricing". Every one of those links opens /contact/ with the
+  package already ticked: plan, zones, add-ons, and a message naming the package. The page's
+  script now carries **no retail or wholesale figures at all** - until today the live page held
+  every wholesale rate in its source (`"whl":122` and so on). The schema describes the three
+  plans as Services, with no price on any offer.
+- **/contact/.** The plan cards show each plan's tagline instead of a price, and the form fills
+  itself in from the link (`plan`, `zones`, `feature`, `package`).
+- **Menu and buttons.** "Pricing" is now "Plans", "All Plans & Pricing" is "All Plans", and the
+  "See plans & pricing" buttons (26 files) read "See the plans".
+- **Feature videos, consistent across the Jukebox Features menu.** Each page now shows the
+  plans-page video for every feature it describes, with the video's own title-slide poster:
+  Digital Jukebox 2 -> 5 videos, Song Requests 3 -> 8 (trending, dedications, photo wall,
+  Spotify, request screen), Functions & Events 2 -> 4 (dedications, AI song search). Voice
+  Announcements, Live Microphone and Spotify Integration swapped their stock-photo posters for
+  the title slides, and Behind the Scenes got a heading over its videos. An odd video out now
+  sits centred at half width instead of alone on the left.
+- **Phone fixes on the plans pages.** The hint boxes no longer split a bold word into a column
+  of its own, and each step's grey aside drops under the step title instead of squeezing it.
+- `last_reviewed` and the sitemap date moved to 2026-11-08 on the nine pages whose content
+  changed.
+
+Prices still shown elsewhere are listed in open-items.md for Marc to decide on.
+
+---
+
 ## 2026-11-04 - Tidy-up pass: tags that wrap, phone and tablet layouts, OneMusic wording
 
 Marc spotted the orange hardware tag running off the edge of the add-on cards on /products.html

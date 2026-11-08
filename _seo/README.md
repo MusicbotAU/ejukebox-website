@@ -43,6 +43,14 @@ any push that touches page metadata.
 - **Prices live in `_data/pricing.yml`** and nowhere else. Anything that states
   a price should render from it, or it will drift. See the `$115/month` and
   `$1/Day` entries in `CHANGELOG.md` for what happens when it does not.
+- **The public plans page shows no prices** while `public_prices: false` in `pricing.yml`
+  (Marc, Sun 8 Nov 2026). /products.html keeps every plan and product, says "Contact us"
+  wherever a price was, and each of those links opens /contact/ with the package pre-ticked
+  (`?plan=&zones=&feature=&package=#ctForm`). In that mode the page's script data carries no
+  retail or wholesale figures, the contact form's plan cards show taglines and the schema
+  drops every price. `true` restores it all. /pricing, /wholesale and /pricing.json ignore
+  the switch - they are unlisted and noindex. Never put a wholesale (`whl`) figure into a
+  page a venue can open.
 - **OneMusic claims are constrained.** The licence is never "included". Moving off
   personal streaming lowers the venue's OneMusic bill: a lower *tier* for retail,
   and for hospitality - whose tier is set by its TV screens - no Digital

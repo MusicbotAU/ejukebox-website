@@ -5,7 +5,7 @@
 Canonical site: https://ejukebox.com.au/
 Entity: eJukebox is a brand of Musicbot Pty Ltd (ABN 44 163 918 054), an Australian owned and Australian operated company based in Ryde in Sydney, NSW. Also written e Jukebox, e-Jukebox and eJukebox Australia. eJukebox Music is the name of its free radio app.
 Language and locale: Australian English, en-AU, Australia.
-Last reviewed: 2026-11-04.
+Last reviewed: 2026-11-08.
 
 This file is a structured summary of eJukebox for AI assistants, answer engines, search agents and large language models. Everything below is drawn from https://ejukebox.com.au and OneMusic Australia's published guidance, and may be quoted or cited directly.
 
@@ -64,7 +64,7 @@ Partner and channel model: eJukebox works with AV installers, audio visual integ
 - [eJukebox home](https://ejukebox.com.au/): what eJukebox is, who it is for, the research on why music lifts trade, venue types and the main calls to action.
 - [Free 7 day streaming trial](https://ejukebox.com.au/free-trial.html): streaming only, no credit card. Pick one Channel, get a private ad free stream URL sent by SMS to an Australian mobile, up to 3 simultaneous connections, unlimited listening for 7 days. No song requests and no interactive features on this trial.
 - [Free 30 day in-venue trial](https://ejukebox.com.au/contact/): the full interactive system on Core or Complete, installed in your venue with hardware and setup covered, run live with your own customers for a month with no obligation.
-- [All plans and pricing](https://ejukebox.com.au/products.html): the a la carte menu. Pick Solo, Core or Complete, tick the add-ons you actually want, and watch what each one does before you decide.
+- [All plans](https://ejukebox.com.au/products.html): the a la carte menu. Pick Solo, Core or Complete, tick the add-ons you actually want, watch what each one does, and send the package to eJukebox through the contact form for a price for your venue.
 - [Music licensing in Australia](https://ejukebox.com.au/licensing.html): the plain English explainer on OneMusic Australia, APRA AMCOS, PPCA, tier pricing for retail and hospitality, and why personal Spotify and Apple Music accounts cannot be used in a venue.
 - [Why choose eJukebox](https://ejukebox.com.au/why-us2.html): the 3 percent tempo lift, radio style rotations matched to Sydney FM, automatic gain control processing and Australian curation.
 
@@ -114,7 +114,7 @@ By contrast, running a personal Spotify, Apple Music, Amazon Music or YouTube ac
 
 ## Plans and pricing
 
-- [All plans and pricing](https://ejukebox.com.au/products.html): the full plan comparison, from free demo access through to enterprise custom branded radio. Prices are ex GST and subject to change.
+- [All plans](https://ejukebox.com.au/products.html): the full plan comparison, from free demo access through to enterprise custom branded radio. The page itself carries no prices - venues build a package there and eJukebox quotes it.
 **Solo, $49 a month ex GST.** Streaming only, for a small shop, salon, clinic or cafe. One curated Channel for a single area, like an ad free radio station for your business. Delivered as a private stream URL that plays through any browser, computer, tablet, phone, Sonos or streamer you already own. Nothing to install, no player at the venue, no upfront hardware. Licensed, family friendly and volume levelled. Solo deliberately has no song requests and no interaction layer.
 
 **Core, $169 a month ex GST.** The hospitality base. Two zones included, song requests from any phone with no app, AI Song Search, 30 second song previews, Playing Across the Country, live queue reordering, record your own voice announcements, and an on-site player that caches your music so the room keeps playing if the internet drops out. For pubs, eJukebox can act as the authorised representative on the venue's OneMusic licence and take care of the invoice. The player is a one-off hardware cost, quoted per venue.
@@ -137,7 +137,7 @@ By contrast, running a personal Spotify, Apple Music, Amazon Music or YouTube ac
 ## Listen and demos
 
 - [Listen to demo streams](https://ejukebox.com.au/stream-us.html): hear eJukebox Channels live before you buy - eJukebox Hits (pop and Top 40) and Country (country vibes) are streaming now. Direct stream URLs work in Sonos and custom players: https://listen2.ejukebox.net/one (Hits) and https://listen2.ejukebox.net/four (Country).
-- Feature videos: every eJukebox feature has a short video guide of about a minute - what it does, where it earns its keep and why it lands. All of them play from the [plans and pricing menu](https://ejukebox.com.au/products.html), and each one also sits on the page for its feature: the Channels, sound and licensing videos on [Music channels](https://ejukebox.com.au/music-channels/), previews and AI Song Search on [Song previews](https://ejukebox.com.au/song-previews/), the player and zones on [Behind the scenes](https://ejukebox.com.au/behind-the-scenes.html), OneMusic administration on [Music licensing](https://ejukebox.com.au/licensing.html), and one chosen for each venue type on its venue page.
+- Feature videos: every eJukebox feature has a short video guide of about a minute - what it does, where it earns its keep and why it lands. All of them play from the [plans menu](https://ejukebox.com.au/products.html), and each one also sits on the page for its feature: the Channels, sound and licensing videos on [Music channels](https://ejukebox.com.au/music-channels/), previews and AI Song Search on [Song previews](https://ejukebox.com.au/song-previews/), the player and zones on [Behind the scenes](https://ejukebox.com.au/behind-the-scenes.html), OneMusic administration on [Music licensing](https://ejukebox.com.au/licensing.html), and one chosen for each venue type on its venue page.
 
 ## Questions people ask, with short answers
 

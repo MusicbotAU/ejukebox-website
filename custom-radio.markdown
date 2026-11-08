@@ -98,7 +98,7 @@ schema_about: [internet-radio, radio-programming, sensory-branding]
       <i class="fas fa-comments"></i>
       Talk to us about your station
     </a>
-    <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for single venues.</p>
+    <p class="demo-note">Or <a href="/products.html">see the plans</a> for single venues.</p>
   </div>
 </div>
 

@@ -11,6 +11,16 @@
 # 15 July 2026), slides 34-36. The deck lists these as Marc's recommended locks.
 # -----------------------------------------------------------------------------
 
+# ---- Who sees prices ---------------------------------------------------------
+# false = no prices on the public plans page (/products.html), on the contact form's
+#         plan cards, or in the structured data. Wherever a price was, the plans page
+#         says "Contact us" and links to /contact/, which opens with the visitor's
+#         package already ticked (Marc, Sun 8 Nov 2026: keep the plans and the products,
+#         take the prices off). true puts every one of those prices back.
+# /pricing and /wholesale always show prices - they are unlisted and noindex - and so
+# does /pricing.json for the Admin app.
+public_prices: false
+
 # ---- Feature videos ---------------------------------------------------------
 # Every feature's `video:` is a file name under video_base (Azure storage account
 # ejukebox01, container websiteblobs). Spaces are written %20, because the Admin app

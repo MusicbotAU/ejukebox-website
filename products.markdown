@@ -1,14 +1,14 @@
 ---
 layout: default
 permalink: /products.html
-title: Plans & Pricing for Venue Music
-description: Solo from $49/mo for a single-area shop, Core from $169/mo for a venue, or Complete with every add-on included. Pick only the features you want.
+title: Plans for Venue Music - Solo, Core & Complete
+description: Solo for a single-area shop, Core for a venue with song requests and two zones, or Complete with every add-on. Build your package and we'll price it.
 schema_page_type: CollectionPage
 faqs:
   - q: >-
       How much does eJukebox cost?
     a: >-
-      Solo is ${solo} a month, Core is ${core} a month and Complete is ${complete} a month, all ex GST. Core and Complete also have a one-off cost for the on-site player, quoted for your venue.
+      It depends on your plan, how many zones you run, the add-ons you pick and, on Core and Complete, the on-site player. Build your package above and send it to us through our <a href="/contact/">contact form</a>, and we'll come back with pricing for your venue.
   - q: >-
       What is the difference between Solo and Core?
     a: >-
@@ -24,7 +24,7 @@ faqs:
   - q: >-
       What is a zone, and how many do I need?
     a: >-
-      A zone is any area that plays its own music - the front bar, the bistro, the beer garden, the gaming room. Core and Complete include two, and the player we fit drives up to four, so zones three and four are just ${zone} a month each ex GST, with no extra hardware.
+      A zone is any area that plays its own music - the front bar, the bistro, the beer garden, the gaming room. Core and Complete include two, and the player we fit drives up to four, so zones three and four are just a monthly charge each, with no extra hardware.
   - q: >-
       What hardware do I need?
     a: >-
@@ -33,7 +33,7 @@ faqs:
       Can I add features later?
     a: >-
       Yes. Start on Core and add any add-on when you are ready - each one is monthly, per venue. Or take Complete and have every software add-on from day one.
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-08
 schema_about: [background-music, jukebox]
 ---
 
@@ -71,7 +71,7 @@ schema_about: [background-music, jukebox]
     <div class="pb-card">
       <i class="fas fa-headphones pb-ico"></i>
       <h3>Have a listen first - free</h3>
-      <p>Before you decide anything, hear what our music directors actually build. Our channels, streaming right now, no sign-up and no card.</p>
+      <p>Before you decide anything, hear what our music directors actually build. Hits and Country are streaming on our demo page right now - no sign-up and no card. <a href="/music-channels/">More about the channels</a>.</p>
       <ul>
         <li><strong>Hits</strong> - current chart and recent favourites</li>
         <li><strong>Smooth</strong> - relaxed, easy, good for daytime</li>
@@ -102,8 +102,8 @@ schema_about: [background-music, jukebox]
 
 <div class="pb-more pb-faq">
   <div class="pb-more-head">
-    <h2>Plans and pricing questions</h2>
-    <p>Straight answers on cost, contracts, hardware and your OneMusic licence.</p>
+    <h2>Plans questions</h2>
+    <p>Straight answers on cost, contracts, hardware and your OneMusic licence - and for pricing, <a href="/contact/">contact us</a>.</p>
   </div>
   <div class="fq-list">
   {% include faq-list.html mode="details" %}

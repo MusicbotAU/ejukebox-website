@@ -4,7 +4,7 @@ title: Song Requests for Pubs, Clubs & Venues
 description: QR code song requests for pubs, clubs and venues. Customers request from their phone or the free eJukebox Request app while your staff stay in control.
 schema_service: Song request portal for pubs, clubs and functions
 service_type: Interactive song request system for venues
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-08
 schema_app:
   type: WebApplication
   name: eJukebox song requests in the browser
@@ -47,7 +47,7 @@ faqs:
   - q: >-
       What does it cost?
     a: >-
-      Song requests, previews and Help me pick come with Core and Complete. The extras above are add-ons. <a href="/products.html">See plans &amp; pricing</a>.
+      Song requests, previews and Help me pick come with Core and Complete. The extras above are add-ons. <a href="/products.html">See the plans</a>.
 schema_apps: [request, admin]
 schema_about: [jukebox, qr-code]
 ---
@@ -229,18 +229,26 @@ schema_about: [jukebox, qr-code]
 <div class="ft-videos sr-vid">
   {% include feature-video.html id="ai-song-search" %}
   {% include feature-video.html id="song-previews" %}
+  {% include feature-video.html id="playing-across-country" %}
 </div>
 
 <div class="sr-sec-head">
   <span class="sr-kick">Make it bigger</span>
   <h2>Add-ons that turn requests into a show</h2>
-  <p>Start with requests, then add the extras that suit your room. <a href="/products.html">See plans &amp; pricing</a>.</p>
+  <p>Start with requests, then add the extras that suit your room. <a href="/products.html">See the plans</a>.</p>
 </div>
 <div class="sr-grid">
   <div class="sr-card"><span class="sr-ico"><i class="fas fa-microphone-lines"></i></span><h3>Voice dedications</h3><p>Customers record a short shout-out that plays right before their song and blends into the intro, like a radio DJ - checked before it airs.</p><span class="sr-add">Add-on</span><a class="sr-more" href="/voice-announcements/">More on voice features &rarr;</a></div>
   <div class="sr-card"><span class="sr-ico b"><i class="fas fa-image"></i></span><h3>Photos on the big screen</h3><p>Customers send a photo from their phone to your venue's screens, screened automatically first.</p><span class="sr-add">Add-on</span><a class="sr-more" href="/in-venue-screens/">More on in-venue screens &rarr;</a></div>
   <div class="sr-card"><span class="sr-ico c"><i class="fab fa-spotify"></i></span><h3>Spotify playlists</h3><p>Guests sign in with Spotify and request from their own playlists, matched to your library.</p><span class="sr-add">Add-on</span><a class="sr-more" href="/spotify-integration/">More on Spotify integration &rarr;</a></div>
   <div class="sr-card"><span class="sr-ico"><i class="fas fa-display"></i></span><h3>A request screen on the wall</h3><p>A touchscreen booth where customers walk up, browse and pick a song - no phone needed.</p><span class="sr-add">Add-on</span><a class="sr-more" href="/in-venue-screens/">More on in-venue screens &rarr;</a></div>
+</div>
+
+<div class="ft-videos sr-vid">
+  {% include feature-video.html id="dedications" %}
+  {% include feature-video.html id="guest-photos" %}
+  {% include feature-video.html id="spotify" %}
+  {% include feature-video.html id="request-screen" %}
 </div>
 
 <div class="sr-sec-head">
@@ -259,7 +267,7 @@ schema_about: [jukebox, qr-code]
       <i class="fas fa-comments"></i>
       Tell us about your venue
     </a>
-    <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for your venue.</p>
+    <p class="demo-note">Or <a href="/products.html">see the plans</a> for your venue.</p>
   </div>
 </div>
 

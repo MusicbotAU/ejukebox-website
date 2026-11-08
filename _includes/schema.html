@@ -81,6 +81,9 @@
 {%- assign au_id = base | append: '/#area-au' -%}
 {%- assign ptitle = page.h1 | default: page.title | default: site.title -%}
 {%- assign pdesc = page.description | default: site.description | strip_html | normalize_whitespace -%}
+{%- comment -%} public_prices: false (pricing.yml) - no price anywhere in the structured data. {%- endcomment -%}
+{%- assign show_prices = true -%}
+{%- if site.data.pricing.public_prices == false -%}{%- assign show_prices = false -%}{%- endif -%}
 
 {%- comment -%} The videos on this page. Every _includes/feature-video.html marks its figure
     data-vid="<id>", so the rendered page (`content`, which the layout already holds when this
@@ -129,19 +132,19 @@
 "@id":"{{ base }}/products.html#offer-{{ t.id }}",
 "name":{{ "eJukebox " | append: t.name | jsonify }},
 "description":{{ t.blurb | strip_html | normalize_whitespace | jsonify }},
-"url":"{{ base }}/products.html",
+"url":"{{ base }}/products.html",{% if show_prices %}
 "price":"{{ t.retail }}",
-"priceCurrency":"AUD",
+"priceCurrency":"AUD",{% endif %}
 "availability":"https://schema.org/InStock",
 "eligibleRegion":{"@id":"{{ au_id }}"},
-"seller":{"@id":"{{ org_id }}"},
+"seller":{"@id":"{{ org_id }}"}{% if show_prices %},
 "priceSpecification":{
   "@type":"UnitPriceSpecification",
   "price":"{{ t.retail }}",
   "priceCurrency":"AUD",
   "valueAddedTaxIncluded":false,
   "referenceQuantity":{"@type":"QuantitativeValue","value":1,"unitCode":"MON"}
-}}{% unless forloop.last %},{% endunless %}{% endfor %}]
+}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}]
 {%- endcapture -%}
 {%- capture tier_refs -%}
 [{% for t in site.data.pricing.tiers %}{"@id":"{{ base }}/products.html#offer-{{ t.id }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]
@@ -386,6 +389,26 @@
      See _data/org.yml and llms.txt. {%- endcomment -%}
 {%- if page.schema_products or page.url contains '/products' -%}
 {%- for t in site.data.pricing.tiers -%}
+{%- if show_prices == false -%}
+{%- capture n -%}
+{
+"@type":"Service",
+"@id":"{{ base }}/products.html#plan-{{ t.id }}",
+"name":{{ "eJukebox " | append: t.name | jsonify }},
+"description":{{ t.blurb | strip_html | normalize_whitespace | jsonify }},
+"serviceType":"Commercial background music service",
+"brand":{"@id":"{{ base }}/#brand"},
+"provider":{"@id":"{{ org_id }}"},
+"areaServed":{"@id":"{{ au_id }}"},
+"url":"{{ base }}/products.html",
+"audience":{"@type":"BusinessAudience","name":{{ t.tagline | jsonify }},"geographicArea":{"@id":"{{ au_id }}"}},
+"isRelatedTo":{"@id":"{{ base }}/licensing.html#service"},
+"offers":{"@id":"{{ base }}/products.html#offer-{{ t.id }}"}
+}
+{%- endcapture -%}
+{%- assign nodes = nodes | append: n | append: '~~~' -%}
+{%- continue -%}
+{%- endif -%}
 {%- capture n -%}
 {
 "@type":"Product",
@@ -437,13 +460,13 @@
 "@id":"{{ base }}/products.html#addon-{{ a.id }}",
 "name":{{ a.name | jsonify }},
 "description":{{ a.desc | strip_html | normalize_whitespace | jsonify }},
-"category":{{ a.category | jsonify }},
+"category":{{ a.category | jsonify }},{% if show_prices %}
 "price":"{{ a.retail }}",
-"priceCurrency":"AUD",
+"priceCurrency":"AUD",{% endif %}
 "eligibleRegion":{"@id":"{{ au_id }}"},
 "seller":{"@id":"{{ org_id }}"},
-"itemOffered":{"@type":"Service","name":{{ a.name | jsonify }},"provider":{"@id":"{{ org_id }}"}{% if a.page %},"url":"{{ a.page | absolute_url }}"{% endif %}},
-"priceSpecification":{"@type":"UnitPriceSpecification","price":"{{ a.retail }}","priceCurrency":"AUD","valueAddedTaxIncluded":false,"referenceQuantity":{"@type":"QuantitativeValue","value":1,"unitCode":"MON"}}
+"itemOffered":{"@type":"Service","name":{{ a.name | jsonify }},"provider":{"@id":"{{ org_id }}"}{% if a.page %},"url":"{{ a.page | absolute_url }}"{% endif %}}{% if show_prices %},
+"priceSpecification":{"@type":"UnitPriceSpecification","price":"{{ a.retail }}","priceCurrency":"AUD","valueAddedTaxIncluded":false,"referenceQuantity":{"@type":"QuantitativeValue","value":1,"unitCode":"MON"}}{% endif %}
 }{% unless forloop.last %},{% endunless %}{% endfor %}]
 }
 {%- endcapture -%}

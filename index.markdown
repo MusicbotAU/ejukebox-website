@@ -17,7 +17,7 @@ faqs:
   - q: >-
       How much does background music for a business cost?
     a: >-
-      Solo is ${solo} a month ex GST - one curated channel for a single area, streamed to a device you already own. Core, the hospitality base with two zones, song requests and an on-site player, is ${core} a month ex GST, and Complete adds every software add-on for ${complete} a month ex GST. <a href="/products.html">See plans &amp; pricing</a>.
+      Solo is ${solo} a month ex GST - one curated channel for a single area, streamed to a device you already own. Core, the hospitality base with two zones, song requests and an on-site player, is ${core} a month ex GST, and Complete adds every software add-on for ${complete} a month ex GST. <a href="/products.html">See the plans</a>.
   - q: >-
       Can I play Spotify or Apple Music in my business?
     a: >-

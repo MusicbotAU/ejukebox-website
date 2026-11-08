@@ -23,7 +23,7 @@ hero:
   h1: Music that fills the room and the till
   sub: Licensed music, song requests from any phone.
   form: true                 # show the quick free-trial form
-  cta_text: See plans & pricing
+  cta_text: See the plans
   cta_url: /products.html
 ```
 

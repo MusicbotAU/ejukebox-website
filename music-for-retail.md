@@ -27,7 +27,7 @@ faqs:
   - q: >-
       How much does in-store music cost?
     a: >-
-      Solo is ${solo} a month ex GST for one curated channel in one area, streamed to a device you already own - nothing to install. Chains and shopping centres can have their own custom branded radio station, quoted to suit. <a href="/products.html">See plans &amp; pricing</a>.
+      Solo is ${solo} a month ex GST for one curated channel in one area, streamed to a device you already own - nothing to install. Chains and shopping centres can have their own custom branded radio station, quoted to suit. <a href="/products.html">See the plans</a>.
   - q: >-
       Can we add our own promotions?
     a: >-

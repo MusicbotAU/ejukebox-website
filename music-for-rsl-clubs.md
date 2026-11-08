@@ -116,7 +116,7 @@ faqs:
       Core is ${core} a month ex GST with two zones, and each extra zone is ${zone} a month.
       Complete, with every software add-on, is ${complete} a month ex GST, plus any extra zones.
       The on-site player is a one-off cost, quoted for your club.
-      <a href="/products.html">See plans &amp; pricing</a>.
+      <a href="/products.html">See the plans</a>.
 schema_about: [rsl, bowls, social-club, ode-of-remembrance, background-music]
 last_reviewed: 2026-11-04
 feature_video: two-zones

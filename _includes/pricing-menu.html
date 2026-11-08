@@ -13,6 +13,12 @@
 {% assign is_public = false %}
 {% if include.mode == "wholesale" %}{% assign wholesale = true %}{% endif %}
 {% if include.mode == "public" %}{% assign is_public = true %}{% endif %}
+{%- comment -%} public_prices: false in pricing.yml takes every price off the PUBLIC page
+    (/products.html). Each one becomes a "Contact us" link to the contact form, which opens
+    with the visitor's package ticked. /pricing and /wholesale keep their prices whatever it
+    says. Every price-free branch below hangs off show_prices. {%- endcomment %}
+{% assign show_prices = true %}
+{% if is_public and P.public_prices == false %}{% assign show_prices = false %}{% endif %}
 
 <div class="ejm">
 
@@ -38,7 +44,7 @@
 <!-- ============ HERO ============ -->
 <header class="ejm-hero">
   <span class="ejm-eyebrow">
-    {% if wholesale %}Partner &amp; reseller rate card{% elsif is_public %}Plans &amp; pricing{% else %}Pricing for your venue{% endif %}
+    {% if wholesale %}Partner &amp; reseller rate card{% elsif is_public %}{% if show_prices %}Plans &amp; pricing{% else %}Plans{% endif %}{% else %}Pricing for your venue{% endif %}
   </span>
   <h1>
     {% if wholesale %}Wholesale pricing. <span class="ejm-grad">Your margin built in.</span>
@@ -49,6 +55,11 @@
     The same menu your customers see on our retail pricing page, at your wholesale rate. You buy at wholesale, sell at
     the recommended retail price, and keep the difference. Every box below shows both numbers and the margin between
     them. Tick what the venue wants and the totals at the bottom add up in real time.
+    {% elsif show_prices == false %}
+    Start with the base product, then add only the features you want - like an &agrave; la carte menu. Tick the boxes
+    below to build your package, then send it to us and we'll come back with pricing for your venue. Every feature has a
+    short video, so you can see exactly what you're getting before you decide. No contracts, and a 30-day free trial in
+    your own venue.
     {% else %}
     Start with the base product, then add only the features you want - like an &agrave; la carte menu. Tick the boxes
     below and your monthly total adds up as you go. Every feature has a short video, so you can see exactly what
@@ -56,7 +67,7 @@
     {% endif %}
   </p>
   <div class="ejm-hero-notes">
-    <span><i class="fas fa-check"></i> All prices per venue, per month, ex GST</span>
+    {% if show_prices %}<span><i class="fas fa-check"></i> All prices per venue, per month, ex GST</span>{% else %}<span><i class="fas fa-check"></i> Priced for your venue - <a href="/contact/#ctForm">just ask</a></span>{% endif %}
     <span><i class="fas fa-check"></i> Two zones included in Core</span>
     <span><i class="fas fa-certificate"></i> OneMusic licence is separate - see below</span>
   </div>
@@ -70,11 +81,11 @@
   </div>
   <div class="ejm-how-item">
     <div class="ejm-how-n">2</div>
-    <div><h4>Add what you want</h4><p>Every add-on is optional and priced on its own. Not sure what one does? Press <b>Watch video</b> and see it in about a minute.</p></div>
+    <div><h4>Add what you want</h4><p>Every add-on is optional{% if show_prices %} and priced on its own{% endif %}. Not sure what one does? Press <b>Watch video</b> and see it in about a minute.</p></div>
   </div>
   <div class="ejm-how-item">
     <div class="ejm-how-n">3</div>
-    <div><h4>See your total</h4><p>The bar at the bottom follows you down the page with your monthly total{% if wholesale %}, your cost and the retail price side by side{% endif %}. Nothing is ordered until you send it to us.</p></div>
+    {% if show_prices %}<div><h4>See your total</h4><p>The bar at the bottom follows you down the page with your monthly total{% if wholesale %}, your cost and the retail price side by side{% endif %}. Nothing is ordered until you send it to us.</p></div>{% else %}<div><h4>Send it to us</h4><p>The bar at the bottom keeps your package as you build it. Send it through and we'll come back with pricing for your venue - nothing is ordered until you say so.</p></div>{% endif %}
   </div>
 </div>
 
@@ -120,7 +131,7 @@
     <h2>The menu</h2>
     <span class="ejm-tag ejm-tag-menu">Tick what you want - the total adds up below</span>
   </div>
-  <p class="ejm-sec-note">Choose a base, then tick any add-ons. Every box shows its own monthly price{% if wholesale %} at wholesale, with the recommended retail price and your margin underneath{% endif %}. Hit <b>Watch video</b> on any feature for a one-minute guide to what it does.</p>
+  <p class="ejm-sec-note">Choose a base, then tick any add-ons.{% if show_prices %} Every box shows its own monthly price{% if wholesale %} at wholesale, with the recommended retail price and your margin underneath{% endif %}.{% endif %} Hit <b>Watch video</b> on any feature for a one-minute guide to what it does.</p>
 
   <!-- ---- STEP 1: BASE ---- -->
   <h3 class="ejm-step"><span>Step 1</span> Choose your base <em>everyone needs one - most venues pick Core</em></h3>
@@ -140,9 +151,9 @@
           <span class="ejm-radio" aria-hidden="true"></span>
           <span class="ejm-tier-name">{{ t.name }}<em>{{ t.tagline }}</em></span>
         </span>
-        <span class="ejm-tier-price">
+        {% if show_prices %}<span class="ejm-tier-price">
           <b>${{ tprice }}</b><i>/month{% if wholesale %} wholesale{% endif %}</i>
-        </span>
+        </span>{% else %}<a class="ejm-tier-ask" href="/contact/?plan={{ t.name }}#ctForm"><i class="fas fa-envelope"></i> Contact us for pricing</a>{% endif %}
         {% if wholesale %}
         <span class="ejm-whl-line">
           <span>RRP <b>${{ t.retail }}</b></span>
@@ -168,8 +179,8 @@
   <h3 class="ejm-step"><span>Step 2</span> What's already included <em id="ejm-incl-note">in Core</em></h3>
   <p class="ejm-help">
     <i class="fas fa-circle-check"></i>
-    These come with the base you picked above, at no extra cost. This list changes with your
-    base, so it always shows what <b id="ejm-incl-tier">Core</b> actually gives you.
+    <span>These come with the base you picked above, at no extra cost. This list changes with your
+    base, so it always shows what <b id="ejm-incl-tier">Core</b> actually gives you.</span>
   </p>
 
   {%- comment -%}
@@ -214,9 +225,10 @@
   <h3 class="ejm-step"><span>Step 3</span> Add exactly what you want <em>optional - pick as many or as few as you like</em></h3>
   <p class="ejm-help">
     <i class="fas fa-hand-pointer"></i>
-    Click anywhere on a box to add that feature, and click it again to take it off. The total at the
-    bottom updates as you go, and nothing is ordered until you send it to us. To see what a feature
-    actually does first, press <b>Watch video</b> - each one is about a minute.
+    <span>Click anywhere on a box to add that feature, and click it again to take it off. {% if show_prices %}The total at the
+    bottom updates as you go{% else %}Your package at the
+    bottom updates as you go{% endif %}, and nothing is ordered until you send it to us. To see what a feature
+    actually does first, press <b>Watch video</b> - each one is about a minute.</span>
   </p>
 
   <div class="ejm-solo-lock" id="ejm-solo-lock" hidden>
@@ -230,9 +242,9 @@
     <div class="ejm-card ejm-card-addon" data-addon="{{ a.id }}">
       <div class="ejm-card-head">
         <span class="ejm-cat">{{ a.category }}</span>
-        <span class="ejm-price" data-price-for="{{ a.id }}">
+        {% if show_prices %}<span class="ejm-price" data-price-for="{{ a.id }}">
           <b>${{ aprice }}</b><i>/mo</i>
-        </span>
+        </span>{% else %}<span class="ejm-price" data-price-for="{{ a.id }}"><a class="ejm-ask" href="/contact/#ctForm"><i class="fas fa-envelope"></i> Contact us</a></span>{% endif %}
       </div>
       <h4>
         <label class="ejm-tick" for="add-{{ a.id }}">
@@ -281,13 +293,14 @@
   <div class="ejm-bundle" id="ejm-bundle-{{ b.id }}">
     <div class="ejm-bundle-l">
       <span class="ejm-cat ejm-cat-bundle">Save with a bundle</span>
-      <b>{{ b.name }} - all four voice features for ${{ bprice }}/mo</b>
-      <span>{{ b.desc }} Buying them one by one costs more, so if you want the lot, use the button and we'll apply the cheaper bundle price for you.</span>
+      {% if show_prices %}<b>{{ b.name }} - all four voice features for ${{ bprice }}/mo</b>
+      <span>{{ b.desc }} Buying them one by one costs more, so if you want the lot, use the button and we'll apply the cheaper bundle price for you.</span>{% else %}<b>{{ b.name }} - all four voice features, bundled</b>
+      <span>{{ b.desc }} Together they cost less than adding them one by one, so if you want the lot, use the button and we'll put the bundle in your package.</span>{% endif %}
     </div>
     <div class="ejm-bundle-r">
       {%- comment -%} Real text here, not left to JS, so the button is never nameless. {%- endcomment -%}
       <button type="button" class="ejm-bundle-btn" id="ejm-bundle-btn-{{ b.id }}">
-        <i class="fas fa-plus"></i> Add all four for ${{ bprice }}/mo
+        <i class="fas fa-plus"></i> Add all four{% if show_prices %} for ${{ bprice }}/mo{% endif %}
       </button>
       <span class="ejm-bundle-state" id="ejm-bundle-state-{{ b.id }}"></span>
     </div>
@@ -312,7 +325,7 @@
           <button type="button" id="ejm-zone-plus" aria-label="Add a zone">+</button>
         </div>
       </div>
-      <span class="ejm-zones-cost" id="ejm-zone-cost">2 included - $0/mo</span>
+      <span class="ejm-zones-cost" id="ejm-zone-cost">2 included{% if show_prices %} - $0/mo{% endif %}</span>
     </div>
   </div>
 </section>
@@ -340,13 +353,13 @@
       <div class="ejm-total-col ejm-total-marg">
         <span>Your margin</span><b id="ejm-total-margin">$47</b><i>/mo</i>
       </div>
-      {% else %}
+      {% elsif show_prices %}
       <div class="ejm-total-col">
         <span>Your monthly total</span><b id="ejm-total-amount">$169</b><i>/mo ex GST</i>
       </div>
       {% endif %}
       <a class="ejm-total-cta" href="mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website%20-%20{% if wholesale %}Wholesale%20package%20enquiry{% else %}Package%20enquiry{% endif %}" id="ejm-total-cta">
-        <i class="fas fa-paper-plane"></i> <span>{% if wholesale %}Send this build{% else %}Get this package{% endif %}</span>
+        <i class="fas fa-paper-plane"></i> <span>{% if wholesale %}Send this build{% elsif show_prices %}Get this package{% else %}Contact us for pricing{% endif %}</span>
       </a>
     </div>
   </div>
@@ -361,7 +374,7 @@
     <h2>One-off hardware &amp; install</h2>
     <span class="ejm-tag ejm-tag-hw">Separate from the monthly price</span>
   </div>
-  <p class="ejm-sec-note">The monthly prices above are software and service. The kit that makes it work is a one-off cost, priced to cover what it costs us - there's no margin loaded into the hardware. <b>Solo needs none of this</b>, because it streams to a device you already own.</p>
+  <p class="ejm-sec-note">{% if show_prices %}The monthly prices above are{% else %}The plans above are{% endif %} software and service. The kit that makes it work is a one-off cost, priced to cover what it costs us - there's no margin loaded into the hardware. <b>Solo needs none of this</b>, because it streams to a device you already own.</p>
 
   <div class="ejm-note ejm-note-good" id="ejm-hw-solo" hidden>
     <i class="fas fa-feather"></i>
@@ -373,13 +386,13 @@
       <i class="fas fa-hard-drive"></i>
       <h4>On-site player</h4>
       <p>The compact mini-PC that lives at the venue, caches your music and keeps playing through internet dropouts. Needed for <b>Core and Complete</b> - it's what makes requests and the rest of the interactive features work. Not used by Solo.</p>
-      <span class="ejm-hw-price">Typically under $500, quoted per venue</span>
+      {% if show_prices %}<span class="ejm-hw-price">Typically under $500, quoted per venue</span>{% else %}<span class="ejm-hw-price">Quoted for your venue - <a href="/contact/#ctForm">contact us</a></span>{% endif %}
     </div>
     <div class="ejm-hw">
       <i class="fas fa-tv"></i>
       <h4>Touchscreen</h4>
       <p>The wall-mounted touchscreen for the Interactive Request Screen. Only needed if you take that add-on - the Photo Slideshow and the Guest Photo Wall run on a TV you already have.</p>
-      <span class="ejm-hw-price">Quoted per venue</span>
+      <span class="ejm-hw-price">Quoted per venue{% unless show_prices %} - <a href="/contact/#ctForm">contact us</a>{% endunless %}</span>
     </div>
     <div class="ejm-hw ejm-hw-none">
       <i class="fas fa-circle-check"></i>
@@ -407,7 +420,7 @@
     <h2>OneMusic licensing, explained honestly</h2>
     <span class="ejm-tag ejm-tag-lic">Separate from what you pay us</span>
   </div>
-  <p class="ejm-sec-note">This is the part most suppliers gloss over, so here it is straight. Your OneMusic licence is a <b>separate fee you owe whoever supplies your music</b> - a streaming service, another supplier, or us. It is not included in the prices above. What changes with your supplier is <em>what OneMusic charges you</em>, and for some venue types that is worth real money. OneMusic sets and publishes its own fees and updates them every year, so we do not quote them here.</p>
+  <p class="ejm-sec-note">This is the part most suppliers gloss over, so here it is straight. Your OneMusic licence is a <b>separate fee you owe whoever supplies your music</b> - a streaming service, another supplier, or us. It is not included in {% if show_prices %}the prices above{% else %}what you pay us{% endif %}. What changes with your supplier is <em>what OneMusic charges you</em>, and for some venue types that is worth real money. OneMusic sets and publishes its own fees and updates them every year, so we do not quote them here.</p>
 
   <div class="ejm-lic-basics">
     <div>
@@ -508,7 +521,7 @@
         <tr><td>Interactive request touchscreen</td><td class="ejm-cmp-us"><i class="fas fa-check"></i> Yes</td><td><i class="fas fa-xmark ejm-no"></i> No</td></tr>
         <tr><td>Photo slideshow display</td><td class="ejm-cmp-us"><i class="fas fa-check"></i> Yes</td><td><i class="fas fa-xmark ejm-no"></i> No</td></tr>
         <tr><td>Functions &amp; events host mode</td><td class="ejm-cmp-us"><i class="fas fa-check"></i> Yes</td><td><i class="fas fa-xmark ejm-no"></i> No</td></tr>
-        <tr><td>Zones</td><td class="ejm-cmp-us"><i class="fas fa-check"></i> 2 included, extras from ${% if wholesale %}{{ P.zones.extra_whl }}{% else %}{{ P.zones.extra_retail }}{% endif %}</td><td><i class="fas fa-minus ejm-dim"></i> Charged per zone</td></tr>
+        <tr><td>Zones</td><td class="ejm-cmp-us"><i class="fas fa-check"></i> 2 included, {% if show_prices %}extras from ${% if wholesale %}{{ P.zones.extra_whl }}{% else %}{{ P.zones.extra_retail }}{% endif %}{% else %}add more as you need them{% endif %}</td><td><i class="fas fa-minus ejm-dim"></i> Charged per zone</td></tr>
         <tr><td>Manages your OneMusic licence</td><td class="ejm-cmp-us"><i class="fas fa-check"></i> Authorised representative (pubs)</td><td><i class="fas fa-xmark ejm-no"></i> No</td></tr>
         <tr><td>Australian owned, operated &amp; supported</td><td class="ejm-cmp-us"><i class="fas fa-check"></i> Yes</td><td><i class="fas fa-minus ejm-dim"></i> Global</td></tr>
       </tbody>
@@ -529,22 +542,25 @@
 <div class="ejm-close">
   <div class="ejm-close-main">
     <h3>{% if wholesale %}Ready to quote a venue?{% else %}Ready to hear it in your venue?{% endif %}</h3>
-    <p>{% if wholesale %}Build the package above, hit &ldquo;Send this build&rdquo;, and we'll turn it into a firm quote you can put in front of your customer - with the install and hardware costed for that site.{% else %}Build your package above and send it through. We'll confirm your OneMusic position, quote the one-off hardware for your site, and get a 30-day free trial installed - hardware and setup covered, no obligation.{% endif %}</p>
+    <p>{% if wholesale %}Build the package above, hit &ldquo;Send this build&rdquo;, and we'll turn it into a firm quote you can put in front of your customer - with the install and hardware costed for that site.{% elsif show_prices %}Build your package above and send it through. We'll confirm your OneMusic position, quote the one-off hardware for your site, and get a 30-day free trial installed - hardware and setup covered, no obligation.{% else %}Build your package above and send it through. We'll come back with pricing for your venue, confirm your OneMusic position, quote the one-off hardware for your site, and get a 30-day free trial installed - hardware and setup covered, no obligation.{% endif %}</p>
     <span class="ejm-close-contact">Musicbot Pty Ltd &middot; ABN 44 163 918 054 &middot; ejukebox.com.au &middot; info@ejukebox.com.au</span>
   </div>
-  <a class="ejm-close-cta" href="mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website%20-%20{% if wholesale %}Wholesale%20enquiry{% else %}General%20enquiry{% endif %}">
+  {% if show_prices %}<a class="ejm-close-cta" href="mailto:info@ejukebox.com.au?subject=Sent%20from%20the%20eJukebox%20website%20-%20{% if wholesale %}Wholesale%20enquiry{% else %}General%20enquiry{% endif %}">
     <i class="fas fa-envelope"></i> Talk to us
-  </a>
+  </a>{% else %}<a class="ejm-close-cta" href="/contact/#ctForm">
+    <i class="fas fa-envelope"></i> Contact us
+  </a>{% endif %}
 </div>
 
 {% if is_public %}
 <div class="ejm-confidential ejm-confidential-foot">
   <div class="ejm-conf-icon"><i class="fas fa-circle-info"></i></div>
   <div class="ejm-conf-body">
-    <strong>About these prices.</strong>
-    All prices are per venue, per month, and <b>exclude GST</b>. One-off hardware and install are quoted for your site.
+    {% if show_prices %}<strong>About these prices.</strong>
+    All prices are per venue, per month, and <b>exclude GST</b>. One-off hardware and install are quoted for your site.{% else %}<strong>About these plans.</strong>
+    Pricing is per venue and depends on your plan, zones, add-ons and hardware - <a href="/contact/#ctForm">contact us</a> and we'll quote yours.{% endif %}
     Your OneMusic licence is separate from your subscription - for pubs, we can manage it as your authorised representative.
-    &copy; 2026 Musicbot Pty Ltd &middot; ABN 44 163 918 054. Prices subject to change; nothing on this page is an offer or a contract.
+    &copy; 2026 Musicbot Pty Ltd &middot; ABN 44 163 918 054. {% if show_prices %}Prices subject to change; nothing{% else %}Nothing{% endif %} on this page is an offer or a contract.
   </div>
 </div>
 {% else %}
@@ -576,6 +592,7 @@
 </div><!-- /.ejm -->
 
 <script>
+{% if show_prices %}
   window.EJM_DATA = {
     mode:   {{ include.mode | jsonify }},
     tiers:  {{ P.tiers | jsonify }},
@@ -583,6 +600,18 @@
     bundles:{{ P.bundles | jsonify }},
     zones:  {{ P.zones | jsonify }}
   };
+{% else %}
+  {%- comment -%} No prices in the page source either - not retail, and never wholesale.
+      Only what the menu needs to work. {%- endcomment %}
+  window.EJM_DATA = {
+    mode: {{ include.mode | jsonify }},
+    hide_prices: true,
+    tiers: [{% for t in P.tiers %}{"id":{{ t.id | jsonify }},"name":{{ t.name | jsonify }},"zones_included":{{ t.zones_included | jsonify }},"zones_fixed":{{ t.zones_fixed | default: false | jsonify }},"hardware":{{ t.hardware | jsonify }},"allows_addons":{{ t.allows_addons | default: false | jsonify }},"includes_all_addons":{{ t.includes_all_addons | default: false | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}],
+    addons: [{% for a in P.addons %}{"id":{{ a.id | jsonify }},"name":{{ a.name | jsonify }}{% if a.requires %},"requires":{{ a.requires | jsonify }}{% endif %}{% if a.bundle %},"bundle":{{ a.bundle | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}],
+    bundles: [{% for b in P.bundles %}{"id":{{ b.id | jsonify }},"name":{{ b.name | jsonify }},"members":{{ b.members | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}],
+    zones: {"included":{{ P.zones.included | jsonify }},"max":{{ P.zones.max | jsonify }}}
+  };
+{% endif %}
 </script>
 
 {% include pricing-menu-assets.html %}

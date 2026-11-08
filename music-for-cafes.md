@@ -27,7 +27,7 @@ faqs:
   - q: >-
       What does café music cost?
     a: >-
-      Solo is ${solo} a month ex GST: one curated channel for one area, streamed to a device you already own, with nothing to install. If you want customers requesting songs, or different music inside and out, Core is ${core} a month ex GST. <a href="/products.html">See plans &amp; pricing</a>.
+      Solo is ${solo} a month ex GST: one curated channel for one area, streamed to a device you already own, with nothing to install. If you want customers requesting songs, or different music inside and out, Core is ${core} a month ex GST. <a href="/products.html">See the plans</a>.
   - q: >-
       Will the music suit a quiet morning and a busy lunch?
     a: >-

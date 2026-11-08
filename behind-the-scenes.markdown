@@ -4,7 +4,7 @@ title: Behind the Scenes of a Jukebox Installation
 description: How eJukebox runs in your venue - a compact player that plays on if the internet drops, updates itself overnight, and alerts us if the music stops.
 schema_service: Managed jukebox player installation for Australian venues
 service_type: Cloud-managed music player installation and maintenance
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-08
 howto:
   name: "How eJukebox is set up in your venue"
   description: >-
@@ -214,6 +214,10 @@ schema_about: [broadcast-automation, audio-processing, sound-reinforcement]
   </div>
 </div>
 
+<div class="bt-sec-head">
+  <span class="bt-kick">Watch</span>
+  <h2>The player and the zones, a minute each</h2>
+</div>
 <div class="ft-videos bt-vids">
   {% include feature-video.html id="onsite-player" %}
   {% include feature-video.html id="two-zones" %}
@@ -266,7 +270,7 @@ schema_about: [broadcast-automation, audio-processing, sound-reinforcement]
       <i class="fas fa-comments"></i>
       Tell us about your venue
     </a>
-    <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for your venue.</p>
+    <p class="demo-note">Or <a href="/products.html">see the plans</a> for your venue.</p>
   </div>
 </div>
 

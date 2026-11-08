@@ -21,7 +21,7 @@ faqs:
   - q: >-
       Am I locked into a contract?
     a: >-
-      No. There are no lock-in contracts. <a href="/products.html">See plans &amp; pricing</a>.
+      No. There are no lock-in contracts. <a href="/products.html">See the plans</a>.
 schema_apps: [request]
 schema_about: [background-music, radio-programming, audio-processing]
 ---
@@ -38,7 +38,7 @@ schema_about: [background-music, radio-programming, audio-processing]
       <p class="ft-lead">Most background music plays <em>at</em> your customers. eJukebox lets them join in - request a song, hear their shout-out, see their photo on the screen - with channels picked by Australian music directors, and the licence admin handled for you.</p>
       <div class="ft-ctas">
         <a class="ft-btn" href="/contact/"><i class="fas fa-comments"></i> Tell us about your venue</a>
-        <a class="ft-btn-ghost" href="/products.html">See plans &amp; pricing</a>
+        <a class="ft-btn-ghost" href="/products.html">See the plans</a>
       </div>
       <ul class="ft-ticks">
         <li><i class="fas fa-circle-check"></i> Australian owned and operated</li>
@@ -99,7 +99,7 @@ schema_about: [background-music, radio-programming, audio-processing]
       <i class="fas fa-comments"></i>
       Tell us about your venue
     </a>
-    <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for your venue.</p>
+    <p class="demo-note">Or <a href="/products.html">see the plans</a> for your venue.</p>
   </div>
 </div>
 

@@ -7,7 +7,7 @@
       h1: Music that fills the room and the till
       sub: Licensed music, song requests from any phone.
       form: true            # show the quick free-trial form
-      cta_text: See plans & pricing
+      cta_text: See the plans
       cta_url: /products.html
       alt: Sunset over a packed beer garden   # describe the photo; omit if purely decorative
   ...then add {% include hero.html %} at the top of the page content.
@@ -33,7 +33,7 @@
 {% assign hero_eyebrow = include.eyebrow | default: h.eyebrow %}
 {% assign hero_h1      = include.h1      | default: h.h1      | default: page.title %}
 {% assign hero_sub     = include.sub     | default: h.sub %}
-{% assign hero_cta_t   = include.cta_text| default: h.cta_text| default: 'See plans & pricing' %}
+{% assign hero_cta_t   = include.cta_text| default: h.cta_text| default: 'See the plans' %}
 {% assign hero_cta_u   = include.cta_url | default: h.cta_url | default: '/products.html' %}
 {% assign hero_form    = include.form    | default: h.form %}
 

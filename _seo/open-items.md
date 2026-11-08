@@ -4,6 +4,25 @@ Each entry says why it is still open, so nothing gets silently dropped.
 
 ## Needs a decision from Marc
 
+**Prices still public outside the plans page (8 Nov 2026).** /products.html no longer shows a
+price, but these still do, each as words in its own copy rather than through the switch:
+- the home page FAQ "How much does background music for a business cost?" (Solo, Core, Complete);
+- /background-music-for-business/ - its three plan cards and the extra-zone line;
+- /music-channels/ FAQ - extra zones at $39;
+- the FAQs on /music-for-cafes/, /music-for-hotels/, /music-for-pubs-bars/, /music-for-retail/,
+  /music-for-rsl-clubs/ and /music-for-salons-spas/ (they use the `${core}` tokens);
+- llms.txt - its plans section lists every price, so AI assistants still quote them;
+- the Solo, Two Zones and On-Site Player videos speak their prices.
+Taking them off means rewording each answer ("priced for your venue - ask us"), not flipping
+the switch, and the cost questions are some of the most-searched FAQs on the site. Marc to say
+whether they go too.
+
+**/pricing still carries every wholesale rate in its page source.** Its script data
+(`EJM_DATA`) holds all 14 `whl` figures, on the retail page that goes to venues - view source
+and they are there. Pre-existing; left alone because Marc said not to touch /pricing or
+/wholesale for now. The fix is to strip `whl` from the data in retail mode, the way public mode
+now does. /pricing.json carries none.
+
 **Venue FAQs - done Thu 15 Oct 2026.** Every venue page now has a `faqs:` block, rendered
 visibly and as `FAQPage`, within the OneMusic claim rules. They went live without a separate
 wording sign-off; Marc is reading them over (A-List).

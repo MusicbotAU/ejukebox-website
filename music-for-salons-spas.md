@@ -27,7 +27,7 @@ faqs:
   - q: >-
       What does music cost for a small salon?
     a: >-
-      Solo is ${solo} a month ex GST: one curated channel for one area, streamed to a device you already own, with nothing to install. <a href="/products.html">See plans &amp; pricing</a>.
+      Solo is ${solo} a month ex GST: one curated channel for one area, streamed to a device you already own, with nothing to install. <a href="/products.html">See the plans</a>.
   - q: >-
       Is the music relaxing enough for treatments?
     a: >-

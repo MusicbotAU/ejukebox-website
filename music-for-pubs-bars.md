@@ -30,7 +30,7 @@ faqs:
   - q: >-
       How much does pub music cost?
     a: >-
-      Core, the hospitality base, is ${core} a month ex GST, with two zones, song requests and an on-site player that keeps playing if the internet drops. The player is a one-off cost quoted for your venue, and extra zones are ${zone} a month each ex GST. <a href="/products.html">See plans &amp; pricing</a>.
+      Core, the hospitality base, is ${core} a month ex GST, with two zones, song requests and an on-site player that keeps playing if the internet drops. The player is a one-off cost quoted for your venue, and extra zones are ${zone} a month each ex GST. <a href="/products.html">See the plans</a>.
   - q: >-
       Do we need to buy or hire a jukebox?
     a: >-

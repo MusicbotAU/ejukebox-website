@@ -4,7 +4,7 @@ title: Digital Jukebox for Pubs, Clubs & Bars
 description: A digital jukebox for pubs, clubs and bars - curated channels that run themselves, song requests from phones, and no jukebox cabinet to buy or hire.
 schema_service: Digital jukebox for pubs, clubs and bars
 service_type: Digital jukebox and automated venue music
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-08
 faqs:
   - q: >-
       What is a digital jukebox?
@@ -69,7 +69,7 @@ schema_about: [jukebox, disc-jockey, dayparting, gapless-playback]
       <p class="ft-lead">eJukebox is a digital jukebox for pubs, clubs and bars. It plays curated channels all day on its own, changes the mood with the time of day, and flows from song to song like a radio station. Customers request the next song from their phones, and your staff steer it from theirs. No DJ, no jukebox cabinet, no playlist to babysit.</p>
       <div class="ft-ctas">
         <a class="ft-btn" href="/contact/"><i class="fas fa-comments"></i> Tell us about your venue</a>
-        <a class="ft-btn-ghost" href="/products.html">See plans &amp; pricing</a>
+        <a class="ft-btn-ghost" href="/products.html">See the plans</a>
       </div>
       <ul class="ft-ticks">
         <li><i class="fas fa-circle-check"></i> Music picked by Australian music directors</li>
@@ -118,11 +118,14 @@ schema_about: [jukebox, disc-jockey, dayparting, gapless-playback]
 <div class="ft-sec-head">
   <span class="ft-kick">Watch</span>
   <h2>See the digital jukebox at work</h2>
-  <p>Two short feature guides: how the channels carry the room through the day on their own, and how staff reshape the night from a phone.</p>
+  <p>A minute on each thing it does: channels that carry the room through the day, sound that never jumps, songs from your customers' phones, the night reshaped from a staff phone, and a player that keeps going when the internet doesn't.</p>
 </div>
 <div class="ft-videos">
   {% include feature-video.html id="curated-channels" %}
+  {% include feature-video.html id="broadcast-quality" %}
+  {% include feature-video.html id="song-requests" %}
   {% include feature-video.html id="next-songs" %}
+  {% include feature-video.html id="onsite-player" %}
 </div>
 
 {% include photo-band.html src="/assets/images/stock/dance-club.jpg" alt="A packed dance floor under coloured lights" src2="/assets/images/stock/bartenders.jpg" alt2="Bartenders serving a busy bar" src3="/assets/images/stock/party-crowd-sunset.jpg" alt3="Friends celebrating at sunset" caption="A room with music in it, or a night people talk about." %}
@@ -143,7 +146,7 @@ schema_about: [jukebox, disc-jockey, dayparting, gapless-playback]
       <i class="fas fa-comments"></i>
       Tell us about your venue
     </a>
-    <p class="demo-note">Or <a href="/products.html">see plans &amp; pricing</a> for your venue.</p>
+    <p class="demo-note">Or <a href="/products.html">see the plans</a> for your venue.</p>
   </div>
 </div>
 

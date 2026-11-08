@@ -1,8 +1,8 @@
 ---
 layout: default
 permalink: /dollar-a-day.html
-title: Plans & Pricing | eJukebox
-description: This package has been replaced. See current eJukebox plans and pricing - Solo, Core and Complete.
+title: Plans | eJukebox
+description: This package has been replaced. See current eJukebox plans - Solo, Core and Complete.
 sitemap: false
 noindex: true
 redirect_to: /products.html
@@ -18,10 +18,10 @@ redirect_to: /products.html
     shop, <strong>Core</strong> for a venue, and <strong>Complete</strong> with every add-on included.
   </p>
   <p style="color:var(--ejm-mut); font-size:.95rem; margin:0 0 30px;">
-    Taking you to Plans &amp; Pricing now.
+    Taking you to our plans now.
   </p>
   <a href="/products.html" style="display:inline-block; background:var(--ejm-teal); color:#04231F;
      font-weight:700; padding:14px 28px; border-radius:999px; text-decoration:none;">
-    See plans &amp; pricing
+    See the plans
   </a>
 </div>

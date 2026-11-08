@@ -48,7 +48,12 @@
     font-size:.9rem; font-weight:600; line-height:1.4; color:var(--ejm-ink); background:var(--ejm-card); }
   .ft-vid-len { flex:none; font-size:.8rem; font-weight:700; color:var(--ejm-mut); font-variant-numeric:tabular-nums; white-space:nowrap; }
   .ft-vid-len i { margin-right:6px; color:var(--ejm-cyan); }
-  @media (max-width:820px) { .ft-videos { grid-template-columns:1fr; } }
+  /* an odd one out sits centred at half width (of-type: the style block above is a child too) */
+  .ft-videos:not(.one) > figure.ft-vid:last-of-type:nth-of-type(odd):not(:first-of-type) { grid-column:1 / -1; justify-self:center; width:calc(50% - 10px); }
+  @media (max-width:820px) {
+    .ft-videos { grid-template-columns:1fr; }
+    .ft-videos:not(.one) > figure.ft-vid:last-of-type:nth-of-type(odd):not(:first-of-type) { width:100%; }
+  }
 </style>
 {%- endunless %}
 <figure class="ft-vid" data-vid="{{ include.id }}">

@@ -1,8 +1,8 @@
 ---
 layout: default
 permalink: /hits-package.html
-title: Plans & Pricing | eJukebox
-description: The Hits Package has been replaced. Hits is one of four channels included with every eJukebox plan - see current plans and pricing.
+title: Plans | eJukebox
+description: The Hits Package has been replaced. Hits is one of four channels included with every eJukebox plan - see the current plans.
 sitemap: false
 noindex: true
 redirect_to: /products.html
@@ -18,10 +18,10 @@ redirect_to: /products.html
     Smooth, Rock and Country - so there's no separate Hits package to buy.
   </p>
   <p style="color:var(--ejm-mut, #8d97ab); font-size:.95rem; margin:0 0 30px;">
-    Taking you to Plans &amp; Pricing now.
+    Taking you to our plans now.
   </p>
   <a href="/products.html" style="display:inline-block; background:var(--ejm-teal, #14b8a6); color:#04231F;
      font-weight:700; padding:14px 28px; border-radius:999px; text-decoration:none;">
-    See plans &amp; pricing
+    See the plans
   </a>
 </div>

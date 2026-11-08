@@ -110,7 +110,7 @@ schema_page_type: ContactPage
           <input type="radio" name="plan" value="Solo">
           <span class="ct-plan-inner">
             <span class="ct-plan-name">Solo</span>
-            {% assign ct_solo = site.data.pricing.tiers | where: "id", "solo" | first %}<span class="ct-plan-price">${{ ct_solo.retail }}/mo ex GST</span>
+            {% assign ct_solo = site.data.pricing.tiers | where: "id", "solo" | first %}<span class="ct-plan-price">{% if site.data.pricing.public_prices == false %}{{ ct_solo.tagline }}{% else %}${{ ct_solo.retail }}/mo ex GST{% endif %}</span>
             <span class="ct-plan-desc">Streaming only, one channel, one area. No song requests.</span>
           </span>
         </label>
@@ -118,7 +118,7 @@ schema_page_type: ContactPage
           <input type="radio" name="plan" value="Core">
           <span class="ct-plan-inner">
             <span class="ct-plan-name">Core</span>
-            {% assign ct_core = site.data.pricing.tiers | where: "id", "core" | first %}<span class="ct-plan-price">${{ ct_core.retail }}/mo ex GST</span>
+            {% assign ct_core = site.data.pricing.tiers | where: "id", "core" | first %}<span class="ct-plan-price">{% if site.data.pricing.public_prices == false %}{{ ct_core.tagline }}{% else %}${{ ct_core.retail }}/mo ex GST{% endif %}</span>
             <span class="ct-plan-desc">The hospitality base. Two zones, song requests, AI search, on-site player.</span>
           </span>
         </label>
@@ -126,7 +126,7 @@ schema_page_type: ContactPage
           <input type="radio" name="plan" value="Complete">
           <span class="ct-plan-inner">
             <span class="ct-plan-name">Complete</span>
-            {% assign ct_comp = site.data.pricing.tiers | where: "id", "complete" | first %}<span class="ct-plan-price">${{ ct_comp.retail }}/mo ex GST</span>
+            {% assign ct_comp = site.data.pricing.tiers | where: "id", "complete" | first %}<span class="ct-plan-price">{% if site.data.pricing.public_prices == false %}{{ ct_comp.tagline }}{% else %}${{ ct_comp.retail }}/mo ex GST{% endif %}</span>
             <span class="ct-plan-desc">Core with every software add-on already included.</span>
           </span>
         </label>
@@ -550,6 +550,26 @@ schema_page_type: ContactPage
       btn.disabled = false;
     });
   });
+
+  // Arriving from the plans page (/products.html) with a package in the address - plan,
+  // zones, feature (repeatable) and package - tick it for them, and start the message.
+  // Values must match the inputs' own values here; the plans page keeps a map of them.
+  (function prefill() {
+    var q;
+    try { q = new URLSearchParams(window.location.search); } catch (e) { return; }
+    function tick(name, values) {
+      Array.prototype.forEach.call(form.querySelectorAll('input[name="' + name + '"]'), function (el) {
+        if (values.indexOf(el.value) !== -1) el.checked = true;
+      });
+    }
+    if (q.get('plan'))  tick('plan', [q.get('plan')]);
+    if (q.get('zones')) tick('zones', [q.get('zones')]);
+    tick('features', q.getAll('feature'));
+    var pkg = q.get('package'), msg = document.getElementById('ctMessage');
+    if (pkg && msg && !msg.value) {
+      msg.value = 'I built this package on the plans page: ' + pkg.slice(0, 400) + '. Please send me pricing for my venue.';
+    }
+  })();
 
   // Tidy Australian phone formatting as they type.
   var phone = document.getElementById('ctPhone');

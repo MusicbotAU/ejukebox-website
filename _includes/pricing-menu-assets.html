@@ -188,6 +188,16 @@
 .ejm-tier-name { font-size:17px; font-weight:750; line-height:1.25; }
 .ejm-tier-name em { display:block; font-style:normal; font-size:12px; font-weight:500; color:var(--ejm-mut); }
 .ejm-tier-price { display:flex; align-items:baseline; gap:5px; }
+/* public_prices: false - the "Contact us" links that stand where the prices were */
+.ejm-tier-ask { display:inline-flex; align-items:center; gap:8px; align-self:flex-start; margin:2px 0;
+  padding:9px 15px; border-radius:10px; font-size:14px; font-weight:800; text-decoration:none !important;
+  color:#fff !important; background:linear-gradient(135deg, var(--ejm-ind), var(--ejm-teal)); }
+.ejm-tier-ask:hover { filter:brightness(1.12); }
+.ejm-ask { display:inline-flex; align-items:center; gap:6px; white-space:nowrap; font-size:12px; font-weight:800;
+  text-decoration:none !important; color:var(--ejm-ind-lt) !important; border:1px solid rgba(129,140,248,.45);
+  border-radius:999px; padding:5px 11px; }
+.ejm-ask:hover { background:rgba(99,102,241,.16); }
+.ejm-itemised li.is-sum a { font-weight:800; white-space:nowrap; color:var(--ejm-cyan) !important; }
 .ejm-tier-price b { font-size:34px; font-weight:800; letter-spacing:-.03em; font-variant-numeric:tabular-nums; }
 .ejm-tier-price i { font-style:normal; font-size:12.5px; color:var(--ejm-mut); }
 .ejm-tier-blurb { font-size:13px; color:var(--ejm-soft); line-height:1.55; }
@@ -323,7 +333,7 @@
   border:1px solid rgba(236,72,153,.3); }
 .ejm-bundle.is-on { border-color:var(--ejm-pink); box-shadow:0 0 0 1px rgba(236,72,153,.3); }
 .ejm-bundle-l, .ejm-zones-l { flex:1 1 380px; }
-/* Direct child only. Without `>` this also hit the inline <b>+$120/mo</b> inside the
+/* Direct child only. Without `>` this also hit the inline bold price inside the
    note text and blew the sentence apart onto three lines. */
 .ejm-bundle-l > b, .ejm-zones-l > b { display:block; font-size:15px; font-weight:750; margin:8px 0 5px; }
 .ejm-bundle-l span b, .ejm-zones-l span b { display:inline; font-weight:750; color:var(--ejm-ink); }
@@ -517,6 +527,9 @@
   .ejm-close { padding:22px; }
   .ejm-complete-nudge { flex-wrap:wrap; }
   .ejm-nudge-btn { width:100%; }
+  /* the grey aside drops under the step title instead of squeezing it into a third column */
+  .ejm-step { flex-wrap:wrap; row-gap:6px; }
+  .ejm-step em { flex-basis:100%; }
 }
 @media print {
   .ejm-total { position:static; }
@@ -532,10 +545,30 @@
   if (!root) return;
 
   var WHOLESALE = D.mode === 'wholesale';
+  // public_prices: false (pricing.yml) - EJM_DATA arrives with no prices in it, so cost() is 0
+  // and nothing below may print a figure: every amount becomes a "Contact us" link instead.
+  var HIDE = D.hide_prices === true;
   var byId = function (list, id) { for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i]; return null; };
-  var cost = function (o) { return WHOLESALE ? o.whl : o.retail; };   // what the buyer of THIS page pays
-  var rrp  = function (o) { return o.retail; };                        // recommended retail, for margin maths
+  var cost = function (o) { return (WHOLESALE ? o.whl : o.retail) || 0; };   // what the buyer of THIS page pays
+  var rrp  = function (o) { return o.retail || 0; };                          // recommended retail, for margin maths
   var money = function (n) { return '$' + n.toLocaleString('en-AU'); };
+
+  // The contact form's own checkbox values (contact.html), so it opens with the visitor's
+  // package ticked. Rename a checkbox there and rename it here too.
+  var CONTACT_FEATURE = {
+    'spotify': 'Spotify Integration', 'tts': 'Type a Message announcements',
+    'scheduled': 'Scheduled Announcements', 'livemic': 'Live Microphone',
+    'livemic-monitor': 'Live Mic Monitor', 'dedications': 'Voice Dedications',
+    'photo-screen': 'Photo Slideshow Display', 'guest-photos': 'Guest Photo Wall',
+    'request-screen': 'Interactive Request Screen', 'functions': 'Functions and Events mode'
+  };
+  function contactHref(planName, zones, ids, pkg) {
+    var q = ['plan=' + encodeURIComponent(planName)];
+    if (zones) q.push('zones=' + encodeURIComponent(zones <= 1 ? 'Just the one area' : (zones === 2 ? '2 zones' : '3 to 4 zones')));
+    (ids || []).forEach(function (id) { if (CONTACT_FEATURE[id]) q.push('feature=' + encodeURIComponent(CONTACT_FEATURE[id])); });
+    if (pkg) q.push('package=' + encodeURIComponent(pkg));
+    return '/contact/?' + q.join('&') + '#ctForm';
+  }
 
   var state = { tier: 'core', addons: {}, zones: D.zones.included };
 
@@ -633,7 +666,7 @@
     var zonesFix = Boolean(tier.zones_fixed);
     var zones    = zonesFix ? inc : Math.max(state.zones, 1);
     var zp = zonePrices(zones, tier);
-    if (zp[0] > 0 || zp[1] > 0) {
+    if (zones > inc) {   // extra zones always cost something; with prices hidden zp is 0, so ask the count
       var extra = zones - inc;
       lines.push({
         label: extra + ' extra zone' + (extra === 1 ? '' : 's') + ' (' + zones + ' total, no extra hardware)',
@@ -686,6 +719,9 @@
       pr.classList.remove('is-free', 'is-bundled');
       if (r.everything)      { pr.classList.add('is-free');    pr.innerHTML = '<b>Included</b>'; }
       else if (bundled)      { pr.classList.add('is-bundled'); pr.innerHTML = '<b>In bundle</b>'; }
+      else if (HIDE)         { pr.innerHTML = '<a class="ejm-ask" href="' +
+                                 contactHref(r.tier.allows_addons ? r.tier.name : 'Core', 0, [a.id]) +
+                                 '"><i class="fas fa-envelope"></i> Contact us</a>'; }
       else                   { pr.innerHTML = '<b>' + money(cost(a)) + '</b><i>/mo</i>'; }
 
       // Plain-language Add / Added chip. A bare tick box is easy to miss, and this
@@ -717,13 +753,16 @@
         btn.className = 'ejm-bundle-btn is-remove';
         btn.innerHTML = '<i class="fas fa-xmark"></i> Remove the bundle';
         st.className = 'ejm-bundle-state is-on';
-        st.innerHTML = '<i class="fas fa-check"></i> Added - saving you ' + money(saving) + '/mo';
+        st.innerHTML = HIDE ? '<i class="fas fa-check"></i> Added - bundled for less than adding them one by one'
+                            : '<i class="fas fa-check"></i> Added - saving you ' + money(saving) + '/mo';
       } else {
         btn.hidden = false;
         btn.className = 'ejm-bundle-btn';
-        btn.innerHTML = '<i class="fas fa-plus"></i> Add all four for ' + money(cost(b)) + '/mo';
+        btn.innerHTML = HIDE ? '<i class="fas fa-plus"></i> Add all four'
+                             : '<i class="fas fa-plus"></i> Add all four for ' + money(cost(b)) + '/mo';
         st.className = 'ejm-bundle-state';
-        st.innerHTML = 'Saves ' + money(saving) + '/mo compared with adding them one by one';
+        st.innerHTML = HIDE ? 'Costs less than adding them one by one'
+                            : 'Saves ' + money(saving) + '/mo compared with adding them one by one';
       }
     });
 
@@ -748,16 +787,29 @@
     zoneCount.textContent = r.zones;
     zoneMinus.disabled = r.zones <= 1;
     zonePlus.disabled  = r.zones >= MAX_ZONES;   // beyond 4 needs a second player
-    zoneCost.textContent = r.zoneCost === 0
-      ? r.zonesIncluded + (r.zonesIncluded === 1 ? ' zone included - $0/mo' : ' included - $0/mo')
-      : '+' + money(r.zoneCost) + '/mo';
+    if (HIDE) {
+      var extraZones = r.zones - r.zonesIncluded;
+      zoneCost.textContent = extraZones > 0
+        ? '+' + extraZones + ' extra zone' + (extraZones === 1 ? '' : 's') + ', no extra hardware'
+        : r.zonesIncluded + (r.zonesIncluded === 1 ? ' zone included' : ' included');
+    } else {
+      zoneCost.textContent = r.zoneCost === 0
+        ? r.zonesIncluded + (r.zonesIncluded === 1 ? ' zone included - $0/mo' : ' included - $0/mo')
+        : '+' + money(r.zoneCost) + '/mo';
+    }
 
     // nudge: only worth showing on a tier that isn't already Complete
     var complete = byId(D.tiers, 'complete');
     if (nudge && complete && !r.everything && !r.noAddons) {
       var softwareNow = cost(r.tier) + r.addonCost;   // zones sit outside the Complete price
       var saving = softwareNow - cost(complete);
-      if (saving > 0) {
+      var picked = D.addons.filter(function (a) { return r.on[a.id]; }).length;
+      if (HIDE) {
+        // no prices to compare, so point at Complete once most of the menu is ticked
+        nudge.hidden = picked < 4;
+        nudgeText.innerHTML = 'You’ve picked <b>' + picked + ' add-ons</b>. <b>Complete</b> includes every ' +
+          'software add-on - worth asking us to price both.';
+      } else if (saving > 0) {
         nudge.hidden = false;
         nudgeText.innerHTML = 'You’ve ticked <b>' + money(softwareNow) + '/mo</b> of base + add-ons. ' +
           '<b>Complete</b> gives you every software add-on for <b>' + money(cost(complete)) + '/mo</b> - ' +
@@ -774,7 +826,14 @@
       : r.zones + ' zone' + (r.zones === 1 ? '' : 's') + ', ' +
         (r.everything ? 'every add-on included' : (chosen === 0 ? 'no add-ons' : chosen + ' add-on' + (chosen === 1 ? '' : 's')));
 
-    elAmount.textContent = money(r.totalCost);
+    if (elAmount) elAmount.textContent = money(r.totalCost);
+
+    // The package in words, and the contact form link that carries it.
+    var chosenIds = D.addons.filter(function (a) { return r.on[a.id]; }).map(function (a) { return a.id; });
+    var pkgText = r.tier.name + (r.noAddons ? ', one area' : ', ' + r.zones + ' zone' + (r.zones === 1 ? '' : 's')) +
+      (r.everything ? ', every add-on included'
+                    : (chosenIds.length ? ', with ' + chosenIds.map(function (id) { return byId(D.addons, id).name; }).join(', ') : ''));
+    var pkgHref = contactHref(r.tier.name, r.noAddons ? 1 : r.zones, r.everything ? [] : chosenIds, pkgText);
     if (WHOLESALE && elRrp && elMargin) {
       elRrp.textContent = money(r.totalRrp);
       elMargin.textContent = money(r.totalRrp - r.totalCost);
@@ -782,19 +841,27 @@
 
     // itemised
     elItemList.innerHTML = '';
-    r.lines.forEach(function (l) {
+    r.lines.forEach(function (l, i) {
       var li = document.createElement('li');
       var name = document.createElement('span'); name.textContent = l.label;
       var val  = document.createElement('b');
       if (l.free) { val.textContent = l.free; li.className = 'is-free'; }
+      else if (HIDE) { val.textContent = i === 0 ? 'Your base' : 'Added'; }
       else { val.textContent = money(l.cost) + '/mo'; }
       li.appendChild(name); li.appendChild(val); elItemList.appendChild(li);
     });
     var sum = document.createElement('li'); sum.className = 'is-sum';
     var sl = document.createElement('span');
-    sl.textContent = WHOLESALE ? 'Your wholesale cost per month' : 'Total per month (ex GST)';
-    var sv = document.createElement('b'); sv.textContent = money(r.totalCost) + '/mo';
-    sum.appendChild(sl); sum.appendChild(sv); elItemList.appendChild(sum);
+    if (HIDE) {
+      sl.textContent = 'Pricing for your venue';
+      var sa = document.createElement('a'); sa.href = pkgHref; sa.textContent = 'Contact us';
+      sum.appendChild(sl); sum.appendChild(sa);
+    } else {
+      sl.textContent = WHOLESALE ? 'Your wholesale cost per month' : 'Total per month (ex GST)';
+      var sv = document.createElement('b'); sv.textContent = money(r.totalCost) + '/mo';
+      sum.appendChild(sl); sum.appendChild(sv);
+    }
+    elItemList.appendChild(sum);
     if (WHOLESALE) {
       var m = document.createElement('li'); m.className = 'is-sum';
       var ml = document.createElement('span'); ml.textContent = 'Sell at ' + money(r.totalRrp) + '/mo → your margin';
@@ -803,8 +870,10 @@
       m.appendChild(ml); m.appendChild(mv); elItemList.appendChild(m);
     }
 
-    // the CTA carries the build with it
-    if (elCta) {
+    // the CTA carries the build with it - to the contact form when prices are hidden
+    if (elCta && HIDE) {
+      elCta.href = pkgHref;
+    } else if (elCta) {
       var body = (WHOLESALE ? 'Wholesale package build\n\n' : 'My eJukebox package\n\n');
       r.lines.forEach(function (l) { body += '- ' + l.label + ': ' + (l.free ? l.free : money(l.cost) + '/mo') + '\n'; });
       body += '\n' + (WHOLESALE
@@ -847,7 +916,7 @@
     if (!card) return;
     card.addEventListener('click', function (e) {
       if (cb.disabled) return;
-      if (e.target.closest('label') || e.target.closest('.ejm-watch')) return;
+      if (e.target.closest('label') || e.target.closest('.ejm-watch') || e.target.closest('a')) return;
       cb.checked = !cb.checked;
       cb.dispatchEvent(new Event('change', { bubbles: true }));
     });
