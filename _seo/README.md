@@ -43,14 +43,18 @@ any push that touches page metadata.
 - **Prices live in `_data/pricing.yml`** and nowhere else. Anything that states
   a price should render from it, or it will drift. See the `$115/month` and
   `$1/Day` entries in `CHANGELOG.md` for what happens when it does not.
-- **The public plans page shows no prices** while `public_prices: false` in `pricing.yml`
-  (Marc, Sun 8 Nov 2026). /products.html keeps every plan and product, says "Contact us"
-  wherever a price was, and each of those links opens /contact/ with the package pre-ticked
-  (`?plan=&zones=&feature=&package=#ctForm`). In that mode the page's script data carries no
-  retail or wholesale figures, the contact form's plan cards show taglines and the schema
-  drops every price. `true` restores it all. /pricing, /wholesale and /pricing.json ignore
-  the switch - they are unlisted and noindex. Never put a wholesale (`whl`) figure into a
-  page a venue can open.
+- **No public page shows a price** while `public_prices: false` in `pricing.yml` (Marc: the
+  plans page Sun 8 Nov 2026, everywhere else Fri 13 Nov 2026). /products.html keeps every plan
+  and product and says "Contact us" wherever a price was; each of those links opens /contact/
+  with the package pre-ticked (`?plan=&zones=&feature=&package=#ctForm`). FAQ answers and
+  llms.txt are written without prices - don't use the `${core}` tokens on a public page - and
+  `audit.py` flags any whole-dollar figure on an indexable page or in llms.txt (amounts with
+  cents are OneMusic fees and research figures; the referral pages are allowed). A video that
+  says a price carries `video_shows_price: true` and renders nowhere public until it is
+  re-recorded. /pricing, /wholesale and /pricing.json ignore the switch: unlisted, noindex and
+  disallowed in robots.txt, in every crawler group. /pricing's script data is retail-only;
+  only /wholesale carries `whl` figures. Never put a wholesale figure into a page a venue
+  can open.
 - **OneMusic claims are constrained.** The licence is never "included". Moving off
   personal streaming lowers the venue's OneMusic bill: a lower *tier* for retail,
   and for hospitality - whose tier is set by its TV screens - no Digital

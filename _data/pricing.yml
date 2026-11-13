@@ -12,13 +12,19 @@
 # -----------------------------------------------------------------------------
 
 # ---- Who sees prices ---------------------------------------------------------
-# false = no prices on the public plans page (/products.html), on the contact form's
-#         plan cards, or in the structured data. Wherever a price was, the plans page
-#         says "Contact us" and links to /contact/, which opens with the visitor's
-#         package already ticked (Marc, Sun 8 Nov 2026: keep the plans and the products,
-#         take the prices off). true puts every one of those prices back.
-# /pricing and /wholesale always show prices - they are unlisted and noindex - and so
-# does /pricing.json for the Admin app.
+# false = no prices on any public page (Marc: the plans page Sun 8 Nov 2026, everywhere
+#         else Fri 13 Nov 2026). The plans page (/products.html), the contact form's plan
+#         cards, the business music page's plan cards and the structured data show none.
+#         Wherever a price was, the plans page says "Contact us" and links to /contact/,
+#         which opens with the visitor's package already ticked. FAQ answers and llms.txt
+#         are written without prices, and _seo/audit.py flags any dollar figure that
+#         reaches an indexable page.
+#         A feature video marked `video_shows_price: true` says or shows a price, so it is
+#         held back from every public page too. Re-record it without the price, then delete
+#         that line and it comes back everywhere on its own.
+#         true puts the switchable prices back (not the reworded FAQs).
+# /pricing and /wholesale always show prices - they are unlisted, noindex and closed to
+# crawlers in robots.txt - and so does /pricing.json for the Admin app.
 public_prices: false
 
 # ---- Feature videos ---------------------------------------------------------
@@ -133,6 +139,7 @@ included:
     video: eJukebox-Feature-Solo-Streams-To-Your-Device%20v3.mp4
     video_secs: 71
     video_date: "2026-11-03T20:58:52+11:00"
+    video_shows_price: true   # says, and its cover shows, the Solo monthly price
   - id: single-area
     name: One channel, one area
     category: Capacity
@@ -151,6 +158,7 @@ included:
     video: eJukebox-Feature-On-Site-Player%20v3.mp4
     video_secs: 67
     video_date: "2026-11-03T20:57:14+11:00"
+    video_shows_price: true   # says, and its cover shows, "typically under $500 + GST" (out of date too)
   - id: song-requests
     name: Song Requests
     category: Requests
@@ -207,6 +215,7 @@ included:
     video: eJukebox-Feature-Two-Zones-Included%20v2.mp4
     video_secs: 68
     video_date: "2026-11-03T20:59:31+11:00"
+    video_shows_price: true   # says, and its cover shows, the extra-zone monthly price
   - id: onemusic-admin
     name: OneMusic administration
     category: Licensing

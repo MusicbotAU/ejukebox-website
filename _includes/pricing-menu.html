@@ -198,6 +198,9 @@
       </div>
       <h4>{{ f.name | escape }}</h4>
       <p>{{ f.desc | escape }}</p>
+      {%- comment -%} A video that says a price (video_shows_price, pricing.yml) is held back
+          while prices are hidden, and the card then has no foot at all. {%- endcomment %}
+      {% unless f.video_shows_price and show_prices == false %}
       <div class="ejm-card-foot">
         {% if f.video %}
         <button type="button" class="ejm-watch" data-video="{{ P.video_base }}{{ f.video }}" data-title="{{ f.name | escape }}">
@@ -207,6 +210,7 @@
         <span class="ejm-novideo"><i class="fas fa-video-slash"></i> Video coming soon</span>
         {% endif %}
       </div>
+      {% endunless %}
     </div>
     {% endfor %}
   </div>
@@ -592,13 +596,24 @@
 </div><!-- /.ejm -->
 
 <script>
-{% if show_prices %}
+{% if wholesale %}
   window.EJM_DATA = {
     mode:   {{ include.mode | jsonify }},
     tiers:  {{ P.tiers | jsonify }},
     addons: {{ P.addons | jsonify }},
     bundles:{{ P.bundles | jsonify }},
     zones:  {{ P.zones | jsonify }}
+  };
+{% elsif show_prices %}
+  {%- comment -%} Retail only - never a wholesale figure in the source of a page a venue
+      opens (Fri 13 Nov 2026; until then /pricing carried every one). Exactly the fields
+      the script reads in pricing-menu-assets.html. {%- endcomment %}
+  window.EJM_DATA = {
+    mode: {{ include.mode | jsonify }},
+    tiers: [{% for t in P.tiers %}{"id":{{ t.id | jsonify }},"name":{{ t.name | jsonify }},"retail":{{ t.retail | jsonify }},"zones_included":{{ t.zones_included | jsonify }},"zones_fixed":{{ t.zones_fixed | default: false | jsonify }},"hardware":{{ t.hardware | jsonify }},"allows_addons":{{ t.allows_addons | default: false | jsonify }},"includes_all_addons":{{ t.includes_all_addons | default: false | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}],
+    addons: [{% for a in P.addons %}{"id":{{ a.id | jsonify }},"name":{{ a.name | jsonify }},"retail":{{ a.retail | jsonify }}{% if a.requires %},"requires":{{ a.requires | jsonify }}{% endif %}{% if a.bundle %},"bundle":{{ a.bundle | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}],
+    bundles: [{% for b in P.bundles %}{"id":{{ b.id | jsonify }},"name":{{ b.name | jsonify }},"retail":{{ b.retail | jsonify }},"members":{{ b.members | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}],
+    zones: {"included":{{ P.zones.included | jsonify }},"max":{{ P.zones.max | jsonify }},"extra_retail":{{ P.zones.extra_retail | jsonify }}}
   };
 {% else %}
   {%- comment -%} No prices in the page source either - not retail, and never wholesale.

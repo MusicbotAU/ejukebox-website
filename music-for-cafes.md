@@ -27,7 +27,7 @@ faqs:
   - q: >-
       What does café music cost?
     a: >-
-      Solo is ${solo} a month ex GST: one curated channel for one area, streamed to a device you already own, with nothing to install. If you want customers requesting songs, or different music inside and out, Core is ${core} a month ex GST. <a href="/products.html">See the plans</a>.
+      Solo is one curated channel for one area, streamed to a device you already own, with nothing to install. If you want customers requesting songs, or different music inside and out, that's Core. Both are priced per venue, per month - <a href="/products.html">build your package</a> and we'll send you a price.
   - q: >-
       Will the music suit a quiet morning and a busy lunch?
     a: >-
@@ -40,7 +40,7 @@ faqs:
       Do I still need a OneMusic licence?
     a: >-
       Yes. Every café playing music in public holds its own OneMusic licence, whoever supplies the music, and eJukebox's fee does not include it. <a href="/licensing.html">How music licensing works</a>.
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-13
 faq_title: Café music questions, answered
 schema_about: [cafe, background-music]
 feature_video: stream-url

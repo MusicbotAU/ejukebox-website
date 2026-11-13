@@ -1,10 +1,17 @@
 # robots.txt for ejukebox.com.au
 # Musicbot Pty Ltd - licensed background music and interactive jukebox for
 # Australian venues.
+#
+# /pricing and /wholesale are unlisted pages we share directly. They stay out of
+# search engines and AI crawlers, and so does /pricing.json, which our app reads.
+# Every group below carries the same two Disallow lines, because a crawler that
+# finds its own name obeys only that group.
 
 User-agent: *
 Allow: /
 Allow: /llms.txt
+Disallow: /pricing
+Disallow: /wholesale
 
 # ---------------------------------------------------------------------------
 # AI and answer-engine crawlers
@@ -18,40 +25,60 @@ Allow: /llms.txt
 
 User-agent: GPTBot
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 User-agent: Claude-User
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 User-agent: Bingbot
 Allow: /
+Disallow: /pricing
+Disallow: /wholesale
 
 # ---------------------------------------------------------------------------
 # llms.txt - the plain-text guide to eJukebox for AI assistants (llmstxt.org)
 # ---------------------------------------------------------------------------
 # LLMs.txt: https://ejukebox.com.au/llms.txt
 #
-# What eJukebox is, who it is for, plans and pricing, music licensing, the apps,
+# What eJukebox is, who it is for, the plans, music licensing, the apps,
 # coverage across Australia and short answers to the questions venues ask.
 # robots.txt has no official llms.txt record (unlike Sitemap below), so the
 # address sits here as a comment, and the file is allowed for every crawler above.

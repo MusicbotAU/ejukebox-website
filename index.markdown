@@ -17,7 +17,7 @@ faqs:
   - q: >-
       How much does background music for a business cost?
     a: >-
-      Solo is ${solo} a month ex GST - one curated channel for a single area, streamed to a device you already own. Core, the hospitality base with two zones, song requests and an on-site player, is ${core} a month ex GST, and Complete adds every software add-on for ${complete} a month ex GST. <a href="/products.html">See the plans</a>.
+      It depends on what your venue needs. Solo is one curated channel for a single area, streamed to a device you already own. Core, the hospitality base, adds two zones, song requests and an on-site player, and Complete adds every software add-on. Each is priced per venue, per month - <a href="/products.html">build your package on the plans page</a> and send it to us, and we'll come back with a price.
   - q: >-
       Can I play Spotify or Apple Music in my business?
     a: >-
@@ -42,7 +42,7 @@ faqs:
       Where in Australia does eJukebox work?
     a: >-
       Everywhere. eJukebox runs over an ordinary internet connection, so venues in every state and territory - capital cities, regional centres and country towns - get the same music, apps and support. Your player arrives set up, and you plug it in with illustrated instructions and video call support, or with your own AV installer.
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-13
 schema_apps: [request, admin, music]
 schema_about: [background-music, jukebox, pub, hospitality]
 schema_service: Jukebox and background music for Australian venues

@@ -4,7 +4,7 @@ title: Behind the Scenes of a Jukebox Installation
 description: How eJukebox runs in your venue - a compact player that plays on if the internet drops, updates itself overnight, and alerts us if the music stops.
 schema_service: Managed jukebox player installation for Australian venues
 service_type: Cloud-managed music player installation and maintenance
-last_reviewed: 2026-11-08
+last_reviewed: 2026-11-13
 howto:
   name: "How eJukebox is set up in your venue"
   description: >-
@@ -214,14 +214,18 @@ schema_about: [broadcast-automation, audio-processing, sound-reinforcement]
   </div>
 </div>
 
+{%- comment -%} Both of these videos say a price, so while public_prices is false they
+    render nothing and the whole section stays out (video_shows_price, pricing.yml). {%- endcomment -%}
+{%- capture bt_vids %}{% include feature-video.html id="onsite-player" %}{% include feature-video.html id="two-zones" %}{% endcapture -%}
+{% if bt_vids contains 'data-vid=' %}
 <div class="bt-sec-head">
   <span class="bt-kick">Watch</span>
   <h2>The player and the zones, a minute each</h2>
 </div>
 <div class="ft-videos bt-vids">
-  {% include feature-video.html id="onsite-player" %}
-  {% include feature-video.html id="two-zones" %}
+{{ bt_vids }}
 </div>
+{% endif %}
 
 <div class="bt-band">
   <div class="bt-band-head">

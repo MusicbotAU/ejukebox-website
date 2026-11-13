@@ -9,6 +9,10 @@
   Write the dollar sign in the copy:  "Core is ${core} a month ex GST"
   Usage:  {% include price-tokens.html text=f.a %}
   Used by faq-list.html, _layouts/venue.html and the FAQPage node in schema.html.
+
+  While public_prices is false in pricing.yml (Marc, Fri 13 Nov 2026) no public page
+  uses these - FAQ answers are written without prices, and _seo/audit.py flags any
+  dollar figure that reaches an indexable page.
 {%- endcomment -%}
 {%- assign pt_tiers = site.data.pricing.tiers -%}
 {%- assign pt_solo = pt_tiers | where: "id", "solo" | first -%}

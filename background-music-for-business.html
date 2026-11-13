@@ -7,7 +7,7 @@ schema_service: Commercial background music provider for Australian businesses
 service_type: Commercial background music supplier for Australian businesses
 audience_name: Australian businesses
 h1: Licensed background music for Australian businesses
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-13
 mentions:
   - name: OneMusic Australia
     url: https://onemusic.com.au/
@@ -88,23 +88,24 @@ schema_about: [background-music, music-licensing, retail, hospitality]
 
   <section class="bm-block">
     <h2>How much does background music cost for a business?</h2>
-    <p>eJukebox has three plans. Prices are per month, ex GST, and your OneMusic licence is paid separately.</p>
+    {% if site.data.pricing.public_prices == false %}<p>It depends on your business: how many areas play music, and whether customers request songs. eJukebox has three plans, each priced per venue, per month, and your OneMusic licence is paid separately. Pick the one that fits and we'll send you a price.</p>{% else %}<p>eJukebox has three plans. Prices are per month, ex GST, and your OneMusic licence is paid separately.</p>{% endif %}
     <div class="bm-tiers">
       {% for t in tiers %}
       <div class="bm-tier{% if t.recommended %} bm-tier-rec{% endif %}">
         <p class="bm-tier-tag">{{ t.tagline }}</p>
         <h3>{{ t.name }}</h3>
-        <p class="bm-tier-price"><span>${{ t.retail }}</span>/mo</p>
+        {% if site.data.pricing.public_prices == false %}<p class="bm-tier-price bm-tier-ask"><a href="/contact/?plan={{ t.name | url_encode }}#ctForm"><i class="fas fa-envelope"></i> Contact us for pricing</a></p>{% else %}<p class="bm-tier-price"><span>${{ t.retail }}</span>/mo</p>{% endif %}
         <p>{{ t.blurb }}</p>
       </div>
       {% endfor %}
     </div>
     <p class="bm-note">No lock-in contracts. Core and Complete use an on-site player, a one-off cost quoted per venue. <a href="/products.html">Compare plans and add-ons &rarr;</a></p>
-    <p class="bm-vid-lead"><strong>Solo in two minutes:</strong> how the private link works, and exactly where Solo stops and Core starts.</p>
-    <div class="ft-videos bm-vids">
-      {% include feature-video.html id="stream-url" %}
-      {% include feature-video.html id="single-area" %}
-    </div>
+    {%- comment -%} The private-link video says the Solo price, so while public_prices is
+        false only the single-area one shows (video_shows_price, pricing.yml). {%- endcomment -%}
+    {%- capture bm_solo_vids %}{% include feature-video.html id="stream-url" %}{% include feature-video.html id="single-area" %}{% endcapture -%}
+    {%- assign bm_solo_n = bm_solo_vids | split: 'data-vid=' | size | minus: 1 %}
+    {% if bm_solo_n > 1 %}<p class="bm-vid-lead"><strong>Solo in two minutes:</strong> how the private link works, and exactly where Solo stops and Core starts.</p>{% elsif bm_solo_n == 1 %}<p class="bm-vid-lead"><strong>Solo in a minute:</strong> exactly where Solo stops and Core starts.</p>{% endif %}
+    {% if bm_solo_n > 0 %}<div class="ft-videos{% if bm_solo_n == 1 %} one{% endif %} bm-vids">{{ bm_solo_vids }}</div>{% endif %}
   </section>
 
   <section class="bm-block">
@@ -134,7 +135,7 @@ schema_about: [background-music, music-licensing, retail, hospitality]
           <tr>
             <th scope="row">How are zones priced?</th>
             <td>Different music in the bar and the bistro can mean paying for every area.</td>
-            <td>{{ zones.included }} zones come standard on Core and Complete. Extra zones are ${{ zones.extra_retail }}/mo, up to {{ zones.max }}.</td>
+            <td>{{ zones.included }} zones come standard on Core and Complete{% if site.data.pricing.public_prices == false %}, and one player runs up to {{ zones.max }}.{% else %}. Extra zones are ${{ zones.extra_retail }}/mo, up to {{ zones.max }}.{% endif %}</td>
           </tr>
           <tr>
             <th scope="row">What happens when the internet drops?</th>
@@ -222,6 +223,7 @@ schema_about: [background-music, music-licensing, retail, hospitality]
 #main-content .bm-tier h3{margin:0 0 6px !important;font-size:1.3rem !important;color:var(--ejm-ink) !important}
 .bm-tier-price{margin:0 0 10px;color:var(--ejm-mut) !important}
 .bm-tier-price span{font-size:1.7rem;font-weight:800;color:var(--ejm-ink)}
+.bm-tier-ask a{display:inline-flex;align-items:center;gap:8px;font-size:.95rem;font-weight:700;text-decoration:none}
 .bm-tier p:last-child{margin:0;font-size:.93rem;line-height:1.55;color:var(--ejm-mut)}
 .bm-note{font-size:.93rem}
 .bm-vids{margin:22px 0 0}

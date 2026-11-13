@@ -30,7 +30,7 @@ faqs:
   - q: >-
       How much does pub music cost?
     a: >-
-      Core, the hospitality base, is ${core} a month ex GST, with two zones, song requests and an on-site player that keeps playing if the internet drops. The player is a one-off cost quoted for your venue, and extra zones are ${zone} a month each ex GST. <a href="/products.html">See the plans</a>.
+      For a pub it's Core, the hospitality base: two zones, song requests and an on-site player that keeps playing if the internet drops. Core is priced per venue, per month, the player is a one-off cost quoted for your venue, and zones three and four can be added on the same player. <a href="/products.html">Build your package</a> and send it to us, and we'll come back with a price.
   - q: >-
       Do we need to buy or hire a jukebox?
     a: >-
@@ -39,7 +39,7 @@ faqs:
       Can different bars play different music?
     a: >-
       Yes. Core includes two zones - the front bar and the bistro, say - and one player drives up to four, so the beer garden and the gaming room can have their own channels too.
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-13
 faq_title: Pub and bar music questions, answered
 schema_about: [pub, bar, jukebox, background-music]
 feature_video: two-zones

@@ -129,9 +129,12 @@
     .desktop-nav li.dropdown-right .dropdown-menu { left: auto; right: 0; }
     @media (max-width: 1240px) { .desktop-nav a { padding: 10px 12px; } }
     @media (max-width: 1060px) { .desktop-nav a { padding: 9px 8px; font-size: 13px; } }
-    /* The full menu row needs about 865px. Between 768px (where the theme already switches to
-       the phone menu) and 880px it broke onto two rows, so the phone menu takes over there too. */
-    @media (min-width: 768px) and (max-width: 879px) {
+    /* The full menu row needs about 865px, and in the scrolled bar, beside the small logo, a
+       window at least 1035px wide (measured Fri 13 Nov 2026: at 1024px, an iPad on its side,
+       Free Trial dropped onto a second row). The two padding rules above lose to the theme's
+       own link styles, so they don't narrow it. From 768px (where the theme already switches
+       to the phone menu) to 1065px the phone menu takes over - 30px spare for Mac fonts. */
+    @media (min-width: 768px) and (max-width: 1065px) {
       .mobile-nav-toggle { display: flex; }
       .desktop-nav { display: none; }
     }

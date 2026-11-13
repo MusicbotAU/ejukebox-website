@@ -67,7 +67,7 @@ faqs:
     a: >-
       Yes. The bistro, the bar, the gaming room, the function room and the deck can each run
       their own channel on their own schedule. Core includes two zones, and one player drives up
-      to four, so zones three and four are ${zone} a month each ex GST with no extra hardware.
+      to four, so zones three and four need no extra hardware.
       For more than four areas, talk to us.
   - q: >-
       Will switching to eJukebox lower our OneMusic fee?
@@ -113,12 +113,12 @@ faqs:
   - q: >-
       What does eJukebox cost a club?
     a: >-
-      Core is ${core} a month ex GST with two zones, and each extra zone is ${zone} a month.
-      Complete, with every software add-on, is ${complete} a month ex GST, plus any extra zones.
-      The on-site player is a one-off cost, quoted for your club.
-      <a href="/products.html">See the plans</a>.
+      It depends on how many areas you run and which features you want. Core comes with two
+      zones, and Complete adds every software add-on. Both are priced per club, per month, and
+      the on-site player is a one-off cost, quoted for your club. <a href="/products.html">Build
+      your package</a> and send it to us, and we'll come back with a price.
 schema_about: [rsl, bowls, social-club, ode-of-remembrance, background-music]
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-13
 feature_video: two-zones
 feature_video_title: >-
   Two zones included, and up to four from one player

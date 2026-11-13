@@ -4,24 +4,28 @@ Each entry says why it is still open, so nothing gets silently dropped.
 
 ## Needs a decision from Marc
 
-**Prices still public outside the plans page (8 Nov 2026).** /products.html no longer shows a
-price, but these still do, each as words in its own copy rather than through the switch:
-- the home page FAQ "How much does background music for a business cost?" (Solo, Core, Complete);
-- /background-music-for-business/ - its three plan cards and the extra-zone line;
-- /music-channels/ FAQ - extra zones at $39;
-- the FAQs on /music-for-cafes/, /music-for-hotels/, /music-for-pubs-bars/, /music-for-retail/,
-  /music-for-rsl-clubs/ and /music-for-salons-spas/ (they use the `${core}` tokens);
-- llms.txt - its plans section lists every price, so AI assistants still quote them;
-- the Solo, Two Zones and On-Site Player videos speak their prices.
-Taking them off means rewording each answer ("priced for your venue - ask us"), not flipping
-the switch, and the cost questions are some of the most-searched FAQs on the site. Marc to say
-whether they go too.
+**The website repo is public on GitHub (13 Nov 2026).** `MusicbotAU/ejukebox-website` - and
+`ejukebox-music` - can be read by anyone, and `_data/pricing.yml` holds every retail and
+wholesale figure; so do these notes and the git history. No page shows a price now, but a bot
+reading GitHub gets the lot. The fix is making the repos private: GitHub Pages keeps publishing
+from a private repo on a paid plan (GitHub Team, for an organisation), and the site stays
+public. Marc's call - it is billing and an account setting.
 
-**/pricing still carries every wholesale rate in its page source.** Its script data
-(`EJM_DATA`) holds all 14 `whl` figures, on the retail page that goes to venues - view source
-and they are there. Pre-existing; left alone because Marc said not to touch /pricing or
-/wholesale for now. The fix is to strip `whl` from the data in retail mode, the way public mode
-now does. /pricing.json carries none.
+**Three feature videos say a price, so they are held back (13 Nov 2026).** *Solo - Streams To
+Your Device* says $49 a month, *Two Zones Included* $39 a zone, and *On-Site Player* "typically
+under $500 + GST" and that the trial covers it - out of date since the computer went to $650
++ GST (Marc, 12 Nov). Each title slide shows the figure as well. They carry
+`video_shows_price: true` in `pricing.yml`, so no public page shows them: the plans page cards
+have no Watch button, Behind the Scenes has no video section, the Solo block on
+/background-music-for-business/ shows only the one-area video, and six venue pages (cafes,
+retail, salons, hotels, pubs, RSL) have no video section. /pricing and /wholesale still play
+them. Re-record each without the figure (decks in `Marketing/eJukebox/2026/v4`), upload under
+the same name, grab the new title-slide poster (README), and delete the flag line - every page
+picks it back up.
+
+**Prices off every public page - done Fri 13 Nov 2026** (Marc: "remove the pricing from
+everywhere"). The home page, channels and six venue FAQs, the business music page and llms.txt
+are reworded, and /pricing's source no longer carries the wholesale figures. See CHANGELOG.
 
 **Venue FAQs - done Thu 15 Oct 2026.** Every venue page now has a `faqs:` block, rendered
 visibly and as `FAQPage`, within the OneMusic claim rules. They went live without a separate

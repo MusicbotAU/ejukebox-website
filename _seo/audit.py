@@ -6,8 +6,9 @@ Regenerate _seo/content-inventory.md from the built site.
 
 Reads _site/, never the source, so it reports what actually ships. Checks the
 things that silently rot: missing/oversized titles and descriptions, duplicate
-metadata, missing H1s, pages that lost their structured data, and noindex pages
-that leaked schema they should not have.
+metadata, missing H1s, pages that lost their structured data, noindex pages
+that leaked schema they should not have, and - while public_prices is false in
+_data/pricing.yml - any price on an indexable page or in llms.txt.
 """
 import re, glob, os, html, sys, datetime
 from collections import defaultdict
@@ -18,6 +19,25 @@ if not os.path.isdir(SITE):
     sys.exit("No _site/ - run `bundle exec jekyll build` first.")
 
 TITLE_MAX, DESC_MAX = 60, 160
+
+# No prices on public pages (Marc, Sun 8 and Fri 13 Nov 2026) while `public_prices: false`
+# in _data/pricing.yml. A whole-dollar figure ($49, $1,300) on an indexable page - in its
+# text, title, description or structured data - or in llms.txt is an issue. Figures with
+# cents ($488.88, $30.47) are OneMusic fees and research numbers, not our prices.
+# PRICE_OK pages show amounts that are not prices: what we pay for a referral.
+PRICE_OK = {'/refer-a-venue/', '/refer-a-venue-terms/'}
+_pricing = open(os.path.join(ROOT, '_data', 'pricing.yml'), encoding='utf-8').read()
+PRICES_HIDDEN = re.search(r'(?m)^public_prices:\s*false\b', _pricing) is not None
+
+def money(s):
+    return [m for m in re.findall(r'\$\s?\d[\d,]*(?:\.\d+)?', s) if '.' not in m]
+
+def shown_text(s):
+    """Visible text plus JSON-LD; page scripts and styles are not shown, so they don't count."""
+    s = re.sub(r'(?is)<script(?![^>]*ld\+json)[^>]*>.*?</script>', ' ', s)
+    s = re.sub(r'(?is)<style\b.*?</style>', ' ', s)
+    s = re.sub(r'(?s)<!--.*?-->', ' ', s)
+    return html.unescape(re.sub(r'<[^>]+>', ' ', s))
 
 def text(m):
     return html.unescape(re.sub(r'<[^>]+>', '', m).strip()) if m else None
@@ -41,6 +61,8 @@ for f in sorted(glob.glob(os.path.join(SITE, '**/*.html'), recursive=True)):
         'noindex': bool(re.search(r'name="robots"[^>]*noindex', s)),
         'canonical': 'rel="canonical"' in s,
         'og': 'og:title' in s,
+        'money': money(shown_text(s) + ' ' + (text(t.group(1)) if t else '') + ' '
+                       + (text(d.group(1)) if d else '')),
     })
 
 live = [p for p in pages if not p['noindex']]
@@ -57,6 +79,17 @@ for p in live:
 for p in pages:
     if p['noindex'] and p['schema']:
         issues.append((p['url'], 'noindex page still emits an @graph'))
+if PRICES_HIDDEN:
+    for p in live:
+        if p['money'] and p['url'] not in PRICE_OK:
+            issues.append((p['url'], f"Shows a price ({', '.join(sorted(set(p['money']))[:4])}) "
+                                     "while public_prices is false"))
+    llms = os.path.join(SITE, 'llms.txt')
+    if os.path.exists(llms):
+        found = money(open(llms, encoding='utf-8').read())
+        if found:
+            issues.append(('/llms.txt', f"Shows a price ({', '.join(sorted(set(found))[:4])}) "
+                                        "while public_prices is false"))
 
 for field, label in (('title', 'title'), ('desc', 'description'), ('h1', 'H1')):
     seen = defaultdict(list)

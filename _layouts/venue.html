@@ -65,12 +65,17 @@ layout: default
         feature_video: <an id from _data/pricing.yml>
         feature_video_title: a heading in this venue's own words
         feature_video_text: one line under it (HTML allowed)
-      schema.html finds it on the page and adds the VideoObject. {%- endcomment %}
+      schema.html finds it on the page and adds the VideoObject. A video held back
+      for saying a price (video_shows_price in pricing.yml) renders nothing, and then
+      the whole section stays out until it is re-recorded. {%- endcomment %}
+  {%- capture venue_vid %}{% include feature-video.html id=page.feature_video %}{% endcapture %}
+  {% if venue_vid contains 'data-vid=' %}
   <section class="venue-block venue-video">
     <h2>{{ page.feature_video_title | default: 'See it in under a minute' }}</h2>
     {% if page.feature_video_text %}<p>{{ page.feature_video_text }}</p>{% endif %}
-    <div class="ft-videos one">{% include feature-video.html id=page.feature_video %}</div>
+    <div class="ft-videos one">{{ venue_vid }}</div>
   </section>
+  {% endif %}
   {% endif %}
 
   <section class="venue-block venue-licensing">

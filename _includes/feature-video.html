@@ -19,6 +19,10 @@
 
  data-vid on the figure is how _includes/schema.html finds every video on the
  page and describes it as a VideoObject. Do not remove it.
+
+ A video marked video_shows_price in pricing.yml renders nothing at all while
+ public_prices is false. Where a heading sits over the grid, capture the includes
+ and test for 'data-vid=' before writing the heading (see behind-the-scenes).
 {%- endcomment -%}
 {%- assign fv_P = site.data.pricing -%}
 {%- assign fv = nil -%}{%- assign fv_src = nil -%}{%- assign fv_secs = nil -%}
@@ -34,6 +38,7 @@
     {%- assign fv_name = fv.name -%}
     {%- assign fv_secs = fv.video_secs -%}
   {%- endif -%}
+  {%- if fv.video_shows_price and fv_P.public_prices == false -%}{%- assign fv_src = nil -%}{%- endif -%}
 {%- endif -%}
 {%- if fv_src -%}
 {%- capture fv_poster -%}/assets/images/videos/{{ include.id }}-video-ejukebox.webp{%- endcapture -%}

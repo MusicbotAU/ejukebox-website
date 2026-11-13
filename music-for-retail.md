@@ -27,7 +27,7 @@ faqs:
   - q: >-
       How much does in-store music cost?
     a: >-
-      Solo is ${solo} a month ex GST for one curated channel in one area, streamed to a device you already own - nothing to install. Chains and shopping centres can have their own custom branded radio station, quoted to suit. <a href="/products.html">See the plans</a>.
+      Solo is one curated channel in one area, streamed to a device you already own - nothing to install - and it's priced per store, per month. Chains and shopping centres can have their own custom branded radio station, quoted to suit. <a href="/products.html">See the plans</a> and send us your package for a price.
   - q: >-
       Can we add our own promotions?
     a: >-
@@ -36,7 +36,7 @@ faqs:
       Can every store play the same music?
     a: >-
       Yes. A custom station plays the same programming in every store, so your brand sounds the same wherever a customer walks in.
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-13
 faq_title: In-store music questions, answered
 schema_about: [retail, retail-design, background-music, sensory-branding]
 feature_video: stream-url

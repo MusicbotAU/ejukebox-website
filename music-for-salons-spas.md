@@ -27,7 +27,7 @@ faqs:
   - q: >-
       What does music cost for a small salon?
     a: >-
-      Solo is ${solo} a month ex GST: one curated channel for one area, streamed to a device you already own, with nothing to install. <a href="/products.html">See the plans</a>.
+      Solo is one curated channel for one area, streamed to a device you already own, with nothing to install, and it's priced per salon, per month. <a href="/products.html">See the plans</a> and send us your package, and we'll come back with a price.
   - q: >-
       Is the music relaxing enough for treatments?
     a: >-
@@ -36,7 +36,7 @@ faqs:
       Can we change the music between treatments?
     a: >-
       Yes. Set it once and let it flow, or switch from your phone whenever the mood needs to change.
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-13
 faq_title: Salon and spa music questions, answered
 schema_about: [beauty-salon, day-spa, background-music]
 feature_video: stream-url

@@ -2,7 +2,7 @@
 layout: default
 noindex: true   # hidden 13 Oct 2026 pending Marc's review - see _seo/CHANGELOG.md
 title: Core & Complete, Jukebox with Song Requests
-description: Customer song requests from any phone, AI song search, two zones, voice announcements and screens. Core $169/mo, Complete $299/mo ex GST.
+description: Customer song requests from any phone, AI song search, two zones, voice announcements and screens - Core and Complete, priced for your venue.
 ---
 
 <div class="love-hero">
@@ -78,14 +78,14 @@ description: Customer song requests from any phone, AI song search, two zones, v
     <p><strong>Core</strong> is the hospitality base - the curated, licensed music your venue runs on, plus the interaction layer, and you bolt on exactly the extras you want. <strong>Complete</strong> is the same thing with every software add-on already included, which works out cheaper than ticking them all individually.</p>
     <div class="intro-highlight">
       <i class="fas fa-check-circle"></i>
-      <p><strong>Core - $169/month ex GST.</strong> Two zones included, song requests and AI search, song previews, live queue reordering, record-your-own voice announcements, the on-site player, and for pubs, we can manage your OneMusic licence as your authorised representative, at cost.</p>
+      <p><strong>Core.</strong> Two zones included, song requests and AI search, song previews, live queue reordering, record-your-own voice announcements, the on-site player, and for pubs, we can manage your OneMusic licence as your authorised representative, at cost.</p>
     </div>
     <div class="intro-highlight">
       <i class="fas fa-crown"></i>
-      <p><strong>Complete - $299/month ex GST.</strong> Everything in Core plus every software add-on: the voice suite, Spotify integration, voice dedications, every screen feature and functions mode.</p>
+      <p><strong>Complete.</strong> Everything in Core plus every software add-on: the voice suite, Spotify integration, voice dedications, every screen feature and functions mode.</p>
     </div>
-    <p>Extra zones are $39/month ex GST each, and zones three and four need no extra hardware. The on-site player is a one-off cost, quoted for your venue.</p>
-    <p style="margin-top:22px;"><a href="/products.html" class="cta-button"><i class="fas fa-list-check"></i> Build your package and see the total</a></p>
+    <p>Both are priced per venue, per month. Zones three and four can be added with no extra hardware, and the on-site player is a one-off cost, quoted for your venue.</p>
+    <p style="margin-top:22px;"><a href="/products.html" class="cta-button"><i class="fas fa-list-check"></i> Build your package and ask for a price</a></p>
   </div>
 </div>
 

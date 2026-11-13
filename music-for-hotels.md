@@ -23,7 +23,7 @@ faqs:
   - q: >-
       Can different areas of the hotel play different music?
     a: >-
-      Yes. Core includes two zones - say the lobby and the bar - and the same player drives up to four, so the restaurant and the pool can have their own channels too, each on its own schedule. Extra zones are ${zone} a month each ex GST.
+      Yes. Core includes two zones - say the lobby and the bar - and the same player drives up to four, so the restaurant and the pool can have their own channels too, each on its own schedule.
   - q: >-
       Can we use it for functions and weddings?
     a: >-
@@ -36,7 +36,7 @@ faqs:
       Is the music suitable for every guest?
     a: >-
       Yes. Every channel is family-friendly, with no explicit lyrics, no ads and no talk.
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-13
 faq_title: Hotel music questions, answered
 schema_about: [hotel, hospitality, background-music]
 feature_video: two-zones

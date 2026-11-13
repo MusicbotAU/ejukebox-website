@@ -5,6 +5,43 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-13 - No prices on any public page; /pricing kept from crawlers
+
+Marc, Fri 13 Nov: "remove the pricing from everywhere we have listed it", and keep /pricing - the
+page we send venues - away from bots, without changing how it works.
+
+- **Copy without prices.** The cost answers on the home page, /music-channels/ and six venue
+  pages (cafes, hotels, pubs and bars, retail, RSL clubs, salons and spas) now say what the price
+  depends on and how to get one; none uses the `${core}` tokens any more. The three plan cards
+  and the zones row on /background-music-for-business/ follow `public_prices`, as the plans page
+  does. llms.txt drops every figure (twelve lines) and says pricing is per venue and not
+  published. The hidden /full-package.html lost its figures too.
+- **Three videos held back.** Solo - Streams To Your Device ($49 a month), Two Zones Included
+  ($39 a zone) and On-Site Player ("typically under $500 + GST") say the price and show it on
+  their title slide. `video_shows_price: true` in `pricing.yml` keeps them off every public page
+  while `public_prices` is false: `feature-video.html` renders nothing, the venue layout drops
+  its video section, Behind the Scenes drops its "player and zones" section, the business music
+  page shows only the one-area Solo video, and the plans page cards lose their Watch button.
+  /pricing and /wholesale still play them. Delete the flag once a video is re-recorded.
+- **A guard.** `_seo/audit.py` now flags any whole-dollar figure on an indexable page (text,
+  title, description or JSON-LD) or in llms.txt while `public_prices` is false. Figures with
+  cents are OneMusic fees and research numbers; the referral pages are allowed.
+- **/pricing and /wholesale.** robots.txt now disallows both (and /pricing.json, by prefix) in
+  every crawler group - a crawler that finds its own name reads only that group. /pricing has
+  been noindex since 16 Jul 2026, so nothing is left in Google to strand. /pricing's script data
+  is now retail-only: the 15 wholesale figures it carried in its source are gone, with no change
+  to what the page shows or how it adds up ($169, +$29 Spotify, +$39 a zone, checked).
+  /wholesale keeps them. Both pages read word for word as before.
+- **Menu at 1024px.** In the scrolled bar the full menu needs a window 1035px wide, so on an
+  iPad on its side Free Trial dropped onto a second row. The phone menu now takes over from
+  768px to 1065px (it was 768px to 879px). The two padding rules meant to narrow the menu lose
+  to the theme's link styles and never did.
+
+Still open: the GitHub repo is public, so `_data/pricing.yml` - every retail and wholesale
+figure - is readable there (open-items.md).
+
+---
+
 ## 2026-11-08 - No prices on the public plans page; a video for every feature
 
 Marc, Sun 8 Nov: take /pricing and /wholesale out of every menu but keep them live and
@@ -25,7 +62,7 @@ the Jukebox Features menu should carry the plans-page video for each feature it 
   bar's button "Contact us for pricing". Every one of those links opens /contact/ with the
   package already ticked: plan, zones, add-ons, and a message naming the package. The page's
   script now carries **no retail or wholesale figures at all** - until today the live page held
-  every wholesale rate in its source (`"whl":122` and so on). The schema describes the three
+  every wholesale rate in its source. The schema describes the three
   plans as Services, with no price on any offer.
 - **/contact/.** The plan cards show each plan's tagline instead of a price, and the form fills
   itself in from the link (`plan`, `zones`, `feature`, `package`).
