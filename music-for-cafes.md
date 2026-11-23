@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: People chatting in a busy coffee shop
+hero_alt: People chatting in a busy coffee shop with eJukebox background music for Australian cafés
 permalink: /music-for-cafes/
 slug: music-for-cafes
 label: Cafés & Coffee Shops

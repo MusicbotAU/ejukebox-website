@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: A hair salon with music playing
+hero_alt: A hair salon with eJukebox music playing - background music for Australian salons and spas
 permalink: /music-for-salons-spas/
 slug: music-for-salons-spas
 label: Salons & Spas

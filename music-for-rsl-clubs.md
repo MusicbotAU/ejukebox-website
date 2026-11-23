@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: Diners at tables in a glass-walled club bistro
+hero_alt: Diners in a glass-walled club bistro - eJukebox music for RSL and community clubs across Australia
 hero_focus: 72% 80%
 image: /assets/images/venues/music-for-rsl-clubs.jpg
 permalink: /music-for-rsl-clubs/
@@ -46,11 +46,11 @@ spotlight_body: >-
   [how the voice features run the room](/voice-announcements/).
 photo_band:
   src: /assets/images/venues/club-members-on-the-bowling-green-ejukebox.webp
-  alt: Two bowls club members sharing a laugh on the green
+  alt: Two bowls club members sharing a laugh on the green, with eJukebox music for Australian bowling clubs
   src2: /assets/images/venues/club-function-room-table-ejukebox.webp
-  alt2: A function table set with coloured glassware under fairy lights
+  alt2: A club function table set with coloured glassware under fairy lights, ready for a night of eJukebox music
   src3: /assets/images/venues/club-bistro-buffet-ejukebox.webp
-  alt3: Plating up at the club bistro buffet
+  alt3: Plating up at the club bistro buffet while eJukebox plays the background music
   caption: From the bistro to the greens, every part of the club gets its own music.
 licensing_note: >-
   Clubs are licensed differently from pubs. Registered and licensed clubs are on OneMusic's

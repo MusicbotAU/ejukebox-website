@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: A packed dance club under coloured lights
+hero_alt: A packed dance club under coloured lights - licensed eJukebox nightclub music for Australian clubs
 permalink: /music-for-nightclubs/
 slug: music-for-nightclubs
 label: Clubs & Nightclubs

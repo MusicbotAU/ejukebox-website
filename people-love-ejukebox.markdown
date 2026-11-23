@@ -34,7 +34,7 @@ schema_about: [background-music, customer-experience]
 {% include testimonial.html id="diana-f" %}
 </div>
 
-{% include photo-band.html src="/assets/images/stock/party-crowd-sunset.jpg" alt="A crowd enjoying a night out at sunset" caption="Real rooms, every night of the week." %}
+{% include photo-band.html src="/assets/images/stock/party-crowd-sunset.jpg" alt="A crowd enjoying a night out at sunset - what Australian venues say about eJukebox" caption="Real rooms, every night of the week." %}
 
 <div class="try-demo">
   <div class="demo-content">

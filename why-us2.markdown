@@ -46,7 +46,7 @@ schema_about: [background-music, radio-programming, audio-processing]
         <li><i class="fas fa-circle-check"></i> No lock-in contracts</li>
       </ul>
     </div>
-    <div class="ft-hero-img"><img src="/assets/images/stock/party-crowd-sunset.jpg" alt="A crowd enjoying a night out at sunset" loading="eager"></div>
+    <div class="ft-hero-img"><img src="/assets/images/stock/party-crowd-sunset.jpg" alt="A crowd enjoying a night out at sunset - why Australian venues choose eJukebox" loading="eager"></div>
   </div>
 </div>
 

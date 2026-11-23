@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: Bartenders serving drinks at a busy bar
+hero_alt: Bartenders serving drinks at a busy bar - eJukebox music and jukebox for pubs and bars across Australia
 permalink: /music-for-pubs-bars/
 slug: music-for-pubs-bars
 label: Pubs & Bars

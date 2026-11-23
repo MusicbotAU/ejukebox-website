@@ -5,6 +5,33 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-23 - Alt text: brand, place and keyword on every photo
+
+Marc, Mon 23 Nov: look at all the alt tags and make sure each has "a little bit of branding a
+little bit of Geo location a little bit of keywords ... without stuffing", using the keywords
+we have research on and the theme of each page.
+
+- **57 photo alts on the 36 indexable pages** (31 files). Each still says what the photo
+  shows, then works in eJukebox, a place and the page's keyword: the venue pages' "music for
+  <venue>, Australia", "digital jukebox", "in-store radio", "OneMusic licence", "song
+  requests", "guest photo wall". The keywords come from the master keyword list
+  (Website/Corporate Website/Keywords, July 2026), the Search Console download of Thu 15 Oct
+  and `functions-events.md`.
+- **No stuffing.** A page with one photo gets all three; a page with several shares them out,
+  and no phrase repeats on a page. 49 of the 57 name eJukebox and 40 name Australia.
+- **The place goes on the service** ("for Australian cafés", "across Australia"), never on where
+  a stock photo was taken. The one named place is the Mercantile Hotel in The Rocks, which is
+  what that photo shows.
+- **/BenefitsofMusic.html's four graphics are OneMusic's research** (each links to a OneMusic
+  PDF), so they credit OneMusic, not us. Three described something else - the "wine" one shows
+  louder music lifting drinks from 2.6 to 3.4 - and now say what they show.
+- **Licensing alts keep to the OneMusic claim rules:** a lower tier for the retail shop, and the
+  authorised representative for the pub only.
+- App screens were already branded; one says "trending across Australia" for "nationwide".
+  Logos and store badges are unchanged.
+
+---
+
 ## 2026-11-23 - Digital Jukebox page: our own photos, cropped and compressed
 
 Marc flagged on Thu 15 Oct that the page's photos did not match it - the hero was a DJ on

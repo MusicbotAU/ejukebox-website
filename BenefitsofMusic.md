@@ -22,7 +22,7 @@ schema_about: [background-music, music-psychology, consumer-behaviour]
 <div class="benefits-grid">
   <div class="benefit-research-card wine">
     <a href="https://onemusic.com.au/media/Presto/Presto_Hospitality.pdf" class="card-image-link">
-      <img src="blobs/Benefits01.png" alt="Music makes wine taste better">
+      <img src="blobs/Benefits01.png" alt="Louder music lifts drink sales from 2.6 to 3.4 drinks - research on music in hospitality published by OneMusic Australia">
     </a>
     <div class="card-content">
       <div class="research-badge">
@@ -40,7 +40,7 @@ schema_about: [background-music, music-psychology, consumer-behaviour]
 
   <div class="benefit-research-card beer">
     <a href="https://onemusic.com.au/media/Presto/Presto_Hospitality.pdf" class="card-image-link">
-      <img src="blobs/Benefits02.png" alt="Music encourages beer sales">
+      <img src="blobs/Benefits02.png" alt="Tips are up 4% when upbeat songs are played - OneMusic Australia research for pubs, bars and restaurants">
     </a>
     <div class="card-content">
       <div class="research-badge">
@@ -58,7 +58,7 @@ schema_about: [background-music, music-psychology, consumer-behaviour]
 
   <div class="benefit-research-card dining">
     <a href="https://onemusic.com.au/media/Information-Sheets/Dining.pdf" class="card-image-link">
-      <img src="blobs/Benefits03.png" alt="Music keeps customers longer">
+      <img src="blobs/Benefits03.png" alt="15% more desserts ordered, 24% longer stays with slow-tempo music and 36% more referrals - OneMusic Australia dining research">
     </a>
     <div class="card-content">
       <div class="research-badge">
@@ -111,7 +111,7 @@ schema_about: [background-music, music-psychology, consumer-behaviour]
 
   <div class="benefit-research-card fitness">
     <a href="https://onemusic.com.au/media/Presto/Presto_Fitness.pdf" class="card-image-link wide">
-      <img src="blobs/Benefits04.png" alt="Music benefits for fitness">
+      <img src="blobs/Benefits04.png" alt="Why we prefer music we know - the songs we loved as teenagers lift motivation, from OneMusic Australia fitness research">
     </a>
     <div class="card-content">
       <div class="research-badge">

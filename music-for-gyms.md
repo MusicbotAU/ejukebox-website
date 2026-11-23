@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: A bright fitness studio with a Pilates reformer
+hero_alt: A woman training on a Pilates reformer in a bright studio - eJukebox music for Australian gyms and fitness studios
 permalink: /music-for-gyms/
 slug: music-for-gyms
 label: Gyms & Fitness

@@ -225,7 +225,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
       </div>
       <p class="lc-note"><i class="fas fa-circle-info"></i>We explain it, OneMusic sets it. OneMusic Australia decides licence types and fees and confirms what applies to your business.</p>
     </div>
-    <div class="lc-hero-img"><img src="/assets/images/pub-bar.jpg" alt="A pub bar ready for the night" loading="eager"></div>
+    <div class="lc-hero-img"><img src="/assets/images/pub-bar.jpg" alt="A pub bar ready for the night - music licensing for Australian businesses, explained by eJukebox" loading="eager"></div>
   </div>
 </div>
 
@@ -259,7 +259,7 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
   <p><strong>The simple rule:</strong> if customers or staff can hear music at your business, you almost certainly need a licence.</p>
 </div>
 <div class="lc-who">
-  <div class="lc-photo"><img src="/assets/images/cafe-restaurant.jpg" alt="A cafe with background music playing for customers" loading="lazy"></div>
+  <div class="lc-photo"><img src="/assets/images/cafe-restaurant.jpg" alt="A cafe with background music playing for customers, one of the Australian businesses that needs a OneMusic licence" loading="lazy"></div>
   <div class="lc-list">
     <div class="lc-item"><span class="lc-ico"><i class="fas fa-beer-mug-empty"></i></span><div><h3>Pubs, bars, clubs and hotels</h3><p>Speakers, a jukebox, TVs with sound or just a radio behind the bar - all of it counts.</p></div></div>
     <div class="lc-item"><span class="lc-ico"><i class="fas fa-mug-hot"></i></span><div><h3>Cafes and restaurants</h3><p>Background music in the dining room needs permission, whatever it plays from.</p></div></div>
@@ -346,21 +346,21 @@ schema_about: [music-licensing, performing-rights, onemusic, apra-amcos, ppca, c
 </div>
 <div class="lc-ex">
   <div class="lc-case">
-    <div class="lc-case-img"><img src="/assets/images/salon.jpg" alt="A hair salon playing background music" loading="lazy"><span>Small hair salon</span></div>
+    <div class="lc-case-img"><img src="/assets/images/salon.jpg" alt="A small hair salon playing licensed eJukebox background music" loading="lazy"><span>Small hair salon</span></div>
     <div class="lc-case-body">
       <div class="lc-ba before"><b>Before</b><p>A personal streaming account on the owner's phone - against the service's terms, and on OneMusic's top retail tier.</p></div>
       <div class="lc-ba after"><b>With eJukebox</b><p>Licensed, family-friendly channels that play themselves, and a lower OneMusic tier. For a small shop, the drop in that fee covers a good part of what eJukebox costs.</p></div>
     </div>
   </div>
   <div class="lc-case">
-    <div class="lc-case-img"><img src="/assets/images/retail-store.jpg" alt="A fashion and homewares shop" loading="lazy"><span>Fashion or homewares shop</span></div>
+    <div class="lc-case-img"><img src="/assets/images/retail-store.jpg" alt="A fashion and homewares shop with on-brand eJukebox music and a lower OneMusic retail tier" loading="lazy"><span>Fashion or homewares shop</span></div>
     <div class="lc-case-body">
       <div class="lc-ba before"><b>Before</b><p>A staff playlist, ads between songs on a free account, and the top OneMusic tier.</p></div>
       <div class="lc-ba after"><b>With eJukebox</b><p>On-brand music all day, changing by itself as the day goes on, with no ads - and a lower OneMusic tier.</p></div>
     </div>
   </div>
   <div class="lc-case">
-    <div class="lc-case-img"><img src="/assets/images/large-pub.jpg" alt="A large pub dining room" loading="lazy"><span>Pub with TV screens</span></div>
+    <div class="lc-case-img"><img src="/assets/images/large-pub.jpg" alt="A large pub dining room, where eJukebox can manage the OneMusic licence as the pub's authorised representative" loading="lazy"><span>Pub with TV screens</span></div>
     <div class="lc-case-body">
       <div class="lc-ba before"><b>Before</b><p>A personal streaming account through the bar PC, a TV-based OneMusic package and the Digital Copy/Delivery fee on top.</p></div>
       <div class="lc-ba after"><b>With eJukebox</b><p>The TV-based package stays, because your screens set it, but the Digital Copy/Delivery fee goes. Two zones are included, customers request songs, and we can manage your OneMusic licence as your authorised representative, at cost.</p></div>

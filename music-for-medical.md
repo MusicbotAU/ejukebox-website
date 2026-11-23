@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: A calm, bright waiting area with modern chairs
+hero_alt: A calm, bright waiting room with modern chairs - eJukebox music for Australian medical centres and waiting rooms
 permalink: /music-for-medical/
 slug: music-for-medical
 label: Medical & Waiting Rooms

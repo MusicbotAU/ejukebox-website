@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: A retail store with music playing
+hero_alt: A fashion and homewares boutique playing eJukebox in-store music for Australian retail shops
 permalink: /music-for-retail/
 slug: music-for-retail
 label: Retail & Shops

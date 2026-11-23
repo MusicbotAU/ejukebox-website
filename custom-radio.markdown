@@ -56,7 +56,7 @@ schema_about: [internet-radio, radio-programming, sensory-branding]
         <li><i class="fas fa-circle-check"></i> Option to stream it publicly</li>
       </ul>
     </div>
-    <div class="ft-hero-img"><img src="/assets/images/retail-store.jpg" alt="A retail store with music playing" loading="eager"></div>
+    <div class="ft-hero-img"><img src="/assets/images/retail-store.jpg" alt="A fashion and homewares boutique playing its own eJukebox in-store radio station, made for Australian retail" loading="eager"></div>
   </div>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: A warm, wood-lined lodge lounge
+hero_alt: A warm, wood-lined lodge lounge - eJukebox background music for Australian hotels and accommodation
 permalink: /music-for-hotels/
 slug: music-for-hotels
 label: Hotels & Accommodation

@@ -1,6 +1,6 @@
 ---
 layout: venue
-hero_alt: A restaurant at dusk with warm lights
+hero_alt: Diners at a restaurant at dusk under warm lights - eJukebox dining music for Australian restaurants
 permalink: /music-for-restaurants/
 slug: music-for-restaurants
 label: Restaurants & Dining

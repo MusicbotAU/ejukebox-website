@@ -4,7 +4,7 @@ title: Jukebox Music for Pubs, Clubs, Cafes & Retail
 description: Australia's jukebox and background music service for pubs, clubs, bars, cafes and retail. Curated licensed channels, song requests, and a free trial.
 hero:
   image: /assets/images/stock/bartenders.jpg
-  alt: Bartenders serving drinks at a busy bar
+  alt: Bartenders serving drinks at a busy bar - eJukebox jukebox and background music for Australian pubs and clubs
   eyebrow: Licensed music for Australian venues
   h1: "Jukebox & Background Music for Pubs, Clubs, Cafes & Retail"
   sub: Professionally curated, fully licensed music your staff control from their phone and your customers request from theirs.
@@ -165,7 +165,7 @@ service_type: Commercial background music and digital jukebox service
 </div>
 
 <section class="hs-band" aria-labelledby="hs-band-title">
-  <img src="/assets/images/home/music-for-venues-increase-sales-ejukebox-1280.webp" srcset="/assets/images/home/music-for-venues-increase-sales-ejukebox-768.webp 768w, /assets/images/home/music-for-venues-increase-sales-ejukebox-1280.webp 1280w, /assets/images/home/music-for-venues-increase-sales-ejukebox-1920.webp 1920w" sizes="100vw" width="1920" height="1080" loading="lazy" decoding="async" alt="Music for venues that increases sales - a pub bar with stools, screens and speakers ready for eJukebox background music">
+  <img src="/assets/images/home/music-for-venues-increase-sales-ejukebox-1280.webp" srcset="/assets/images/home/music-for-venues-increase-sales-ejukebox-768.webp 768w, /assets/images/home/music-for-venues-increase-sales-ejukebox-1280.webp 1280w, /assets/images/home/music-for-venues-increase-sales-ejukebox-1920.webp 1920w" sizes="100vw" width="1920" height="1080" loading="lazy" decoding="async" alt="Music for venues that increases sales - a pub bar with screens and speakers ready for eJukebox background music across Australia">
   <div class="hs-copy"><div class="hs-copy-in">
     <span class="hs-kick">Research shows</span>
     <h2 id="hs-band-title">Venues with background music have <em>48.2% more sales</em></h2>
@@ -179,28 +179,28 @@ service_type: Commercial background music and digital jukebox service
 
 <div class="hs-cards">
   <article class="hs-card">
-    <img src="/assets/images/home/customers-want-background-music-ejukebox-640.webp" srcset="/assets/images/home/customers-want-background-music-ejukebox-640.webp 640w, /assets/images/home/customers-want-background-music-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Customers want background music - a florist serving a customer in a shop with eJukebox music playing">
+    <img src="/assets/images/home/customers-want-background-music-ejukebox-640.webp" srcset="/assets/images/home/customers-want-background-music-ejukebox-640.webp 640w, /assets/images/home/customers-want-background-music-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Customers want background music - a florist serving a customer to eJukebox in-store music">
     <div class="hs-card-copy">
       <h3>Customers want background music</h3>
       <p><b>97%</b> of venues recognise their customers want to hear music.</p>
     </div>
   </article>
   <article class="hs-card">
-    <img src="/assets/images/home/music-creates-atmosphere-ejukebox-640.webp" srcset="/assets/images/home/music-creates-atmosphere-ejukebox-640.webp 640w, /assets/images/home/music-creates-atmosphere-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Music creates atmosphere - an outdoor dining terrace under festoon lights, set for eJukebox background music">
+    <img src="/assets/images/home/music-creates-atmosphere-ejukebox-640.webp" srcset="/assets/images/home/music-creates-atmosphere-ejukebox-640.webp 640w, /assets/images/home/music-creates-atmosphere-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Music creates atmosphere - an outdoor dining terrace under festoon lights, set for eJukebox music for Australian restaurants">
     <div class="hs-card-copy">
       <h3>Music creates the atmosphere</h3>
       <p>Yet only <b>27%</b> of customers said a venue's choice of music actually created a nice atmosphere.</p>
     </div>
   </article>
   <article class="hs-card">
-    <img src="/assets/images/home/bad-music-hurts-business-ejukebox-640.webp" srcset="/assets/images/home/bad-music-hurts-business-ejukebox-640.webp 640w, /assets/images/home/bad-music-hurts-business-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Bad music hurts business - an empty beach bar with its bar stools and no customers">
+    <img src="/assets/images/home/bad-music-hurts-business-ejukebox-640.webp" srcset="/assets/images/home/bad-music-hurts-business-ejukebox-640.webp 640w, /assets/images/home/bad-music-hurts-business-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Bad music hurts business - an empty beach bar with no customers and no music, the silence eJukebox fills">
     <div class="hs-card-copy">
       <h3>Bad music hurts business</h3>
       <p><b>90%</b> said bad music made them leave a venue or vow never to return.</p>
     </div>
   </article>
   <article class="hs-card">
-    <img src="/assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-640.webp" srcset="/assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-640.webp 640w, /assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Good music in your pub can increase sales - friends raising beers in a busy pub with eJukebox music">
+    <img src="/assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-640.webp" srcset="/assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-640.webp 640w, /assets/images/home/good-music-in-your-pub-can-increase-sales-ejukebox-1100.webp 1100w" sizes="(max-width: 760px) 100vw, 590px" width="1100" height="619" loading="lazy" decoding="async" alt="Good music in your pub can increase sales - friends raising beers in a busy pub to eJukebox, the jukebox for Australian pubs">
     <div class="hs-card-copy">
       <h3>Good music in your pub can increase sales</h3>
       <p>Pubs with music make <b>21% more sales</b> on weekdays than pubs without.</p>
@@ -302,7 +302,7 @@ service_type: Commercial background music and digital jukebox service
     </div>
   </div>
   <div class="venue-image">
-    <img src="blobs/eJukebox_fun07.jpg" alt="Pub and Café atmosphere">
+    <img src="blobs/eJukebox_fun07.jpg" alt="Friends sharing drinks at a café table, one choosing a song on her phone - eJukebox background music for pubs and cafés">
   </div>
 </div>
 
@@ -318,7 +318,7 @@ service_type: Commercial background music and digital jukebox service
     </div>
   </div>
   <div class="venue-image">
-    <img src="/assets/images/stock/waiting-lounge.jpg" alt="A calm, bright waiting area" loading="lazy">
+    <img src="/assets/images/stock/waiting-lounge.jpg" alt="A calm, bright waiting room with yellow chairs - eJukebox background music for Australian medical centres" loading="lazy">
   </div>
 </div>
 
@@ -334,7 +334,7 @@ service_type: Commercial background music and digital jukebox service
     </div>
   </div>
   <div class="venue-image">
-    <img src="/assets/images/retail-store.jpg" alt="A retail store with music playing" loading="lazy">
+    <img src="/assets/images/retail-store.jpg" alt="A fashion and homewares boutique playing licensed eJukebox music for its shoppers" loading="lazy">
   </div>
 </div>
 

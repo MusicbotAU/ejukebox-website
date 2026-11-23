@@ -204,7 +204,7 @@ schema_about: [streaming-media, background-music]
   </div>
 </div>
 
-{% include photo-band.html src="/assets/images/stock/phone-laptop.jpg" alt="Someone setting up on a phone and laptop" caption="Your private stream, on a device you already own." %}
+{% include photo-band.html src="/assets/images/stock/phone-laptop.jpg" alt="Setting up a free 7-day eJukebox streaming trial on a phone and laptop for an Australian venue" caption="Your private stream, on a device you already own." %}
 
 <div class="trial-faq-section">
   <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>

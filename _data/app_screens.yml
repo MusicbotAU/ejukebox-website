@@ -7,7 +7,7 @@
 
 request-home:
   src: "/assets/images/apps/song-request-app-home.webp"
-  alt: "eJukebox Request song request app at a club, showing the song on air, songs coming up and tracks trending nationwide"
+  alt: "eJukebox Request song request app at a club, showing the song on air, songs coming up and tracks trending across Australia"
 request-ai-search:
   src: "/assets/images/apps/song-request-app-ai-search.webp"
   alt: "AI song search in the eJukebox Request app - a guest types girls night out mix and taps Help me pick"
