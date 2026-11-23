@@ -5,6 +5,31 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-23 - Unrelated photos off four pages
+
+Marc, Mon 23 Nov: four pages carried photos that had nothing to do with them - a DJ on
+/functions-events/ and beside the player on /behind-the-scenes.html, and a phone snapping a
+street, a phone filming a concert and silhouettes at sunset on /ejukebox-request-portal.html
+and /in-venue-screens/. The Request caption, "The people who never ask for a song finally
+do.", didn't make sense either.
+
+- **Functions & Events:** the DJ is out (eJukebox is the function's music, so a DJ says the
+  wrong thing). In its place is file 32 of our photo set, friends in party dresses dancing.
+  900w and 480w, 46KB and 20KB.
+- **Behind the Scenes:** the DJ deck beside "A small player that does a big job" is now file
+  1, a pub corner with leather booths and copper lights. 1100w and 640w, 73KB and 36KB. A
+  photo of the player itself would be better still, with the maker's name out of shot.
+- **Song Requests and In-Venue Screens:** the stock band is off both pages. Marc will supply
+  grabs of real requests coming in (Apple Watch, iPhone) for the Request page. Real photos of
+  the screens at Club Buffalo would do the same job for In-Venue Screens.
+- `dj-at-work`, `dance-club`, `smartphone-photo` and `concert-phone` are now on no page.
+  `party-crowd-sunset` is still on /people-love-ejukebox.html and /why-us2.html.
+- Sitemap: new lastmod on all four, and image entries for the two new photos.
+- File 1's watermark sits bottom right, not bottom left (file 2's too), so check each photo
+  in the set before cropping. Crops are in `image-credits.md`.
+
+---
+
 ## 2026-11-23 - Reindex requested in Google and Bing
 
 Marc asked Google Search Console and Bing Webmaster Tools to reindex ejukebox.com.au on Mon 23

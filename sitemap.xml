@@ -80,7 +80,7 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/ejukebox-request-portal.html</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://ejukebox.com.au/assets/images/apps/song-request-app-ai-search.webp</image:loc></image:image>
@@ -99,9 +99,10 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/behind-the-scenes.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/features/pub-booths-under-copper-lights-ejukebox.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ejukebox.com.au/BenefitsofMusic.html</loc>
@@ -236,15 +237,16 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/in-venue-screens/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ejukebox.com.au/functions-events/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/features/friends-dancing-at-a-function-ejukebox.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ejukebox.com.au/playing-across-the-country/</loc>

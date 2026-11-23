@@ -4,7 +4,7 @@ title: Song Requests for Pubs, Clubs & Venues
 description: QR code song requests for pubs, clubs and venues. Customers request from their phone or the free eJukebox Request app while your staff stay in control.
 schema_service: Song request portal for pubs, clubs and functions
 service_type: Interactive song request system for venues
-last_reviewed: 2026-11-08
+last_reviewed: 2026-11-23
 schema_app:
   type: WebApplication
   name: eJukebox song requests in the browser
@@ -200,8 +200,6 @@ schema_about: [jukebox, qr-code]
 <div class="ft-videos one sr-vid">
   {% include feature-video.html id="song-requests" %}
 </div>
-
-{% include photo-band.html src="/assets/images/stock/smartphone-photo.jpg" alt="A phone held up in a crowded, glowing room, ready to request the next song on eJukebox" src2="/assets/images/stock/party-crowd-sunset.jpg" alt2="Friends celebrating at sunset - song requests for pubs, clubs and venues across Australia" src3="/assets/images/stock/concert-phone.jpg" alt3="A phone filming a night out, as guests pick the music with eJukebox song requests" caption="The people who never ask for a song finally do." %}
 
 <div class="sr-sec-head">
   <span class="sr-kick">You stay in charge</span>

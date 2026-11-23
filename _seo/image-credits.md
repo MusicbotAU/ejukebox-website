@@ -69,11 +69,22 @@ picks on Mon 23 November 2026:
 | `dancing-at-the-bar-phone-in-hand-ejukebox` (`-480w`) | eJukebox photo set, file 28 |
 | `bartenders-at-work-behind-a-busy-bar-ejukebox` (`-480w`) | `bartenders.jpg` above (CC0, Taylor Davidson), cropped to the strip's shape and re-encoded |
 
-The set is Website/Images/eJukeboxImages, added by Alysia on Thu 15 October 2026. The
-watermark sits bottom left in every original (about x 0-712, y 740-1066 of 1920x1080), so a
-crop that reaches into the left third stops at y 735. Crops, in original pixels: 34 tall
-x 560-1135 and wide x 200-1670, 29 x 200-1302, 28 x 325-1675 (all y 0-735); bartenders.jpg
-y 130-1000 at full width. WebP quality 72-80.
+The set is Website/Images/eJukeboxImages, added by Alysia on Thu 15 October 2026. In most
+originals the watermark sits bottom left (about x 0-712, y 740-1066 of 1920x1080), so a crop
+that reaches into the left third stops at y 735. Files 1 and 2 carry it bottom right instead
+(about x 1200-1920, y 770-1050), so check each photo before cropping. Crops, in original
+pixels: 34 tall x 560-1135 and wide x 200-1670, 29 x 200-1302, 28 x 325-1675 (all y 0-735);
+bartenders.jpg y 130-1000 at full width. WebP quality 72-80.
+
+## Functions and Behind the Scenes photos
+
+Our own photos in place of stock shots Marc found unrelated, Mon 23 November 2026
+(`assets/images/features/`):
+
+| File | Page | Source |
+|---|---|---|
+| `friends-dancing-at-a-function-ejukebox` (`-480w`) | /functions-events/, in place of `dance-club.jpg` | eJukebox photo set, file 32, x 240-1592, y 0-735 |
+| `pub-booths-under-copper-lights-ejukebox` (`-640w`) | /behind-the-scenes.html, in place of `dj-at-work.jpg` | eJukebox photo set, file 1, x 0-1160, full height (watermark bottom right) |
 
 ## Video posters
 

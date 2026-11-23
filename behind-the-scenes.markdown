@@ -4,7 +4,7 @@ title: Behind the Scenes of a Jukebox Installation
 description: How eJukebox runs in your venue - a compact player that plays on if the internet drops, updates itself overnight, and alerts us if the music stops.
 schema_service: Managed jukebox player installation for Australian venues
 service_type: Cloud-managed music player installation and maintenance
-last_reviewed: 2026-11-13
+last_reviewed: 2026-11-23
 howto:
   name: "How eJukebox is set up in your venue"
   description: >-
@@ -165,6 +165,7 @@ schema_about: [broadcast-automation, audio-processing, sound-reinforcement]
     .bt-hero { padding:40px 22px 34px; }
     .bt-hero-grid, .bt-venue, .bt-grid2, .bt-grid3, .bt-steps { grid-template-columns:1fr; }
     .bt-photo { min-height:240px; }
+    .bt-photo img { object-position:50% 62%; }
     .bt-band { padding:32px 22px; }
     .bt-quote { grid-template-columns:1fr; padding:26px 22px; }
     #main-content .bt-page .try-demo { padding:40px 22px; }
@@ -205,7 +206,7 @@ schema_about: [broadcast-automation, audio-processing, sound-reinforcement]
   <p>Out of sight in your rack, cupboard or office, and nothing your staff ever need to touch.</p>
 </div>
 <div class="bt-venue">
-  <div class="bt-photo"><img src="/assets/images/stock/dj-at-work.jpg" alt="Hands on a DJ deck under purple light - the big sound an eJukebox on-site player brings to Australian venues" loading="lazy"><span>Big sound from a small box</span></div>
+  <div class="bt-photo"><img src="/assets/images/features/pub-booths-under-copper-lights-ejukebox.webp" srcset="/assets/images/features/pub-booths-under-copper-lights-ejukebox-640w.webp 640w, /assets/images/features/pub-booths-under-copper-lights-ejukebox.webp 1100w" sizes="(max-width:820px) calc(100vw - 32px), 520px" width="1100" height="1024" alt="Leather booths and copper lights in a cosy pub, filled with music by an eJukebox on-site player for Australian venues" loading="lazy" decoding="async"><span>Big sound from a small box</span></div>
   <div class="bt-grid2">
     <div class="bt-card"><span class="bt-ico"><i class="fas fa-microchip"></i></span><h3>Compact and solid state</h3><p>Small enough to tuck away, with no moving parts to wear out. Built to run all day, every day.</p></div>
     <div class="bt-card"><span class="bt-ico"><i class="fas fa-plug"></i></span><h3>Plugs into what you have</h3><p>It connects to your existing amplifier and speakers, on a wired network connection for rock-solid streaming.</p></div>
