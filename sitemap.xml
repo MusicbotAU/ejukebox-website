@@ -43,9 +43,13 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/automated-jukebox-system.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/features/friends-dancing-under-confetti-at-the-club-ejukebox.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/features/crowd-with-arms-up-under-confetti-ejukebox.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/features/bartenders-at-work-behind-a-busy-bar-ejukebox.webp</image:loc></image:image>
+    <image:image><image:loc>https://ejukebox.com.au/assets/images/features/dancing-at-the-bar-phone-in-hand-ejukebox.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ejukebox.com.au/admin-app/</loc>

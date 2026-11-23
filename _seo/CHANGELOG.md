@@ -5,6 +5,30 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-23 - Digital Jukebox page: our own photos, cropped and compressed
+
+Marc flagged on Thu 15 Oct that the page's photos did not match it - the hero was a DJ on
+turntables beside "No DJ, no jukebox cabinet". On Mon 23 Nov he picked replacements from
+Alysia's 15 Oct photo set: 34 for the hero, 29 in place of the nightclub dance floor, 28 in
+place of the beach at sunset, and the bartenders kept.
+
+- **Hero as a `<picture>`.** The photo box is portrait beside the copy on desktop (about
+  512x669) and a wide strip on phones and tablets (343x230 on a phone), so one crop cannot
+  suit both. Desktop gets a tall crop (575x735); 820px and below get a wide one (1440 and
+  960). `.aj-hero-img` frames it at 72% on desktop, which keeps her face clear of the copy's
+  fade down to 821px, and at 50% on phones, where the whole group shows.
+- **Strip in two widths.** `photo-band.html` now takes `srcset`, `srcset2` and `srcset3` (and
+  `pos2`, `pos3`) and sets `sizes` itself; pages that pass none render exactly as before. The
+  big photo is cut near 3:2 and the two small ones near 1.84:1, the shape of their boxes, so
+  the browser's choice of width is the right one.
+- **Weight.** The four photos were about 920KB of JPG. Now about 130KB on a desktop, 185KB on
+  a phone and 255KB on a high-density phone, every file under 100KB.
+- **Alt text** rewritten for all four, describing each scene. `hero_image:` makes the new hero
+  the page's `primaryImageOfPage`, and the sitemap lists the four photos.
+- No llms.txt change: no facts changed. Provenance is in `image-credits.md`.
+
+---
+
 ## 2026-11-13 - No prices on any public page; /pricing kept from crawlers
 
 Marc, Fri 13 Nov: "remove the pricing from everywhere we have listed it", and keep /pricing - the

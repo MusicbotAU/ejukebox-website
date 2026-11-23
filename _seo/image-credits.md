@@ -53,6 +53,24 @@ The hero photos on /music-channels/, /song-previews/ and /playing-across-the-cou
 (`assets/images/features/`) come from the same eJukebox photo set - files 16, 33 and 27 -
 cropped on Mon 3 November 2026 to leave the watermark out. Same licence note as below.
 
+## Digital Jukebox page photos
+
+The hero and photo strip on /automated-jukebox-system.html (`assets/images/features/`), Marc's
+picks on Mon 23 November 2026:
+
+| File | Source |
+|---|---|
+| `friends-dancing-under-confetti-at-the-club-ejukebox` (`-tall`, `-960w`) | eJukebox photo set, file 34 |
+| `crowd-with-arms-up-under-confetti-ejukebox` (`-700w`) | eJukebox photo set, file 29 |
+| `dancing-at-the-bar-phone-in-hand-ejukebox` (`-480w`) | eJukebox photo set, file 28 |
+| `bartenders-at-work-behind-a-busy-bar-ejukebox` (`-480w`) | `bartenders.jpg` above (CC0, Taylor Davidson), cropped to the strip's shape and re-encoded |
+
+The set is Website/Images/eJukeboxImages, added by Alysia on Thu 15 October 2026. The
+watermark sits bottom left in every original (about x 0-712, y 740-1066 of 1920x1080), so a
+crop that reaches into the left third stops at y 735. Crops, in original pixels: 34 tall
+x 560-1135 and wide x 200-1670, 29 x 200-1302, 28 x 325-1675 (all y 0-735); bartenders.jpg
+y 130-1000 at full width. WebP quality 72-80.
+
 ## Video posters
 
 `assets/images/videos/*-video-ejukebox.webp` are frames grabbed from eJukebox's own feature

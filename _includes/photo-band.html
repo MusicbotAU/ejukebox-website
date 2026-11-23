@@ -5,9 +5,12 @@
     {% include photo-band.html src="/assets/images/stock/x.jpg" alt="..." caption="..." %}
     {% include photo-band.html src="..." alt="..." src2="..." alt2="..." src3="..." alt3="..." caption="..." %}
 
-  Optional: pos="center 30%" sets the first photo's focal point. Stock photos live in
-  assets/images/stock/ and are credited in _seo/image-credits.md. Styles are phb- prefixed
-  and emitted once per page. The theme gives every img a margin on phones, hence margin:0.
+  Optional: pos="center 30%" sets the first photo's focal point (pos2, pos3 the others).
+  srcset="... 700w, ... 1100w" (and srcset2, srcset3) serves WebP in two widths; the band
+  sets sizes itself, so crop the big photo near 3:2 and the two small ones near 1.84:1
+  (Digital Jukebox page, Mon 23 Nov 2026). Stock photos live in assets/images/stock/ and are
+  credited in _seo/image-credits.md. Styles are phb- prefixed and emitted once per page. The
+  theme gives every img a margin on phones, hence margin:0.
 {% endcomment %}
 {%- unless phb_styles_done -%}
 {%- assign phb_styles_done = true %}
@@ -32,10 +35,10 @@
 {%- endunless %}
 {%- if include.src2 %}
 <figure class="phb-band phb-mosaic">
-  <div class="phb-cell"><img src="{{ include.src }}" alt="{{ include.alt }}" loading="lazy"{% if include.pos %} style="object-position:{{ include.pos }}"{% endif %}>{% if include.caption %}<figcaption class="phb-cap">{{ include.caption }}</figcaption>{% endif %}</div>
-  <div class="phb-cell"><img src="{{ include.src2 }}" alt="{{ include.alt2 }}" loading="lazy"></div>
-  <div class="phb-cell"><img src="{{ include.src3 }}" alt="{{ include.alt3 }}" loading="lazy"></div>
+  <div class="phb-cell"><img src="{{ include.src }}"{% if include.srcset %} srcset="{{ include.srcset }}" sizes="(max-width:640px) calc(100vw - 30px), 700px" decoding="async"{% endif %} alt="{{ include.alt }}" loading="lazy"{% if include.pos %} style="object-position:{{ include.pos }}"{% endif %}>{% if include.caption %}<figcaption class="phb-cap">{{ include.caption }}</figcaption>{% endif %}</div>
+  <div class="phb-cell"><img src="{{ include.src2 }}"{% if include.srcset2 %} srcset="{{ include.srcset2 }}" sizes="(max-width:640px) 280px, 440px" decoding="async"{% endif %} alt="{{ include.alt2 }}" loading="lazy"{% if include.pos2 %} style="object-position:{{ include.pos2 }}"{% endif %}></div>
+  <div class="phb-cell"><img src="{{ include.src3 }}"{% if include.srcset3 %} srcset="{{ include.srcset3 }}" sizes="(max-width:640px) 280px, 440px" decoding="async"{% endif %} alt="{{ include.alt3 }}" loading="lazy"{% if include.pos3 %} style="object-position:{{ include.pos3 }}"{% endif %}></div>
 </figure>
 {%- else %}
-<figure class="phb-band phb-one"><img src="{{ include.src }}" alt="{{ include.alt }}" loading="lazy"{% if include.pos %} style="object-position:{{ include.pos }}"{% endif %}>{% if include.caption %}<figcaption class="phb-cap">{{ include.caption }}</figcaption>{% endif %}</figure>
+<figure class="phb-band phb-one"><img src="{{ include.src }}"{% if include.srcset %} srcset="{{ include.srcset }}" sizes="(max-width:1180px) 100vw, 1140px" decoding="async"{% endif %} alt="{{ include.alt }}" loading="lazy"{% if include.pos %} style="object-position:{{ include.pos }}"{% endif %}>{% if include.caption %}<figcaption class="phb-cap">{{ include.caption }}</figcaption>{% endif %}</figure>
 {%- endif %}

@@ -4,7 +4,8 @@ title: Digital Jukebox for Pubs, Clubs & Bars
 description: A digital jukebox for pubs, clubs and bars - curated channels that run themselves, song requests from phones, and no jukebox cabinet to buy or hire.
 schema_service: Digital jukebox for pubs, clubs and bars
 service_type: Digital jukebox and automated venue music
-last_reviewed: 2026-11-13
+hero_image: /assets/images/features/friends-dancing-under-confetti-at-the-club-ejukebox.webp
+last_reviewed: 2026-11-23
 faqs:
   - q: >-
       What is a digital jukebox?
@@ -57,6 +58,9 @@ schema_about: [jukebox, disc-jockey, dayparting, gapless-playback]
   #main-content .ft-page .aj-us { border-color:rgba(129,140,248,.55); background:linear-gradient(150deg, rgba(99,102,241,.2), rgba(20,184,166,.1)), var(--ejm-card); }
   .aj-label { display:block; margin-bottom:10px; font-size:.74rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:var(--ejm-mut); }
   .aj-us .aj-label { color:var(--ejm-amber); }
+  /* hero photo: the wide crop centred on phones, the tall crop kept on her face beside the copy */
+  .aj-hero-img img { object-position:50% 20%; }
+  @media (min-width:821px) { .aj-hero-img img { object-position:72% 20%; } }
 </style>
 
 <div class="ft-page">
@@ -77,7 +81,7 @@ schema_about: [jukebox, disc-jockey, dayparting, gapless-playback]
         <li><i class="fas fa-circle-check"></i> Keeps playing if the internet drops</li>
       </ul>
     </div>
-    <div class="ft-hero-img"><img src="/assets/images/stock/dj-at-work.jpg" alt="Hands on a turntable under purple light" loading="eager"></div>
+    <div class="ft-hero-img aj-hero-img"><picture><source media="(min-width:821px)" srcset="/assets/images/features/friends-dancing-under-confetti-at-the-club-ejukebox-tall.webp" width="575" height="735"><img src="/assets/images/features/friends-dancing-under-confetti-at-the-club-ejukebox.webp" srcset="/assets/images/features/friends-dancing-under-confetti-at-the-club-ejukebox-960w.webp 960w, /assets/images/features/friends-dancing-under-confetti-at-the-club-ejukebox.webp 1440w" sizes="(max-width:492px) 460px, 100vw" width="1440" height="720" alt="Friends dancing and laughing under falling confetti on a big night at the club" loading="eager" fetchpriority="high"></picture></div>
   </div>
 </div>
 
@@ -128,7 +132,7 @@ schema_about: [jukebox, disc-jockey, dayparting, gapless-playback]
   {% include feature-video.html id="onsite-player" %}
 </div>
 
-{% include photo-band.html src="/assets/images/stock/dance-club.jpg" alt="A packed dance floor under coloured lights" src2="/assets/images/stock/bartenders.jpg" alt2="Bartenders serving a busy bar" src3="/assets/images/stock/party-crowd-sunset.jpg" alt3="Friends celebrating at sunset" caption="A room with music in it, or a night people talk about." %}
+{% include photo-band.html src="/assets/images/features/crowd-with-arms-up-under-confetti-ejukebox.webp" srcset="/assets/images/features/crowd-with-arms-up-under-confetti-ejukebox-700w.webp 700w, /assets/images/features/crowd-with-arms-up-under-confetti-ejukebox.webp 1100w" alt="A packed room of friends, arms in the air, as confetti rains down on the dance floor" src2="/assets/images/features/bartenders-at-work-behind-a-busy-bar-ejukebox.webp" srcset2="/assets/images/features/bartenders-at-work-behind-a-busy-bar-ejukebox-480w.webp 480w, /assets/images/features/bartenders-at-work-behind-a-busy-bar-ejukebox.webp 900w" alt2="Bartenders at work behind a warmly lit bar stacked with spirits" src3="/assets/images/features/dancing-at-the-bar-phone-in-hand-ejukebox.webp" srcset3="/assets/images/features/dancing-at-the-bar-phone-in-hand-ejukebox-480w.webp 480w, /assets/images/features/dancing-at-the-bar-phone-in-hand-ejukebox.webp 900w" alt3="A man dancing at a busy bar with his phone in his hand, friends with drinks around him" caption="A room with music in it, or a night people talk about." %}
 
 <div class="ft-sec-head">
   <span class="ft-kick">Questions</span>
