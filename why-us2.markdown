@@ -4,7 +4,7 @@ title: Why Choose eJukebox for Your Venue
 description: Why venues choose eJukebox - Australian-curated channels, song requests from any phone, two zones included, radio-quality sound and licence admin handled.
 schema_service: Professionally programmed background music for Australian venues
 service_type: Human-curated commercial music programming and broadcast audio processing
-last_reviewed: 2026-11-04
+last_reviewed: 2026-11-23
 faqs:
   - q: >-
       Do customers need an app?
@@ -27,6 +27,11 @@ schema_about: [background-music, radio-programming, audio-processing]
 ---
 
 {% include feature-styles.html %}
+<style>
+  /* hero photo: the wide crop on phones, the tall crop beside the copy from 821px (Mon 23 Nov 2026) */
+  .wu-hero-img img { object-position:62% 25%; }
+  @media (min-width:821px) { .wu-hero-img img { object-position:50% 50%; } }
+</style>
 
 <div class="ft-page">
 
@@ -46,7 +51,7 @@ schema_about: [background-music, radio-programming, audio-processing]
         <li><i class="fas fa-circle-check"></i> No lock-in contracts</li>
       </ul>
     </div>
-    <div class="ft-hero-img"><img src="/assets/images/stock/party-crowd-sunset.jpg" alt="A crowd enjoying a night out at sunset - why Australian venues choose eJukebox" loading="eager"></div>
+    <div class="ft-hero-img wu-hero-img"><picture><source media="(min-width:821px)" srcset="/assets/images/features/friends-laughing-at-a-sunny-bar-ejukebox-tall.webp" width="880" height="1080"><img src="/assets/images/features/friends-laughing-at-a-sunny-bar-ejukebox.webp" srcset="/assets/images/features/friends-laughing-at-a-sunny-bar-ejukebox-760w.webp 760w, /assets/images/features/friends-laughing-at-a-sunny-bar-ejukebox.webp 1200w" sizes="100vw" width="1200" height="544" alt="Friends laughing and dancing at a sunny bar - why Australian venues choose eJukebox" loading="eager" fetchpriority="high"></picture></div>
   </div>
 </div>
 

@@ -76,15 +76,17 @@ that reaches into the left third stops at y 735. Files 1 and 2 carry it bottom r
 pixels: 34 tall x 560-1135 and wide x 200-1670, 29 x 200-1302, 28 x 325-1675 (all y 0-735);
 bartenders.jpg y 130-1000 at full width. WebP quality 72-80.
 
-## Functions and Behind the Scenes photos
+## Our photos in place of unrelated stock shots
 
-Our own photos in place of stock shots Marc found unrelated, Mon 23 November 2026
+Marc found these stock shots unrelated to their pages on Mon 23 November 2026
 (`assets/images/features/`):
 
 | File | Page | Source |
 |---|---|---|
 | `friends-dancing-at-a-function-ejukebox` (`-480w`) | /functions-events/, in place of `dance-club.jpg` | eJukebox photo set, file 32, x 240-1592, y 0-735 |
 | `pub-booths-under-copper-lights-ejukebox` (`-640w`) | /behind-the-scenes.html, in place of `dj-at-work.jpg` | eJukebox photo set, file 1, x 0-1160, full height (watermark bottom right) |
+| `friends-laughing-at-a-sunny-bar-ejukebox` (`-tall`, `-760w`) | /why-us2.html hero, in place of `party-crowd-sunset.jpg` | eJukebox photo set, file 4: tall x 800-1680, full height; wide x 300-1920, y 0-735 |
+| `crowd-dancing-on-a-big-night-out-ejukebox` (`-960w`) | /people-love-ejukebox.html, in place of `party-crowd-sunset.jpg` | eJukebox photo set, file 30, full width, y 0-735 |
 
 ## Video posters
 

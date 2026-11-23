@@ -5,6 +5,23 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-23 - Sunset photo off two more pages; fifteen seconds
+
+Marc said yes to swapping the sunset silhouettes (`party-crowd-sunset.jpg`) on the two other
+pages that still carried it. It is now on no page.
+
+- **/why-us2.html (Why Choose Us, in the menu and footer):** it was the hero. File 4 of our set,
+  a woman laughing and dancing at a sunny bar, now fills it as a `<picture>` like the feature
+  heroes: a `-tall` crop beside the copy from 821px up (880x1080, 55KB), the wide crop on
+  phones (1200w and 760w, 41KB and 23KB). Page-scoped `wu-hero-img` framing.
+- **/people-love-ejukebox.html:** file 30, a crowd dancing on a big night out, under the
+  existing caption "Real rooms, every night of the week." 1600w and 960w, 73KB and 39KB.
+- **/in-venue-screens/:** the story now says "Fifteen seconds later it is up on the wall",
+  matching the heading and the intro (Marc: 15 seconds is right). It said twenty.
+  Functions & Events' "Checked and live in 8 seconds" counts from the send, so it still fits.
+
+---
+
 ## 2026-11-23 - Unrelated photos off four pages
 
 Marc, Mon 23 Nov: four pages carried photos that had nothing to do with them - a DJ on
