@@ -34,6 +34,12 @@ schema_about: [music-charts, jukebox]
 
 {% include feature-styles.html %}
 
+<style>
+  /* hero photo: the wide crop on phones, the tall crop beside the copy from 821px (Mon 23 Nov 2026) */
+  .pc-hero-img img { object-position:50% 50%; }
+  @media (min-width:821px) { .pc-hero-img img { object-position:90% 50%; } }
+</style>
+
 <div class="ft-page">
 
 <div class="ft-hero">
@@ -52,7 +58,7 @@ schema_about: [music-charts, jukebox]
         <li><i class="fas fa-circle-check"></i> Included in Core and Complete</li>
       </ul>
     </div>
-    <div class="ft-hero-img"><img src="/assets/images/features/crowd-under-festoon-lights-ejukebox.webp" srcset="/assets/images/features/crowd-under-festoon-lights-ejukebox-760w.webp 760w, /assets/images/features/crowd-under-festoon-lights-ejukebox.webp 1200w" sizes="(max-width:820px) 100vw, 45vw" width="1200" height="538" alt="A crowd dancing under festoon lights to the songs trending across Australia on eJukebox" loading="eager"></div>
+    <div class="ft-hero-img pc-hero-img"><picture><source media="(min-width:821px)" srcset="/assets/images/features/crowd-under-festoon-lights-ejukebox-tall.webp" width="950" height="1080"><img src="/assets/images/features/crowd-under-festoon-lights-ejukebox.webp" srcset="/assets/images/features/crowd-under-festoon-lights-ejukebox-760w.webp 760w, /assets/images/features/crowd-under-festoon-lights-ejukebox.webp 1200w" sizes="(max-width:545px) 513px, 100vw" width="1200" height="538" alt="A crowd dancing under festoon lights to the songs trending across Australia on eJukebox" loading="eager" fetchpriority="high"></picture></div>
   </div>
 </div>
 

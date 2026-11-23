@@ -69,6 +69,9 @@ schema_about: [jukebox, qr-code, mobile-app]
   .sp-ask { display:flex; flex-wrap:wrap; gap:8px; margin:4px 0 18px; }
   .sp-ask span { padding:8px 14px; border-radius:999px; font-size:.88rem; font-style:italic; color:var(--ejm-ink);
     background:rgba(34,211,238,.08); border:1px solid rgba(34,211,238,.3); }
+  /* hero photo: the wide crop on phones, the tall crop beside the copy from 821px (Mon 23 Nov 2026) */
+  .sp-hero-img img { object-position:40% 30%; }
+  @media (min-width:821px) { .sp-hero-img img { object-position:55% 0%; } }
 </style>
 
 <div class="ft-page">
@@ -89,7 +92,7 @@ schema_about: [jukebox, qr-code, mobile-app]
         <li><i class="fas fa-circle-check"></i> Included in Core and Complete</li>
       </ul>
     </div>
-    <div class="ft-hero-img"><img src="/assets/images/features/dancing-to-her-song-at-the-bar-ejukebox.webp" srcset="/assets/images/features/dancing-to-her-song-at-the-bar-ejukebox-760w.webp 760w, /assets/images/features/dancing-to-her-song-at-the-bar-ejukebox.webp 1200w" sizes="(max-width:820px) 100vw, 45vw" width="1200" height="579" alt="A woman dancing at a timber bar as the song she previewed on eJukebox comes on - song previews for Australian pubs" loading="eager" style="object-position:40% 30%"></div>
+    <div class="ft-hero-img sp-hero-img"><picture><source media="(min-width:821px)" srcset="/assets/images/features/dancing-to-her-song-at-the-bar-ejukebox-tall.webp" width="661" height="735"><img src="/assets/images/features/dancing-to-her-song-at-the-bar-ejukebox.webp" srcset="/assets/images/features/dancing-to-her-song-at-the-bar-ejukebox-760w.webp 760w, /assets/images/features/dancing-to-her-song-at-the-bar-ejukebox.webp 1200w" sizes="(max-width:508px) 476px, 100vw" width="1200" height="580" alt="A woman dancing at a timber bar as the song she previewed on eJukebox comes on - song previews for Australian pubs" loading="eager" fetchpriority="high"></picture></div>
   </div>
 </div>
 

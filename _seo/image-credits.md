@@ -51,7 +51,11 @@ WebP in two or three widths; the 1920px originals stay in the library.
 
 The hero photos on /music-channels/, /song-previews/ and /playing-across-the-country/
 (`assets/images/features/`) come from the same eJukebox photo set - files 16, 33 and 27 -
-cropped on Mon 3 November 2026 to leave the watermark out. Same licence note as below.
+first cropped on Mon 3 November 2026. Same licence note as below. On Mon 23 November 2026
+each gained a `-tall` crop for the desktop hero (16: x 760-1560, y 0-930, above the table's
+ashtray; 33: x 380-1041, y 0-735; 27: x 760-1710, full height), and the 33 and 27 wide crops
+were cut again (x 100-1622 and x 280-1920, both y 0-735): the 3 Nov crops had caught the top of
+the watermark's waveform.
 
 ## Digital Jukebox page photos
 

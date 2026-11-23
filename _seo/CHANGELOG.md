@@ -5,6 +5,25 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-23 - Sharp heroes on three feature pages
+
+/music-channels/, /song-previews/ and /playing-across-the-country/ served a wide crop into the
+hero box, which is portrait beside the copy from 821px up. A width-based `srcset` picked the
+760w file at 1440 wide and `object-fit:cover` stretched it about 1.45x (measured on
+/song-previews/), more on a high-density screen.
+
+- Each hero is now a `<picture>`, as on /automated-jukebox-system.html: a `-tall` crop from
+  821px up, the wide files below. At 1440, 1100 and 900 wide the browser now scales each photo
+  down (0.54-0.98), so nothing is stretched. Page-scoped `mc-`, `sp-` and `pc-hero-img` rules
+  keep each subject clear of the copy's dark fade on desktop and keep the phone framing as it
+  was. The `sizes` now describe the phone strip, the only place the wide files show.
+- The Song Previews and Playing Across the Country wide crops are cut again: the 3 Nov crops
+  had caught the top of the watermark's waveform, bottom left. Music Channels' was clean.
+- The Music Channels tall crop stops above the ashtray on the table.
+- New files 31-44KB; the re-cut wide ones are 16-45KB.
+
+---
+
 ## 2026-11-23 - Alt text: brand, place and keyword on every photo
 
 Marc, Mon 23 Nov: look at all the alt tags and make sure each has "a little bit of branding a
