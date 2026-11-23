@@ -5,6 +5,15 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-23 - Reindex requested in Google and Bing
+
+Marc asked Google Search Console and Bing Webmaster Tools to reindex ejukebox.com.au on Mon 23
+Nov, after the day's three changes below (the Digital Jukebox photos, the site-wide alt text
+and the sharper feature heroes). Use that date as the start line when measuring image search
+and the pages changed that day; allow about four weeks.
+
+---
+
 ## 2026-11-23 - Sharp heroes on three feature pages
 
 /music-channels/, /song-previews/ and /playing-across-the-country/ served a wide crop into the
