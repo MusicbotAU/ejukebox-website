@@ -23,8 +23,9 @@ place of the beach at sunset, and the bartenders kept.
   the browser's choice of width is the right one.
 - **Weight.** The four photos were about 920KB of JPG. Now about 130KB on a desktop, 185KB on
   a phone and 255KB on a high-density phone, every file under 100KB.
-- **Alt text** rewritten for all four, describing each scene. `hero_image:` makes the new hero
-  the page's `primaryImageOfPage`, and the sitemap lists the four photos.
+- **Alt text** rewritten for all four: each describes the scene and, at Marc's request, works
+  in the brand - "to eJukebox music", "requesting a song on eJukebox". `hero_image:` makes the
+  new hero the page's `primaryImageOfPage`, and the sitemap lists the four photos.
 - No llms.txt change: no facts changed. Provenance is in `image-credits.md`.
 
 ---
