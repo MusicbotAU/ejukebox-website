@@ -56,6 +56,21 @@
         positively on the music since changing over, which has been reassuring because
         that was one of our biggest considerations when looking at a new provider.
 
+- id: davistown-rsl
+  name: Ian Roberts
+  role: General Manager
+  business: Davistown RSL Club
+  location: Central Coast NSW
+  venue_slug: music-for-rsl-clubs   # badge, icon and closing link come from _data/venues.yml
+  # Email to Marc, Tue 24 November 2026, 1:58pm - his answer to our ask of Thu 12 Nov,
+  # which asked to share it with his name and the club's, and to put it on the website.
+  # OK for the website confirmed by Marc the same day. Word for word; curly apostrophes
+  # straightened to match the others.
+  quote: >-
+    We've been very happy with eJukebox at Davistown RSL Club. It's easy to use, has a
+    great selection of music and helps create a welcoming atmosphere for our members
+    and guests. A great addition to the club.
+
 # Moved here from the foot of index.markdown so both homepage cards share one style.
 - id: diana-f
   name: Diana F.

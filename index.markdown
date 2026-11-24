@@ -42,7 +42,7 @@ faqs:
       Where in Australia does eJukebox work?
     a: >-
       Everywhere. eJukebox runs over an ordinary internet connection, so venues in every state and territory - capital cities, regional centres and country towns - get the same music, apps and support. Your player arrives set up, and you plug it in with illustrated instructions and video call support, or with your own AV installer.
-last_reviewed: 2026-11-13
+last_reviewed: 2026-11-24
 schema_apps: [request, admin, music]
 schema_about: [background-music, jukebox, pub, hospitality]
 schema_service: Jukebox and background music for Australian venues
@@ -425,8 +425,11 @@ service_type: Commercial background music and digital jukebox service
 </section>
 
 
-<div class="tm-row tm-row-lead">
+<div class="tm-row">
+{% include testimonial.html id="davistown-rsl" %}
 {% include testimonial.html id="peak-health-fitness" %}
+</div>
+<div class="tm-row" style="margin-top:30px">
 {% include testimonial.html id="diana-f" %}
 </div>
 

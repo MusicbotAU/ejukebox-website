@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ejukebox.com.au/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://ejukebox.com.au/assets/images/home/music-for-venues-increase-sales-ejukebox-1920.webp</image:loc></image:image>
@@ -112,14 +112,14 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/people-love-ejukebox.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://ejukebox.com.au/assets/images/features/crowd-dancing-on-a-big-night-out-ejukebox.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ejukebox.com.au/why-us2.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://ejukebox.com.au/assets/images/features/friends-laughing-at-a-sunny-bar-ejukebox.webp</image:loc></image:image>
@@ -157,7 +157,7 @@
   </url>
   <url>
     <loc>https://ejukebox.com.au/music-for-rsl-clubs/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://ejukebox.com.au/assets/images/venues/music-for-rsl-clubs.jpg</image:loc></image:image>

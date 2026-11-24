@@ -35,6 +35,7 @@ benefits:
       Call the meat tray and the members' draw over the music from any staff phone, let happy
       hour and last drinks announce themselves, and give function hosts their own controls.
       <a href="/functions-events/">Functions &amp; events</a>.
+testimonial: davistown-rsl
 spotlight_title: A club is several venues under one roof
 spotlight_body: >-
   Whether it's an RSL, a leagues club, the bowlo, a golf, tennis, sailing or surf club, or the
@@ -118,7 +119,7 @@ faqs:
       the on-site player is a one-off cost, quoted for your club. <a href="/products.html">Build
       your package</a> and send it to us, and we'll come back with a price.
 schema_about: [rsl, bowls, social-club, ode-of-remembrance, background-music]
-last_reviewed: 2026-11-13
+last_reviewed: 2026-11-24
 feature_video: two-zones
 feature_video_title: >-
   Two zones included, and up to four from one player

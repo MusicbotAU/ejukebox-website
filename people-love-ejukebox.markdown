@@ -30,7 +30,8 @@ schema_about: [background-music, customer-experience]
 
 {% include testimonial.html id="peak-health-fitness" full=true %}
 
-<div class="tm-row">
+<div class="tm-row tm-row-lead">
+{% include testimonial.html id="davistown-rsl" %}
 {% include testimonial.html id="diana-f" %}
 </div>
 

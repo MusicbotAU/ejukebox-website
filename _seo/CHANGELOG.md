@@ -5,6 +5,29 @@ be revisited without re-deriving it.
 
 ---
 
+## 2026-11-24 - Davistown RSL testimonial
+
+Ian Roberts, General Manager of Davistown RSL Club, emailed Marc a testimonial on Tue 24 Nov
+(1:58pm), answering our ask of Thu 12 Nov, which asked to share it with his name and the club's
+and to put it on the website. Marc confirmed the OK for the website the same day.
+
+- **`_data/testimonials.yml`:** new `davistown-rsl` entry, his words exactly (curly apostrophes
+  straightened to match the others). Credited "General Manager, Davistown RSL Club, Central
+  Coast NSW" - the suburb would have said Davistown twice.
+- **Shown wherever the other testimonials are:**
+  - **/ (homepage):** Ian and Samantha side by side, Diana F. full width underneath. Three in
+    one row wrapped two plus one below about 1000px and left Diana stranded.
+  - **/people-love-ejukebox.html:** beside Diana F., Ian's the wider card (`tm-row-lead`).
+  - **/why-us2.html:** beside Peak's card, under "What venues tell us" (was "What a venue told
+    us"). A page-scoped rule keeps the pair as close to the heading as the single card was.
+  - **/music-for-rsl-clubs/:** `testimonial: davistown-rsl` - the venue layout shows it under
+    the three benefits, as Peak's does on /music-for-gyms/.
+- **Companions:** llms.txt's Testimonials and RSL clubs lines name Davistown. No schema: the
+  testimonial rule is no Review or AggregateRating markup (`_seo/structured-data.md`). Sitemap
+  lastmod 2026-11-24 for the four pages.
+
+---
+
 ## 2026-11-23 - Sunset photo off two more pages; fifteen seconds
 
 Marc said yes to swapping the sunset silhouettes (`party-crowd-sunset.jpg`) on the two other

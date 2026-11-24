@@ -4,7 +4,7 @@ title: Why Choose eJukebox for Your Venue
 description: Why venues choose eJukebox - Australian-curated channels, song requests from any phone, two zones included, radio-quality sound and licence admin handled.
 schema_service: Professionally programmed background music for Australian venues
 service_type: Human-curated commercial music programming and broadcast audio processing
-last_reviewed: 2026-11-23
+last_reviewed: 2026-11-24
 faqs:
   - q: >-
       Do customers need an app?
@@ -31,6 +31,8 @@ schema_about: [background-music, radio-programming, audio-processing]
   /* hero photo: the wide crop on phones, the tall crop beside the copy from 821px (Mon 23 Nov 2026) */
   .wu-hero-img img { object-position:62% 25%; }
   @media (min-width:821px) { .wu-hero-img img { object-position:50% 50%; } }
+  /* the testimonial pair sits under its heading as the single card did (Tue 24 Nov 2026) */
+  .tm-row.wu-tm-row { margin-top:0; }
 </style>
 
 <div class="ft-page">
@@ -84,9 +86,12 @@ schema_about: [background-music, radio-programming, audio-processing]
 
 <div class="ft-sec-head">
   <span class="ft-kick">In their words</span>
-  <h2>What a venue told us</h2>
+  <h2>What venues tell us</h2>
 </div>
+<div class="tm-row wu-tm-row">
+{% include testimonial.html id="davistown-rsl" %}
 {% include testimonial.html id="peak-health-fitness" %}
+</div>
 
 <div class="ft-sec-head">
   <span class="ft-kick">Questions</span>
